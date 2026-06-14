@@ -4,4 +4,4 @@
 // ─────────────────────────────────────────────────────────────
 // For local development: 'http://localhost:5000'
 // For production: replace with your Render backend URL, e.g. 'https://gausin-api.onrender.com'
-window.GAUSIN_API_URL = 'http://localhost:5000';
+window.GAUSIN_API_URL = 'https://gausin-international-engineers.onrender.com';
