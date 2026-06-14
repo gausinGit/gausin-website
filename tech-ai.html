@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tech & AI services by Gausin International Engineers - Web Development, Mobile Apps, Desktop Applications, AI/ML, Business Automation, Cloud Solutions, and Custom Software.">
+  <title>Tech & AI | Gausin International Engineers Pvt. Ltd.</title>
+  <link rel="stylesheet" href="css/styles.css">
+    
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <style>
+    .tech-card {
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: 20px;
+      padding: 32px 28px;
+      transition: all 0.35s ease;
+      scroll-margin-top: calc(var(--navbar-height) + 24px);
+    }
+    .tech-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-xl); border-color: var(--blue-200); }
+    .tech-card-icon {
+      width: 56px; height: 56px;
+      background: linear-gradient(135deg, var(--blue-500), var(--blue-700));
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      color: white; font-size: 1.375rem; margin-bottom: 18px;
+      box-shadow: var(--shadow-blue);
+    }
+    .tech-card-title { font-size: 1.125rem; font-weight: 800; color: var(--gray-900); font-family: 'Montserrat', sans-serif; margin-bottom: 10px; }
+    .tech-card-desc { font-size: 0.9rem; color: var(--gray-600); line-height: 1.65; margin-bottom: 18px; text-align: justify; }
+    #backToTop { position: fixed; bottom: 28px; right: 28px; width: 48px; height: 48px; background: linear-gradient(135deg, var(--blue-500), var(--blue-700)); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.125rem; box-shadow: var(--shadow-blue-lg); opacity: 0; pointer-events: none; transition: opacity 0.3s ease, transform 0.3s ease; z-index: 500; }
+    #backToTop:hover { transform: translateY(-3px); }
+  </style>
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo navbar-logo--image"><img src="images/gausin-logo.png" alt="Gausin International Engineers Pvt. Ltd." class="logo-img" width="220" height="52"></a>
+      <nav class="navbar-nav">
+        <div class="nav-item"><a href="index.html" class="nav-link">Home</a></div>
+        <div class="nav-item"><a href="about.html" class="nav-link">About</a></div>
+        <div class="nav-item"><a href="products.html" class="nav-link">Products <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></a></div>
+        <div class="nav-item"><a href="services.html" class="nav-link">Services</a></div>
+        <div class="nav-item"><a href="industries.html" class="nav-link">Industries</a></div>
+        <div class="nav-item"><a href="technology.html" class="nav-link">Technology</a></div>
+        <div class="nav-item"><a href="tech-ai.html" class="nav-link active">Tech & AI</a></div>
+        <div class="nav-item"><a href="contact.html" class="nav-link">Contact</a></div>
+      </nav>
+      <div class="navbar-cta"><a href="contact.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Get a Quote</a></div>
+      <button class="navbar-toggle" id="navbarToggle"><span class="toggle-bar"></span><span class="toggle-bar"></span><span class="toggle-bar"></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Home</a>
+  <a href="about.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">About</a>
+  <a href="products.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Products</a>
+  <a href="services.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Services</a>
+  <a href="industries.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Industries</a>
+  <a href="technology.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Technology</a>
+  <a href="tech-ai.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--blue-500);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Tech & AI</a>
+  <a href="contact.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Contact</a>
+  <div style="margin-top:24px;"><a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;"><i class="fa-solid fa-paper-plane"></i> Get a Quote</a></div>
+</div>
+
+<section class="page-hero page-hero--tech-ai">
+  <div class="container page-hero-content">
+    <div class="page-hero-label"><i class="fa-solid fa-microchip"></i> Tech & AI</div>
+    <h1 class="page-hero-title">Digital Solutions &<br>Intelligent Technology</h1>
+    <p class="page-hero-desc">From web and mobile applications to AI-powered automation and cloud platforms - Gausin delivers modern software solutions that help businesses scale, automate, and innovate.</p>
+    <div class="breadcrumb">
+      <a href="index.html" class="breadcrumb-item">Home</a>
+      <span class="breadcrumb-sep"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;"></i></span>
+      <span class="breadcrumb-item active">Tech & AI</span>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-white">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-label"><i class="fa-solid fa-laptop-code"></i> Our Capabilities</div>
+      <h2 class="section-title">Software & <span>AI Services</span></h2>
+      <p class="section-desc">We build reliable, scalable digital products tailored to your business - combining engineering discipline with modern development practices.</p>
+    </div>
+
+    <div class="grid-3" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="tech-card" id="web-development">
+        <div class="tech-card-icon"><i class="fa-solid fa-code"></i></div>
+        <div class="tech-card-title">Web Development</div>
+        <div class="tech-card-desc">Responsive corporate websites, e-commerce platforms, customer portals, and custom web applications built for performance and security.</div>
+        <a href="contact.html" class="btn btn-outline btn-sm"><i class="fa-solid fa-paper-plane"></i> Get a Quote</a>
+      </div>
+
+      <div class="tech-card" id="mobile-apps">
+        <div class="tech-card-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+        <div class="tech-card-title">Mobile App Development</div>
+        <div class="tech-card-desc">Native and cross-platform mobile apps for iOS and Android - field service apps, plant monitoring, dashboards, and customer-facing solutions.</div>
+        <a href="contact.html" class="btn btn-outline btn-sm"><i class="fa-solid fa-paper-plane"></i> Get a Quote</a>
+      </div>
+
+      <div class="tech-card" id="desktop-apps">
+        <div class="tech-card-icon"><i class="fa-solid fa-desktop"></i></div>
+        <div class="tech-card-title">Desktop Applications</div>
+        <div class="tech-card-desc">Windows, macOS, and Linux desktop software for internal tools, data entry, reporting, and offline-capable business operations.</div>
+        <a href="contact.html" class="btn btn-outline btn-sm"><i class="fa-solid fa-paper-plane"></i> Get a Quote</a>
+      </div>
+
+      <div class="tech-card" id="ai-ml">
+        <div class="tech-card-icon"><i class="fa-solid fa-brain"></i></div>
+        <div class="tech-card-title">AI/ML Solutions</div>
+        <div class="tech-card-desc">Predictive analytics, computer vision, NLP, recommendation engines, and custom machine learning models integrated into your workflows.</div>
+        <a href="contact.html" class="btn btn-outline btn-sm"><i class="fa-solid fa-paper-plane"></i> Get a Quote</a>
+      </div>
+
+      <div class="tech-card" id="automation">
+        <div class="tech-card-icon"><i class="fa-solid fa-gears"></i></div>
+        <div class="tech-card-title">Business Automation</div>
+        <div class="tech-card-desc">Automate repetitive tasks with custom scripts, RPA, API integrations, and workflow tools that connect your ERP, CRM, and plant systems.</div>
+        <a href="contact.html" class="btn btn-outline btn-sm"><i class="fa-solid fa-paper-plane"></i> Get a Quote</a>
+      </div>
+
+      <div class="tech-card" id="cloud">
+        <div class="tech-card-icon"><i class="fa-solid fa-cloud"></i></div>
+        <div class="tech-card-title">Cloud Solutions</div>
+        <div class="tech-card-desc">Cloud architecture, migration, hosting, and DevOps on AWS, Azure, and Google Cloud with monitoring, backups, and scalable infrastructure.</div>
+        <a href="contact.html" class="btn btn-outline btn-sm"><i class="fa-solid fa-paper-plane"></i> Get a Quote</a>
+      </div>
+
+      <div class="tech-card" id="custom-software" style="grid-column: span 1;">
+        <div class="tech-card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+        <div class="tech-card-title">Custom Software Development</div>
+        <div class="tech-card-desc">End-to-end bespoke software - requirements analysis, UI/UX design, development, testing, deployment, and ongoing support for your unique needs.</div>
+        <a href="contact.html" class="btn btn-outline btn-sm"><i class="fa-solid fa-paper-plane"></i> Get a Quote</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <div style="text-align:center;max-width:720px;margin:0 auto;" data-aos="fade-up">
+      <h2 style="font-size:clamp(1.75rem,3vw,2.75rem);font-weight:900;color:white;margin-bottom:20px;">Ready to Build Your <span style="background:linear-gradient(135deg,var(--blue-300),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Digital Solution?</span></h2>
+      <p style="font-size:1.0625rem;color:rgba(255,255,255,0.7);line-height:1.75;margin-bottom:40px;">Tell us about your project and our team will recommend the right technology stack and delivery approach.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="contact.html" class="btn btn-white btn-lg"><i class="fa-solid fa-paper-plane"></i> Start a Project</a>
+        <a href="tel:+919870840779" class="btn btn-ghost btn-lg"><i class="fa-solid fa-phone"></i> Call Us Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+<button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="js/aos.js" defer></script>
+<script src="js/config.js"></script>
+<script src="js/main.js" defer></script>
+<script src="js/components.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){AOS.init({duration:700,once:true,offset:80});});</script>
+</body>
+</html>

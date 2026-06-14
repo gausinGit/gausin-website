@@ -1,0 +1,495 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Technology at Gausin International Engineers  -  AutoCAD, CHEMCAD, HTRI, PLC/SCADA, IoT, CNC Fabrication and Smart Industrial Engineering.">
+  <title>Technology | Gausin International Engineers Pvt. Ltd.</title>
+  <link rel="stylesheet" href="css/styles.css">
+    
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <style>
+    /* Tool Card */
+    .tool-card {
+      background: white; border: 1px solid var(--gray-200);
+      border-radius: 20px; padding: 32px 28px;
+      transition: all 0.35s ease; position: relative; overflow: hidden;
+    }
+    .tool-card::after { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(to right, var(--blue-500), var(--accent-cyan)); transform: scaleX(0); transition: transform 0.35s ease; transform-origin: left; }
+    .tool-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-xl); border-color: var(--blue-200); }
+    .tool-card:hover::after { transform: scaleX(1); }
+    .tool-icon { width: 64px; height: 64px; background: linear-gradient(135deg, var(--blue-500), var(--blue-700)); border-radius: 16px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.75rem; margin-bottom: 20px; box-shadow: var(--shadow-blue); }
+    .tool-name { font-size: 1.125rem; font-weight: 800; color: var(--gray-900); font-family: 'Montserrat',sans-serif; margin-bottom: 6px; }
+    .tool-version { font-size: 0.8125rem; color: var(--blue-500); font-weight: 600; margin-bottom: 12px; font-family: 'Montserrat',sans-serif; }
+    .tool-desc { font-size: 0.9rem; color: var(--gray-600); line-height: 1.65; margin-bottom: 16px; }
+    .tool-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tool-tag { background: var(--blue-50); color: var(--blue-600); font-size: 0.75rem; font-weight: 600; padding: 3px 10px; border-radius: 20px; border: 1px solid var(--blue-200); }
+
+    /* Innovation Timeline */
+    .inno-item { display: flex; gap: 24px; align-items: flex-start; margin-bottom: 32px; }
+    .inno-dot { width: 48px; height: 48px; background: linear-gradient(135deg, var(--blue-500), var(--blue-700)); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.25rem; flex-shrink: 0; box-shadow: var(--shadow-blue); }
+    .inno-content h4 { font-size: 1rem; font-weight: 700; color: var(--gray-900); font-family: 'Montserrat',sans-serif; margin-bottom: 6px; }
+    .inno-content p { font-size: 0.9rem; color: var(--gray-600); line-height: 1.65; }
+
+    /* Fabrication Process */
+    .fab-step { text-align: center; padding: 28px 20px; background: white; border: 1px solid var(--gray-200); border-radius: 16px; transition: all 0.3s; }
+    .fab-step:hover { box-shadow: var(--shadow-lg); border-color: var(--blue-200); transform: translateY(-3px); }
+    .fab-icon { width: 60px; height: 60px; background: var(--blue-50); border-radius: 16px; display: flex; align-items: center; justify-content: center; color: var(--blue-500); font-size: 1.5rem; margin: 0 auto 16px; border: 1px solid var(--blue-200); }
+    .fab-title { font-size: 0.9375rem; font-weight: 700; color: var(--gray-900); font-family: 'Montserrat',sans-serif; margin-bottom: 8px; }
+    .fab-desc { font-size: 0.8125rem; color: var(--gray-600); line-height: 1.6; }
+
+    /* IoT Dashboard Mockup */
+    .iot-card {
+      background: rgba(255,255,255,0.06); backdrop-filter: blur(20px);
+      border: 1px solid rgba(255,255,255,0.12); border-radius: 20px; padding: 28px;
+    }
+    .iot-metric { display: flex; align-items: center; gap: 12px; padding: 12px 14px; background: rgba(255,255,255,0.05); border-radius: 12px; margin-bottom: 10px; border: 1px solid rgba(255,255,255,0.08); }
+    .iot-metric-icon { width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1rem; }
+    .iot-metric-label { font-size: 0.75rem; color: rgba(255,255,255,0.55); }
+    .iot-metric-val { font-size: 1.0625rem; font-weight: 700; color: white; font-family: 'Montserrat',sans-serif; }
+    .iot-bar { height: 4px; background: rgba(255,255,255,0.1); border-radius: 2px; overflow: hidden; margin-top: 6px; }
+    .iot-bar-fill { height: 100%; border-radius: 2px; }
+
+    .auto-glass-icon {
+      width: 48px;
+      height: 48px;
+      background: rgba(59, 130, 246, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--blue-200);
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+      transition: all 0.3s ease;
+    }
+    .glass:hover .auto-glass-icon {
+      background: rgba(59, 130, 246, 0.4);
+      color: white;
+      transform: scale(1.06);
+    }
+
+    #backToTop { position: fixed; bottom: 28px; right: 28px; width: 48px; height: 48px; background: linear-gradient(135deg, var(--blue-500), var(--blue-700)); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.125rem; box-shadow: var(--shadow-blue-lg); opacity: 0; pointer-events: none; transition: opacity 0.3s ease, transform 0.3s ease; z-index: 500; }
+    #backToTop:hover { transform: translateY(-3px); }
+    .tool-desc, .fab-desc { text-align: justify; }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo navbar-logo--image"><img src="images/gausin-logo.png" alt="Gausin International Engineers Pvt. Ltd." class="logo-img" width="220" height="52"></a>
+      <nav class="navbar-nav">
+        <div class="nav-item"><a href="index.html" class="nav-link">Home</a></div>
+        <div class="nav-item"><a href="about.html" class="nav-link">About</a></div>
+        <div class="nav-item"><a href="products.html" class="nav-link">Products <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></a><div class="mega-menu"><div class="mega-menu-grid"><a href="products.html#evaporators" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-droplet"></i></div><div><div class="mega-menu-item-title">Evaporators</div></div></a><a href="products.html#dryers" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-wind"></i></div><div><div class="mega-menu-item-title">Dryers</div></div></a><a href="products.html#heat-exchangers" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-temperature-high"></i></div><div><div class="mega-menu-item-title">Heat Exchangers</div></div></a><a href="products.html#cip" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-recycle"></i></div><div><div class="mega-menu-item-title">CIP Systems</div></div></a><a href="products.html#milk-processing" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-flask"></i></div><div><div class="mega-menu-item-title">Milk Processing</div></div></a><a href="products.html#vessels" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-database"></i></div><div><div class="mega-menu-item-title">Vessels & Tanks</div></div></a></div></div></div>
+        <div class="nav-item"><a href="services.html" class="nav-link">Services</a></div>
+        <div class="nav-item"><a href="industries.html" class="nav-link">Industries</a></div>
+        <div class="nav-item"><a href="technology.html" class="nav-link active">Technology</a></div>
+        <div class="nav-item"><a href="contact.html" class="nav-link">Contact</a></div>
+      </nav>
+      <div class="navbar-cta"><a href="contact.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Get a Quote</a></div>
+      <button class="navbar-toggle" id="navbarToggle"><span class="toggle-bar"></span><span class="toggle-bar"></span><span class="toggle-bar"></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Home</a>
+  <a href="about.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">About</a>
+  <a href="products.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Products</a>
+  <a href="services.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Services</a>
+  <a href="industries.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Industries</a>
+  <a href="technology.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--blue-500);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Technology</a>
+  <a href="contact.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Contact</a>
+  <div style="margin-top:24px;"><a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">Get a Quote</a></div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero page-hero--technology">
+  <div class="container page-hero-content">
+    <div class="page-hero-label"><i class="fa-solid fa-microchip"></i> Technology</div>
+    <h1 class="page-hero-title">Engineering Powered by<br>Advanced Technology</h1>
+    <p class="page-hero-desc">From process simulation to smart factory automation  -  we leverage cutting-edge tools and technologies to design, fabricate, and deliver superior industrial engineering solutions.</p>
+    <div class="breadcrumb">
+      <a href="index.html" class="breadcrumb-item">Home</a>
+      <span class="breadcrumb-sep"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;"></i></span>
+      <span class="breadcrumb-item active">Technology</span>
+    </div>
+  </div>
+</section>
+
+<!-- ENGINEERING SOFTWARE TOOLS -->
+<section class="section bg-white">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-label"><i class="fa-solid fa-laptop-code"></i> Engineering Software</div>
+      <h2 class="section-title">Process Design <span>Software & Tools</span></h2>
+      <p class="section-desc">We use industry-leading engineering software to design, simulate, and validate every process system before a single component is fabricated.</p>
+    </div>
+
+    <div class="grid-4" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="tool-card">
+        <div class="tool-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+        <div class="tool-name">AutoCAD</div>
+        <div class="tool-version">2D / 3D Engineering Design</div>
+        <div class="tool-desc">Industry-standard CAD platform for producing precise engineering drawings, 3D models, P&IDs, plant layouts, and fabrication detail drawings.</div>
+        <div class="tool-tags">
+          <span class="tool-tag">P&ID</span><span class="tool-tag">3D Models</span><span class="tool-tag">GA Drawings</span><span class="tool-tag">Plant Layout</span>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="tool-icon"><i class="fa-solid fa-atom"></i></div>
+        <div class="tool-name">CHEMCAD</div>
+        <div class="tool-version">Process Simulation Software</div>
+        <div class="tool-desc">Advanced chemical process simulation software used for mass & energy balance calculations, equipment sizing, thermodynamic modeling, and process optimization.</div>
+        <div class="tool-tags">
+          <span class="tool-tag">Process Sim</span><span class="tool-tag">Mass Balance</span><span class="tool-tag">Thermodynamics</span><span class="tool-tag">Equipment Sizing</span>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="tool-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+        <div class="tool-name">HTRI Xchanger Suite</div>
+        <div class="tool-version">Heat Exchanger Design</div>
+        <div class="tool-desc">Industry-standard heat transfer research software for rigorous thermal design, rating, and simulation of shell & tube, plate, and other heat exchanger types with real fluid properties.</div>
+        <div class="tool-tags">
+          <span class="tool-tag">Thermal Design</span><span class="tool-tag">Shell & Tube</span><span class="tool-tag">Fouling Analysis</span><span class="tool-tag">TEMA</span>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="tool-icon"><i class="fa-solid fa-calendar-check"></i></div>
+        <div class="tool-name">MS Project</div>
+        <div class="tool-version">Project Management</div>
+        <div class="tool-desc">Comprehensive project planning, scheduling, resource allocation, and progress tracking tool ensuring on-time delivery with full visibility into project milestones and critical path.</div>
+        <div class="tool-tags">
+          <span class="tool-tag">Gantt Charts</span><span class="tool-tag">Critical Path</span><span class="tool-tag">Resource Mgmt</span><span class="tool-tag">Progress Track</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MANUFACTURING TECHNOLOGY -->
+<section class="section bg-light">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-label"><i class="fa-solid fa-industry"></i> Manufacturing</div>
+      <h2 class="section-title">Precision <span>Fabrication Technology</span></h2>
+      <p class="section-desc">Our manufacturing facility is equipped with advanced fabrication technology to produce high-precision industrial equipment meeting international quality standards.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;" data-aos="fade-up">
+      <div>
+        <div style="display:flex;flex-direction:column;gap:20px;">
+          <div class="inno-item">
+            <div class="inno-dot"><i class="fa-solid fa-cut"></i></div>
+            <div class="inno-content">
+              <h4>CNC Plasma & Laser Cutting</h4>
+              <p>Computer-numerical-control plasma and laser cutting for precise cutting of plates, pipes, and profiles  -  achieving tolerances of +/-0.1mm for critical components.</p>
+            </div>
+          </div>
+          <div class="inno-item">
+            <div class="inno-dot"><i class="fa-solid fa-fire-flame-simple"></i></div>
+            <div class="inno-content">
+              <h4>TIG / MIG / SAW Welding</h4>
+              <p>Certified welders using TIG, MIG, and Submerged Arc Welding processes for high-quality, radiographically tested welds on all pressure parts and hygienic vessels.</p>
+            </div>
+          </div>
+          <div class="inno-item">
+            <div class="inno-dot"><i class="fa-solid fa-circle-notch"></i></div>
+            <div class="inno-content">
+              <h4>Precision Tube Rolling & Forming</h4>
+              <p>Specialized tube rolling machines for uniform heat exchanger tube expansion, ensuring leak-proof tube-to-tubesheet joints across hundreds of tubes.</p>
+            </div>
+          </div>
+          <div class="inno-item">
+            <div class="inno-dot"><i class="fa-solid fa-star"></i></div>
+            <div class="inno-content">
+              <h4>Mirror Polish & Surface Finishing</h4>
+              <p>Electropolishing, mechanical polishing, and passivation to achieve Ra <= 0.4  um mirror finish on dairy and pharmaceutical contact surfaces.</p>
+            </div>
+          </div>
+          <div class="inno-item">
+            <div class="inno-dot"><i class="fa-solid fa-search"></i></div>
+            <div class="inno-content">
+              <h4>NDT & Quality Inspection</h4>
+              <p>Radiographic testing (RT), ultrasonic testing (UT), dye penetrant (PT), magnetic particle (MT), and hydrostatic pressure testing  -  all in-house.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div style="background:linear-gradient(135deg,var(--blue-900),var(--blue-700));border-radius:24px;padding:40px;color:white;">
+          <h3 style="font-size:1.25rem;font-weight:800;font-family:'Montserrat',sans-serif;margin-bottom:28px;color:white !important;">Manufacturing Capabilities</h3>
+          <div style="display:flex;flex-direction:column;gap:16px;">
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:0.875rem;margin-bottom:6px;"><span style="color:rgba(255,255,255,0.8);">Max Vessel Diameter</span><span style="font-weight:700;color:white;">7,000 mm</span></div>
+              <div style="height:6px;background:rgba(255,255,255,0.1);border-radius:3px;overflow:hidden;"><div style="width:87%;height:100%;background:linear-gradient(to right,var(--blue-400),var(--accent-cyan));border-radius:3px;"></div></div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:0.875rem;margin-bottom:6px;"><span style="color:rgba(255,255,255,0.8);">Max Equipment Length</span><span style="font-weight:700;color:white;">20,000 mm</span></div>
+              <div style="height:6px;background:rgba(255,255,255,0.1);border-radius:3px;overflow:hidden;"><div style="width:75%;height:100%;background:linear-gradient(to right,var(--blue-400),var(--accent-cyan));border-radius:3px;"></div></div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:0.875rem;margin-bottom:6px;"><span style="color:rgba(255,255,255,0.8);">Plate Thickness Range</span><span style="font-weight:700;color:white;">2 - 50 mm</span></div>
+              <div style="height:6px;background:rgba(255,255,255,0.1);border-radius:3px;overflow:hidden;"><div style="width:60%;height:100%;background:linear-gradient(to right,var(--blue-400),var(--accent-cyan));border-radius:3px;"></div></div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:0.875rem;margin-bottom:6px;"><span style="color:rgba(255,255,255,0.8);">Pressure Capacity</span><span style="font-weight:700;color:white;">Up to 300 bar</span></div>
+              <div style="height:6px;background:rgba(255,255,255,0.1);border-radius:3px;overflow:hidden;"><div style="width:92%;height:100%;background:linear-gradient(to right,var(--blue-400),var(--accent-cyan));border-radius:3px;"></div></div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:0.875rem;margin-bottom:6px;"><span style="color:rgba(255,255,255,0.8);">Surface Finish (Ra)</span><span style="font-weight:700;color:white;"><= 0.4  um</span></div>
+              <div style="height:6px;background:rgba(255,255,255,0.1);border-radius:3px;overflow:hidden;"><div style="width:98%;height:100%;background:linear-gradient(to right,var(--blue-400),var(--accent-cyan));border-radius:3px;"></div></div>
+            </div>
+          </div>
+
+          <div style="margin-top:28px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.1);">
+            <div style="font-size:0.8125rem;color:rgba(255,255,255,0.6);margin-bottom:12px;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;">Materials We Work With</div>
+            <div style="display:flex;flex-wrap:wrap;gap:8px;">
+              <span style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.85);font-size:0.75rem;font-weight:600;padding:4px 12px;border-radius:20px;">Carbon Steel</span>
+              <span style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.85);font-size:0.75rem;font-weight:600;padding:4px 12px;border-radius:20px;">SS 304</span>
+              <span style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.85);font-size:0.75rem;font-weight:600;padding:4px 12px;border-radius:20px;">SS 316L</span>
+              <span style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.85);font-size:0.75rem;font-weight:600;padding:4px 12px;border-radius:20px;">Duplex SS</span>
+              <span style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.85);font-size:0.75rem;font-weight:600;padding:4px 12px;border-radius:20px;">Titanium</span>
+              <span style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.85);font-size:0.75rem;font-weight:600;padding:4px 12px;border-radius:20px;">Hastelloy</span>
+              <span style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.85);font-size:0.75rem;font-weight:600;padding:4px 12px;border-radius:20px;">Copper Alloy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AUTOMATION & IoT -->
+<section class="section" style="background:linear-gradient(135deg,var(--blue-900),var(--blue-700));position:relative;overflow:hidden;">
+  <div style="position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80') center/cover;opacity:0.06;"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header" data-aos="fade-up" style="margin-bottom:48px;">
+      <div class="section-label" style="background:rgba(59,130,246,0.2);border-color:rgba(59,130,246,0.3);color:var(--blue-200);justify-content:center;"><i class="fa-solid fa-robot"></i> Automation & IoT</div>
+      <h2 style="font-size:clamp(1.75rem,3vw,2.5rem);font-weight:800;color:white;margin-bottom:16px;">Smart Industrial <span style="background:linear-gradient(135deg,var(--blue-300),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Automation Systems</span></h2>
+      <p style="font-size:1.0625rem;color:rgba(255,255,255,0.7);max-width:680px;margin:0 auto;line-height:1.75;">We integrate PLC/SCADA automation and IoT-enabled monitoring platforms into all our plant solutions  -  enabling real-time control, data-driven decisions, and remote plant management.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;" data-aos="fade-up">
+      <div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+          <div class="glass" style="padding:24px;">
+            <div class="auto-glass-icon"><i class="fa-solid fa-sliders"></i></div>
+            <div style="font-size:0.9375rem;font-weight:700;color:white;font-family:'Montserrat',sans-serif;margin-bottom:8px;">PLC Control Panels</div>
+            <div style="font-size:0.8125rem;color:rgba(255,255,255,0.6);line-height:1.6;text-align:justify;">Siemens, Allen-Bradley, Mitsubishi PLC programming for precise process automation and safety interlocks.</div>
+          </div>
+          <div class="glass" style="padding:24px;margin-top:24px;">
+            <div class="auto-glass-icon"><i class="fa-solid fa-desktop"></i></div>
+            <div style="font-size:0.9375rem;font-weight:700;color:white;font-family:'Montserrat',sans-serif;margin-bottom:8px;">SCADA HMI</div>
+            <div style="font-size:0.8125rem;color:rgba(255,255,255,0.6);line-height:1.6;text-align:justify;">Custom SCADA interfaces with real-time process monitoring, alarm management, and recipe control.</div>
+          </div>
+          <div class="glass" style="padding:24px;">
+            <div class="auto-glass-icon"><i class="fa-solid fa-satellite-dish"></i></div>
+            <div style="font-size:0.9375rem;font-weight:700;color:white;font-family:'Montserrat',sans-serif;margin-bottom:8px;">IoT Remote Access</div>
+            <div style="font-size:0.8125rem;color:rgba(255,255,255,0.6);line-height:1.6;text-align:justify;">Cloud-based plant monitoring with mobile alerts, remote diagnostics, and predictive maintenance analytics.</div>
+          </div>
+          <div class="glass" style="padding:24px;margin-top:24px;">
+            <div class="auto-glass-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <div style="font-size:0.9375rem;font-weight:700;color:white;font-family:'Montserrat',sans-serif;margin-bottom:8px;">Data Analytics</div>
+            <div style="font-size:0.8125rem;color:rgba(255,255,255,0.6);line-height:1.6;text-align:justify;">Production reports, batch records, energy consumption tracking, and OEE (Overall Equipment Effectiveness) dashboards.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- IoT Dashboard Mockup -->
+      <div>
+        <div class="iot-card">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;">
+            <div>
+              <div style="font-size:1rem;font-weight:700;color:white;font-family:'Montserrat',sans-serif;">Plant Control Center</div>
+              <div style="font-size:0.75rem;color:rgba(255,255,255,0.5);margin-top:2px;">SCADA Live Monitor</div>
+            </div>
+            <div style="display:flex;align-items:center;gap:6px;background:rgba(16,185,129,0.15);border:1px solid rgba(16,185,129,0.3);border-radius:20px;padding:6px 12px;">
+              <span style="width:7px;height:7px;background:#10B981;border-radius:50%;display:inline-block;animation:pulse-dot 2s infinite;"></span>
+              <span style="font-size:0.75rem;color:#34D399;font-weight:600;">SYSTEMS ONLINE</span>
+            </div>
+          </div>
+
+          <div class="iot-metric">
+            <div class="iot-metric-icon" style="background:rgba(11,94,215,0.2);color:var(--blue-300);"><i class="fa-solid fa-thermometer-half"></i></div>
+            <div style="flex:1;">
+              <div class="iot-metric-label">Evaporator Temperature</div>
+              <div class="iot-metric-val">72.4  deg C <span style="font-size:0.75rem;color:#10B981;">[UP] Optimal</span></div>
+              <div class="iot-bar"><div class="iot-bar-fill" style="width:72%;background:linear-gradient(to right,var(--blue-500),var(--accent-cyan));"></div></div>
+            </div>
+          </div>
+
+          <div class="iot-metric">
+            <div class="iot-metric-icon" style="background:rgba(6,182,212,0.2);color:#67E8F9;"><i class="fa-solid fa-gauge-high"></i></div>
+            <div style="flex:1;">
+              <div class="iot-metric-label">Steam Pressure</div>
+              <div class="iot-metric-val">3.2 bar <span style="font-size:0.75rem;color:#10B981;">[OK] Stable</span></div>
+              <div class="iot-bar"><div class="iot-bar-fill" style="width:64%;background:linear-gradient(to right,#06B6D4,#67E8F9);"></div></div>
+            </div>
+          </div>
+
+          <div class="iot-metric">
+            <div class="iot-metric-icon" style="background:rgba(217,119,6,0.2);color:#FCD34D;"><i class="fa-solid fa-bolt"></i></div>
+            <div style="flex:1;">
+              <div class="iot-metric-label">Energy Efficiency</div>
+              <div class="iot-metric-val">94.7% <span style="font-size:0.75rem;color:#10B981;">[UP] +2.1%</span></div>
+              <div class="iot-bar"><div class="iot-bar-fill" style="width:95%;background:linear-gradient(to right,#D97706,#FCD34D);"></div></div>
+            </div>
+          </div>
+
+          <div class="iot-metric">
+            <div class="iot-metric-icon" style="background:rgba(16,185,129,0.2);color:#34D399;"><i class="fa-solid fa-droplet"></i></div>
+            <div style="flex:1;">
+              <div class="iot-metric-label">Flow Rate</div>
+              <div class="iot-metric-val">12,400 L/hr <span style="font-size:0.75rem;color:#10B981;">[OK] Target</span></div>
+              <div class="iot-bar"><div class="iot-bar-fill" style="width:82%;background:linear-gradient(to right,#10B981,#34D399);"></div></div>
+            </div>
+          </div>
+
+          <div style="margin-top:16px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;">
+            <div style="text-align:center;background:rgba(255,255,255,0.05);border-radius:10px;padding:12px;border:1px solid rgba(255,255,255,0.08);">
+              <div style="font-size:1.125rem;font-weight:800;color:white;font-family:'Montserrat',sans-serif;">97%</div>
+              <div style="font-size:0.7rem;color:rgba(255,255,255,0.5);">Uptime</div>
+            </div>
+            <div style="text-align:center;background:rgba(255,255,255,0.05);border-radius:10px;padding:12px;border:1px solid rgba(255,255,255,0.08);">
+              <div style="font-size:1.125rem;font-weight:800;color:white;font-family:'Montserrat',sans-serif;">4.8t</div>
+              <div style="font-size:0.7rem;color:rgba(255,255,255,0.5);">Steam/hr</div>
+            </div>
+            <div style="text-align:center;background:rgba(255,255,255,0.05);border-radius:10px;padding:12px;border:1px solid rgba(255,255,255,0.08);">
+              <div style="font-size:1.125rem;font-weight:800;color:white;font-family:'Montserrat',sans-serif;">48 deg DS</div>
+              <div style="font-size:0.7rem;color:rgba(255,255,255,0.5);">Concentration</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FABRICATION STEPS -->
+<section class="section bg-white">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-label"><i class="fa-solid fa-list-ol"></i> Quality Process</div>
+      <h2 class="section-title">Our <span>Fabrication Process</span></h2>
+      <p class="section-desc">A structured, quality-driven fabrication process ensures every piece of equipment meets specification before it leaves our workshop.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;" data-aos="fade-up" data-aos-delay="100">
+      <div class="fab-step">
+        <div class="fab-icon"><i class="fa-solid fa-file-lines"></i></div>
+        <div class="fab-title">1. Material Procurement</div>
+        <div class="fab-desc">Raw materials procured from approved vendors with full material test reports (MTR), heat numbers, and certifications.</div>
+      </div>
+      <div class="fab-step">
+        <div class="fab-icon"><i class="fa-solid fa-cut"></i></div>
+        <div class="fab-title">2. Cutting & Forming</div>
+        <div class="fab-desc">CNC plasma/laser cutting, plate rolling, bending, and forming to precise dimensions per approved drawings.</div>
+      </div>
+      <div class="fab-step">
+        <div class="fab-icon"><i class="fa-solid fa-fire-flame-simple"></i></div>
+        <div class="fab-title">3. Welding & Joining</div>
+        <div class="fab-desc">Certified welders perform TIG/MIG/SAW welding with pre-weld and post-weld heat treatment (PWHT) where required.</div>
+      </div>
+      <div class="fab-step">
+        <div class="fab-icon"><i class="fa-solid fa-search"></i></div>
+        <div class="fab-title">4. NDE / NDT Testing</div>
+        <div class="fab-desc">Radiographic (RT), ultrasonic (UT), dye penetrant (PT), and magnetic particle (MT) inspection of critical welds.</div>
+      </div>
+      <div class="fab-step">
+        <div class="fab-icon"><i class="fa-solid fa-star"></i></div>
+        <div class="fab-title">5. Surface Treatment</div>
+        <div class="fab-desc">Mechanical polishing, electropolishing, passivation, sand/shot blasting, and painting as per specification.</div>
+      </div>
+      <div class="fab-step">
+        <div class="fab-icon"><i class="fa-solid fa-droplet"></i></div>
+        <div class="fab-title">6. Hydrostatic Testing</div>
+        <div class="fab-desc">Hydrostatic pressure test at 1.5x design pressure to verify structural integrity and absence of leaks.</div>
+      </div>
+      <div class="fab-step">
+        <div class="fab-icon"><i class="fa-solid fa-clipboard-check"></i></div>
+        <div class="fab-title">7. Final Inspection</div>
+        <div class="fab-desc">Dimensional inspection, completeness check, and final quality sign-off  -  with option for third-party/client inspection.</div>
+      </div>
+      <div class="fab-step">
+        <div class="fab-icon"><i class="fa-solid fa-truck"></i></div>
+        <div class="fab-title">8. Dispatch & Delivery</div>
+        <div class="fab-desc">Proper preservation, packing, marking, and secure transportation with all documentation and QA records.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECH STATS -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item" data-aos="fade-up">
+        <div class="stat-number"><span data-target="4" data-suffix="">0</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat-label">Engineering Software Platforms</div>
+      </div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="stat-number"><span data-target="99" data-suffix="%">0</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat-label">Drawing Accuracy Rate</div>
+      </div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+        <div class="stat-number"><span data-target="100" data-suffix="%">0</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat-label">Quality Inspection Coverage</div>
+      </div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+        <div class="stat-number"><span data-target="24" data-suffix="/7">0</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat-label">IoT Plant Monitoring</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div style="text-align:center;max-width:720px;margin:0 auto;" data-aos="fade-up">
+      <h2 style="font-size:clamp(1.75rem,3vw,2.75rem);font-weight:900;color:white;margin-bottom:20px;">Experience <span style="background:linear-gradient(135deg,var(--blue-300),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Technology-Led Engineering</span></h2>
+      <p style="font-size:1.0625rem;color:rgba(255,255,255,0.7);line-height:1.75;margin-bottom:40px;">See how our technology-driven engineering approach can optimize your industrial processes, reduce costs, and improve plant performance.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="contact.html" class="btn btn-white btn-lg"><i class="fa-solid fa-paper-plane"></i> Request a Demo</a>
+        <a href="products.html" class="btn btn-ghost btn-lg"><i class="fa-solid fa-boxes-stacked"></i> View Products</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand"><a href="index.html" class="navbar-logo footer-logo"><img src="images/gausin-logo.png" alt="" class="logo-img" width="110" height="52" aria-hidden="true"><div class="logo-text"><div class="logo-name">Gausin International</div><div class="logo-tagline">Engineers Pvt. Ltd.</div></div></a><p class="footer-brand-desc">Engineering process excellence through advanced evaporation, drying, and industrial plant solutions for dairy, pharma, chemical and food industries.</p><div class="footer-social"><a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="https://x.com/Gausin_117" class="social-link" aria-label="X" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a><a href="https://www.instagram.com/gaurav67165/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a><a href="https://www.youtube.com/@GausinInternationalEngineersPv" class="social-link" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a><a href="https://www.facebook.com/profile.php?id=61590538293790" class="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a></div></div>
+      <div><div class="footer-title">Products</div><div class="footer-links"><a href="products.html#evaporators" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Evaporators</a><a href="products.html#dryers" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Dryers</a><a href="products.html#cip" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>CIP Systems</a><a href="products.html#milk-processing" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Milk Processing</a><a href="products.html#heat-exchangers" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Heat Exchangers</a><a href="product-etp-stp-treatment-plants.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>ETP/STP Treatment Plants</a><a href="product-biomass-solid-waste-treatment-plant.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Biomass Solid Waste Treatment Plant</a></div></div>
+      <div><div class="footer-title">Company</div><div class="footer-links"><a href="about.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>About Us</a><a href="services.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Services</a><a href="industries.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Industries</a><a href="technology.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Technology</a><a href="contact.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Contact</a></div></div>
+      <div><div class="footer-title">Contact Us</div><div class="footer-contact-item"><div class="footer-contact-icon"><i class="fa-solid fa-location-dot"></i></div><div class="footer-contact-text">DH-249, Pallavpuram Phase-1, Roorkee Road, Meerut, UP  -  250110</div></div><div class="footer-contact-item"><div class="footer-contact-icon"><i class="fa-solid fa-phone"></i></div><div class="footer-contact-text"><a href="tel:+919870840779" style="color:inherit;">+91 98708 40779</a></div></div><div class="footer-contact-item"><div class="footer-contact-icon"><i class="fa-solid fa-envelope"></i></div><div class="footer-contact-text"><a href="mailto:info@gausin.in" style="color:inherit;">info@gausin.in</a></div></div></div>
+    </div>
+    <div class="footer-bottom"><div class="footer-bottom-left"><div>(c) 2024 Gausin International Engineers Pvt. Ltd. All rights reserved.</div><div class="footer-credit">Designed &amp; Developed by Gausin International Engineers Pvt. Ltd.</div></div><div class="footer-bottom-links"><a href="privacy-policy.html" class="footer-bottom-link">Privacy Policy</a><a href="terms-of-service.html" class="footer-bottom-link">Terms of Service</a></div></div>
+  </div>
+</footer>
+
+<button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<script src="js/config.js"></script>
+<script src="js/main.js" defer></script>
+<script src="js/components.js" defer></script>
+</body>
+</html>
+
+

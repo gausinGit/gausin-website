@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 80" role="img" aria-label="Jain Irrigation">
+  <rect width="220" height="80" rx="10" fill="#ffffff"/>
+  <circle cx="32" cy="40" r="22" fill="#00A651"/>
+  <path d="M32 24 C38 32 38 48 32 56 C26 48 26 32 32 24Z" fill="#7BC143"/>
+  <text x="62" y="44" fill="#00A651" font-family="Arial,sans-serif" font-size="28" font-weight="800">JAIN</text>
+  <text x="62" y="62" fill="#333333" font-family="Arial,sans-serif" font-size="11" font-weight="600">IRRIGATION</text>
+</svg>

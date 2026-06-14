@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 80" role="img" aria-label="Shree Renuka Sugars">
+  <rect width="260" height="80" rx="10" fill="#ffffff"/>
+  <circle cx="30" cy="40" r="20" fill="#00A651"/>
+  <path d="M30 28 L34 36 L42 36 L36 42 L38 50 L30 46 L22 50 L24 42 L18 36 L26 36 Z" fill="#F7941D"/>
+  <text x="58" y="38" fill="#C8102E" font-family="Arial,sans-serif" font-size="17" font-weight="700">Shree Renuka</text>
+  <text x="58" y="58" fill="#00A651" font-family="Arial,sans-serif" font-size="15" font-weight="700">SUGARS</text>
+</svg>

@@ -1,0 +1,1004 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gausin International Engineers Pvt. Ltd. — Corporate Profile 2025–26</title>
+
+<style>
+/* ─── RESET ─────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body {
+  font-family: "Inter", Arial, sans-serif;
+  background: #3b4657;
+  color: #0d1b2e;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+@page { size: A4; margin: 0; }
+h1, h2, h3, h4 {
+  font-family: "Playfair Display", Georgia, serif;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+p { line-height: 1.65; margin: 0; }
+
+/* ─── PAGE SHELL ─────────────────────────────────────────────────── */
+.page {
+  width: 210mm;
+  height: 297mm;
+  margin: 5mm auto;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+  break-inside: avoid;
+  page-break-after: always;
+}
+.page:last-child { page-break-after: auto; }
+
+/* ─── RUNNING FOOTER ─────────────────────────────────────────────── */
+.foot {
+  position: absolute;
+  left: 16mm; right: 16mm; bottom: 8mm;
+  border-top: 0.5pt solid #ccd8e8;
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 6.7pt;
+  color: #7a8fa6;
+  letter-spacing: 0.02em;
+}
+.foot strong { color: #1546a0; font-weight: 600; }
+
+/* ─── SHARED TYPOGRAPHY ──────────────────────────────────────────── */
+.eyebrow {
+  font-size: 7pt;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #1546a0;
+  display: block;
+}
+.pg-h {
+  font-size: 24pt;
+  line-height: 1.08;
+  color: #0d1b2e;
+  margin: 6px 0 9px;
+}
+.pg-h span { color: #1546a0; }
+.pg-h em   { font-style: italic; color: #c9922a; }
+.rule {
+  width: 40mm; height: 1.5pt;
+  background: linear-gradient(90deg, #1546a0, #5b8ee0);
+  margin-bottom: 14px;
+}
+.body {
+  font-size: 9pt;
+  color: #3a4a5c;
+  line-height: 1.65;
+  text-align: justify;
+}
+
+/* ─── COVER ──────────────────────────────────────────────────────── */
+.cover {
+  background: #071e3d;
+  height: 297mm;
+  display: flex;
+}
+
+/* left panel */
+.cv-l {
+  flex: 0 0 116mm;
+  padding: 18mm 14mm 16mm 18mm;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+/* gold vertical accent */
+.cv-l::after {
+  content: "";
+  position: absolute;
+  top: 22mm; bottom: 22mm; right: 0;
+  width: 0.6mm;
+  background: linear-gradient(180deg, transparent, #c9922a 25%, #c9922a 75%, transparent);
+}
+
+/* right image panel */
+.cv-r {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.cv-r img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0.5;
+}
+.cv-r::before {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(95deg, #071e3d 0%, rgba(7,30,61,0.5) 45%, transparent 100%);
+  z-index: 1;
+}
+
+.cv-logo {
+  width: 90px; height: auto;
+  background: rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 10px;
+  display: block;
+}
+.cv-brand {
+  margin-top: 9px;
+  font-size: 14pt;
+  font-weight: 600;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.3;
+}
+.cv-main { margin-top: 36mm; }
+.cv-eyebrow {
+  font-size: 9.5pt; font-weight: 700;
+  letter-spacing: 0.22em; text-transform: uppercase;
+  color: rgba(160,200,255,0.85);
+  margin-bottom: 10px;
+  display: block;
+}
+.cv-h1 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 38pt;
+  line-height: 0.97;
+  color: #ffffff;
+  letter-spacing: -0.03em;
+}
+.cv-h1 em { display: block; font-style: italic; color: #7bbfff; }
+.cv-sub {
+  margin-top: 14px;
+  font-size: 8.8pt;
+  color: rgba(255,255,255,0.68);
+  line-height: 1.65;
+}
+.cv-dividers {
+  margin-top: 18px;
+  padding-top: 13px;
+  border-top: 0.5pt solid rgba(255,255,255,0.18);
+  font-size: 7.5pt;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.95;
+  letter-spacing: 0.04em;
+}
+.cv-dividers b { color: rgba(255,255,255,0.78); font-weight: 500; }
+.cv-stats {
+  margin-top: 22px;
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+}
+.cv-stat b {
+  display: block;
+  font-family: "Playfair Display", serif;
+  font-size: 20pt; color: white;
+}
+.cv-stat span {
+  display: block; margin-top: 1px;
+  font-size: 6.6pt; text-transform: uppercase;
+  letter-spacing: 0.12em; color: rgba(255,255,255,0.45);
+}
+.cv-footer {
+  margin-top: auto;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.cv-label {
+  border: 0.5pt solid rgba(255,255,255,0.28);
+  padding: 5px 11px; border-radius: 99px;
+  font-size: 6.8pt; letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+}
+
+/* ─── LAYOUT HELPERS ─────────────────────────────────────────────── */
+.two-col { display: grid; grid-template-columns: 1fr 0.85fr; gap: 12mm; align-items: start; }
+.two-col-eq { display: grid; grid-template-columns: 1fr 1fr; gap: 10mm; align-items: start; }
+.three-col { display: grid; grid-template-columns: repeat(3,1fr); gap: 7mm; }
+.four-col  { display: grid; grid-template-columns: repeat(4,1fr); gap: 5mm; }
+
+/* ─── IMAGE BOX ──────────────────────────────────────────────────── */
+.imgb {
+  overflow: hidden; position: relative;
+  border-radius: 2mm;
+}
+.imgb img { width: 100%; display: block; object-fit: cover; }
+.imgb::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 45%, rgba(7,30,61,0.75));
+}
+.imgb .icap {
+  position: absolute; left: 11px; right: 11px; bottom: 10px;
+  color: rgba(255,255,255,0.82); font-size: 7.2pt;
+  letter-spacing: 0.08em; text-transform: uppercase; z-index: 1;
+}
+
+/* ─── STAT BAND ──────────────────────────────────────────────────── */
+.stat-band {
+  display: grid; grid-template-columns: repeat(4,1fr);
+  border: 0.5pt solid #ccd8e8; margin-top: 10mm;
+}
+.stat-cell {
+  padding: 11px 8px; text-align: center;
+  border-right: 0.5pt solid #ccd8e8;
+}
+.stat-cell:last-child { border-right: none; }
+.stat-cell b {
+  display: block;
+  font-family: "Playfair Display", serif;
+  font-size: 18pt; color: #1546a0;
+}
+.stat-cell span {
+  display: block; margin-top: 3px;
+  font-size: 6.7pt; color: #5a6e82;
+  text-transform: uppercase; letter-spacing: 0.1em;
+}
+
+/* ─── NAVY HIGHLIGHT BOX ─────────────────────────────────────────── */
+.nbox {
+  background: #071e3d; color: white;
+  padding: 8mm 10mm 8mm 14mm;
+  margin-top: 9mm; position: relative;
+}
+.nbox::before {
+  content: ""; position: absolute; top: 0; left: 0;
+  width: 4mm; height: 100%; background: #c9922a;
+}
+.nbox h3 { font-size: 13pt; margin-bottom: 6px; color: white; }
+.nbox p  { font-size: 8.6pt; color: rgba(255,255,255,0.75); text-align: justify; }
+
+/* ─── ADDRESS / INFO BOX ─────────────────────────────────────────── */
+.info-box {
+  border: 0.5pt solid #ccd8e8;
+  background: #f4f7fb;
+  padding: 10px 12px;
+}
+.info-box .ib-label {
+  font-size: 6.8pt; font-weight: 700;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: #1546a0; margin-bottom: 7px; display: block;
+}
+.info-box p { font-size: 8.4pt; color: #3a4a5c; line-height: 1.65; }
+
+/* ─── CAPABILITIES GRID ──────────────────────────────────────────── */
+.cap-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8mm 10mm; margin-top: 11mm; }
+.cap-item { border-top: 2pt solid #1546a0; padding-top: 9px; }
+.cap-item b { display: block; font-size: 9.6pt; color: #0d1b2e; margin-bottom: 5px; }
+.cap-item p { font-size: 8.2pt; color: #3a4a5c; text-align: justify; }
+
+/* ─── CATEGORY BLOCK ─────────────────────────────────────────────── */
+.cat-block { border: 0.5pt solid #ccd8e8; background: #f4f7fb; }
+.cat-block h4 {
+  font-family: "Inter", sans-serif;
+  font-size: 7pt; font-weight: 700;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: #1546a0;
+  padding: 7px 10px 6px;
+  border-bottom: 0.5pt solid #ccd8e8;
+  background: #eaf0fb;
+}
+.cat-block ul { list-style: none; padding: 4px 0; }
+.cat-block li {
+  display: flex; align-items: baseline; gap: 7px;
+  padding: 3.5px 10px;
+  font-size: 8.3pt; color: #3a4a5c;
+  border-bottom: 0.5pt solid #e4eaf2;
+}
+.cat-block li:last-child { border-bottom: none; }
+.cat-block li::before { content: "–"; color: #1546a0; font-size: 7pt; flex-shrink: 0; }
+
+/* ─── SPEC STRIP ─────────────────────────────────────────────────── */
+.spec-strip {
+  display: grid; grid-template-columns: repeat(3,1fr);
+  gap: 5mm; margin-top: 8mm;
+}
+.spec-cell {
+  border: 0.5pt solid #ccd8e8;
+  background: #f4f7fb; padding: 9px 11px;
+}
+.spec-cell .sc-label {
+  font-size: 6.8pt; font-weight: 700; letter-spacing: 0.16em;
+  text-transform: uppercase; color: #1546a0; margin-bottom: 5px; display: block;
+}
+.spec-cell p { font-size: 8pt; color: #3a4a5c; line-height: 1.55; }
+
+/* ─── PROCESS STEPS ──────────────────────────────────────────────── */
+.steps {
+  display: grid; grid-template-columns: repeat(4,1fr);
+  border: 0.5pt solid #ccd8e8; margin-top: 11mm;
+}
+.step {
+  padding: 13px 11px;
+  border-right: 0.5pt solid #ccd8e8;
+  min-height: 52mm;
+}
+.step:last-child { border-right: none; }
+.step .sn {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 22px; height: 22px; border-radius: 50%;
+  background: #1546a0; color: white;
+  font-size: 8.5pt; font-weight: 700; margin-bottom: 9px;
+}
+.step b {
+  display: block; font-family: "Playfair Display", serif;
+  font-size: 11pt; color: #0d1b2e; margin-bottom: 6px;
+}
+.step p { font-size: 8pt; color: #3a4a5c; text-align: justify; }
+
+/* ─── INDUSTRY GRID ──────────────────────────────────────────────── */
+.ind-grid {
+  display: grid; grid-template-columns: repeat(4,1fr);
+  gap: 4.5mm; margin-top: 11mm;
+}
+.ind-cell {
+  border: 0.5pt solid #ccd8e8;
+  background: #f4f7fb; padding: 10px 9px; min-height: 28mm;
+}
+.ind-cell b { display: block; font-size: 9pt; color: #0d1b2e; margin-bottom: 4px; }
+.ind-cell span { font-size: 7.7pt; color: #3a4a5c; line-height: 1.45; }
+
+/* ─── CLIENT STRIP ───────────────────────────────────────────────── */
+.client-strip {
+  border: 0.5pt solid #ccd8e8;
+  background: #f4f7fb;
+  padding: 9px 12px; margin-top: 9mm;
+}
+.client-strip .cl-label {
+  font-size: 6.8pt; font-weight: 700;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: #1546a0; margin-bottom: 7px; display: block;
+}
+.client-names {
+  display: flex; flex-wrap: wrap; gap: 4px 6px;
+}
+.client-names span {
+  font-size: 8pt; color: #3a4a5c;
+  background: white;
+  border: 0.5pt solid #ccd8e8;
+  padding: 3px 10px;
+}
+
+/* ─── BACK COVER ─────────────────────────────────────────────────── */
+.back {
+  background: #071e3d;
+  height: 297mm;
+  position: relative;
+}
+.back::before {
+  content: "";
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(21,70,160,0.3) 0%, transparent 40%),
+    radial-gradient(circle at 15% 80%, rgba(21,70,160,0.2) 0%, transparent 35%);
+}
+.back .sp {
+  padding: 20mm 20mm 16mm;
+  position: relative; z-index: 1;
+  height: 100%;
+  display: flex; flex-direction: column;
+}
+.bc-hd {
+  font-size: 34pt;
+  line-height: 1.04; color: white;
+  margin-top: 28mm;
+}
+.bc-hd span { color: #7bbfff; }
+.bc-sub {
+  margin-top: 14px; font-size: 9.2pt;
+  color: rgba(255,255,255,0.68);
+  max-width: 128mm; text-align: justify;
+}
+.ct-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 5mm; margin-top: 16mm;
+}
+.ct-cell {
+  border: 0.5pt solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.06);
+  padding: 12px 14px;
+}
+.ct-cell small {
+  display: block; font-size: 6.6pt;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: rgba(255,255,255,0.42); margin-bottom: 5px;
+}
+.ct-cell b {
+  display: block; font-size: 9.8pt;
+  color: white; line-height: 1.5; font-weight: 400;
+}
+.bc-divider {
+  width: 100%; height: 0.5pt;
+  background: rgba(255,255,255,0.15);
+  margin: 13mm 0 10mm;
+}
+.bc-legal {
+  font-size: 7.5pt; color: rgba(255,255,255,0.45); line-height: 1.75;
+}
+.bc-legal strong { color: rgba(255,255,255,0.72); font-weight: 500; }
+.bc-base {
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 0.5pt solid rgba(255,255,255,0.14);
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 7pt; color: rgba(255,255,255,0.4);
+}
+
+/* ─── PRINT ──────────────────────────────────────────────────────── */
+@media print {
+  body { background: white; }
+  .page { margin: 0; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════
+     PAGE 1 — COVER
+═══════════════════════════════════════════════════════════ -->
+<div class="page cover">
+  <div class="cv-l">
+    <img src="images/gausin-logo.png" class="cv-logo" alt="Gausin International Engineers Pvt. Ltd.">
+    <div class="cv-brand">Gausin International<br>Engineers Pvt. Ltd.</div>
+
+    <div class="cv-main">
+      <span class="cv-eyebrow">Industrial Process Engineering</span>
+      <h1 class="cv-h1">Built for<br>Process<br><em>Performance</em></h1>
+      <p class="cv-sub">
+        Custom-engineered evaporation, drying, dairy processing, heat transfer
+        and waste treatment systems for industrial manufacturers.
+      </p>
+      <div class="cv-dividers">
+        <b>Dairy &amp; Food</b> &nbsp;·&nbsp; <b>Pharmaceutical</b> &nbsp;·&nbsp; <b>Chemical</b><br>
+        <b>Distillery</b> &nbsp;·&nbsp; <b>Paper &amp; Pulp</b> &nbsp;·&nbsp; <b>Textile</b><br>
+        <b>Waste Treatment</b> &nbsp;·&nbsp; <b>Energy &amp; Utilities</b>
+      </div>
+      <div class="cv-stats">
+        <div class="cv-stat"><b>200+</b><span>Clients</span></div>
+        <div class="cv-stat"><b>100+</b><span>Projects</span></div>
+        <div class="cv-stat"><b>10+</b><span>Years</span></div>
+      </div>
+    </div>
+
+    <div class="cv-footer">
+      <div></div>
+      <div class="cv-label">Corporate Profile 2025–26</div>
+    </div>
+  </div>
+  <div class="cv-r">
+    <img loading="lazy" src="assets/falling-film-evaporator-latest.png" alt="Industrial evaporator">
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     PAGE 2 — COMPANY OVERVIEW
+═══════════════════════════════════════════════════════════ -->
+<div class="page">
+  <div style="padding: 16mm 16mm 20mm;">
+    <span class="eyebrow">Company Overview</span>
+    <h2 class="pg-h">Engineering that moves from <span>concept to plant floor.</span></h2>
+    <div class="rule"></div>
+
+    <div class="two-col">
+      <div>
+        <p class="body">
+          Gausin International Engineers Pvt. Ltd. is an industrial engineering and equipment company
+          headquartered in Meerut, Uttar Pradesh, India. The company designs, fabricates and supplies process
+          equipment and turnkey plant systems to manufacturers across dairy, food, pharmaceutical,
+          chemical, and effluent treatment sectors across India.
+        </p>
+        <p class="body" style="margin-top:9px;">
+          The working approach is process-first and project-focused: understand the process duty in
+          detail, select the right equipment configuration, engineer around actual operating constraints,
+          fabricate under a documented quality plan, and support the client from installation through
+          to long-term operational service.
+        </p>
+        <p class="body" style="margin-top:9px;">
+          This integrated capability — covering process study, engineering, fabrication, automation
+          readiness, site commissioning and after-sales — makes Gausin a single point of accountability
+          for technically demanding projects where multiple engineering disciplines must work together.
+        </p>
+
+        <div class="stat-band">
+          <div class="stat-cell"><b>100+</b><span>Clients</span></div>
+          <div class="stat-cell"><b>50+</b><span>Projects</span></div>
+          <div class="stat-cell"><b>10+</b><span>Years</span></div>
+          <div class="stat-cell"><b>8</b><span>Sectors</span></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="imgb" style="height:80mm;">
+          <img loading="lazy" src="assets/forced-circulation-evaporator-latest.webp" alt="Evaporator system" style="height:80mm;">
+          <div class="icap">Process equipment engineered for continuous industrial duty</div>
+        </div>
+        <div class="info-box" style="margin-top:7mm;">
+          <span class="ib-label">Registered Office</span>
+          <p>DH-249, Pallavpuram Phase-1<br>Roorkee Road, Meerut<br>Uttar Pradesh – 250110, India</p>
+          <p style="margin-top:7px;">
+            <strong style="color:#0d1b2e;">T</strong>&nbsp; +91 98708 40779<br>
+            <strong style="color:#0d1b2e;">E</strong>&nbsp; info@gausin.in<br>
+            <strong style="color:#0d1b2e;">W</strong>&nbsp; www.gausin.in
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="nbox">
+      <h3>Our working commitment</h3>
+      <p>We combine process understanding, fabrication discipline and after-sales accountability to deliver systems that are straightforward to operate, energy-efficient to run and dependable throughout their working life at site.</p>
+    </div>
+  </div>
+  <div class="foot">
+    <span>Gausin International Engineers Pvt. Ltd. &nbsp;|&nbsp; Meerut, Uttar Pradesh, India</span>
+    <span><strong>Company Overview</strong> &nbsp;|&nbsp; 02</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     PAGE 3 — ENGINEERING CAPABILITIES
+═══════════════════════════════════════════════════════════ -->
+<div class="page">
+  <div style="padding: 16mm 16mm 20mm;">
+    <span class="eyebrow">Engineering Capabilities</span>
+    <h2 class="pg-h">A complete capability for <span>process equipment projects.</span></h2>
+    <div class="rule"></div>
+    <p class="body" style="max-width:162mm;">
+      Every plant has its own product characteristics, energy target, layout constraint and maintenance
+      requirement. Our project work is structured around these realities — from the first process
+      discussion through to equipment handover and long-term operational support.
+    </p>
+
+    <div class="cap-grid">
+      <div class="cap-item">
+        <b>Process Study &amp; Equipment Selection</b>
+        <p>Evaluation of feed properties, concentration or drying duty, thermal sensitivity, fouling
+        tendency, utility availability and capacity objective to determine the correct equipment
+        configuration before engineering begins.</p>
+      </div>
+      <div class="cap-item">
+        <b>Thermal &amp; Mechanical Engineering</b>
+        <p>Heat-transfer area sizing, pressure-part design to ASME Section VIII / IS 2825 / IBR,
+        material selection, GA drawing preparation, P&amp;ID development and utility load estimation
+        for each project.</p>
+      </div>
+      <div class="cap-item">
+        <b>Fabrication Under Quality Plan</b>
+        <p>SS 304 / SS 316L equipment fabricated under a documented QAP covering material verification,
+        in-process weld inspection, dimensional checks, surface-finish confirmation, hydrostatic testing
+        and documentation before dispatch.</p>
+      </div>
+      <div class="cap-item">
+        <b>PLC / SCADA Automation Readiness</b>
+        <p>Instrumentation provision, control philosophy, safety interlock design and HMI configuration
+        aligned to production targets, regulatory requirements and operator skill levels at the
+        client's site.</p>
+      </div>
+      <div class="cap-item">
+        <b>Site Installation &amp; Commissioning</b>
+        <p>Installation supervision, utility connection verification, trial runs, performance checks
+        against agreed parameters, operator orientation and formal handover for production service.</p>
+      </div>
+      <div class="cap-item">
+        <b>After-Sales Service</b>
+        <p>Spare parts supply, preventive maintenance schedules, remote troubleshooting support and
+        equipment upgrade recommendations to sustain performance throughout the operational life of
+        each system supplied.</p>
+      </div>
+    </div>
+
+    <div class="imgb" style="margin-top:10mm; height:62mm;">
+      <img loading="lazy" src="assets/shell-tube-heat-exchanger-new.webp" alt="Heat transfer equipment" style="height:62mm;">
+      <div class="icap">From engineering drawings to commissioned plant — single-point responsibility throughout</div>
+    </div>
+  </div>
+  <div class="foot">
+    <span>Gausin International Engineers Pvt. Ltd. &nbsp;|&nbsp; Meerut, Uttar Pradesh, India</span>
+    <span><strong>Capabilities</strong> &nbsp;|&nbsp; 03</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     PAGE 4 — DAIRY & FOOD EQUIPMENT
+═══════════════════════════════════════════════════════════ -->
+<div class="page">
+  <div style="padding: 16mm 16mm 20mm;">
+    <span class="eyebrow">Product Range — Dairy &amp; Food</span>
+    <h2 class="pg-h">Dairy processing plants and <span>food equipment systems.</span></h2>
+    <div class="rule"></div>
+    <p class="body" style="max-width:162mm;">
+      Gausin designs, fabricates and supplies hygienic dairy equipment and complete processing lines
+      built to FSSAI and 3-A Sanitary Standards in SS 304 / SS 316L. From village-level collection
+      points to industrial-scale cooperative dairy plants — single-item supply or full turnkey execution.
+    </p>
+
+    <div class="two-col-eq" style="margin-top:10mm;">
+      <div>
+        <div class="cat-block">
+          <h4>Dairy Processing Plants</h4>
+          <ul>
+            <li>Complete Milk Processing Plant</li>
+            <li>Milk Chilling Plant</li>
+            <li>Milk Pasteurizer (HTST / LTLT)</li>
+            <li>Milk Deodorizer</li>
+            <li>Butter Processing Unit</li>
+            <li>Ghee Making Plant</li>
+          </ul>
+        </div>
+        <div class="cat-block" style="margin-top:5mm;">
+          <h4>Milk Processing Equipment</h4>
+          <ul>
+            <li>Butter Churner</li>
+            <li>Ghee Kettle</li>
+            <li>Khoya Making Machine</li>
+          </ul>
+        </div>
+        <div class="cat-block" style="margin-top:5mm;">
+          <h4>Dairy &amp; Food Plant Equipment</h4>
+          <ul>
+            <li>Milk Can Conveyor</li>
+            <li>Bulk Milk Cooler</li>
+            <li>Crystallization Tank</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="imgb" style="height:78mm;">
+          <img loading="lazy" src="assets/milk-processing-plant.png" alt="Milk processing plant" style="height:78mm;">
+          <div class="icap">Integrated milk processing line from reception to filling</div>
+        </div>
+        <div class="imgb" style="height:44mm; margin-top:5mm;">
+          <img loading="lazy" src="assets/ghee-making-plant.png" alt="Ghee making plant" style="height:44mm;">
+          <div class="icap">Ghee making and clarification plant</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="spec-strip">
+      <div class="spec-cell">
+        <span class="sc-label">Construction Standard</span>
+        <p>SS 304 / SS 316L &nbsp;·&nbsp; 3-A Sanitary Standard &nbsp;·&nbsp; FSSAI Compliant &nbsp;·&nbsp; Mirror-polished product contact surfaces</p>
+      </div>
+      <div class="spec-cell">
+        <span class="sc-label">Automation</span>
+        <p>PLC / SCADA / HMI &nbsp;·&nbsp; Batch &amp; Continuous modes &nbsp;·&nbsp; CIP Integration &nbsp;·&nbsp; Flow diversion valve (FDD)</p>
+      </div>
+      <div class="spec-cell">
+        <span class="sc-label">Capacity Range</span>
+        <p>500 LPH to 1,00,000 LPH &nbsp;·&nbsp; Village collection level to large cooperative dairy scale</p>
+      </div>
+    </div>
+  </div>
+  <div class="foot">
+    <span>Gausin International Engineers Pvt. Ltd. &nbsp;|&nbsp; Meerut, Uttar Pradesh, India</span>
+    <span><strong>Dairy Equipment</strong> &nbsp;|&nbsp; 04</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     PAGE 5 — EVAPORATION, DRYING & PROCESS SYSTEMS
+═══════════════════════════════════════════════════════════ -->
+<div class="page">
+  <div style="padding: 16mm 16mm 20mm;">
+    <span class="eyebrow">Product Range — Process Systems</span>
+    <h2 class="pg-h">Evaporation, drying, heat transfer <span>and ancillary systems.</span></h2>
+    <div class="rule"></div>
+
+    <div class="three-col" style="margin-top:10mm;">
+      <div>
+        <div class="cat-block">
+          <h4>Evaporation Systems</h4>
+          <ul>
+            <li>Falling Film Evaporator</li>
+            <li>Forced Circulation Evaporator</li>
+            <li>Rising Film Evaporator</li>
+            <li>Plate Type Evaporator</li>
+            <li>Batch Vacuum Pan</li>
+            <li>Agitated Thin Film Evaporator</li>
+          </ul>
+        </div>
+        <div class="cat-block" style="margin-top:5mm;">
+          <h4>Heat Exchangers</h4>
+          <ul>
+            <li>Plate Heat Exchanger (PHE)</li>
+            <li>Shell &amp; Tube Heat Exchanger</li>
+          </ul>
+        </div>
+        <div class="cat-block" style="margin-top:5mm;">
+          <h4>CIP &amp; Cleaning</h4>
+          <ul>
+            <li>Automated CIP System</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="cat-block">
+          <h4>Drying Systems</h4>
+          <ul>
+            <li>Spray Dryer (Nozzle / Disc)</li>
+            <li>Spin Flash Dryer</li>
+            <li>Fluidized Bed Dryer (FBD)</li>
+            <li>Closed-Circuit Dryer</li>
+            <li>Drum Dryer</li>
+          </ul>
+        </div>
+        <div class="cat-block" style="margin-top:5mm;">
+          <h4>Pressure Vessels &amp; Storage</h4>
+          <ul>
+            <li>Pressure Vessels (ASME / IBR)</li>
+            <li>SS Storage Silos</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="cat-block">
+          <h4>Waste Management</h4>
+          <ul>
+            <li>ETP / STP Treatment Plant</li>
+            <li>Biogas &amp; CNG Plant</li>
+            <li>Incinerator System</li>
+            <li>Scrubber Systems</li>
+            <li>Biomass Solid Waste Plant</li>
+            <li>WTP / UF-RO / Softener</li>
+          </ul>
+        </div>
+        <div class="imgb" style="height:55mm; margin-top:5mm;">
+          <img loading="lazy" src="assets/etp-stp-treatment-plants.png" alt="ETP/STP treatment" style="height:55mm;">
+          <div class="icap">ETP / STP effluent treatment systems</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="two-col-eq" style="margin-top:8mm; gap:6mm;">
+      <div class="imgb" style="height:55mm;">
+        <img loading="lazy" src="assets/spray-dryer-nozzle-rotary-disc.jpeg" alt="Spray dryer" style="height:55mm;">
+        <div class="icap">Spray drying — nozzle and rotary disc atomisation</div>
+      </div>
+      <div class="imgb" style="height:55mm;">
+        <img loading="lazy" src="assets/plate-heat-exchanger-phe.jpeg" alt="Plate heat exchanger" style="height:55mm;">
+        <div class="icap">Plate heat exchangers for dairy and process duties</div>
+      </div>
+    </div>
+  </div>
+  <div class="foot">
+    <span>Gausin International Engineers Pvt. Ltd. &nbsp;|&nbsp; Meerut, Uttar Pradesh, India</span>
+    <span><strong>Process Systems</strong> &nbsp;|&nbsp; 05</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     PAGE 6 — PROJECT DELIVERY PROCESS
+═══════════════════════════════════════════════════════════ -->
+<div class="page">
+  <div style="padding: 16mm 16mm 20mm;">
+    <span class="eyebrow">Project Execution</span>
+    <h2 class="pg-h">A disciplined path from enquiry to <span>commissioned plant.</span></h2>
+    <div class="rule"></div>
+    <p class="body" style="max-width:162mm;">
+      The project workflow is structured to reduce technical ambiguity, keep engineering decisions
+      visible to the client and ensure the delivered system is fully aligned with the operating
+      duty expected at site — before fabrication begins and throughout commissioning.
+    </p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="sn">1</div>
+        <b>Define</b>
+        <p>Process data, product characteristics, utility availability, site layout, capacity targets
+        and quality requirements captured in detail before any engineering work begins.</p>
+      </div>
+      <div class="step">
+        <div class="sn">2</div>
+        <b>Engineer</b>
+        <p>Equipment sizing, heat-transfer calculations, material selection, GA drawings, P&amp;IDs,
+        control philosophy, utility load estimate and client review before fabrication approval.</p>
+      </div>
+      <div class="step">
+        <div class="sn">3</div>
+        <b>Manufacture</b>
+        <p>Fabrication under QAP: incoming material check, in-process weld inspection, dimensional
+        verification, hydrostatic test and surface-finish confirmation before dispatch.</p>
+      </div>
+      <div class="step">
+        <div class="sn">4</div>
+        <b>Commission</b>
+        <p>Installation support, utility connection verification, trial runs, performance checks
+        against agreed parameters, operator training and formal handover for production use.</p>
+      </div>
+    </div>
+
+    <div class="nbox" style="margin-top:11mm;">
+      <h3>Engineering standards followed</h3>
+      <p>
+        Pressure vessels to ASME Section VIII / IS 2825 / IBR. Heat exchangers to TEMA. Dairy and hygienic
+        equipment to 3-A Sanitary Standards and FSSAI norms. Electrical and instrumentation to IS / IEC
+        standards. Full documentation supplied with every project: GA drawings, P&amp;IDs, material test
+        reports, weld records, hydrostatic test certificates and O&amp;M manuals.
+      </p>
+    </div>
+
+    <div class="spec-strip" style="margin-top:9mm;">
+      <div class="spec-cell">
+        <span class="sc-label">Documentation Supplied</span>
+        <p>GA Drawings &nbsp;·&nbsp; P&amp;IDs &nbsp;·&nbsp; Material Test Reports &nbsp;·&nbsp; Weld Records &nbsp;·&nbsp; Hydro Test Certificates &nbsp;·&nbsp; O&amp;M Manual</p>
+      </div>
+      <div class="spec-cell">
+        <span class="sc-label">Fabrication QAP</span>
+        <p>Incoming material check &nbsp;·&nbsp; In-process weld inspection &nbsp;·&nbsp; Dimensional check &nbsp;·&nbsp; Hydro test &nbsp;·&nbsp; Surface finish report</p>
+      </div>
+      <div class="spec-cell">
+        <span class="sc-label">Site Support</span>
+        <p>Installation supervision &nbsp;·&nbsp; Utility commissioning &nbsp;·&nbsp; Performance verification &nbsp;·&nbsp; Operator training &nbsp;·&nbsp; Production handover</p>
+      </div>
+    </div>
+  </div>
+  <div class="foot">
+    <span>Gausin International Engineers Pvt. Ltd. &nbsp;|&nbsp; Meerut, Uttar Pradesh, India</span>
+    <span><strong>Project Delivery</strong> &nbsp;|&nbsp; 06</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     PAGE 7 — INDUSTRIES & CLIENTS
+═══════════════════════════════════════════════════════════ -->
+<div class="page">
+  <div style="padding: 16mm 16mm 20mm;">
+    <span class="eyebrow">Industries &amp; Clients</span>
+    <h2 class="pg-h">Built for varied products, operating <span>conditions and sectors.</span></h2>
+    <div class="rule"></div>
+
+    <div class="ind-grid">
+      <div class="ind-cell">
+        <b>Dairy</b>
+        <span>Milk processing, evaporation, pasteurization, butter, ghee, storage and CIP systems.</span>
+      </div>
+      <div class="ind-cell">
+        <b>Food Processing</b>
+        <span>Concentration, drying and heat-transfer systems for food ingredients, beverages and confectionery.</span>
+      </div>
+      <div class="ind-cell">
+        <b>Pharmaceutical</b>
+        <span>Hygienic evaporators, drying systems and controlled process packages to GMP requirements.</span>
+      </div>
+      <div class="ind-cell">
+        <b>Chemical</b>
+        <span>Evaporation, heat transfer and pressure vessels for corrosive, scaling and reactive process streams.</span>
+      </div>
+      <div class="ind-cell">
+        <b>Distillery</b>
+        <span>Spent wash evaporation, ZLD process packages and effluent treatment for grain and molasses-based plants.</span>
+      </div>
+      <div class="ind-cell">
+        <b>Paper &amp; Pulp</b>
+        <span>Black liquor evaporation and heat recovery applications for process concentration duties.</span>
+      </div>
+      <div class="ind-cell">
+        <b>Textile</b>
+        <span>Effluent concentration, zero liquid discharge support and salt recovery systems for dye-house waste.</span>
+      </div>
+      <div class="ind-cell">
+        <b>Energy &amp; Utilities</b>
+        <span>Heat exchangers, condensers, pressure vessels and thermal process accessories for utility plants.</span>
+      </div>
+    </div>
+
+    <div class="client-strip">
+      <span class="cl-label">Selected Client References</span>
+      <div class="client-names">
+        <span>GSK</span>
+        <span>Amul</span>
+        <span>Mother Dairy</span>
+        <span>Nestle</span>
+        <span>Patanjali</span>
+        <span>Prabhat Dairy</span>
+        <span>Hatsun Agro</span>
+        <span>Verka</span>
+      </div>
+    </div>
+
+    <div class="two-col" style="margin-top:8mm; grid-template-columns:0.88fr 1fr;">
+      <div class="imgb" style="height:66mm;">
+        <img loading="lazy" src="assets/automated-cip-system.jpeg" alt="Automated CIP system" style="height:66mm;">
+        <div class="icap">Automated CIP and hygienic dairy processing systems</div>
+      </div>
+      <div>
+        <span style="font-size:7pt;font-weight:700;letter-spacing:0.17em;text-transform:uppercase;color:#1546a0;display:block;margin-bottom:8px;">What clients typically require</span>
+        <p class="body">
+          Lower steam consumption, consistent product quality, cleanable equipment, manageable
+          maintenance, reliable automation interfaces and after-sales access to engineers who
+          understand the process.
+        </p>
+        <p class="body" style="margin-top:8px;">
+          These requirements guide the design of every system we supply — from the first process
+          discussion through to long-term operational support after commissioning.
+        </p>
+        <div style="margin-top:10px;padding-top:8px;border-top:0.5pt solid #ccd8e8;">
+          <span style="font-size:6.8pt;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#1546a0;display:block;margin-bottom:4px;">Technical Response</span>
+          <p style="font-size:7.9pt;color:#3a4a5c;">Preliminary sizing and utility estimate within 48 hours of receiving process data.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="foot">
+    <span>Gausin International Engineers Pvt. Ltd. &nbsp;|&nbsp; Meerut, Uttar Pradesh, India</span>
+    <span><strong>Industries</strong> &nbsp;|&nbsp; 07</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     PAGE 8 — BACK COVER / CONTACT
+═══════════════════════════════════════════════════════════ -->
+<div class="page back">
+  <div class="sp">
+    <div style="display:flex;align-items:center;gap:13px;">
+      <img src="images/gausin-logo.png"
+        style="width:80px;height:auto;background:rgba(255,255,255,0.1);border-radius:11px;padding:9px;"
+        alt="Gausin Logo">
+      <div style="font-size:14pt;font-weight:600;color:white;line-height:1.3;">
+        Gausin International<br>Engineers Pvt. Ltd.
+      </div>
+    </div>
+
+    <h2 class="bc-hd">Let us discuss your<br>next <span>process project.</span></h2>
+    <p class="bc-sub">
+      Share your product, capacity, utility and site requirements. Our engineering team will review
+      the process duty and respond with a suitable technical direction for your application.
+    </p>
+
+    <div class="ct-grid">
+      <div class="ct-cell">
+        <small>Registered Office</small>
+        <b>DH-249, Pallavpuram Phase-1, Roorkee Road<br>Meerut, Uttar Pradesh – 250110, India</b>
+      </div>
+      <div class="ct-cell">
+        <small>Technical Enquiries</small>
+        <b>Phone: +91 98708 40779<br>Email: info@gausin.in</b>
+      </div>
+      <div class="ct-cell">
+        <small>Website</small>
+        <b>www.gausin.in</b>
+      </div>
+      <div class="ct-cell">
+        <small>Response Commitment</small>
+        <b>Technical proposal within 48 hours of receiving complete process data</b>
+      </div>
+    </div>
+
+    <div class="bc-divider"></div>
+
+    <div class="bc-legal">
+      <strong>Product Lines:</strong> Evaporation Systems &nbsp;·&nbsp; Drying Systems &nbsp;·&nbsp;
+      Dairy Processing Plants &nbsp;·&nbsp; Milk Processing Equipment &nbsp;·&nbsp;
+      Dairy &amp; Food Plant Equipment &nbsp;·&nbsp; Heat Exchangers &nbsp;·&nbsp;
+      CIP &amp; Cleaning Systems &nbsp;·&nbsp; Pressure Vessels &amp; Storage Tanks &nbsp;·&nbsp;
+      Waste Treatment Systems<br>
+      <br>
+      This document is issued for general information and reference purposes only. Equipment
+      specifications, capacity ranges, material grades and technical details are project-specific
+      and are confirmed in written quotations and drawings. Gausin International Engineers Pvt. Ltd.
+      reserves the right to modify product designs and specifications without prior notice.<br>
+      <br>
+      © Gausin International Engineers Pvt. Ltd. 2025–26. All rights reserved.
+    </div>
+
+    <div class="bc-base">
+      <span>Evaporation &nbsp;·&nbsp; Drying &nbsp;·&nbsp; Dairy Processing &nbsp;·&nbsp; Heat Transfer &nbsp;·&nbsp; Waste Treatment</span>
+      <span>Corporate Profile 2025–26</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

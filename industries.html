@@ -1,0 +1,485 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Industries served by Gausin International Engineers  -  Dairy, Pharmaceutical, Chemical, Food Processing, Distillery, Energy, Paper & Textile.">
+  <title>Industries | Gausin International Engineers Pvt. Ltd.</title>
+  <link rel="stylesheet" href="css/styles.css">
+    
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <style>
+    .ind-hero-card {
+      position: relative; border-radius: 24px; overflow: hidden;
+      min-height: 360px; display: flex; align-items: flex-end;
+      cursor: pointer; transition: transform 0.35s ease; grid-column: span 2;
+    }
+    .ind-hero-card:hover { transform: scale(1.01); }
+    .ind-card {
+      position: relative; border-radius: 20px; overflow: hidden;
+      min-height: 280px; display: flex; align-items: flex-end;
+      cursor: pointer; transition: transform 0.35s ease;
+    }
+    .ind-card:hover { transform: translateY(-4px); }
+    .ind-bg { position: absolute; inset: 0; background-size: cover; background-position: center; transition: transform 0.5s ease; }
+    .ind-card:hover .ind-bg, .ind-hero-card:hover .ind-bg { transform: scale(1.06); }
+    .ind-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,37,64,0.95) 0%, rgba(10,37,64,0.3) 60%, transparent 100%); transition: all 0.3s; }
+    .ind-card:hover .ind-overlay, .ind-hero-card:hover .ind-overlay { background: linear-gradient(to top, rgba(11,94,215,0.9) 0%, rgba(11,94,215,0.4) 60%, rgba(11,94,215,0.1) 100%); }
+    .ind-content { position: relative; z-index: 2; padding: 28px; width: 100%; }
+    .ind-icon { width: 48px; height: 48px; background: rgba(255,255,255,0.15); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.25rem; margin-bottom: 12px; }
+    .ind-name { font-size: 1.375rem; font-weight: 800; color: white; font-family: 'Montserrat',sans-serif; margin-bottom: 6px; }
+    .ind-desc { font-size: 0.875rem; color: rgba(255,255,255,0.75); line-height: 1.55; margin-bottom: 12px; }
+    .ind-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .ind-tag { background: rgba(255,255,255,0.15); backdrop-filter: blur(4px); color: rgba(255,255,255,0.9); font-size: 0.6875rem; font-weight: 600; padding: 4px 10px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.2); }
+
+    /* Detail Section */
+    .ind-detail { background: white; border: 1px solid var(--gray-200); border-radius: 20px; overflow: hidden; margin-bottom: 32px; }
+    .ind-detail-header { background: linear-gradient(135deg,var(--blue-900),var(--blue-700)); padding: 32px 36px; display: flex; align-items: center; gap: 20px; }
+    .ind-detail-icon { width: 60px; height: 60px; background: rgba(255,255,255,0.12); border-radius: 16px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.75rem; }
+    .ind-detail-title { font-size: 1.5rem; font-weight: 800; color: white; font-family: 'Montserrat',sans-serif; }
+    .ind-detail-sub { font-size: 0.9rem; color: rgba(255,255,255,0.7); margin-top: 4px; }
+    .ind-detail-body { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+    .ind-detail-col { padding: 32px 36px; }
+    .ind-detail-col:first-child { border-right: 1px solid var(--gray-100); }
+    .ind-col-title { font-size: 1rem; font-weight: 700; color: var(--gray-900); font-family: 'Montserrat',sans-serif; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .ind-col-title i { color: var(--blue-500); }
+
+    #backToTop { position: fixed; bottom: 28px; right: 28px; width: 48px; height: 48px; background: linear-gradient(135deg, var(--blue-500), var(--blue-700)); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.125rem; box-shadow: var(--shadow-blue-lg); opacity: 0; pointer-events: none; transition: opacity 0.3s ease, transform 0.3s ease; z-index: 500; }
+    #backToTop:hover { transform: translateY(-3px); }
+
+    .more-ind-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--blue-50);
+      border: 1px solid var(--blue-200);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--blue-500);
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+      transition: all 0.3s ease;
+    }
+    .more-ind-card:hover .more-ind-icon {
+      background: var(--blue-500);
+      color: white;
+      transform: scale(1.06);
+    }
+
+    @media(max-width:768px) { .ind-hero-card { grid-column: span 1; min-height: 240px; } .ind-detail-body { grid-template-columns: 1fr; } .ind-detail-col:first-child { border-right: none; border-bottom: 1px solid var(--gray-100); } }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo navbar-logo--image"><img src="images/gausin-logo.png" alt="Gausin International Engineers Pvt. Ltd." class="logo-img" width="220" height="52"></a>
+      <nav class="navbar-nav">
+        <div class="nav-item"><a href="index.html" class="nav-link">Home</a></div>
+        <div class="nav-item"><a href="about.html" class="nav-link">About</a></div>
+        <div class="nav-item"><a href="products.html" class="nav-link">Products <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></a><div class="mega-menu"><div class="mega-menu-grid"><a href="products.html#evaporators" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-droplet"></i></div><div><div class="mega-menu-item-title">Evaporators</div></div></a><a href="products.html#dryers" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-wind"></i></div><div><div class="mega-menu-item-title">Dryers</div></div></a><a href="products.html#heat-exchangers" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-temperature-high"></i></div><div><div class="mega-menu-item-title">Heat Exchangers</div></div></a><a href="products.html#cip" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-recycle"></i></div><div><div class="mega-menu-item-title">CIP Systems</div></div></a><a href="products.html#milk-processing" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-flask"></i></div><div><div class="mega-menu-item-title">Milk Processing</div></div></a><a href="products.html#vessels" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-database"></i></div><div><div class="mega-menu-item-title">Vessels & Tanks</div></div></a></div></div></div>
+        <div class="nav-item"><a href="services.html" class="nav-link">Services</a></div>
+        <div class="nav-item"><a href="industries.html" class="nav-link active">Industries</a></div>
+        <div class="nav-item"><a href="technology.html" class="nav-link">Technology</a></div>
+        <div class="nav-item"><a href="contact.html" class="nav-link">Contact</a></div>
+      </nav>
+      <div class="navbar-cta"><a href="contact.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Get a Quote</a></div>
+      <button class="navbar-toggle" id="navbarToggle"><span class="toggle-bar"></span><span class="toggle-bar"></span><span class="toggle-bar"></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Home</a>
+  <a href="about.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">About</a>
+  <a href="products.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Products</a>
+  <a href="services.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Services</a>
+  <a href="industries.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--blue-500);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Industries</a>
+  <a href="technology.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Technology</a>
+  <a href="contact.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Contact</a>
+  <div style="margin-top:24px;"><a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">Get a Quote</a></div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero page-hero--industries">
+  <div class="container page-hero-content">
+    <div class="page-hero-label"><i class="fa-solid fa-sitemap"></i> Industries</div>
+    <h1 class="page-hero-title">Serving 8 Diverse<br>Industrial Sectors</h1>
+    <p class="page-hero-desc">Our engineering expertise and process solutions span the full spectrum of industrial applications  -  from dairy and pharma to chemical, energy, and beyond.</p>
+    <div class="breadcrumb">
+      <a href="index.html" class="breadcrumb-item">Home</a>
+      <span class="breadcrumb-sep"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;"></i></span>
+      <span class="breadcrumb-item active">Industries</span>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES VISUAL GRID -->
+<section class="section bg-light">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-label"><i class="fa-solid fa-globe"></i> Our Reach</div>
+      <h2 class="section-title">Industries We <span>Engineer For</span></h2>
+      <p class="section-desc">Specialized process solutions for each sector's unique requirements  -  customized engineering, hygienic design, and regulatory compliance.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;" data-aos="fade-up" data-aos-delay="100">
+
+      <!-- Dairy - Featured -->
+      <div class="ind-hero-card">
+        <div class="ind-bg" style="background-image:url('https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=800&q=80');"></div>
+        <div class="ind-overlay"></div>
+        <div class="ind-content">
+          <div class="ind-icon"><i class="fa-solid fa-cow"></i></div>
+          <div class="ind-name">Dairy Industry</div>
+          <div class="ind-desc">Our primary domain  -  complete milk processing plants, evaporators for milk concentration, spray dryers for milk powder, pasteurizers, and full CIP systems for hygienic dairy operations.</div>
+          <div class="ind-tags">
+            <span class="ind-tag">Milk Evaporation</span>
+            <span class="ind-tag">Spray Drying</span>
+            <span class="ind-tag">Pasteurization</span>
+            <span class="ind-tag">CIP Systems</span>
+            <span class="ind-tag">UHT Processing</span>
+            <span class="ind-tag">Milk Collection Centers</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Food Industry -->
+      <div class="ind-card">
+        <div class="ind-bg" style="background-image:url('https://images.unsplash.com/photo-1651525670099-f828fb5478a5?w=600&q=85&auto=format&fit=crop');"></div>
+        <div class="ind-overlay"></div>
+        <div class="ind-content">
+          <div class="ind-icon"><i class="fa-solid fa-utensils"></i></div>
+          <div class="ind-name">Food Industry</div>
+          <div class="ind-desc">Juice concentration evaporators, liquid food spray dryers, Starch derevatives, heat exchangers, CIP systems, and hygienic SS tanks.</div>
+          <div class="ind-tags">
+            <span class="ind-tag">Juice Concentration</span>
+            <span class="ind-tag">Liquid Glucose concentration</span>
+            <span class="ind-tag">Powder Production</span>
+            <span class="ind-tag">Sugar Concentration</span>
+            <span class="ind-tag">Hygienic Design</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pharma -->
+      <div class="ind-card">
+        <div class="ind-bg" style="background-image:url('https://images.unsplash.com/photo-1579154204601-01588f351e67?w=600&q=80');"></div>
+        <div class="ind-overlay"></div>
+        <div class="ind-content">
+          <div class="ind-icon"><i class="fa-solid fa-pills"></i></div>
+          <div class="ind-name">Pharmaceutical</div>
+          <div class="ind-desc">GMP-compliant evaporators, FBDs, spray dryers, and process vessels for API and formulation manufacturing.</div>
+          <div class="ind-tags">
+            <span class="ind-tag">GMP Systems</span>
+            <span class="ind-tag">API Processing</span>
+            <span class="ind-tag">Sterile Design</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chemical -->
+      <div class="ind-card">
+        <div class="ind-bg" style="background-image:url('https://images.unsplash.com/photo-1670689334015-299d6559b3c3?w=600&q=85&auto=format&fit=crop');"></div>
+        <div class="ind-overlay"></div>
+        <div class="ind-content">
+          <div class="ind-icon"><i class="fa-solid fa-flask-vial"></i></div>
+          <div class="ind-name">Chemical Industry</div>
+          <div class="ind-desc">Forced circulation evaporators, crystallizers, reactors, heat exchangers, and pressure vessels for chemical manufacturing.</div>
+          <div class="ind-tags">
+            <span class="ind-tag">Evaporation</span>
+            <span class="ind-tag">Crystallization</span>
+            <span class="ind-tag">Reaction Systems</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Distillery -->
+      <div class="ind-card">
+        <div class="ind-bg" style="background-image:url('https://images.unsplash.com/photo-1643087448435-72f70bd4ce88?w=600&q=85&auto=format&fit=crop');"></div>
+        <div class="ind-overlay"></div>
+        <div class="ind-content">
+          <div class="ind-icon"><i class="fa-solid fa-wine-bottle"></i></div>
+          <div class="ind-name">Distillery</div>
+          <div class="ind-desc">Spent wash / effluent evaporators, alcohol distillation columns, condensers, and stillage concentration systems.</div>
+          <div class="ind-tags">
+            <span class="ind-tag">Spent Wash</span>
+            <span class="ind-tag">DWGS</span>
+            <span class="ind-tag">Effluent Treatment</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Paper & Pulp -->
+      <div class="ind-card">
+        <div class="ind-bg" style="background-image:url('https://images.unsplash.com/photo-1675176788145-928336d4ba14?w=600&q=85&auto=format&fit=crop');"></div>
+        <div class="ind-overlay"></div>
+        <div class="ind-content">
+          <div class="ind-icon"><i class="fa-solid fa-scroll"></i></div>
+          <div class="ind-name">Pulp & Paper</div>
+          <div class="ind-desc">Black liquor evaporators, multiple-effect evaporation systems, and heat recovery units for the pulp & paper industry.</div>
+          <div class="ind-tags">
+            <span class="ind-tag">Black Liquor</span>
+            <span class="ind-tag">Multi-Effect</span>
+            <span class="ind-tag">Kraft Process</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Textile -->
+      <div class="ind-card">
+        <div class="ind-bg" style="background-image:url('https://images.unsplash.com/photo-1758270804188-8ca0b6d254bc?w=600&q=85&auto=format&fit=crop');"></div>
+        <div class="ind-overlay"></div>
+        <div class="ind-content">
+          <div class="ind-icon"><i class="fa-solid fa-shirt"></i></div>
+          <div class="ind-name">Textile Industry</div>
+          <div class="ind-desc">Effluent concentration and treatment evaporators, salt recovery systems, and process heat exchangers for textile manufacturing.</div>
+          <div class="ind-tags">
+            <span class="ind-tag">Effluent ETP</span>
+            <span class="ind-tag">ZLD Systems</span>
+            <span class="ind-tag">Salt Recovery</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Energy -->
+      <div class="ind-card">
+        <div class="ind-bg" style="background-image:url('https://images.unsplash.com/photo-1776173954493-6fcf383d3975?w=600&q=85&auto=format&fit=crop');"></div>
+        <div class="ind-overlay"></div>
+        <div class="ind-content">
+          <div class="ind-icon"><i class="fa-solid fa-bolt-lightning"></i></div>
+          <div class="ind-name">Energy Sector</div>
+          <div class="ind-desc">Power plant auxiliary equipment, cooling water heat exchangers, condensers, deaerators, and process steam systems.</div>
+          <div class="ind-tags">
+            <span class="ind-tag">Heat Recovery</span>
+            <span class="ind-tag">Condensers</span>
+            <span class="ind-tag">Process Steam</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRY DETAIL CARDS -->
+<section class="section bg-white">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-label"><i class="fa-solid fa-magnifying-glass"></i> In Detail</div>
+      <h2 class="section-title">Industry-Specific <span>Engineering Solutions</span></h2>
+    </div>
+
+    <!-- Dairy -->
+    <div class="ind-detail" data-aos="fade-up" id="dairy">
+      <div class="ind-detail-header">
+        <div class="ind-detail-icon"><i class="fa-solid fa-cow"></i></div>
+        <div>
+          <div class="ind-detail-title">Dairy & Milk Processing</div>
+          <div class="ind-detail-sub">Our flagship sector  -  complete end-to-end dairy process solutions</div>
+        </div>
+        <div style="margin-left:auto;background:rgba(255,255,255,0.1);padding:12px 20px;border-radius:12px;text-align:center;"><div style="font-size:1.5rem;font-weight:900;color:white;font-family:'Montserrat',sans-serif;">50+</div><div style="font-size:0.75rem;color:rgba(255,255,255,0.7);">Projects Delivered</div></div>
+      </div>
+      <div class="ind-detail-body">
+        <div class="ind-detail-col">
+          <div class="ind-col-title"><i class="fa-solid fa-boxes-stacked"></i> Products We Supply</div>
+          <div class="check-list">
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div>Falling Film Evaporators (Milk Concentration)</div>
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div>Spray Dryers (Milk Powder, WPC, WPI)</div>
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div>Milk Pasteurizers (HTST / UHT)</div>
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div>Milk Deodorizers</div>
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div>Complete Milk Processing Plants</div>
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div>Milk Collection Centers</div>
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div>Automated CIP Systems</div>
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div>SS Silos & Storage Tanks</div>
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div>Butter Milk, Cream Separators</div>
+          </div>
+        </div>
+        <div class="ind-detail-col">
+          <div class="ind-col-title"><i class="fa-solid fa-star"></i> Key Clients in This Sector</div>
+          <div class="check-list">
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-building"></i></div>Chitale Dairy  -  Complete plant supply</div>
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-building"></i></div>Multiple regional dairy cooperatives</div>
+          </div>
+          <div style="margin-top:24px;padding:20px;background:var(--blue-50);border-radius:12px;border:1px solid var(--blue-200);">
+            <div style="font-size:0.875rem;font-weight:700;color:var(--blue-700);font-family:'Montserrat',sans-serif;margin-bottom:8px;"><i class="fa-solid fa-lightbulb"></i> Dairy Engineering Highlight</div>
+            <div style="font-size:0.875rem;color:var(--gray-700);line-height:1.65;text-align:justify;">Our multi-effect falling film evaporators achieve steam economies of 4 - 6 kg water per kg steam, reducing your energy costs by up to 60% compared to single-effect systems.</div>
+          </div>
+          <div style="margin-top:16px;"><a href="contact.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Get Dairy Industry Quote</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Food Industry -->
+    <div class="ind-detail" data-aos="fade-up" id="food">
+      <div class="ind-detail-header" style="background:linear-gradient(135deg,#0D9488,var(--blue-700));">
+        <div class="ind-detail-icon"><i class="fa-solid fa-utensils"></i></div>
+        <div>
+          <div class="ind-detail-title">Food Industry</div>
+          <div class="ind-detail-sub">Hygienic process equipment for juice, starch, and food ingredient manufacturing</div>
+        </div>
+        <div style="margin-left:auto;background:rgba(255,255,255,0.1);padding:12px 20px;border-radius:12px;text-align:center;"><div style="font-size:1.5rem;font-weight:900;color:white;font-family:'Montserrat',sans-serif;">50+</div><div style="font-size:0.75rem;color:rgba(255,255,255,0.7);">Projects Delivered</div></div>
+      </div>
+      <div class="ind-detail-body">
+        <div class="ind-detail-col">
+          <div class="ind-col-title"><i class="fa-solid fa-boxes-stacked"></i> Products We Supply</div>
+          <div class="check-list">
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div>Falling Film Evaporators (Juice Concentration)</div>
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div>Spray Dryers (Food Powders & Ingredients)</div>
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div>Refined Sugar Evaporator</div>
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div>Plate Type Heat Exchangers</div>
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div>Starch Derivative Processing Systems</div>
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div>Liquid Glucose Concentration Plants</div>
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div>Automated CIP Systems</div>
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div>Hygienic SS Storage Tanks & Silos</div>
+          </div>
+        </div>
+        <div class="ind-detail-col">
+          <div class="ind-col-title"><i class="fa-solid fa-info-circle"></i> Application Notes</div>
+          <div style="font-size:0.9375rem;color:var(--gray-600);line-height:1.75;margin-bottom:20px;text-align:justify;">Food processing demands strict hygienic design, easy cleanability, and consistent product quality. Our evaporators, dryers, and heat exchangers are built with SS 304/316L contact surfaces, sanitary fittings, and CIP integration to meet FSSAI and food-grade standards for juice, starch, glucose, and ingredient manufacturing.</div>
+          <div style="margin-top:16px;"><a href="contact.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Get Food Industry Quote</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pharma -->
+    <div class="ind-detail" data-aos="fade-up" id="pharma">
+      <div class="ind-detail-header" style="background:linear-gradient(135deg,var(--blue-700),var(--blue-500));">
+        <div class="ind-detail-icon"><i class="fa-solid fa-pills"></i></div>
+        <div>
+          <div class="ind-detail-title">Pharmaceutical Industry</div>
+          <div class="ind-detail-sub">GMP-compliant sterile process equipment and systems</div>
+        </div>
+        <div style="margin-left:auto;background:rgba(255,255,255,0.1);padding:12px 20px;border-radius:12px;text-align:center;"><div style="font-size:1.5rem;font-weight:900;color:white;font-family:'Montserrat',sans-serif;">50+</div><div style="font-size:0.75rem;color:rgba(255,255,255,0.7);">Projects Delivered</div></div>
+      </div>
+      <div class="ind-detail-body">
+        <div class="ind-detail-col">
+          <div class="ind-col-title"><i class="fa-solid fa-boxes-stacked"></i> Products We Supply</div>
+          <div class="check-list">
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div>Effluent Evaporators (GMP)</div>
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div>Spray Dryers (API / Extract Powders)</div>
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div>Fluidized Bed Dryers (Granules)</div>
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div>Closed Circuit Dryers (Solvent)</div>
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div>Pressure Vessels (GMP Grade)</div>
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div>Sterile SS Tanks (316L)</div>
+          </div>
+        </div>
+        <div class="ind-detail-col">
+          <div class="ind-col-title"><i class="fa-solid fa-star"></i> Key Clients</div>
+          <div class="check-list">
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-building"></i></div>Nectar Lifesciences Ltd.</div>
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-building"></i></div>Covalent Laboratories Ltd.</div>
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-building"></i></div>Ranbaxy Laboratories</div>
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-building"></i></div>Aurobindo Pharma</div>
+          </div>
+          <div style="margin-top:24px;"><a href="contact.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Get Pharma Industry Quote</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chemical -->
+    <div class="ind-detail" data-aos="fade-up">
+      <div class="ind-detail-header" style="background:linear-gradient(135deg,var(--blue-900),#1D4ED8);">
+        <div class="ind-detail-icon"><i class="fa-solid fa-flask-vial"></i></div>
+        <div>
+          <div class="ind-detail-title">Chemical Industry</div>
+          <div class="ind-detail-sub">Robust process equipment for challenging chemical applications</div>
+        </div>
+        <div style="margin-left:auto;background:rgba(255,255,255,0.1);padding:12px 20px;border-radius:12px;text-align:center;"><div style="font-size:1.5rem;font-weight:900;color:white;font-family:'Montserrat',sans-serif;">50+</div><div style="font-size:0.75rem;color:rgba(255,255,255,0.7);">Projects Delivered</div></div>
+      </div>
+      <div class="ind-detail-body">
+        <div class="ind-detail-col">
+          <div class="ind-col-title"><i class="fa-solid fa-boxes-stacked"></i> Products We Supply</div>
+          <div class="check-list">
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div>Forced Circulation Evaporators</div>
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div>Crystallizer Systems (Draft Tube)</div>
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div>Shell & Tube Heat Exchangers</div>
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div>Pressure Vessels (Alloy / MOC)</div>
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div>Spin Flash Dryers (Pigments, Fillers)</div>
+            <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div>Condenser Systems</div>
+          </div>
+        </div>
+        <div class="ind-detail-col">
+          <div class="ind-col-title"><i class="fa-solid fa-info-circle"></i> Application Notes</div>
+          <div style="font-size:0.9375rem;color:var(--gray-600);line-height:1.75;margin-bottom:20px;text-align:justify;">Chemical evaporation often involves corrosive, scaling, or crystallizing fluids. Our forced circulation evaporators maintain high liquid velocities to prevent fouling, while our material selection covers CS, SS, Hastalloy, Titanium, and rubber-lined options.</div>
+          <a href="contact.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Get Chemical Industry Quote</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Other Industries Brief Cards -->
+    <div style="margin-top:48px;">
+      <h3 style="font-size:1.375rem;font-weight:800;color:var(--gray-900);font-family:'Montserrat',sans-serif;margin-bottom:28px;" data-aos="fade-up">More Industries We Serve</h3>
+      <div class="grid-4" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="more-ind-card" style="background:white;border:1px solid var(--gray-200);border-radius:16px;padding:24px;transition:all 0.3s;" onmouseover="this.style.boxShadow='var(--shadow-lg)';this.style.borderColor='var(--blue-200)'" onmouseout="this.style.boxShadow='';this.style.borderColor='var(--gray-200)'">
+          <div class="more-ind-icon"><i class="fa-solid fa-wine-bottle"></i></div>
+          <div style="font-size:1rem;font-weight:700;color:var(--gray-900);font-family:'Montserrat',sans-serif;margin-bottom:8px;">Distillery</div>
+          <div style="font-size:0.875rem;color:var(--gray-600);line-height:1.65;margin-bottom:16px;text-align:justify;">Spent wash evaporation, DWGS dryers, alcohol recovery, and effluent treatment for breweries and distilleries.</div>
+          <a href="contact.html" class="btn btn-outline btn-sm" style="width:100%;justify-content:center;">Inquire</a>
+        </div>
+
+        <div class="more-ind-card" style="background:white;border:1px solid var(--gray-200);border-radius:16px;padding:24px;transition:all 0.3s;" onmouseover="this.style.boxShadow='var(--shadow-lg)';this.style.borderColor='var(--blue-200)'" onmouseout="this.style.boxShadow='';this.style.borderColor='var(--gray-200)'">
+          <div class="more-ind-icon"><i class="fa-solid fa-bolt-lightning"></i></div>
+          <div style="font-size:1rem;font-weight:700;color:var(--gray-900);font-family:'Montserrat',sans-serif;margin-bottom:8px;">Energy Sector</div>
+          <div style="font-size:0.875rem;color:var(--gray-600);line-height:1.65;margin-bottom:16px;text-align:justify;">Power plant heat exchangers, condensers, deaerators, and feed water heaters for coal, gas, and renewable energy plants.</div>
+          <a href="contact.html" class="btn btn-outline btn-sm" style="width:100%;justify-content:center;">Inquire</a>
+        </div>
+
+        <div class="more-ind-card" style="background:white;border:1px solid var(--gray-200);border-radius:16px;padding:24px;transition:all 0.3s;" onmouseover="this.style.boxShadow='var(--shadow-lg)';this.style.borderColor='var(--blue-200)'" onmouseout="this.style.boxShadow='';this.style.borderColor='var(--gray-200)'">
+          <div class="more-ind-icon"><i class="fa-solid fa-scroll"></i></div>
+          <div style="font-size:1rem;font-weight:700;color:var(--gray-900);font-family:'Montserrat',sans-serif;margin-bottom:8px;">Pulp & Paper</div>
+          <div style="font-size:0.875rem;color:var(--gray-600);line-height:1.65;margin-bottom:16px;text-align:justify;">Black liquor multiple-effect evaporators, soap skimmer, condensate recovery, and heat integration for kraft pulp mills.</div>
+          <a href="contact.html" class="btn btn-outline btn-sm" style="width:100%;justify-content:center;">Inquire</a>
+        </div>
+
+        <div class="more-ind-card" style="background:white;border:1px solid var(--gray-200);border-radius:16px;padding:24px;transition:all 0.3s;" onmouseover="this.style.boxShadow='var(--shadow-lg)';this.style.borderColor='var(--blue-200)'" onmouseout="this.style.boxShadow='';this.style.borderColor='var(--gray-200)'">
+          <div class="more-ind-icon"><i class="fa-solid fa-shirt"></i></div>
+          <div style="font-size:1rem;font-weight:700;color:var(--gray-900);font-family:'Montserrat',sans-serif;margin-bottom:8px;">Textile</div>
+          <div style="font-size:0.875rem;color:var(--gray-600);line-height:1.65;margin-bottom:16px;text-align:justify;">Textile effluent ZLD evaporators, salt recovery crystallizers, and MEE systems for dyeing and printing units.</div>
+          <a href="contact.html" class="btn btn-outline btn-sm" style="width:100%;justify-content:center;">Inquire</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div style="text-align:center;max-width:720px;margin:0 auto;" data-aos="fade-up">
+      <h2 style="font-size:clamp(1.75rem,3vw,2.75rem);font-weight:900;color:white;margin-bottom:20px;">Your Industry, <span style="background:linear-gradient(135deg,var(--blue-300),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Our Expertise</span></h2>
+      <p style="font-size:1.0625rem;color:rgba(255,255,255,0.7);line-height:1.75;margin-bottom:40px;">Regardless of your industry sector, our engineering team has the process knowledge and fabrication capability to deliver the right solution  -  on time, within budget, and to specification.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="contact.html" class="btn btn-white btn-lg"><i class="fa-solid fa-paper-plane"></i> Discuss Your Project</a>
+        <a href="products.html" class="btn btn-ghost btn-lg"><i class="fa-solid fa-boxes-stacked"></i> View Products</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand"><a href="index.html" class="navbar-logo footer-logo"><img src="images/gausin-logo.png" alt="" class="logo-img" width="110" height="52" aria-hidden="true"><div class="logo-text"><div class="logo-name">Gausin International</div><div class="logo-tagline">Engineers Pvt. Ltd.</div></div></a><p class="footer-brand-desc">Engineering process excellence through advanced evaporation, drying, and industrial plant solutions for dairy, pharma, chemical and food industries.</p><div class="footer-social"><a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="https://x.com/Gausin_117" class="social-link" aria-label="X" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a><a href="https://www.instagram.com/gaurav67165/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a><a href="https://www.youtube.com/@GausinInternationalEngineersPv" class="social-link" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a><a href="https://www.facebook.com/profile.php?id=61590538293790" class="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a></div></div>
+      <div><div class="footer-title">Products</div><div class="footer-links"><a href="products.html#evaporators" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Evaporators</a><a href="products.html#dryers" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Dryers</a><a href="products.html#cip" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>CIP Systems</a><a href="products.html#milk-processing" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Milk Processing</a><a href="products.html#heat-exchangers" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Heat Exchangers</a><a href="product-etp-stp-treatment-plants.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>ETP/STP Treatment Plants</a><a href="product-biomass-solid-waste-treatment-plant.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Biomass Solid Waste Treatment Plant</a></div></div>
+      <div><div class="footer-title">Company</div><div class="footer-links"><a href="about.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>About Us</a><a href="services.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Services</a><a href="industries.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Industries</a><a href="technology.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Technology</a><a href="contact.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Contact</a></div></div>
+      <div><div class="footer-title">Contact Us</div><div class="footer-contact-item"><div class="footer-contact-icon"><i class="fa-solid fa-location-dot"></i></div><div class="footer-contact-text">DH-249, Pallavpuram Phase-1, Roorkee Road, Meerut, UP  -  250110</div></div><div class="footer-contact-item"><div class="footer-contact-icon"><i class="fa-solid fa-phone"></i></div><div class="footer-contact-text"><a href="tel:+919870840779" style="color:inherit;">+91 98708 40779</a></div></div><div class="footer-contact-item"><div class="footer-contact-icon"><i class="fa-solid fa-envelope"></i></div><div class="footer-contact-text"><a href="mailto:info@gausin.in" style="color:inherit;">info@gausin.in</a></div></div></div>
+    </div>
+    <div class="footer-bottom"><div class="footer-bottom-left"><div>(c) 2024 Gausin International Engineers Pvt. Ltd. All rights reserved.</div><div class="footer-credit">Designed &amp; Developed by Gausin International Engineers Pvt. Ltd.</div></div><div class="footer-bottom-links"><a href="privacy-policy.html" class="footer-bottom-link">Privacy Policy</a><a href="terms-of-service.html" class="footer-bottom-link">Terms of Service</a></div></div>
+  </div>
+</footer>
+
+<button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<script src="js/config.js"></script>
+<script src="js/main.js" defer></script>
+<script src="js/components.js" defer></script>
+</body>
+</html>
+
+

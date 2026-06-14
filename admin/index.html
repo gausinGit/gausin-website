@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login — Gausin International Engineers</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 48px 40px;
+      width: 100%;
+      max-width: 420px;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+    }
+    .logo-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+    .logo-row img { width: 100px; height: auto; border-radius: 10px; }
+    .logo-row .brand {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: #1e3a8a;
+      line-height: 1.4;
+      letter-spacing: 0.01em;
+    }
+    .logo-row .brand span {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: #64748b;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+    h1 { font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 6px; }
+    .sub { color: #64748b; font-size: 0.875rem; margin-bottom: 28px; }
+    label { display: block; font-size: 0.8125rem; font-weight: 600; color: #374151; margin-bottom: 6px; }
+    input {
+      width: 100%; padding: 11px 14px;
+      border: 1.5px solid #d1d5db; border-radius: 10px;
+      font-size: 0.9375rem; outline: none; transition: border-color 0.2s;
+      margin-bottom: 18px;
+    }
+    input:focus { border-color: #3b82f6; }
+    button {
+      width: 100%; padding: 13px;
+      background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+      color: white; border: none; border-radius: 10px;
+      font-size: 1rem; font-weight: 700; cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    button:hover { opacity: 0.92; }
+    button:disabled { opacity: 0.6; cursor: not-allowed; }
+    .error-msg {
+      background: #fef2f2; color: #dc2626;
+      border: 1px solid #fecaca; border-radius: 8px;
+      padding: 10px 14px; font-size: 0.875rem;
+      margin-top: 14px; display: none;
+    }
+    .success-msg {
+      background: #f0fdf4; color: #16a34a;
+      border: 1px solid #bbf7d0; border-radius: 8px;
+      padding: 12px 14px; font-size: 0.875rem;
+      margin-top: 14px; display: none; line-height: 1.6;
+    }
+    .toggle-link {
+      display: block; text-align: center; margin-top: 20px;
+      font-size: 0.8125rem; color: #3b82f6; cursor: pointer;
+      text-decoration: underline; background: none; border: none;
+      width: auto; padding: 0; font-weight: 600;
+    }
+    .toggle-link:hover { opacity: 0.8; }
+    .form-panel { display: none; }
+    .form-panel.active { display: block; }
+    .hash-box {
+      background: #f8fafc; border: 1.5px dashed #94a3b8;
+      border-radius: 8px; padding: 12px; font-size: 0.75rem;
+      word-break: break-all; color: #334155; margin-top: 8px;
+      font-family: monospace;
+    }
+    .copy-btn {
+      width: auto; padding: 6px 14px; font-size: 0.8rem;
+      margin-top: 8px; border-radius: 8px;
+      background: linear-gradient(135deg,#0f172a,#1e3a8a);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo-row">
+      <img src="../images/gausin-logo.png" alt="Gausin Logo">
+      <div class="brand">
+        Gausin International Engineers
+        <span>Pvt. Ltd.</span>
+      </div>
+    </div>
+    <h1 id="cardTitle">Admin Login</h1>
+    <p class="sub" id="cardSub">Access the inquiries &amp; applications dashboard</p>
+
+    <!-- LOGIN FORM -->
+    <div id="loginPanel" class="form-panel active">
+      <form id="loginForm">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="admin" autocomplete="username" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="••••••••" autocomplete="current-password" required>
+        <button type="submit" id="loginBtn">Login</button>
+        <div class="error-msg" id="loginError"></div>
+      </form>
+      <button class="toggle-link" onclick="showPanel('register')">+ Create New Admin Account</button>
+    </div>
+
+    <!-- REGISTER FORM -->
+    <div id="registerPanel" class="form-panel">
+      <form id="registerForm">
+        <label for="newUsername">New Username</label>
+        <input type="text" id="newUsername" placeholder="e.g. gausin_admin" required>
+        <label for="newPassword">New Password</label>
+        <input type="password" id="newPassword" placeholder="Min 8 characters" required>
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" placeholder="Re-enter password" required>
+        <label for="setupKey">Setup Key <span style="font-weight:400;color:#6b7280;">(ask your system admin)</span></label>
+        <input type="password" id="setupKey" placeholder="••••••••" required>
+        <button type="submit" id="registerBtn">Create Account</button>
+        <div class="error-msg" id="registerError"></div>
+        <div class="success-msg" id="registerSuccess"></div>
+      </form>
+      <button class="toggle-link" onclick="showPanel('login')">← Back to Login</button>
+    </div>
+  </div>
+
+  <script>
+    const API = window.GAUSIN_API_URL || 'http://localhost:5000';
+
+    function showPanel(panel) {
+      document.getElementById('loginPanel').classList.toggle('active', panel === 'login');
+      document.getElementById('registerPanel').classList.toggle('active', panel === 'register');
+      document.getElementById('cardTitle').textContent = panel === 'login' ? 'Admin Login' : 'Create Admin Account';
+      document.getElementById('cardSub').textContent = panel === 'login'
+        ? 'Access the inquiries & applications dashboard'
+        : 'Set up a new admin account with a setup key';
+    }
+
+    // ── Login ──────────────────────────────────────────────────────────────────
+    document.getElementById('loginForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = document.getElementById('loginBtn');
+      const errEl = document.getElementById('loginError');
+      errEl.style.display = 'none';
+      btn.textContent = 'Logging in…';
+      btn.disabled = true;
+      try {
+        const res = await fetch(`${API}/api/admin/login`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            username: document.getElementById('username').value.trim(),
+            password: document.getElementById('password').value,
+          }),
+        });
+        const json = await res.json();
+        if (json.success) {
+          localStorage.setItem('gausin_admin_token', json.token);
+          window.location.href = 'dashboard.html';
+        } else {
+          errEl.textContent = json.message || 'Invalid credentials.';
+          errEl.style.display = 'block';
+          btn.textContent = 'Login';
+          btn.disabled = false;
+        }
+      } catch {
+        errEl.textContent = 'Cannot connect to server. Make sure the backend is running.';
+        errEl.style.display = 'block';
+        btn.textContent = 'Login';
+        btn.disabled = false;
+      }
+    });
+
+    // ── Register ───────────────────────────────────────────────────────────────
+    document.getElementById('registerForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = document.getElementById('registerBtn');
+      const errEl = document.getElementById('registerError');
+      const successEl = document.getElementById('registerSuccess');
+      errEl.style.display = 'none';
+      successEl.style.display = 'none';
+      btn.textContent = 'Creating…';
+      btn.disabled = true;
+      try {
+        const res = await fetch(`${API}/api/admin/register`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            username: document.getElementById('newUsername').value.trim(),
+            password: document.getElementById('newPassword').value,
+            confirmPassword: document.getElementById('confirmPassword').value,
+            setupKey: document.getElementById('setupKey').value,
+          }),
+        });
+        const json = await res.json();
+        if (json.success) {
+          successEl.innerHTML = `
+            ✅ <strong>Account created!</strong><br><br>
+            Save these in your <code>.env</code> file:<br>
+            <div class="hash-box">ADMIN_USERNAME=${json.username}<br>ADMIN_PASSWORD_HASH=${json.passwordHash}</div>
+            <button class="copy-btn" onclick="navigator.clipboard.writeText('ADMIN_USERNAME=${json.username}\\nADMIN_PASSWORD_HASH=${json.passwordHash}')">📋 Copy</button>
+            <br><br><small style="color:#64748b;">After saving in .env, restart the server and login with your new credentials.</small>
+          `;
+          successEl.style.display = 'block';
+          btn.textContent = 'Create Account';
+          btn.disabled = false;
+        } else {
+          errEl.textContent = json.message || 'Failed to create account.';
+          errEl.style.display = 'block';
+          btn.textContent = 'Create Account';
+          btn.disabled = false;
+        }
+      } catch {
+        errEl.textContent = 'Cannot connect to server.';
+        errEl.style.display = 'block';
+        btn.textContent = 'Create Account';
+        btn.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>

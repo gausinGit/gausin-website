@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard — Gausin International Engineers</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; background: #f1f5f9; color: #0f172a; }
+
+    /* Sidebar */
+    .sidebar {
+      position: fixed; left: 0; top: 0; bottom: 0; width: 240px;
+      background: linear-gradient(180deg, #0f172a 0%, #1e3a8a 100%);
+      padding: 24px 0; z-index: 100;
+    }
+    .sidebar-brand { padding: 0 20px 24px; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 20px; }
+    .sidebar-brand img { width: 38px; border-radius: 6px; }
+    .sidebar-brand .name { color: white; font-size: 0.78rem; font-weight: 700; margin-top: 8px; line-height: 1.4; }
+    .nav-item {
+      display: flex; align-items: center; gap: 10px;
+      padding: 11px 20px; color: rgba(255,255,255,0.7);
+      cursor: pointer; transition: all 0.2s; font-size: 0.875rem; font-weight: 500;
+      border-left: 3px solid transparent;
+    }
+    .nav-item:hover, .nav-item.active {
+      color: white; background: rgba(255,255,255,0.1);
+      border-left-color: #60a5fa;
+    }
+    .nav-item svg { width: 18px; height: 18px; flex-shrink: 0; }
+
+    /* Main */
+    .main { margin-left: 240px; padding: 32px; min-height: 100vh; }
+    .topbar {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 28px;
+    }
+    .topbar h1 { font-size: 1.375rem; font-weight: 800; }
+    .logout-btn {
+      padding: 8px 18px; background: #ef4444; color: white;
+      border: none; border-radius: 8px; cursor: pointer; font-size: 0.875rem; font-weight: 600;
+    }
+
+    /* Stats */
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 32px; }
+    .stat-card {
+      background: white; border-radius: 14px; padding: 20px 22px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    }
+    .stat-label { font-size: 0.78rem; color: #64748b; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px; }
+    .stat-value { font-size: 2rem; font-weight: 800; color: #1e3a8a; }
+    .stat-sub { font-size: 0.78rem; color: #64748b; margin-top: 2px; }
+
+    /* Panel */
+    .panel { background: white; border-radius: 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.07); }
+    .panel-header {
+      padding: 18px 24px; border-bottom: 1px solid #e2e8f0;
+      display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+    }
+    .panel-title { font-size: 1rem; font-weight: 700; }
+    .filters { display: flex; gap: 8px; flex-wrap: wrap; }
+    .filter-btn {
+      padding: 6px 14px; border: 1.5px solid #d1d5db; border-radius: 20px;
+      background: white; font-size: 0.8rem; font-weight: 600; cursor: pointer; transition: all 0.2s;
+    }
+    .filter-btn.active, .filter-btn:hover { background: #1e3a8a; color: white; border-color: #1e3a8a; }
+
+    /* Table */
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+    th { text-align: left; padding: 12px 16px; background: #f8fafc; color: #64748b; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+    td { padding: 13px 16px; border-top: 1px solid #f1f5f9; vertical-align: top; }
+    tr:hover td { background: #f8fafc; }
+
+    .badge {
+      display: inline-block; padding: 3px 10px; border-radius: 20px;
+      font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+    }
+    .badge-new        { background: #dbeafe; color: #1d4ed8; }
+    .badge-read       { background: #f0fdf4; color: #16a34a; }
+    .badge-replied    { background: #f0fdf4; color: #15803d; }
+    .badge-archived   { background: #f1f5f9; color: #64748b; }
+    .badge-reviewed   { background: #fef3c7; color: #92400e; }
+    .badge-shortlisted{ background: #dcfce7; color: #15803d; }
+    .badge-rejected   { background: #fee2e2; color: #b91c1c; }
+
+    .action-btn {
+      padding: 5px 12px; border: 1.5px solid #d1d5db; border-radius: 6px;
+      background: white; font-size: 0.75rem; font-weight: 600; cursor: pointer;
+      transition: all 0.15s; margin-right: 4px;
+    }
+    .action-btn:hover { background: #1e3a8a; color: white; border-color: #1e3a8a; }
+    .action-btn.danger:hover { background: #ef4444; border-color: #ef4444; }
+
+    .loading { text-align: center; padding: 48px; color: #94a3b8; }
+    .empty { text-align: center; padding: 48px; color: #94a3b8; font-size: 0.9rem; }
+
+    /* Tab sections */
+    .tab-section { display: none; }
+    .tab-section.active { display: block; }
+
+    @media (max-width: 900px) {
+      .sidebar { width: 200px; }
+      .main { margin-left: 200px; padding: 20px; }
+      .stats { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+<aside class="sidebar">
+  <div class="sidebar-brand">
+    <img src="../images/gausin-logo.png" alt="Gausin Logo">
+    <div class="name">Gausin International<br>Engineers Pvt. Ltd.</div>
+  </div>
+  <div class="nav-item active" onclick="showTab('inquiries')">
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+    Inquiries
+  </div>
+  <div class="nav-item" onclick="showTab('applications')">
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+    Applications
+  </div>
+  <div style="margin-top:auto;padding:20px;">
+    <div style="color:rgba(255,255,255,0.4);font-size:0.72rem;">Admin Panel v1.0</div>
+  </div>
+</aside>
+
+<main class="main">
+  <div class="topbar">
+    <h1 id="pageTitle">Inquiries</h1>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </div>
+
+  <!-- Stats row -->
+  <div class="stats">
+    <div class="stat-card">
+      <div class="stat-label">Total Inquiries</div>
+      <div class="stat-value" id="statTotalInq">—</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">New Inquiries</div>
+      <div class="stat-value" id="statNewInq" style="color:#ef4444;">—</div>
+      <div class="stat-sub">Unread</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Total Applications</div>
+      <div class="stat-value" id="statTotalApp">—</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">New Applications</div>
+      <div class="stat-value" id="statNewApp" style="color:#ef4444;">—</div>
+      <div class="stat-sub">Unreviewed</div>
+    </div>
+  </div>
+
+  <!-- Inquiries Tab -->
+  <div id="tab-inquiries" class="tab-section active">
+    <div class="panel">
+      <div class="panel-header">
+        <span class="panel-title">Contact &amp; Product Inquiries</span>
+        <div class="filters">
+          <button class="filter-btn active" onclick="filterInquiries('', this)">All</button>
+          <button class="filter-btn" onclick="filterInquiries('new', this)">New</button>
+          <button class="filter-btn" onclick="filterInquiries('read', this)">Read</button>
+          <button class="filter-btn" onclick="filterInquiries('replied', this)">Replied</button>
+          <button class="filter-btn" onclick="filterInquiries('archived', this)">Archived</button>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Source</th>
+              <th>Name / Company</th>
+              <th>Email</th>
+              <th>Product</th>
+              <th>Message</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="inquiriesBody">
+            <tr><td colspan="8" class="loading">Loading…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Applications Tab -->
+  <div id="tab-applications" class="tab-section">
+    <div class="panel">
+      <div class="panel-header">
+        <span class="panel-title">Career Applications</span>
+        <div class="filters">
+          <button class="filter-btn active" onclick="filterApps('', this)">All</button>
+          <button class="filter-btn" onclick="filterApps('new', this)">New</button>
+          <button class="filter-btn" onclick="filterApps('reviewed', this)">Reviewed</button>
+          <button class="filter-btn" onclick="filterApps('shortlisted', this)">Shortlisted</button>
+          <button class="filter-btn" onclick="filterApps('rejected', this)">Rejected</button>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Name</th>
+              <th>Role</th>
+              <th>Email / Phone</th>
+              <th>Experience</th>
+              <th>Resume</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="applicationsBody">
+            <tr><td colspan="8" class="loading">Loading…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script>
+  const API   = window.GAUSIN_API_URL || 'http://localhost:5000';
+  const token = localStorage.getItem('gausin_admin_token');
+  if (!token) window.location.href = 'index.html';
+
+  const authHeaders = { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json' };
+
+  function logout() {
+    localStorage.removeItem('gausin_admin_token');
+    window.location.href = 'index.html';
+  }
+
+  function showTab(tab) {
+    document.querySelectorAll('.tab-section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+    document.getElementById('tab-' + tab).classList.add('active');
+    event.currentTarget.classList.add('active');
+    document.getElementById('pageTitle').textContent = tab === 'inquiries' ? 'Inquiries' : 'Career Applications';
+  }
+
+  function fmt(date) {
+    return new Date(date).toLocaleString('en-IN', { day:'2-digit', month:'short', year:'numeric', hour:'2-digit', minute:'2-digit' });
+  }
+
+  function badge(status) {
+    return `<span class="badge badge-${status}">${status}</span>`;
+  }
+
+  // ── Stats ──────────────────────────────────────────────────────────────────
+  async function loadStats() {
+    try {
+      const r = await fetch(`${API}/api/admin/stats`, { headers: authHeaders });
+      if (r.status === 401 || r.status === 403) { logout(); return; }
+      const { data } = await r.json();
+      document.getElementById('statTotalInq').textContent = data.totalInquiries;
+      document.getElementById('statNewInq').textContent   = data.newInquiries;
+      document.getElementById('statTotalApp').textContent = data.totalApplications;
+      document.getElementById('statNewApp').textContent   = data.newApplications;
+    } catch(e) { console.error(e); }
+  }
+
+  // ── Inquiries ──────────────────────────────────────────────────────────────
+  let curInqStatus = '';
+  async function loadInquiries(status = '') {
+    curInqStatus = status;
+    const tbody = document.getElementById('inquiriesBody');
+    tbody.innerHTML = '<tr><td colspan="8" class="loading">Loading…</td></tr>';
+    try {
+      const url = `${API}/api/admin/inquiries?limit=50${status ? '&status=' + status : ''}`;
+      const r = await fetch(url, { headers: authHeaders });
+      if (r.status === 401 || r.status === 403) { logout(); return; }
+      const { data } = await r.json();
+      if (!data.length) { tbody.innerHTML = '<tr><td colspan="8" class="empty">No inquiries found.</td></tr>'; return; }
+      tbody.innerHTML = data.map(d => `
+        <tr>
+          <td style="white-space:nowrap;font-size:0.78rem;">${fmt(d.createdAt)}</td>
+          <td><span style="font-size:0.75rem;background:#f1f5f9;padding:3px 8px;border-radius:6px;">${d.source === 'contact_page' ? 'Contact' : 'Product'}</span></td>
+          <td><strong>${d.firstName ? d.firstName + ' ' + (d.lastName||'') : (d.name||'—')}</strong><br><span style="color:#64748b;font-size:0.78rem;">${d.company||''}</span></td>
+          <td><a href="mailto:${d.email}" style="color:#1e3a8a;">${d.email}</a><br><span style="color:#64748b;font-size:0.78rem;">${d.phone||''}</span></td>
+          <td style="font-size:0.8rem;color:#475569;">${d.product||'—'}</td>
+          <td style="max-width:200px;font-size:0.8rem;color:#475569;">${(d.message||'').substring(0,80)}${(d.message||'').length>80?'…':''}</td>
+          <td>${badge(d.status)}</td>
+          <td style="white-space:nowrap;">
+            <button class="action-btn" onclick="updateInquiry('${d._id}','read')">Read</button>
+            <button class="action-btn" onclick="updateInquiry('${d._id}','replied')">Replied</button>
+            <button class="action-btn danger" onclick="updateInquiry('${d._id}','archived')">Archive</button>
+          </td>
+        </tr>
+      `).join('');
+    } catch(e) { tbody.innerHTML = '<tr><td colspan="8" class="empty">Error loading data.</td></tr>'; }
+  }
+
+  async function updateInquiry(id, status) {
+    await fetch(`${API}/api/admin/inquiries/${id}`, {
+      method: 'PATCH', headers: authHeaders, body: JSON.stringify({ status }),
+    });
+    loadInquiries(curInqStatus);
+    loadStats();
+  }
+
+  function filterInquiries(status, btn) {
+    document.querySelectorAll('#tab-inquiries .filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    loadInquiries(status);
+  }
+
+  // ── Applications ───────────────────────────────────────────────────────────
+  let curAppStatus = '';
+  async function loadApplications(status = '') {
+    curAppStatus = status;
+    const tbody = document.getElementById('applicationsBody');
+    tbody.innerHTML = '<tr><td colspan="8" class="loading">Loading…</td></tr>';
+    try {
+      const url = `${API}/api/admin/applications?limit=50${status ? '&status=' + status : ''}`;
+      const r = await fetch(url, { headers: authHeaders });
+      if (r.status === 401 || r.status === 403) { logout(); return; }
+      const { data } = await r.json();
+      if (!data.length) { tbody.innerHTML = '<tr><td colspan="8" class="empty">No applications found.</td></tr>'; return; }
+      tbody.innerHTML = data.map(d => `
+        <tr>
+          <td style="white-space:nowrap;font-size:0.78rem;">${fmt(d.createdAt)}</td>
+          <td><strong>${d.name}</strong></td>
+          <td style="color:#1e3a8a;font-weight:600;font-size:0.85rem;">${d.role}</td>
+          <td><a href="mailto:${d.email}" style="color:#1e3a8a;">${d.email}</a><br><span style="color:#64748b;font-size:0.78rem;">${d.phone||''}</span></td>
+          <td style="font-size:0.8rem;">${d.experience||'—'}</td>
+          <td>${d.resumeFile
+            ? `<a href="${API}/${d.resumeFile.path}" target="_blank" style="color:#1e3a8a;font-weight:600;font-size:0.8rem;">📎 Download</a>`
+            : '<span style="color:#94a3b8;font-size:0.78rem;">None</span>'}</td>
+          <td>${badge(d.status)}</td>
+          <td style="white-space:nowrap;">
+            <button class="action-btn" onclick="updateApp('${d._id}','reviewed')">Reviewed</button>
+            <button class="action-btn" onclick="updateApp('${d._id}','shortlisted')" style="color:#16a34a;">Shortlist</button>
+            <button class="action-btn danger" onclick="updateApp('${d._id}','rejected')">Reject</button>
+          </td>
+        </tr>
+      `).join('');
+    } catch(e) { tbody.innerHTML = '<tr><td colspan="8" class="empty">Error loading data.</td></tr>'; }
+  }
+
+  async function updateApp(id, status) {
+    await fetch(`${API}/api/admin/applications/${id}`, {
+      method: 'PATCH', headers: authHeaders, body: JSON.stringify({ status }),
+    });
+    loadApplications(curAppStatus);
+    loadStats();
+  }
+
+  function filterApps(status, btn) {
+    document.querySelectorAll('#tab-applications .filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    loadApplications(status);
+  }
+
+  // ── Init ───────────────────────────────────────────────────────────────────
+  loadStats();
+  loadInquiries();
+  loadApplications();
+</script>
+</body>
+</html>

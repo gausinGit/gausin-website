@@ -1,0 +1,1215 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Industrial products by Gausin International Engineers  -  Evaporators, Dryers, Heat Exchangers, CIP Systems, Milk Processing Plants and more.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Gausin International Engineers Pvt. Ltd.">
+  <meta property="og:title" content="Industrial Engineering Products | Gausin International Engineers">
+  <meta property="og:description" content="Evaporators, Dryers, CIP Systems, Heat Exchangers, Milk Processing Plants and Pressure Vessels by Gausin International Engineers.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.gausin.in/products.html">
+  <link rel="canonical" href="https://www.gausin.in/products.html">
+  <title>Products | Gausin International Engineers Pvt. Ltd.</title>
+  <link rel="stylesheet" href="css/styles.css">
+    
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <style>
+    /* Filter Bar */
+    .filter-bar {
+      display: flex; gap: 10px; flex-wrap: wrap;
+      padding: 20px 28px; background: white;
+      border-radius: 16px; border: 1px solid var(--gray-200);
+      box-shadow: var(--shadow-md); margin-bottom: 40px;
+      align-items: center;
+    }
+    .filter-label { font-size: 0.875rem; font-weight: 700; color: var(--gray-600); font-family:'Montserrat',sans-serif; margin-right: 8px; }
+    .filter-btn {
+      padding: 8px 18px; border-radius: 30px; font-size: 0.8125rem; font-weight: 600;
+      color: var(--gray-600); background: var(--gray-100); border: 1.5px solid transparent;
+      cursor: pointer; transition: all 0.2s; font-family:'Montserrat',sans-serif;
+    }
+    .filter-btn:hover { background: var(--blue-50); color: var(--blue-500); }
+    .filter-btn.active { background: var(--blue-500); color: white; border-color: var(--blue-500); box-shadow: var(--shadow-blue); }
+
+    /* Product Detail Card */
+    .prod-card {
+      background: white; border: 1px solid var(--gray-200); border-radius: 20px;
+      overflow: hidden; transition: all 0.35s ease; display: flex; flex-direction: column;
+    }
+    .prod-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-2xl); border-color: var(--blue-200); }
+    .prod-img { height: 240px; background: var(--blue-900); position: relative; overflow: hidden; }
+    .prod-img img { width: 100%; height: 100%; object-fit: cover; opacity: 0.8; transition: transform 0.5s ease; }
+    .prod-img--portrait img { object-fit: cover; object-position: center 40%; opacity: 0.92; }
+    .prod-card:hover .prod-img img { transform: scale(1.08); }
+    .prod-img-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,37,64,0.8) 0%, transparent 60%); }
+    .prod-cat-badge { position: absolute; top: 14px; left: 14px; background: var(--blue-500); color: white; font-size: 0.6875rem; font-weight: 700; padding: 5px 12px; border-radius: 20px; letter-spacing: 0.05em; text-transform: uppercase; }
+    .prod-inquiry { position: absolute; bottom: 14px; right: 14px; }
+    .prod-body { padding: 24px; flex: 1; display: flex; flex-direction: column; }
+    .prod-title { font-size: 1.125rem; font-weight: 800; color: var(--gray-900); font-family:'Montserrat',sans-serif; margin-bottom: 8px; }
+    .prod-desc { font-size: 0.9rem; color: var(--gray-600); line-height: 1.65; margin-bottom: 16px; flex: 1; text-align: justify; }
+    .prod-specs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 16px; }
+    .prod-spec { background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: 8px; padding: 8px 10px; }
+    .prod-spec-label { font-size: 0.6875rem; font-weight: 600; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.05em; }
+    .prod-spec-val { font-size: 0.875rem; font-weight: 700; color: var(--gray-800); font-family:'Montserrat',sans-serif; }
+    .prod-apps { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 20px; }
+    .prod-app { background: var(--blue-50); color: var(--blue-600); font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 20px; border: 1px solid var(--blue-200); }
+    .prod-footer { display: flex; gap: 10px; padding-top: 16px; border-top: 1px solid var(--gray-100); }
+
+    /* Category Section Title */
+    .cat-title {
+      display: flex; align-items: center; gap: 16px;
+      margin-bottom: 32px;
+    }
+    .cat-icon { width: 52px; height: 52px; background: var(--blue-50); border-radius: 14px; display: flex; align-items: center; justify-content: center; color: var(--blue-500); font-size: 1.5rem; border: 1px solid var(--blue-200); }
+    .cat-name { font-size: 1.5rem; font-weight: 800; color: var(--gray-900); font-family:'Montserrat',sans-serif; }
+    .cat-count { font-size: 0.875rem; color: var(--gray-500); }
+    .cat-line { flex: 1; height: 1px; background: var(--gray-200); }
+
+    /* Inquiry Modal Overlay */
+    .inquiry-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); backdrop-filter: blur(4px); z-index: 2000; display: none; align-items: center; justify-content: center; padding: 20px; }
+    .inquiry-overlay.open { display: flex; }
+    .inquiry-modal { background: white; border-radius: 20px; padding: 40px; max-width: 540px; width: 100%; box-shadow: var(--shadow-2xl); position: relative; max-height: 90vh; overflow-y: auto; }
+    .inquiry-close { position: absolute; top: 16px; right: 16px; width: 36px; height: 36px; background: var(--gray-100); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--gray-600); cursor: pointer; transition: all 0.2s; border: none; }
+    .inquiry-close:hover { background: var(--gray-200); }
+
+    #backToTop {
+      position: fixed; bottom: 28px; right: 28px; width: 48px; height: 48px;
+      background: linear-gradient(135deg, var(--blue-500), var(--blue-700));
+      color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 1.125rem; box-shadow: var(--shadow-blue-lg); opacity: 0; pointer-events: none;
+      transition: opacity 0.3s ease, transform 0.3s ease; z-index: 500;
+    }
+    #backToTop:hover { transform: translateY(-3px); }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo navbar-logo--image"><img src="images/gausin-logo.png" alt="Gausin International Engineers Pvt. Ltd." class="logo-img" width="220" height="52"></a>
+      <nav class="navbar-nav">
+        <div class="nav-item"><a href="index.html" class="nav-link">Home</a></div>
+        <div class="nav-item"><a href="about.html" class="nav-link">About</a></div>
+        <div class="nav-item">
+          <a href="products.html" class="nav-link active">Products <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></a>
+          <div class="mega-menu">
+            <div class="mega-menu-grid">
+              <a href="#evaporators" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-droplet"></i></div><div><div class="mega-menu-item-title">Evaporators</div><div class="mega-menu-item-desc">Falling Film, Forced Circulation</div></div></a>
+              <a href="#dryers" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-wind"></i></div><div><div class="mega-menu-item-title">Dryers</div><div class="mega-menu-item-desc">Spray, Spin Flash, Fluidized Bed</div></div></a>
+              <a href="#heat-exchangers" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-temperature-high"></i></div><div><div class="mega-menu-item-title">Heat Exchangers</div><div class="mega-menu-item-desc">Shell & Tube, Plate Type</div></div></a>
+              <a href="#cip" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-recycle"></i></div><div><div class="mega-menu-item-title">CIP Systems</div><div class="mega-menu-item-desc">Automated cleaning</div></div></a>
+              <a href="#milk-processing" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-flask"></i></div><div><div class="mega-menu-item-title">Milk Processing</div><div class="mega-menu-item-desc">Complete dairy solutions</div></div></a>
+              <a href="#vessels" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-database"></i></div><div><div class="mega-menu-item-title">Vessels & Tanks</div><div class="mega-menu-item-desc">SS Tanks, Pressure Vessels</div></div></a>
+              <a href="#milk-equipment" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-jar"></i></div><div><div class="mega-menu-item-title">Milk Equipment</div><div class="mega-menu-item-desc">Butter Churner, Ghee Kettle, Khoya</div></div></a>
+              <a href="#dairy-food-equipment" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-industry"></i></div><div><div class="mega-menu-item-title">Dairy & Food Equipments</div><div class="mega-menu-item-desc">Milk Can Conveyor, BMC, Crystallization Tank</div></div></a>
+              <a href="#waste-management" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-leaf"></i></div><div><div class="mega-menu-item-title">Waste Management</div><div class="mega-menu-item-desc">ETP/STP, Biogas, Scrubber, Incinerator</div></div></a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item"><a href="services.html" class="nav-link">Services</a></div>
+        <div class="nav-item"><a href="industries.html" class="nav-link">Industries</a></div>
+        <div class="nav-item"><a href="technology.html" class="nav-link">Technology</a></div>
+        <div class="nav-item"><a href="contact.html" class="nav-link">Contact</a></div>
+      </nav>
+      <div class="navbar-cta"><a href="contact.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Get a Quote</a></div>
+      <button class="navbar-toggle" id="navbarToggle"><span class="toggle-bar"></span><span class="toggle-bar"></span><span class="toggle-bar"></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Home</a>
+  <a href="about.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">About</a>
+  <a href="products.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--blue-500);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Products</a>
+  <a href="services.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Services</a>
+  <a href="industries.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Industries</a>
+  <a href="technology.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Technology</a>
+  <a href="contact.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Contact</a>
+  <div style="margin-top:24px;"><a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;"><i class="fa-solid fa-paper-plane"></i> Get a Quote</a></div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero page-hero--products">
+  <div class="container page-hero-content">
+    <div class="page-hero-label"><i class="fa-solid fa-boxes-stacked"></i> Products</div>
+    <h1 class="page-hero-title">Industrial Engineering <br>Products & Systems</h1>
+    <p class="page-hero-desc">Precision-engineered evaporators, dryers, CIP systems, heat exchangers, and complete process plants  -  designed for superior performance in demanding industrial environments.</p>
+    <div class="breadcrumb">
+      <a href="index.html" class="breadcrumb-item">Home</a>
+      <span class="breadcrumb-sep"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;"></i></span>
+      <span class="breadcrumb-item active">Products</span>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS CONTENT -->
+<section class="section bg-light">
+  <div class="container">
+
+    <!-- Filter Bar -->
+    <div class="filter-bar filter-wrapper" data-aos="fade-up">
+      <span class="filter-label"><i class="fa-solid fa-filter"></i> Filter:</span>
+      <button class="filter-btn active" data-filter="all">All Products</button>
+      <button class="filter-btn" data-filter="evaporators">Evaporators</button>
+      <button class="filter-btn" data-filter="dryers">Dryers</button>
+      <button class="filter-btn" data-filter="dairy">Dairy Processing Plants</button>
+      <button class="filter-btn" data-filter="heat-transfer">Milk Processing Equipment</button>
+      <button class="filter-btn" data-filter="vessels">Dairy & Food Plant Equipments</button>
+      <button class="filter-btn" data-filter="cleaning">Waste Management</button>
+      <button class="filter-btn" data-filter="milk-equipment">Heat Exchangers</button>
+      <button class="filter-btn" data-filter="dairy-food-equipment">CIP & Cleaning Systems</button>
+      <button class="filter-btn" data-filter="waste-management">Pressure Vessels & Storage Tanks</button>
+    </div>
+
+
+    <!-- EVAPORATORS -->
+    <div id="evaporators" style="margin-bottom:64px;">
+      <div class="cat-title" data-aos="fade-right">
+        <div class="cat-icon"><i class="fa-solid fa-droplet"></i></div>
+        <div><div class="cat-name">Evaporators</div><div class="cat-count">5 Products</div></div>
+        <div class="cat-line"></div>
+      </div>
+
+      <div class="grid-3" data-aos="fade-up">
+
+        <div class="prod-card filterable" data-category="evaporators">
+          <div class="prod-img">
+            <img loading="lazy" src="assets/falling-film-evaporator-latest.png" alt="Falling film evaporator  -  multi-effect process plant with pipes and vessels">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Evaporators</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">Falling Film Evaporator</div>
+            <div class="prod-desc">High-efficiency evaporator ideal for heat-sensitive products. The liquid forms a thin film on tube inner surfaces, enabling gentle and rapid evaporation at low temperatures. Available in single, double, triple, and multi-effect configurations.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Capacity</div><div class="prod-spec-val">500 - 50,000 L/hr</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Effects</div><div class="prod-spec-val">Single to 7-Effect</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Material</div><div class="prod-spec-val">SS 304 / SS 316L / Ti</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Standard</div><div class="prod-spec-val">ASME / IS / CE</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">Dairy</span><span class="prod-app">Pharma</span><span class="prod-app">Food</span><span class="prod-app">Chemical</span><span class="prod-app">Juice</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-falling-film-evaporator.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-card filterable" data-category="evaporators">
+          <div class="prod-img">
+            <img loading="lazy" src="assets/forced-circulation-evaporator-related.png" alt="Forced circulation evaporator  -  industrial stainless process equipment">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Evaporators</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">Forced Circulation Evaporator</div>
+            <div class="prod-desc">Designed for viscous, scaling, or crystallizing liquids. Forced circulation ensures high velocity through the heat exchanger tubes, preventing scale deposition and enabling efficient concentration of difficult fluids.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Capacity</div><div class="prod-spec-val">1,000 - 30,000 L/hr</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Temp. Range</div><div class="prod-spec-val">40 - 120  deg C</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Pressure</div><div class="prod-spec-val">Vacuum to 3 bar</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Pump</div><div class="prod-spec-val">Axial / Centrifugal</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">Pharma</span><span class="prod-app">Distillery</span><span class="prod-app">Textile</span><span class="prod-app">Agro</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-forced-circulation-evaporator.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-card filterable" data-category="evaporators">
+          <div class="prod-img">
+            <img loading="lazy" src="assets/rising-film-evaporator-new.jpeg" alt="Rising film evaporator  -  vertical tube industrial evaporation system">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Evaporators</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">Rising Film Evaporator</div>
+            <div class="prod-desc">Vertical tube evaporator where liquid and vapor rise together through tubes in a climbing film pattern. Suitable for non-viscous, non-scaling liquids requiring gentle treatment at moderate concentrations.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Capacity</div><div class="prod-spec-val">500 - 20,000 L/hr</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Tube Length</div><div class="prod-spec-val">3 - 9 m</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Material</div><div class="prod-spec-val">SS 304 / 316L </div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Operation</div><div class="prod-spec-val">Continuous</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">Sugar</span><span class="prod-app">Pulp & Paper</span><span class="prod-app">Caustic</span><span class="prod-app">Food</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-rising-film-evaporator.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-card filterable" data-category="evaporators">
+          <div class="prod-img">
+            <img loading="lazy" src="assets/plate-type-evaporator-latest.png" alt="Plate type evaporator  -  stainless steel process piping and heat exchange">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Evaporators</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">Plate Type Evaporator</div>
+            <div class="prod-desc">Compact, high-efficiency plate-type evaporator with corrugated plate heat exchange surfaces. Excellent thermal performance with low liquid hold-up  -  ideal for small to medium dairy and food applications.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Capacity</div><div class="prod-spec-val">200 - 10,000 L/hr</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Design</div><div class="prod-spec-val">Gasketed / Welded</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Footprint</div><div class="prod-spec-val">Very Compact</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">CIP</div><div class="prod-spec-val">CIP Ready</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">Sugar</span><span class="prod-app">Juice</span><span class="prod-app">Caustic</span><span class="prod-app">Beverages</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-plate-type-evaporator.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-card filterable" data-category="evaporators">
+          <div class="prod-img">
+            <img loading="lazy" src="assets/batch-evaporator-vacuum-pan.png" alt="Batch evaporator vacuum pan  -  polished stainless steel jacketed vessel in industrial plant">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Evaporators</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">Batch Evaporator (Vacuum Pan)</div>
+            <div class="prod-desc">Jacketed vacuum pan evaporator for batch operations requiring precise concentration control. Designed with a vacuum system to reduce boiling point  -  protecting heat-sensitive products during concentration.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Capacity</div><div class="prod-spec-val">100 - 5,000 L/batch</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Vacuum</div><div class="prod-spec-val">0.1 - 0.95 bar(g)</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Jacket</div><div class="prod-spec-val">Steam / Hot Water</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Agitator</div><div class="prod-spec-val">Optional</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">Pharma</span><span class="prod-app">Confectionery</span><span class="prod-app">Nutraceuticals</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-batch-evaporator-vacuum-pan.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- DRYERS -->
+    <div id="dryers" style="margin-bottom:64px;">
+      <div class="cat-title" data-aos="fade-right">
+        <div class="cat-icon"><i class="fa-solid fa-wind"></i></div>
+        <div><div class="cat-name">Dryers</div><div class="cat-count">5 Products</div></div>
+        <div class="cat-line"></div>
+      </div>
+
+      <div class="grid-3" data-aos="fade-up">
+
+        <div class="prod-card filterable" data-category="dryers">
+          <div class="prod-img">
+            <img loading="lazy" src="assets/spray-dryer-nozzle-rotary-disc.jpeg" alt="Spray dryer  -  tall cylindrical drying tower and industrial silos">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Dryers</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">Spray Dryer (Nozzle / Rotary Disc)</div>
+            <div class="prod-desc">Convert liquid feed into free-flowing powder in a single operation. Available in nozzle atomization and rotary disc atomization designs  -  producing powders with precise particle size distribution for dairy, food, pharma, chemical, and Starch applications.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Evap. Capacity</div><div class="prod-spec-val">10 - 5,000 kg/hr</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Inlet Air Temp</div><div class="prod-spec-val">80 - 280  deg C</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Moisture</div><div class="prod-spec-val">&lt; 3 - 5% (w.b.)</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Atomizer</div><div class="prod-spec-val">Nozzle / Disc</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">Dairy</span><span class="prod-app">Food</span><span class="prod-app">Pharma</span><span class="prod-app">Starch</span><span class="prod-app">Chemical</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-spray-dryer.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-card filterable" data-category="dryers">
+          <div class="prod-img">
+            <img loading="lazy" src="assets/fluidized-bed-dryer-fbd.png" alt="Fluidized bed dryer  -  pharmaceutical and food powder drying equipment">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Dryers</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">Fluidized Bed Dryer (FBD)</div>
+            <div class="prod-desc">Fluidized bed technology for granular, crystalline, and powdery materials. Provides uniform, gentle drying with precise moisture control  -  available in continuous configurations for dairy and food.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Bed Area</div><div class="prod-spec-val">0.5 - 20 m2</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Inlet Temp</div><div class="prod-spec-val">40 - 180  deg C</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Operation</div><div class="prod-spec-val">Continuous</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">GMP</div><div class="prod-spec-val">GMP Available</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">Dairy</span><span class="prod-app">Food</span><span class="prod-app">Pharma</span><span class="prod-app">Chemical</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-fluidized-bed-dryer.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-card filterable" data-category="dryers">
+          <div class="prod-img">
+            <img loading="lazy" src="assets/closed-circuit-dryer.png" alt="Closed circuit dryer  -  enclosed industrial process plant">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Dryers</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">Closed Circuit Dryer</div>
+            <div class="prod-desc">Inert gas or solvent-laden atmosphere dryer for products that cannot be exposed to atmospheric oxygen. Designed for solvent recovery, preventing emission and enabling safe handling of explosive or oxidation-sensitive materials.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Atmosphere</div><div class="prod-spec-val">N2 / Inert Gas</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Solvent Rec.</div><div class="prod-spec-val">Up to 95%+</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Safety</div><div class="prod-spec-val">ATEX Available</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Control</div><div class="prod-spec-val">PLC Automated</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">Pharma API</span><span class="prod-app">Fine Chemicals</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-closed-circuit-dryer.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-card filterable" data-category="dryers">
+          <div class="prod-img">
+            <img loading="lazy" src="assets/agitated-thin-film-dryer-atfd.jpeg" alt="Agitated thin film dryer (ATFD)  -  vertical jacketed dryer with rotor for viscous and heat-sensitive materials">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Dryers</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">Agitated Thin Film Dryer (ATFD)</div>
+            <div class="prod-desc">Continuous dryer for viscous, heat-sensitive, and fouling materials. A rotating blade assembly spreads feed into a thin turbulent film on the heated wall, enabling rapid evaporation under vacuum  -  ideal for ZLD, effluent salts, and high-value products.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Feed Form</div><div class="prod-spec-val">Slurry / Viscous</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Heating Area</div><div class="prod-spec-val">0.5 - 30 m2</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Operation</div><div class="prod-spec-val">Vacuum / Continuous</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Material</div><div class="prod-spec-val">SS 304 / 316L</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">ZLD / Effluent</span><span class="prod-app">Pharma</span><span class="prod-app">Specialty Chemical</span><span class="prod-app">Agrochemical</span><span class="prod-app">Distillery</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-agitated-thin-film-dryer.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-card filterable" data-category="dryers">
+          <div class="prod-img">
+            <img loading="lazy" src="assets/spin flash dryer2.png" alt="Spin flash dryer  -  industrial drying tower and process equipment">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Dryers</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">Spin Flash Dryer</div>
+            <div class="prod-desc">Ideal for drying paste, filter cake, sludge, and wet granular materials directly without pre-drying. The spinning action provides intense heat and mass transfer, achieving dry powder in a compact system footprint.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Feed Form</div><div class="prod-spec-val">Paste / Cake / Sludge</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Evap. Rate</div><div class="prod-spec-val">50 - 2,000 kg/hr</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Residence</div><div class="prod-spec-val">1 - 5 seconds</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Material</div><div class="prod-spec-val">MS / SS 304</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">Chemical</span><span class="prod-app">Pigments</span><span class="prod-app">Ceramics</span><span class="prod-app">Clay</span><span class="prod-app">Pharma</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-spin-flash-dryer.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- --- DAIRY / MILK PROCESSING --- -->
+    <div id="milk-processing" style="margin-bottom:64px;">
+      <div class="cat-title" data-aos="fade-right">
+        <div class="cat-icon"><i class="fa-solid fa-cow"></i></div>
+        <div><div class="cat-name">Dairy Processing Plants</div><div class="cat-count">6 Products</div></div>
+        <div class="cat-line"></div>
+      </div>
+
+      <div class="grid-3" data-aos="fade-up">
+
+        <div class="prod-card filterable" data-category="dairy">
+          <div class="prod-img">
+            <img loading="lazy" src="assets/milk-processing-plant.png" alt="Milk processing plant  -  hygienic dairy food manufacturing facility">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Dairy</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">Complete Milk Processing Plant</div>
+            <div class="prod-desc">Turnkey dairy plant from raw milk reception to final product packaging. Includes all processing equipment  -  pasteurizer, homogenizer, separator, storage tanks, UHT, and packaging-ready output with CIP integration.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Capacity</div><div class="prod-spec-val">5 - 200 KLD</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Products</div><div class="prod-spec-val">Liquid Milk, Cream</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Standard</div><div class="prod-spec-val">FSSAI / 3-A</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Automation</div><div class="prod-spec-val">Full PLC/SCADA</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">Dairy Plants</span><span class="prod-app">Co-operatives</span><span class="prod-app">FMCG</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-complete-milk-processing-plant.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-card filterable" data-category="dairy">
+          <div class="prod-img">
+            <img loading="lazy" src="assets/Milk Chilling Plant.jpeg" alt="Milk chilling plant - industrial refrigeration and milk cooling facility for dairy processing">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Dairy</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">Milk Chilling Plant</div>
+            <div class="prod-desc">Industrial-scale milk chilling plant for rapid and hygienic cooling of large volumes of raw milk received at dairy processing facilities. Integrated refrigeration system with plate heat exchangers, insulated storage silos, and automated temperature monitoring ensures milk reaches 4°C rapidly.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Capacity</div><div class="prod-spec-val">5 - 200 KLD</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Cooling System</div><div class="prod-spec-val">PHE - Refrigeration</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Outlet Temp</div><div class="prod-spec-val">4 ± 1 deg C</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Standard</div><div class="prod-spec-val">FSSAI / BIS / 3-A</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">Dairy Plants</span><span class="prod-app">Co-operatives</span><span class="prod-app">Milk Unions</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-milk-chilling-plant.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-card filterable" data-category="dairy">
+          <div class="prod-img">
+            <img loading="lazy" src="assets/milk pasteurizer.jpeg" alt="Milk pasteurizer  -  food-grade stainless dairy processing line">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Dairy</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">Milk Pasteurizer (HTST / LTLT)</div>
+            <div class="prod-desc">High-Temperature Short-Time (HTST) and Low-Temperature Long-Time (LTLT) pasteurizers for safe milk processing. Plate-type heat exchangers ensure precise temperature control, minimal nutritional loss, and extended shelf life.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Type</div><div class="prod-spec-val">HTST / LTLT / UHT</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Capacity</div><div class="prod-spec-val">1,000 - 50,000 L/hr</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Temp (HTST)</div><div class="prod-spec-val">72 deg C / 15 sec</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">CIP</div><div class="prod-spec-val">Auto CIP Included</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">Pasteurized Milk</span><span class="prod-app">Flavored Milk</span><span class="prod-app">Cream</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-milk-pasteurizer-htst-ltlt.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-card filterable" data-category="dairy">
+          <div class="prod-img">
+            <img loading="lazy" src="assets/milk deodorizer.jpeg" alt="Milk deodorizer  -  stainless steel vacuum process vessel">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Dairy</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">Milk Deodorizer</div>
+            <div class="prod-desc">Vacuum deodorizer designed to remove off-flavors, taints, and volatile compounds from milk and dairy products. Improves product quality and shelf life  -  essential for premium dairy brands and exports.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Capacity</div><div class="prod-spec-val">2,000 - 30,000 L/hr</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Vacuum</div><div class="prod-spec-val">0.02 - 0.05 bar(a)</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Temp</div><div class="prod-spec-val">65 - 78  deg C</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Material</div><div class="prod-spec-val">SS 316L Mirror</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">UHT Milk</span><span class="prod-app">Whey</span><span class="prod-app">Butter Milk</span><span class="prod-app">Skimmed Milk</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-milk-deodorizer.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-card filterable" data-category="dairy">
+          <div class="prod-img">
+            <img loading="lazy" src="assets/butter-processing-unit.png" alt="Butter processing unit - continuous butter making machine stainless steel">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Dairy</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">Butter Processing Unit</div>
+            <div class="prod-desc">Complete butter processing line including cream separation, pasteurization, aging, and continuous butter-making machine. Designed for high-throughput production of table butter, white butter, and salted butter with precise moisture control and CIP provision.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Capacity</div><div class="prod-spec-val">500 - 20,000 kg/day</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Moisture</div><div class="prod-spec-val">&lt; 16% (as per std.)</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Material</div><div class="prod-spec-val">SS 304 / SS 316L</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Standard</div><div class="prod-spec-val">FSSAI / 3-A</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">Table Butter</span><span class="prod-app">White Butter</span><span class="prod-app">Salted Butter</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-butter-processing-unit.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-card filterable" data-category="dairy">
+          <div class="prod-img">
+            <img loading="lazy" src="assets/ghee-making-plant.png" alt="Ghee making plant - industrial continuous ghee clarification and packaging line">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Dairy</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">Ghee Making Plant</div>
+            <div class="prod-desc">Complete turnkey ghee manufacturing plant covering cream-to-ghee processing — butter melting, clarification, filtration, and filling. Produces ISI-grade pure ghee with consistent color, flavor, and free fatty acid levels. Suitable for large dairy co-operatives and FMCG ghee brands.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Capacity</div><div class="prod-spec-val">100 - 5,000 kg/hr</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">FFA</div><div class="prod-spec-val">&lt; 0.3% (Oleic Acid)</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Material</div><div class="prod-spec-val">SS 316L Inner</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Standard</div><div class="prod-spec-val">AGMARK / FSSAI</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">Pure Ghee</span><span class="prod-app">Co-operatives</span><span class="prod-app">FMCG Brands</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-ghee-making-plant.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- MILK EQUIPMENT -->
+    <div id="milk-equipment" style="margin-bottom:64px;">
+      <div class="cat-title" data-aos="fade-right">
+        <div class="cat-icon"><i class="fa-solid fa-jar"></i></div>
+        <div><div class="cat-name">Milk Processing Equipment</div><div class="cat-count">3 Products</div></div>
+        <div class="cat-line"></div>
+      </div>
+
+      <div class="grid-3" data-aos="fade-up">
+
+        <div class="prod-card filterable" data-category="milk-equipment">
+          <div class="prod-img">
+            <img loading="lazy" src="assets/butter-churner.png" alt="Butter Churner  -  stainless steel butter making equipment">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Milk Equipment</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">Butter Churner</div>
+            <div class="prod-desc">Industrial-grade stainless steel butter churner for converting cream into butter through continuous or batch churning process. Designed with SS 304/316L contact parts, variable speed drive, and CIP provision for hygienic and efficient butter production.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Capacity</div><div class="prod-spec-val">100 - 5,000 L/batch</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Material</div><div class="prod-spec-val">SS 304 / SS 316L</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Drive</div><div class="prod-spec-val">VFD</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Standard</div><div class="prod-spec-val">FSSAI / 3-A</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">Butter</span><span class="prod-app">White Butter</span><span class="prod-app">Co-operatives</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-butter-churner.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-card filterable" data-category="milk-equipment">
+          <div class="prod-img prod-img--portrait">
+            <img loading="lazy" src="assets/ghee-kettle.png" alt="Ghee Kettle  -  jacketed steam heated ghee clarification vessel">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Milk Equipment</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">Ghee Kettle</div>
+            <div class="prod-desc">Steam-jacketed ghee clarification kettle for melting and clarifying butter into pure ghee. Designed with SS 316L inner lining, agitator with scraper blades, steam/hot-water jacket, and tilting mechanism for easy discharge and hygienic cleaning.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Capacity</div><div class="prod-spec-val">100 - 2,000 L</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Heating</div><div class="prod-spec-val">Steam / Hot Water</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Material</div><div class="prod-spec-val">SS 316L Inner</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Agitator</div><div class="prod-spec-val">Scraper Blade Type</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">Ghee</span><span class="prod-app">Clarified Butter</span><span class="prod-app">Dairy Plants</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-ghee-kettle.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-card filterable" data-category="milk-equipment">
+          <div class="prod-img">
+            <img loading="lazy" src="assets/khoya-making-machine.jpeg" alt="Khoya Making Machine  -  stainless steel mawa evaporation vessel">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Milk Equipment</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">Khoya Making Machine</div>
+            <div class="prod-desc">Continuous or batch-type stainless steel khoya (mawa) making machine for concentrating milk solids by evaporation. Equipped with steam-jacketed pan, motorized scraper agitator, and automated temperature control to achieve consistent khoya texture and color.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Capacity</div><div class="prod-spec-val">50 - 1,000 kg/hr</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Type</div><div class="prod-spec-val">Batch / Continuous</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Material</div><div class="prod-spec-val">SS 304 / SS 316L</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Control</div><div class="prod-spec-val">Auto Temp. Control</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">Khoya / Mawa</span><span class="prod-app">Mithai Units</span><span class="prod-app">FMCG</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-khoya-making-machine.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- DAIRY AND FOOD PLANT EQUIPMENTS -->
+    <div id="dairy-food-equipment" style="margin-bottom:64px;">
+      <div class="cat-title" data-aos="fade-right">
+        <div class="cat-icon"><i class="fa-solid fa-industry"></i></div>
+        <div><div class="cat-name">Dairy & Food Plant Equipments</div><div class="cat-count">3 Products</div></div>
+        <div class="cat-line"></div>
+      </div>
+
+      <div class="grid-3" data-aos="fade-up">
+
+        <div class="prod-card filterable" data-category="dairy-food-equipment">
+          <div class="prod-img">
+            <img loading="lazy" src="assets/milk-can-conveyor.jpeg" alt="Milk can conveyor - stainless steel automated milk can handling system for dairy plants">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Dairy Equipment</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">Milk Can Conveyor</div>
+            <div class="prod-desc">Automated stainless steel milk can conveyor system for efficient handling, transportation, and unloading of milk cans at dairy collection points and processing plants. Reduces manual handling, prevents spillage, and improves throughput with hygienic SS 304 construction and variable-speed drive.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Can Capacity</div><div class="prod-spec-val">10 - 50 L cans</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Speed</div><div class="prod-spec-val">Variable (VFD)</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Material</div><div class="prod-spec-val">SS 304 Structure</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Type</div><div class="prod-spec-val">Roller / Belt / Chain</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">Co-operatives</span><span class="prod-app">Milk Unions</span><span class="prod-app">Collection Centres</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-milk-can-conveyor.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-card filterable" data-category="dairy-food-equipment">
+          <div class="prod-img">
+            <img loading="lazy" src="assets/bulk-milk-cooler.png" alt="Bulk milk cooler - stainless steel direct expansion milk chilling vessel for village collection">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Dairy Equipment</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">Bulk Milk Cooler (BMC)</div>
+            <div class="prod-desc">Direct expansion (DX) bulk milk cooler for rapid chilling of freshly collected raw milk at village-level milk collection centres (MCC). Cools milk from 35°C to 4°C within 3 hours, preventing bacterial growth and maintaining freshness. Available in open-top and closed-top designs with CIP provision.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Capacity</div><div class="prod-spec-val">300 - 10,000 L</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Cooling</div><div class="prod-spec-val">Direct Expansion</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Temp</div><div class="prod-spec-val">4 ± 1 deg C</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Standard</div><div class="prod-spec-val">BIS / FSSAI / AMUL</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">Village MCC</span><span class="prod-app">AMUL Pattern</span><span class="prod-app">Rural Dairy</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-bulk-milk-cooler.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-card filterable" data-category="dairy-food-equipment">
+          <div class="prod-img">
+            <img loading="lazy" src="assets/Crystallization Tank.jpeg" alt="Crystallization tank - stainless steel jacketed vessel for dairy and food crystal formation">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Dairy Equipment</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">Crystallization Tank</div>
+            <div class="prod-desc">Jacketed stainless steel crystallization tank for controlled cooling and crystal formation in dairy, food, and chemical processes. Designed with agitator, precise temperature control, and hygienic SS 304/316L construction for uniform crystal size and consistent product quality.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Capacity</div><div class="prod-spec-val">500 - 20,000 L</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Cooling</div><div class="prod-spec-val">Jacket / Coil</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Material</div><div class="prod-spec-val">SS 304 / SS 316L</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Agitator</div><div class="prod-spec-val">Anchor / Paddle</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">Dairy</span><span class="prod-app">Food</span><span class="prod-app">Sugar</span><span class="prod-app">Chemical</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-crystallization-tank.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- WASTE MANAGEMENT -->
+    <div id="waste-management" style="margin-bottom:64px;">
+      <div class="cat-title" data-aos="fade-right">
+        <div class="cat-icon"><i class="fa-solid fa-leaf"></i></div>
+        <div><div class="cat-name">Waste Management</div><div class="cat-count">6 Products</div></div>
+        <div class="cat-line"></div>
+      </div>
+
+      <div class="grid-3" data-aos="fade-up">
+
+        <div class="prod-card filterable" data-category="waste-management">
+          <div class="prod-img">
+            <img loading="lazy" src="assets/etp-stp-treatment-plants.png" alt="ETP/STP treatment plant - industrial effluent and sewage treatment system">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Waste Management</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">ETP/STP Treatment Plants</div>
+            <div class="prod-desc">Complete effluent treatment plant (ETP) and sewage treatment plant (STP) solutions for industrial and municipal wastewater. Primary, secondary, and tertiary treatment with aeration, clarification, filtration, and sludge handling to meet CPCB discharge norms.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Capacity</div><div class="prod-spec-val">10 - 500 m3/day</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Treatment</div><div class="prod-spec-val">Primary / Secondary / Tertiary</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Compliance</div><div class="prod-spec-val">CPCB / SPCB</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Control</div><div class="prod-spec-val">PLC / SCADA</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">Pharma</span><span class="prod-app">Chemical</span><span class="prod-app">Food</span><span class="prod-app">Municipal</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-etp-stp-treatment-plants.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-card filterable" data-category="waste-management">
+          <div class="prod-img">
+            <img loading="lazy" src="assets/biomass-solid-waste-treatment-plant.png" alt="Biomass solid waste treatment plant - industrial solid waste processing system">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Waste Management</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">Biomass Solid Waste Treatment Plant</div>
+            <div class="prod-desc">Integrated biomass and solid waste treatment plant for agricultural residue, industrial solid waste, and organic rejects. Includes shredding, drying, compaction, and energy recovery for sustainable waste-to-resource conversion.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Capacity</div><div class="prod-spec-val">1 - 50 TPD</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Feed</div><div class="prod-spec-val">Biomass / MSW / Organic</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Process</div><div class="prod-spec-val">Shred / Dry / Compact</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Output</div><div class="prod-spec-val">Fuel / Compost / RDF</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">Sugar</span><span class="prod-app">Paper</span><span class="prod-app">Food</span><span class="prod-app">Municipal</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-biomass-solid-waste-treatment-plant.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-card filterable" data-category="waste-management">
+          <div class="prod-img">
+            <img loading="lazy" src="assets/biogas-and-cng-plant.png" alt="Biogas and CNG plant - anaerobic digestion and biogas upgrading system">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Waste Management</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">Biogas and CNG Plant</div>
+            <div class="prod-desc">Turnkey biogas plant with anaerobic digester, gas storage, purification, and CNG compression for converting organic waste and biomass into clean fuel. Suitable for dairy waste, food processing rejects, and agricultural biomass.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Gas Output</div><div class="prod-spec-val">50 - 5,000 m3/day</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Feed</div><div class="prod-spec-val">Organic / Biomass / Slurry</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Purification</div><div class="prod-spec-val">H<sub>2</sub>S / CO<sub>2</sub> Removal</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">End Product</div><div class="prod-spec-val">Biogas / Bio-CNG</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">Dairy</span><span class="prod-app">Distillery</span><span class="prod-app">Food</span><span class="prod-app">Municipal</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-biogas-and-cng-plant.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-card filterable" data-category="waste-management">
+          <div class="prod-img">
+            <img loading="lazy" src="assets/wtp-uf-ro-softener-plants.png" alt="WTP UF RO softener plant - water treatment and purification system">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Waste Management</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">WTP/UF/RO/Softener Plants</div>
+            <div class="prod-desc">Complete water treatment plants including WTP, ultrafiltration (UF), reverse osmosis (RO), and softener systems for industrial process water, boiler feed, and drinking water with automated backwash and chemical dosing.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Capacity</div><div class="prod-spec-val">1 - 200 m3/hr</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Technology</div><div class="prod-spec-val">WTP / UF / RO / Softener</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Output TDS</div><div class="prod-spec-val">As per requirement</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Control</div><div class="prod-spec-val">PLC / Auto Dosing</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">Pharma</span><span class="prod-app">Food</span><span class="prod-app">Boiler Feed</span><span class="prod-app">Drinking Water</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-wtp-uf-ro-softener-plants.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-card filterable" data-category="waste-management">
+          <div class="prod-img">
+            <img loading="lazy" src="assets/scrubber-systems.png" alt="Scrubber system - industrial air pollution control and gas scrubbing unit">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Waste Management</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">Scrubber Systems</div>
+            <div class="prod-desc">Wet and dry scrubber systems for removal of particulates, acid gases, VOCs, and odorous compounds from industrial exhaust streams. Custom-designed for boiler flue gas, chemical reactors, and process vent lines.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Gas Flow</div><div class="prod-spec-val">1K - 100K Am3/hr</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Type</div><div class="prod-spec-val">Wet / Dry / Packed Bed</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Removal</div><div class="prod-spec-val">PM / SO<sub>2</sub> / HCl / VOC</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Material</div><div class="prod-spec-val">SS / FRP / PP</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">Chemical</span><span class="prod-app">Pharma</span><span class="prod-app">Boiler</span><span class="prod-app">Food</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-scrubber-systems.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-card filterable" data-category="waste-management">
+          <div class="prod-img">
+            <img loading="lazy" src="assets/incinerator-system.png" alt="Incinerator system - industrial waste thermal destruction plant">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Waste Management</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">Incinerator System</div>
+            <div class="prod-desc">Industrial incinerator systems for safe thermal destruction of hazardous and non-hazardous solid and liquid waste. Primary and secondary combustion chambers with scrubber integration and emission monitoring for CPCB compliance.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Capacity</div><div class="prod-spec-val">50 - 2,000 kg/hr</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Chambers</div><div class="prod-spec-val">Primary + Secondary</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Waste Type</div><div class="prod-spec-val">Solid / Liquid / Sludge</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Emission</div><div class="prod-spec-val">CPCB Compliant</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">Pharma</span><span class="prod-app">Chemical</span><span class="prod-app">Hospital</span><span class="prod-app">Industrial</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-incinerator-system.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- HEAT EXCHANGERS -->
+    <div id="heat-exchangers" style="margin-bottom:64px;">
+      <div class="cat-title" data-aos="fade-right">
+        <div class="cat-icon"><i class="fa-solid fa-temperature-high"></i></div>
+        <div><div class="cat-name">Heat Exchangers</div><div class="cat-count">2 Products</div></div>
+        <div class="cat-line"></div>
+      </div>
+
+      <div class="grid-3" data-aos="fade-up">
+
+        <div class="prod-card filterable" data-category="heat-transfer">
+          <div class="prod-img">
+            <img loading="lazy" src="assets/shell-tube-heat-exchanger.jpeg" alt="Shell and tube heat exchanger  -  stainless steel valves and process piping">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Heat Transfer</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">Shell & Tube Heat Exchanger</div>
+            <div class="prod-desc">Heavy-duty industrial heat exchangers designed per TEMA standards. Available in single-pass, multi-pass, U-tube, and fixed tubesheet configurations for heating, cooling, condensing, and preheating applications across all industries.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Duty</div><div class="prod-spec-val">10 kW  -  10 MW</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Design Press.</div><div class="prod-spec-val">Up to 100 bar</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Standard</div><div class="prod-spec-val">TEMA / ASME</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">MOC</div><div class="prod-spec-val">CS / SS / Alloy</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">Process Heating</span><span class="prod-app">Condensers</span><span class="prod-app">Reboilers</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-shell-tube-heat-exchanger.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-card filterable" data-category="heat-transfer">
+          <div class="prod-img">
+            <img loading="lazy" src="assets/plate-heat-exchanger-phe.jpeg" alt="Plate heat exchanger  -  stainless process skid with tanks and piping">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Heat Transfer</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">Plate Heat Exchanger (PHE)</div>
+            <div class="prod-desc">Compact, high-efficiency gasketed plate heat exchangers offering superior thermal performance in minimal footprint. Easy cleaning and maintenance, expandable capacity, ideal for dairy, food, beverage, and HVAC applications.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Flow Rate</div><div class="prod-spec-val">Up to 2,000 m3/hr</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Temp Range</div><div class="prod-spec-val">-35 to +200  deg C</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Plates</div><div class="prod-spec-val">Titanium / SS 316</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Type</div><div class="prod-spec-val">Gasketed / BHE</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">Dairy</span><span class="prod-app">Beverages</span><span class="prod-app">HVAC</span><span class="prod-app">Pharma</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-plate-heat-exchanger-phe.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- CIP SYSTEMS -->
+    <div id="cip" style="margin-bottom:64px;">
+      <div class="cat-title" data-aos="fade-right">
+        <div class="cat-icon"><i class="fa-solid fa-recycle"></i></div>
+        <div><div class="cat-name">CIP & Cleaning Systems</div><div class="cat-count">1 Product</div></div>
+        <div class="cat-line"></div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;" data-aos="fade-up">
+        <div class="prod-card filterable" data-category="cleaning">
+          <div class="prod-img">
+            <img loading="lazy" src="assets/automated-cip-system.jpeg" alt="Automated CIP System — stainless tanks, pipes and valves on process skid">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Cleaning Systems</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">Automated CIP System</div>
+            <div class="prod-desc">Fully automated Clean-in-Place systems for hygienic cleaning of process lines, tanks, heat exchangers, and equipment without disassembly. PLC-controlled sequences for pre-rinse, caustic wash, acid wash, and final rinse  -  chemical dosing included.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Standard</div><div class="prod-spec-val">3-A / EHEDG</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Tanks</div><div class="prod-spec-val">2 to 4-Tank System</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Control</div><div class="prod-spec-val">PLC + HMI</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Validation</div><div class="prod-spec-val">FDA-ready</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">Dairy</span><span class="prod-app">Beverage</span><span class="prod-app">Pharma</span><span class="prod-app">Food</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-automated-cip-system.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- VESSELS & TANKS -->
+    <div id="vessels" style="margin-bottom:64px;">
+      <div class="cat-title" data-aos="fade-right">
+        <div class="cat-icon"><i class="fa-solid fa-database"></i></div>
+        <div><div class="cat-name">Pressure Vessels & Storage Tanks</div><div class="cat-count">2 Products</div></div>
+        <div class="cat-line"></div>
+      </div>
+
+      <div class="grid-3" data-aos="fade-up">
+
+        <div class="prod-card filterable" data-category="vessels">
+          <div class="prod-img">
+            <img loading="lazy" src="assets/pressure-vessels-asme-ibr.jpeg" alt="Pressure vessels  -  polished stainless steel storage tanks">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Vessels</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">Pressure Vessels (ASME / IBR)</div>
+            <div class="prod-desc">Custom-designed and fabricated pressure vessels for storage and processing of gases and liquids under pressure. Manufactured to ASME Section VIII Div. 1 and IBR standards with full material traceability and NDT testing.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Volume</div><div class="prod-spec-val">100 L  -  200 m3</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Pressure</div><div class="prod-spec-val">FV to 300 bar</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">MOC</div><div class="prod-spec-val">CS / SS / Alloy</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Inspection</div><div class="prod-spec-val">Third-Party</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">Chemical</span><span class="prod-app">Pharma</span><span class="prod-app">Oil & Gas</span><span class="prod-app">Power</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-pressure-vessels-asme-ibr.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-card filterable" data-category="vessels">
+          <div class="prod-img">
+            <img loading="lazy" src="assets/stainless-steel-storage-tanks.png" alt="SS storage tanks  -  polished stainless steel hygienic vessels">
+            <div class="prod-img-overlay"></div>
+            <span class="prod-cat-badge">Tanks</span>
+          </div>
+          <div class="prod-body">
+            <div class="prod-title">Stainless Steel Storage Silos</div>
+            <div class="prod-desc">Hygienic SS 304/316L storage tanks with mirror-polished internal surfaces, insulation, agitators, CIP spray balls, and level instrumentation. Available in vertical, horizontal, and silos configurations for food, dairy, and pharma applications.</div>
+            <div class="prod-specs">
+              <div class="prod-spec"><div class="prod-spec-label">Capacity</div><div class="prod-spec-val">500 L  -  200,000 L</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Material</div><div class="prod-spec-val">SS 304 / SS 316L</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Finish</div><div class="prod-spec-val">Ra <= 0.4 - 0.8  um</div></div>
+              <div class="prod-spec"><div class="prod-spec-label">Insulation</div><div class="prod-spec-val">PUF / Rock Wool</div></div>
+            </div>
+            <div class="prod-apps">
+              <span class="prod-app">Dairy</span><span class="prod-app">Food</span><span class="prod-app">Pharma</span><span class="prod-app">Chemical</span>
+            </div>
+            <div class="prod-footer">
+              <a href="product-stainless-steel-storage-silos.html" class="btn btn-outline btn-sm">Details</a>
+              <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;"><i class="fa-solid fa-paper-plane"></i> Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY GAUSIN FOR PRODUCTS -->
+<section class="section bg-white">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-label"><i class="fa-solid fa-star"></i> Our Advantage</div>
+      <h2 class="section-title">Why Choose <span>Gausin Equipment</span></h2>
+    </div>
+    <div class="grid-4" data-aos="fade-up" data-aos-delay="100">
+      <div style="text-align:center;padding:28px 20px;">
+        <div style="width:64px;height:64px;background:var(--blue-50);border-radius:16px;display:flex;align-items:center;justify-content:center;color:var(--blue-500);font-size:1.75rem;margin:0 auto 16px;border:1px solid var(--blue-200);"><i class="fa-solid fa-drafting-compass"></i></div>
+        <h4 style="font-size:1rem;font-weight:700;color:var(--gray-900);font-family:'Montserrat',sans-serif;margin-bottom:8px;">Custom Engineered</h4>
+        <p style="font-size:0.875rem;color:var(--gray-600);line-height:1.65;">Every unit is designed to your specific process requirements, feed properties, and production targets.</p>
+      </div>
+      <div style="text-align:center;padding:28px 20px;">
+        <div style="width:64px;height:64px;background:var(--blue-50);border-radius:16px;display:flex;align-items:center;justify-content:center;color:var(--blue-500);font-size:1.75rem;margin:0 auto 16px;border:1px solid var(--blue-200);"><i class="fa-solid fa-shield-halved"></i></div>
+        <h4 style="font-size:1rem;font-weight:700;color:var(--gray-900);font-family:'Montserrat',sans-serif;margin-bottom:8px;">Certified & Compliant</h4>
+        <p style="font-size:0.875rem;color:var(--gray-600);line-height:1.65;">All equipment meets ASME, IBR, BIS, 3-A, GMP, and other applicable national and international standards.</p>
+      </div>
+      <div style="text-align:center;padding:28px 20px;">
+        <div style="width:64px;height:64px;background:var(--blue-50);border-radius:16px;display:flex;align-items:center;justify-content:center;color:var(--blue-500);font-size:1.75rem;margin:0 auto 16px;border:1px solid var(--blue-200);"><i class="fa-solid fa-leaf"></i></div>
+        <h4 style="font-size:1rem;font-weight:700;color:var(--gray-900);font-family:'Montserrat',sans-serif;margin-bottom:8px;">Energy Efficient</h4>
+        <p style="font-size:0.875rem;color:var(--gray-600);line-height:1.65;">Multi-effect evaporation, heat recovery, and MVR upgrades reduce your steam and power consumption significantly.</p>
+      </div>
+      <div style="text-align:center;padding:28px 20px;">
+        <div style="width:64px;height:64px;background:var(--blue-50);border-radius:16px;display:flex;align-items:center;justify-content:center;color:var(--blue-500);font-size:1.75rem;margin:0 auto 16px;border:1px solid var(--blue-200);"><i class="fa-solid fa-headset"></i></div>
+        <h4 style="font-size:1rem;font-weight:700;color:var(--gray-900);font-family:'Montserrat',sans-serif;margin-bottom:8px;">After-Sales Support</h4>
+        <p style="font-size:0.875rem;color:var(--gray-600);line-height:1.65;">Comprehensive after-sales service including spare parts, on-site maintenance, and remote technical support.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div style="text-align:center;max-width:720px;margin:0 auto;" data-aos="fade-up">
+      <h2 style="font-size:clamp(1.75rem,3vw,2.75rem);font-weight:900;color:white;margin-bottom:20px;">Need a Custom <span style="background:linear-gradient(135deg,var(--blue-300),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Engineering Solution?</span></h2>
+      <p style="font-size:1.0625rem;color:rgba(255,255,255,0.7);line-height:1.75;margin-bottom:40px;">Share your process requirements and our engineering team will develop a customized proposal  -  including technical specifications, energy analysis, and commercial terms.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="contact.html" class="btn btn-white btn-lg"><i class="fa-solid fa-paper-plane"></i> Request Technical Proposal</a>
+        <a href="tel:+919870840779" class="btn btn-ghost btn-lg"><i class="fa-solid fa-phone"></i> Call us Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="navbar-logo footer-logo"><img src="images/gausin-logo.png" alt="" class="logo-img" width="110" height="52" aria-hidden="true"><div class="logo-text"><div class="logo-name">Gausin International</div><div class="logo-tagline">Engineers Pvt. Ltd.</div></div></a>
+        <p class="footer-brand-desc">Engineering process excellence through advanced evaporation, drying, and industrial plant solutions for dairy, pharma, chemical and food industries.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://x.com/Gausin_117" class="social-link" aria-label="X" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.instagram.com/gaurav67165/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a><a href="https://www.youtube.com/@GausinInternationalEngineersPv" class="social-link" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61590538293790" class="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-title">Products</div>
+        <div class="footer-links">
+          <a href="#evaporators" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Falling Film Evaporator</a>
+          <a href="#dryers" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Spray Dryer</a>
+          <a href="#cip" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>CIP Systems</a>
+          <a href="#milk-processing" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Milk Processing Plant</a>
+          <a href="#heat-exchangers" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Heat Exchangers</a>
+          <a href="#vessels" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Pressure Vessels</a>
+          <a href="product-etp-stp-treatment-plants.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>ETP/STP Treatment Plants</a>
+          <a href="product-biomass-solid-waste-treatment-plant.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Biomass Solid Waste Treatment Plant</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-title">Company</div>
+        <div class="footer-links">
+          <a href="about.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>About Us</a>
+          <a href="services.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Services</a>
+          <a href="industries.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Industries</a>
+          <a href="technology.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Technology</a>
+          <a href="contact.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Contact Us</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-title">Contact Us</div>
+        <div class="footer-contact-item"><div class="footer-contact-icon"><i class="fa-solid fa-location-dot"></i></div><div class="footer-contact-text">DH-249, Pallavpuram Phase-1, Roorkee Road, Meerut, UP  -  250110</div></div>
+        <div class="footer-contact-item"><div class="footer-contact-icon"><i class="fa-solid fa-phone"></i></div><div class="footer-contact-text"><a href="tel:+919870840779" style="color:inherit;">+91 98708 40779</a></div></div>
+        <div class="footer-contact-item"><div class="footer-contact-icon"><i class="fa-solid fa-envelope"></i></div><div class="footer-contact-text"><a href="mailto:info@gausin.in" style="color:inherit;">info@gausin.in</a></div></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-left">
+        <div>(c) 2024 Gausin International Engineers Pvt. Ltd. All rights reserved.</div>
+        <div class="footer-credit">Designed &amp; Developed by Gausin International Engineers Pvt. Ltd.</div>
+      </div>
+      <div class="footer-bottom-links">
+        <a href="privacy-policy.html" class="footer-bottom-link">Privacy Policy</a>
+        <a href="terms-of-service.html" class="footer-bottom-link">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<script src="js/config.js"></script>
+<script src="js/main.js" defer></script>
+<script src="js/components.js" defer></script>
+</body>
+</html>
+
+
+

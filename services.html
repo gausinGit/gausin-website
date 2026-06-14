@@ -1,0 +1,447 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Engineering services by Gausin International  -  Process Design, Project Management, Plant Engineering, Energy Optimization, Automation, and Technical Consultancy.">
+  <title>Services | Gausin International Engineers Pvt. Ltd.</title>
+  <link rel="stylesheet" href="css/styles.css">
+    
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <style>
+    .service-card-big {
+      background: white; border: 1px solid var(--gray-200); border-radius: 20px;
+      overflow: hidden; transition: all 0.35s ease; display: grid;
+      grid-template-columns: 280px 1fr;
+    }
+    .service-card-big:hover { transform: translateY(-4px); box-shadow: var(--shadow-xl); border-color: var(--blue-200); }
+    .service-card-img { background: linear-gradient(135deg,var(--blue-900),var(--blue-700)); position: relative; overflow: hidden; min-height: 240px; }
+    .service-card-img img { width: 100%; height: 100%; object-fit: cover; opacity: 0.5; transition: transform 0.5s; }
+    .service-card-big:hover .service-card-img img { transform: scale(1.06); }
+    .service-card-img-overlay { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 12px; }
+    .service-num { font-size: 4rem; font-weight: 900; color: rgba(255,255,255,0.1); font-family: 'Montserrat',sans-serif; line-height: 1; }
+    .service-icon-big { width: 64px; height: 64px; background: rgba(255,255,255,0.12); border-radius: 16px; border: 1px solid rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.75rem; backdrop-filter: blur(8px); }
+    .service-card-body { padding: 36px; }
+    .service-badge { display: inline-flex; align-items: center; gap: 6px; background: var(--blue-50); color: var(--blue-600); font-size: 0.75rem; font-weight: 700; padding: 4px 12px; border-radius: 20px; border: 1px solid var(--blue-200); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .service-title { font-size: 1.375rem; font-weight: 800; color: var(--gray-900); font-family: 'Montserrat',sans-serif; margin-bottom: 12px; }
+    .service-desc { font-size: 0.9375rem; color: var(--gray-600); line-height: 1.75; margin-bottom: 20px; }
+    .service-features { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 20px; }
+    .service-feat { display: flex; align-items: center; gap: 8px; font-size: 0.875rem; color: var(--gray-700); }
+    .service-feat-dot { width: 6px; height: 6px; background: var(--blue-500); border-radius: 50%; flex-shrink: 0; }
+
+    /* Process Steps Horizontal */
+    .proc-step-h { display: flex; align-items: flex-start; gap: 20px; padding: 24px; background: white; border: 1px solid var(--gray-200); border-radius: 16px; transition: all 0.3s; }
+    .proc-step-h:hover { border-color: var(--blue-300); box-shadow: var(--shadow-md); }
+    .proc-num { width: 48px; height: 48px; background: linear-gradient(135deg,var(--blue-500),var(--blue-700)); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.125rem; font-weight: 800; color: white; font-family: 'Montserrat',sans-serif; flex-shrink: 0; }
+    .proc-content h4 { font-size: 1rem; font-weight: 700; color: var(--gray-900); font-family: 'Montserrat',sans-serif; margin-bottom: 6px; }
+    .proc-content p { font-size: 0.875rem; color: var(--gray-600); line-height: 1.6; }
+
+    #backToTop { position: fixed; bottom: 28px; right: 28px; width: 48px; height: 48px; background: linear-gradient(135deg, var(--blue-500), var(--blue-700)); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.125rem; box-shadow: var(--shadow-blue-lg); opacity: 0; pointer-events: none; transition: opacity 0.3s ease, transform 0.3s ease; z-index: 500; }
+    #backToTop:hover { transform: translateY(-3px); }
+
+    @media(max-width:768px) { .service-card-big { grid-template-columns: 1fr; } .service-card-img { min-height: 200px; } }
+    .card-desc, .service-desc { text-align: justify; }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo navbar-logo--image"><img src="images/gausin-logo.png" alt="Gausin International Engineers Pvt. Ltd." class="logo-img" width="220" height="52"></a>
+      <nav class="navbar-nav">
+        <div class="nav-item"><a href="index.html" class="nav-link">Home</a></div>
+        <div class="nav-item"><a href="about.html" class="nav-link">About</a></div>
+        <div class="nav-item">
+          <a href="products.html" class="nav-link">Products <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></a>
+          <div class="mega-menu"><div class="mega-menu-grid">
+            <a href="products.html#evaporators" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-droplet"></i></div><div><div class="mega-menu-item-title">Evaporators</div><div class="mega-menu-item-desc">Falling Film, Forced Circulation</div></div></a>
+            <a href="products.html#dryers" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-wind"></i></div><div><div class="mega-menu-item-title">Dryers</div><div class="mega-menu-item-desc">Spray, Spin Flash, Fluidized Bed</div></div></a>
+            <a href="products.html#heat-exchangers" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-temperature-high"></i></div><div><div class="mega-menu-item-title">Heat Exchangers</div></div></a>
+            <a href="products.html#cip" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-recycle"></i></div><div><div class="mega-menu-item-title">CIP Systems</div></div></a>
+            <a href="products.html#milk-processing" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-flask"></i></div><div><div class="mega-menu-item-title">Milk Processing</div></div></a>
+            <a href="products.html#vessels" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-database"></i></div><div><div class="mega-menu-item-title">Vessels & Tanks</div></div></a>
+          </div></div>
+        </div>
+        <div class="nav-item"><a href="services.html" class="nav-link active">Services</a></div>
+        <div class="nav-item"><a href="industries.html" class="nav-link">Industries</a></div>
+        <div class="nav-item"><a href="technology.html" class="nav-link">Technology</a></div>
+        <div class="nav-item"><a href="contact.html" class="nav-link">Contact</a></div>
+      </nav>
+      <div class="navbar-cta"><a href="contact.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Get a Quote</a></div>
+      <button class="navbar-toggle" id="navbarToggle"><span class="toggle-bar"></span><span class="toggle-bar"></span><span class="toggle-bar"></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Home</a>
+  <a href="about.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">About</a>
+  <a href="products.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Products</a>
+  <a href="services.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--blue-500);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Services</a>
+  <a href="industries.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Industries</a>
+  <a href="technology.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Technology</a>
+  <a href="contact.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Contact</a>
+  <div style="margin-top:24px;"><a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;"><i class="fa-solid fa-paper-plane"></i> Get a Quote</a></div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero page-hero--services">
+  <div class="container page-hero-content">
+    <div class="page-hero-label"><i class="fa-solid fa-gears"></i> Services</div>
+    <h1 class="page-hero-title">End-to-End Engineering<br>Services</h1>
+    <p class="page-hero-desc">From process concept to plant commissioning  -  Gausin provides comprehensive engineering services that cover every phase of your industrial project lifecycle.</p>
+    <div class="breadcrumb">
+      <a href="index.html" class="breadcrumb-item">Home</a>
+      <span class="breadcrumb-sep"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;"></i></span>
+      <span class="breadcrumb-item active">Services</span>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE INTRO -->
+<section class="section bg-white">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-label"><i class="fa-solid fa-list-check"></i> What We Offer</div>
+      <h2 class="section-title">Comprehensive <span>Engineering Services</span></h2>
+      <p class="section-desc">Our multi-disciplinary team of engineers delivers specialized services across process design, equipment engineering, project management, energy optimization, and industrial automation.</p>
+    </div>
+
+    <!-- Service Cards -->
+    <div style="display:flex;flex-direction:column;gap:24px;" data-aos="fade-up">
+
+      <!-- Service 1 -->
+      <div class="service-card-big">
+        <div class="service-card-img">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=500&q=80" alt="Process Engineering">
+          <div class="service-card-img-overlay">
+            <div class="service-num">01</div>
+            <div class="service-icon-big"><i class="fa-solid fa-drafting-compass"></i></div>
+          </div>
+        </div>
+        <div class="service-card-body">
+          <div class="service-badge"><i class="fa-solid fa-drafting-compass"></i> Core Service</div>
+          <div class="service-title">Process Design & Engineering</div>
+          <div class="service-desc">We develop comprehensive process engineering packages for new plants and expansions  -  including process flowsheets, mass & energy balances, equipment sizing, P&ID development, and process simulation using CHEMCAD and HTRI.</div>
+          <div class="service-features">
+            <div class="service-feat"><div class="service-feat-dot"></div>Process simulation (CHEMCAD)</div>
+            <div class="service-feat"><div class="service-feat-dot"></div>Thermal design (HTRI)</div>
+            <div class="service-feat"><div class="service-feat-dot"></div>Mass & energy balance</div>
+            <div class="service-feat"><div class="service-feat-dot"></div>Equipment sizing & selection</div>
+            <div class="service-feat"><div class="service-feat-dot"></div>P&ID development</div>
+            <div class="service-feat"><div class="service-feat-dot"></div>Utility estimation</div>
+          </div>
+          <a href="contact.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Inquire for This Service</a>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-card-big">
+        <div class="service-card-img" style="background:linear-gradient(135deg,var(--blue-700),var(--blue-500));">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1748002645678-7f9c04263315?w=500&q=85&auto=format&fit=crop" alt="Detailed Engineering">
+          <div class="service-card-img-overlay">
+            <div class="service-num">02</div>
+            <div class="service-icon-big"><i class="fa-solid fa-ruler-combined"></i></div>
+          </div>
+        </div>
+        <div class="service-card-body">
+          <div class="service-badge"><i class="fa-solid fa-ruler-combined"></i> Core Service</div>
+          <div class="service-title">Detailed Engineering & Design</div>
+          <div class="service-desc">Our detailed engineering service covers complete 3D CAD modeling, fabrication drawings, civil structural design, piping layouts, electrical engineering, instrumentation engineering, and procurement specifications for all major equipment and systems.</div>
+          <div class="service-features">
+            <div class="service-feat"><div class="service-feat-dot"></div>3D CAD / AutoCAD modeling</div>
+            <div class="service-feat"><div class="service-feat-dot"></div>Fabrication drawing packages</div>
+            <div class="service-feat"><div class="service-feat-dot"></div>Piping isometrics & layouts</div>
+            <div class="service-feat"><div class="service-feat-dot"></div>Structural steel design</div>
+            <div class="service-feat"><div class="service-feat-dot"></div>Electrical & instrumentation</div>
+            <div class="service-feat"><div class="service-feat-dot"></div>Vendor drawing review</div>
+          </div>
+          <a href="contact.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Inquire for This Service</a>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="service-card-big">
+        <div class="service-card-img" style="background:linear-gradient(135deg,#0A2540,var(--blue-800));">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=500&q=80" alt="Project Execution">
+          <div class="service-card-img-overlay">
+            <div class="service-num">03</div>
+            <div class="service-icon-big"><i class="fa-solid fa-project-diagram"></i></div>
+          </div>
+        </div>
+        <div class="service-card-body">
+          <div class="service-badge"><i class="fa-solid fa-project-diagram"></i> Turnkey Service</div>
+          <div class="service-title">Turnkey Project Execution</div>
+          <div class="service-desc">Complete end-to-end project management from concept to commissioning. Our project management team uses MS Project and agile methodologies to ensure on-time, within-budget delivery of complex industrial plants with full documentation and handover.</div>
+          <div class="service-features">
+            <div class="service-feat"><div class="service-feat-dot"></div>Project planning (MS Project)</div>
+            <div class="service-feat"><div class="service-feat-dot"></div>Procurement management</div>
+            <div class="service-feat"><div class="service-feat-dot"></div>Site installation supervision</div>
+            <div class="service-feat"><div class="service-feat-dot"></div>Commissioning & startup</div>
+            <div class="service-feat"><div class="service-feat-dot"></div>Performance testing</div>
+            <div class="service-feat"><div class="service-feat-dot"></div>Operator training</div>
+          </div>
+          <a href="contact.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Inquire for This Service</a>
+        </div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="service-card-big">
+        <div class="service-card-img" style="background:linear-gradient(135deg,var(--blue-600),var(--accent-cyan));">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=500&q=80" alt="Energy Optimization">
+          <div class="service-card-img-overlay">
+            <div class="service-num">04</div>
+            <div class="service-icon-big"><i class="fa-solid fa-bolt"></i></div>
+          </div>
+        </div>
+        <div class="service-card-body">
+          <div class="service-badge"><i class="fa-solid fa-bolt"></i> Specialty Service</div>
+          <div class="service-title">Energy Optimization & Audit</div>
+          <div class="service-desc">Comprehensive thermal energy audits for existing plants, identifying energy wastage and recommending proven upgrades. We specialize in multi-effect evaporation conversion, TVR (Thermo Vapour Recompressor) / MVR (Mechanical Vapour Recompression) retrofit, and heat recovery integration.</div>
+          <div class="service-features">
+            <div class="service-feat"><div class="service-feat-dot"></div>Thermal energy audits</div>
+            <div class="service-feat"><div class="service-feat-dot"></div>Steam economy analysis</div>
+            <div class="service-feat"><div class="service-feat-dot"></div>TVR/MVR system integration</div>
+            <div class="service-feat"><div class="service-feat-dot"></div>Multi-effect conversion</div>
+            <div class="service-feat"><div class="service-feat-dot"></div>Heat recovery systems</div>
+            <div class="service-feat"><div class="service-feat-dot"></div>ROI calculation & report</div>
+          </div>
+          <a href="contact.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Inquire for This Service</a>
+        </div>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="service-card-big">
+        <div class="service-card-img" style="background:linear-gradient(135deg,var(--blue-800),#1D4ED8);">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&q=80" alt="Automation Integration">
+          <div class="service-card-img-overlay">
+            <div class="service-num">05</div>
+            <div class="service-icon-big"><i class="fa-solid fa-robot"></i></div>
+          </div>
+        </div>
+        <div class="service-card-body">
+          <div class="service-badge"><i class="fa-solid fa-robot"></i> Technology Service</div>
+          <div class="service-title">Automation & Control Integration</div>
+          <div class="service-desc">We integrate advanced PLC/SCADA automation systems into new and existing process plants  -  enabling real-time monitoring, automated control sequences, alarm management, data logging, and remote access via IoT-enabled platforms.</div>
+          <div class="service-features">
+            <div class="service-feat"><div class="service-feat-dot"></div>PLC programming & panel build</div>
+            <div class="service-feat"><div class="service-feat-dot"></div>SCADA HMI development</div>
+            <div class="service-feat"><div class="service-feat-dot"></div>Instrument loop checking</div>
+            <div class="service-feat"><div class="service-feat-dot"></div>IoT remote monitoring</div>
+            <div class="service-feat"><div class="service-feat-dot"></div>Alarm & safety systems</div>
+            <div class="service-feat"><div class="service-feat-dot"></div>Data analytics dashboards</div>
+          </div>
+          <a href="contact.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Inquire for This Service</a>
+        </div>
+      </div>
+
+      <!-- Service 6 -->
+      <div class="service-card-big">
+        <div class="service-card-img" style="background:linear-gradient(135deg,var(--blue-700),var(--blue-900));">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=500&q=80" alt="Technical Consultancy">
+          <div class="service-card-img-overlay">
+            <div class="service-num">06</div>
+            <div class="service-icon-big"><i class="fa-solid fa-headset"></i></div>
+          </div>
+        </div>
+        <div class="service-card-body">
+          <div class="service-badge"><i class="fa-solid fa-headset"></i> Advisory Service</div>
+          <div class="service-title">Technical Consultancy & Troubleshooting</div>
+          <div class="service-desc">Our experienced engineers provide expert technical consultancy for process troubleshooting, performance de-bottlenecking, capacity expansion, regulatory compliance, and plant modernization  -  delivering actionable engineering recommendations with measurable impact.</div>
+          <div class="service-features">
+            <div class="service-feat"><div class="service-feat-dot"></div>Plant troubleshooting visits</div>
+            <div class="service-feat"><div class="service-feat-dot"></div>Process performance review</div>
+            <div class="service-feat"><div class="service-feat-dot"></div>De-bottlenecking studies</div>
+            <div class="service-feat"><div class="service-feat-dot"></div>Regulatory compliance audit</div>
+            <div class="service-feat"><div class="service-feat-dot"></div>Capacity expansion planning</div>
+            <div class="service-feat"><div class="service-feat-dot"></div>Technology transfer</div>
+          </div>
+          <a href="contact.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Inquire for This Service</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS FLOW -->
+<section class="section bg-light">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-label"><i class="fa-solid fa-arrow-right-arrow-left"></i> Our Process</div>
+      <h2 class="section-title">How We <span>Deliver Projects</span></h2>
+      <p class="section-desc">A structured, transparent project delivery process that keeps you informed and in control at every phase.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;" data-aos="fade-up" data-aos-delay="100">
+      <div class="proc-step-h">
+        <div class="proc-num">01</div>
+        <div class="proc-content">
+          <h4>Initial Consultation & Requirements</h4>
+          <p>We begin with an in-depth technical discussion to understand your process requirements, product specifications, capacity targets, utilities available, and project constraints.</p>
+        </div>
+      </div>
+      <div class="proc-step-h">
+        <div class="proc-num">02</div>
+        <div class="proc-content">
+          <h4>Process Design & Feasibility</h4>
+          <p>Our process engineers develop mass & energy balances, process simulations, and preliminary equipment sizing to validate technical and commercial feasibility.</p>
+        </div>
+      </div>
+      <div class="proc-step-h">
+        <div class="proc-num">03</div>
+        <div class="proc-content">
+          <h4>Proposal & Commercial Terms</h4>
+          <p>A detailed technical proposal is submitted  -  including process description, equipment list, P&ID, technical specifications, delivery schedule, and commercial terms.</p>
+        </div>
+      </div>
+      <div class="proc-step-h">
+        <div class="proc-num">04</div>
+        <div class="proc-content">
+          <h4>Detailed Engineering</h4>
+          <p>Upon order confirmation, detailed engineering commences  -  3D CAD design, fabrication drawings, P&ID finalization, structural design, and all engineering deliverables.</p>
+        </div>
+      </div>
+      <div class="proc-step-h">
+        <div class="proc-num">05</div>
+        <div class="proc-content">
+          <h4>Fabrication & Quality Assurance</h4>
+          <p>Precision fabrication in our workshop using CNC machining, laser cutting, and TIG/MIG welding  -  with rigorous quality checks, NDT testing, and third-party inspection.</p>
+        </div>
+      </div>
+      <div class="proc-step-h">
+        <div class="proc-num">06</div>
+        <div class="proc-content">
+          <h4>Installation & Commissioning</h4>
+          <p>Our field engineering team handles site installation, mechanical alignment, piping, electrical connections, pre-commissioning checks, and plant startup with performance testing.</p>
+        </div>
+      </div>
+      <div class="proc-step-h">
+        <div class="proc-num">07</div>
+        <div class="proc-content">
+          <h4>Performance Testing & Handover</h4>
+          <p>Guaranteed performance test run conducted in your presence. All documentation, O&M manuals, PLC programs, and as-built drawings handed over upon project completion.</p>
+        </div>
+      </div>
+      <div class="proc-step-h">
+        <div class="proc-num">08</div>
+        <div class="proc-content">
+          <h4>After-Sales Support</h4>
+          <p>Ongoing technical support, preventive maintenance, spare parts supply, and annual performance audits to ensure your plant continues operating at peak efficiency.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE STATS -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item" data-aos="fade-up">
+        <div class="stat-number"><span data-target=100" data-suffix="+">0</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat-label">Projects Delivered</div>
+      </div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="stat-number"><span data-target="48" data-suffix="hr">0</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat-label">Average Quote Response</div>
+      </div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+        <div class="stat-number"><span data-target="97" data-suffix="%">0</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat-label">On-Time Delivery Rate</div>
+      </div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+        <div class="stat-number"><span data-target="100" data-suffix="%">0</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat-label">Performance Guarantee</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE GAUSIN SERVICES -->
+<section class="section bg-white">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-label"><i class="fa-solid fa-trophy"></i> Our Advantage</div>
+      <h2 class="section-title">The <span>Gausin Service Advantage</span></h2>
+    </div>
+    <div class="grid-3" data-aos="fade-up" data-aos-delay="100">
+      <div class="card">
+        <div class="card-icon"><i class="fa-solid fa-users-gear fa-lg"></i></div>
+        <h3 class="card-title">Multi-Disciplinary Team</h3>
+        <p class="card-desc">Process engineers, mechanical engineers, instrumentation specialists, project managers, and fabrication experts  -  all under one roof.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fa-solid fa-clock fa-lg"></i></div>
+        <h3 class="card-title">Rapid Turnaround</h3>
+        <p class="card-desc">48-hour technical proposal response, streamlined engineering processes, and dedicated project managers ensuring on-time delivery.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fa-solid fa-certificate fa-lg"></i></div>
+        <h3 class="card-title">Standards Compliance</h3>
+        <p class="card-desc">All engineering deliverables conform to ASME, PED, BIS, GMP, 3-A, and other applicable national and international standards.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fa-solid fa-file-contract fa-lg"></i></div>
+        <h3 class="card-title">Performance Guarantee</h3>
+        <p class="card-desc">Every project includes a contractual performance guarantee  -  we test against specified parameters and stand behind our engineering.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fa-solid fa-wrench fa-lg"></i></div>
+        <h3 class="card-title">Long-Term Support</h3>
+        <p class="card-desc">Comprehensive after-sales service including spare parts, on-site maintenance visits, remote technical support, and annual plant audits.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fa-solid fa-indian-rupee-sign fa-lg"></i></div>
+        <h3 class="card-title">Cost-Effective Solutions</h3>
+        <p class="card-desc">World-class engineering quality at competitive Indian pricing  -  delivering premium international-standard solutions without premium costs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div style="text-align:center;max-width:720px;margin:0 auto;" data-aos="fade-up">
+      <h2 style="font-size:clamp(1.75rem,3vw,2.75rem);font-weight:900;color:white;margin-bottom:20px;">Start Your Engineering <span style="background:linear-gradient(135deg,var(--blue-300),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Project Today</span></h2>
+      <p style="font-size:1.0625rem;color:rgba(255,255,255,0.7);line-height:1.75;margin-bottom:40px;">Contact our engineering team to discuss your project requirements. We'll respond within 48 hours with a detailed technical and commercial proposal.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="contact.html" class="btn btn-white btn-lg"><i class="fa-solid fa-paper-plane"></i> Request a Consultation</a>
+        <a href="tel:+919870840779" class="btn btn-ghost btn-lg"><i class="fa-solid fa-phone"></i> Call Us Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="navbar-logo footer-logo"><img src="images/gausin-logo.png" alt="" class="logo-img" width="110" height="52" aria-hidden="true"><div class="logo-text"><div class="logo-name">Gausin International</div><div class="logo-tagline">Engineers Pvt. Ltd.</div></div></a>
+        <p class="footer-brand-desc">Engineering process excellence through advanced evaporation, drying, and industrial plant solutions for dairy, pharma, chemical and food industries.</p>
+        <div class="footer-social"><a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="https://x.com/Gausin_117" class="social-link" aria-label="X" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a><a href="https://www.instagram.com/gaurav67165/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a><a href="https://www.youtube.com/@GausinInternationalEngineersPv" class="social-link" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a><a href="https://www.facebook.com/profile.php?id=61590538293790" class="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a></div>
+      </div>
+      <div><div class="footer-title">Products</div><div class="footer-links"><a href="products.html#evaporators" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Evaporators</a><a href="products.html#dryers" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Dryers</a><a href="products.html#cip" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>CIP Systems</a><a href="products.html#milk-processing" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Milk Processing</a><a href="products.html#heat-exchangers" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Heat Exchangers</a><a href="product-etp-stp-treatment-plants.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>ETP/STP Treatment Plants</a><a href="product-biomass-solid-waste-treatment-plant.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Biomass Solid Waste Treatment Plant</a></div></div>
+      <div><div class="footer-title">Company</div><div class="footer-links"><a href="about.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>About Us</a><a href="services.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Services</a><a href="industries.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Industries</a><a href="technology.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Technology</a><a href="contact.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Contact</a></div></div>
+      <div><div class="footer-title">Contact Us</div><div class="footer-contact-item"><div class="footer-contact-icon"><i class="fa-solid fa-location-dot"></i></div><div class="footer-contact-text">DH-249, Pallavpuram Phase-1, Roorkee Road, Meerut, UP  -  250110</div></div><div class="footer-contact-item"><div class="footer-contact-icon"><i class="fa-solid fa-phone"></i></div><div class="footer-contact-text"><a href="tel:+919870840779" style="color:inherit;">+91 98708 40779</a></div></div><div class="footer-contact-item"><div class="footer-contact-icon"><i class="fa-solid fa-envelope"></i></div><div class="footer-contact-text"><a href="mailto:info@gausin.in" style="color:inherit;">info@gausin.in</a></div></div></div>
+    </div>
+    <div class="footer-bottom"><div class="footer-bottom-left"><div>(c) 2024 Gausin International Engineers Pvt. Ltd. All rights reserved.</div><div class="footer-credit">Designed &amp; Developed by Gausin International Engineers Pvt. Ltd.</div></div><div class="footer-bottom-links"><a href="privacy-policy.html" class="footer-bottom-link">Privacy Policy</a><a href="terms-of-service.html" class="footer-bottom-link">Terms of Service</a></div></div>
+  </div>
+</footer>
+
+<button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<script src="js/config.js"></script>
+<script src="js/main.js" defer></script>
+<script src="js/components.js" defer></script>
+</body>
+</html>
+
+

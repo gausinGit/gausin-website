@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 80" role="img" aria-label="Ranbaxy">
+  <circle cx="40" cy="40" r="28" fill="#F7941D"/>
+  <path d="M40 18 L48 34 L66 36 L52 48 L56 66 L40 56 L24 66 L28 48 L14 36 L32 34 Z" fill="#FBB040"/>
+  <text x="88" y="48" fill="#0054A6" font-family="Arial,sans-serif" font-size="26" font-weight="700">Ranbaxy</text>
+</svg>

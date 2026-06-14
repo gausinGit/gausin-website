@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>404  -  Page Not Found | Gausin International Engineers</title>
+  <link rel="stylesheet" href="css/styles.css">
+    
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <style>
+    body { min-height: 100vh; display: flex; flex-direction: column; }
+    .error-page {
+      flex: 1; display: flex; align-items: center; justify-content: center;
+      background: linear-gradient(135deg, var(--blue-900) 0%, var(--blue-700) 100%);
+      position: relative; overflow: hidden;
+      padding: calc(var(--navbar-height) + 40px) 20px 60px;
+    }
+    .error-page::before {
+      content: '404';
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: clamp(200px, 35vw, 400px);
+      font-weight: 900; font-family: 'Montserrat', sans-serif;
+      color: rgba(255,255,255,0.03);
+      line-height: 1; pointer-events: none; user-select: none;
+      letter-spacing: -0.05em;
+    }
+    .error-content { text-align: center; position: relative; z-index: 2; max-width: 600px; }
+    .error-icon {
+      width: 100px; height: 100px;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 28px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 3rem; margin: 0 auto 32px;
+      animation: float 3s ease-in-out infinite;
+    }
+    .error-code {
+      font-size: clamp(4rem, 10vw, 7rem); font-weight: 900;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, var(--blue-300), var(--accent-cyan));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      line-height: 1; margin-bottom: 16px;
+    }
+    .error-title {
+      font-size: clamp(1.25rem, 3vw, 1.75rem); font-weight: 800;
+      color: white; font-family: 'Montserrat', sans-serif; margin-bottom: 16px;
+    }
+    .error-desc { font-size: 1rem; color: rgba(255,255,255,0.65); line-height: 1.75; margin-bottom: 36px; }
+    .error-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 40px; }
+    .quick-links { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+    .quick-link {
+      background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 30px; padding: 8px 18px;
+      color: rgba(255,255,255,0.75); font-size: 0.8125rem; font-weight: 600;
+      font-family: 'Montserrat', sans-serif; transition: all 0.2s;
+      text-decoration: none;
+    }
+    .quick-link:hover { background: rgba(11,94,215,0.3); color: white; border-color: var(--blue-400); }
+
+    /* Search bar */
+    .error-search {
+      display: flex; max-width: 400px; margin: 0 auto 32px;
+      background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 50px; overflow: hidden; backdrop-filter: blur(10px);
+    }
+    .error-search input {
+      flex: 1; background: none; border: none; outline: none;
+      padding: 14px 20px; color: white; font-size: 0.9375rem; font-family: 'Inter', sans-serif;
+    }
+    .error-search input::placeholder { color: rgba(255,255,255,0.4); }
+    .error-search button {
+      background: var(--blue-500); border: none; color: white;
+      padding: 12px 20px; cursor: pointer; font-size: 1rem;
+      transition: background 0.2s; border-radius: 0 50px 50px 0;
+    }
+    .error-search button:hover { background: var(--blue-600); }
+
+    /* Animated gear */
+    .gear-anim { position: absolute; opacity: 0.04; pointer-events: none; }
+    .gear-1 { top: 10%; right: 5%; font-size: 200px; animation: spin 20s linear infinite; }
+    .gear-2 { bottom: 5%; left: 3%; font-size: 120px; animation: spin 15s linear infinite reverse; }
+    @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+    #backToTop { position: fixed; bottom: 28px; right: 28px; width: 48px; height: 48px; background: linear-gradient(135deg, var(--blue-500), var(--blue-700)); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.125rem; box-shadow: var(--shadow-blue-lg); opacity: 0; pointer-events: none; transition: opacity 0.3s ease, transform 0.3s ease; z-index: 500; }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo navbar-logo--image"><img src="images/gausin-logo.png" alt="Gausin International Engineers Pvt. Ltd." class="logo-img" width="220" height="52"></a>
+      <nav class="navbar-nav">
+        <div class="nav-item"><a href="index.html" class="nav-link">Home</a></div>
+        <div class="nav-item"><a href="about.html" class="nav-link">About</a></div>
+        <div class="nav-item"><a href="products.html" class="nav-link">Products</a></div>
+        <div class="nav-item"><a href="services.html" class="nav-link">Services</a></div>
+        <div class="nav-item"><a href="industries.html" class="nav-link">Industries</a></div>
+        <div class="nav-item"><a href="technology.html" class="nav-link">Technology</a></div>
+        <div class="nav-item"><a href="contact.html" class="nav-link">Contact</a></div>
+      </nav>
+      <div class="navbar-cta"><a href="contact.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Get a Quote</a></div>
+      <button class="navbar-toggle" id="navbarToggle"><span class="toggle-bar"></span><span class="toggle-bar"></span><span class="toggle-bar"></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Home</a>
+  <a href="products.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Products</a>
+  <a href="services.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Services</a>
+  <a href="contact.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Contact</a>
+</div>
+
+<!-- 404 CONTENT -->
+<main class="error-page">
+  <!-- Decorative gears -->
+  <div class="gear-anim gear-1"><i class="fa-solid fa-gear"></i></div>
+  <div class="gear-anim gear-2"><i class="fa-solid fa-gear"></i></div>
+
+  <div class="error-content">
+    <div class="error-icon"><i class="fa-solid fa-wrench"></i></div>
+    <div class="error-code">404</div>
+    <h1 class="error-title">Page Not Found</h1>
+    <p class="error-desc">
+      The page you're looking for seems to have been moved, removed, or is temporarily unavailable.<br>
+      Let's get you back on track.
+    </p>
+
+    <!-- Search -->
+    <div class="error-search">
+      <input type="text" placeholder="Search products, services..." id="errorSearch"
+        onkeydown="if(event.key==='Enter'){window.location.href='products.html'}">
+      <button onclick="window.location.href='products.html'" aria-label="Search">
+        <i class="fa-solid fa-search"></i>
+      </button>
+    </div>
+
+    <div class="error-actions">
+      <a href="index.html" class="btn btn-white btn-lg">
+        <i class="fa-solid fa-house"></i> Back to Home
+      </a>
+      <a href="contact.html" class="btn btn-ghost btn-lg">
+        <i class="fa-solid fa-envelope"></i> Contact Us
+      </a>
+    </div>
+
+    <!-- Quick Links -->
+    <div style="margin-bottom:16px;font-size:0.8125rem;color:rgba(255,255,255,0.4);font-weight:600;letter-spacing:0.08em;text-transform:uppercase;">Helpful Links</div>
+    <div class="quick-links">
+      <a href="products.html" class="quick-link"><i class="fa-solid fa-boxes-stacked"></i> Products</a>
+      <a href="products.html#evaporators" class="quick-link"><i class="fa-solid fa-droplet"></i> Evaporators</a>
+      <a href="products.html#dryers" class="quick-link"><i class="fa-solid fa-wind"></i> Dryers</a>
+      <a href="services.html" class="quick-link"><i class="fa-solid fa-gears"></i> Services</a>
+      <a href="industries.html" class="quick-link"><i class="fa-solid fa-sitemap"></i> Industries</a>
+      <a href="about.html" class="quick-link"><i class="fa-solid fa-building-columns"></i> About</a>
+    </div>
+
+    <!-- Auto-redirect countdown -->
+    <div style="margin-top:40px;font-size:0.8125rem;color:rgba(255,255,255,0.35);">
+      Redirecting to homepage in <span id="countdown" style="color:var(--blue-300);font-weight:700;">10</span> seconds
+    </div>
+  </div>
+</main>
+
+<button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<script src="js/config.js"></script>
+<script src="js/main.js" defer></script>
+<script src="js/components.js" defer></script>
+<script>
+  // Countdown redirect
+  let secs = 10;
+  const cdEl = document.getElementById('countdown');
+  const timer = setInterval(() => {
+    secs--;
+    if (cdEl) cdEl.textContent = secs;
+    if (secs <= 0) {
+      clearInterval(timer);
+      window.location.href = 'index.html';
+    }
+  }, 1000);
+
+  // Stop countdown if user interacts
+  document.addEventListener('click', () => clearInterval(timer), { once: true });
+  document.addEventListener('keydown', () => clearInterval(timer), { once: true });
+</script>
+</body>
+</html>
+

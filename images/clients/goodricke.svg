@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 80" role="img" aria-label="Goodricke Tea">
+  <rect width="220" height="80" rx="10" fill="#1B5E20"/>
+  <ellipse cx="36" cy="40" rx="22" ry="14" fill="#C5A572" opacity="0.9"/>
+  <text x="72" y="48" fill="#F5E6C8" font-family="Georgia,serif" font-size="24" font-weight="700">Goodricke</text>
+</svg>

@@ -1,0 +1,694 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Gausin International Engineers Pvt. Ltd.  -  DH-249, Pallavpuram Phase-1, Roorkee Road, Meerut, UP 250110. Phone: +91 98708 40779. Email: info@gausin.in">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Gausin International Engineers Pvt. Ltd.">
+  <meta property="og:title" content="Contact Us | Gausin International Engineers Pvt. Ltd.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.gausin.in/contact.html">
+  <link rel="canonical" href="https://www.gausin.in/contact.html">
+  <title>Contact Us | Gausin International Engineers Pvt. Ltd.</title>
+  <link rel="stylesheet" href="css/styles.css">
+    
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <style>
+    /* Contact Form Card */
+    .contact-form-card {
+      background: white; border-radius: 24px; padding: 48px;
+      box-shadow: var(--shadow-2xl); border: 1px solid var(--gray-200);
+    }
+
+    /* Contact Info Cards */
+    .info-card {
+      background: white; border: 1px solid var(--gray-200); border-radius: 16px;
+      padding: 24px; display: flex; align-items: flex-start; gap: 16px;
+      transition: all 0.3s ease;
+    }
+    .info-card:hover { box-shadow: var(--shadow-md); border-color: var(--blue-200); transform: translateY(-2px); }
+    .info-icon { width: 48px; height: 48px; background: var(--blue-50); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--blue-500); font-size: 1.25rem; flex-shrink: 0; border: 1px solid var(--blue-200); }
+    .info-label { font-size: 0.75rem; font-weight: 700; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 4px; font-family: 'Montserrat',sans-serif; }
+    .info-value { font-size: 0.9375rem; font-weight: 600; color: var(--gray-900); font-family: 'Montserrat',sans-serif; }
+    .info-sub { font-size: 0.8125rem; color: var(--gray-500); margin-top: 2px; }
+
+    /* Map */
+    .map-container {
+      width: 100%; height: 360px; border-radius: 20px; overflow: hidden;
+      position: relative; background: var(--gray-100);
+      border: 2px solid var(--gray-200);
+    }
+    .map-placeholder-inner {
+      width: 100%; height: 100%;
+      background: linear-gradient(135deg, var(--blue-50) 0%, var(--gray-100) 100%);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      position: relative; overflow: hidden;
+    }
+    .map-grid-lines {
+      position: absolute; inset: 0;
+      background:
+        repeating-linear-gradient(0deg, var(--blue-100) 0px, transparent 1px, transparent 40px),
+        repeating-linear-gradient(90deg, var(--blue-100) 0px, transparent 1px, transparent 40px);
+      opacity: 0.6;
+    }
+    .map-pin { font-size: 3rem; margin-bottom: 12px; filter: drop-shadow(0 4px 8px rgba(11,94,215,0.3)); animation: float 3s ease-in-out infinite; }
+    .map-label { background: white; border: 1px solid var(--blue-200); border-radius: 12px; padding: 12px 20px; box-shadow: var(--shadow-lg); text-align: center; position: relative; z-index: 2; }
+    .map-label-title { font-size: 0.9375rem; font-weight: 700; color: var(--gray-900); font-family: 'Montserrat',sans-serif; }
+    .map-label-sub { font-size: 0.8125rem; color: var(--gray-500); margin-top: 2px; }
+    .map-open-btn { position: absolute; top: 16px; right: 16px; background: white; border: 1px solid var(--gray-200); border-radius: 10px; padding: 8px 14px; font-size: 0.8125rem; font-weight: 600; color: var(--blue-500); cursor: pointer; box-shadow: var(--shadow-sm); transition: all 0.2s; display: flex; align-items: center; gap: 6px; }
+    .map-open-btn:hover { box-shadow: var(--shadow-md); color: var(--blue-700); }
+
+    /* FAQ */
+    .faq-section .accordion { max-width: 780px; margin: 0 auto; }
+
+    /* Form Row */
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+    /* Success state */
+    .form-success {
+      display: none; text-align: center; padding: 48px 24px;
+    }
+    .form-success.show { display: block; }
+    .form-success-icon { font-size: 4rem; margin-bottom: 16px; }
+    .form-success-title { font-size: 1.5rem; font-weight: 800; color: var(--gray-900); font-family: 'Montserrat',sans-serif; margin-bottom: 8px; }
+    .form-success-desc { font-size: 1rem; color: var(--gray-600); line-height: 1.7; }
+
+    #backToTop { position: fixed; bottom: 28px; right: 28px; width: 48px; height: 48px; background: linear-gradient(135deg, var(--blue-500), var(--blue-700)); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.125rem; box-shadow: var(--shadow-blue-lg); opacity: 0; pointer-events: none; transition: opacity 0.3s ease, transform 0.3s ease; z-index: 500; }
+    #backToTop:hover { transform: translateY(-3px); }
+
+    .contact-social { display: flex; gap: 12px; flex-wrap: wrap; }
+    .contact-social-link {
+      width: 40px; height: 40px; background: var(--gray-100); border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--gray-700); font-size: 1rem; transition: all 0.2s ease; text-decoration: none;
+    }
+    .contact-social-link:hover { background: var(--blue-50); color: var(--blue-500); transform: translateY(-2px); }
+
+    @media(max-width:768px) { .contact-form-card { padding: 28px 20px; } .form-row { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo navbar-logo--image"><img src="images/gausin-logo.png" alt="Gausin International Engineers Pvt. Ltd." class="logo-img" width="220" height="52"></a>
+      <nav class="navbar-nav">
+        <div class="nav-item"><a href="index.html" class="nav-link">Home</a></div>
+        <div class="nav-item"><a href="about.html" class="nav-link">About</a></div>
+        <div class="nav-item"><a href="products.html" class="nav-link">Products <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></a><div class="mega-menu"><div class="mega-menu-grid"><a href="products.html#evaporators" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-droplet"></i></div><div><div class="mega-menu-item-title">Evaporators</div></div></a><a href="products.html#dryers" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-wind"></i></div><div><div class="mega-menu-item-title">Dryers</div></div></a><a href="products.html#heat-exchangers" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-temperature-high"></i></div><div><div class="mega-menu-item-title">Heat Exchangers</div></div></a><a href="products.html#cip" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-recycle"></i></div><div><div class="mega-menu-item-title">CIP Systems</div></div></a><a href="products.html#milk-processing" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-flask"></i></div><div><div class="mega-menu-item-title">Milk Processing</div></div></a><a href="products.html#vessels" class="mega-menu-item"><div class="mega-menu-item-icon"><i class="fa-solid fa-database"></i></div><div><div class="mega-menu-item-title">Vessels & Tanks</div></div></a></div></div></div>
+        <div class="nav-item"><a href="services.html" class="nav-link">Services</a></div>
+        <div class="nav-item"><a href="industries.html" class="nav-link">Industries</a></div>
+        <div class="nav-item"><a href="technology.html" class="nav-link">Technology</a></div>
+        <div class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></div>
+      </nav>
+      <div class="navbar-cta"><a href="#inquiry" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Get a Quote</a></div>
+      <button class="navbar-toggle" id="navbarToggle"><span class="toggle-bar"></span><span class="toggle-bar"></span><span class="toggle-bar"></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Home</a>
+  <a href="about.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">About</a>
+  <a href="products.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Products</a>
+  <a href="services.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Services</a>
+  <a href="industries.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Industries</a>
+  <a href="technology.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Technology</a>
+  <a href="contact.html" class="mobile-nav-link-plain" style="display:block;padding:16px 0;font-weight:600;color:var(--blue-500);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Contact</a>
+  <div style="margin-top:24px;"><a href="#inquiry" class="btn btn-primary" style="width:100%;justify-content:center;">Get a Quote</a></div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero page-hero--contact">
+  <div class="container page-hero-content">
+    <div class="page-hero-label"><i class="fa-solid fa-envelope"></i> Contact Us</div>
+    <h1 class="page-hero-title">Let's Engineer Your<br>Next Project Together</h1>
+    <p class="page-hero-desc">Reach out to our engineering team for product inquiries, technical consultations, project discussions, or general information. We respond within 24 - 48 hours.</p>
+    <div class="breadcrumb">
+      <a href="index.html" class="breadcrumb-item">Home</a>
+      <span class="breadcrumb-sep"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;"></i></span>
+      <span class="breadcrumb-item active">Contact</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT MAIN -->
+<section class="section bg-light">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1.4fr;gap:48px;align-items:start;">
+
+      <!-- Left: Contact Info -->
+      <div data-aos="fade-right">
+        <div class="section-label" style="margin-bottom:16px;"><i class="fa-solid fa-address-card"></i> Our Details</div>
+        <h2 style="font-size:1.875rem;font-weight:800;color:var(--gray-900);font-family:'Montserrat',sans-serif;margin-bottom:8px;line-height:1.2;">Get in <span style="background:linear-gradient(135deg,var(--blue-500),var(--blue-700));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Touch</span></h2>
+        <p style="font-size:0.9375rem;color:var(--gray-600);line-height:1.75;margin-bottom:32px;text-align:justify;">Our team of engineers is available to discuss your project requirements, answer technical questions, and provide comprehensive proposals for your industrial needs.</p>
+
+        <div style="display:flex;flex-direction:column;gap:16px;margin-bottom:36px;">
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <div class="info-label">Office Address</div>
+              <div class="info-value">DH-249, Pallavpuram Phase-1</div>
+              <div class="info-sub">Roorkee Road, Meerut, Uttar Pradesh  -  250110, India</div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <div class="info-label">Phone Number</div>
+              <a href="tel:+919870840779" class="info-value" style="display:block;transition:color 0.2s;" onmouseover="this.style.color='var(--blue-500)'" onmouseout="this.style.color=''">+91 98708 40779</a>
+              <div class="info-sub">Mon - Sat: 9:00 AM  -  6:00 PM IST</div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <div class="info-label">Email Address</div>
+              <a href="mailto:info@gausin.in" class="info-value" style="display:block;transition:color 0.2s;" onmouseover="this.style.color='var(--blue-500)'" onmouseout="this.style.color=''">info@gausin.in</a>
+              <div class="info-sub">We reply within 24 - 48 hours</div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-globe"></i></div>
+            <div>
+              <div class="info-label">Website</div>
+              <a href="https://www.gausin.in" target="_blank" class="info-value" style="display:block;transition:color 0.2s;" onmouseover="this.style.color='var(--blue-500)'" onmouseout="this.style.color=''">www.gausin.in</a>
+              <div class="info-sub">Visit for latest products & news</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <div style="padding:24px;background:white;border:1px solid var(--gray-200);border-radius:16px;">
+          <div style="font-size:0.875rem;font-weight:700;color:var(--gray-700);font-family:'Montserrat',sans-serif;margin-bottom:16px;letter-spacing:0.05em;text-transform:uppercase;">Follow Us</div>
+          <div class="contact-social">
+            <a href="#" class="contact-social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61590538293790" class="contact-social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/gaurav67165/" class="contact-social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/GauravSinghal79" class="contact-social-link" aria-label="X" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.youtube.com/@GausinInternationalEngineersPv" class="contact-social-link" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Inquiry Form -->
+      <div id="inquiry" data-aos="fade-left">
+        <div class="contact-form-card">
+          <div style="margin-bottom:32px;">
+            <div class="section-label" style="margin-bottom:12px;"><i class="fa-solid fa-paper-plane"></i> Inquiry Form</div>
+            <h2 style="font-size:1.625rem;font-weight:800;color:var(--gray-900);font-family:'Montserrat',sans-serif;margin-bottom:8px;">Send Us a Message</h2>
+            <p style="font-size:0.9375rem;color:var(--gray-600);line-height:1.65;text-align:justify;">Fill out the form below and our engineering team will get back to you with a detailed response within 24 - 48 hours.</p>
+          </div>
+
+          <!-- Form (shown initially) -->
+          <form id="inquiryForm" data-validate="true">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="firstName">First Name <span style="color:#EF4444;">*</span></label>
+                <input type="text" id="firstName" name="firstName" class="form-control" placeholder="Rajesh" required>
+                <div class="form-error" style="display:none;font-size:0.8125rem;color:#EF4444;margin-top:4px;">This field is required.</div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="lastName">Last Name <span style="color:#EF4444;">*</span></label>
+                <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Kumar" required>
+                <div class="form-error" style="display:none;font-size:0.8125rem;color:#EF4444;margin-top:4px;">This field is required.</div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address <span style="color:#EF4444;">*</span></label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="rajesh@company.com" required>
+                <div class="form-error" style="display:none;font-size:0.8125rem;color:#EF4444;margin-top:4px;">Enter a valid email.</div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone Number <span style="color:#EF4444;">*</span></label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="+91 98765 43210" required>
+                <div class="form-error" style="display:none;font-size:0.8125rem;color:#EF4444;margin-top:4px;">This field is required.</div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="company">Company Name <span style="color:#EF4444;">*</span></label>
+                <input type="text" id="company" name="company" class="form-control" placeholder="Your Company Pvt. Ltd." required>
+                <div class="form-error" style="display:none;font-size:0.8125rem;color:#EF4444;margin-top:4px;">This field is required.</div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="industry">Industry Sector</label>
+                <select id="industry" name="industry" class="form-control">
+                  <option value="">Select Industry</option>
+                  <option value="dairy">Dairy & Milk Processing</option>
+                  <option value="pharma">Pharmaceutical</option>
+                  <option value="chemical">Chemical</option>
+                  <option value="food">Food Processing</option>
+                  <option value="distillery">Distillery</option>
+                  <option value="energy">Energy Sector</option>
+                  <option value="paper">Pulp & Paper</option>
+                  <option value="textile">Textile</option>
+                  <option>Tech & AI</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="product">Product / Service of Interest</label>
+              <select id="product" name="product" class="form-control">
+                <option value="">Select Product / Service</option>
+                <optgroup label="Evaporators">
+                  <option>Falling Film Evaporator</option>
+                  <option>Forced Circulation Evaporator</option>
+                  <option>Rising Film Evaporator</option>
+                  <option>Plate Type Evaporator</option>
+                  <option>Batch Evaporator</option>
+                </optgroup>
+                <optgroup label="Dryers">
+                  <option>Spray Dryer (Nozzle/Disc)</option>
+                  <option>Spin Flash Dryer</option>
+                  <option>Fluidized Bed Dryer</option>
+                  <option>Closed Circuit Dryer</option>
+                  <option>Agitated Thin Film Dryer (ATFD)</option>
+                </optgroup>
+                <optgroup label="Dairy Processing Plants">
+                  <option>Complete Milk Processing Plant</option>
+                  <option>Milk Pasteurizer</option>
+                  <option>Milk Deodorizer</option>
+                  <option>Milk Chilling Plant</option>
+                  <option>Butter Processing Unit</option>
+                  <option>Ghee Making Plant</option>
+                </optgroup>
+                <optgroup label="Milk Processing Equipment">
+                  <option>Khoya Making Machine</option>
+                  <option>Ghee Kettle</option>
+                  <option>Butter Churner</option>
+                </optgroup>
+                <optgroup label="Dairy & Food Plant Equipments">
+                  <option>Crystallization Tank</option>
+                  <option>Bulk Milk Cooler (BMC)</option>
+                  <option>Milk Can Conveyor</option>
+                </optgroup>
+                <optgroup label="Waste Management">
+                  <option>ETP/STP Treatment Plants</option>
+                  <option>Biomass Solid Waste Treatment Plant</option>
+                  <option>Biogas and CNG Plant</option>
+                  <option>WTP/UF/RO/Softener Plants</option>
+                  <option>Scrubber Systems</option>
+                  <option>Incinerator System</option>
+                </optgroup>
+                <optgroup label="Heat Exchangers">
+                  <option>Shell & Tube Heat Exchanger</option>
+                  <option>Plate Heat Exchanger (PHE)</option>
+                  <option>CIP System</option>
+                  <option>Stainless Steel Storage Silos</option>
+                  <option>Pressure Vessels</option>
+                </optgroup>
+                <optgroup label="Services">
+                  <option>Process Design & Engineering</option>
+                  <option>Turnkey Project Execution</option>
+                  <option>Energy Optimization Audit</option>
+                  <option>Technical Consultancy</option>
+                  <option>Automation Integration</option>
+                </optgroup>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="capacity">Required Capacity / Scale (if applicable)</label>
+              <input type="text" id="capacity" name="capacity" class="form-control" placeholder="e.g., 5,000 L/hr evaporation, 500 kg/hr powder output">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Project Details / Message <span style="color:#EF4444;">*</span></label>
+              <textarea id="message" name="message" class="form-control" rows="5" placeholder="Please describe your requirements, process details, feed characteristics, production targets, or any specific technical questions..." required></textarea>
+              <div class="form-error" style="display:none;font-size:0.8125rem;color:#EF4444;margin-top:4px;">Please provide your message.</div>
+            </div>
+
+            <div style="display:flex;align-items:center;gap:12px;padding:16px;background:var(--gray-50);border-radius:12px;border:1px solid var(--gray-200);margin-bottom:24px;">
+              <input type="checkbox" id="consent" name="consent" style="width:18px;height:18px;accent-color:var(--blue-500);cursor:pointer;">
+              <label for="consent" style="font-size:0.875rem;color:var(--gray-600);cursor:pointer;line-height:1.5;">
+                I consent to Gausin International Engineers using my information to respond to this inquiry and contact me about relevant products and services. <a href="privacy-policy.html" style="color:var(--blue-500);">Privacy Policy</a>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;font-size:1rem;">
+              <i class="fa-solid fa-paper-plane"></i> Send Inquiry
+            </button>
+
+            <div style="display:flex;align-items:center;gap:6px;justify-content:center;margin-top:16px;font-size:0.8125rem;color:var(--gray-500);">
+              <i class="fa-solid fa-shield-halved" style="color:var(--blue-500);"></i>
+              Your information is secure and will not be shared with third parties.
+            </div>
+          </form>
+
+          <!-- Success State -->
+          <div class="form-success" id="formSuccess">
+            <div class="form-success-icon">[OK]</div>
+            <div class="form-success-title">Inquiry Sent Successfully!</div>
+            <div class="form-success-desc">Thank you for contacting Gausin International Engineers. Our engineering team will review your inquiry and respond within 24 - 48 hours with a detailed technical response.</div>
+            <div style="margin-top:24px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+              <a href="products.html" class="btn btn-primary"><i class="fa-solid fa-boxes-stacked"></i> Browse Products</a>
+              <button onclick="document.getElementById('formSuccess').classList.remove('show');document.getElementById('inquiryForm').style.display='block';" class="btn btn-outline">Submit Another</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP SECTION -->
+<section class="section-sm bg-white">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;" data-aos="fade-up">
+      <div>
+        <div class="section-label" style="margin-bottom:16px;"><i class="fa-solid fa-map-location-dot"></i> Find Us</div>
+        <h2 style="font-size:1.625rem;font-weight:800;color:var(--gray-900);font-family:'Montserrat',sans-serif;margin-bottom:16px;">Our Location</h2>
+        <p style="font-size:0.9375rem;color:var(--gray-600);line-height:1.75;margin-bottom:28px;text-align:justify;">Visit us at our engineering facility in Meerut, Uttar Pradesh. We welcome client visits for facility tours, technical discussions, and equipment inspections.</p>
+
+        <div style="background:var(--blue-50);border:1px solid var(--blue-200);border-radius:16px;padding:24px;margin-bottom:24px;">
+          <div style="display:flex;align-items:flex-start;gap:14px;">
+            <div style="width:40px;height:40px;background:var(--blue-500);border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;font-size:1rem;flex-shrink:0;"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <div style="font-size:0.9375rem;font-weight:700;color:var(--gray-900);font-family:'Montserrat',sans-serif;margin-bottom:6px;">Gausin International Engineers Pvt. Ltd.</div>
+              <div style="font-size:0.9rem;color:var(--gray-600);line-height:1.7;">DH-249, Pallavpuram Phase-1,<br>Roorkee Road, Meerut,<br>Uttar Pradesh, India  -  250110</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <div style="display:flex;align-items:center;gap:10px;font-size:0.9rem;color:var(--gray-600);">
+            <i class="fa-solid fa-clock" style="color:var(--blue-500);width:20px;"></i>
+            <span><strong style="color:var(--gray-800);">Working Hours:</strong> Monday - Saturday, 9:00 AM  -  6:00 PM</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:0.9rem;color:var(--gray-600);">
+            <i class="fa-solid fa-car" style="color:var(--blue-500);width:20px;"></i>
+            <span>Parking available on premises for visiting clients</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:0.9rem;color:var(--gray-600);">
+            <i class="fa-solid fa-train" style="color:var(--blue-500);width:20px;"></i>
+            <span>12 km from Meerut City Railway Station</span>
+          </div>
+        </div>
+
+        <div style="margin-top:24px;">
+          <a href="https://www.google.com/maps/search/DH-249+Pallavpuram+Phase-1+Meerut+UP" target="_blank" class="btn btn-primary">
+            <i class="fa-brands fa-google"></i> Open in Google Maps
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <div class="map-container">
+          <div class="map-placeholder-inner">
+            <div class="map-grid-lines"></div>
+            <div class="map-pin"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="map-label">
+              <div class="map-label-title">Gausin International Engineers</div>
+              <div class="map-label-sub">DH-249, Pallavpuram Phase-1, Meerut</div>
+            </div>
+          </div>
+          <a href="https://www.google.com/maps/search/DH-249+Pallavpuram+Phase-1+Meerut" target="_blank" class="map-open-btn">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Map
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUICK CONNECT -->
+<section class="section bg-light">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-label"><i class="fa-solid fa-bolt"></i> Quick Connect</div>
+      <h2 class="section-title">Other Ways to <span>Reach Us</span></h2>
+    </div>
+    <div class="grid-3" data-aos="fade-up" data-aos-delay="100">
+      <div style="background:linear-gradient(135deg,var(--blue-900),var(--blue-700));border-radius:20px;padding:36px;text-align:center;color:white;">
+        <div style="font-size:2.2rem;margin-bottom:16px;color:var(--blue-500);"><i class="fa-solid fa-phone"></i></div>
+        <div style="font-size:1.125rem;font-weight:700;font-family:'Montserrat',sans-serif;margin-bottom:8px;">Call Our Engineers</div>
+        <div style="font-size:0.9rem;color:rgba(255,255,255,0.7);margin-bottom:20px;line-height:1.65;">Speak directly with our process engineering team for immediate technical assistance.</div>
+        <a href="tel:+919870840779" class="btn btn-white btn-sm" style="width:100%;justify-content:center;"><i class="fa-solid fa-phone"></i> +91 98708 40779</a>
+      </div>
+
+      <div style="background:white;border:1px solid var(--gray-200);border-radius:20px;padding:36px;text-align:center;">
+        <div style="font-size:2.2rem;margin-bottom:16px;color:var(--blue-500);"><i class="fa-solid fa-envelope"></i></div>
+        <div style="font-size:1.125rem;font-weight:700;color:var(--gray-900);font-family:'Montserrat',sans-serif;margin-bottom:8px;">Email Us</div>
+        <div style="font-size:0.9rem;color:var(--gray-600);margin-bottom:20px;line-height:1.65;">Send detailed project specifications and receive a comprehensive technical proposal.</div>
+        <a href="mailto:info@gausin.in" class="btn btn-primary btn-sm" style="width:100%;justify-content:center;"><i class="fa-solid fa-envelope"></i> info@gausin.in</a>
+      </div>
+
+      <div style="background:white;border:1px solid var(--gray-200);border-radius:20px;padding:36px;text-align:center;">
+        <div style="font-size:2.2rem;margin-bottom:16px;color:var(--blue-500);"><i class="fa-solid fa-industry"></i></div>
+        <div style="font-size:1.125rem;font-weight:700;color:var(--gray-900);font-family:'Montserrat',sans-serif;margin-bottom:8px;">Visit Our Facility</div>
+        <div style="font-size:0.9rem;color:var(--gray-600);margin-bottom:20px;line-height:1.65;">Schedule a facility visit to see our manufacturing capabilities and discuss your project in person.</div>
+        <a href="#inquiry" class="btn btn-outline btn-sm" style="width:100%;justify-content:center;"><i class="fa-solid fa-calendar-check"></i> Schedule Visit</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS & REPRESENTATIVES -->
+<section class="section-sm bg-white">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up" style="margin-bottom:26px;">
+      <div class="section-label"><i class="fa-solid fa-handshake"></i> Global Network</div>
+      <h2 class="section-title">Partners and <span>Representatives</span></h2>
+      <p class="section-desc">International channel support for project coordination, communication, and regional assistance.</p>
+    </div>
+
+    <div style="width:100%;" data-aos="fade-up" data-aos-delay="100">
+      <div style="background:linear-gradient(140deg,#ffffff 0%,#f6faff 100%);border:1px solid var(--blue-200);border-radius:22px;overflow:hidden;box-shadow:0 12px 28px rgba(11,94,215,0.08);">
+        <div style="background:linear-gradient(135deg,var(--blue-900),var(--blue-700));padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+          <div style="display:flex;align-items:center;gap:12px;color:white;">
+            <div style="width:42px;height:42px;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.25);border-radius:11px;display:flex;align-items:center;justify-content:center;">
+              <i class="fa-solid fa-earth-americas"></i>
+            </div>
+            <div style="font-family:'Montserrat',sans-serif;font-size:1rem;font-weight:700;">Canada &amp; USA Representation</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);border-radius:30px;padding:6px 12px;color:var(--blue-100);font-size:0.75rem;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;">Partner Office</div>
+        </div>
+
+        <div style="padding:24px;">
+          <div style="display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:20px;align-items:stretch;">
+            <div style="background:white;border:1px solid var(--gray-200);border-radius:14px;padding:18px;">
+              <div style="font-size:1.25rem;font-weight:800;color:var(--gray-900);font-family:'Montserrat',sans-serif;margin-bottom:10px;">FP Process Corp.</div>
+              <div style="display:inline-flex;align-items:center;gap:8px;background:var(--blue-50);border:1px solid var(--blue-200);border-radius:999px;padding:6px 12px;color:var(--blue-700);font-size:0.75rem;font-weight:700;margin-bottom:14px;">
+                <i class="fa-solid fa-location-dot"></i> Calgary, Alberta
+              </div>
+              <div style="font-size:0.94rem;color:var(--gray-700);line-height:1.75;">
+                Suite 1036, 240 - 70 Shawville Blvd. SE<br>
+                Calgary, AB, Canada T2Y 2Z3
+              </div>
+              <div style="margin-top:14px;padding-top:14px;border-top:1px dashed var(--gray-200);font-size:0.9rem;color:var(--gray-700);">
+                <strong style="color:var(--gray-900);font-family:'Montserrat',sans-serif;">Representative:</strong> Mr. Stanley Foster
+              </div>
+            </div>
+
+            <div style="background:white;border:1px solid var(--gray-200);border-radius:14px;padding:18px;">
+              <div style="font-size:0.95rem;font-weight:700;color:var(--gray-900);font-family:'Montserrat',sans-serif;margin-bottom:12px;">Direct Contact</div>
+              <div style="display:flex;flex-direction:column;gap:10px;">
+                <a href="tel:+14038796174" style="display:flex;align-items:center;gap:10px;padding:10px 12px;background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;color:var(--gray-800);font-size:0.9rem;font-weight:600;">
+                  <i class="fa-solid fa-phone" style="color:var(--blue-500);width:16px;"></i> (403) 879-6174
+                </a>
+                <a href="mailto:info@fpprocess.ca" style="display:flex;align-items:center;gap:10px;padding:10px 12px;background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;color:var(--gray-800);font-size:0.9rem;font-weight:600;">
+                  <i class="fa-solid fa-envelope" style="color:var(--blue-500);width:16px;"></i> info@fpprocess.ca
+                </a>
+                <a href="https://www.fpprocess.ca/" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:10px;padding:10px 12px;background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;color:var(--gray-800);font-size:0.9rem;font-weight:600;">
+                  <i class="fa-solid fa-globe" style="color:var(--blue-500);width:16px;"></i> www.fpprocess.ca
+                </a>
+              </div>
+              <div style="margin-top:14px;padding:10px 12px;background:var(--blue-50);border:1px solid var(--blue-100);border-radius:10px;font-size:0.82rem;color:var(--blue-800);line-height:1.6;">
+                For Canada and USA inquiries, you may directly connect with FP Process Corp. for local coordination and response support.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section bg-white faq-section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-label"><i class="fa-solid fa-circle-question"></i> FAQ</div>
+      <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+      <p class="section-desc">Quick answers to common questions about our products, services, and project delivery process.</p>
+    </div>
+
+    <div class="accordion" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <div class="accordion-title">What types of evaporators do you manufacture?</div>
+          <div class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="accordion-body">
+          <p>We manufacture Falling Film Evaporators, Forced Circulation Evaporators, Rising Film Evaporators, Plate Type Evaporators, and Batch Vacuum Evaporators. All types are available in single, double, triple, and multi-effect configurations with optional TVR (Thermo Vapour Recompressor) / MVR (Mechanical Vapour Recompression) integration.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <div class="accordion-title">What is the typical lead time for equipment delivery?</div>
+          <div class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="accordion-body">
+          <p>Lead times depend on equipment complexity and size. Standard equipment typically takes 8 - 12 weeks from order confirmation. Complete turnkey plants or complex multi-effect systems may require 16 - 24 weeks. We provide a detailed project schedule at the time of order placement.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <div class="accordion-title">Do you provide installation and commissioning services?</div>
+          <div class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="accordion-body">
+          <p>Yes, we provide complete installation supervision and commissioning services as part of our turnkey project offering. Our field engineers manage site installation, mechanical alignment, piping connections, electrical hook-up, pre-commissioning checks, startup, performance testing, and operator training.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <div class="accordion-title">What international standards do your products conform to?</div>
+          <div class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="accordion-body">
+          <p>Our equipment is designed and fabricated to conform to ASME Section VIII (pressure vessels), TEMA (heat exchangers), IBR (Indian Boiler Regulations), BIS/IS standards, 3-A and EHEDG (hygienic dairy/food equipment), GMP guidelines (pharmaceutical), and PED (EU Pressure Equipment Directive) where required.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <div class="accordion-title">Do you provide after-sales support and spare parts?</div>
+          <div class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="accordion-body">
+          <p>Yes, we provide comprehensive after-sales support including: original spare parts supply, on-site maintenance visits, preventive maintenance programs, performance optimization audits, remote technical support, and operator retraining as needed. We maintain a dedicated after-sales service team.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <div class="accordion-title">Can you handle complete turnkey dairy plant projects?</div>
+          <div class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="accordion-body">
+          <p>Absolutely. We have extensive experience in complete turnkey dairy plant projects  -  from initial process design, equipment selection, and P&ID development through fabrication, supply, installation, commissioning, performance testing, and operator training. We have delivered plants ranging from 5,000 L/day to 200,000 L/day capacity.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<section class="cta-section">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center;flex-wrap:wrap;" data-aos="fade-up">
+      <div>
+        <h2 style="font-size:clamp(1.5rem,2.5vw,2.25rem);font-weight:900;color:white;margin-bottom:8px;">Ready to Start Your Project?</h2>
+        <p style="font-size:1rem;color:rgba(255,255,255,0.7);">Join 200+ satisfied clients who trust Gausin for their critical industrial engineering needs.</p>
+      </div>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;flex-shrink:0;">
+        <a href="#inquiry" class="btn btn-white btn-lg"><i class="fa-solid fa-paper-plane"></i> Request Quote</a>
+        <a href="tel:+919870840779" class="btn btn-ghost btn-lg"><i class="fa-solid fa-phone"></i> Call Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand"><a href="index.html" class="navbar-logo footer-logo"><img src="images/gausin-logo.png" alt="" class="logo-img" width="110" height="52" aria-hidden="true"><div class="logo-text"><div class="logo-name">Gausin International</div><div class="logo-tagline">Engineers Pvt. Ltd.</div></div></a><p class="footer-brand-desc">Engineering process excellence through advanced evaporation, drying, and industrial plant solutions for dairy, pharma, chemical and food industries.</p><div class="footer-social"><a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="https://x.com/Gausin_117" class="social-link" aria-label="X" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a><a href="https://www.instagram.com/gaurav67165/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a><a href="https://www.youtube.com/@GausinInternationalEngineersPv" class="social-link" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a><a href="https://www.facebook.com/profile.php?id=61590538293790" class="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a></div></div>
+      <div><div class="footer-title">Products</div><div class="footer-links"><a href="products.html#evaporators" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Evaporators</a><a href="products.html#dryers" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Dryers</a><a href="products.html#cip" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>CIP Systems</a><a href="products.html#milk-processing" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Milk Processing</a><a href="products.html#heat-exchangers" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Heat Exchangers</a><a href="product-etp-stp-treatment-plants.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>ETP/STP Treatment Plants</a><a href="product-biomass-solid-waste-treatment-plant.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Biomass Solid Waste Treatment Plant</a></div></div>
+      <div><div class="footer-title">Company</div><div class="footer-links"><a href="about.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>About Us</a><a href="services.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Services</a><a href="industries.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Industries</a><a href="technology.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Technology</a><a href="contact.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Contact</a></div></div>
+      <div><div class="footer-title">Contact Us</div><div class="footer-contact-item"><div class="footer-contact-icon"><i class="fa-solid fa-location-dot"></i></div><div class="footer-contact-text">DH-249, Pallavpuram Phase-1, Roorkee Road, Meerut, Uttar Pradesh, India  -  250110</div></div><div class="footer-contact-item"><div class="footer-contact-icon"><i class="fa-solid fa-phone"></i></div><div class="footer-contact-text"><a href="tel:+919870840779" style="color:inherit;">+91 98708 40779</a></div></div><div class="footer-contact-item"><div class="footer-contact-icon"><i class="fa-solid fa-envelope"></i></div><div class="footer-contact-text"><a href="mailto:info@gausin.in" style="color:inherit;">info@gausin.in</a></div></div></div>
+    </div>
+    <div class="footer-bottom"><div class="footer-bottom-left"><div>&copy; 2026 Gausin International Engineers Pvt. Ltd. All rights reserved.</div><div class="footer-credit">Designed &amp; Developed by Gausin International Engineers Pvt. Ltd.</div></div><div class="footer-bottom-links"><a href="privacy-policy.html" class="footer-bottom-link">Privacy Policy</a><a href="terms-of-service.html" class="footer-bottom-link">Terms of Service</a></div></div>
+  </div>
+</footer>
+
+<button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="js/config.js"></script>
+<script src="js/main.js" defer></script>
+<script src="js/components.js" defer></script>
+<script>
+  // Pre-select product from ?product= (e.g. from product detail pages)
+  (function () {
+    const key = new URLSearchParams(location.search).get('product');
+    const productSelect = document.getElementById('product');
+    if (!key || !productSelect) return;
+    const labels = {
+      'falling-film-evaporator': 'Falling Film Evaporator',
+      'forced-circulation-evaporator': 'Forced Circulation Evaporator',
+      'rising-film-evaporator': 'Rising Film Evaporator',
+      'plate-type-evaporator': 'Plate Type Evaporator',
+      'batch-evaporator': 'Batch Evaporator',
+    };
+    const label = labels[key] || key.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+    for (const opt of productSelect.options) {
+      if (opt.text === label) {
+        opt.selected = true;
+        break;
+      }
+    }
+    document.getElementById('inquiry')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  })();
+
+  // Custom form submission for contact page
+  const inquiryForm = document.getElementById('inquiryForm');
+  const formSuccess = document.getElementById('formSuccess');
+
+  inquiryForm?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let valid = true;
+
+    inquiryForm.querySelectorAll('[required]').forEach(input => {
+      const val = input.value.trim();
+      const group = input.closest('.form-group');
+      const error = group?.querySelector('.form-error');
+      if (!val) {
+        valid = false;
+        input.style.borderColor = '#EF4444';
+        if (error) error.style.display = 'block';
+      } else {
+        input.style.borderColor = '#10B981';
+        if (error) error.style.display = 'none';
+      }
+    });
+
+    if (valid) {
+      inquiryForm.style.display = 'none';
+      formSuccess.classList.add('show');
+      window.scrollTo({ top: document.getElementById('inquiry').offsetTop - 100, behavior: 'smooth' });
+    }
+  });
+
+  inquiryForm?.querySelectorAll('input, textarea, select').forEach(input => {
+    input.addEventListener('input', () => {
+      if (input.value.trim()) {
+        input.style.borderColor = '#10B981';
+        const err = input.closest('.form-group')?.querySelector('.form-error');
+        if (err) err.style.display = 'none';
+      }
+    });
+  });
+</script>
+</body>
+</html>
+
+
+
