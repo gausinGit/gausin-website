@@ -634,7 +634,7 @@ const WHATSAPP_STYLES = `
     background: linear-gradient(135deg, var(--blue-700), var(--blue-500));
     color: white;
     text-align: center;
-    padding: 10px 16px;
+    padding: 10px 40px 10px 16px;
     font-size: 0.8125rem;
     font-weight: 600;
     position: fixed;
@@ -642,6 +642,8 @@ const WHATSAPP_STYLES = `
     left: 0;
     right: 0;
     z-index: 1001;
+    max-width: 100%;
+    overflow: hidden;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.02em;
   }
@@ -692,8 +694,9 @@ const WHATSAPP_STYLES = `
   }
   .announce-bar .announce-close:hover { color: white; }
 
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
     .whatsapp-float { bottom: 84px; right: 20px; width: 50px; height: 50px; font-size: 1.5rem; }
+    .whatsapp-tooltip { display: none; }
   }
 </style>
 `;
