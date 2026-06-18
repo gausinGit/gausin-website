@@ -396,7 +396,7 @@ const FOOTER_HTML = `
         </div>
         <div class="footer-contact-item">
           <div class="footer-contact-icon"><i class="fa-solid fa-envelope"></i></div>
-          <div class="footer-contact-text"><a href="https://mail.google.com/mail/?to=info@gausin.in" target="_blank" rel="noopener" style="color:inherit;transition:color 0.2s;" onmouseover="this.style.color='var(--blue-400)'" onmouseout="this.style.color='inherit'">info@gausin.in</a></div>
+          <div class="footer-contact-text"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in" target="_blank" rel="noopener" style="color:inherit;transition:color 0.2s;" onmouseover="this.style.color='var(--blue-400)'" onmouseout="this.style.color='inherit'">info@gausin.in</a></div>
         </div>
         <div class="footer-contact-item">
           <div class="footer-contact-icon"><i class="fa-solid fa-globe"></i></div>
