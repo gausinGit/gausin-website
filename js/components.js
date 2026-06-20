@@ -886,4 +886,12 @@ document.addEventListener('DOMContentLoaded', () => {
   injectComponents();
   initPageTransitions();
   initLangSwitcher();
+
+  /* Load AI chatbot on all pages except admin */
+  if (!window.location.pathname.includes('/admin/')) {
+    const s = document.createElement('script');
+    s.src = 'js/chatbot.js';
+    s.defer = true;
+    document.body.appendChild(s);
+  }
 });
