@@ -888,22 +888,8 @@ async function _trFetch(texts, lang) {
   }
 }
 
-/* Show / remove "Translating…" indicator */
-function _trIndicator(show) {
-  let el = document.getElementById('_tr_ind');
-  if (show && !el) {
-    el = document.createElement('div');
-    el.id = '_tr_ind';
-    el.textContent = 'Translating…';
-    el.style.cssText = 'position:fixed;top:90px;right:20px;z-index:9999;' +
-      'background:#0B5ED7;color:#fff;padding:7px 18px;border-radius:20px;' +
-      'font-size:.8rem;font-family:Montserrat,sans-serif;font-weight:600;' +
-      'box-shadow:0 4px 16px rgba(0,0,0,.25);pointer-events:none;';
-    document.body.appendChild(el);
-  } else if (!show && el) {
-    el.remove();
-  }
-}
+/* Indicator removed — translation runs silently */
+function _trIndicator() {}
 
 /* Main translate function */
 async function _translatePageTo(lang) {
