@@ -848,13 +848,24 @@ function initGoogleTranslate() {
   /* Suppress GT toolbar & highlights */
   const s = document.createElement('style');
   s.textContent = [
-    '.goog-te-banner-frame{display:none!important}',
+    '.goog-te-banner-frame,.goog-te-balloon-frame{display:none!important}',
     '.goog-te-menu-frame{display:none!important}',
-    '.goog-tooltip{display:none!important}',
+    '.goog-tooltip,.goog-tooltip-hover{display:none!important}',
     '.goog-text-highlight{background:none!important;box-shadow:none!important}',
     'body{top:0!important}',
+    '#goog-gt-tt,#goog-gt-vt{display:none!important}',
   ].join('');
   document.head.appendChild(s);
+
+  /* MutationObserver — forcibly hide banner whenever GT injects it */
+  const _gtObserver = new MutationObserver(() => {
+    const banner = document.querySelector('.goog-te-banner-frame, #goog-gt-tt');
+    if (banner) { banner.style.setProperty('display', 'none', 'important'); }
+    if (document.body && document.body.style.top && document.body.style.top !== '0px') {
+      document.body.style.setProperty('top', '0', 'important');
+    }
+  });
+  _gtObserver.observe(document.documentElement, { childList: true, subtree: true, attributes: true, attributeFilter: ['style'] });
 
   /* GT callback */
   window.googleTranslateElementInit = function () {
