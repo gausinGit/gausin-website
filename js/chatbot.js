@@ -11,10 +11,10 @@
   const CSS = `
   <style id="gausin-chat-css">
   .gchat-fab {
-    position: fixed; bottom: 28px; left: 28px; z-index: 600;
-    width: 58px; height: 58px; border-radius: 50%; border: none;
+    position: fixed; bottom: 22px; right: 28px; z-index: 600;
+    width: 56px; height: 56px; border-radius: 50%; border: none;
     background: linear-gradient(140deg,#1D4ED8,#0A2540);
-    color: #fff; font-size: 1.45rem; cursor: pointer;
+    color: #fff; font-size: 1.4rem; cursor: pointer;
     display: flex; align-items: center; justify-content: center;
     box-shadow: 0 6px 28px rgba(11,94,215,.55);
     transition: transform .35s cubic-bezier(.34,1.56,.64,1), box-shadow .25s;
@@ -32,16 +32,16 @@
   @keyframes gcFabPulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.25)} }
 
   .gchat-win {
-    position: fixed; left: 28px; bottom: 98px; z-index: 999;
+    position: fixed; right: 28px; bottom: 160px; z-index: 999;
     width: 360px;
-    height: min(440px, calc(100dvh - 270px));
+    height: min(440px, calc(100dvh - 280px));
     background: #fff; border-radius: 22px;
     box-shadow: 0 24px 70px rgba(10,37,64,.22);
     display: flex; flex-direction: column; overflow: hidden;
     border: 1px solid #E2E8F0;
     transform: scale(.88) translateY(22px); opacity: 0; pointer-events: none;
     transition: transform .3s cubic-bezier(.34,1.56,.64,1), opacity .25s ease;
-    transform-origin: bottom left;
+    transform-origin: bottom right;
   }
   .gchat-win.open { transform: scale(1) translateY(0); opacity: 1; pointer-events: all; }
 
@@ -200,9 +200,9 @@
   }
 
   @media (max-width: 480px) {
-    .gchat-win { left: 10px; right: 10px; width: auto; bottom: 90px;
-      height: min(420px, calc(100dvh - 270px)); }
-    .gchat-fab { left: 18px; bottom: 22px; width: 52px; height: 52px; font-size: 1.3rem; }
+    .gchat-win { left: 10px; right: 10px; width: auto; bottom: 150px;
+      height: min(400px, calc(100dvh - 270px)); }
+    .gchat-fab { right: 16px; bottom: 18px; width: 50px; height: 50px; font-size: 1.25rem; }
   }
   </style>`;
 
