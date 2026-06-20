@@ -838,6 +838,14 @@ document.head.insertAdjacentHTML('beforeend', WHATSAPP_STYLES);
 /* ─── Google Translate integration ───────────────────────── */
 function initGoogleTranslate() {
 
+  /* ── Tell Chrome not to show its own translation bar ── */
+  if (!document.querySelector('meta[name="google"][content="notranslate"]')) {
+    const m = document.createElement('meta');
+    m.name    = 'google';
+    m.content = 'notranslate';
+    document.head.insertBefore(m, document.head.firstChild);
+  }
+
   /* ── Inject suppression CSS (appended last so it wins) ── */
   function _injectCSS() {
     if (document.getElementById('gausin-gt-hide')) return;
