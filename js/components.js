@@ -837,49 +837,71 @@ document.head.insertAdjacentHTML('beforeend', WHATSAPP_STYLES);
 
 /* ─── Google Translate integration ───────────────────────── */
 function initGoogleTranslate() {
-  /* Hidden GT container */
+  /* ── Patch body.style.top so GT cannot push page down ── */
+  try {
+    const topDesc = Object.getOwnPropertyDescriptor(CSSStyleDeclaration.prototype, 'top');
+    Object.defineProperty(document.body.style, 'top', {
+      set(v) { topDesc.set.call(this, '0px'); },
+      get()  { return topDesc.get.call(this); },
+      configurable: true,
+    });
+  } catch (_) { /* non-critical */ }
+
+  /* ── Inject suppression CSS (highest priority — appended last) ── */
+  function _injectCSS() {
+    const id = 'gausin-gt-hide';
+    if (document.getElementById(id)) return;
+    const s = document.createElement('style');
+    s.id = id;
+    s.textContent = [
+      /* Hide the banner iframe and its wrapper */
+      '.goog-te-banner-frame,.goog-te-balloon-frame,.goog-te-ftab-float{display:none!important;height:0!important}',
+      '.skiptranslate>iframe{display:none!important;height:0!important}',
+      /* Hide tooltip & highlights */
+      '#goog-gt-tt,#goog-gt-vt,.goog-tooltip{display:none!important}',
+      '.goog-text-highlight{background:none!important;box-shadow:none!important}',
+      /* Keep body at top */
+      'body{top:0!important;margin-top:0!important}',
+    ].join('');
+    /* Append as LAST stylesheet so it wins specificity */
+    document.head.appendChild(s);
+  }
+  _injectCSS();
+
+  /* ── Remove banner nodes & reset body top ── */
+  function _nuke() {
+    _injectCSS();
+    document.querySelectorAll(
+      '.goog-te-banner-frame,.goog-te-balloon-frame,iframe[src*="translate.google"]'
+    ).forEach(el => {
+      el.style.cssText = 'display:none!important;height:0!important;';
+      if (el.parentElement) el.parentElement.style.height = '0';
+    });
+    /* Force body back to top */
+    ['top','marginTop'].forEach(p => document.body.style.setProperty(
+      p.replace(/([A-Z])/g, '-$1').toLowerCase(), '0', 'important'
+    ));
+  }
+
+  /* ── MutationObserver on body & head ── */
+  new MutationObserver(_nuke).observe(document.documentElement, {
+    childList: true, subtree: true,
+    attributes: true, attributeFilter: ['style'],
+  });
+
+  /* ── Short-lived rapid interval (3 s @ 50 ms) right after translation ── */
+  window._gtBurstHide = function _burstHide() {
+    let n = 0;
+    const iv = setInterval(() => { _nuke(); if (++n > 60) clearInterval(iv); }, 50);
+  };
+
+  /* ── Hidden GT container ── */
   if (!document.getElementById('google_translate_element')) {
     const el = document.createElement('div');
     el.id = 'google_translate_element';
-    el.style.display = 'none';
+    el.style.cssText = 'display:none!important;height:0!important;';
     document.body.appendChild(el);
   }
-
-  /* Suppress GT toolbar & highlights */
-  const s = document.createElement('style');
-  s.textContent = [
-    '.goog-te-banner-frame,.goog-te-balloon-frame{display:none!important}',
-    '.goog-te-menu-frame{display:none!important}',
-    '.goog-tooltip,.goog-tooltip-hover{display:none!important}',
-    '.goog-text-highlight{background:none!important;box-shadow:none!important}',
-    'body{top:0!important}',
-    '#goog-gt-tt,#goog-gt-vt{display:none!important}',
-  ].join('');
-  document.head.appendChild(s);
-
-  /* Aggressively suppress GT toolbar — CSS + Observer + Interval triple layer */
-  function _suppressGTBar() {
-    document.querySelectorAll(
-      '.goog-te-banner-frame, .goog-te-balloon-frame, .goog-te-ftab-float, #goog-gt-tt, #goog-gt-vt'
-    ).forEach(el => {
-      el.style.setProperty('display', 'none', 'important');
-      el.style.setProperty('visibility', 'hidden', 'important');
-    });
-    if (document.body && document.body.style.top && document.body.style.top !== '0px') {
-      document.body.style.setProperty('top', '0', 'important');
-    }
-  }
-
-  /* Run immediately and on every DOM mutation */
-  new MutationObserver(_suppressGTBar).observe(document.documentElement, {
-    childList: true, subtree: true, attributes: true, attributeFilter: ['style', 'class']
-  });
-
-  /* Interval fallback — catches GT re-injections after page translate */
-  const _gtInterval = setInterval(_suppressGTBar, 300);
-
-  /* Stop polling once page is stable (after 20 s) */
-  setTimeout(() => clearInterval(_gtInterval), 20000);
 
   /* GT callback */
   window.googleTranslateElementInit = function () {
@@ -887,6 +909,8 @@ function initGoogleTranslate() {
       { pageLanguage: 'en', includedLanguages: 'en,hi,fr,de,es', autoDisplay: false },
       'google_translate_element'
     );
+    /* GT just initialised — burst-hide its toolbar */
+    if (typeof window._gtBurstHide === 'function') window._gtBurstHide();
   };
 
   /* Inject GT script */
@@ -919,6 +943,8 @@ function applyLangChange(code) {
     if (sel) {
       sel.value = code === 'en' ? '' : code;
       sel.dispatchEvent(new Event('change'));
+      /* Burst-hide banner right after triggering translation */
+      if (typeof window._gtBurstHide === 'function') window._gtBurstHide();
       return true;
     }
     return false;
