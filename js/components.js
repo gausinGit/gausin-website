@@ -857,15 +857,29 @@ function initGoogleTranslate() {
   ].join('');
   document.head.appendChild(s);
 
-  /* MutationObserver — forcibly hide banner whenever GT injects it */
-  const _gtObserver = new MutationObserver(() => {
-    const banner = document.querySelector('.goog-te-banner-frame, #goog-gt-tt');
-    if (banner) { banner.style.setProperty('display', 'none', 'important'); }
+  /* Aggressively suppress GT toolbar — CSS + Observer + Interval triple layer */
+  function _suppressGTBar() {
+    document.querySelectorAll(
+      '.goog-te-banner-frame, .goog-te-balloon-frame, .goog-te-ftab-float, #goog-gt-tt, #goog-gt-vt'
+    ).forEach(el => {
+      el.style.setProperty('display', 'none', 'important');
+      el.style.setProperty('visibility', 'hidden', 'important');
+    });
     if (document.body && document.body.style.top && document.body.style.top !== '0px') {
       document.body.style.setProperty('top', '0', 'important');
     }
+  }
+
+  /* Run immediately and on every DOM mutation */
+  new MutationObserver(_suppressGTBar).observe(document.documentElement, {
+    childList: true, subtree: true, attributes: true, attributeFilter: ['style', 'class']
   });
-  _gtObserver.observe(document.documentElement, { childList: true, subtree: true, attributes: true, attributeFilter: ['style'] });
+
+  /* Interval fallback — catches GT re-injections after page translate */
+  const _gtInterval = setInterval(_suppressGTBar, 300);
+
+  /* Stop polling once page is stable (after 20 s) */
+  setTimeout(() => clearInterval(_gtInterval), 20000);
 
   /* GT callback */
   window.googleTranslateElementInit = function () {
