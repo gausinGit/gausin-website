@@ -34,7 +34,7 @@
   .gchat-win {
     position: fixed; left: 28px; bottom: 98px; z-index: 999;
     width: 360px;
-    height: min(520px, calc(100dvh - 150px));
+    height: min(440px, calc(100dvh - 270px));
     background: #fff; border-radius: 22px;
     box-shadow: 0 24px 70px rgba(10,37,64,.22);
     display: flex; flex-direction: column; overflow: hidden;
@@ -200,8 +200,8 @@
   }
 
   @media (max-width: 480px) {
-    .gchat-win { left: 10px; right: 10px; width: auto; bottom: 96px;
-      height: min(480px, calc(100dvh - 130px)); }
+    .gchat-win { left: 10px; right: 10px; width: auto; bottom: 90px;
+      height: min(420px, calc(100dvh - 270px)); }
     .gchat-fab { left: 18px; bottom: 22px; width: 52px; height: 52px; font-size: 1.3rem; }
   }
   </style>`;
