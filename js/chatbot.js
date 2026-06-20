@@ -57,10 +57,13 @@
       gap: 10px; flex-shrink: 0;
     }
     .gchat-avatar {
-      width: 38px; height: 38px;
-      background: rgba(255,255,255,0.15); border-radius: 50%;
+      width: 42px; height: 42px;
+      background: white; border-radius: 10px;
       display: flex; align-items: center; justify-content: center;
-      color: white; font-size: 1.1rem; flex-shrink: 0;
+      flex-shrink: 0; overflow: hidden; padding: 3px;
+    }
+    .gchat-avatar img {
+      width: 100%; height: 100%; object-fit: contain; display: block;
     }
     .gchat-hinfo { flex: 1; min-width: 0; }
     .gchat-hname {
@@ -174,7 +177,7 @@
   </button>
   <div class="gchat-window" id="gchatWindow" role="dialog" aria-label="Gausin AI Assistant">
     <div class="gchat-header">
-      <div class="gchat-avatar"><i class="fa-solid fa-robot"></i></div>
+      <div class="gchat-avatar"><img src="images/gausin-logo.png" alt="Gausin Logo"></div>
       <div class="gchat-hinfo">
         <div class="gchat-hname">Gausin Assistant</div>
         <div class="gchat-hstatus">Online &mdash; AI Powered</div>
