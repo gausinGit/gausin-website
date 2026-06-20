@@ -788,11 +788,15 @@ function injectAnnounceBar() {
 
 /* ─── Page Transition ─────────────────────────────────────── */
 function initPageTransitions() {
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('a[href]').forEach(link => {
     const href = link.getAttribute('href');
     if (!href || href.startsWith('#') || href.startsWith('http') ||
         href.startsWith('mailto') || href.startsWith('tel') ||
         href.startsWith('javascript') || link.target === '_blank') return;
+    // Skip same-page links (e.g. products.html#section when already on products.html)
+    const hrefBase = href.split('#')[0];
+    if (hrefBase === currentPage || hrefBase === '') return;
 
     link.addEventListener('click', (e) => {
       e.preventDefault();
