@@ -835,120 +835,109 @@ function initPageTransitions() {
 /* ─── Inject styles ───────────────────────────────────────── */
 document.head.insertAdjacentHTML('beforeend', WHATSAPP_STYLES);
 
-/* ─── Google Translate integration ───────────────────────── */
-function initGoogleTranslate() {
+/* ─── Custom Translation Engine ──────────────────────────────
+   Uses translate.googleapis.com directly — no widget, no toolbar
+   ─────────────────────────────────────────────────────────── */
+const _TR = {
+  cache:     {},   // 'lang|text' → translated
+  originals: [],   // [{ node, orig }] for restore
+  active:    'en',
+};
 
-  /* ── Tell Chrome not to show its own translation bar ── */
-  if (!document.querySelector('meta[name="google"][content="notranslate"]')) {
-    const m = document.createElement('meta');
-    m.name    = 'google';
-    m.content = 'notranslate';
-    document.head.insertBefore(m, document.head.firstChild);
-  }
-
-  /* ── Inject suppression CSS (appended last so it wins) ── */
-  function _injectCSS() {
-    if (document.getElementById('gausin-gt-hide')) return;
-    const s = document.createElement('style');
-    s.id = 'gausin-gt-hide';
-    s.textContent =
-      /* Banner iframe only — do NOT hide .skiptranslate (GT needs it for translation) */
-      '.goog-te-banner-frame,.goog-te-balloon-frame,.goog-te-ftab-float{display:none!important;height:0!important;}' +
-      'iframe.goog-te-banner-frame{display:none!important;}' +
-      '#goog-gt-tt,#goog-gt-vt,.goog-tooltip{display:none!important;}' +
-      '.goog-text-highlight{background:none!important;box-shadow:none!important;}';
-    document.head.appendChild(s);
-  }
-  _injectCSS();
-
-  /* ── Hide banner + reset body.top WITHOUT touching GT internals ── */
-  function _hideBar() {
-    document.querySelectorAll(
-      '.goog-te-banner-frame, .goog-te-balloon-frame, iframe.goog-te-banner-frame'
-    ).forEach(el => {
-      el.style.setProperty('display', 'none', 'important');
-      el.style.setProperty('height',  '0',    'important');
-    });
-    /* Only reset body.top (not marginTop) — GT sets this for the banner gap */
-    if (document.body.style.top && document.body.style.top !== '0px') {
-      document.body.style.top = '0px';
-    }
-  }
-
-  /* ── MutationObserver ── */
-  new MutationObserver(_hideBar).observe(document.documentElement, {
-    childList: true, subtree: true,
-    attributes: true, attributeFilter: ['style'],
+/* Collect translatable text nodes from the live page */
+function _trNodes() {
+  const SKIP = new Set(['SCRIPT','STYLE','NOSCRIPT','IFRAME','CODE','PRE','INPUT','TEXTAREA','SELECT']);
+  const nodes = [];
+  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+    acceptNode(node) {
+      const p = node.parentElement;
+      if (!p || SKIP.has(p.tagName)) return NodeFilter.FILTER_REJECT;
+      /* Skip chatbot, topbar meta elements, hidden elements */
+      if (p.closest('#gchatWindow,#gchatToggle,#google_translate_element,.topbar-link i'))
+        return NodeFilter.FILTER_REJECT;
+      if (!node.nodeValue.trim() || node.nodeValue.trim().length < 2)
+        return NodeFilter.FILTER_SKIP;
+      return NodeFilter.FILTER_ACCEPT;
+    },
   });
+  let n;
+  while ((n = walker.nextNode())) nodes.push(n);
+  return nodes;
+}
 
-  /* ── Burst-hide: called right after language change ── */
-  window._gtBurstHide = function () {
-    let n = 0;
-    const iv = setInterval(() => { _hideBar(); if (++n > 40) clearInterval(iv); }, 75);
-  };
+/* Fetch translations for an array of texts (batched with \n) */
+async function _trFetch(texts, lang) {
+  const uncached = [...new Set(texts)].filter(t => !_TR.cache[lang + '|' + t]);
+  if (!uncached.length) return;
 
-  /* ── Hidden GT container ── */
-  if (!document.getElementById('google_translate_element')) {
-    const el = document.createElement('div');
-    el.id = 'google_translate_element';
-    el.style.display = 'none';
-    document.body.appendChild(el);
-  }
-
-  /* ── GT widget callback ── */
-  window.googleTranslateElementInit = function () {
-    new google.translate.TranslateElement(
-      { pageLanguage: 'en', includedLanguages: 'en,hi,fr,de,es', autoDisplay: false },
-      'google_translate_element'
-    );
-    window._gtBurstHide();
-  };
-
-  /* ── Inject GT script ── */
-  if (!document.querySelector('script[src*="translate.google.com"]')) {
-    const sc = document.createElement('script');
-    sc.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-    sc.async = true;
-    document.head.appendChild(sc);
+  const BATCH = 40;
+  for (let i = 0; i < uncached.length; i += BATCH) {
+    const batch = uncached.slice(i, i + BATCH);
+    try {
+      const q   = encodeURIComponent(batch.join('\n'));
+      const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=${lang}&dt=t&q=${q}`;
+      const res = await fetch(url);
+      const dat = await res.json();
+      const translated = dat[0].map(s => s[0]).join('').split('\n');
+      batch.forEach((orig, j) => {
+        _TR.cache[lang + '|' + orig] = translated[j] || orig;
+      });
+    } catch (_) {
+      batch.forEach(t => { _TR.cache[lang + '|' + t] = t; });
+    }
   }
 }
 
-/* Apply language via GT select + cookie */
+/* Show / remove "Translating…" indicator */
+function _trIndicator(show) {
+  let el = document.getElementById('_tr_ind');
+  if (show && !el) {
+    el = document.createElement('div');
+    el.id = '_tr_ind';
+    el.textContent = 'Translating…';
+    el.style.cssText = 'position:fixed;top:90px;right:20px;z-index:9999;' +
+      'background:#0B5ED7;color:#fff;padding:7px 18px;border-radius:20px;' +
+      'font-size:.8rem;font-family:Montserrat,sans-serif;font-weight:600;' +
+      'box-shadow:0 4px 16px rgba(0,0,0,.25);pointer-events:none;';
+    document.body.appendChild(el);
+  } else if (!show && el) {
+    el.remove();
+  }
+}
+
+/* Main translate function */
+async function _translatePageTo(lang) {
+  /* Always restore originals first */
+  _TR.originals.forEach(({ node, orig }) => { node.nodeValue = orig; });
+  _TR.originals = [];
+  _TR.active = lang;
+  localStorage.setItem('gausin_lang', lang);
+
+  if (lang === 'en') return;
+
+  _trIndicator(true);
+  try {
+    const nodes = _trNodes();
+    const texts  = nodes.map(n => n.nodeValue.trim());
+
+    await _trFetch(texts, lang);
+
+    nodes.forEach((node, i) => {
+      const orig = texts[i];
+      const tr   = _TR.cache[lang + '|' + orig];
+      if (tr && tr !== orig) {
+        _TR.originals.push({ node, orig: node.nodeValue });
+        node.nodeValue = node.nodeValue.replace(orig, tr);
+      }
+    });
+  } finally {
+    _trIndicator(false);
+  }
+}
+
+/* Called by lang-switcher buttons */
 function applyLangChange(code) {
-  localStorage.setItem('gausin_lang', code);
-
-  /* Set googtrans cookie for persistence across pages */
-  const domain = location.hostname.replace(/^www\./, '');
-  if (code === 'en') {
-    const exp = 'Thu, 01 Jan 1970 00:00:00 UTC';
-    document.cookie = `googtrans=; path=/; expires=${exp}`;
-    document.cookie = `googtrans=; domain=.${domain}; path=/; expires=${exp}`;
-  } else {
-    document.cookie = `googtrans=/en/${code}; path=/`;
-    document.cookie = `googtrans=/en/${code}; domain=.${domain}; path=/`;
-  }
-
-  /* Try using GT combo select first (no reload needed) */
-  const trySelect = () => {
-    const sel = document.querySelector('select.goog-te-combo');
-    if (sel) {
-      sel.value = code === 'en' ? '' : code;
-      sel.dispatchEvent(new Event('change'));
-      /* Burst-hide banner right after triggering translation */
-      if (typeof window._gtBurstHide === 'function') window._gtBurstHide();
-      return true;
-    }
-    return false;
-  };
-
-  if (!trySelect()) {
-    /* GT not ready yet — wait up to 3 s then reload */
-    let attempts = 0;
-    const iv = setInterval(() => {
-      attempts++;
-      if (trySelect() || attempts > 15) clearInterval(iv);
-    }, 200);
-  }
+  _translatePageTo(code);
 }
 
 /* ─── Init on DOM ready ───────────────────────────────────── */
@@ -999,7 +988,6 @@ document.addEventListener('DOMContentLoaded', () => {
   injectAnnounceBar();
   injectComponents();
   initPageTransitions();
-  initGoogleTranslate();
   initLangSwitcher();
 
   /* Load AI chatbot on all pages except admin */
