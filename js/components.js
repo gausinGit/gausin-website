@@ -144,6 +144,61 @@ function injectSecondaryMegaMenus() {
   });
 }
 
+/* Always ensure Products mega menu has all 9 items — fixes pages where
+   the hardcoded navbar only had 6 items */
+function fixProductsMegaMenu() {
+  const productsLink = document.querySelector('.navbar-nav .nav-item > a.nav-link[href="products.html"]');
+  if (!productsLink) return;
+  const navItem = productsLink.closest('.nav-item');
+  if (!navItem) return;
+
+  const existing = navItem.querySelector('.mega-menu');
+  if (existing) existing.remove();
+
+  navItem.insertAdjacentHTML('beforeend', `
+    <div class="mega-menu">
+      <div class="mega-menu-grid">
+        <a href="products.html#evaporators" class="mega-menu-item">
+          <div class="mega-menu-item-icon"><i class="fa-solid fa-droplet"></i></div>
+          <div><div class="mega-menu-item-title">Evaporators</div><div class="mega-menu-item-desc">Falling Film, Forced Circulation, Plate Type</div></div>
+        </a>
+        <a href="products.html#dryers" class="mega-menu-item">
+          <div class="mega-menu-item-icon"><i class="fa-solid fa-wind"></i></div>
+          <div><div class="mega-menu-item-title">Dryers</div><div class="mega-menu-item-desc">Spray, Spin Flash, Fluidized Bed</div></div>
+        </a>
+        <a href="products.html#heat-exchangers" class="mega-menu-item">
+          <div class="mega-menu-item-icon"><i class="fa-solid fa-temperature-high"></i></div>
+          <div><div class="mega-menu-item-title">Heat Exchangers</div><div class="mega-menu-item-desc">Shell & Tube, Plate Type</div></div>
+        </a>
+        <a href="products.html#cip" class="mega-menu-item">
+          <div class="mega-menu-item-icon"><i class="fa-solid fa-recycle"></i></div>
+          <div><div class="mega-menu-item-title">CIP Systems</div><div class="mega-menu-item-desc">Clean-in-Place automation</div></div>
+        </a>
+        <a href="products.html#milk-processing" class="mega-menu-item">
+          <div class="mega-menu-item-icon"><i class="fa-solid fa-flask"></i></div>
+          <div><div class="mega-menu-item-title">Milk Processing</div><div class="mega-menu-item-desc">Pasteurizer, Deodorizer, Full Plant</div></div>
+        </a>
+        <a href="products.html#vessels" class="mega-menu-item">
+          <div class="mega-menu-item-icon"><i class="fa-solid fa-database"></i></div>
+          <div><div class="mega-menu-item-title">Pressure Vessels & Tanks</div><div class="mega-menu-item-desc">SS Tanks, Pressure Vessels</div></div>
+        </a>
+        <a href="products.html#milk-equipment" class="mega-menu-item">
+          <div class="mega-menu-item-icon"><i class="fa-solid fa-jar"></i></div>
+          <div><div class="mega-menu-item-title">Milk Equipment</div><div class="mega-menu-item-desc">Butter Churner, Ghee Kettle, Khoya</div></div>
+        </a>
+        <a href="products.html#dairy-food-equipment" class="mega-menu-item">
+          <div class="mega-menu-item-icon"><i class="fa-solid fa-industry"></i></div>
+          <div><div class="mega-menu-item-title">Dairy & Food Equipments</div><div class="mega-menu-item-desc">Milk Can Conveyor, BMC, Crystallization Tank</div></div>
+        </a>
+        <a href="products.html#waste-management" class="mega-menu-item">
+          <div class="mega-menu-item-icon"><i class="fa-solid fa-leaf"></i></div>
+          <div><div class="mega-menu-item-title">Waste Management</div><div class="mega-menu-item-desc">ETP/STP, Biogas, Scrubber, Incinerator</div></div>
+        </a>
+      </div>
+    </div>
+  `);
+}
+
 /* ─── Top Utility Bar ─────────────────────────────────────── */
 const TOPBAR_LINKS = [
   { href: 'career.html', label: 'Career', icon: 'fa-briefcase' },
@@ -544,8 +599,8 @@ function injectComponents() {
   injectTopbarMobileLinks();
   injectMissingSecondaryNavItems();
   injectSecondaryMegaMenus();
+  fixProductsMegaMenu();
   injectMobileNavLink('tech-ai.html', 'Tech & AI');
-  document.querySelector('a.nav-link[href="products.html"]')?.closest('.nav-item')?.querySelector('.mega-menu-header')?.remove();
 
   // Cookie buttons
   document.getElementById('cookieAccept')?.addEventListener('click', () => {
