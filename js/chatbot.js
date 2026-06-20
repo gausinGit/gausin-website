@@ -39,8 +39,8 @@
       bottom: 100px;
       left: 28px;
       width: 340px;
-      height: min(480px, calc(100dvh - 140px));
-      max-height: calc(100dvh - 140px);
+      height: min(410px, calc(100dvh - 260px));
+      max-height: min(410px, calc(100dvh - 260px));
       background: white; border-radius: 20px;
       box-shadow: 0 20px 60px rgba(10,37,64,0.22);
       display: flex; flex-direction: column;
@@ -171,8 +171,8 @@
       .gchat-window {
         left: 10px; right: 10px; width: auto;
         bottom: 90px;
-        height: min(460px, calc(100dvh - 120px));
-        max-height: calc(100dvh - 120px);
+        height: min(390px, calc(100dvh - 260px));
+        max-height: min(390px, calc(100dvh - 260px));
       }
       .gchat-toggle { left: 16px; bottom: 28px; width: 50px; height: 50px; font-size: 1.3rem; }
     }
