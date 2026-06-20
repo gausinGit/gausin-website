@@ -13,7 +13,7 @@
   const STYLES = `
   <style id="gausin-chatbot-styles">
     .gchat-toggle {
-      position: fixed; bottom: 92px; left: 28px;
+      position: fixed; bottom: 36px; left: 28px;
       width: 56px; height: 56px;
       background: linear-gradient(135deg, #1D4ED8, #0A2540);
       border-radius: 50%; display: flex; align-items: center; justify-content: center;
@@ -35,14 +35,18 @@
       50% { transform: scale(1.2); }
     }
     .gchat-window {
-      position: fixed; bottom: 162px; left: 28px;
-      width: 360px; max-height: 510px;
+      position: fixed;
+      bottom: 100px;
+      left: 28px;
+      width: 340px;
+      height: min(480px, calc(100dvh - 140px));
+      max-height: calc(100dvh - 140px);
       background: white; border-radius: 20px;
       box-shadow: 0 20px 60px rgba(10,37,64,0.22);
       display: flex; flex-direction: column;
       z-index: 999; overflow: hidden;
       border: 1px solid #E2E8F0;
-      transform: scale(0.85) translateY(30px);
+      transform: scale(0.85) translateY(20px);
       opacity: 0; pointer-events: none;
       transition: all 0.3s cubic-bezier(0.34,1.56,0.64,1);
       transform-origin: bottom left;
@@ -164,8 +168,13 @@
     }
     .gchat-send:hover { transform: scale(1.1); }
     @media (max-width: 480px) {
-      .gchat-window { left: 10px; right: 10px; width: auto; bottom: 146px; max-height: 70vh; }
-      .gchat-toggle { left: 18px; bottom: 84px; width: 50px; height: 50px; font-size: 1.3rem; }
+      .gchat-window {
+        left: 10px; right: 10px; width: auto;
+        bottom: 90px;
+        height: min(460px, calc(100dvh - 120px));
+        max-height: calc(100dvh - 120px);
+      }
+      .gchat-toggle { left: 16px; bottom: 28px; width: 50px; height: 50px; font-size: 1.3rem; }
     }
   </style>`;
 
