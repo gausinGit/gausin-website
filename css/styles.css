@@ -322,7 +322,7 @@ h6 { font-size: 1rem; }
   z-index: 1001;
   height: var(--topbar-height);
   max-width: 100%;
-  overflow: hidden;
+  overflow: visible; /* visible so lang-dropdown can extend below */
   background: linear-gradient(90deg, var(--blue-950, #061a2e), var(--blue-900));
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
