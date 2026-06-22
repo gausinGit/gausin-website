@@ -28,14 +28,14 @@ const SECONDARY_MEGA_MENUS = [
     navLabel: 'Services',
     headerIcon: 'fa-screwdriver-wrench',
     headerTitle: 'Engineering Services',
-    headerDesc: 'End-to-end project delivery',
+    headerDesc: 'End-to-End Project Delivery',
     items: [
       { href: 'services.html#process-design',        icon: 'fa-drafting-compass',  title: 'Process Design',         desc: 'Simulation, P&ID, Equipment Sizing' },
       { href: 'services.html#detailed-engineering',  icon: 'fa-ruler-combined',    title: 'Detailed Engineering',   desc: '3D CAD, Piping, Instrumentation' },
       { href: 'services.html#turnkey-execution',     icon: 'fa-project-diagram',   title: 'Turnkey Execution',      desc: 'Planning, Commissioning, Handover' },
       { href: 'services.html#energy-optimization',   icon: 'fa-bolt',              title: 'Energy Optimization',    desc: 'MVR, Heat Recovery, Audits' },
       { href: 'services.html#automation-control',    icon: 'fa-robot',             title: 'Automation & Control',   desc: 'PLC/SCADA, IoT Integration' },
-      { href: 'services.html#consultancy',           icon: 'fa-headset',           title: 'Technical Consultancy',  desc: 'Troubleshooting, De-bottlenecking' },
+      { href: 'services.html#consultancy',           icon: 'fa-headset',           title: 'Technical Consultancy',  desc: 'Troubleshooting, De-Bottlenecking' },
     ],
   },
   {
@@ -43,14 +43,14 @@ const SECONDARY_MEGA_MENUS = [
     navLabel: 'Industries',
     headerIcon: 'fa-building',
     headerTitle: 'Industries We Serve',
-    headerDesc: 'Sector-specific engineering solutions',
+    headerDesc: 'Sector-Specific Engineering Solutions',
     items: [
-      { href: 'industries.html#dairy',    icon: 'fa-cow',          title: 'Dairy Industry',    desc: 'Milk processing, evaporators' },
-      { href: 'industries.html#pharma',   icon: 'fa-pills',        title: 'Pharmaceutical',    desc: 'GMP-compliant systems' },
-      { href: 'industries.html#chemical', icon: 'fa-flask-vial',   title: 'Chemical Industry', desc: 'Process plants, reactors' },
-      { href: 'industries.html#food',     icon: 'fa-utensils',     title: 'Food Processing',   desc: 'Hygienic plant solutions' },
-      { href: 'industries.html',          icon: 'fa-wine-bottle',  title: 'Distillery',        desc: 'Evaporation, dehydration' },
-      { href: 'industries.html',          icon: 'fa-bolt-lightning',title: 'Energy & More',    desc: 'Paper, Textile, Energy sectors' },
+      { href: 'industries.html#dairy',    icon: 'fa-cow',          title: 'Dairy Industry',    desc: 'Milk Processing, Evaporators' },
+      { href: 'industries.html#pharma',   icon: 'fa-pills',        title: 'Pharmaceutical',    desc: 'GMP-Compliant Systems' },
+      { href: 'industries.html#chemical', icon: 'fa-flask-vial',   title: 'Chemical Industry', desc: 'Process Plants, Reactors' },
+      { href: 'industries.html#food',     icon: 'fa-utensils',     title: 'Food Processing',   desc: 'Hygienic Plant Solutions' },
+      { href: 'industries.html',          icon: 'fa-wine-bottle',  title: 'Distillery',        desc: 'Evaporation, Dehydration' },
+      { href: 'industries.html',          icon: 'fa-bolt-lightning',title: 'Energy & More',    desc: 'Paper, Textile, Energy Sectors' },
     ],
   },
   {
@@ -58,27 +58,27 @@ const SECONDARY_MEGA_MENUS = [
     navLabel: 'Technology',
     headerIcon: 'fa-microchip',
     headerTitle: 'Technology & Innovation',
-    headerDesc: 'Advanced tools and manufacturing',
+    headerDesc: 'Advanced Tools and Manufacturing',
     items: [
       { href: 'technology.html#process-simulation', icon: 'fa-atom',             title: 'Process Simulation',    desc: 'CHEMCAD, Mass & Energy Balance' },
       { href: 'technology.html#process-simulation', icon: 'fa-fire-flame-curved',title: 'Thermal Design',        desc: 'HTRI Xchanger Suite' },
       { href: 'technology.html#process-simulation', icon: 'fa-pen-ruler',        title: 'CAD & 3D Design',       desc: 'AutoCAD, P&IDs, Plant Layout' },
       { href: 'technology.html#fabrication',        icon: 'fa-industry',         title: 'Fabrication Technology',desc: 'CNC, TIG/MIG Welding, NDT' },
-      { href: 'technology.html#automation-iot',     icon: 'fa-sliders',          title: 'PLC/SCADA Automation',  desc: 'Control panels, HMI systems' },
-      { href: 'technology.html#automation-iot',     icon: 'fa-satellite-dish',   title: 'IoT & Remote Monitoring',desc: 'Cloud analytics, diagnostics' },
+      { href: 'technology.html#automation-iot',     icon: 'fa-sliders',          title: 'PLC/SCADA Automation',  desc: 'Control Panels, HMI Systems' },
+      { href: 'technology.html#automation-iot',     icon: 'fa-satellite-dish',   title: 'IoT & Remote Monitoring',desc: 'Cloud Analytics, Diagnostics' },
     ],
   },
   {
     pageHref: 'tech-ai.html',
     navLabel: 'Tech & AI',
     items: [
-      { href: 'tech-ai.html#web-development', icon: 'fa-code', title: 'Web Development', desc: 'Websites & web applications' },
-      { href: 'tech-ai.html#mobile-apps', icon: 'fa-mobile-screen', title: 'Mobile App Development', desc: 'iOS & Android applications' },
-      { href: 'tech-ai.html#desktop-apps', icon: 'fa-desktop', title: 'Desktop Applications', desc: 'Cross-platform desktop software' },
-      { href: 'tech-ai.html#ai-ml', icon: 'fa-brain', title: 'AI/ML Solutions', desc: 'Machine learning & AI systems' },
-      { href: 'tech-ai.html#automation', icon: 'fa-gears', title: 'Business Automation', desc: 'Workflow & process automation' },
-      { href: 'tech-ai.html#cloud', icon: 'fa-cloud', title: 'Cloud Solutions', desc: 'Cloud deployment & migration' },
-      { href: 'tech-ai.html#custom-software', icon: 'fa-laptop-code', title: 'Custom Software Development', desc: 'Tailored software solutions' },
+      { href: 'tech-ai.html#web-development', icon: 'fa-code', title: 'Web Development', desc: 'Websites & Web Applications' },
+      { href: 'tech-ai.html#mobile-apps', icon: 'fa-mobile-screen', title: 'Mobile App Development', desc: 'iOS & Android Applications' },
+      { href: 'tech-ai.html#desktop-apps', icon: 'fa-desktop', title: 'Desktop Applications', desc: 'Cross-Platform Desktop Software' },
+      { href: 'tech-ai.html#ai-ml', icon: 'fa-brain', title: 'AI/ML Solutions', desc: 'Machine Learning & AI Systems' },
+      { href: 'tech-ai.html#automation', icon: 'fa-gears', title: 'Business Automation', desc: 'Workflow & Process Automation' },
+      { href: 'tech-ai.html#cloud', icon: 'fa-cloud', title: 'Cloud Solutions', desc: 'Cloud Deployment & Migration' },
+      { href: 'tech-ai.html#custom-software', icon: 'fa-laptop-code', title: 'Custom Software Development', desc: 'Tailored Software Solutions' },
     ],
   },
 ];
@@ -172,7 +172,7 @@ function fixProductsMegaMenu() {
         </a>
         <a href="products.html#cip" class="mega-menu-item">
           <div class="mega-menu-item-icon"><i class="fa-solid fa-recycle"></i></div>
-          <div><div class="mega-menu-item-title">CIP Systems</div><div class="mega-menu-item-desc">Clean-in-Place automation</div></div>
+          <div><div class="mega-menu-item-title">CIP Systems</div><div class="mega-menu-item-desc">Clean-In-Place Automation</div></div>
         </a>
         <a href="products.html#milk-processing" class="mega-menu-item">
           <div class="mega-menu-item-icon"><i class="fa-solid fa-flask"></i></div>
@@ -188,7 +188,7 @@ function fixProductsMegaMenu() {
         </a>
         <a href="products.html#dairy-food-equipment" class="mega-menu-item">
           <div class="mega-menu-item-icon"><i class="fa-solid fa-industry"></i></div>
-          <div><div class="mega-menu-item-title">Dairy & Food Equipments</div><div class="mega-menu-item-desc">Milk Can Conveyor, BMC, Crystallization Tank</div></div>
+          <div><div class="mega-menu-item-title">Dairy & Food Equipment</div><div class="mega-menu-item-desc">Milk Can Conveyor, BMC, Crystallization Tank</div></div>
         </a>
         <a href="products.html#waste-management" class="mega-menu-item">
           <div class="mega-menu-item-icon"><i class="fa-solid fa-leaf"></i></div>
@@ -325,7 +325,7 @@ const NAVBAR_HTML = `
               </a>
               <a href="products.html#cip" class="mega-menu-item">
                 <div class="mega-menu-item-icon"><i class="fa-solid fa-recycle"></i></div>
-                <div><div class="mega-menu-item-title">CIP Systems</div><div class="mega-menu-item-desc">Clean-in-Place automation</div></div>
+                <div><div class="mega-menu-item-title">CIP Systems</div><div class="mega-menu-item-desc">Clean-In-Place Automation</div></div>
               </a>
               <a href="products.html#milk-processing" class="mega-menu-item">
                 <div class="mega-menu-item-icon"><i class="fa-solid fa-flask"></i></div>
@@ -341,7 +341,7 @@ const NAVBAR_HTML = `
               </a>
               <a href="products.html#dairy-food-equipment" class="mega-menu-item">
                 <div class="mega-menu-item-icon"><i class="fa-solid fa-industry"></i></div>
-                <div><div class="mega-menu-item-title">Dairy & Food Equipments</div><div class="mega-menu-item-desc">Milk Can Conveyor, BMC, Crystallization Tank</div></div>
+                <div><div class="mega-menu-item-title">Dairy & Food Equipment</div><div class="mega-menu-item-desc">Milk Can Conveyor, BMC, Crystallization Tank</div></div>
               </a>
               <a href="products.html#waste-management" class="mega-menu-item">
                 <div class="mega-menu-item-icon"><i class="fa-solid fa-leaf"></i></div>
