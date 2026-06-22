@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Engineering insights, technical articles, case studies and industry reports from Gausin International Engineers — process equipment experts in dairy, pharma, chemical, and food industries.">
+  <meta name="robots" content="index, follow">
+  <title>Insights | Gausin International Engineers Pvt. Ltd.</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <style>
+    /* ── Filter Tabs ── */
+    .ins-filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+    .ins-filter-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 8px 20px;
+      border-radius: 40px;
+      border: 1.5px solid var(--gray-200);
+      background: white;
+      font-size: 0.8125rem;
+      font-weight: 700;
+      font-family: 'Montserrat', sans-serif;
+      color: var(--gray-600);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .ins-filter-btn:hover { border-color: var(--blue-300); color: var(--blue-600); }
+    .ins-filter-btn.active { background: var(--blue-600); border-color: var(--blue-600); color: white; }
+
+    /* ── Featured Card ── */
+    .ins-featured {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 0;
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: 20px;
+      overflow: hidden;
+      margin-bottom: 40px;
+      transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+    .ins-featured:hover { box-shadow: var(--shadow-xl); border-color: var(--blue-200); }
+    .ins-featured-img {
+      background: linear-gradient(135deg, var(--blue-900), var(--blue-600));
+      min-height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .ins-featured-img img { width: 100%; height: 100%; object-fit: cover; opacity: 0.45; }
+    .ins-featured-icon {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2.25rem;
+      backdrop-filter: blur(10px);
+    }
+    .ins-featured-body {
+      padding: 40px 44px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    /* ── Insight Grid ── */
+    .ins-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+    .ins-card {
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: 16px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      transition: all 0.3s ease;
+    }
+    .ins-card:hover { border-color: var(--blue-300); box-shadow: var(--shadow-lg); transform: translateY(-2px); }
+    .ins-card-top {
+      height: 130px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    .ins-card-top--tech     { background: linear-gradient(135deg, #1e3a8a, #3b82f6); }
+    .ins-card-top--case     { background: linear-gradient(135deg, #065f46, #10b981); }
+    .ins-card-top--industry { background: linear-gradient(135deg, #4c1d95, #8b5cf6); }
+    .ins-card-top--guide    { background: linear-gradient(135deg, #92400e, #f59e0b); }
+    .ins-card-top img { width: 100%; height: 100%; object-fit: cover; opacity: 0.35; position: absolute; inset: 0; }
+    .ins-card-top i { position: relative; z-index: 1; }
+    .ins-card-body { padding: 24px 26px; display: flex; flex-direction: column; flex: 1; }
+    .ins-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .ins-cat {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.6875rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 4px 10px;
+      border-radius: 20px;
+      border: 1px solid transparent;
+    }
+    .ins-cat--tech     { color: var(--blue-700); background: var(--blue-50); border-color: var(--blue-200); }
+    .ins-cat--case     { color: #065f46; background: #ecfdf5; border-color: #a7f3d0; }
+    .ins-cat--industry { color: #5b21b6; background: #f5f3ff; border-color: #ddd6fe; }
+    .ins-cat--guide    { color: #92400e; background: #fffbeb; border-color: #fde68a; }
+    .ins-date {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--gray-500);
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .ins-read-time {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--gray-400);
+      margin-left: auto;
+    }
+    .ins-title {
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--gray-900);
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+    .ins-featured-body .ins-title { font-size: 1.5rem; margin-bottom: 14px; }
+    .ins-excerpt {
+      font-size: 0.875rem;
+      color: var(--gray-600);
+      line-height: 1.75;
+      flex: 1;
+      margin-bottom: 16px;
+    }
+    .ins-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8125rem;
+      font-weight: 700;
+      color: var(--blue-600);
+      font-family: 'Montserrat', sans-serif;
+      transition: gap 0.2s ease;
+      margin-top: auto;
+    }
+    .ins-link:hover { gap: 10px; color: var(--blue-700); }
+
+    /* ── Tags ── */
+    .ins-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 14px;
+    }
+    .ins-tag {
+      font-size: 0.6875rem;
+      font-weight: 600;
+      color: var(--gray-500);
+      background: var(--gray-100);
+      padding: 3px 9px;
+      border-radius: 20px;
+    }
+
+    /* ── Stats Strip ── */
+    .ins-stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--gray-200);
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 48px;
+      border: 1px solid var(--gray-200);
+    }
+    .ins-stat {
+      background: white;
+      padding: 24px;
+      text-align: center;
+    }
+    .ins-stat-num {
+      font-size: 1.75rem;
+      font-weight: 900;
+      color: var(--blue-600);
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .ins-stat-label {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--gray-500);
+    }
+
+    /* ── Section Dividers ── */
+    .ins-section-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .ins-section-header h3 {
+      font-size: 1.125rem;
+      font-weight: 800;
+      color: var(--gray-900);
+      font-family: 'Montserrat', sans-serif;
+      white-space: nowrap;
+    }
+    .ins-section-line {
+      flex: 1;
+      height: 1px;
+      background: var(--gray-200);
+    }
+
+    /* ── CTA ── */
+    .ins-cta {
+      text-align: center;
+      margin-top: 48px;
+      padding: 40px;
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: 20px;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 1024px) {
+      .ins-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 900px) {
+      .ins-featured { grid-template-columns: 1fr; }
+      .ins-featured-img { min-height: 200px; }
+      .ins-featured-body { padding: 28px; }
+      .ins-stats { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 640px) {
+      .ins-grid { grid-template-columns: 1fr; }
+      .ins-stats { grid-template-columns: repeat(2, 1fr); }
+      .ins-filter-bar { gap: 8px; }
+      .ins-filter-btn { padding: 7px 14px; font-size: 0.75rem; }
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo navbar-logo--image"><img src="images/gausin-logo.png" alt="Gausin International Engineers Pvt. Ltd." class="logo-img" width="220" height="52"></a>
+      <nav class="navbar-nav">
+        <div class="nav-item"><a href="index.html" class="nav-link">Home</a></div>
+        <div class="nav-item"><a href="about.html" class="nav-link">About</a></div>
+        <div class="nav-item"><a href="products.html" class="nav-link">Products</a></div>
+        <div class="nav-item"><a href="services.html" class="nav-link">Services</a></div>
+        <div class="nav-item"><a href="contact.html" class="nav-link">Contact</a></div>
+      </nav>
+      <div class="navbar-cta"><a href="contact.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Get a Quote</a></div>
+      <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle menu"><span class="toggle-bar"></span><span class="toggle-bar"></span><span class="toggle-bar"></span></button>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero page-hero--default">
+  <div class="container page-hero-content">
+    <div class="page-hero-label"><i class="fa-solid fa-lightbulb"></i> Insights</div>
+    <h1 class="page-hero-title">Engineering Insights &amp; Knowledge Hub</h1>
+    <p class="page-hero-desc">Technical articles, case studies, and industry reports from Gausin's process engineering team — covering dairy, pharma, chemical, food, and environmental sectors.</p>
+  </div>
+</section>
+
+<section class="section bg-light">
+  <div class="container">
+
+    <!-- Stats Strip -->
+    <div class="ins-stats">
+      <div class="ins-stat">
+        <div class="ins-stat-num">25+</div>
+        <div class="ins-stat-label">Technical Articles</div>
+      </div>
+      <div class="ins-stat">
+        <div class="ins-stat-num">40+</div>
+        <div class="ins-stat-label">Case Studies</div>
+      </div>
+      <div class="ins-stat">
+        <div class="ins-stat-num">10+</div>
+        <div class="ins-stat-label">Industry Reports</div>
+      </div>
+      <div class="ins-stat">
+        <div class="ins-stat-num">6</div>
+        <div class="ins-stat-label">Sectors Covered</div>
+      </div>
+    </div>
+
+    <!-- Filter Bar -->
+    <div class="ins-filter-bar" id="insFilterBar">
+      <button class="ins-filter-btn active" data-filter="all"><i class="fa-solid fa-border-all"></i> All</button>
+      <button class="ins-filter-btn" data-filter="case"><i class="fa-solid fa-industry"></i> Case Studies</button>
+      <button class="ins-filter-btn" data-filter="tech"><i class="fa-solid fa-flask"></i> Technical Articles</button>
+      <button class="ins-filter-btn" data-filter="industry"><i class="fa-solid fa-chart-bar"></i> Industry Reports</button>
+      <button class="ins-filter-btn" data-filter="guide"><i class="fa-solid fa-book-open"></i> How-To Guides</button>
+    </div>
+
+    <!-- Featured Insight -->
+    <article class="ins-featured" data-cat="tech">
+      <div class="ins-featured-img">
+        <img loading="lazy" src="assets/falling-film-evaporator.png" alt="MVR Evaporator Technology">
+        <div class="ins-featured-icon"><i class="fa-solid fa-bolt-lightning"></i></div>
+      </div>
+      <div class="ins-featured-body">
+        <div class="ins-meta">
+          <span class="ins-cat ins-cat--tech"><i class="fa-solid fa-flask"></i> Technical Article</span>
+          <span class="ins-date"><i class="fa-regular fa-calendar"></i> June 2026</span>
+          <span class="ins-read-time"><i class="fa-regular fa-clock"></i> 8 min read</span>
+        </div>
+        <h2 class="ins-title">MVR Evaporators: How Mechanical Vapour Recompression Cuts Dairy Plant Energy Bills by 70%</h2>
+        <p class="ins-excerpt">Mechanical Vapour Recompression (MVR) is reshaping how dairy and food processors approach evaporation. Unlike conventional multi-effect evaporators, MVR recycles latent heat by recompressing secondary vapour back into the evaporator — dramatically reducing steam consumption. This article covers operating principles, design considerations, ROI calculations, and when to choose MVR over traditional multi-effect systems.</p>
+        <div class="ins-tags">
+          <span class="ins-tag">MVR</span>
+          <span class="ins-tag">Evaporators</span>
+          <span class="ins-tag">Energy Efficiency</span>
+          <span class="ins-tag">Dairy</span>
+          <span class="ins-tag">Process Engineering</span>
+        </div>
+        <a href="contact.html" class="ins-link" style="margin-top:20px;">Request Full Report <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </article>
+
+    <!-- Case Studies Section -->
+    <div class="ins-section-header" id="case-studies">
+      <h3><i class="fa-solid fa-industry" style="color:#10b981;margin-right:8px;"></i> Case Studies</h3>
+      <div class="ins-section-line"></div>
+    </div>
+
+    <div class="ins-grid">
+      <article class="ins-card" data-cat="case">
+        <div class="ins-card-top ins-card-top--case">
+          <img loading="lazy" src="assets/complete-milk-processing-plant.png" alt="Dairy Plant Case Study">
+          <i class="fa-solid fa-cow"></i>
+        </div>
+        <div class="ins-card-body">
+          <div class="ins-meta">
+            <span class="ins-cat ins-cat--case"><i class="fa-solid fa-industry"></i> Case Study</span>
+            <span class="ins-date"><i class="fa-regular fa-calendar"></i> May 2026</span>
+          </div>
+          <h3 class="ins-title">1 LLPD Turnkey Dairy Plant — Reception to Packaging</h3>
+          <p class="ins-excerpt">Gausin designed and commissioned a complete 1 Lakh Litre Per Day milk processing plant including reception dock, chilling, pasteurisation, homogenisation, filling, and CIP — delivered in 14 months from PO to commissioning.</p>
+          <div class="ins-tags">
+            <span class="ins-tag">Dairy</span><span class="ins-tag">Turnkey</span><span class="ins-tag">FSSAI</span>
+          </div>
+          <a href="contact.html" class="ins-link">Read Case Study <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="ins-card" data-cat="case">
+        <div class="ins-card-top ins-card-top--case">
+          <img loading="lazy" src="assets/etp-stp-treatment-plants.png" alt="ZLD Distillery Case Study">
+          <i class="fa-solid fa-recycle"></i>
+        </div>
+        <div class="ins-card-body">
+          <div class="ins-meta">
+            <span class="ins-cat ins-cat--case"><i class="fa-solid fa-industry"></i> Case Study</span>
+            <span class="ins-date"><i class="fa-regular fa-calendar"></i> April 2026</span>
+          </div>
+          <h3 class="ins-title">ZLD System for Distillery: Spent Wash to Biogas &amp; Zero Discharge</h3>
+          <p class="ins-excerpt">A 100 KLD distillery faced CPCB zero liquid discharge mandate. Gausin integrated a biogas plant, multiple-effect evaporator, incinerator, and scrubber to achieve full ZLD compliance — converting waste into 800 m³/day of biogas.</p>
+          <div class="ins-tags">
+            <span class="ins-tag">ZLD</span><span class="ins-tag">Distillery</span><span class="ins-tag">Biogas</span><span class="ins-tag">CPCB</span>
+          </div>
+          <a href="contact.html" class="ins-link">Read Case Study <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="ins-card" data-cat="case">
+        <div class="ins-card-top ins-card-top--case">
+          <img loading="lazy" src="assets/automated-cip-system.png" alt="Pharma CIP Case Study">
+          <i class="fa-solid fa-syringe"></i>
+        </div>
+        <div class="ins-card-body">
+          <div class="ins-meta">
+            <span class="ins-cat ins-cat--case"><i class="fa-solid fa-industry"></i> Case Study</span>
+            <span class="ins-date"><i class="fa-regular fa-calendar"></i> March 2026</span>
+          </div>
+          <h3 class="ins-title">Pharma-Grade CIP System for Injectable Manufacturing Unit</h3>
+          <p class="ins-excerpt">A leading pharmaceutical manufacturer required a fully automated, validated CIP/SIP system for their injectable drug facility. Gausin delivered a 3-vessel CIP skid with PLC control, data logging, and FDA-ready validation documentation.</p>
+          <div class="ins-tags">
+            <span class="ins-tag">Pharma</span><span class="ins-tag">CIP/SIP</span><span class="ins-tag">GMP</span><span class="ins-tag">PLC</span>
+          </div>
+          <a href="contact.html" class="ins-link">Read Case Study <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+
+    <!-- Technical Articles Section -->
+    <div class="ins-section-header" id="technical-articles">
+      <h3><i class="fa-solid fa-flask" style="color:#3b82f6;margin-right:8px;"></i> Technical Articles</h3>
+      <div class="ins-section-line"></div>
+    </div>
+
+    <div class="ins-grid">
+      <article class="ins-card" data-cat="tech">
+        <div class="ins-card-top ins-card-top--tech">
+          <img loading="lazy" src="assets/falling-film-evaporator.png" alt="Evaporator Comparison">
+          <i class="fa-solid fa-arrow-down-up-across-line"></i>
+        </div>
+        <div class="ins-card-body">
+          <div class="ins-meta">
+            <span class="ins-cat ins-cat--tech"><i class="fa-solid fa-flask"></i> Technical Article</span>
+            <span class="ins-date"><i class="fa-regular fa-calendar"></i> June 2026</span>
+          </div>
+          <h3 class="ins-title">Falling Film vs. Forced Circulation Evaporators: Which Fits Your Process?</h3>
+          <p class="ins-excerpt">Both evaporator types have distinct advantages depending on product viscosity, fouling tendency, heat sensitivity, and throughput. This guide compares design, energy use, maintenance, and ideal applications across dairy, chemical, and pharma sectors.</p>
+          <div class="ins-tags">
+            <span class="ins-tag">Evaporators</span><span class="ins-tag">Process Design</span><span class="ins-tag">Dairy</span>
+          </div>
+          <a href="product-falling-film-evaporator.html" class="ins-link">View Product <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="ins-card" data-cat="tech">
+        <div class="ins-card-top ins-card-top--tech">
+          <img loading="lazy" src="assets/spray-dryer.png" alt="Spray Dryer Design">
+          <i class="fa-solid fa-wind"></i>
+        </div>
+        <div class="ins-card-body">
+          <div class="ins-meta">
+            <span class="ins-cat ins-cat--tech"><i class="fa-solid fa-flask"></i> Technical Article</span>
+            <span class="ins-date"><i class="fa-regular fa-calendar"></i> May 2026</span>
+          </div>
+          <h3 class="ins-title">Spray Dryer Design Parameters for Milk Powder &amp; Whey Protein</h3>
+          <p class="ins-excerpt">Optimising inlet air temperature, feed concentration, atomisation type (rotary vs. nozzle), and chamber geometry is critical for particle size distribution, bulk density, and solubility. This article walks through key design decisions for dairy spray drying.</p>
+          <div class="ins-tags">
+            <span class="ins-tag">Spray Dryer</span><span class="ins-tag">Milk Powder</span><span class="ins-tag">Atomisation</span>
+          </div>
+          <a href="product-spray-dryer.html" class="ins-link">View Product <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="ins-card" data-cat="tech">
+        <div class="ins-card-top ins-card-top--tech">
+          <img loading="lazy" src="assets/shell-tube-heat-exchanger.png" alt="Heat Exchanger Selection">
+          <i class="fa-solid fa-temperature-half"></i>
+        </div>
+        <div class="ins-card-body">
+          <div class="ins-meta">
+            <span class="ins-cat ins-cat--tech"><i class="fa-solid fa-flask"></i> Technical Article</span>
+            <span class="ins-date"><i class="fa-regular fa-calendar"></i> April 2026</span>
+          </div>
+          <h3 class="ins-title">Shell &amp; Tube vs. Plate Heat Exchanger: A Selection Guide</h3>
+          <p class="ins-excerpt">Choosing between shell &amp; tube and plate-type heat exchangers involves evaluating pressure, temperature range, fluid viscosity, fouling factors, and space constraints. This guide provides selection criteria with real-world application examples from food and chemical plants.</p>
+          <div class="ins-tags">
+            <span class="ins-tag">Heat Exchanger</span><span class="ins-tag">PHE</span><span class="ins-tag">Process</span>
+          </div>
+          <a href="product-shell-tube-heat-exchanger.html" class="ins-link">View Product <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+
+    <!-- Industry Reports Section -->
+    <div class="ins-section-header" id="industry-reports">
+      <h3><i class="fa-solid fa-chart-bar" style="color:#8b5cf6;margin-right:8px;"></i> Industry Reports</h3>
+      <div class="ins-section-line"></div>
+    </div>
+
+    <div class="ins-grid">
+      <article class="ins-card" data-cat="industry">
+        <div class="ins-card-top ins-card-top--industry">
+          <i class="fa-solid fa-cow"></i>
+        </div>
+        <div class="ins-card-body">
+          <div class="ins-meta">
+            <span class="ins-cat ins-cat--industry"><i class="fa-solid fa-chart-bar"></i> Industry Report</span>
+            <span class="ins-date"><i class="fa-regular fa-calendar"></i> June 2026</span>
+          </div>
+          <h3 class="ins-title">India Dairy Industry 2026: Technology Gaps &amp; Equipment Opportunities</h3>
+          <p class="ins-excerpt">India's dairy sector processes over 230 million tonnes of milk annually. Yet over 60% of cooperatives still rely on outdated batch processing. This report maps the technology adoption gap and identifies key equipment upgrade opportunities in evaporation, drying, and CIP.</p>
+          <div class="ins-tags">
+            <span class="ins-tag">Dairy</span><span class="ins-tag">India</span><span class="ins-tag">Market</span><span class="ins-tag">2026</span>
+          </div>
+          <a href="industries.html" class="ins-link">Our Dairy Solutions <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="ins-card" data-cat="industry">
+        <div class="ins-card-top ins-card-top--industry">
+          <i class="fa-solid fa-water"></i>
+        </div>
+        <div class="ins-card-body">
+          <div class="ins-meta">
+            <span class="ins-cat ins-cat--industry"><i class="fa-solid fa-chart-bar"></i> Industry Report</span>
+            <span class="ins-date"><i class="fa-regular fa-calendar"></i> May 2026</span>
+          </div>
+          <h3 class="ins-title">Industrial Wastewater Treatment in India: Evolving Norms &amp; Engineering Solutions</h3>
+          <p class="ins-excerpt">CPCB's tightening discharge norms and the push for Zero Liquid Discharge are reshaping wastewater engineering in pharmaceutical, chemical, and food sectors. This report covers the regulatory landscape, technology options, and ZLD system design frameworks.</p>
+          <div class="ins-tags">
+            <span class="ins-tag">ETP</span><span class="ins-tag">ZLD</span><span class="ins-tag">CPCB</span><span class="ins-tag">Pharma</span>
+          </div>
+          <a href="product-etp-stp-treatment-plants.html" class="ins-link">ETP/STP Solutions <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="ins-card" data-cat="industry">
+        <div class="ins-card-top ins-card-top--industry">
+          <i class="fa-solid fa-pills"></i>
+        </div>
+        <div class="ins-card-body">
+          <div class="ins-meta">
+            <span class="ins-cat ins-cat--industry"><i class="fa-solid fa-chart-bar"></i> Industry Report</span>
+            <span class="ins-date"><i class="fa-regular fa-calendar"></i> April 2026</span>
+          </div>
+          <h3 class="ins-title">Pharmaceutical Process Equipment in India: GMP Upgrade Wave 2025–2027</h3>
+          <p class="ins-excerpt">WHO-GMP and Schedule M revisions are forcing hundreds of Indian pharmaceutical manufacturers to upgrade process equipment and utilities. This report outlines the equipment categories under highest demand, compliance timelines, and engineering considerations.</p>
+          <div class="ins-tags">
+            <span class="ins-tag">Pharma</span><span class="ins-tag">GMP</span><span class="ins-tag">WHO</span><span class="ins-tag">Compliance</span>
+          </div>
+          <a href="industries.html" class="ins-link">Pharma Solutions <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+
+    <!-- How-To Guides Section -->
+    <div class="ins-section-header" id="how-to-guides">
+      <h3><i class="fa-solid fa-book-open" style="color:#f59e0b;margin-right:8px;"></i> How-To Guides</h3>
+      <div class="ins-section-line"></div>
+    </div>
+
+    <div class="ins-grid">
+      <article class="ins-card" data-cat="guide">
+        <div class="ins-card-top ins-card-top--guide">
+          <i class="fa-solid fa-list-check"></i>
+        </div>
+        <div class="ins-card-body">
+          <div class="ins-meta">
+            <span class="ins-cat ins-cat--guide"><i class="fa-solid fa-book-open"></i> How-To Guide</span>
+            <span class="ins-date"><i class="fa-regular fa-calendar"></i> June 2026</span>
+          </div>
+          <h3 class="ins-title">How to Specify a Process Evaporator: A Buyer's Checklist</h3>
+          <p class="ins-excerpt">Before requesting a quotation for an evaporator, gathering the right process data saves time and ensures accurate equipment sizing. This checklist covers feed concentration, product sensitivity, steam availability, capacity, and utility conditions.</p>
+          <div class="ins-tags">
+            <span class="ins-tag">Procurement</span><span class="ins-tag">Evaporator</span><span class="ins-tag">Checklist</span>
+          </div>
+          <a href="contact.html" class="ins-link">Get a Quote <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="ins-card" data-cat="guide">
+        <div class="ins-card-top ins-card-top--guide">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+        </div>
+        <div class="ins-card-body">
+          <div class="ins-meta">
+            <span class="ins-cat ins-cat--guide"><i class="fa-solid fa-book-open"></i> How-To Guide</span>
+            <span class="ins-date"><i class="fa-regular fa-calendar"></i> May 2026</span>
+          </div>
+          <h3 class="ins-title">CIP Design Best Practices for Food &amp; Dairy Plants</h3>
+          <p class="ins-excerpt">Effective CIP design ensures consistent microbial reduction, chemical efficiency, and compliance with FSSAI and HACCP standards. This guide covers flow velocity targets, detergent selection, temperature programming, and automated sequence design.</p>
+          <div class="ins-tags">
+            <span class="ins-tag">CIP</span><span class="ins-tag">Dairy</span><span class="ins-tag">HACCP</span><span class="ins-tag">Hygiene</span>
+          </div>
+          <a href="product-automated-cip-system.html" class="ins-link">View CIP Systems <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="ins-card" data-cat="guide">
+        <div class="ins-card-top ins-card-top--guide">
+          <i class="fa-solid fa-flask-vial"></i>
+        </div>
+        <div class="ins-card-body">
+          <div class="ins-meta">
+            <span class="ins-cat ins-cat--guide"><i class="fa-solid fa-book-open"></i> How-To Guide</span>
+            <span class="ins-date"><i class="fa-regular fa-calendar"></i> April 2026</span>
+          </div>
+          <h3 class="ins-title">Pressure Vessel Specification: IBR vs ASME — What You Need to Know</h3>
+          <p class="ins-excerpt">Indian IBR regulations and ASME Section VIII govern pressure vessel design in India, but many buyers are unsure which applies to their application. This guide explains code selection, design pressure calculation, documentation requirements, and IBR inspection milestones.</p>
+          <div class="ins-tags">
+            <span class="ins-tag">Pressure Vessel</span><span class="ins-tag">IBR</span><span class="ins-tag">ASME</span><span class="ins-tag">Compliance</span>
+          </div>
+          <a href="product-pressure-vessels-asme-ibr.html" class="ins-link">View Pressure Vessels <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+
+    <!-- Newsletter / Consult CTA -->
+    <div class="ins-cta">
+      <div class="section-label" style="justify-content:center;margin-bottom:12px;"><i class="fa-solid fa-envelope-open-text"></i> Stay Informed</div>
+      <h3 style="font-size:1.25rem;font-weight:800;color:var(--gray-900);font-family:'Montserrat',sans-serif;margin-bottom:10px;">Have a Technical Challenge?</h3>
+      <p style="color:var(--gray-600);line-height:1.7;margin-bottom:24px;max-width:580px;margin-left:auto;margin-right:auto;">Our engineering team is available to discuss your process requirements, review your specifications, and propose the right solution. Reach out for a free technical consultation.</p>
+      <a href="contact.html" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Request Technical Consultation</a>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in&su=Insights+Inquiry" target="_blank" rel="noopener" class="btn btn-outline" style="margin-left:12px;"><i class="fa-solid fa-envelope"></i> info@gausin.in</a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer"></footer>
+<button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<script src="js/config.js"></script>
+<script src="js/main.js" defer></script>
+<script src="js/components.js" defer></script>
+<script>
+  /* ── Insights filter ── */
+  document.addEventListener('DOMContentLoaded', function () {
+    const btns = document.querySelectorAll('.ins-filter-btn');
+    const cards = document.querySelectorAll('.ins-card, .ins-featured');
+    const sections = document.querySelectorAll('.ins-section-header');
+
+    btns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        btns.forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+
+        var filter = btn.dataset.filter;
+        var activeCount = {};
+
+        cards.forEach(function (card) {
+          var cat = card.dataset.cat;
+          var show = filter === 'all' || cat === filter;
+          card.style.display = show ? '' : 'none';
+          if (show) activeCount[cat] = (activeCount[cat] || 0) + 1;
+        });
+
+        /* hide empty section headers */
+        sections.forEach(function (sec) {
+          var grid = sec.nextElementSibling;
+          if (!grid) return;
+          var visible = Array.from(grid.querySelectorAll('.ins-card')).some(function (c) {
+            return c.style.display !== 'none';
+          });
+          sec.style.display = visible ? '' : 'none';
+          grid.style.display = visible ? '' : 'none';
+        });
+      });
+    });
+  });
+</script>
+</body>
+</html>

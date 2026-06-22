@@ -201,6 +201,7 @@ function fixProductsMegaMenu() {
 
 /* ─── Top Utility Bar ─────────────────────────────────────── */
 const TOPBAR_LINKS = [
+  { href: 'insights.html', label: 'Insights', icon: 'fa-lightbulb' },
   { href: 'career.html', label: 'Career', icon: 'fa-briefcase' },
   { href: 'downloads.html', label: 'Download', icon: 'fa-download' },
   { href: 'news.html', label: 'News', icon: 'fa-newspaper' },
@@ -428,6 +429,7 @@ const FOOTER_HTML = `
           <a href="industries.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Industries</a>
           <a href="technology.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Technology</a>
           <a href="tech-ai.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Tech & AI</a>
+          <a href="insights.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Insights</a>
           <a href="career.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Career</a>
           <a href="downloads.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Download</a>
           <a href="news.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>News</a>
