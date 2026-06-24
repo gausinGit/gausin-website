@@ -215,21 +215,41 @@ const LANGUAGES = [
   { code: 'es', label: 'Español',  flag: '🇪🇸' },
 ];
 
-/* Language names shown in the switcher, localized per active UI language */
-const LANG_NAMES = {
-  en: { en: 'English',  hi: 'Hindi',       fr: 'French',    de: 'German',    es: 'Spanish'   },
-  hi: { en: 'अंग्रेजी', hi: 'हिन्दी',      fr: 'फ़्रांसीसी', de: 'जर्मन',      es: 'स्पेनिश'   },
-  fr: { en: 'Anglais',  hi: 'Hindi',       fr: 'Français',  de: 'Allemand',  es: 'Espagnol'  },
-  de: { en: 'Englisch', hi: 'Hindi',       fr: 'Französisch', de: 'Deutsch', es: 'Spanisch'  },
-  es: { en: 'Inglés',   hi: 'Hindi',       fr: 'Francés',   de: 'Alemán',    es: 'Español'   },
+/* English base names — source for switcher labels */
+const LANG_EN_NAMES = {
+  en: 'English', hi: 'Hindi', fr: 'French', de: 'German', es: 'Spanish',
 };
 
+/* Hindi is the same word in English/French/Spanish — use clearer localized forms */
+const HI_LABEL_OVERRIDES = {
+  fr: 'Langue hindi',
+  de: 'Hindi-Sprache',
+  es: 'Idioma hindi',
+};
+
+function _titleCaseLatin(name) {
+  if (!name || !/^[A-Za-z]/.test(name)) return name;
+  return name.charAt(0).toUpperCase() + name.slice(1);
+}
+
 function getLangLabel(langCode, displayLocale) {
-  const locale = LANG_NAMES[displayLocale] ? displayLocale : 'en';
-  const names = LANG_NAMES[locale];
-  if (names && names[langCode]) return names[langCode];
-  if (langCode === 'hi' && locale !== 'hi') return 'Hindi';
-  return LANGUAGES.find(l => l.code === langCode)?.label || langCode;
+  const locale = LANGUAGES.some(l => l.code === displayLocale) ? displayLocale : 'en';
+
+  if (langCode === 'hi' && HI_LABEL_OVERRIDES[locale]) {
+    return HI_LABEL_OVERRIDES[locale];
+  }
+
+  if (locale === 'en') {
+    return LANG_EN_NAMES[langCode] || langCode;
+  }
+
+  try {
+    const name = new Intl.DisplayNames([locale], { type: 'language' }).of(langCode);
+    if (!name) return LANG_EN_NAMES[langCode] || langCode;
+    return _titleCaseLatin(name) || name;
+  } catch {
+    return LANG_EN_NAMES[langCode] || langCode;
+  }
 }
 
 function _isLangSwitcherNode(node) {
@@ -969,7 +989,7 @@ async function _translatePageTo(lang) {
 
 /* Called by lang-switcher buttons */
 function applyLangChange(code) {
-  _translatePageTo(code);
+  return _translatePageTo(code);
 }
 
 /* ─── Init on DOM ready ───────────────────────────────────── */
@@ -1021,7 +1041,10 @@ document.addEventListener('DOMContentLoaded', () => {
   injectComponents();
   initPageTransitions();
   initLangSwitcher();
-  updateLangSwitcherLabels(getActiveLang());
+
+  const lang = getActiveLang();
+  updateLangSwitcherLabels(lang);
+  if (lang !== 'en') _translatePageTo(lang);
 
   /* Load AI chatbot on all pages except admin */
   if (!window.location.pathname.includes('/admin/')) {
