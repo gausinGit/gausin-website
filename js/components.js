@@ -215,16 +215,43 @@ const LANGUAGES = [
   { code: 'es', label: 'Español',  flag: '🇪🇸' },
 ];
 
+/* Language names shown in the switcher, localized per active UI language */
+const LANG_NAMES = {
+  en: { en: 'English',  hi: 'Hindi',    fr: 'French',   de: 'German',   es: 'Spanish'  },
+  hi: { en: 'अंग्रेजी', hi: 'हिन्दी',   fr: 'फ़्रांसीसी', de: 'जर्मन',   es: 'स्पेनिश'  },
+  fr: { en: 'Anglais',  hi: 'Hindi',    fr: 'Français', de: 'Allemand', es: 'Espagnol' },
+  de: { en: 'Englisch', hi: 'Hindi',    fr: 'Französisch', de: 'Deutsch', es: 'Spanisch' },
+  es: { en: 'Inglés',   hi: 'Hindi',    fr: 'Francés',  de: 'Alemán',   es: 'Español'  },
+};
+
+function getLangLabel(langCode, displayLocale) {
+  const locale = LANG_NAMES[displayLocale] ? displayLocale : 'en';
+  return LANG_NAMES[locale][langCode] || LANGUAGES.find(l => l.code === langCode)?.label || langCode;
+}
+
+function updateLangSwitcherLabels(displayLocale) {
+  const locale = displayLocale || getActiveLang();
+  document.querySelectorAll('.lang-option').forEach((btn) => {
+    const label = btn.querySelector('.lang-label');
+    if (label) label.textContent = getLangLabel(btn.dataset.lang, locale);
+  });
+  document.querySelectorAll('.mobile-lang-btn').forEach((btn) => {
+    const label = btn.querySelector('.mobile-lang-label');
+    if (label) label.textContent = getLangLabel(btn.dataset.lang, locale);
+  });
+}
+
 function getActiveLang() {
   return localStorage.getItem('gausin_lang') || 'en';
 }
 
 function buildLangSwitcher() {
-  const active = LANGUAGES.find(l => l.code === getActiveLang()) || LANGUAGES[0];
+  const activeCode = getActiveLang();
+  const active = LANGUAGES.find(l => l.code === activeCode) || LANGUAGES[0];
   const items = LANGUAGES.map(l => `
     <button class="lang-option${l.code === active.code ? ' active' : ''}" data-lang="${l.code}" type="button">
       <span class="lang-flag">${l.flag}</span>
-      <span class="lang-label">${l.label}</span>
+      <span class="lang-label">${getLangLabel(l.code, activeCode)}</span>
     </button>
   `).join('');
   return `
@@ -276,9 +303,10 @@ function injectTopbarMobileLinks() {
     </a>
   `).join('');
   const activeLang = LANGUAGES.find(l => l.code === getActiveLang()) || LANGUAGES[0];
+  const activeCode = activeLang.code;
   const mobileLangBtns = LANGUAGES.map(l => `
     <button class="mobile-lang-btn${l.code === activeLang.code ? ' active' : ''}" data-lang="${l.code}" type="button">
-      <span>${l.flag}</span> ${l.label}
+      <span class="mobile-lang-flag">${l.flag}</span><span class="mobile-lang-label">${getLangLabel(l.code, activeCode)}</span>
     </button>
   `).join('');
   mobileNav.insertAdjacentHTML('afterbegin', `
@@ -854,8 +882,8 @@ function _trNodes() {
     acceptNode(node) {
       const p = node.parentElement;
       if (!p || SKIP.has(p.tagName)) return NodeFilter.FILTER_REJECT;
-      /* Skip chatbot, topbar meta elements, hidden elements */
-      if (p.closest('#gchatWindow,#gchatToggle,#google_translate_element,.topbar-link i'))
+      /* Skip chatbot, lang switcher, topbar icons */
+      if (p.closest('#gchatWindow,#gchatToggle,#google_translate_element,#langSwitcher,.mobile-lang-btns,.topbar-link i'))
         return NodeFilter.FILTER_REJECT;
       if (!node.nodeValue.trim() || node.nodeValue.trim().length < 2)
         return NodeFilter.FILTER_SKIP;
@@ -901,7 +929,10 @@ async function _translatePageTo(lang) {
   _TR.active = lang;
   localStorage.setItem('gausin_lang', lang);
 
-  if (lang === 'en') return;
+  if (lang === 'en') {
+    updateLangSwitcherLabels('en');
+    return;
+  }
 
   _trIndicator(true);
   try {
@@ -920,6 +951,7 @@ async function _translatePageTo(lang) {
     });
   } finally {
     _trIndicator(false);
+    updateLangSwitcherLabels(lang);
   }
 }
 
@@ -977,6 +1009,7 @@ document.addEventListener('DOMContentLoaded', () => {
   injectComponents();
   initPageTransitions();
   initLangSwitcher();
+  updateLangSwitcherLabels(getActiveLang());
 
   /* Load AI chatbot on all pages except admin */
   if (!window.location.pathname.includes('/admin/')) {
