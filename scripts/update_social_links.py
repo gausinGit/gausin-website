@@ -18,7 +18,7 @@ NEW_COMPACT = (
     '<a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>'
     '<a href="https://x.com/GauravSinghal79" class="social-link" aria-label="X" target="_blank" rel="noopener noreferrer">'
     '<i class="fa-brands fa-x-twitter"></i></a>'
-    '<a href="https://www.instagram.com/gaurav67165/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">'
+    '<a href="https://www.instagram.com/gausin_117/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">'
     '<i class="fa-brands fa-instagram"></i></a>'
     '<a href="https://www.facebook.com/profile.php?id=61590538293790" class="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">'
     '<i class="fa-brands fa-facebook-f"></i></a>'
@@ -35,7 +35,7 @@ OLD_MULTI = """        <div class="footer-social">
 NEW_MULTI = """        <div class="footer-social">
           <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
           <a href="https://x.com/GauravSinghal79" class="social-link" aria-label="X" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="https://www.instagram.com/gaurav67165/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.instagram.com/gausin_117/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
           <a href="https://www.facebook.com/profile.php?id=61590538293790" class="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
         </div>"""
 

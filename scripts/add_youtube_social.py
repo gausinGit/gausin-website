@@ -9,7 +9,7 @@ YOUTUBE = (
     '<i class="fa-brands fa-youtube"></i></a>'
 )
 MARKER = (
-    '<a href="https://www.instagram.com/gaurav67165/" class="social-link" aria-label="Instagram" '
+    '<a href="https://www.instagram.com/gausin_117/" class="social-link" aria-label="Instagram" '
     'target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>'
 )
 INSERT = MARKER + YOUTUBE

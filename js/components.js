@@ -8,7 +8,7 @@
 /* ─── Social profile URLs ─────────────────────────────────── */
 const SOCIAL_LINKS = {
   x: 'https://x.com/Gausin_117',
-  instagram: 'https://www.instagram.com/gaurav67165/',
+  instagram: 'https://www.instagram.com/gausin_117/',
   youtube: 'https://www.youtube.com/@GausinInternationalEngineersPv',
   facebook: 'https://www.facebook.com/profile.php?id=61590538293790',
 };
