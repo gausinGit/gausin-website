@@ -344,15 +344,28 @@ PCB / CPCB compliant designs.`,
       q: ['Get a Quote', 'Speak to Engineer']
     },
     {
+      id: 'tech-ai',
+      t: ['tech','tech ai','ai','software','web development','mobile app','machine learning','business automation','cloud','custom software','digital solution','website','app development','artificial intelligence','ml','web app'],
+      r: `<strong>Tech & AI Services</strong> 💻<br><br>
+• <strong>Web Development</strong> — Corporate sites, e-commerce, web apps<br>
+• <strong>Mobile Apps</strong> — iOS & Android, plant monitoring dashboards<br>
+• <strong>Desktop Applications</strong> — Windows, macOS, Linux business tools<br>
+• <strong>AI/ML Solutions</strong> — Predictive analytics, computer vision, NLP<br>
+• <strong>Business Automation</strong> — RPA, API integrations, ERP/CRM workflows<br>
+• <strong>Cloud Solutions</strong> — AWS, Azure, GCP migration & DevOps<br>
+• <strong>Custom Software</strong> — End-to-end bespoke development<br><br>
+<a href="tech-ai.html" style="color:#2563EB;font-weight:700;">🔗 Explore Tech & AI →</a>`,
+      q: ['Get a Quote', 'Speak to Engineer', 'View All Products']
+    },
+    {
       id: 'products',
       t: ['product','products','equipment','machine','machinery','catalog','item','what do you make','kya banate','all products'],
       r: `Here's what we manufacture at Gausin: 🏭<br><br>
-🔵 <strong>Evaporators</strong> &nbsp; 🔵 <strong>Dryers</strong><br>
-🔵 <strong>Heat Exchangers</strong> &nbsp; 🔵 <strong>CIP Systems</strong><br>
-🔵 <strong>Milk Processing Plants</strong> &nbsp; 🔵 <strong>Pressure Vessels</strong><br>
-🔵 <strong>Dairy & Food Equipment</strong> &nbsp; 🔵 <strong>Waste Management</strong><br><br>
+🔵 <strong>Evaporators</strong> &nbsp; 🔵 <strong>Dryers</strong> &nbsp; 🔵 <strong>Heat Exchangers</strong><br>
+🔵 <strong>CIP Systems</strong> &nbsp; 🔵 <strong>Milk Processing</strong> &nbsp; 🔵 <strong>Pressure Vessels</strong><br>
+🔵 <strong>Dairy Equipment</strong> &nbsp; 🔵 <strong>Waste Management</strong> &nbsp; 🔵 <strong>Tech & AI</strong><br><br>
 Tap any product below or ask me anything specific!`,
-      q: ['Evaporators', 'Dryers', 'Heat Exchangers', 'Dairy Equipment', 'Waste Management']
+      q: ['Evaporators', 'Dryers', 'Heat Exchangers', 'CIP Systems', 'Milk Processing', 'Pressure Vessels', 'Dairy Equipment', 'Waste Management', 'Tech & AI']
     },
     {
       id: 'services',
@@ -655,8 +668,12 @@ Feel free to return anytime.<br>
       'Evaporators':       () => botReply(KB.find(e=>e.id==='evaporators').r, KB.find(e=>e.id==='evaporators').q, d),
       'Dryers':            () => botReply(KB.find(e=>e.id==='dryers').r,     KB.find(e=>e.id==='dryers').q, d),
       'Heat Exchangers':   () => botReply(KB.find(e=>e.id==='heat-exchangers').r, KB.find(e=>e.id==='heat-exchangers').q, d),
+      'CIP Systems':       () => botReply(KB.find(e=>e.id==='cip').r,            KB.find(e=>e.id==='cip').q, d),
+      'Milk Processing':   () => botReply(KB.find(e=>e.id==='milk-processing').r, KB.find(e=>e.id==='milk-processing').q, d),
+      'Pressure Vessels':  () => botReply(KB.find(e=>e.id==='vessels').r,        KB.find(e=>e.id==='vessels').q, d),
       'Dairy Equipment':   () => botReply(KB.find(e=>e.id==='dairy-food').r, KB.find(e=>e.id==='dairy-food').q, d),
       'Waste Management':  () => botReply(KB.find(e=>e.id==='waste').r,      KB.find(e=>e.id==='waste').q, d),
+      'Tech & AI':         () => botReply(KB.find(e=>e.id==='tech-ai').r,    KB.find(e=>e.id==='tech-ai').q, d),
       'Turnkey Project':   () => botReply(KB.find(e=>e.id==='turnkey').r,    KB.find(e=>e.id==='turnkey').q, d),
       'Energy Audit':      () => botReply(KB.find(e=>e.id==='energy-audit').r, KB.find(e=>e.id==='energy-audit').q, d),
       'Contact Engineer':  () => botReply(KB.find(e=>e.id==='contact').r,    KB.find(e=>e.id==='contact').q, d),
