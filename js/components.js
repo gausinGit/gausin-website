@@ -209,7 +209,7 @@ const TOPBAR_LINKS = [
 
 const LANGUAGES = [
   { code: 'en', label: 'English',  flag: '🇬🇧' },
-  { code: 'hi', label: 'हिन्दी',   flag: '🇮🇳' },
+  { code: 'hi', label: 'Hindi',    flag: '🇮🇳' },
   { code: 'fr', label: 'Français', flag: '🇫🇷' },
   { code: 'de', label: 'Deutsch',  flag: '🇩🇪' },
   { code: 'es', label: 'Español',  flag: '🇪🇸' },
@@ -217,27 +217,33 @@ const LANGUAGES = [
 
 /* Language names shown in the switcher, localized per active UI language */
 const LANG_NAMES = {
-  en: { en: 'English',  hi: 'Hindi',    fr: 'French',   de: 'German',   es: 'Spanish'  },
-  hi: { en: 'अंग्रेजी', hi: 'हिन्दी',   fr: 'फ़्रांसीसी', de: 'जर्मन',   es: 'स्पेनिश'  },
-  fr: { en: 'Anglais',  hi: 'Hindi',    fr: 'Français', de: 'Allemand', es: 'Espagnol' },
-  de: { en: 'Englisch', hi: 'Hindi',    fr: 'Französisch', de: 'Deutsch', es: 'Spanisch' },
-  es: { en: 'Inglés',   hi: 'Hindi',    fr: 'Francés',  de: 'Alemán',   es: 'Español'  },
+  en: { en: 'English',  hi: 'Hindi',       fr: 'French',    de: 'German',    es: 'Spanish'   },
+  hi: { en: 'अंग्रेजी', hi: 'हिन्दी',      fr: 'फ़्रांसीसी', de: 'जर्मन',      es: 'स्पेनिश'   },
+  fr: { en: 'Anglais',  hi: 'Hindi',       fr: 'Français',  de: 'Allemand',  es: 'Espagnol'  },
+  de: { en: 'Englisch', hi: 'Hindi',       fr: 'Französisch', de: 'Deutsch', es: 'Spanisch'  },
+  es: { en: 'Inglés',   hi: 'Hindi',       fr: 'Francés',   de: 'Alemán',    es: 'Español'   },
 };
 
 function getLangLabel(langCode, displayLocale) {
   const locale = LANG_NAMES[displayLocale] ? displayLocale : 'en';
-  return LANG_NAMES[locale][langCode] || LANGUAGES.find(l => l.code === langCode)?.label || langCode;
+  const names = LANG_NAMES[locale];
+  if (names && names[langCode]) return names[langCode];
+  if (langCode === 'hi' && locale !== 'hi') return 'Hindi';
+  return LANGUAGES.find(l => l.code === langCode)?.label || langCode;
+}
+
+function _isLangSwitcherNode(node) {
+  return !!(node.parentElement && node.parentElement.closest('#langSwitcher,.mobile-lang-btns'));
 }
 
 function updateLangSwitcherLabels(displayLocale) {
   const locale = displayLocale || getActiveLang();
-  document.querySelectorAll('.lang-option').forEach((btn) => {
-    const label = btn.querySelector('.lang-label');
-    if (label) label.textContent = getLangLabel(btn.dataset.lang, locale);
-  });
-  document.querySelectorAll('.mobile-lang-btn').forEach((btn) => {
-    const label = btn.querySelector('.mobile-lang-label');
-    if (label) label.textContent = getLangLabel(btn.dataset.lang, locale);
+  document.querySelectorAll('.lang-option, .mobile-lang-btn').forEach((btn) => {
+    const code = btn.dataset.lang;
+    if (!code) return;
+    const text = getLangLabel(code, locale);
+    const label = btn.querySelector('.lang-label, .mobile-lang-label');
+    if (label) label.textContent = text;
   });
 }
 
@@ -255,7 +261,7 @@ function buildLangSwitcher() {
     </button>
   `).join('');
   return `
-    <div class="lang-switcher" id="langSwitcher">
+    <div class="lang-switcher notranslate" id="langSwitcher" translate="no">
       <button class="lang-trigger" id="langTrigger" type="button" aria-haspopup="true" aria-expanded="false">
         <span class="lang-flag">${active.flag}</span>
         <span class="lang-code">${active.code.toUpperCase()}</span>
@@ -313,7 +319,7 @@ function injectTopbarMobileLinks() {
     <div class="mobile-topbar-links">${links}</div>
     <div class="mobile-lang-row">
       <span class="mobile-lang-row-label"><i class="fa-solid fa-globe"></i> Language</span>
-      <div class="mobile-lang-btns">${mobileLangBtns}</div>
+      <div class="mobile-lang-btns notranslate" translate="no">${mobileLangBtns}</div>
     </div>
   `);
 }
@@ -923,8 +929,14 @@ function _trIndicator() {}
 
 /* Main translate function */
 async function _translatePageTo(lang) {
-  /* Always restore originals first */
-  _TR.originals.forEach(({ node, orig }) => { node.nodeValue = orig; });
+  /* Drop any cached lang-switcher nodes — labels are managed separately */
+  _TR.originals = _TR.originals.filter(({ node }) => !_isLangSwitcherNode(node));
+
+  /* Restore page content to English originals */
+  _TR.originals.forEach(({ node, orig }) => {
+    if (_isLangSwitcherNode(node)) return;
+    node.nodeValue = orig;
+  });
   _TR.originals = [];
   _TR.active = lang;
   localStorage.setItem('gausin_lang', lang);
@@ -936,7 +948,7 @@ async function _translatePageTo(lang) {
 
   _trIndicator(true);
   try {
-    const nodes = _trNodes();
+    const nodes = _trNodes().filter(n => !_isLangSwitcherNode(n));
     const texts  = nodes.map(n => n.nodeValue.trim());
 
     await _trFetch(texts, lang);
