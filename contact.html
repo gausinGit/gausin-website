@@ -657,45 +657,6 @@
     }
     document.getElementById('inquiry')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   })();
-
-  // Custom form submission for contact page
-  const inquiryForm = document.getElementById('inquiryForm');
-  const formSuccess = document.getElementById('formSuccess');
-
-  inquiryForm?.addEventListener('submit', (e) => {
-    e.preventDefault();
-    let valid = true;
-
-    inquiryForm.querySelectorAll('[required]').forEach(input => {
-      const val = input.value.trim();
-      const group = input.closest('.form-group');
-      const error = group?.querySelector('.form-error');
-      if (!val) {
-        valid = false;
-        input.style.borderColor = '#EF4444';
-        if (error) error.style.display = 'block';
-      } else {
-        input.style.borderColor = '#10B981';
-        if (error) error.style.display = 'none';
-      }
-    });
-
-    if (valid) {
-      inquiryForm.style.display = 'none';
-      formSuccess.classList.add('show');
-      window.scrollTo({ top: document.getElementById('inquiry').offsetTop - 100, behavior: 'smooth' });
-    }
-  });
-
-  inquiryForm?.querySelectorAll('input, textarea, select').forEach(input => {
-    input.addEventListener('input', () => {
-      if (input.value.trim()) {
-        input.style.borderColor = '#10B981';
-        const err = input.closest('.form-group')?.querySelector('.form-error');
-        if (err) err.style.display = 'none';
-      }
-    });
-  });
 </script>
 </body>
 </html>

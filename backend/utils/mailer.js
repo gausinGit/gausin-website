@@ -13,6 +13,9 @@ function getTransporter() {
       user: process.env.SMTP_USER,
       pass: process.env.SMTP_PASS,
     },
+    connectionTimeout: 15000,
+    greetingTimeout:   10000,
+    socketTimeout:     15000,
     tls: {
       // GoDaddy / cPanel mail servers use shared SSL certs that don't match
       // the custom domain — this allows the connection without rejecting it
@@ -42,4 +45,14 @@ async function sendMail({ to, subject, html, attachments }) {
   return info;
 }
 
-module.exports = { sendMail };
+/** Send mail without failing the HTTP request if SMTP errors out. */
+async function safeSendMail(opts) {
+  try {
+    return await sendMail(opts);
+  } catch (err) {
+    console.error('📧 Email send failed:', err.message);
+    return null;
+  }
+}
+
+module.exports = { sendMail, safeSendMail };

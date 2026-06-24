@@ -25,6 +25,10 @@ services:
         sync: false
       - key: COMPANY_EMAIL
         sync: false
+      - key: CONTACT_EMAIL
+        sync: false
+      - key: CAREER_EMAIL
+        sync: false
       - key: ADMIN_USERNAME
         sync: false
       - key: ADMIN_PASSWORD_HASH

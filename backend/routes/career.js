@@ -4,7 +4,9 @@ const multer      = require('multer');
 const path        = require('path');
 const fs          = require('fs');
 const Application = require('../models/Application');
-const { sendMail } = require('../utils/mailer');
+const { safeSendMail } = require('../utils/mailer');
+
+const CAREER_INBOX = process.env.CAREER_EMAIL || 'gaurav.singhal@gausin.in';
 
 // ── Multer setup — store resumes in backend/uploads/ ─────────────────────────
 const uploadDir = path.join(__dirname, '..', 'uploads');
@@ -58,8 +60,8 @@ router.post('/', formLimit, upload.single('resume'), async (req, res) => {
       path:     path.join(uploadDir, resumeFile.filename),
     }] : [];
 
-    await sendMail({
-      to: process.env.COMPANY_EMAIL || 'info@gausin.in',
+    await safeSendMail({
+      to: CAREER_INBOX,
       subject: `Career Application — ${role} from ${name}`,
       html: `
         <div style="font-family:Arial,sans-serif;max-width:600px;">
@@ -80,7 +82,7 @@ router.post('/', formLimit, upload.single('resume'), async (req, res) => {
     });
 
     // Auto-reply to applicant
-    await sendMail({
+    await safeSendMail({
       to: email,
       subject: `Application Received — ${role} | Gausin International Engineers`,
       html: `

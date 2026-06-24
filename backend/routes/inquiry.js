@@ -1,7 +1,9 @@
 const router   = require('express').Router();
 const rateLimit = require('express-rate-limit');
 const Inquiry   = require('../models/Inquiry');
-const { sendMail } = require('../utils/mailer');
+const { safeSendMail } = require('../utils/mailer');
+
+const CONTACT_INBOX = process.env.CONTACT_EMAIL || process.env.COMPANY_EMAIL || 'info@gausin.in';
 
 const formLimit = rateLimit({ windowMs: 60 * 60 * 1000, max: 20 });
 
@@ -20,8 +22,8 @@ router.post('/', formLimit, async (req, res) => {
       name, company, email, phone, capacity, message,
     });
 
-    await sendMail({
-      to: process.env.COMPANY_EMAIL || 'info@gausin.in',
+    await safeSendMail({
+      to: CONTACT_INBOX,
       subject: `Product Inquiry — ${product || 'Unknown'} from ${name || email}`,
       html: `
         <div style="font-family:Arial,sans-serif;max-width:600px;">

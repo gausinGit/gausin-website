@@ -259,15 +259,15 @@ if (contactForm) {
     setSubmitState(btn, true);
     try {
       const data = {
-        firstName:       contactForm.querySelector('#firstName')?.value.trim(),
-        lastName:        contactForm.querySelector('#lastName')?.value.trim(),
-        email:           contactForm.querySelector('#email')?.value.trim(),
-        phone:           contactForm.querySelector('#phone')?.value.trim(),
-        company:         contactForm.querySelector('#company')?.value.trim(),
-        capacity:        contactForm.querySelector('#capacity')?.value.trim(),
-        message:         contactForm.querySelector('#message')?.value.trim(),
-        inquiryType:     contactForm.querySelector('#inquiryType')?.value,
-        productCategory: contactForm.querySelector('#productCategory')?.value,
+        firstName: contactForm.querySelector('#firstName')?.value.trim(),
+        lastName:  contactForm.querySelector('#lastName')?.value.trim(),
+        email:     contactForm.querySelector('#email')?.value.trim(),
+        phone:     contactForm.querySelector('#phone')?.value.trim(),
+        company:   contactForm.querySelector('#company')?.value.trim(),
+        industry:  contactForm.querySelector('#industry')?.value.trim(),
+        product:   contactForm.querySelector('#product')?.value.trim(),
+        capacity:  contactForm.querySelector('#capacity')?.value.trim(),
+        message:   contactForm.querySelector('#message')?.value.trim(),
       };
       const res = await fetch(`${GAUSIN_API}/api/contact`, {
         method: 'POST',
@@ -275,8 +275,17 @@ if (contactForm) {
         body: JSON.stringify(data),
       });
       const json = await res.json();
-      if (json.success) showFormSuccess(contactForm, btn, 'Inquiry Sent!');
-      else showFormError(contactForm, btn, json.message || 'Submission failed. Please try again.');
+      if (json.success) {
+        showFormSuccess(contactForm, btn, 'Inquiry Sent!');
+        const formSuccess = document.getElementById('formSuccess');
+        if (formSuccess) {
+          contactForm.style.display = 'none';
+          formSuccess.classList.add('show');
+          document.getElementById('inquiry')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      } else {
+        showFormError(contactForm, btn, json.message || 'Submission failed. Please try again.');
+      }
     } catch {
       showFormError(contactForm, btn, 'Network error. Please check your connection.');
     }
