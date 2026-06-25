@@ -60,10 +60,11 @@ router.post('/', formLimit, upload.single('resume'), async (req, res) => {
       path:     path.join(uploadDir, resumeFile.filename),
     }] : [];
 
-    await safeSendMail({
-      to: CAREER_INBOX,
-      subject: `Career Application — ${role} from ${name}`,
-      html: `
+    await Promise.all([
+      safeSendMail({
+        to: CAREER_INBOX,
+        subject: `Career Application — ${role} from ${name}`,
+        html: `
         <div style="font-family:Arial,sans-serif;max-width:600px;">
           <h2 style="color:#1e3a8a;">New Career Application</h2>
           <table style="width:100%;border-collapse:collapse;">
@@ -78,14 +79,12 @@ router.post('/', formLimit, upload.single('resume'), async (req, res) => {
           <p style="color:#6b7280;font-size:12px;">Application ID: ${application._id} | Received: ${new Date().toLocaleString('en-IN')}</p>
         </div>
       `,
-      attachments,
-    });
-
-    // Auto-reply to applicant
-    await safeSendMail({
-      to: email,
-      subject: `Application Received — ${role} | Gausin International Engineers`,
-      html: `
+        attachments,
+      }),
+      safeSendMail({
+        to: email,
+        subject: `Application Received — ${role} | Gausin International Engineers`,
+        html: `
         <div style="font-family:Arial,sans-serif;max-width:600px;">
           <h2 style="color:#1e3a8a;">Application Received!</h2>
           <p>Dear <strong>${name}</strong>,</p>
@@ -100,7 +99,8 @@ router.post('/', formLimit, upload.single('resume'), async (req, res) => {
           </p>
         </div>
       `,
-    });
+      }),
+    ]);
 
     res.json({ success: true, message: 'Application submitted successfully.', id: application._id });
   } catch (err) {

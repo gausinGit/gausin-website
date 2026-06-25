@@ -7,6 +7,7 @@ const serveStatic = require('serve-static'); // v1 — stable static file servin
 const mongoose = require('mongoose');
 const cors = require('cors');
 const rateLimit = require('express-rate-limit');
+const { logMailProvider } = require('./utils/mailer');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -86,4 +87,7 @@ app.use((err, req, res, next) => {
   res.status(err.status || 500).json({ success: false, message: err.message || 'Server error' });
 });
 
-app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+app.listen(PORT, () => {
+  console.log(`🚀 Server running on port ${PORT}`);
+  logMailProvider();
+});

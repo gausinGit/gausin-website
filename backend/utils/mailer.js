@@ -1,6 +1,13 @@
+const fs = require('fs');
 const nodemailer = require('nodemailer');
 
+const EMAIL_FROM = process.env.EMAIL_FROM || 'Gausin International Engineers <info@gausin.in>';
+
 let _transporter = null;
+
+function useResend() {
+  return !!process.env.RESEND_API_KEY;
+}
 
 function smtpProfiles() {
   const host = process.env.SMTP_HOST || 'smtp.gmail.com';
@@ -9,7 +16,6 @@ function smtpProfiles() {
 
   const profiles = [
     { label: 'env', host, port, secure },
-    // GoDaddy relay — cPanel hostname often times out from cloud hosts (Render)
     { label: 'godaddy-relay-587', host: 'smtpout.secureserver.net', port: 587, secure: false },
     { label: 'godaddy-relay-465', host: 'smtpout.secureserver.net', port: 465, secure: true },
   ];
@@ -32,21 +38,48 @@ function buildTransport({ host, port, secure }) {
       user: process.env.SMTP_USER,
       pass: process.env.SMTP_PASS,
     },
-    connectionTimeout: 30000,
-    greetingTimeout:   20000,
-    socketTimeout:     30000,
+    connectionTimeout: 10000,
+    greetingTimeout:   8000,
+    socketTimeout:     10000,
     tls: { rejectUnauthorized: false },
   });
 }
 
-function getTransporter() {
-  if (_transporter) return _transporter;
-  const primary = smtpProfiles()[0];
-  _transporter = buildTransport(primary);
-  return _transporter;
+async function sendViaResend({ to, subject, html, attachments }) {
+  const payload = {
+    from: EMAIL_FROM,
+    to:   [to],
+    subject,
+    html,
+  };
+
+  if (attachments?.length) {
+    payload.attachments = attachments.map((a) => ({
+      filename: a.filename,
+      content:  fs.readFileSync(a.path).toString('base64'),
+    }));
+  }
+
+  const res = await fetch('https://api.resend.com/emails', {
+    method:  'POST',
+    headers: {
+      Authorization:  `Bearer ${process.env.RESEND_API_KEY}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(payload),
+  });
+
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) {
+    const msg = data.message || data.error || JSON.stringify(data);
+    throw new Error(msg);
+  }
+
+  console.log(`📧 Email sent via Resend: ${data.id} → ${to}`);
+  return data;
 }
 
-async function sendMail({ to, subject, html, attachments }) {
+async function sendViaSmtp({ to, subject, html, attachments }) {
   if (!process.env.SMTP_USER || !process.env.SMTP_PASS) {
     console.warn('⚠️  SMTP credentials not set — skipping email send');
     return;
@@ -63,12 +96,11 @@ async function sendMail({ to, subject, html, attachments }) {
   let lastErr;
   for (const profile of smtpProfiles()) {
     try {
-      const transport = buildTransport(profile);
-      const info = await transport.sendMail(mail);
+      const info = await buildTransport(profile).sendMail(mail);
       if (profile.label !== 'env') {
         console.log(`📧 Email sent via fallback SMTP (${profile.label})`);
       }
-      console.log(`📧 Email sent: ${info.messageId}`);
+      console.log(`📧 Email sent: ${info.messageId} → ${to}`);
       return info;
     } catch (err) {
       lastErr = err;
@@ -77,6 +109,11 @@ async function sendMail({ to, subject, html, attachments }) {
   }
 
   throw lastErr;
+}
+
+async function sendMail(opts) {
+  if (useResend()) return sendViaResend(opts);
+  return sendViaSmtp(opts);
 }
 
 async function safeSendMail(opts) {
@@ -88,4 +125,14 @@ async function safeSendMail(opts) {
   }
 }
 
-module.exports = { sendMail, safeSendMail };
+function logMailProvider() {
+  if (useResend()) {
+    console.log('📧 Email provider: Resend (HTTPS)');
+  } else if (process.env.SMTP_USER) {
+    console.log('📧 Email provider: SMTP (local/dev fallback)');
+  } else {
+    console.warn('⚠️  No email provider configured (set RESEND_API_KEY or SMTP_*)');
+  }
+}
+
+module.exports = { sendMail, safeSendMail, logMailProvider };

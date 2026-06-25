@@ -24,11 +24,12 @@ router.post('/', formLimit, async (req, res) => {
       product: [industrySector, productInterest].filter(Boolean).join(' — ') || null,
     });
 
-    // Email to company
-    await safeSendMail({
-      to: CONTACT_INBOX,
-      subject: `New Contact Inquiry — ${firstName || ''} ${lastName || ''} (${company || 'N/A'})`,
-      html: `
+    // Emails in parallel — faster response (Resend ~1–2 sec)
+    await Promise.all([
+      safeSendMail({
+        to: CONTACT_INBOX,
+        subject: `New Contact Inquiry — ${firstName || ''} ${lastName || ''} (${company || 'N/A'})`,
+        html: `
         <div style="font-family:Arial,sans-serif;max-width:600px;">
           <h2 style="color:#1e3a8a;">New Contact Form Inquiry</h2>
           <table style="width:100%;border-collapse:collapse;">
@@ -45,13 +46,11 @@ router.post('/', formLimit, async (req, res) => {
           <p style="color:#6b7280;font-size:12px;">Inquiry ID: ${inquiry._id} | Received: ${new Date().toLocaleString('en-IN')}</p>
         </div>
       `,
-    });
-
-    // Auto-reply to client
-    await safeSendMail({
-      to: email,
-      subject: 'Thank you for contacting Gausin International Engineers',
-      html: `
+      }),
+      safeSendMail({
+        to: email,
+        subject: 'Thank you for contacting Gausin International Engineers',
+        html: `
         <div style="font-family:Arial,sans-serif;max-width:600px;">
           <h2 style="color:#1e3a8a;">Thank You, ${firstName || 'there'}!</h2>
           <p>We have received your inquiry and our team will get back to you within <strong>24–48 business hours</strong>.</p>
@@ -64,7 +63,8 @@ router.post('/', formLimit, async (req, res) => {
           </p>
         </div>
       `,
-    });
+      }),
+    ]);
 
     res.json({ success: true, message: 'Inquiry submitted successfully.', id: inquiry._id });
   } catch (err) {
