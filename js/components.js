@@ -411,6 +411,10 @@ const NAVBAR_HTML = `
       </nav>
 
       <div class="navbar-cta">
+        <button type="button" class="site-search-btn" id="siteSearchBtn" aria-label="Search site" title="Search (Ctrl+K)">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span class="site-search-btn-text">Search</span>
+        </button>
         <a href="contact.html" class="btn btn-primary btn-sm">
           <i class="fa-solid fa-paper-plane"></i> Get a Quote
         </a>
@@ -435,6 +439,7 @@ const NAVBAR_HTML = `
   <a href="tech-ai.html" class="mobile-nav-link-plain" style="display:flex;justify-content:space-between;padding:16px 0;font-weight:600;color:${_page==='tech-ai.html'?'var(--blue-500)':'var(--gray-800)'};border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Tech & AI</a>
   <a href="contact.html" class="mobile-nav-link-plain" style="display:flex;justify-content:space-between;padding:16px 0;font-weight:600;color:${_page==='contact.html'?'var(--blue-500)':'var(--gray-800)'};border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Contact</a>
   <div style="margin-top:24px;display:flex;flex-direction:column;gap:12px;">
+    <button type="button" class="btn btn-outline site-search-trigger" id="siteSearchBtnMobile" style="width:100%;justify-content:center;"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
     <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;"><i class="fa-solid fa-paper-plane"></i> Get a Quote</a>
     <a href="tel:+919870840779" class="btn btn-outline" style="width:100%;justify-content:center;"><i class="fa-solid fa-phone"></i> Call Us Now</a>
   </div>
@@ -611,6 +616,39 @@ const COOKIE_HTML = `
 </div>
 `;
 
+/* ─── Site search button (for pages with inline navbar) ───── */
+function injectSearchButtons() {
+  const cta = document.querySelector('.navbar-cta');
+  if (cta && !document.getElementById('siteSearchBtn')) {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'site-search-btn';
+    btn.id = 'siteSearchBtn';
+    btn.setAttribute('aria-label', 'Search site');
+    btn.title = 'Search (Ctrl+K)';
+    btn.innerHTML = '<i class="fa-solid fa-magnifying-glass"></i><span class="site-search-btn-text">Search</span>';
+    cta.insertBefore(btn, cta.firstChild);
+  }
+
+  const mobileNav = document.getElementById('mobileNav');
+  if (mobileNav && !document.getElementById('siteSearchBtnMobile')) {
+    const actions = mobileNav.querySelector('div[style*="margin-top"]');
+    if (actions) {
+      const mobileBtn = document.createElement('button');
+      mobileBtn.type = 'button';
+      mobileBtn.className = 'btn btn-outline site-search-trigger';
+      mobileBtn.id = 'siteSearchBtnMobile';
+      mobileBtn.style.cssText = 'width:100%;justify-content:center;';
+      mobileBtn.innerHTML = '<i class="fa-solid fa-magnifying-glass"></i> Search';
+      actions.insertBefore(mobileBtn, actions.firstChild);
+    }
+  }
+
+  if (typeof window.initSiteSearch === 'function') {
+    window.initSiteSearch();
+  }
+}
+
 /* ─── Inject all components ───────────────────────────────── */
 function injectComponents() {
   // Navbar (only if not already present from inline HTML)
@@ -657,6 +695,7 @@ function injectComponents() {
   injectSecondaryMegaMenus();
   fixProductsMegaMenu();
   injectMobileNavLink('tech-ai.html', 'Tech & AI');
+  injectSearchButtons();
 
   // Cookie buttons
   document.getElementById('cookieAccept')?.addEventListener('click', () => {
@@ -1046,11 +1085,17 @@ document.addEventListener('DOMContentLoaded', () => {
   updateLangSwitcherLabels(lang);
   if (lang !== 'en') _translatePageTo(lang);
 
-  /* Load AI chatbot on all pages except admin */
+  /* Load site search + AI chatbot on all pages except admin */
   if (!window.location.pathname.includes('/admin/')) {
-    const s = document.createElement('script');
-    s.src = 'js/chatbot.js';
-    s.defer = true;
-    document.body.appendChild(s);
+    const searchScript = document.createElement('script');
+    searchScript.src = 'js/search.js';
+    searchScript.defer = true;
+    searchScript.onload = () => injectSearchButtons();
+    document.body.appendChild(searchScript);
+
+    const chatScript = document.createElement('script');
+    chatScript.src = 'js/chatbot.js';
+    chatScript.defer = true;
+    document.body.appendChild(chatScript);
   }
 });
