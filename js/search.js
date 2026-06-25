@@ -214,6 +214,7 @@ function openSearch() {
   if (!overlay) return;
 
   overlay.hidden = false;
+  overlay.style.pointerEvents = 'auto';
   document.body.classList.add('site-search-open');
   requestAnimationFrame(() => {
     overlay.classList.add('is-visible');
@@ -228,6 +229,7 @@ function closeSearch() {
   if (!overlay) return;
 
   overlay.classList.remove('is-visible');
+  overlay.style.pointerEvents = 'none';
   document.body.classList.remove('site-search-open');
   setTimeout(() => {
     overlay.hidden = true;
@@ -244,6 +246,7 @@ function createSearchModal() {
   overlay.id = 'siteSearchOverlay';
   overlay.className = 'site-search-overlay';
   overlay.hidden = true;
+  overlay.style.pointerEvents = 'none';
   overlay.innerHTML = `
     <div class="site-search-backdrop" data-close-search></div>
     <div class="site-search-dialog" role="dialog" aria-modal="true" aria-labelledby="siteSearchTitle">
@@ -317,12 +320,16 @@ function initSiteSearch() {
   bindSearchTriggers();
 
   document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      const { overlay } = getModalElements();
+      if (overlay && !overlay.hidden) closeSearch();
+      return;
+    }
     if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
       e.preventDefault();
       const { overlay } = getModalElements();
       overlay?.hidden ? openSearch() : closeSearch();
     }
-    if (e.key === 'Escape') closeSearch();
   });
 }
 

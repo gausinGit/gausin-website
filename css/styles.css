@@ -2307,6 +2307,11 @@ section,
 
 body.site-search-open { overflow: hidden; }
 
+.site-search-overlay[hidden] {
+  display: none !important;
+  pointer-events: none !important;
+}
+
 .site-search-overlay {
   position: fixed;
   inset: 0;
@@ -2316,10 +2321,16 @@ body.site-search-open { overflow: hidden; }
   justify-content: center;
   padding: clamp(72px, 12vh, 120px) 16px 24px;
   opacity: 0;
-  transition: opacity 0.2s ease;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
 }
 
-.site-search-overlay.is-visible { opacity: 1; }
+.site-search-overlay.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
 
 .site-search-backdrop {
   position: absolute;
