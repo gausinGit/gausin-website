@@ -176,7 +176,7 @@ function fixProductsMegaMenu() {
         </a>
         <a href="products.html#milk-processing" class="mega-menu-item">
           <div class="mega-menu-item-icon"><i class="fa-solid fa-flask"></i></div>
-          <div><div class="mega-menu-item-title">Milk Processing</div><div class="mega-menu-item-desc">Pasteurizer, Deodorizer, Full Plant</div></div>
+          <div><div class="mega-menu-item-title">Dairy Processing</div><div class="mega-menu-item-desc">Pasteurizer, Deodorizer, Full Plant</div></div>
         </a>
         <a href="products.html#vessels" class="mega-menu-item">
           <div class="mega-menu-item-icon"><i class="fa-solid fa-database"></i></div>
@@ -383,7 +383,7 @@ const NAVBAR_HTML = `
               </a>
               <a href="products.html#milk-processing" class="mega-menu-item">
                 <div class="mega-menu-item-icon"><i class="fa-solid fa-flask"></i></div>
-                <div><div class="mega-menu-item-title">Milk Processing</div><div class="mega-menu-item-desc">Pasteurizer, Deodorizer, Full Plant</div></div>
+                <div><div class="mega-menu-item-title">Dairy Processing</div><div class="mega-menu-item-desc">Pasteurizer, Deodorizer, Full Plant</div></div>
               </a>
               <a href="products.html#vessels" class="mega-menu-item">
                 <div class="mega-menu-item-icon"><i class="fa-solid fa-database"></i></div>
