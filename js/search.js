@@ -36,10 +36,10 @@ const SEARCH_INDEX = [
   { title: 'Spin Flash Dryer', url: 'product-spin-flash-dryer.html', category: 'Dryers', keywords: 'paste filter cake flash' },
 
   /* Milk Processing */
-  { title: 'Complete Milk Processing Plant', url: 'product-complete-milk-processing-plant.html', category: 'Milk Processing', keywords: 'dairy plant turnkey milk line' },
-  { title: 'Milk Chilling Plant', url: 'product-milk-chilling-plant.html', category: 'Milk Processing', keywords: 'chiller cooling bulk milk' },
-  { title: 'Milk Pasteurizer (HTST / LTLT)', url: 'product-milk-pasteurizer-htst-ltlt.html', category: 'Milk Processing', keywords: 'HTST LTLT pasteurization' },
-  { title: 'Milk Deodorizer', url: 'product-milk-deodorizer.html', category: 'Milk Processing', keywords: 'vacuum deodorization off flavor' },
+  { title: 'Complete Milk Processing Plant', url: 'product-complete-milk-processing-plant.html', category: 'Dairy Processing', keywords: 'dairy plant turnkey milk line' },
+  { title: 'Milk Chilling Plant', url: 'product-milk-chilling-plant.html', category: 'Dairy Processing', keywords: 'chiller cooling bulk milk' },
+  { title: 'Milk Pasteurizer (HTST / LTLT)', url: 'product-milk-pasteurizer-htst-ltlt.html', category: 'Dairy Processing', keywords: 'HTST LTLT pasteurization' },
+  { title: 'Milk Deodorizer', url: 'product-milk-deodorizer.html', category: 'Dairy Processing', keywords: 'vacuum deodorization off flavor' },
   { title: 'Butter Processing Unit', url: 'product-butter-processing-unit.html', category: 'Dairy Equipment', keywords: 'butter making continuous' },
   { title: 'Ghee Making Plant', url: 'product-ghee-making-plant.html', category: 'Dairy Equipment', keywords: 'ghee clarification batch' },
   { title: 'Butter Churner', url: 'product-butter-churner.html', category: 'Dairy Equipment', keywords: 'churn butter dairy' },
@@ -91,7 +91,7 @@ const CATEGORY_ICONS = {
   Pages: 'fa-house',
   Evaporators: 'fa-droplet',
   Dryers: 'fa-wind',
-  'Milk Processing': 'fa-cow',
+  'Dairy Processing': 'fa-cow',
   'Dairy Equipment': 'fa-cow',
   'Waste Management': 'fa-leaf',
   'Heat Exchangers': 'fa-fire-flame-curved',
@@ -298,7 +298,7 @@ function createSearchModal() {
 }
 
 function bindSearchTriggers() {
-  document.querySelectorAll('#siteSearchBtn, #siteSearchBtnMobile, .site-search-trigger').forEach((btn) => {
+  document.querySelectorAll('#siteSearchBtn, #siteSearchBtnMobile, #siteSearchBtnHeader, .site-search-trigger').forEach((btn) => {
     if (btn.dataset.searchBound) return;
     btn.dataset.searchBound = '1';
     btn.addEventListener('click', (e) => {

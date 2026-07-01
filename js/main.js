@@ -8,7 +8,16 @@
 /* ── Navbar ──────────────────────────────────────────────── */
 const navbar = document.getElementById('navbar');
 const navbarToggle = document.getElementById('navbarToggle');
-const mobileNav = document.getElementById('mobileNav');
+
+function getMobileNav() {
+  return document.getElementById('mobileNav');
+}
+
+function closeMobileNav() {
+  navbarToggle?.classList.remove('open');
+  getMobileNav()?.classList.remove('open');
+  document.body.style.overflow = '';
+}
 
 // Scroll state
 window.addEventListener('scroll', () => {
@@ -19,31 +28,31 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// Mobile toggle
+// Mobile toggle (mobileNav may be injected after this script by components.js)
 navbarToggle?.addEventListener('click', () => {
+  const mobileNav = getMobileNav();
   navbarToggle.classList.toggle('open');
   mobileNav?.classList.toggle('open');
   document.body.style.overflow = mobileNav?.classList.contains('open') ? 'hidden' : '';
 });
 
-// Mobile sub-menu toggles
-document.querySelectorAll('.mobile-toggle').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const parent = btn.closest('.mobile-nav-item');
-    const sub = parent?.querySelector('.mobile-sub-links');
-    const icon = btn.querySelector('.toggle-arrow');
-    sub?.classList.toggle('open');
-    if (icon) icon.style.transform = sub?.classList.contains('open') ? 'rotate(180deg)' : '';
-  });
+// Mobile sub-menu toggles (delegated — works for dynamically injected accordions)
+document.addEventListener('click', (e) => {
+  const btn = e.target.closest('.mobile-toggle');
+  if (!btn || !btn.closest('#mobileNav')) return;
+  e.preventDefault();
+  const parent = btn.closest('.mobile-nav-item');
+  const sub = parent?.querySelector('.mobile-sub-links');
+  const icon = btn.querySelector('.toggle-arrow');
+  sub?.classList.toggle('open');
+  if (icon) icon.style.transform = sub?.classList.contains('open') ? 'rotate(180deg)' : '';
 });
 
 // Close mobile nav on link click
-document.querySelectorAll('.mobile-sub-link, .mobile-nav-link-plain').forEach(link => {
-  link.addEventListener('click', () => {
-    navbarToggle?.classList.remove('open');
-    mobileNav?.classList.remove('open');
-    document.body.style.overflow = '';
-  });
+document.addEventListener('click', (e) => {
+  const link = e.target.closest('.mobile-sub-link, .mobile-nav-link-plain');
+  if (!link || !link.closest('#mobileNav')) return;
+  closeMobileNav();
 });
 
 // Active nav link
@@ -153,12 +162,20 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     const filter = btn.getAttribute('data-filter');
     const wrapper = btn.closest('.filter-wrapper');
-    if (!wrapper) return;
+    const filterBar = btn.closest('.filter-bar');
 
-    wrapper.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    if (filterBar) {
+      filterBar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    } else {
+      btn.closest('.filter-wrapper')?.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    }
     btn.classList.add('active');
 
-    wrapper.querySelectorAll('.filterable').forEach(item => {
+    const items = wrapper
+      ? wrapper.querySelectorAll('.filterable')
+      : document.querySelectorAll('.filterable');
+
+    items.forEach(item => {
       const category = item.getAttribute('data-category');
       if (filter === 'all' || category === filter) {
         item.style.display = '';
@@ -166,6 +183,16 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
       } else {
         item.style.display = 'none';
       }
+    });
+
+    document.querySelectorAll('.product-cat-section').forEach(section => {
+      if (filter === 'all') {
+        section.style.display = '';
+        return;
+      }
+      const cards = section.querySelectorAll('.filterable');
+      const anyVisible = [...cards].some(c => c.style.display !== 'none');
+      section.style.display = anyVisible ? '' : 'none';
     });
   });
 });

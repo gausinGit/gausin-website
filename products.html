@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Industrial products by Gausin International Engineers  -  Evaporators, Dryers, Heat Exchangers, CIP Systems, Milk Processing Plants and more.">
+  <meta name="description" content="Industrial products by Gausin International Engineers  -  Evaporators, Dryers, Heat Exchangers, CIP Systems, Dairy Processing Plants and more.">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Gausin International Engineers Pvt. Ltd.">
   <meta property="og:title" content="Industrial Engineering Products | Gausin International Engineers">
-  <meta property="og:description" content="Evaporators, Dryers, CIP Systems, Heat Exchangers, Milk Processing Plants and Pressure Vessels by Gausin International Engineers.">
+  <meta property="og:description" content="Evaporators, Dryers, CIP Systems, Heat Exchangers, Dairy Processing Plants and Pressure Vessels by Gausin International Engineers.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.gausin.in/products.html">
   <link rel="canonical" href="https://www.gausin.in/products.html">
@@ -24,6 +24,26 @@
       border-radius: 16px; border: 1px solid var(--gray-200);
       box-shadow: var(--shadow-md); margin-bottom: 40px;
       align-items: center;
+    }
+    @media (max-width: 768px) {
+      .filter-bar {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x proximity;
+        padding: 16px 18px;
+        margin-bottom: 28px;
+        gap: 8px;
+      }
+      .filter-bar::-webkit-scrollbar { display: none; }
+      .filter-label { flex-shrink: 0; margin-right: 4px; font-size: 0.8125rem; }
+      .filter-btn {
+        flex-shrink: 0;
+        scroll-snap-align: start;
+        padding: 10px 16px;
+        min-height: 44px;
+      }
+      .grid-3 { grid-template-columns: 1fr !important; }
     }
     .filter-label { font-size: 0.875rem; font-weight: 700; color: var(--gray-600); font-family:'Montserrat',sans-serif; margin-right: 8px; }
     .filter-btn {
@@ -148,26 +168,26 @@
 
 <!-- PRODUCTS CONTENT -->
 <section class="section bg-light">
-  <div class="container">
+  <div class="container filter-wrapper">
 
     <!-- Filter Bar -->
-    <div class="filter-bar filter-wrapper" data-aos="fade-up">
+    <div class="filter-bar" data-aos="fade-up">
       <span class="filter-label"><i class="fa-solid fa-filter"></i> Filter:</span>
       <button class="filter-btn active" data-filter="all">All Products</button>
       <button class="filter-btn" data-filter="evaporators">Evaporators</button>
       <button class="filter-btn" data-filter="dryers">Dryers</button>
       <button class="filter-btn" data-filter="dairy">Dairy Processing Plants</button>
-      <button class="filter-btn" data-filter="heat-transfer">Milk Processing Equipment</button>
-      <button class="filter-btn" data-filter="vessels">Dairy & Food Plant Equipment</button>
-      <button class="filter-btn" data-filter="cleaning">Waste Management</button>
-      <button class="filter-btn" data-filter="milk-equipment">Heat Exchangers</button>
-      <button class="filter-btn" data-filter="dairy-food-equipment">CIP & Cleaning Systems</button>
-      <button class="filter-btn" data-filter="waste-management">Pressure Vessels & Storage Tanks</button>
+      <button class="filter-btn" data-filter="milk-equipment">Milk Equipment</button>
+      <button class="filter-btn" data-filter="dairy-food-equipment">Dairy & Food Plant Equipment</button>
+      <button class="filter-btn" data-filter="waste-management">Waste Management</button>
+      <button class="filter-btn" data-filter="heat-transfer">Heat Exchangers</button>
+      <button class="filter-btn" data-filter="cleaning">CIP & Cleaning Systems</button>
+      <button class="filter-btn" data-filter="vessels">Pressure Vessels & Storage Tanks</button>
     </div>
 
 
     <!-- EVAPORATORS -->
-    <div id="evaporators" style="margin-bottom:64px;">
+    <div id="evaporators" class="product-cat-section" style="margin-bottom:64px;">
       <div class="cat-title" data-aos="fade-right">
         <div class="cat-icon"><i class="fa-solid fa-droplet"></i></div>
         <div><div class="cat-name">Evaporators</div><div class="cat-count">5 Products</div></div>
@@ -304,7 +324,7 @@
       </div>
     </div>
     <!-- DRYERS -->
-    <div id="dryers" style="margin-bottom:64px;">
+    <div id="dryers" class="product-cat-section" style="margin-bottom:64px;">
       <div class="cat-title" data-aos="fade-right">
         <div class="cat-icon"><i class="fa-solid fa-wind"></i></div>
         <div><div class="cat-name">Dryers</div><div class="cat-count">5 Products</div></div>
@@ -441,7 +461,7 @@
       </div>
     </div>
     <!-- --- DAIRY / MILK PROCESSING --- -->
-    <div id="milk-processing" style="margin-bottom:64px;">
+    <div id="milk-processing" class="product-cat-section" style="margin-bottom:64px;">
       <div class="cat-title" data-aos="fade-right">
         <div class="cat-icon"><i class="fa-solid fa-cow"></i></div>
         <div><div class="cat-name">Dairy Processing Plants</div><div class="cat-count">6 Products</div></div>
@@ -603,10 +623,10 @@
       </div>
     </div>
     <!-- MILK EQUIPMENT -->
-    <div id="milk-equipment" style="margin-bottom:64px;">
+    <div id="milk-equipment" class="product-cat-section" style="margin-bottom:64px;">
       <div class="cat-title" data-aos="fade-right">
         <div class="cat-icon"><i class="fa-solid fa-jar"></i></div>
-        <div><div class="cat-name">Milk Processing Equipment</div><div class="cat-count">3 Products</div></div>
+        <div><div class="cat-name">Milk Equipment</div><div class="cat-count">3 Products</div></div>
         <div class="cat-line"></div>
       </div>
 
@@ -690,7 +710,7 @@
       </div>
     </div>
     <!-- DAIRY AND FOOD PLANT EQUIPMENTS -->
-    <div id="dairy-food-equipment" style="margin-bottom:64px;">
+    <div id="dairy-food-equipment" class="product-cat-section" style="margin-bottom:64px;">
       <div class="cat-title" data-aos="fade-right">
         <div class="cat-icon"><i class="fa-solid fa-industry"></i></div>
         <div><div class="cat-name">Dairy & Food Plant Equipment</div><div class="cat-count">3 Products</div></div>
@@ -777,7 +797,7 @@
       </div>
     </div>
     <!-- WASTE MANAGEMENT -->
-    <div id="waste-management" style="margin-bottom:64px;">
+    <div id="waste-management" class="product-cat-section" style="margin-bottom:64px;">
       <div class="cat-title" data-aos="fade-right">
         <div class="cat-icon"><i class="fa-solid fa-leaf"></i></div>
         <div><div class="cat-name">Waste Management</div><div class="cat-count">6 Products</div></div>
@@ -939,7 +959,7 @@
       </div>
     </div>
     <!-- HEAT EXCHANGERS -->
-    <div id="heat-exchangers" style="margin-bottom:64px;">
+    <div id="heat-exchangers" class="product-cat-section" style="margin-bottom:64px;">
       <div class="cat-title" data-aos="fade-right">
         <div class="cat-icon"><i class="fa-solid fa-temperature-high"></i></div>
         <div><div class="cat-name">Heat Exchangers</div><div class="cat-count">2 Products</div></div>
@@ -1001,7 +1021,7 @@
       </div>
     </div>
     <!-- CIP SYSTEMS -->
-    <div id="cip" style="margin-bottom:64px;">
+    <div id="cip" class="product-cat-section" style="margin-bottom:64px;">
       <div class="cat-title" data-aos="fade-right">
         <div class="cat-icon"><i class="fa-solid fa-recycle"></i></div>
         <div><div class="cat-name">CIP & Cleaning Systems</div><div class="cat-count">1 Product</div></div>
@@ -1036,7 +1056,7 @@
       </div>
     </div>
     <!-- VESSELS & TANKS -->
-    <div id="vessels" style="margin-bottom:64px;">
+    <div id="vessels" class="product-cat-section" style="margin-bottom:64px;">
       <div class="cat-title" data-aos="fade-right">
         <div class="cat-icon"><i class="fa-solid fa-database"></i></div>
         <div><div class="cat-name">Pressure Vessels & Storage Tanks</div><div class="cat-count">2 Products</div></div>
@@ -1167,7 +1187,7 @@
           <a href="#evaporators" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Falling Film Evaporator</a>
           <a href="#dryers" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Spray Dryer</a>
           <a href="#cip" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>CIP Systems</a>
-          <a href="#milk-processing" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Milk Processing Plant</a>
+          <a href="#milk-processing" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Dairy Processing Plant</a>
           <a href="#heat-exchangers" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Heat Exchangers</a>
           <a href="#vessels" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Pressure Vessels</a>
           <a href="product-etp-stp-treatment-plants.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>ETP/STP Treatment Plants</a>

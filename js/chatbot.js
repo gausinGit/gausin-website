@@ -202,7 +202,7 @@
   @media (max-width: 480px) {
     .gchat-win { left: 10px; right: 10px; width: auto; bottom: 150px;
       height: min(400px, calc(100dvh - 270px)); }
-    .gchat-fab { right: 16px; bottom: 18px; width: 50px; height: 50px; font-size: 1.25rem; }
+    .gchat-fab { right: 16px; bottom: 22px; width: 50px; height: 50px; font-size: 1.25rem; }
   }
   </style>`;
 
@@ -296,7 +296,7 @@ We design complete CIP skids for dairy, pharma & food plants:<br>
     {
       id: 'milk-processing',
       t: ['milk','pasteurizer','milk plant','dairy plant','htst','ltlt','deodorizer','mcc','milk chilling','bulk milk cooler','bmc'],
-      r: `<strong>Milk Processing Equipment</strong> 🥛<br><br>
+      r: `<strong>Dairy Processing Equipment</strong> 🥛<br><br>
 • Milk Pasteurizer (HTST / LTLT)<br>
 • Milk Deodorizer / Vacuum De-aerator<br>
 • Complete Milk Processing Plant (Turnkey)<br>
@@ -362,10 +362,10 @@ PCB / CPCB compliant designs.`,
       t: ['product','products','equipment','machine','machinery','catalog','item','what do you make','kya banate','all products'],
       r: `Here's what we manufacture at Gausin: 🏭<br><br>
 🔵 <strong>Evaporators</strong> &nbsp; 🔵 <strong>Dryers</strong> &nbsp; 🔵 <strong>Heat Exchangers</strong><br>
-🔵 <strong>CIP Systems</strong> &nbsp; 🔵 <strong>Milk Processing</strong> &nbsp; 🔵 <strong>Pressure Vessels</strong><br>
+🔵 <strong>CIP Systems</strong> &nbsp; 🔵 <strong>Dairy Processing</strong> &nbsp; 🔵 <strong>Pressure Vessels</strong><br>
 🔵 <strong>Dairy Equipment</strong> &nbsp; 🔵 <strong>Waste Management</strong> &nbsp; 🔵 <strong>Tech & AI</strong><br><br>
 Tap any product below or ask me anything specific!`,
-      q: ['Evaporators', 'Dryers', 'Heat Exchangers', 'CIP Systems', 'Milk Processing', 'Pressure Vessels', 'Dairy Equipment', 'Waste Management', 'Tech & AI']
+      q: ['Evaporators', 'Dryers', 'Heat Exchangers', 'CIP Systems', 'Dairy Processing', 'Pressure Vessels', 'Dairy Equipment', 'Waste Management', 'Tech & AI']
     },
     {
       id: 'services',
@@ -448,7 +448,7 @@ Serving dairy, pharma, chemical, food & energy sectors.`,
       id: 'industries',
       t: ['industry','industries','sector','pharma','pharmaceutical','chemical','food','distillery','paper','textile','sugar','brewery'],
       r: `<strong>Industries we serve</strong> 🏗️<br><br>
-🥛 <strong>Dairy & Milk Processing</strong> — Our flagship<br>
+🥛 <strong>Dairy Processing</strong> — Our flagship<br>
 💊 <strong>Pharmaceutical</strong> — GMP/cGMP compliant<br>
 ⚗️ <strong>Chemical & Petrochemical</strong> — Process plants<br>
 🍽️ <strong>Food & Beverage</strong> — Hygienic systems<br>
@@ -669,6 +669,7 @@ Feel free to return anytime.<br>
       'Dryers':            () => botReply(KB.find(e=>e.id==='dryers').r,     KB.find(e=>e.id==='dryers').q, d),
       'Heat Exchangers':   () => botReply(KB.find(e=>e.id==='heat-exchangers').r, KB.find(e=>e.id==='heat-exchangers').q, d),
       'CIP Systems':       () => botReply(KB.find(e=>e.id==='cip').r,            KB.find(e=>e.id==='cip').q, d),
+      'Dairy Processing':  () => botReply(KB.find(e=>e.id==='milk-processing').r, KB.find(e=>e.id==='milk-processing').q, d),
       'Milk Processing':   () => botReply(KB.find(e=>e.id==='milk-processing').r, KB.find(e=>e.id==='milk-processing').q, d),
       'Pressure Vessels':  () => botReply(KB.find(e=>e.id==='vessels').r,        KB.find(e=>e.id==='vessels').q, d),
       'Dairy Equipment':   () => botReply(KB.find(e=>e.id==='dairy-food').r, KB.find(e=>e.id==='dairy-food').q, d),

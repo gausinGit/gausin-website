@@ -7,11 +7,25 @@
 
 /* ─── Social profile URLs ─────────────────────────────────── */
 const SOCIAL_LINKS = {
+  linkedin: 'https://www.linkedin.com/company/gausin-international-engineers-pvt-ltd',
   x: 'https://x.com/Gausin_117',
   instagram: 'https://www.instagram.com/gausin_117/',
   youtube: 'https://www.youtube.com/@GausinInternationalEngineersPv',
   facebook: 'https://www.facebook.com/profile.php?id=61590538293790',
 };
+
+const PRODUCT_MOBILE_LINKS = [
+  { href: 'products.html', label: 'All Products', icon: 'fa-border-all' },
+  { href: 'products.html#evaporators', label: 'Evaporators', icon: 'fa-droplet' },
+  { href: 'products.html#dryers', label: 'Dryers', icon: 'fa-wind' },
+  { href: 'products.html#heat-exchangers', label: 'Heat Exchangers', icon: 'fa-temperature-high' },
+  { href: 'products.html#cip', label: 'CIP Systems', icon: 'fa-recycle' },
+  { href: 'products.html#milk-processing', label: 'Dairy Processing', icon: 'fa-flask' },
+  { href: 'products.html#vessels', label: 'Pressure Vessels & Tanks', icon: 'fa-database' },
+  { href: 'products.html#milk-equipment', label: 'Milk Equipment', icon: 'fa-jar' },
+  { href: 'products.html#dairy-food-equipment', label: 'Dairy & Food Equipment', icon: 'fa-industry' },
+  { href: 'products.html#waste-management', label: 'Waste Management', icon: 'fa-leaf' },
+];
 
 /* ─── Detect current page for active nav link ─────────────── */
 const _page = (() => {
@@ -45,7 +59,7 @@ const SECONDARY_MEGA_MENUS = [
     headerTitle: 'Industries We Serve',
     headerDesc: 'Sector-Specific Engineering Solutions',
     items: [
-      { href: 'industries.html#dairy',    icon: 'fa-cow',          title: 'Dairy Industry',    desc: 'Milk Processing, Evaporators' },
+      { href: 'industries.html#dairy',    icon: 'fa-cow',          title: 'Dairy Industry',    desc: 'Dairy Processing, Evaporators' },
       { href: 'industries.html#pharma',   icon: 'fa-pills',        title: 'Pharmaceutical',    desc: 'GMP-Compliant Systems' },
       { href: 'industries.html#chemical', icon: 'fa-flask-vial',   title: 'Chemical Industry', desc: 'Process Plants, Reactors' },
       { href: 'industries.html#food',     icon: 'fa-utensils',     title: 'Food Processing',   desc: 'Hygienic Plant Solutions' },
@@ -455,7 +469,7 @@ const FOOTER_HTML = `
         <a href="index.html" class="navbar-logo footer-logo"><img src="images/gausin-logo.png" alt="" class="logo-img" width="110" height="52" aria-hidden="true"><div class="logo-text"><div class="logo-name">Gausin International</div><div class="logo-tagline">Engineers Pvt. Ltd.</div></div></a>
         <p class="footer-brand-desc">Engineering process excellence through advanced evaporation, drying, and industrial plant solutions. Serving dairy, pharma, chemical, and food industries with precision-engineered systems.</p>
         <div class="footer-social">
-          <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="${SOCIAL_LINKS.linkedin}" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
           <a href="${SOCIAL_LINKS.x}" class="social-link" aria-label="X" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
           <a href="${SOCIAL_LINKS.instagram}" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
           <a href="${SOCIAL_LINKS.youtube}" class="social-link" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
@@ -471,7 +485,7 @@ const FOOTER_HTML = `
           <a href="products.html#dryers" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Spray Dryer (Nozzle/Disc)</a>
           <a href="product-closed-circuit-dryer.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Closed Circuit Dryer</a>
           <a href="products.html#cip" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>CIP Systems</a>
-          <a href="products.html#milk-processing" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Milk Processing Plant</a>
+          <a href="products.html#milk-processing" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Dairy Processing Plant</a>
           <a href="products.html#heat-exchangers" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Heat Exchangers</a>
           <a href="products.html#vessels" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Pressure Vessels & Tanks</a>
           <a href="product-etp-stp-treatment-plants.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>ETP/STP Treatment Plants</a>
@@ -529,7 +543,7 @@ const FOOTER_HTML = `
       <div class="footer-bottom-links">
         <a href="privacy-policy.html" class="footer-bottom-link">Privacy Policy</a>
         <a href="terms-of-service.html" class="footer-bottom-link">Terms of Service</a>
-        <a href="sitemap.xml" class="footer-bottom-link">Sitemap</a>
+        <a href="sitemap.html" class="footer-bottom-link">Sitemap</a>
       </div>
     </div>
   </div>
@@ -587,7 +601,7 @@ const COOKIE_HTML = `
         </div>
         <p style="font-size:0.875rem;color:var(--gray-400);line-height:1.6;margin:0;">
           We use cookies to enhance your experience and analyze website traffic. By clicking "Accept All", you consent to our use of cookies.
-          <a href="#" style="color:var(--blue-400);text-decoration:underline;margin-left:4px;">Learn more</a>
+          <a href="privacy-policy.html" style="color:var(--blue-400);text-decoration:underline;margin-left:4px;">Learn more</a>
         </p>
       </div>
       <div style="display:flex;gap:10px;flex-shrink:0;flex-wrap:wrap;">
@@ -647,6 +661,102 @@ function injectSearchButtons() {
   if (typeof window.initSiteSearch === 'function') {
     window.initSiteSearch();
   }
+
+  const toggle = document.getElementById('navbarToggle');
+  if (toggle && !document.getElementById('siteSearchBtnHeader')) {
+    const headerBtn = document.createElement('button');
+    headerBtn.type = 'button';
+    headerBtn.className = 'site-search-btn site-search-btn--header-mobile';
+    headerBtn.id = 'siteSearchBtnHeader';
+    headerBtn.setAttribute('aria-label', 'Search site');
+    headerBtn.innerHTML = '<i class="fa-solid fa-magnifying-glass"></i>';
+    toggle.parentNode.insertBefore(headerBtn, toggle);
+  }
+}
+
+function getMobileNavHtml() {
+  const endTag = '</nav>';
+  const idx = NAVBAR_HTML.lastIndexOf(endTag);
+  if (idx === -1) return '';
+  return NAVBAR_HTML.slice(idx + endTag.length).trim();
+}
+
+function injectMobileNavIfMissing() {
+  if (document.getElementById('mobileNav') || !document.getElementById('navbarToggle')) return;
+  const navbar = document.getElementById('navbar');
+  if (!navbar) return;
+  const mobilePart = getMobileNavHtml();
+  if (!mobilePart) return;
+  const wrapper = document.createElement('div');
+  wrapper.innerHTML = mobilePart;
+  const mobileNav = wrapper.firstElementChild;
+  if (mobileNav) navbar.insertAdjacentElement('afterend', mobileNav);
+}
+
+function replaceMobileNavLinkWithAccordion(mobileNav, pageHref, label, links, className) {
+  if (mobileNav.querySelector('.' + className)) return;
+
+  const navLink = mobileNav.querySelector(
+    `a[href="${pageHref}"].mobile-nav-link-plain, a[href="${pageHref}"].mobile-nav-link`
+  );
+  if (!navLink) return;
+
+  const isActive = _page === pageHref;
+  const subLinks = links.map((item) =>
+    `<a href="${item.href}" class="mobile-sub-link"><i class="fa-solid ${item.icon}" style="width:18px;color:var(--blue-500);"></i> ${item.label}</a>`
+  ).join('');
+
+  const accordion = document.createElement('div');
+  accordion.className = `mobile-nav-item ${className}`;
+  accordion.innerHTML = `
+    <button type="button" class="mobile-nav-link mobile-toggle">
+      <span style="color:${isActive ? 'var(--blue-500)' : 'inherit'}">${label}</span>
+      <i class="fa-solid fa-chevron-down toggle-arrow"></i>
+    </button>
+    <div class="mobile-sub-links">${subLinks}</div>
+  `;
+  navLink.replaceWith(accordion);
+}
+
+function injectMobileNavAccordions() {
+  const mobileNav = document.getElementById('mobileNav');
+  if (!mobileNav) return;
+
+  replaceMobileNavLinkWithAccordion(
+    mobileNav,
+    'products.html',
+    'Products',
+    PRODUCT_MOBILE_LINKS,
+    'mobile-nav-item--products'
+  );
+
+  SECONDARY_MEGA_MENUS.forEach((menu) => {
+    const slug = menu.pageHref.replace('.html', '');
+    const links = [
+      { href: menu.pageHref, label: `All ${menu.navLabel}`, icon: menu.headerIcon || 'fa-border-all' },
+      ...menu.items.map((item) => ({ href: item.href, label: item.title, icon: item.icon })),
+    ];
+    replaceMobileNavLinkWithAccordion(
+      mobileNav,
+      menu.pageHref,
+      menu.navLabel,
+      links,
+      `mobile-nav-item--${slug}`
+    );
+  });
+}
+
+function fixSocialLinks() {
+  document.querySelectorAll(
+    'a.social-link[aria-label="LinkedIn"], a.contact-social-link[aria-label="LinkedIn"]'
+  ).forEach((link) => {
+    const href = link.getAttribute('href');
+    if (!href || href === '#') {
+      link.href = SOCIAL_LINKS.linkedin;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+    }
+  });
 }
 
 /* ─── Inject all components ───────────────────────────────── */
@@ -658,9 +768,11 @@ function injectComponents() {
     document.body.insertBefore(navWrapper.firstElementChild, document.body.firstChild);
     // Mobile nav
     const mobileWrapper = document.createElement('div');
-    mobileWrapper.innerHTML = NAVBAR_HTML.split('</nav>')[1];
+    mobileWrapper.innerHTML = getMobileNavHtml();
     document.body.insertBefore(mobileWrapper.firstElementChild, document.body.children[1]);
   }
+
+  injectMobileNavIfMissing();
 
   injectTopbar();
   injectFooter();
@@ -687,6 +799,7 @@ function injectComponents() {
     const banner = document.getElementById('cookieBanner');
     if (banner && !localStorage.getItem('gausin_cookie_consent')) {
       banner.style.transform = 'translateY(0)';
+      document.body.classList.add('cookie-banner-visible');
     }
   }, 2000);
 
@@ -694,17 +807,22 @@ function injectComponents() {
   injectMissingSecondaryNavItems();
   injectSecondaryMegaMenus();
   fixProductsMegaMenu();
-  injectMobileNavLink('tech-ai.html', 'Tech & AI');
+  injectMobileNavAccordions();
   injectSearchButtons();
+  fixSocialLinks();
 
   // Cookie buttons
+  const hideCookieBanner = () => {
+    document.getElementById('cookieBanner').style.transform = 'translateY(100%)';
+    document.body.classList.remove('cookie-banner-visible');
+  };
   document.getElementById('cookieAccept')?.addEventListener('click', () => {
     localStorage.setItem('gausin_cookie_consent', 'accepted');
-    document.getElementById('cookieBanner').style.transform = 'translateY(100%)';
+    hideCookieBanner();
   });
   document.getElementById('cookieReject')?.addEventListener('click', () => {
     localStorage.setItem('gausin_cookie_consent', 'rejected');
-    document.getElementById('cookieBanner').style.transform = 'translateY(100%)';
+    hideCookieBanner();
   });
 }
 
@@ -845,8 +963,18 @@ const WHATSAPP_STYLES = `
   .announce-bar .announce-close:hover { color: white; }
 
   @media (max-width: 768px) {
-    .whatsapp-float { bottom: 84px; right: 20px; width: 50px; height: 50px; font-size: 1.5rem; }
+    .whatsapp-float { bottom: 96px; right: 16px; width: 50px; height: 50px; font-size: 1.5rem; }
     .whatsapp-tooltip { display: none; }
+    #backToTop { bottom: 156px !important; right: 16px !important; width: 44px !important; height: 44px !important; }
+    #cookieBanner { padding: 14px 0 !important; }
+    #cookieBanner .container > div { gap: 12px !important; }
+    #cookieBanner p { font-size: 0.8125rem !important; line-height: 1.5 !important; }
+    #cookieBanner button { padding: 9px 16px !important; font-size: 0.8125rem !important; }
+    body.cookie-banner-visible { padding-bottom: env(safe-area-inset-bottom, 0); }
+    body.cookie-banner-visible .whatsapp-float { bottom: calc(110px + env(safe-area-inset-bottom, 0)); }
+    body.cookie-banner-visible #backToTop { bottom: calc(170px + env(safe-area-inset-bottom, 0)) !important; }
+    .gchat-fab { bottom: 22px !important; right: 16px !important; }
+    body.cookie-banner-visible .gchat-fab { bottom: calc(108px + env(safe-area-inset-bottom, 0)) !important; }
   }
 </style>
 `;
