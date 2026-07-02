@@ -680,6 +680,7 @@ Feel free to return anytime.<br>
             if (chips) addChips(chips);
             streaming = false;
             if (sendBtn) sendBtn.disabled = false;
+            if (window.gausinTranslateSubtree) window.gausinTranslateSubtree(gc());
           }, 80);
         }
       }, 38);
@@ -695,12 +696,14 @@ Feel free to return anytime.<br>
     chips.forEach(label => {
       const btn = document.createElement('button');
       btn.className = 'gc-chip';
+      btn.dataset.chipKey = label;
       btn.textContent = label;
-      btn.addEventListener('click', () => { wrap.remove(); chipRoute(label); });
+      btn.addEventListener('click', () => { wrap.remove(); chipRoute(btn.dataset.chipKey || label); });
       wrap.appendChild(btn);
     });
     gc().appendChild(wrap);
     scrollBot();
+    if (window.gausinTranslateSubtree) window.gausinTranslateSubtree(wrap);
   }
 
   /* ── Route chip click (no user bubble for internal routes) ── */
@@ -793,7 +796,10 @@ Feel free to return anytime.<br>
     /* Add date divider */
     const div = document.createElement('div');
     div.className = 'gc-divider';
-    div.textContent = new Date().toLocaleDateString('en-US', { weekday:'long', month:'short', day:'numeric' });
+    div.textContent = new Date().toLocaleDateString(
+      (window.gausinGetLang && window.gausinGetLang() !== 'en') ? window.gausinGetLang() : 'en-US',
+      { weekday: 'long', month: 'short', day: 'numeric' }
+    );
     gc().appendChild(div);
 
     setTimeout(() => {
@@ -821,6 +827,8 @@ Feel free to return anytime.<br>
     const hw = document.createElement('div');
     hw.innerHTML = HTML;
     while (hw.firstChild) document.body.appendChild(hw.firstChild);
+
+    if (window.gausinTranslateSubtree) window.gausinTranslateSubtree($('gcWin'));
 
     const fab    = $('gcFab');
     const win    = $('gcWin');

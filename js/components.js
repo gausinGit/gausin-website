@@ -1120,16 +1120,91 @@ document.head.insertAdjacentHTML('beforeend', WHATSAPP_STYLES);
    Uses translate.googleapis.com directly — no widget, no toolbar
    ─────────────────────────────────────────────────────────── */
 const _TR = {
-  cache:     {},
-  originals: [],
-  attrOriginals: [],
-  active:    'en',
+  cache:          {},
+  originals:      [],
+  blockOriginals: [],
+  attrOriginals:  [],
+  active:         'en',
+  docMeta:        null,
 };
 
-const _TR_SKIP = '#langSwitcher,.mobile-lang-btns,.notranslate,[translate="no"],#gcWin,#gcFab,#gcMsgs,.gchat-win,.gchat-fab,.gchat-msgs,#google_translate_element,.topbar-link i,.site-search-btn,.site-search-panel';
+/* Only skip language UI — chatbot, search, and page content all translate */
+const _TR_SKIP = '#langSwitcher,.mobile-lang-btns,.notranslate,[translate="no"],#google_translate_element,.topbar-link i';
+
+const _TR_BLOCK_SEL = [
+  '.hero-title', '.hero-desc', '.hero-badge', '.hero-stat-label',
+  '.section-title', '.section-subtitle', '.section-desc',
+  '.card-title', '.card-desc', '.check-item',
+  '.industry-card-title', '.industry-card-desc',
+  '.fp-title', '.fp-desc', '.footer-brand-desc', '.footer-title',
+  '.logo-name', '.logo-tagline',
+  '.mega-menu-item-title', '.mega-menu-item-desc',
+  '.announce-bar', '#cookieBanner',
+  '.gchat-hd-name', '.gchat-hd-sub', '.gchat-foot', '.gc-bubble', '.gc-chip', '.gc-divider',
+  '.site-search-empty p', '.site-search-footer',
+  '.site-search-result-title', '.site-search-result-meta',
+].join(',');
 
 function _trIsSkipped(el) {
   return !!(el && el.closest && el.closest(_TR_SKIP));
+}
+
+function _trIsBlockNode(node) {
+  return !!(node.parentElement && node.parentElement.closest('[data-tr-block="1"]'));
+}
+
+/* Expand acronyms / proper nouns so Google returns fully localized text */
+function _trPre(text) {
+  if (!text) return text;
+  return text
+    .replace(/Gausin International Engineers/gi, 'Gausin international engineering company')
+    .replace(/Gausin Assistant/gi, 'Gausin customer assistant')
+    .replace(/Powered by Gausin AI/gi, 'Powered by Gausin artificial intelligence')
+    .replace(/\bCIP Systems?\b/gi, 'clean-in-place systems')
+    .replace(/\bCIP\b/g, 'clean-in-place')
+    .replace(/\bZLD\b/g, 'zero liquid discharge')
+    .replace(/\bHTST\b/g, 'high-temperature short-time pasteurization')
+    .replace(/\bLTLT\b/g, 'low-temperature long-time pasteurization')
+    .replace(/\bUHT\b/g, 'ultra-high-temperature processing')
+    .replace(/\bMCC\b/g, 'milk chilling centre')
+    .replace(/\bBMC\b/g, 'bulk milk cooler')
+    .replace(/\bMEE\b/g, 'multiple-effect evaporator')
+    .replace(/\bMVR\b/g, 'mechanical vapor recompression')
+    .replace(/\bTVR\b/g, 'thermal vapor recompression')
+    .replace(/\bFBD\b/g, 'fluidized bed dryer')
+    .replace(/\bATFD\b/g, 'agitated thin-film dryer')
+    .replace(/\bPHE\b/g, 'plate heat exchanger')
+    .replace(/\bETP\b/g, 'effluent treatment plant')
+    .replace(/\bSTP\b/g, 'sewage treatment plant')
+    .replace(/\bPLC\b/g, 'programmable logic controller')
+    .replace(/\bSCADA\b/g, 'supervisory control and data acquisition')
+    .replace(/\bGMP\b/g, 'good manufacturing practice')
+    .replace(/\bcGMP\b/g, 'current good manufacturing practice')
+    .replace(/\bNDT\b/g, 'non-destructive testing')
+    .replace(/\bIBR\b/g, 'Indian Boiler Regulations')
+    .replace(/\bASME\b/g, 'American Society of Mechanical Engineers standards')
+    .replace(/\bFSSAI\b/g, 'Food Safety and Standards Authority of India')
+    .replace(/\bISO\b/g, 'International Organization for Standardization')
+    .replace(/\bIoT\b/g, 'Internet of Things');
+}
+
+function _trPost(text) {
+  return text;
+}
+
+function _trBlockText(el) {
+  if (el.classList.contains('gc-bubble')) return el.innerHTML.trim();
+  return el.textContent.trim();
+}
+
+function _trBlockElements(root) {
+  const scope = root || document;
+  const els = [];
+  scope.querySelectorAll(_TR_BLOCK_SEL).forEach((el) => {
+    if (_trIsSkipped(el)) return;
+    els.push(el);
+  });
+  return els;
 }
 
 /* Collect translatable text nodes from the live page */
@@ -1141,6 +1216,7 @@ function _trNodes() {
       const p = node.parentElement;
       if (!p || SKIP_TAGS.has(p.tagName)) return NodeFilter.FILTER_REJECT;
       if (_trIsSkipped(p)) return NodeFilter.FILTER_REJECT;
+      if (_trIsBlockNode(node)) return NodeFilter.FILTER_REJECT;
       const t = node.nodeValue.trim();
       if (!t || t.length < 2) return NodeFilter.FILTER_SKIP;
       return NodeFilter.FILTER_ACCEPT;
@@ -1177,11 +1253,12 @@ async function _trFetchOne(text, lang) {
   if (_TR.cache[key]) return _TR.cache[key];
   try {
     const tl = _trGoogleLang(lang);
-    const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=${encodeURIComponent(tl)}&dt=t&q=${encodeURIComponent(text)}`;
+    const q = _trPre(text);
+    const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=${encodeURIComponent(tl)}&dt=t&q=${encodeURIComponent(q)}`;
     const res = await fetch(url);
     if (!res.ok) throw new Error('translate failed');
     const dat = await res.json();
-    const tr = (dat[0] || []).map((s) => s[0]).join('') || text;
+    const tr = _trPost((dat[0] || []).map((s) => s[0]).join('') || q);
     _TR.cache[key] = tr;
     return tr;
   } catch {
@@ -1215,10 +1292,71 @@ function _trRestoreAll() {
     if (node.isConnected) node.nodeValue = orig;
   });
   _TR.originals = [];
+  _TR.blockOriginals.forEach(({ el, orig, mode }) => {
+    if (!el.isConnected) return;
+    if (mode === 'html') el.innerHTML = orig;
+    else el.textContent = orig;
+    el.removeAttribute('data-tr-block');
+  });
+  _TR.blockOriginals = [];
   _TR.attrOriginals.forEach(({ el, attr, orig }) => {
     if (el.isConnected) el.setAttribute(attr, orig);
   });
   _TR.attrOriginals = [];
+  if (_TR.docMeta) {
+    document.title = _TR.docMeta.title;
+    const desc = document.querySelector('meta[name="description"]');
+    if (desc && _TR.docMeta.desc) desc.setAttribute('content', _TR.docMeta.desc);
+  }
+}
+
+function _trApplyBlocks(blockEls, lang) {
+  blockEls.forEach((el) => {
+    const raw = _trBlockText(el);
+    if (!raw || raw.length < 2) return;
+    const tr = _TR.cache[lang + '|' + raw];
+    if (!tr || tr === raw) return;
+    const isHtml = el.classList.contains('gc-bubble');
+    _TR.blockOriginals.push({
+      el,
+      orig: isHtml ? el.innerHTML : el.textContent,
+      mode: isHtml ? 'html' : 'text',
+    });
+    el.setAttribute('data-tr-block', '1');
+    if (isHtml) el.innerHTML = tr;
+    else el.textContent = tr;
+  });
+}
+
+function _trCollectFromRoot(root) {
+  const SKIP_TAGS = new Set(['SCRIPT', 'STYLE', 'NOSCRIPT', 'IFRAME', 'CODE', 'PRE', 'INPUT', 'TEXTAREA', 'SELECT', 'SVG']);
+  const nodes = [];
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+    acceptNode(node) {
+      const p = node.parentElement;
+      if (!p || SKIP_TAGS.has(p.tagName)) return NodeFilter.FILTER_REJECT;
+      if (_trIsSkipped(p)) return NodeFilter.FILTER_REJECT;
+      if (_trIsBlockNode(node)) return NodeFilter.FILTER_REJECT;
+      const t = node.nodeValue.trim();
+      if (!t || t.length < 2) return NodeFilter.FILTER_SKIP;
+      return NodeFilter.FILTER_ACCEPT;
+    },
+  });
+  let n;
+  while ((n = walker.nextNode())) nodes.push(n);
+  return nodes;
+}
+
+function _trAttrItemsIn(root) {
+  const items = [];
+  (root || document).querySelectorAll('[placeholder],[aria-label],[title]').forEach((el) => {
+    if (_trIsSkipped(el)) return;
+    ['placeholder', 'aria-label', 'title'].forEach((attr) => {
+      const val = el.getAttribute(attr);
+      if (val && val.trim().length >= 2) items.push({ el, attr, text: val.trim() });
+    });
+  });
+  return items;
 }
 
 /* Indicator removed — translation runs silently */
@@ -1232,6 +1370,13 @@ async function _translatePageTo(lang) {
   _TR.active = lang;
   localStorage.setItem('gausin_lang', lang);
 
+  if (!_TR.docMeta) {
+    _TR.docMeta = {
+      title: document.title,
+      desc: document.querySelector('meta[name="description"]')?.getAttribute('content') || '',
+    };
+  }
+
   if (lang === 'en') {
     syncLangSwitcherUi(getActiveLangEntry());
     document.documentElement.lang = 'en';
@@ -1240,12 +1385,14 @@ async function _translatePageTo(lang) {
 
   _trIndicator(true);
   try {
+    const blocks = _trBlockElements();
     const nodes = _trNodes().filter((n) => !_isLangSwitcherNode(n));
-    const texts = nodes.map((n) => n.nodeValue.trim());
+    const texts = blocks.map((el) => _trBlockText(el)).concat(nodes.map((n) => n.nodeValue.trim()));
     const attrs = _trAttrItems();
 
     await _trFetch(texts.concat(attrs.map((a) => a.text)), lang);
 
+    _trApplyBlocks(blocks, lang);
     nodes.forEach((node) => _trApplyTextNode(node, lang));
 
     attrs.forEach(({ el, attr, text }) => {
@@ -1255,12 +1402,49 @@ async function _translatePageTo(lang) {
       el.setAttribute(attr, tr);
     });
 
+    const trTitle = _TR.cache[lang + '|' + _TR.docMeta.title];
+    if (trTitle && trTitle !== _TR.docMeta.title) document.title = trTitle;
+    if (_TR.docMeta.desc) {
+      const trDesc = _TR.cache[lang + '|' + _TR.docMeta.desc];
+      const descEl = document.querySelector('meta[name="description"]');
+      if (trDesc && descEl && trDesc !== _TR.docMeta.desc) descEl.setAttribute('content', trDesc);
+    }
+
     document.documentElement.lang = _trGoogleLang(lang);
   } finally {
     _trIndicator(false);
     syncLangSwitcherUi(getActiveLangEntry());
   }
 }
+
+/* Translate newly injected content (chatbot messages, search results) */
+async function gausinTranslateSubtree(root) {
+  const lang = _TR.active;
+  if (!root || !lang || lang === 'en') return;
+
+  const blocks = _trBlockElements(root).filter((el) => !el.hasAttribute('data-tr-block'));
+  const nodes = _trCollectFromRoot(root).filter((n) => !_isLangSwitcherNode(n));
+  const attrs = _trAttrItemsIn(root);
+  const texts = blocks.map((el) => _trBlockText(el))
+    .concat(nodes.map((n) => n.nodeValue.trim()))
+    .concat(attrs.map((a) => a.text))
+    .filter((t) => t && t.length >= 2);
+
+  if (!texts.length) return;
+
+  await _trFetch(texts, lang);
+  _trApplyBlocks(blocks, lang);
+  nodes.forEach((node) => _trApplyTextNode(node, lang));
+  attrs.forEach(({ el, attr, text }) => {
+    const tr = _TR.cache[lang + '|' + text];
+    if (!tr || tr === text) return;
+    _TR.attrOriginals.push({ el, attr, orig: el.getAttribute(attr) });
+    el.setAttribute(attr, tr);
+  });
+}
+
+window.gausinTranslateSubtree = gausinTranslateSubtree;
+window.gausinGetLang = () => _TR.active;
 
 let _trApplyTimer = null;
 function applyStoredLanguage() {

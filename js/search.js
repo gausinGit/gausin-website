@@ -192,6 +192,10 @@ function renderResults(query) {
       </a>
     `;
   }).join('');
+  if (window.gausinTranslateSubtree) {
+    const overlay = document.getElementById('siteSearchOverlay');
+    if (overlay) window.gausinTranslateSubtree(results);
+  }
 }
 
 function setActiveIndex(index) {
@@ -275,6 +279,8 @@ function createSearchModal() {
   `;
 
   document.body.appendChild(overlay);
+
+  if (window.gausinTranslateSubtree) window.gausinTranslateSubtree(overlay);
 
   overlay.querySelector('[data-close-search]')?.addEventListener('click', closeSearch);
 
