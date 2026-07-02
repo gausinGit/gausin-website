@@ -1030,6 +1030,9 @@ const WHATSAPP_STYLES = `
     body.cookie-banner-visible #backToTop { bottom: calc(170px + env(safe-area-inset-bottom, 0)) !important; }
     .gchat-fab { bottom: 22px !important; right: 16px !important; }
     body.cookie-banner-visible .gchat-fab { bottom: calc(108px + env(safe-area-inset-bottom, 0)) !important; }
+    body.cookie-banner-visible.gchat-open .gchat-win {
+      --gchat-bottom: calc(108px + var(--gchat-fab-h, 54px) + var(--gchat-fab-gap, 12px) + env(safe-area-inset-bottom, 0));
+    }
   }
 </style>
 `;

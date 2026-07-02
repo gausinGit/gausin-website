@@ -11,7 +11,7 @@
   const CSS = `
   <style id="gausin-chat-css">
   .gchat-fab {
-    position: fixed; bottom: 22px; right: 28px; z-index: 600;
+    position: fixed; bottom: 22px; right: 28px; z-index: 1002;
     width: 56px; height: 56px; border-radius: 50%; border: none;
     background: linear-gradient(140deg,#1D4ED8,#0A2540);
     color: #fff; font-size: 1.4rem; cursor: pointer;
@@ -32,10 +32,15 @@
   @keyframes gcFabPulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.25)} }
 
   .gchat-win {
-    position: fixed; right: 24px; bottom: 96px; z-index: 999;
+    position: fixed; right: 24px; z-index: 1001;
+    --gchat-fab-h: 56px;
+    --gchat-fab-gap: 14px;
+    --gchat-bottom: calc(22px + var(--gchat-fab-h) + var(--gchat-fab-gap));
+    bottom: var(--gchat-bottom);
     width: 400px;
-    height: min(600px, calc(100dvh - 200px));
-    min-height: 480px;
+    height: min(560px, calc(100dvh - var(--gchat-bottom) - 20px));
+    max-height: calc(100dvh - var(--gchat-bottom) - 20px);
+    min-height: 0;
     background: #fff; border-radius: 22px;
     box-shadow: 0 24px 70px rgba(10,37,64,.22);
     display: flex; flex-direction: column; overflow: hidden;
@@ -203,20 +208,34 @@
   @media (max-width: 768px) {
     .gchat-win {
       right: 16px; left: 16px; width: auto;
-      height: min(560px, calc(100dvh - 160px));
-      min-height: 420px;
-      bottom: 88px;
+      --gchat-fab-h: 54px;
+      --gchat-fab-gap: 12px;
+      height: min(520px, calc(100dvh - var(--gchat-bottom) - 16px));
+      max-height: calc(100dvh - var(--gchat-bottom) - 16px);
     }
   }
 
   @media (max-width: 480px) {
     .gchat-win {
-      left: 12px; right: 12px; width: auto; bottom: 84px;
-      height: min(72dvh, calc(100dvh - 130px));
-      min-height: 400px;
+      left: 12px; right: 12px; width: auto;
+      --gchat-fab-h: 54px;
+      height: min(520px, calc(100dvh - var(--gchat-bottom) - 12px));
+      max-height: calc(100dvh - var(--gchat-bottom) - 12px);
     }
     .gchat-fab { right: 16px; bottom: 22px; width: 54px; height: 54px; font-size: 1.3rem; }
     .gc-content { max-width: min(300px, calc(100% - 38px)); }
+  }
+
+  /* Hide other floats while chat is open — prevents overlap/clipping */
+  body.gchat-open .whatsapp-float,
+  body.gchat-open #backToTop {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: scale(0.85);
+  }
+  body.gchat-open.cookie-banner-visible .gchat-win {
+    --gchat-bottom: calc(108px + var(--gchat-fab-h) + var(--gchat-fab-gap));
   }
   </style>`;
 
@@ -804,6 +823,7 @@ Feel free to return anytime.<br>
     function openChat() {
       isOpen = true;
       win.classList.add('open');
+      document.body.classList.add('gchat-open');
       fab.querySelector('i').className = 'fa-solid fa-xmark';
       const badge = $('gcBadge'); if (badge) badge.remove();
       inp.focus();
@@ -813,6 +833,7 @@ Feel free to return anytime.<br>
     function closeChat() {
       isOpen = false;
       win.classList.remove('open');
+      document.body.classList.remove('gchat-open');
       fab.querySelector('i').className = 'fa-solid fa-robot';
     }
 
