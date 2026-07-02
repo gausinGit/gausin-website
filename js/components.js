@@ -10,11 +10,13 @@
   const head = document.head;
   if (!head) return;
   [
-    { rel: 'icon', type: 'image/png', sizes: '32x32', href: 'images/favicon-32x32.png' },
-    { rel: 'icon', type: 'image/png', sizes: '16x16', href: 'images/favicon-16x16.png' },
-    { rel: 'icon', type: 'image/png', sizes: '48x48', href: 'images/favicon-48x48.png' },
-    { rel: 'apple-touch-icon', sizes: '180x180', href: 'images/apple-touch-icon.png' },
-    { rel: 'shortcut icon', href: 'favicon.ico' },
+    { rel: 'icon', href: '/favicon.ico', sizes: '48x48' },
+    { rel: 'icon', type: 'image/svg+xml', href: '/images/favicon.svg' },
+    { rel: 'icon', type: 'image/png', sizes: '48x48', href: '/images/favicon-48x48.png' },
+    { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/images/favicon-32x32.png' },
+    { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/images/favicon-16x16.png' },
+    { rel: 'apple-touch-icon', sizes: '180x180', href: '/images/apple-touch-icon.png' },
+    { rel: 'manifest', href: '/site.webmanifest' },
   ].forEach(({ rel, type, sizes, href }) => {
     const link = document.createElement('link');
     link.rel = rel;
