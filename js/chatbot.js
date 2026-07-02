@@ -247,10 +247,11 @@
     },
     {
       id: 'evaporators',
-      t: ['evaporator','falling film','forced circulation','rising film','multiple effect','mee','mvr','tvr','vapor recompression','vacuum evaporator'],
+      t: ['evaporator','falling film','forced circulation','rising film','rising film evaporator','multiple effect','multiple effect evaporator','mvr evaporator','tvr evaporator','vapor recompression','vacuum evaporator','plate type evaporator','batch evaporator'],
       r: `<strong>Evaporators</strong> — our flagship product line! 🏭<br><br>
 • <strong>Falling Film Evaporator</strong> — Low temp, energy-efficient<br>
 • <strong>Forced Circulation Evaporator</strong> — Viscous/crystallizing feeds<br>
+• <strong>Rising Film Evaporator</strong> — High throughput, ascending flow<br>
 • <strong>Multiple Effect Evaporator (MEE)</strong> — Maximum steam economy<br>
 • <strong>MVR Evaporator</strong> — 70–80% energy savings<br>
 • <strong>Plate Type Evaporator</strong> — Compact design<br>
@@ -272,7 +273,7 @@ GMP, cGMP & hygienic designs available. Capacities from lab to industrial scale.
     },
     {
       id: 'heat-exchangers',
-      t: ['heat exchanger','shell and tube','plate heat exchanger','phe','condenser','heater','cooler','heat transfer','reboiler','preheater'],
+      t: ['heat exchanger','shell and tube','plate heat exchanger','phe','condenser','heater','heat transfer','reboiler','preheater'],
       r: `<strong>Heat Exchangers</strong> we design & fabricate: 🌡️<br><br>
 • <strong>Shell & Tube</strong> — ASME Sec VIII / TEMA standards<br>
 • <strong>Plate Heat Exchanger (PHE)</strong> — High efficiency, compact<br><br>
@@ -308,7 +309,7 @@ All SS 304/316L, 3-A / PED certified, CIP compatible.`,
     },
     {
       id: 'dairy-food',
-      t: ['ghee','butter churner','khoya','crystallization','milk can conveyor','dairy food','ghee kettle','butter processing'],
+      t: ['milk ghee','ghee plant','ghee butter','ghee making','ghee','butter churner','khoya','crystallization','milk can conveyor','dairy food','ghee kettle','butter processing'],
       r: `<strong>Dairy & Food Processing Equipment</strong> 🍶<br><br>
 • Butter Churner & Butter Processing Unit<br>
 • Ghee Kettle & Industrial Ghee Making Plant<br>
@@ -320,7 +321,7 @@ Food-grade SS 304/316L, hygienic design, cGMP compliant.`,
     },
     {
       id: 'vessels',
-      t: ['pressure vessel','storage tank','silo','ss tank','ibr','asme vessel','reactor','agitator','storage silo'],
+      t: ['pressure vessel','storage tank','storage silo','ss tank','asme vessel','jacketed reactor','reactor','agitator'],
       r: `<strong>Pressure Vessels & Storage Tanks</strong> 🏗️<br><br>
 • Pressure Vessels — ASME Sec VIII Div 1 / IS:2825 / IBR certified<br>
 • SS Storage Silos — up to 5,00,000 litres<br>
@@ -345,7 +346,7 @@ PCB / CPCB compliant designs.`,
     },
     {
       id: 'tech-ai',
-      t: ['tech','tech ai','ai','software','web development','mobile app','machine learning','business automation','cloud','custom software','digital solution','website','app development','artificial intelligence','ml','web app'],
+      t: ['tech ai','tech & ai','tech ai software','artificial intelligence','machine learning','web development','mobile app','app development','business automation','custom software','digital solution','cloud solutions','web app','website development'],
       r: `<strong>Tech & AI Services</strong> 💻<br><br>
 • <strong>Web Development</strong> — Corporate sites, e-commerce, web apps<br>
 • <strong>Mobile Apps</strong> — iOS & Android, plant monitoring dashboards<br>
@@ -395,7 +396,7 @@ We handle everything from design to commissioning:<br>
     },
     {
       id: 'energy-audit',
-      t: ['energy','energy audit','mvr','tvr','heat recovery','steam economy','energy optimization','energy saving','utility'],
+      t: ['energy audit','energy optimization','energy saving','mvr retrofit','tvr retrofit','mvr upgrade','heat recovery','steam economy','utility audit','reduce energy'],
       r: `<strong>Energy Optimization & Audit</strong> ⚡<br><br>
 We help reduce plant energy costs by 40–60%:<br>
 • Thermal energy audits for existing plants<br>
@@ -408,7 +409,7 @@ We help reduce plant energy costs by 40–60%:<br>
     },
     {
       id: 'quote',
-      t: ['quote','price','cost','rate','pricing','how much','enquiry','inquiry','order','buy','purchase','quotation','offer','estimate','rate list'],
+      t: ['price quote','product quote','quote price','evaporator quote','get a quote','need a quote','want a quote','quote','quotation','price','pricing','how much','enquiry','inquiry','purchase','rate list','cost estimate'],
       r: `I'd love to help you get a quote! 📋<br><br>
 To prepare an accurate offer, our engineers need:<br>
 1️⃣ Product / equipment name<br>
@@ -421,7 +422,7 @@ Our engineers respond within <strong>24–48 hours</strong> with a detailed tech
     },
     {
       id: 'contact',
-      t: ['contact','address','location','where','phone','number','reach','office','visit','meerut','call','find you'],
+      t: ['contact us','office address','phone number','email address','where is your office','our office','contact','address','location','phone','email','reach','visit','meerut','call us','find you'],
       r: `<strong>Gausin International Engineers Pvt. Ltd.</strong> 📍<br><br>
 DH-249, Pallavpuram Phase-1,<br>
 Roorkee Road, Meerut, UP – 250110<br><br>
@@ -475,7 +476,7 @@ Serving dairy, pharma, chemical, food & energy sectors.`,
     },
     {
       id: 'technology',
-      t: ['technology','software','chemcad','htri','autocad','plc','scada','iot','automation','cnc','laser','fabrication','simulation'],
+      t: ['technology','engineering software','chemcad','htri','autocad','solidworks','plc','scada','iot','automation','cnc','laser','fabrication','simulation'],
       r: `<strong>Technology & Engineering Tools</strong> 💻<br><br>
 📐 <strong>CHEMCAD</strong> — Process simulation<br>
 🌡️ <strong>HTRI Xchanger Suite</strong> — Thermal design<br>
@@ -488,7 +489,7 @@ Serving dairy, pharma, chemical, food & energy sectors.`,
     },
     {
       id: 'career',
-      t: ['career','job','vacancy','hiring','apply','employment','opening','intern','recruitment','naukri','fresher'],
+      t: ['career','job opening','job vacancy','job application','vacancy','hiring','apply for job','employment','internship','recruitment','naukri','fresher'],
       r: `<strong>Career Opportunities at Gausin</strong> 👷<br><br>
 We're always looking for talented engineers!<br><br>
 🔹 Process / Chemical Engineers<br>
@@ -533,12 +534,29 @@ Feel free to return anytime.<br>
     const m = gc(); if (m) m.scrollTop = m.scrollHeight;
   }
 
+  function matchesKeyword(text, kw) {
+    const k = kw.toLowerCase().trim();
+    if (!k) return false;
+    if (k.includes(' ')) return text.includes(k);
+    const escaped = k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    return new RegExp('(?:^|[\\s,.!?;:\'"()\\[\\]\\-/])' + escaped + '(?:$|[\\s,.!?;:\'"()\\[\\]\\-/])').test(' ' + text + ' ');
+  }
+
   function findEntry(input) {
     const t = input.toLowerCase().trim();
+    if (!t) return null;
+    let best = null;
+    let bestLen = 0;
     for (const e of KB) {
-      if (e.t.some(kw => t.includes(kw))) return e;
+      for (const kw of e.t) {
+        if (!matchesKeyword(t, kw)) continue;
+        if (kw.length > bestLen) {
+          bestLen = kw.length;
+          best = e;
+        }
+      }
     }
-    return null;
+    return best;
   }
 
   /* ── Add user message ────────────────────────────────────── */

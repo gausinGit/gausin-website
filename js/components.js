@@ -224,86 +224,108 @@ const TOPBAR_LINKS = [
 ];
 
 const LANGUAGES = [
-  { code: 'en', label: 'English',  flag: '🇬🇧' },
-  { code: 'hi', label: 'Hindi',    flag: '🇮🇳' },
-  { code: 'fr', label: 'Français', flag: '🇫🇷' },
-  { code: 'de', label: 'Deutsch',  flag: '🇩🇪' },
-  { code: 'es', label: 'Español',  flag: '🇪🇸' },
+  { id: 'au', code: 'en', label: 'Australia', flag: '🇦🇺' },
+  { id: 'at', code: 'de', label: 'Austria', flag: '🇦🇹' },
+  { id: 'be', code: 'nl', label: 'Belgium', flag: '🇧🇪' },
+  { id: 'br', code: 'pt', label: 'Brazil', flag: '🇧🇷' },
+  { id: 'bg', code: 'bg', label: 'Bulgaria', flag: '🇧🇬' },
+  { id: 'ca-en', code: 'en', label: 'Canada (English)', flag: '🇨🇦' },
+  { id: 'ca-fr', code: 'fr', label: 'Canada (Français)', flag: '🇨🇦' },
+  { id: 'cl', code: 'es', label: 'Chile', flag: '🇨🇱' },
+  { id: 'cn', code: 'zh-CN', label: 'China Mainland', flag: '🇨🇳' },
+  { id: 'co', code: 'es', label: 'Colombia', flag: '🇨🇴' },
+  { id: 'cz', code: 'cs', label: 'Czech Republic', flag: '🇨🇿' },
+  { id: 'fr', code: 'fr', label: 'France', flag: '🇫🇷' },
+  { id: 'de', code: 'de', label: 'Germany', flag: '🇩🇪' },
+  { id: 'gr', code: 'el', label: 'Greece', flag: '🇬🇷' },
+  { id: 'hu', code: 'hu', label: 'Hungary', flag: '🇭🇺' },
+  { id: 'in', code: 'hi', label: 'India', flag: '🇮🇳' },
+  { id: 'id', code: 'id', label: 'Indonesia', flag: '🇮🇩' },
+  { id: 'it', code: 'it', label: 'Italy', flag: '🇮🇹' },
+  { id: 'jp', code: 'ja', label: 'Japan', flag: '🇯🇵' },
+  { id: 'kr', code: 'ko', label: 'Korea', flag: '🇰🇷' },
+  { id: 'lv', code: 'lv', label: 'Latvia', flag: '🇱🇻' },
+  { id: 'lt', code: 'lt', label: 'Lithuania', flag: '🇱🇹' },
+  { id: 'me', code: 'ar', label: 'Middle East', flag: '🌐' },
+  { id: 'nl', code: 'nl', label: 'Netherlands', flag: '🇳🇱' },
+  { id: 'nz', code: 'en', label: 'New Zealand', flag: '🇳🇿' },
+  { id: 'no', code: 'no', label: 'Norway', flag: '🇳🇴' },
+  { id: 'pe', code: 'es', label: 'Peru', flag: '🇵🇪' },
+  { id: 'pl', code: 'pl', label: 'Poland', flag: '🇵🇱' },
+  { id: 'ro', code: 'ro', label: 'Romania', flag: '🇷🇴' },
+  { id: 'rs', code: 'sr', label: 'Serbia', flag: '🇷🇸' },
+  { id: 'sk', code: 'sk', label: 'Slovakia', flag: '🇸🇰' },
+  { id: 'si', code: 'sl', label: 'Slovenia', flag: '🇸🇮' },
+  { id: 'za', code: 'en', label: 'South Africa', flag: '🇿🇦' },
+  { id: 'se', code: 'sv', label: 'Sweden', flag: '🇸🇪' },
+  { id: 'ch', code: 'de', label: 'Switzerland', flag: '🇨🇭' },
+  { id: 'tw', code: 'zh-TW', label: 'Taiwan, Region', flag: '🇹🇼' },
+  { id: 'th', code: 'th', label: 'Thailand', flag: '🇹🇭' },
+  { id: 'tr', code: 'tr', label: 'Türkiye', flag: '🇹🇷' },
+  { id: 'ae', code: 'ar', label: 'United Arab Emirates', flag: '🇦🇪' },
+  { id: 'gb', code: 'en', label: 'United Kingdom', flag: '🇬🇧' },
+  { id: 'us', code: 'en', label: 'United States', flag: '🇺🇸' },
+  { id: 'ua', code: 'uk', label: 'Ukraine', flag: '🇺🇦' },
 ];
 
-/* English base names — source for switcher labels */
-const LANG_EN_NAMES = {
-  en: 'English', hi: 'Hindi', fr: 'French', de: 'German', es: 'Spanish',
-};
-
-/* Hindi is the same word in English/French/Spanish — use clearer localized forms */
-const HI_LABEL_OVERRIDES = {
-  fr: 'Langue hindi',
-  de: 'Hindi-Sprache',
-  es: 'Idioma hindi',
-};
-
-function _titleCaseLatin(name) {
-  if (!name || !/^[A-Za-z]/.test(name)) return name;
-  return name.charAt(0).toUpperCase() + name.slice(1);
+function getLangCodeDisplay(code) {
+  return (code || 'en').split('-')[0].toUpperCase();
 }
 
-function getLangLabel(langCode, displayLocale) {
-  const locale = LANGUAGES.some(l => l.code === displayLocale) ? displayLocale : 'en';
-
-  if (langCode === 'hi' && HI_LABEL_OVERRIDES[locale]) {
-    return HI_LABEL_OVERRIDES[locale];
+function getActiveLangEntry() {
+  const id = localStorage.getItem('gausin_lang_id');
+  if (id) {
+    const byId = LANGUAGES.find(l => l.id === id);
+    if (byId) return byId;
   }
+  const code = localStorage.getItem('gausin_lang') || 'en';
+  return LANGUAGES.find(l => l.code === code) || LANGUAGES.find(l => l.id === 'gb') || LANGUAGES[0];
+}
 
-  if (locale === 'en') {
-    return LANG_EN_NAMES[langCode] || langCode;
-  }
+function setActiveLangEntry(entry) {
+  localStorage.setItem('gausin_lang', entry.code);
+  localStorage.setItem('gausin_lang_id', entry.id);
+}
 
-  try {
-    const name = new Intl.DisplayNames([locale], { type: 'language' }).of(langCode);
-    if (!name) return LANG_EN_NAMES[langCode] || langCode;
-    return _titleCaseLatin(name) || name;
-  } catch {
-    return LANG_EN_NAMES[langCode] || langCode;
+function syncLangSwitcherUi(entry) {
+  if (!entry) return;
+  const trigger = document.getElementById('langTrigger');
+  if (trigger) {
+    trigger.querySelector('.lang-flag').textContent = entry.flag;
+    trigger.querySelector('.lang-code').textContent = getLangCodeDisplay(entry.code);
   }
+  document.querySelectorAll('.lang-option').forEach((btn) => {
+    btn.classList.toggle('active', btn.dataset.langId === entry.id);
+  });
+  document.querySelectorAll('.mobile-lang-btn').forEach((btn) => {
+    btn.classList.toggle('active', btn.dataset.langId === entry.id);
+  });
+}
+
+function getActiveLang() {
+  return getActiveLangEntry().code;
 }
 
 function _isLangSwitcherNode(node) {
   return !!(node.parentElement && node.parentElement.closest('#langSwitcher,.mobile-lang-btns'));
 }
 
-function updateLangSwitcherLabels(displayLocale) {
-  const locale = displayLocale || getActiveLang();
-  document.querySelectorAll('.lang-option, .mobile-lang-btn').forEach((btn) => {
-    const code = btn.dataset.lang;
-    if (!code) return;
-    const text = getLangLabel(code, locale);
-    const label = btn.querySelector('.lang-label, .mobile-lang-label');
-    if (label) label.textContent = text;
-  });
-}
-
-function getActiveLang() {
-  return localStorage.getItem('gausin_lang') || 'en';
-}
-
 function buildLangSwitcher() {
-  const activeCode = getActiveLang();
-  const active = LANGUAGES.find(l => l.code === activeCode) || LANGUAGES[0];
+  const active = getActiveLangEntry();
   const items = LANGUAGES.map(l => `
-    <button class="lang-option${l.code === active.code ? ' active' : ''}" data-lang="${l.code}" type="button">
+    <button class="lang-option${l.id === active.id ? ' active' : ''}" data-lang-id="${l.id}" data-lang="${l.code}" type="button" role="option">
       <span class="lang-flag">${l.flag}</span>
-      <span class="lang-label">${getLangLabel(l.code, activeCode)}</span>
+      <span class="lang-label">${l.label}</span>
     </button>
   `).join('');
   return `
     <div class="lang-switcher notranslate" id="langSwitcher" translate="no">
-      <button class="lang-trigger" id="langTrigger" type="button" aria-haspopup="true" aria-expanded="false">
+      <button class="lang-trigger" id="langTrigger" type="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Select region or language">
         <span class="lang-flag">${active.flag}</span>
-        <span class="lang-code">${active.code.toUpperCase()}</span>
+        <span class="lang-code">${getLangCodeDisplay(active.code)}</span>
         <i class="fa-solid fa-chevron-down lang-chevron"></i>
       </button>
-      <div class="lang-dropdown" id="langDropdown" role="listbox" aria-label="Select language">
+      <div class="lang-dropdown" id="langDropdown" role="listbox" aria-label="Select region or language">
         ${items}
       </div>
     </div>
@@ -344,17 +366,16 @@ function injectTopbarMobileLinks() {
       <i class="fa-solid ${item.icon}"></i> ${item.label}
     </a>
   `).join('');
-  const activeLang = LANGUAGES.find(l => l.code === getActiveLang()) || LANGUAGES[0];
-  const activeCode = activeLang.code;
+  const activeLang = getActiveLangEntry();
   const mobileLangBtns = LANGUAGES.map(l => `
-    <button class="mobile-lang-btn${l.code === activeLang.code ? ' active' : ''}" data-lang="${l.code}" type="button">
-      <span class="mobile-lang-flag">${l.flag}</span><span class="mobile-lang-label">${getLangLabel(l.code, activeCode)}</span>
+    <button class="mobile-lang-btn${l.id === activeLang.id ? ' active' : ''}" data-lang-id="${l.id}" data-lang="${l.code}" type="button">
+      <span class="mobile-lang-flag">${l.flag}</span><span class="mobile-lang-label">${l.label}</span>
     </button>
   `).join('');
   mobileNav.insertAdjacentHTML('afterbegin', `
     <div class="mobile-topbar-links">${links}</div>
     <div class="mobile-lang-row">
-      <span class="mobile-lang-row-label"><i class="fa-solid fa-globe"></i> Language</span>
+      <span class="mobile-lang-row-label"><i class="fa-solid fa-globe"></i> Region / Language</span>
       <div class="mobile-lang-btns notranslate" translate="no">${mobileLangBtns}</div>
     </div>
   `);
@@ -1140,7 +1161,7 @@ async function _translatePageTo(lang) {
   localStorage.setItem('gausin_lang', lang);
 
   if (lang === 'en') {
-    updateLangSwitcherLabels('en');
+    syncLangSwitcherUi(getActiveLangEntry());
     return;
   }
 
@@ -1161,13 +1182,15 @@ async function _translatePageTo(lang) {
     });
   } finally {
     _trIndicator(false);
-    updateLangSwitcherLabels(lang);
+    syncLangSwitcherUi(getActiveLangEntry());
   }
 }
 
 /* Called by lang-switcher buttons */
-function applyLangChange(code) {
-  return _translatePageTo(code);
+function applyLangChange(entry) {
+  setActiveLangEntry(entry);
+  syncLangSwitcherUi(entry);
+  return _translatePageTo(entry.code);
 }
 
 /* ─── Init on DOM ready ───────────────────────────────────── */
@@ -1194,23 +1217,21 @@ function initLangSwitcher() {
   dropdown.addEventListener('click', (e) => {
     const btn = e.target.closest('.lang-option');
     if (!btn) return;
-    const code = btn.dataset.lang;
-    const lang  = LANGUAGES.find(l => l.code === code);
-    trigger.querySelector('.lang-flag').textContent = lang.flag;
-    trigger.querySelector('.lang-code').textContent = code.toUpperCase();
-    dropdown.querySelectorAll('.lang-option').forEach(b => b.classList.toggle('active', b.dataset.lang === code));
+    e.stopPropagation();
+    const entry = LANGUAGES.find(l => l.id === btn.dataset.langId);
+    if (!entry) return;
     switcher.classList.remove('open');
     trigger.setAttribute('aria-expanded', 'false');
-    applyLangChange(code);
+    applyLangChange(entry);
   });
 
   /* Mobile language buttons */
   document.addEventListener('click', (e) => {
     const btn = e.target.closest('.mobile-lang-btn');
     if (!btn) return;
-    const code = btn.dataset.lang;
-    document.querySelectorAll('.mobile-lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === code));
-    applyLangChange(code);
+    const entry = LANGUAGES.find(l => l.id === btn.dataset.langId);
+    if (!entry) return;
+    applyLangChange(entry);
   });
 }
 
@@ -1220,9 +1241,9 @@ document.addEventListener('DOMContentLoaded', () => {
   initPageTransitions();
   initLangSwitcher();
 
-  const lang = getActiveLang();
-  updateLangSwitcherLabels(lang);
-  if (lang !== 'en') _translatePageTo(lang);
+  const entry = getActiveLangEntry();
+  syncLangSwitcherUi(entry);
+  if (entry.code !== 'en') _translatePageTo(entry.code);
 
   /* Load site search + AI chatbot on all pages except admin */
   if (!window.location.pathname.includes('/admin/')) {
