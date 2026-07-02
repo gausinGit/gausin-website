@@ -1120,24 +1120,29 @@ document.head.insertAdjacentHTML('beforeend', WHATSAPP_STYLES);
    Uses translate.googleapis.com directly — no widget, no toolbar
    ─────────────────────────────────────────────────────────── */
 const _TR = {
-  cache:     {},   // 'lang|text' → translated
-  originals: [],   // [{ node, orig }] for restore
+  cache:     {},
+  originals: [],
+  attrOriginals: [],
   active:    'en',
 };
 
+const _TR_SKIP = '#langSwitcher,.mobile-lang-btns,.notranslate,[translate="no"],#gcWin,#gcFab,#gcMsgs,.gchat-win,.gchat-fab,.gchat-msgs,#google_translate_element,.topbar-link i,.site-search-btn,.site-search-panel';
+
+function _trIsSkipped(el) {
+  return !!(el && el.closest && el.closest(_TR_SKIP));
+}
+
 /* Collect translatable text nodes from the live page */
 function _trNodes() {
-  const SKIP = new Set(['SCRIPT','STYLE','NOSCRIPT','IFRAME','CODE','PRE','INPUT','TEXTAREA','SELECT']);
+  const SKIP_TAGS = new Set(['SCRIPT', 'STYLE', 'NOSCRIPT', 'IFRAME', 'CODE', 'PRE', 'INPUT', 'TEXTAREA', 'SELECT', 'SVG']);
   const nodes = [];
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
     acceptNode(node) {
       const p = node.parentElement;
-      if (!p || SKIP.has(p.tagName)) return NodeFilter.FILTER_REJECT;
-      /* Skip chatbot, lang switcher, topbar icons */
-      if (p.closest('#gchatWindow,#gchatToggle,#google_translate_element,#langSwitcher,.mobile-lang-btns,.topbar-link i'))
-        return NodeFilter.FILTER_REJECT;
-      if (!node.nodeValue.trim() || node.nodeValue.trim().length < 2)
-        return NodeFilter.FILTER_SKIP;
+      if (!p || SKIP_TAGS.has(p.tagName)) return NodeFilter.FILTER_REJECT;
+      if (_trIsSkipped(p)) return NodeFilter.FILTER_REJECT;
+      const t = node.nodeValue.trim();
+      if (!t || t.length < 2) return NodeFilter.FILTER_SKIP;
       return NodeFilter.FILTER_ACCEPT;
     },
   });
@@ -1146,27 +1151,74 @@ function _trNodes() {
   return nodes;
 }
 
-/* Fetch translations for an array of texts (batched with \n) */
-async function _trFetch(texts, lang) {
-  const uncached = [...new Set(texts)].filter(t => !_TR.cache[lang + '|' + t]);
-  if (!uncached.length) return;
+/* Translate attributes (placeholder, aria-label, title) */
+function _trAttrItems() {
+  const items = [];
+  document.querySelectorAll('[placeholder],[aria-label],[title]').forEach((el) => {
+    if (_trIsSkipped(el)) return;
+    ['placeholder', 'aria-label', 'title'].forEach((attr) => {
+      const val = el.getAttribute(attr);
+      if (val && val.trim().length >= 2) items.push({ el, attr, text: val.trim() });
+    });
+  });
+  return items;
+}
 
-  const BATCH = 40;
-  for (let i = 0; i < uncached.length; i += BATCH) {
-    const batch = uncached.slice(i, i + BATCH);
-    try {
-      const q   = encodeURIComponent(batch.join('\n'));
-      const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=${lang}&dt=t&q=${q}`;
-      const res = await fetch(url);
-      const dat = await res.json();
-      const translated = dat[0].map(s => s[0]).join('').split('\n');
-      batch.forEach((orig, j) => {
-        _TR.cache[lang + '|' + orig] = translated[j] || orig;
-      });
-    } catch (_) {
-      batch.forEach(t => { _TR.cache[lang + '|' + t] = t; });
-    }
+function _trGoogleLang(code) {
+  if (!code) return 'en';
+  const c = code.toLowerCase();
+  if (c.startsWith('zh')) return c.includes('tw') ? 'zh-TW' : 'zh-CN';
+  return code;
+}
+
+/* Fetch one translation at a time — batched join/split was breaking 1:1 mapping */
+async function _trFetchOne(text, lang) {
+  const key = lang + '|' + text;
+  if (_TR.cache[key]) return _TR.cache[key];
+  try {
+    const tl = _trGoogleLang(lang);
+    const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=${encodeURIComponent(tl)}&dt=t&q=${encodeURIComponent(text)}`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error('translate failed');
+    const dat = await res.json();
+    const tr = (dat[0] || []).map((s) => s[0]).join('') || text;
+    _TR.cache[key] = tr;
+    return tr;
+  } catch {
+    _TR.cache[key] = text;
+    return text;
   }
+}
+
+async function _trFetch(texts, lang) {
+  const unique = [...new Set(texts.filter(Boolean))];
+  const pending = unique.filter((t) => !_TR.cache[lang + '|' + t]);
+  const CONCURRENCY = 6;
+  for (let i = 0; i < pending.length; i += CONCURRENCY) {
+    await Promise.all(pending.slice(i, i + CONCURRENCY).map((t) => _trFetchOne(t, lang)));
+  }
+}
+
+function _trApplyTextNode(node, lang) {
+  const raw = node.nodeValue;
+  const trimmed = raw.trim();
+  if (!trimmed) return;
+  const tr = _TR.cache[lang + '|' + trimmed];
+  if (!tr || tr === trimmed) return;
+  _TR.originals.push({ node, orig: raw });
+  const start = raw.indexOf(trimmed);
+  node.nodeValue = raw.slice(0, start) + tr + raw.slice(start + trimmed.length);
+}
+
+function _trRestoreAll() {
+  _TR.originals.forEach(({ node, orig }) => {
+    if (node.isConnected) node.nodeValue = orig;
+  });
+  _TR.originals = [];
+  _TR.attrOriginals.forEach(({ el, attr, orig }) => {
+    if (el.isConnected) el.setAttribute(attr, orig);
+  });
+  _TR.attrOriginals = [];
 }
 
 /* Indicator removed — translation runs silently */
@@ -1174,42 +1226,51 @@ function _trIndicator() {}
 
 /* Main translate function */
 async function _translatePageTo(lang) {
-  /* Drop any cached lang-switcher nodes — labels are managed separately */
   _TR.originals = _TR.originals.filter(({ node }) => !_isLangSwitcherNode(node));
 
-  /* Restore page content to English originals */
-  _TR.originals.forEach(({ node, orig }) => {
-    if (_isLangSwitcherNode(node)) return;
-    node.nodeValue = orig;
-  });
-  _TR.originals = [];
+  _trRestoreAll();
   _TR.active = lang;
   localStorage.setItem('gausin_lang', lang);
 
   if (lang === 'en') {
     syncLangSwitcherUi(getActiveLangEntry());
+    document.documentElement.lang = 'en';
     return;
   }
 
   _trIndicator(true);
   try {
-    const nodes = _trNodes().filter(n => !_isLangSwitcherNode(n));
-    const texts  = nodes.map(n => n.nodeValue.trim());
+    const nodes = _trNodes().filter((n) => !_isLangSwitcherNode(n));
+    const texts = nodes.map((n) => n.nodeValue.trim());
+    const attrs = _trAttrItems();
 
-    await _trFetch(texts, lang);
+    await _trFetch(texts.concat(attrs.map((a) => a.text)), lang);
 
-    nodes.forEach((node, i) => {
-      const orig = texts[i];
-      const tr   = _TR.cache[lang + '|' + orig];
-      if (tr && tr !== orig) {
-        _TR.originals.push({ node, orig: node.nodeValue });
-        node.nodeValue = node.nodeValue.replace(orig, tr);
-      }
+    nodes.forEach((node) => _trApplyTextNode(node, lang));
+
+    attrs.forEach(({ el, attr, text }) => {
+      const tr = _TR.cache[lang + '|' + text];
+      if (!tr || tr === text) return;
+      _TR.attrOriginals.push({ el, attr, orig: el.getAttribute(attr) });
+      el.setAttribute(attr, tr);
     });
+
+    document.documentElement.lang = _trGoogleLang(lang);
   } finally {
     _trIndicator(false);
     syncLangSwitcherUi(getActiveLangEntry());
   }
+}
+
+let _trApplyTimer = null;
+function applyStoredLanguage() {
+  if (_trApplyTimer) clearTimeout(_trApplyTimer);
+  _trApplyTimer = setTimeout(() => {
+    _trApplyTimer = null;
+    const entry = getActiveLangEntry();
+    syncLangSwitcherUi(entry);
+    if (entry.code !== 'en') _translatePageTo(entry.code);
+  }, 250);
 }
 
 /* Called by lang-switcher buttons */
@@ -1269,19 +1330,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const entry = getActiveLangEntry();
   syncLangSwitcherUi(entry);
-  if (entry.code !== 'en') _translatePageTo(entry.code);
 
   /* Load site search + AI chatbot on all pages except admin */
   if (!window.location.pathname.includes('/admin/')) {
     const searchScript = document.createElement('script');
     searchScript.src = 'js/search.js';
     searchScript.defer = true;
-    searchScript.onload = () => injectSearchButtons();
+    searchScript.onload = () => {
+      injectSearchButtons();
+      applyStoredLanguage();
+    };
     document.body.appendChild(searchScript);
 
     const chatScript = document.createElement('script');
     chatScript.src = 'js/chatbot.js';
     chatScript.defer = true;
+    chatScript.onload = () => applyStoredLanguage();
     document.body.appendChild(chatScript);
   }
+
+  /* First pass after static DOM + injected navbar/footer */
+  applyStoredLanguage();
 });

@@ -70,7 +70,7 @@ const collisions = [
   ['product price quote', 'quote'],
   ['milk ghee plant', 'dairy-food'],
   ['milk chilling centre', 'milk-processing'],
-  ['bulk milk cooler', 'milk-processing'],
+  ['bulk milk cooler', 'dairy-food'],
   ['automation PLC chemcad', 'technology'],
   ['I need evaporator quote price', 'quote'],
   ['machine learning AI', 'tech-ai'],
@@ -95,12 +95,13 @@ const uniqueFilters = [...new Set(filterCats)].filter(f => f !== 'all');
 const kbCategories = {
   evaporators: 'evaporators',
   dryers: 'dryers',
-  'heat-exchangers': 'heat-exchangers',
-  cip: 'cip',
-  'dairy-processing': 'milk-processing',
+  'heat-transfer': 'heat-exchangers',
+  cleaning: 'cip',
+  dairy: 'milk-processing',
+  'milk-equipment': 'milk-equipment',
+  'dairy-food-equipment': 'dairy-food',
   vessels: 'vessels',
-  'dairy-food': 'dairy-food',
-  waste: 'waste',
+  'waste-management': 'waste',
   'tech-ai': 'tech-ai',
 };
 

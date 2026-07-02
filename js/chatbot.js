@@ -329,28 +329,36 @@ We design complete CIP skids for dairy, pharma & food plants:<br>
     },
     {
       id: 'milk-processing',
-      t: ['milk','pasteurizer','milk plant','dairy plant','htst','ltlt','deodorizer','mcc','milk chilling','bulk milk cooler','bmc'],
+      t: ['milk','pasteurizer','milk plant','dairy plant','htst','ltlt','deodorizer','mcc','milk chilling','uht','complete milk plant'],
       r: `<strong>Dairy Processing Equipment</strong> 🥛<br><br>
 • Milk Pasteurizer (HTST / LTLT)<br>
 • Milk Deodorizer / Vacuum De-aerator<br>
 • Complete Milk Processing Plant (Turnkey)<br>
 • Milk Chilling Centre (MCC)<br>
-• Bulk Milk Cooler (BMC)<br>
 • UHT Processing System<br><br>
 All SS 304/316L, 3-A / PED certified, CIP compatible.`,
-      q: ['Get a Quote', 'Speak to Engineer', 'View All Products']
+      q: ['Get a Quote', 'Speak to Engineer', 'View All Products', 'Milk Equipment']
+    },
+    {
+      id: 'milk-equipment',
+      t: ['milk equipment','butter churner','ghee kettle','khoya','khoya machine','mawa machine','butter making','ghee making equipment','churner'],
+      r: `<strong>Milk Equipment</strong> 🥛<br><br>
+• <strong>Butter Churner</strong> — Cream to butter, batch/continuous<br>
+• <strong>Ghee Kettle</strong> — Steam-jacketed ghee clarification<br>
+• <strong>Khoya / Mawa Making Machine</strong> — Milk solids concentration<br><br>
+Food-grade SS 304/316L, FSSAI / 3-A compliant, CIP compatible.`,
+      q: ['Get a Quote', 'Speak to Engineer', 'View All Products', 'Dairy & Food Equipment']
     },
     {
       id: 'dairy-food',
-      t: ['milk ghee','ghee plant','ghee butter','ghee making','ghee','butter churner','khoya','crystallization','milk can conveyor','dairy food','ghee kettle','butter processing'],
-      r: `<strong>Dairy & Food Processing Equipment</strong> 🍶<br><br>
-• Butter Churner & Butter Processing Unit<br>
-• Ghee Kettle & Industrial Ghee Making Plant<br>
-• Khoya / Mawa Making Machine<br>
-• Milk Can Conveyor<br>
-• Crystallization Tank (sugar/lactose)<br><br>
+      t: ['dairy food equipment','dairy and food','milk can conveyor','crystallization tank','bulk milk cooler','bmc','butter processing unit','ghee making plant','milk ghee plant'],
+      r: `<strong>Dairy & Food Plant Equipment</strong> 🍶<br><br>
+• Milk Can Conveyor — Automated can handling<br>
+• Bulk Milk Cooler (BMC) — Village collection & MCC<br>
+• Crystallization Tank — Sugar / lactose / food crystals<br>
+• Butter Processing Unit & Industrial Ghee Making Plant<br><br>
 Food-grade SS 304/316L, hygienic design, cGMP compliant.`,
-      q: ['Get a Quote', 'Speak to Engineer']
+      q: ['Get a Quote', 'Speak to Engineer', 'Milk Equipment']
     },
     {
       id: 'vessels',
@@ -396,10 +404,11 @@ PCB / CPCB compliant designs.`,
       t: ['product','products','equipment','machine','machinery','catalog','item','what do you make','kya banate','all products'],
       r: `Here's what we manufacture at Gausin: 🏭<br><br>
 🔵 <strong>Evaporators</strong> &nbsp; 🔵 <strong>Dryers</strong> &nbsp; 🔵 <strong>Heat Exchangers</strong><br>
-🔵 <strong>CIP Systems</strong> &nbsp; 🔵 <strong>Dairy Processing</strong> &nbsp; 🔵 <strong>Pressure Vessels</strong><br>
-🔵 <strong>Dairy Equipment</strong> &nbsp; 🔵 <strong>Waste Management</strong> &nbsp; 🔵 <strong>Tech & AI</strong><br><br>
+🔵 <strong>CIP Systems</strong> &nbsp; 🔵 <strong>Dairy Processing</strong> &nbsp; 🔵 <strong>Milk Equipment</strong><br>
+🔵 <strong>Dairy & Food Equipment</strong> &nbsp; 🔵 <strong>Pressure Vessels</strong> &nbsp; 🔵 <strong>Waste Management</strong><br>
+🔵 <strong>Tech & AI</strong><br><br>
 Tap any product below or ask me anything specific!`,
-      q: ['Evaporators', 'Dryers', 'Heat Exchangers', 'CIP Systems', 'Dairy Processing', 'Pressure Vessels', 'Dairy Equipment', 'Waste Management', 'Tech & AI']
+      q: ['Evaporators', 'Dryers', 'Heat Exchangers', 'CIP Systems', 'Dairy Processing', 'Milk Equipment', 'Dairy & Food Equipment', 'Pressure Vessels', 'Waste Management', 'Tech & AI']
     },
     {
       id: 'services',
@@ -722,7 +731,9 @@ Feel free to return anytime.<br>
       'CIP Systems':       () => botReply(KB.find(e=>e.id==='cip').r,            KB.find(e=>e.id==='cip').q, d),
       'Dairy Processing':  () => botReply(KB.find(e=>e.id==='milk-processing').r, KB.find(e=>e.id==='milk-processing').q, d),
       'Milk Processing':   () => botReply(KB.find(e=>e.id==='milk-processing').r, KB.find(e=>e.id==='milk-processing').q, d),
+      'Milk Equipment':    () => botReply(KB.find(e=>e.id==='milk-equipment').r, KB.find(e=>e.id==='milk-equipment').q, d),
       'Pressure Vessels':  () => botReply(KB.find(e=>e.id==='vessels').r,        KB.find(e=>e.id==='vessels').q, d),
+      'Dairy & Food Equipment': () => botReply(KB.find(e=>e.id==='dairy-food').r, KB.find(e=>e.id==='dairy-food').q, d),
       'Dairy Equipment':   () => botReply(KB.find(e=>e.id==='dairy-food').r, KB.find(e=>e.id==='dairy-food').q, d),
       'Waste Management':  () => botReply(KB.find(e=>e.id==='waste').r,      KB.find(e=>e.id==='waste').q, d),
       'Tech & AI':         () => botReply(KB.find(e=>e.id==='tech-ai').r,    KB.find(e=>e.id==='tech-ai').q, d),
