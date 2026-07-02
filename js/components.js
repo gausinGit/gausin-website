@@ -264,6 +264,8 @@ const LANGUAGES = [
   { id: 'hu', code: 'hu', label: 'Hungary', flag: '🇭🇺' },
   { id: 'in', code: 'hi', label: 'India', flag: '🇮🇳' },
   { id: 'id', code: 'id', label: 'Indonesia', flag: '🇮🇩' },
+  { id: 'my', code: 'ms', label: 'Malaysia', flag: '🇲🇾' },
+  { id: 'sg', code: 'en', label: 'Singapore', flag: '🇸🇬' },
   { id: 'it', code: 'it', label: 'Italy', flag: '🇮🇹' },
   { id: 'jp', code: 'ja', label: 'Japan', flag: '🇯🇵' },
   { id: 'kr', code: 'ko', label: 'Korea', flag: '🇰🇷' },
