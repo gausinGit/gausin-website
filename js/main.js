@@ -158,6 +158,19 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
 });
 
 /* ── Product Filter ──────────────────────────────────────── */
+function resetProductFilterDisplay() {
+  document.querySelectorAll('.filterable').forEach((item) => {
+    item.style.display = '';
+  });
+  document.querySelectorAll('.product-cat-section').forEach((section) => {
+    section.style.display = '';
+  });
+}
+
+if (document.querySelector('.filter-wrapper')) {
+  resetProductFilterDisplay();
+}
+
 document.querySelectorAll('.filter-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     const filter = btn.getAttribute('data-filter');

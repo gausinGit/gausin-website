@@ -2079,22 +2079,10 @@ select.form-control { cursor: pointer; }
 [data-aos].aos-animate { opacity: 1; transform: translate(0); }
 
 /* Clip page sections — no sideways scroll from decorative/animated elements */
-section,
 .page-hero,
 .stats-section,
-.cta-section,
-.footer {
+.cta-section {
   max-width: 100%;
-  overflow-x: clip;
-}
-@supports not (overflow-x: clip) {
-  section,
-  .page-hero,
-  .stats-section,
-  .cta-section,
-  .footer {
-    overflow-x: hidden;
-  }
 }
 
 /* ── Dividers ────────────────────────────────────────────── */
@@ -2182,9 +2170,15 @@ section,
 
   /* Inline 2-col / 3-col / 4-col grids in HTML — stack on tablet & mobile */
   [style*="grid-template-columns: 1fr 1fr"],
-  [style*="grid-template-columns:1fr 1fr"] {
+  [style*="grid-template-columns:1fr 1fr"],
+  [style*="grid-template-columns: repeat(2"],
+  [style*="grid-template-columns:repeat(2"],
+  [style*="grid-template-columns: 1fr 1.4fr"],
+  [style*="grid-template-columns:1fr 1.4fr"],
+  [style*="grid-template-columns:minmax(0,1.1fr)"],
+  [style*="grid-template-columns: minmax(0,1.1fr)"] {
     grid-template-columns: 1fr !important;
-    gap: 32px !important;
+    gap: 24px !important;
   }
   [style*="grid-template-columns:repeat(3"],
   [style*="grid-template-columns: repeat(3"],
@@ -2210,16 +2204,48 @@ section,
   [style*="right:-24px"],
   [style*="right: -24px"] { right: 12px !important; }
 
-  .grid-2, .grid-3 { grid-template-columns: 1fr; }
-  .grid-4 { grid-template-columns: 1fr; }
-  .grid-3 .card { padding: var(--space-6); }
-  .card-title {
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .grid-3 .card,
+  .grid-4 .value-card,
+  .grid-4 .tool-card,
+  .grid-4 .more-ind-card,
+  .grid-4 > [style*="padding"] {
+    padding: var(--space-6);
+  }
+  .card-title,
+  .value-title,
+  .tool-name,
+  .proc-content h4 {
     font-size: 1.0625rem;
     line-height: 1.35;
     overflow-wrap: break-word;
     word-break: normal;
   }
-  .card-desc { font-size: 0.875rem; line-height: 1.6; }
+  .card-desc,
+  .value-desc,
+  .tool-desc {
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+  .proc-step-h {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    padding: 20px;
+  }
+  .proc-num {
+    width: 44px;
+    height: 44px;
+    font-size: 1rem;
+  }
+  .service-features {
+    grid-template-columns: 1fr !important;
+  }
+  /* Content must stay visible on phones — scroll animations hide sections otherwise */
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
   .stats-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-6); }
   .clients-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .footer-top { grid-template-columns: 1fr; gap: var(--space-8); }
@@ -2278,10 +2304,8 @@ section,
   .clients-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
   /* Prevent any element from overflowing on small screens */
-  .section, .container, .page-hero, .footer { max-width: 100%; overflow-x: clip; }
+  .section, .container, .page-hero, .footer { max-width: 100%; }
   table { display: block; overflow-x: auto; width: 100%; max-width: 100%; }
-  /* Icon grids only — keep text/card grids single column on small mobile */
-  .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
 }
 
 @media (max-width: 360px) {
