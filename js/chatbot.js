@@ -32,9 +32,10 @@
   @keyframes gcFabPulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.25)} }
 
   .gchat-win {
-    position: fixed; right: 28px; bottom: 160px; z-index: 999;
-    width: 360px;
-    height: min(440px, calc(100dvh - 280px));
+    position: fixed; right: 24px; bottom: 96px; z-index: 999;
+    width: 400px;
+    height: min(600px, calc(100dvh - 200px));
+    min-height: 480px;
     background: #fff; border-radius: 22px;
     box-shadow: 0 24px 70px rgba(10,37,64,.22);
     display: flex; flex-direction: column; overflow: hidden;
@@ -48,21 +49,21 @@
   /* Header */
   .gchat-hd {
     background: linear-gradient(135deg,#0A2540,#1D4ED8);
-    padding: 13px 16px; display: flex; align-items: center; gap: 11px; flex-shrink: 0;
+    padding: 14px 18px; display: flex; align-items: center; gap: 12px; flex-shrink: 0;
   }
   .gchat-hd-logo {
-    width: 40px; height: 40px; background: #fff; border-radius: 10px;
+    width: 44px; height: 44px; background: #fff; border-radius: 10px;
     display: flex; align-items: center; justify-content: center;
     overflow: hidden; padding: 3px; flex-shrink: 0;
   }
   .gchat-hd-logo img { width: 100%; height: 100%; object-fit: contain; display: block; }
   .gchat-hd-info { flex: 1; min-width: 0; }
   .gchat-hd-name {
-    font-size: .9rem; font-weight: 700; color: #fff;
+    font-size: 1rem; font-weight: 700; color: #fff;
     font-family: 'Montserrat',sans-serif; line-height: 1.2;
   }
   .gchat-hd-sub {
-    font-size: .68rem; color: rgba(255,255,255,.65);
+    font-size: .75rem; color: rgba(255,255,255,.65);
     display: flex; align-items: center; gap: 5px; margin-top: 2px;
   }
   .gchat-hd-sub::before {
@@ -82,8 +83,8 @@
 
   /* Messages area */
   .gchat-msgs {
-    flex: 1; overflow-y: auto; padding: 14px 12px 8px;
-    display: flex; flex-direction: column; gap: 8px;
+    flex: 1; overflow-y: auto; padding: 16px 14px 10px;
+    display: flex; flex-direction: column; gap: 10px;
     background: #F8FAFC; scroll-behavior: smooth;
   }
   .gchat-msgs::-webkit-scrollbar { width: 3px; }
@@ -95,19 +96,19 @@
   .gc-row.user { flex-direction: row-reverse; }
 
   .gc-ava {
-    width: 26px; height: 26px; border-radius: 50%; flex-shrink: 0;
+    width: 30px; height: 30px; border-radius: 50%; flex-shrink: 0;
     background: linear-gradient(135deg,#1D4ED8,#0A2540);
     display: flex; align-items: center; justify-content: center;
-    color: #fff; font-size: .68rem;
+    color: #fff; font-size: .75rem;
   }
   .gc-row.user .gc-ava { background: #CBD5E1; color: #475569; }
 
-  .gc-content { display: flex; flex-direction: column; gap: 3px; max-width: 248px; }
+  .gc-content { display: flex; flex-direction: column; gap: 4px; max-width: min(320px, calc(100% - 42px)); }
   .gc-row.user .gc-content { align-items: flex-end; }
 
   .gc-bubble {
-    padding: 9px 13px; border-radius: 16px;
-    font-size: .845rem; line-height: 1.55; color: #1E293B;
+    padding: 10px 14px; border-radius: 16px;
+    font-size: .9375rem; line-height: 1.55; color: #1E293B;
     background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,.07);
     border: 1px solid #E2E8F0; word-break: break-word;
   }
@@ -149,8 +150,8 @@
   }
   .gc-chip {
     background: #fff; border: 1.5px solid #BFDBFE; color: #1D4ED8;
-    border-radius: 18px; padding: 5px 12px;
-    font-size: .775rem; font-weight: 600; cursor: pointer;
+    border-radius: 18px; padding: 6px 14px;
+    font-size: .8125rem; font-weight: 600; cursor: pointer;
     font-family: 'Montserrat',sans-serif; transition: all .18s; white-space: nowrap;
   }
   .gc-chip:hover { background: #0B5ED7; color: #fff; border-color: #0B5ED7; }
@@ -169,13 +170,13 @@
 
   /* Input bar */
   .gchat-bar {
-    padding: 10px 12px; border-top: 1px solid #F1F5F9;
-    display: flex; gap: 8px; align-items: center;
+    padding: 12px 14px; border-top: 1px solid #F1F5F9;
+    display: flex; gap: 10px; align-items: center;
     background: #fff; flex-shrink: 0;
   }
   .gchat-inp {
     flex: 1; border: 1.5px solid #E2E8F0; border-radius: 20px;
-    padding: 9px 15px; font-size: .845rem;
+    padding: 11px 16px; font-size: .9375rem;
     font-family: 'Inter',sans-serif; outline: none; resize: none;
     transition: border-color .2s; background: #F8FAFC; color: #1E293B;
     line-height: 1.4;
@@ -183,7 +184,7 @@
   .gchat-inp:focus { border-color: #3B82F6; background: #fff; }
   .gchat-inp::placeholder { color: #94A3B8; }
   .gchat-send-btn {
-    width: 36px; height: 36px; flex-shrink: 0;
+    width: 42px; height: 42px; flex-shrink: 0;
     background: linear-gradient(135deg,#0B5ED7,#1E3A8A);
     border: none; border-radius: 50%; color: #fff; cursor: pointer;
     display: flex; align-items: center; justify-content: center;
@@ -199,10 +200,23 @@
     background: #fff; flex-shrink: 0;
   }
 
+  @media (max-width: 768px) {
+    .gchat-win {
+      right: 16px; left: 16px; width: auto;
+      height: min(560px, calc(100dvh - 160px));
+      min-height: 420px;
+      bottom: 88px;
+    }
+  }
+
   @media (max-width: 480px) {
-    .gchat-win { left: 10px; right: 10px; width: auto; bottom: 150px;
-      height: min(400px, calc(100dvh - 270px)); }
-    .gchat-fab { right: 16px; bottom: 22px; width: 50px; height: 50px; font-size: 1.25rem; }
+    .gchat-win {
+      left: 12px; right: 12px; width: auto; bottom: 84px;
+      height: min(72dvh, calc(100dvh - 130px));
+      min-height: 400px;
+    }
+    .gchat-fab { right: 16px; bottom: 22px; width: 54px; height: 54px; font-size: 1.3rem; }
+    .gc-content { max-width: min(300px, calc(100% - 38px)); }
   }
   </style>`;
 
