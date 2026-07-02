@@ -2212,6 +2212,14 @@ section,
 
   .grid-2, .grid-3 { grid-template-columns: 1fr; }
   .grid-4 { grid-template-columns: 1fr; }
+  .grid-3 .card { padding: var(--space-6); }
+  .card-title {
+    font-size: 1.0625rem;
+    line-height: 1.35;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+  .card-desc { font-size: 0.875rem; line-height: 1.6; }
   .stats-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-6); }
   .clients-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .footer-top { grid-template-columns: 1fr; gap: var(--space-8); }
@@ -2272,8 +2280,8 @@ section,
   /* Prevent any element from overflowing on small screens */
   .section, .container, .page-hero, .footer { max-width: 100%; overflow-x: clip; }
   table { display: block; overflow-x: auto; width: 100%; max-width: 100%; }
-  /* Industries / icon grids — 2 col on small mobile */
-  .grid-4, .grid-3 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  /* Icon grids only — keep text/card grids single column on small mobile */
+  .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
 }
 
 @media (max-width: 360px) {
