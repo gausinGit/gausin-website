@@ -664,13 +664,21 @@ function injectSearchButtons() {
 
   const toggle = document.getElementById('navbarToggle');
   if (toggle && !document.getElementById('siteSearchBtnHeader')) {
+    let actionsWrap = toggle.closest('.navbar-mobile-actions');
+    if (!actionsWrap) {
+      actionsWrap = document.createElement('div');
+      actionsWrap.className = 'navbar-mobile-actions';
+      toggle.parentNode.insertBefore(actionsWrap, toggle);
+      actionsWrap.appendChild(toggle);
+    }
+
     const headerBtn = document.createElement('button');
     headerBtn.type = 'button';
     headerBtn.className = 'site-search-btn site-search-btn--header-mobile';
     headerBtn.id = 'siteSearchBtnHeader';
     headerBtn.setAttribute('aria-label', 'Search site');
     headerBtn.innerHTML = '<i class="fa-solid fa-magnifying-glass"></i>';
-    toggle.parentNode.insertBefore(headerBtn, toggle);
+    actionsWrap.insertBefore(headerBtn, toggle);
   }
 }
 
