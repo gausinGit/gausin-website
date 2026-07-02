@@ -5,6 +5,27 @@
 
 'use strict';
 
+(function injectFavicon() {
+  if (document.querySelector('link[data-gausin-favicon]')) return;
+  const head = document.head;
+  if (!head) return;
+  [
+    { rel: 'icon', type: 'image/png', sizes: '32x32', href: 'images/favicon-32x32.png' },
+    { rel: 'icon', type: 'image/png', sizes: '16x16', href: 'images/favicon-16x16.png' },
+    { rel: 'icon', type: 'image/png', sizes: '48x48', href: 'images/favicon-48x48.png' },
+    { rel: 'apple-touch-icon', sizes: '180x180', href: 'images/apple-touch-icon.png' },
+    { rel: 'shortcut icon', href: 'favicon.ico' },
+  ].forEach(({ rel, type, sizes, href }) => {
+    const link = document.createElement('link');
+    link.rel = rel;
+    if (type) link.type = type;
+    if (sizes) link.sizes = sizes;
+    link.href = href;
+    link.setAttribute('data-gausin-favicon', '1');
+    head.appendChild(link);
+  });
+})();
+
 const SEARCH_ICON_SVG = '<svg class="site-search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><line x1="16.65" y1="16.65" x2="21" y2="21"></line></svg>';
 
 /* ─── Social profile URLs ─────────────────────────────────── */
