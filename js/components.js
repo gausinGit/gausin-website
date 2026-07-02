@@ -5,6 +5,8 @@
 
 'use strict';
 
+const SEARCH_ICON_SVG = '<svg class="site-search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><line x1="16.65" y1="16.65" x2="21" y2="21"></line></svg>';
+
 /* ─── Social profile URLs ─────────────────────────────────── */
 const SOCIAL_LINKS = {
   linkedin: 'https://www.linkedin.com/company/gausin-international-engineers-pvt-ltd',
@@ -426,8 +428,7 @@ const NAVBAR_HTML = `
 
       <div class="navbar-cta">
         <button type="button" class="site-search-btn" id="siteSearchBtn" aria-label="Search site" title="Search (Ctrl+K)">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <span class="site-search-btn-text">Search</span>
+          ${SEARCH_ICON_SVG}
         </button>
         <a href="contact.html" class="btn btn-primary btn-sm">
           <i class="fa-solid fa-paper-plane"></i> Get a Quote
@@ -640,7 +641,7 @@ function injectSearchButtons() {
     btn.id = 'siteSearchBtn';
     btn.setAttribute('aria-label', 'Search site');
     btn.title = 'Search (Ctrl+K)';
-    btn.innerHTML = '<i class="fa-solid fa-magnifying-glass"></i><span class="site-search-btn-text">Search</span>';
+    btn.innerHTML = SEARCH_ICON_SVG;
     cta.insertBefore(btn, cta.firstChild);
   }
 
@@ -658,12 +659,8 @@ function injectSearchButtons() {
     }
   }
 
-  if (typeof window.initSiteSearch === 'function') {
-    window.initSiteSearch();
-  }
-
   const toggle = document.getElementById('navbarToggle');
-  if (toggle && !document.getElementById('siteSearchBtnHeader')) {
+  if (toggle) {
     let actionsWrap = toggle.closest('.navbar-mobile-actions');
     if (!actionsWrap) {
       actionsWrap = document.createElement('div');
@@ -672,13 +669,19 @@ function injectSearchButtons() {
       actionsWrap.appendChild(toggle);
     }
 
-    const headerBtn = document.createElement('button');
-    headerBtn.type = 'button';
-    headerBtn.className = 'site-search-btn site-search-btn--header-mobile';
-    headerBtn.id = 'siteSearchBtnHeader';
-    headerBtn.setAttribute('aria-label', 'Search site');
-    headerBtn.innerHTML = '<i class="fa-solid fa-magnifying-glass"></i>';
-    actionsWrap.insertBefore(headerBtn, toggle);
+    if (!document.getElementById('siteSearchBtnHeader')) {
+      const headerBtn = document.createElement('button');
+      headerBtn.type = 'button';
+      headerBtn.className = 'site-search-btn site-search-btn--header-mobile';
+      headerBtn.id = 'siteSearchBtnHeader';
+      headerBtn.setAttribute('aria-label', 'Search site');
+      headerBtn.innerHTML = SEARCH_ICON_SVG;
+      actionsWrap.insertBefore(headerBtn, toggle);
+    }
+  }
+
+  if (typeof window.initSiteSearch === 'function') {
+    window.initSiteSearch();
   }
 }
 
