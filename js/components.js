@@ -271,7 +271,7 @@ const LANGUAGES = [
   { id: 'kr', code: 'ko', label: 'Korea', flag: '🇰🇷' },
   { id: 'lv', code: 'lv', label: 'Latvia', flag: '🇱🇻' },
   { id: 'lt', code: 'lt', label: 'Lithuania', flag: '🇱🇹' },
-  { id: 'me', code: 'ar', label: 'Middle East', flag: '🌐' },
+  { id: 'me', code: 'ar', label: 'Middle East', flag: 'ME' },
   { id: 'nl', code: 'nl', label: 'Netherlands', flag: '🇳🇱' },
   { id: 'nz', code: 'en', label: 'New Zealand', flag: '🇳🇿' },
   { id: 'no', code: 'no', label: 'Norway', flag: '🇳🇴' },
@@ -297,6 +297,11 @@ function getLangCodeDisplay(code) {
   return (code || 'en').split('-')[0].toUpperCase();
 }
 
+function getLangRegionDisplay(entry) {
+  if (!entry) return '';
+  return (entry.id || '').split('-')[0].toUpperCase();
+}
+
 function getActiveLangEntry() {
   const id = localStorage.getItem('gausin_lang_id');
   if (id) {
@@ -316,7 +321,7 @@ function syncLangSwitcherUi(entry) {
   if (!entry) return;
   const trigger = document.getElementById('langTrigger');
   if (trigger) {
-    trigger.querySelector('.lang-flag').textContent = entry.flag;
+    trigger.querySelector('.lang-flag').textContent = getLangRegionDisplay(entry);
     trigger.querySelector('.lang-code').textContent = getLangCodeDisplay(entry.code);
   }
   document.querySelectorAll('.lang-option').forEach((btn) => {
@@ -339,14 +344,14 @@ function buildLangSwitcher() {
   const active = getActiveLangEntry();
   const items = LANGUAGES.map(l => `
     <button class="lang-option${l.id === active.id ? ' active' : ''}" data-lang-id="${l.id}" data-lang="${l.code}" type="button" role="option">
-      <span class="lang-flag">${l.flag}</span>
+      <span class="lang-flag">${getLangRegionDisplay(l)}</span>
       <span class="lang-label">${l.label}</span>
     </button>
   `).join('');
   return `
     <div class="lang-switcher notranslate" id="langSwitcher" translate="no">
       <button class="lang-trigger" id="langTrigger" type="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Select region or language">
-        <span class="lang-flag">${active.flag}</span>
+        <span class="lang-flag">${getLangRegionDisplay(active)}</span>
         <span class="lang-code">${getLangCodeDisplay(active.code)}</span>
         <i class="fa-solid fa-chevron-down lang-chevron"></i>
       </button>
@@ -394,7 +399,7 @@ function injectTopbarMobileLinks() {
   const activeLang = getActiveLangEntry();
   const mobileLangBtns = LANGUAGES.map(l => `
     <button class="mobile-lang-btn${l.id === activeLang.id ? ' active' : ''}" data-lang-id="${l.id}" data-lang="${l.code}" type="button">
-      <span class="mobile-lang-flag">${l.flag}</span><span class="mobile-lang-label">${l.label}</span>
+      <span class="mobile-lang-flag">${getLangRegionDisplay(l)}</span><span class="mobile-lang-label">${l.label}</span>
     </button>
   `).join('');
   mobileNav.insertAdjacentHTML('afterbegin', `
