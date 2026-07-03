@@ -20,7 +20,7 @@
     .ind-hero-card {
       position: relative; border-radius: 24px; overflow: hidden;
       min-height: 360px; display: flex; align-items: flex-end;
-      cursor: pointer; transition: transform 0.35s ease;
+      cursor: pointer; transition: transform 0.35s ease; grid-column: span 2;
     }
     .ind-hero-card:hover { transform: scale(1.01); }
     .ind-card {
@@ -135,7 +135,7 @@
       <p class="section-desc">Specialized process solutions for each sector's unique requirements  -  customized engineering, hygienic design, and regulatory compliance.</p>
     </div>
 
-    <div class="ind-visual-grid" data-aos="fade-up" data-aos-delay="100">
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;" data-aos="fade-up" data-aos-delay="100">
 
       <!-- Dairy - Featured -->
       <div class="ind-hero-card">

@@ -46,7 +46,7 @@
     /* ── Featured Card ── */
     .ins-featured {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1.2fr;
       gap: 0;
       background: white;
       border: 1px solid var(--gray-200);
@@ -90,7 +90,7 @@
     /* ── Insight Grid ── */
     .ins-grid {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(3, 1fr);
       gap: 24px;
       margin-bottom: 40px;
     }
@@ -283,6 +283,22 @@
   </style>
 </head>
 <body>
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo navbar-logo--image"><img src="images/gausin-logo.png" alt="Gausin International Engineers Pvt. Ltd." class="logo-img" width="220" height="52"></a>
+      <nav class="navbar-nav">
+        <div class="nav-item"><a href="index.html" class="nav-link">Home</a></div>
+        <div class="nav-item"><a href="about.html" class="nav-link">About</a></div>
+        <div class="nav-item"><a href="products.html" class="nav-link">Products</a></div>
+        <div class="nav-item"><a href="services.html" class="nav-link">Services</a></div>
+        <div class="nav-item"><a href="contact.html" class="nav-link">Contact</a></div>
+      </nav>
+      <div class="navbar-cta"><a href="contact.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Get a Quote</a></div>
+      <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle menu"><span class="toggle-bar"></span><span class="toggle-bar"></span><span class="toggle-bar"></span></button>
+    </div>
+  </div>
+</nav>
 
 <section class="page-hero page-hero--default">
   <div class="container page-hero-content">
