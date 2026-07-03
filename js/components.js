@@ -281,7 +281,10 @@ const LANGUAGES = [
   { id: 'rs', code: 'sr', label: 'Serbia', flag: '🇷🇸' },
   { id: 'sk', code: 'sk', label: 'Slovakia', flag: '🇸🇰' },
   { id: 'si', code: 'sl', label: 'Slovenia', flag: '🇸🇮' },
-  { id: 'za', code: 'en', label: 'South Africa', flag: '🇿🇦' },
+  { id: 'ea', code: 'sw', label: 'East Africa', flag: 'EA' },
+  { id: 'na', code: 'ar', label: 'North Africa', flag: 'NA' },
+  { id: 'za', code: 'en', label: 'South Africa', flag: 'ZA' },
+  { id: 'wa', code: 'fr', label: 'West Africa', flag: 'WA' },
   { id: 'se', code: 'sv', label: 'Sweden', flag: '🇸🇪' },
   { id: 'ch', code: 'de', label: 'Switzerland', flag: '🇨🇭' },
   { id: 'tw', code: 'zh-TW', label: 'Taiwan, Region', flag: '🇹🇼' },
@@ -1139,18 +1142,23 @@ const _TR = {
 const _TR_SKIP = '#langSwitcher,.mobile-lang-btns,.notranslate,[translate="no"],#google_translate_element,.topbar-link i';
 
 const _TR_BLOCK_SEL = [
-  '.hero-title', '.hero-desc', '.hero-badge', '.hero-stat-label',
-  '.section-title', '.section-subtitle', '.section-desc',
-  '.card-title', '.card-desc', '.check-item',
+  '.hero-desc', '.hero-badge', '.hero-stat-label',
+  '.section-desc', '.section-subtitle',
+  '.card-title', '.card-desc',
   '.industry-card-title', '.industry-card-desc',
   '.fp-title', '.fp-desc', '.footer-brand-desc', '.footer-title',
   '.logo-name', '.logo-tagline',
   '.mega-menu-item-title', '.mega-menu-item-desc',
-  '.announce-bar', '#cookieBanner',
-  '.gchat-hd-name', '.gchat-hd-sub', '.gchat-foot', '.gc-bubble', '.gc-chip', '.gc-divider',
+  '.gchat-hd-name', '.gchat-hd-sub', '.gchat-foot', '.gc-chip', '.gc-divider',
   '.site-search-empty p', '.site-search-footer',
   '.site-search-result-title', '.site-search-result-meta',
 ].join(',');
+
+/* Only block-translate plain text containers — skip if HTML children exist */
+function _trCanBlockTranslate(el) {
+  if (!el) return false;
+  return el.children.length === 0;
+}
 
 function _trIsSkipped(el) {
   return !!(el && el.closest && el.closest(_TR_SKIP));
@@ -1200,7 +1208,6 @@ function _trPost(text) {
 }
 
 function _trBlockText(el) {
-  if (el.classList.contains('gc-bubble')) return el.innerHTML.trim();
   return el.textContent.trim();
 }
 
@@ -1209,6 +1216,7 @@ function _trBlockElements(root) {
   const els = [];
   scope.querySelectorAll(_TR_BLOCK_SEL).forEach((el) => {
     if (_trIsSkipped(el)) return;
+    if (!_trCanBlockTranslate(el)) return;
     els.push(el);
   });
   return els;
@@ -1319,19 +1327,18 @@ function _trRestoreAll() {
 
 function _trApplyBlocks(blockEls, lang) {
   blockEls.forEach((el) => {
+    if (!_trCanBlockTranslate(el)) return;
     const raw = _trBlockText(el);
     if (!raw || raw.length < 2) return;
     const tr = _TR.cache[lang + '|' + raw];
     if (!tr || tr === raw) return;
-    const isHtml = el.classList.contains('gc-bubble');
     _TR.blockOriginals.push({
       el,
-      orig: isHtml ? el.innerHTML : el.textContent,
-      mode: isHtml ? 'html' : 'text',
+      orig: el.textContent,
+      mode: 'text',
     });
     el.setAttribute('data-tr-block', '1');
-    if (isHtml) el.innerHTML = tr;
-    else el.textContent = tr;
+    el.textContent = tr;
   });
 }
 
