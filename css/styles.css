@@ -209,51 +209,6 @@ h6 { font-size: 1rem; }
   font-size: 1.0625rem;
   color: var(--gray-600);
   line-height: 1.75;
-  text-align: justify;
-  text-align-last: left;
-  hyphens: auto;
-}
-
-/* Justified body copy — flush left & right (no ragged/unbalanced edge) */
-.section-subtitle,
-.card-desc,
-.page-hero-desc,
-.hero-desc,
-.job-desc,
-.job-qual,
-.job-list li,
-.ins-excerpt,
-.news-excerpt,
-.dl-card-desc,
-.ind-desc,
-.prod-desc,
-.prod-tagline,
-.service-desc,
-.product-card-desc,
-.industry-card-desc,
-.tech-card-desc,
-.footer-brand-desc,
-.tool-desc,
-.fab-desc,
-.adv-desc,
-.related-desc,
-.check-item,
-.prod-tab-pane p,
-.ins-featured-body p,
-.news-featured-body p,
-.dl-featured-body > p,
-.dl-cta p,
-.ins-cta p,
-.service-card-body .service-desc,
-.ind-detail-col p,
-.legal-content p,
-.privacy-body p,
-.form-success-desc,
-.step-desc,
-.process-step p {
-  text-align: justify;
-  text-align-last: left;
-  hyphens: auto;
 }
 
 /* Grid Layouts */
