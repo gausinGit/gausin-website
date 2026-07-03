@@ -312,6 +312,8 @@ function bindSearchTriggers() {
       openSearch();
       document.getElementById('mobileNav')?.classList.remove('open');
       document.getElementById('navbarToggle')?.classList.remove('open');
+      document.body.classList.remove('nav-open');
+      document.body.style.overflow = '';
     });
   });
 }

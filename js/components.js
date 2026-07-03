@@ -991,20 +991,22 @@ const WHATSAPP_STYLES = `
   }
 
   .mobile-topbar-links {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 8px;
     margin-bottom: 16px;
     padding-bottom: 16px;
     border-bottom: 1px solid var(--gray-200);
+    max-width: 100%;
   }
   .mobile-topbar-link {
-    flex: 1;
+    flex: none;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 6px;
     padding: 10px 8px;
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     font-weight: 700;
     color: var(--gray-700);
     background: var(--gray-50);
@@ -1013,6 +1015,8 @@ const WHATSAPP_STYLES = `
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.03em;
+    min-width: 0;
+    max-width: 100%;
   }
   .mobile-topbar-link.active {
     color: var(--blue-600);

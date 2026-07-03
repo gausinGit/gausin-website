@@ -16,6 +16,7 @@ function getMobileNav() {
 function closeMobileNav() {
   navbarToggle?.classList.remove('open');
   getMobileNav()?.classList.remove('open');
+  document.body.classList.remove('nav-open');
   document.body.style.overflow = '';
 }
 
@@ -31,9 +32,11 @@ window.addEventListener('scroll', () => {
 // Mobile toggle (mobileNav may be injected after this script by components.js)
 navbarToggle?.addEventListener('click', () => {
   const mobileNav = getMobileNav();
-  navbarToggle.classList.toggle('open');
-  mobileNav?.classList.toggle('open');
-  document.body.style.overflow = mobileNav?.classList.contains('open') ? 'hidden' : '';
+  const isOpen = !mobileNav?.classList.contains('open');
+  navbarToggle.classList.toggle('open', isOpen);
+  mobileNav?.classList.toggle('open', isOpen);
+  document.body.classList.toggle('nav-open', isOpen);
+  document.body.style.overflow = isOpen ? 'hidden' : '';
 });
 
 // Mobile sub-menu toggles (delegated — works for dynamically injected accordions)
