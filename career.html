@@ -123,6 +123,15 @@
  @media (max-width: 768px) {
  .jobs-grid { grid-template-columns: 1fr; }
  }
+ .page-hero-desc,
+ .section-desc,
+ .section-subtitle,
+ .job-desc,
+ .job-note-desc {
+ text-align: justify;
+ text-justify: inter-word;
+ hyphens: auto;
+ }
  </style>
 </head>
 <body>
@@ -369,7 +378,7 @@
 
  <div style="text-align:center;margin-top:48px;padding:32px;background:white;border:1px solid var(--gray-200);border-radius:16px;" data-aos="fade-up">
  <h3 style="font-size:1.125rem;font-weight:800;color:var(--gray-900);font-family:'Montserrat',sans-serif;margin-bottom:10px;">Don't see your role?</h3>
- <p style="color:var(--gray-600);line-height:1.7;margin-bottom:20px;max-width:520px;margin-left:auto;margin-right:auto;">Send your resume with your area of expertise. We review all applications and contact suitable candidates.</p>
+ <p class="job-note-desc" style="color:var(--gray-600);line-height:1.7;margin-bottom:20px;max-width:520px;margin-left:auto;margin-right:auto;">Send your resume with your area of expertise. We review all applications and contact suitable candidates.</p>
  <button class="btn btn-primary apply-now-btn" data-role="Other / General Application"><i class="fa-solid fa-envelope"></i> Apply Now</button>
  </div>
  </div>
