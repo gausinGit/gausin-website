@@ -323,7 +323,7 @@ h6 { font-size: 1rem; }
   height: var(--topbar-height);
   max-width: 100%;
   width: 100%;
-  overflow: hidden;
+  overflow: visible;
   background: linear-gradient(90deg, var(--blue-950, #061a2e), var(--blue-900));
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -334,7 +334,7 @@ h6 { font-size: 1rem; }
   height: 100%;
   margin: 0 auto;
   padding: 0 var(--space-6);
-  overflow: hidden;
+  overflow: visible;
 }
 
 .topbar-inner {
@@ -348,8 +348,6 @@ h6 { font-size: 1rem; }
   display: flex;
   align-items: stretch;
   height: 100%;
-  min-width: 0;
-  flex: 1 1 auto;
 }
 
 .topbar-link {
@@ -365,8 +363,7 @@ h6 { font-size: 1rem; }
   text-transform: uppercase;
   transition: color 0.2s ease, background 0.2s ease;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
-  flex-shrink: 1;
-  min-width: 0;
+  flex-shrink: 0;
   white-space: nowrap;
 }
 
@@ -438,7 +435,7 @@ h6 { font-size: 1rem; }
   border: 1px solid var(--gray-200);
   border-radius: 12px;
   box-shadow: 0 16px 40px rgba(10,37,64,0.18);
-  min-width: 0;
+  min-width: 680px;
   width: min(680px, calc(100vw - 24px));
   max-width: calc(100vw - 24px);
   max-height: 380px;
@@ -2250,7 +2247,10 @@ select.form-control { cursor: pointer; }
   .site-search-btn--header-mobile { display: inline-flex; }
   .mobile-nav { display: block; top: var(--navbar-height); }
 
-  /* Topbar: keep all 4 links + language — compact fit, no page horizontal scroll */
+  /* Topbar mobile: compact 4 links + language, no page horizontal scroll */
+  .topbar {
+    overflow-x: clip;
+  }
   .topbar-inner {
     width: 100%;
     min-width: 0;
@@ -2264,11 +2264,13 @@ select.form-control { cursor: pointer; }
   }
   .topbar-link {
     flex: 1 1 0;
+    min-width: 0;
     justify-content: center;
     padding: 0 4px;
     font-size: 0.58rem;
     letter-spacing: 0.03em;
     gap: 3px;
+    flex-shrink: 1;
   }
   .topbar-link i { display: none; }
   .lang-switcher { flex-shrink: 0; }
@@ -2454,6 +2456,7 @@ select.form-control { cursor: pointer; }
 
 @media (max-width: 1100px) {
   .lang-dropdown {
+    min-width: 0;
     width: min(420px, calc(100vw - 24px));
     max-width: calc(100vw - 24px);
     grid-template-columns: repeat(2, minmax(0, 1fr));
