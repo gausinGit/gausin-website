@@ -305,6 +305,43 @@ function getLangRegionDisplay(entry) {
   return (entry.id || '').split('-')[0].toUpperCase();
 }
 
+const LANG_FLAG_TEXT_ONLY = new Set(['me', 'ea', 'na', 'wa']);
+
+function getLangFlagIso(entry) {
+  if (!entry?.id) return '';
+  const iso = entry.id.split('-')[0].toLowerCase();
+  return LANG_FLAG_TEXT_ONLY.has(iso) ? '' : iso;
+}
+
+function renderLangFlagHtml(entry) {
+  const iso = getLangFlagIso(entry);
+  if (iso) return `<span class="lang-flag fi fi-${iso}" aria-hidden="true"></span>`;
+  return `<span class="lang-flag lang-flag--text">${getLangRegionDisplay(entry)}</span>`;
+}
+
+function applyLangFlagEl(el, entry) {
+  if (!el || !entry) return;
+  const iso = getLangFlagIso(entry);
+  if (iso) {
+    el.className = `lang-flag fi fi-${iso}`;
+    el.textContent = '';
+    el.setAttribute('aria-hidden', 'true');
+  } else {
+    el.className = 'lang-flag lang-flag--text';
+    el.removeAttribute('aria-hidden');
+    el.textContent = getLangRegionDisplay(entry);
+  }
+}
+
+function ensureFlagIcons() {
+  if (document.getElementById('flag-icons-css')) return;
+  const link = document.createElement('link');
+  link.id = 'flag-icons-css';
+  link.rel = 'stylesheet';
+  link.href = 'https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css';
+  document.head.appendChild(link);
+}
+
 function getActiveLangEntry() {
   const id = localStorage.getItem('gausin_lang_id');
   if (id) {
@@ -324,13 +361,10 @@ function syncLangSwitcherUi(entry) {
   if (!entry) return;
   const trigger = document.getElementById('langTrigger');
   if (trigger) {
-    trigger.querySelector('.lang-flag').textContent = getLangRegionDisplay(entry);
+    applyLangFlagEl(trigger.querySelector('.lang-flag'), entry);
     trigger.querySelector('.lang-code').textContent = getLangCodeDisplay(entry.code);
   }
   document.querySelectorAll('.lang-option').forEach((btn) => {
-    btn.classList.toggle('active', btn.dataset.langId === entry.id);
-  });
-  document.querySelectorAll('.mobile-lang-btn').forEach((btn) => {
     btn.classList.toggle('active', btn.dataset.langId === entry.id);
   });
 }
@@ -347,14 +381,14 @@ function buildLangSwitcher() {
   const active = getActiveLangEntry();
   const items = LANGUAGES.map(l => `
     <button class="lang-option${l.id === active.id ? ' active' : ''}" data-lang-id="${l.id}" data-lang="${l.code}" type="button" role="option">
-      <span class="lang-flag">${getLangRegionDisplay(l)}</span>
+      ${renderLangFlagHtml(l)}
       <span class="lang-label">${l.label}</span>
     </button>
   `).join('');
   return `
     <div class="lang-switcher notranslate" id="langSwitcher" translate="no">
       <button class="lang-trigger" id="langTrigger" type="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Select region or language">
-        <span class="lang-flag">${getLangRegionDisplay(active)}</span>
+        ${renderLangFlagHtml(active)}
         <span class="lang-code">${getLangCodeDisplay(active.code)}</span>
         <i class="fa-solid fa-chevron-down lang-chevron"></i>
       </button>
@@ -391,28 +425,8 @@ function injectTopbar() {
   navbar.parentNode.insertBefore(wrapper.firstElementChild, navbar);
 }
 
-function injectTopbarMobileLinks() {
-  const mobileNav = document.getElementById('mobileNav');
-  if (!mobileNav || mobileNav.querySelector('.mobile-topbar-links')) return;
-  const links = TOPBAR_LINKS.map((item) => `
-    <a href="${item.href}" class="mobile-topbar-link${_page === item.href ? ' active' : ''}">
-      <i class="fa-solid ${item.icon}"></i> ${item.label}
-    </a>
-  `).join('');
-  const activeLang = getActiveLangEntry();
-  const mobileLangBtns = LANGUAGES.map(l => `
-    <button class="mobile-lang-btn${l.id === activeLang.id ? ' active' : ''}" data-lang-id="${l.id}" data-lang="${l.code}" type="button">
-      <span class="mobile-lang-flag">${getLangRegionDisplay(l)}</span><span class="mobile-lang-label">${l.label}</span>
-    </button>
-  `).join('');
-  mobileNav.insertAdjacentHTML('afterbegin', `
-    <div class="mobile-topbar-links">${links}</div>
-    <div class="mobile-lang-row">
-      <span class="mobile-lang-row-label"><i class="fa-solid fa-globe"></i> Region / Language</span>
-      <div class="mobile-lang-btns notranslate" translate="no">${mobileLangBtns}</div>
-    </div>
-  `);
-}
+/* Topbar links + language live in the fixed topbar on all screen sizes — no duplicate mobile menu block. */
+function injectTopbarMobileLinks() {}
 
 /* ─── Navbar HTML ─────────────────────────────────────────── */
 const NAVBAR_HTML = `
@@ -826,6 +840,8 @@ function fixSocialLinks() {
 
 /* ─── Inject all components ───────────────────────────────── */
 function injectComponents() {
+  ensureFlagIcons();
+
   // Navbar (only if not already present from inline HTML)
   if (!document.getElementById('navbar')) {
     const navWrapper = document.createElement('div');
@@ -1514,14 +1530,6 @@ function initLangSwitcher() {
     applyLangChange(entry);
   });
 
-  /* Mobile language buttons */
-  document.addEventListener('click', (e) => {
-    const btn = e.target.closest('.mobile-lang-btn');
-    if (!btn) return;
-    const entry = LANGUAGES.find(l => l.id === btn.dataset.langId);
-    if (!entry) return;
-    applyLangChange(entry);
-  });
 }
 
 document.addEventListener('DOMContentLoaded', () => {

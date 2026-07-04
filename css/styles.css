@@ -415,8 +415,42 @@ h6 { font-size: 1rem; }
   background: rgba(255,255,255,0.08);
 }
 
-.lang-flag { font-size: 0.6875rem; font-weight: 700; line-height: 1; letter-spacing: 0.04em; min-width: 1.35rem; }
-.lang-option .lang-flag { font-size: 0.6875rem; flex-shrink: 0; font-weight: 700; color: var(--gray-500); }
+.lang-flag {
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.lang-flag.fi {
+  width: 1.15rem;
+  height: 0.85rem;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.lang-trigger .lang-flag.fi {
+  width: 1.05rem;
+  height: 0.78rem;
+}
+
+.lang-option .lang-flag.fi {
+  width: 1.2rem;
+  height: 0.88rem;
+}
+
+.lang-flag--text {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  min-width: 1.35rem;
+  color: var(--gray-500);
+}
+
+.lang-trigger .lang-flag--text {
+  color: rgba(255, 255, 255, 0.9);
+}
 .lang-code { font-size: 0.625rem; }
 
 .lang-chevron {
@@ -2247,9 +2281,15 @@ select.form-control { cursor: pointer; }
   .site-search-btn--header-mobile { display: inline-flex; }
   .mobile-nav { display: block; top: var(--navbar-height); }
 
-  /* Topbar mobile: compact 4 links + language, no page horizontal scroll */
+  /* Topbar mobile: compact 4 links + language; keep overflow visible so lang dropdown is not clipped */
   .topbar {
-    overflow-x: clip;
+    overflow: visible;
+  }
+  .topbar .container {
+    overflow: visible;
+  }
+  .lang-switcher {
+    overflow: visible;
   }
   .topbar-inner {
     width: 100%;
@@ -2437,8 +2477,8 @@ select.form-control { cursor: pointer; }
   .stats-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .clients-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
-  /* Prevent any element from overflowing on small screens */
-  .section, .container, .page-hero, .footer, .navbar, .topbar, .mobile-nav { max-width: 100%; overflow-x: hidden; }
+  /* Prevent any element from overflowing on small screens (topbar excluded — lang dropdown must show) */
+  .section, .container, .page-hero, .footer, .navbar, .mobile-nav { max-width: 100%; overflow-x: hidden; }
   table { display: block; overflow-x: auto; width: 100%; max-width: 100%; }
 }
 
@@ -2456,16 +2496,20 @@ select.form-control { cursor: pointer; }
 
 @media (max-width: 1100px) {
   .lang-dropdown {
+    position: fixed;
+    top: calc(var(--topbar-height) + 4px);
+    right: 12px;
+    left: auto;
     min-width: 0;
     width: min(420px, calc(100vw - 24px));
     max-width: calc(100vw - 24px);
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    z-index: 2001;
   }
 }
 
 @media (max-width: 480px) {
   .lang-dropdown {
-    position: fixed;
     left: 12px;
     right: 12px;
     width: auto;
