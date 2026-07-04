@@ -1092,10 +1092,6 @@ body.nav-open {
   text-align: left;
 }
 
-body.has-announce-bar .hero-content {
-  padding-top: calc(var(--navbar-height) + var(--announce-bar-height, 40px) + 16px) !important;
-}
-
 .hero-badge {
   display: inline-flex;
   align-items: center;

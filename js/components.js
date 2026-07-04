@@ -978,34 +978,6 @@ const WHATSAPP_STYLES = `
   /* Page Transition */
   body.page-loading * { pointer-events: none; }
 
-  /* Announcement bar */
-  .announce-bar {
-    background: linear-gradient(135deg, var(--blue-700), var(--blue-500));
-    color: white;
-    text-align: center;
-    padding: 10px 40px 10px 16px;
-    font-size: 0.8125rem;
-    font-weight: 600;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1001;
-    max-width: 100%;
-    overflow: hidden;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.02em;
-  }
-  body.has-announce-bar .topbar {
-    top: var(--announce-bar-height, 40px);
-  }
-  body.has-announce-bar .navbar {
-    top: calc(var(--announce-bar-height, 40px) + var(--topbar-height));
-  }
-  body.has-announce-bar {
-    --navbar-offset: calc(var(--announce-bar-height, 40px) + var(--topbar-height));
-  }
-
   .mobile-topbar-links {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1039,13 +1011,6 @@ const WHATSAPP_STYLES = `
     background: var(--blue-50);
     border-color: var(--blue-200);
   }
-  .announce-bar a { color: var(--blue-200); text-decoration: underline; margin: 0 4px; }
-  .announce-bar .announce-close {
-    position: absolute; right: 16px; top: 50%; transform: translateY(-50%);
-    background: none; border: none; color: rgba(255,255,255,0.7);
-    cursor: pointer; font-size: 1rem; transition: color 0.2s;
-  }
-  .announce-bar .announce-close:hover { color: white; }
 
   @media (max-width: 768px) {
     .whatsapp-float { bottom: 96px; right: 16px; width: 50px; height: 50px; font-size: 1.5rem; }
@@ -1066,36 +1031,6 @@ const WHATSAPP_STYLES = `
   }
 </style>
 `;
-
-/* ─── Announcement Bar ────────────────────────────────────── */
-function injectAnnounceBar() {
-  if (localStorage.getItem('gausin_announce_closed')) return;
-  const bar = document.createElement('div');
-  bar.className = 'announce-bar';
-  bar.innerHTML = `
-    <i class="fa-solid fa-industry" style="margin-right:6px;"></i>
-    Gausin International Engineers — 20+ Years of Industrial Engineering Excellence |
-    <a href="contact.html">Get a Free Consultation</a> |
-    <a href="tel:+919870840779">Call: +91 98708 40779</a>
-    <button class="announce-close" id="announceClose" aria-label="Close">✕</button>
-  `;
-  document.body.insertBefore(bar, document.body.firstChild);
-  const setAnnounceOffset = () => {
-    const h = bar.offsetHeight;
-    document.body.classList.add('has-announce-bar');
-    document.documentElement.style.setProperty('--announce-bar-height', h + 'px');
-  };
-  setAnnounceOffset();
-  window.addEventListener('resize', setAnnounceOffset);
-  document.getElementById('announceClose')?.addEventListener('click', () => {
-    bar.style.transition = 'opacity 0.25s ease, transform 0.25s ease';
-    bar.style.opacity = '0';
-    bar.style.transform = 'translateY(-100%)';
-    document.body.classList.remove('has-announce-bar');
-    document.documentElement.style.removeProperty('--announce-bar-height');
-    setTimeout(() => { bar.remove(); localStorage.setItem('gausin_announce_closed', '1'); }, 280);
-  });
-}
 
 /* ─── Page Transition ─────────────────────────────────────── */
 function initPageTransitions() {
@@ -1533,7 +1468,6 @@ function initLangSwitcher() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  injectAnnounceBar();
   injectComponents();
   initPageTransitions();
   initLangSwitcher();
