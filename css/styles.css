@@ -1144,6 +1144,8 @@ body.nav-open {
   line-height: 1.75;
   max-width: 580px;
   margin-bottom: var(--space-10);
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .hero-actions {
