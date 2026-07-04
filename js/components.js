@@ -637,7 +637,7 @@ const FLOATING_HTML = `
 <a href="https://wa.me/919870840779?text=Hello%20Gausin%20International%20Engineers%2C%20I%20am%20interested%20in%20your%20industrial%20engineering%20products%20and%20services.%20Please%20provide%20more%20information."
    target="_blank" rel="noopener" class="whatsapp-float" id="whatsappFloat" aria-label="Chat on WhatsApp">
   <i class="fa-brands fa-whatsapp"></i>
-  <span class="whatsapp-tooltip">Chat with us!</span>
+  <span class="whatsapp-tooltip">Chat on WhatsApp</span>
 </a>
 
 <!-- Back To Top -->

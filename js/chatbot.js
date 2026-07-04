@@ -7,6 +7,22 @@
   'use strict';
   if (window.location.pathname.includes('/admin/')) return;
 
+  const ASSISTANT_AVATAR = 'images/chat-assistant-avatar.png';
+
+  function botAvatarHtml() {
+    return `<img src="${ASSISTANT_AVATAR}" alt="" class="gc-ava-img" onerror="this.outerHTML='<i class=\\'fa-solid fa-headset\\'></i>'">`;
+  }
+
+  function setFabIcon(open) {
+    const fab = document.getElementById('gcFab');
+    if (!fab) return;
+    const avatar = fab.querySelector('.gchat-fab-avatar');
+    const icon = fab.querySelector('.gchat-fab-icon');
+    if (!avatar || !icon) return;
+    avatar.hidden = open;
+    icon.hidden = !open;
+  }
+
   /* ── CSS ─────────────────────────────────────────────────── */
   const CSS = `
   <style id="gausin-chat-css">
@@ -18,8 +34,37 @@
     display: flex; align-items: center; justify-content: center;
     box-shadow: 0 6px 28px rgba(11,94,215,.55);
     transition: transform .35s cubic-bezier(.34,1.56,.64,1), box-shadow .25s;
+    overflow: visible;
   }
   .gchat-fab:hover { transform: scale(1.1); box-shadow: 0 10px 36px rgba(11,94,215,.65); }
+  .gchat-fab-avatar {
+    width: 100%; height: 100%; border-radius: 50%; overflow: hidden;
+    display: flex; align-items: center; justify-content: center;
+    border: 2px solid rgba(255,255,255,.9);
+  }
+  .gchat-fab-avatar img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+  }
+  .gchat-fab-icon {
+    display: flex; align-items: center; justify-content: center;
+    width: 100%; height: 100%; font-size: 1.35rem;
+  }
+  .gchat-fab-icon[hidden], .gchat-fab-avatar[hidden] { display: none !important; }
+  .gchat-fab-tooltip {
+    position: absolute; right: 68px;
+    background: linear-gradient(135deg,#1D4ED8,#0A2540);
+    color: #fff; font-size: .8125rem; font-weight: 600;
+    padding: 6px 12px; border-radius: 8px; white-space: nowrap;
+    opacity: 0; pointer-events: none; transform: translateX(8px);
+    transition: all .2s ease; font-family: 'Montserrat',sans-serif;
+    box-shadow: 0 4px 14px rgba(10,37,64,.18);
+  }
+  .gchat-fab-tooltip::after {
+    content: ''; position: absolute; right: -6px; top: 50%;
+    transform: translateY(-50%); border: 6px solid transparent;
+    border-left-color: #1D4ED8; border-right: none;
+  }
+  .gchat-fab:hover .gchat-fab-tooltip { opacity: 1; transform: translateX(0); }
   .gchat-fab-badge {
     position: absolute; top: -4px; right: -4px;
     width: 19px; height: 19px; background: #EF4444;
@@ -61,7 +106,8 @@
     display: flex; align-items: center; justify-content: center;
     overflow: hidden; padding: 3px; flex-shrink: 0;
   }
-  .gchat-hd-logo img { width: 100%; height: 100%; object-fit: contain; display: block; }
+  .gchat-hd-logo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .gchat-hd-avatar { padding: 0; border: 2px solid rgba(255,255,255,.85); }
   .gchat-hd-info { flex: 1; min-width: 0; }
   .gchat-hd-name {
     font-size: 1rem; font-weight: 700; color: #fff;
@@ -104,8 +150,9 @@
     width: 30px; height: 30px; border-radius: 50%; flex-shrink: 0;
     background: linear-gradient(135deg,#1D4ED8,#0A2540);
     display: flex; align-items: center; justify-content: center;
-    color: #fff; font-size: .75rem;
+    color: #fff; font-size: .75rem; overflow: hidden;
   }
+  .gc-ava-img { width: 100%; height: 100%; object-fit: cover; display: block; }
   .gc-row.user .gc-ava { background: #CBD5E1; color: #475569; }
 
   .gc-content { display: flex; flex-direction: column; gap: 4px; max-width: min(320px, calc(100% - 42px)); }
@@ -223,6 +270,7 @@
       max-height: calc(100dvh - var(--gchat-bottom) - 12px);
     }
     .gchat-fab { right: 16px; bottom: 22px; width: 54px; height: 54px; font-size: 1.3rem; }
+    .gchat-fab-tooltip { display: none; }
     .gc-content { max-width: min(300px, calc(100% - 38px)); }
   }
 
@@ -241,15 +289,19 @@
 
   /* ── HTML ────────────────────────────────────────────────── */
   const HTML = `
-  <button class="gchat-fab" id="gcFab" aria-label="Chat with us">
-    <i class="fa-solid fa-robot"></i>
+  <button class="gchat-fab" id="gcFab" aria-label="Ask our Assistant">
+    <span class="gchat-fab-avatar">
+      <img src="${ASSISTANT_AVATAR}" alt="">
+    </span>
+    <i class="gchat-fab-icon fa-solid fa-xmark" hidden></i>
+    <span class="gchat-fab-tooltip">Ask our Assistant</span>
     <span class="gchat-fab-badge" id="gcBadge">1</span>
   </button>
 
   <div class="gchat-win" id="gcWin" role="dialog" aria-label="Gausin AI Assistant">
     <div class="gchat-hd">
-      <div class="gchat-hd-logo">
-        <img src="images/gausin-logo.png" alt="Gausin" onerror="this.parentElement.innerHTML='<i class=\'fa-solid fa-robot\' style=\'color:#1D4ED8;font-size:1.2rem\'></i>'">
+      <div class="gchat-hd-logo gchat-hd-avatar">
+        <img src="${ASSISTANT_AVATAR}" alt="Gausin Assistant" onerror="this.parentElement.innerHTML='<i class=\\'fa-solid fa-headset\\' style=\\'color:#1D4ED8;font-size:1.2rem\\'></i>'">
       </div>
       <div class="gchat-hd-info">
         <div class="gchat-hd-name">Gausin Assistant</div>
@@ -624,7 +676,7 @@ Feel free to return anytime.<br>
     const el = document.createElement('div');
     el.className = 'gc-typing'; el.id = 'gcTyping';
     el.innerHTML = `
-      <div class="gc-ava"><i class="fa-solid fa-robot"></i></div>
+      <div class="gc-ava">${botAvatarHtml()}</div>
       <div class="gc-typing-bubble">
         <div class="gc-dot"></div><div class="gc-dot"></div><div class="gc-dot"></div>
       </div>`;
@@ -647,7 +699,7 @@ Feel free to return anytime.<br>
       const row = document.createElement('div');
       row.className = 'gc-row bot';
       row.innerHTML = `
-        <div class="gc-ava"><i class="fa-solid fa-robot"></i></div>
+        <div class="gc-ava">${botAvatarHtml()}</div>
         <div class="gc-content">
           <div class="gc-bubble" id="gcStream"></div>
           <div class="gc-time">${now()}</div>
@@ -843,7 +895,7 @@ Feel free to return anytime.<br>
       isOpen = true;
       win.classList.add('open');
       document.body.classList.add('gchat-open');
-      fab.querySelector('i').className = 'fa-solid fa-xmark';
+      setFabIcon(true);
       const badge = $('gcBadge'); if (badge) badge.remove();
       inp.focus();
       greet();
@@ -853,7 +905,7 @@ Feel free to return anytime.<br>
       isOpen = false;
       win.classList.remove('open');
       document.body.classList.remove('gchat-open');
-      fab.querySelector('i').className = 'fa-solid fa-robot';
+      setFabIcon(false);
     }
 
     fab.addEventListener('click', () => isOpen ? closeChat() : openChat());
