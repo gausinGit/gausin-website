@@ -109,13 +109,13 @@ const SECONDARY_MEGA_MENUS = [
   },
   {
     pageHref: 'tech-ai.html',
-    navLabel: 'Tech & AI',
+    navLabel: 'Digital Solutions',
     items: [
+      { href: 'tech-ai.html#ai-solutions', icon: 'fa-brain', title: 'AI Solutions', desc: 'Machine Learning & AI Systems' },
       { href: 'tech-ai.html#web-development', icon: 'fa-code', title: 'Web Development', desc: 'Websites & Web Applications' },
       { href: 'tech-ai.html#mobile-apps', icon: 'fa-mobile-screen', title: 'Mobile App Development', desc: 'iOS & Android Applications' },
       { href: 'tech-ai.html#desktop-apps', icon: 'fa-desktop', title: 'Desktop Applications', desc: 'Cross-Platform Desktop Software' },
-      { href: 'tech-ai.html#ai-ml', icon: 'fa-brain', title: 'AI/ML Solutions', desc: 'Machine Learning & AI Systems' },
-      { href: 'tech-ai.html#automation', icon: 'fa-gears', title: 'Business Automation', desc: 'Workflow & Process Automation' },
+      { href: 'tech-ai.html#business-automation', icon: 'fa-gears', title: 'Business Process Automation', desc: 'Workflow & Process Automation' },
       { href: 'tech-ai.html#cloud', icon: 'fa-cloud', title: 'Cloud Solutions', desc: 'Cloud Deployment & Migration' },
       { href: 'tech-ai.html#custom-software', icon: 'fa-laptop-code', title: 'Custom Software Development', desc: 'Tailored Software Solutions' },
     ],
@@ -148,8 +148,44 @@ function buildNavItemHtml(menu, currentPage) {
   `;
 }
 
+const OUR_CLIENTS_HREF = 'our-clients.html';
+const OUR_CLIENTS_LABEL = 'Our Clients';
+
+function buildSimpleNavItemHtml(href, label, currentPage) {
+  return `
+    <div class="nav-item">
+      <a href="${href}" class="nav-link${currentPage === href ? ' active' : ''}">${label}</a>
+    </div>
+  `;
+}
+
 function buildSecondaryNavItems(currentPage) {
-  return SECONDARY_MEGA_MENUS.map((menu) => buildNavItemHtml(menu, currentPage)).join('');
+  return SECONDARY_MEGA_MENUS.map((menu) => {
+    if (menu.pageHref === 'technology.html') {
+      return buildSimpleNavItemHtml(OUR_CLIENTS_HREF, OUR_CLIENTS_LABEL, currentPage) + buildNavItemHtml(menu, currentPage);
+    }
+    return buildNavItemHtml(menu, currentPage);
+  }).join('');
+}
+
+function injectMissingOurClientsNav() {
+  if (document.querySelector(`.navbar-nav .nav-item > a.nav-link[href="${OUR_CLIENTS_HREF}"]`)) return;
+  const techItem = document.querySelector('.navbar-nav .nav-item > a.nav-link[href="technology.html"]')?.closest('.nav-item');
+  if (!techItem) return;
+  techItem.insertAdjacentHTML('beforebegin', buildSimpleNavItemHtml(OUR_CLIENTS_HREF, OUR_CLIENTS_LABEL, _page));
+}
+
+function injectMissingOurClientsMobileLink() {
+  const mobileNav = document.getElementById('mobileNav');
+  if (!mobileNav || mobileNav.querySelector(`a[href="${OUR_CLIENTS_HREF}"]`)) return;
+  const techLink = mobileNav.querySelector('a[href="technology.html"]');
+  const color = _page === OUR_CLIENTS_HREF ? 'var(--blue-500)' : 'var(--gray-800)';
+  const html = `<a href="${OUR_CLIENTS_HREF}" class="mobile-nav-link-plain" style="display:flex;justify-content:space-between;padding:16px 0;font-weight:600;color:${color};border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">${OUR_CLIENTS_LABEL}</a>`;
+  if (techLink) {
+    techLink.insertAdjacentHTML('beforebegin', html);
+    return;
+  }
+  injectMobileNavLink(OUR_CLIENTS_HREF, OUR_CLIENTS_LABEL);
 }
 
 function injectMissingSecondaryNavItems() {
@@ -168,6 +204,12 @@ function injectMobileNavLink(href, label) {
   if (!contactLink) return;
   const color = _page === href ? 'var(--blue-500)' : 'var(--gray-800)';
   contactLink.insertAdjacentHTML('beforebegin', `<a href="${href}" class="mobile-nav-link-plain" style="display:flex;justify-content:space-between;padding:16px 0;font-weight:600;color:${color};border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">${label}</a>`);
+}
+
+function injectMissingMobileNavLinks() {
+  SECONDARY_MEGA_MENUS.forEach((menu) => {
+    injectMobileNavLink(menu.pageHref, menu.navLabel);
+  });
 }
 
 function injectSecondaryMegaMenus() {
@@ -518,8 +560,9 @@ const NAVBAR_HTML = `
   <a href="products.html" class="mobile-nav-link-plain" style="display:flex;justify-content:space-between;padding:16px 0;font-weight:600;color:${_page==='products.html'?'var(--blue-500)':'var(--gray-800)'};border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Products</a>
   <a href="services.html" class="mobile-nav-link-plain" style="display:flex;justify-content:space-between;padding:16px 0;font-weight:600;color:${_page==='services.html'?'var(--blue-500)':'var(--gray-800)'};border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Services</a>
   <a href="industries.html" class="mobile-nav-link-plain" style="display:flex;justify-content:space-between;padding:16px 0;font-weight:600;color:${_page==='industries.html'?'var(--blue-500)':'var(--gray-800)'};border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Industries</a>
+  <a href="our-clients.html" class="mobile-nav-link-plain" style="display:flex;justify-content:space-between;padding:16px 0;font-weight:600;color:${_page==='our-clients.html'?'var(--blue-500)':'var(--gray-800)'};border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Our Clients</a>
   <a href="technology.html" class="mobile-nav-link-plain" style="display:flex;justify-content:space-between;padding:16px 0;font-weight:600;color:${_page==='technology.html'?'var(--blue-500)':'var(--gray-800)'};border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Technology</a>
-  <a href="tech-ai.html" class="mobile-nav-link-plain" style="display:flex;justify-content:space-between;padding:16px 0;font-weight:600;color:${_page==='tech-ai.html'?'var(--blue-500)':'var(--gray-800)'};border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Tech & AI</a>
+  <a href="tech-ai.html" class="mobile-nav-link-plain" style="display:flex;justify-content:space-between;padding:16px 0;font-weight:600;color:${_page==='tech-ai.html'?'var(--blue-500)':'var(--gray-800)'};border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Digital Solutions</a>
   <a href="contact.html" class="mobile-nav-link-plain" style="display:flex;justify-content:space-between;padding:16px 0;font-weight:600;color:${_page==='contact.html'?'var(--blue-500)':'var(--gray-800)'};border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Contact</a>
   <div style="margin-top:24px;display:flex;flex-direction:column;gap:12px;">
     <button type="button" class="btn btn-outline site-search-trigger" id="siteSearchBtnMobile" style="width:100%;justify-content:center;"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
@@ -569,8 +612,9 @@ const FOOTER_HTML = `
           <a href="products.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Products</a>
           <a href="services.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Services</a>
           <a href="industries.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Industries</a>
+          <a href="our-clients.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Our Clients</a>
           <a href="technology.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Technology</a>
-          <a href="tech-ai.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Tech & AI</a>
+          <a href="tech-ai.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Digital Solutions</a>
           <a href="insights.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Insights</a>
           <a href="career.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Career</a>
           <a href="downloads.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Download</a>
@@ -886,8 +930,11 @@ function injectComponents() {
 
   injectTopbarMobileLinks();
   injectMissingSecondaryNavItems();
+  injectMissingOurClientsNav();
   injectSecondaryMegaMenus();
   fixProductsMegaMenu();
+  injectMissingMobileNavLinks();
+  injectMissingOurClientsMobileLink();
   injectMobileNavAccordions();
   injectSearchButtons();
   fixSocialLinks();
@@ -975,6 +1022,21 @@ const WHATSAPP_STYLES = `
     transform: translateX(0);
   }
 
+  /* Stack back-to-top above WhatsApp + chatbot (all viewports) */
+  #backToTop {
+    bottom: 156px !important;
+    z-index: 1003 !important;
+  }
+  body.cookie-banner-visible #backToTop {
+    bottom: calc(170px + env(safe-area-inset-bottom, 0)) !important;
+  }
+  body.cookie-banner-visible .whatsapp-float {
+    bottom: calc(110px + env(safe-area-inset-bottom, 0));
+  }
+  body.cookie-banner-visible .gchat-fab {
+    bottom: calc(108px + env(safe-area-inset-bottom, 0)) !important;
+  }
+
   /* Page Transition */
   body.page-loading * { pointer-events: none; }
 
@@ -1015,16 +1077,13 @@ const WHATSAPP_STYLES = `
   @media (max-width: 768px) {
     .whatsapp-float { bottom: 96px; right: 16px; width: 50px; height: 50px; font-size: 1.5rem; }
     .whatsapp-tooltip { display: none; }
-    #backToTop { bottom: 156px !important; right: 16px !important; width: 44px !important; height: 44px !important; }
+    #backToTop { right: 16px !important; width: 44px !important; height: 44px !important; }
     #cookieBanner { padding: 14px 0 !important; }
     #cookieBanner .container > div { gap: 12px !important; }
     #cookieBanner p { font-size: 0.8125rem !important; line-height: 1.5 !important; }
     #cookieBanner button { padding: 9px 16px !important; font-size: 0.8125rem !important; }
     body.cookie-banner-visible { padding-bottom: env(safe-area-inset-bottom, 0); }
-    body.cookie-banner-visible .whatsapp-float { bottom: calc(110px + env(safe-area-inset-bottom, 0)); }
-    body.cookie-banner-visible #backToTop { bottom: calc(170px + env(safe-area-inset-bottom, 0)) !important; }
     .gchat-fab { bottom: 22px !important; right: 16px !important; }
-    body.cookie-banner-visible .gchat-fab { bottom: calc(108px + env(safe-area-inset-bottom, 0)) !important; }
     body.cookie-banner-visible.gchat-open .gchat-win {
       --gchat-bottom: calc(108px + var(--gchat-fab-h, 54px) + var(--gchat-fab-gap, 12px) + env(safe-area-inset-bottom, 0));
     }

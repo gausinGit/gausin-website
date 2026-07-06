@@ -12,8 +12,9 @@ const SEARCH_INDEX = [
   { title: 'Products', url: 'products.html', category: 'Pages', keywords: 'catalog equipment machinery plant' },
   { title: 'Services', url: 'services.html', category: 'Pages', keywords: 'engineering design turnkey consultancy' },
   { title: 'Industries', url: 'industries.html', category: 'Pages', keywords: 'dairy pharma chemical food distillery' },
+  { title: 'Our Clients', url: 'our-clients.html', category: 'Pages', keywords: 'clients references portfolio gsk ranbaxy aurobindo dairy pharma' },
   { title: 'Technology', url: 'technology.html', category: 'Pages', keywords: 'simulation cad fabrication automation iot' },
-  { title: 'Tech & AI', url: 'tech-ai.html', category: 'Pages', keywords: 'software web mobile ai ml cloud automation' },
+  { title: 'Digital Solutions', url: 'tech-ai.html', category: 'Pages', keywords: 'software web mobile ai ml cloud automation digital solutions' },
   { title: 'Contact Us', url: 'contact.html', category: 'Pages', keywords: 'inquiry quote email phone address' },
   { title: 'Careers', url: 'career.html', category: 'Pages', keywords: 'jobs hiring recruitment apply resume' },
   { title: 'News', url: 'news.html', category: 'Pages', keywords: 'updates announcements press' },
@@ -80,11 +81,14 @@ const SEARCH_INDEX = [
   { title: 'Chemical Industry', url: 'industries.html#chemical', category: 'Industries', keywords: 'process plants reactors chemical' },
   { title: 'Food Processing Industry', url: 'industries.html#food', category: 'Industries', keywords: 'hygienic food beverage' },
 
-  /* Tech & AI */
-  { title: 'Web Development', url: 'tech-ai.html#web-development', category: 'Tech & AI', keywords: 'website web application' },
-  { title: 'Mobile App Development', url: 'tech-ai.html#mobile-apps', category: 'Tech & AI', keywords: 'iOS Android mobile app' },
-  { title: 'AI/ML Solutions', url: 'tech-ai.html#ai-ml', category: 'Tech & AI', keywords: 'machine learning artificial intelligence' },
-  { title: 'Cloud Solutions', url: 'tech-ai.html#cloud', category: 'Tech & AI', keywords: 'cloud deployment migration AWS' },
+  /* Digital Solutions */
+  { title: 'AI Solutions', url: 'tech-ai.html#ai-solutions', category: 'Digital Solutions', keywords: 'machine learning artificial intelligence ai ml' },
+  { title: 'Web Development', url: 'tech-ai.html#web-development', category: 'Digital Solutions', keywords: 'website web application' },
+  { title: 'Mobile App Development', url: 'tech-ai.html#mobile-apps', category: 'Digital Solutions', keywords: 'iOS Android mobile app' },
+  { title: 'Desktop Applications', url: 'tech-ai.html#desktop-apps', category: 'Digital Solutions', keywords: 'windows mac linux desktop software' },
+  { title: 'Business Process Automation', url: 'tech-ai.html#business-automation', category: 'Digital Solutions', keywords: 'rpa workflow automation erp crm' },
+  { title: 'Cloud Solutions', url: 'tech-ai.html#cloud', category: 'Digital Solutions', keywords: 'cloud deployment migration AWS azure' },
+  { title: 'Custom Software Development', url: 'tech-ai.html#custom-software', category: 'Digital Solutions', keywords: 'bespoke custom software development' },
 ];
 
 const CATEGORY_ICONS = {
@@ -99,7 +103,7 @@ const CATEGORY_ICONS = {
   'Pressure Vessels': 'fa-database',
   Services: 'fa-screwdriver-wrench',
   Industries: 'fa-building',
-  'Tech & AI': 'fa-microchip',
+  'Digital Solutions': 'fa-microchip',
 };
 
 let activeIndex = -1;

@@ -82,6 +82,14 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Our Clients -->
+  <url>
+    <loc>https://www.gausin.in/our-clients.html</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Technology -->
   <url>
     <loc>https://www.gausin.in/technology.html</loc>
@@ -90,7 +98,7 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Tech & AI -->
+  <!-- Digital Solutions -->
   <url>
     <loc>https://www.gausin.in/tech-ai.html</loc>
     <lastmod>2024-01-01</lastmod>

@@ -419,9 +419,15 @@ p { line-height: 1.65; margin: 0; }
   border-radius: 0 var(--radius) var(--radius) 0;
   break-inside: avoid;
 }
-.val-icon { width: 28px; height: 28px; margin-bottom: 6px; color: var(--blue); }
-.val-card b { display: block; font-size: 8.5pt; color: var(--navy); margin-bottom: 3px; }
-.val-card span { font-size: 7.2pt; color: var(--text); line-height: 1.45; }
+.val-icon { display: block; width: 28px; height: 28px; margin: 0 auto 6px; color: var(--blue); }
+.val-card b {
+  display: block; font-size: 8.5pt; color: var(--navy); margin-bottom: 3px;
+  text-align: center;
+}
+.val-card span {
+  display: block; font-size: 7.2pt; color: var(--text); line-height: 1.45;
+  text-align: justify; text-justify: inter-word; hyphens: auto;
+}
 
 /* === CAPABILITIES === */
 .cap-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 7mm 9mm; margin-top: 9mm; }
@@ -726,6 +732,41 @@ p { line-height: 1.65; margin: 0; }
   border: 0.5pt solid rgba(255,255,255,0.16);
   padding: 3px 10px; border-radius: 3px;
 }
+.client-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  align-items: center;
+}
+.client-logos img {
+  width: 100%;
+  height: 8.5mm;
+  object-fit: contain;
+  background: #fff;
+  padding: 3px 6px;
+  border-radius: 3px;
+  border: 0.5pt solid rgba(255,255,255,0.2);
+}
+
+/* === DENSE PAGE FIT (pages 7–8 overflow fix) === */
+.page--fit .pg-intro { margin-bottom: 0; }
+.page--fit .p-showcase { margin-top: 5mm; }
+.page--fit .p-showcase-img,
+.page--fit .p-showcase-img img { min-height: 42mm; }
+.page--fit .p-showcase-body { padding: 5mm 7mm; }
+.page--fit .p-showcase-body h3 { font-size: 10.5pt; margin-bottom: 3px; }
+.page--fit .p-showcase-body .ps-sub { font-size: 7pt; margin-bottom: 4px; }
+.page--fit .p-spec-grid { gap: 2.5mm 4mm; }
+.page--fit .p-spec-item small { font-size: 5.4pt; }
+.page--fit .p-spec-item b { font-size: 7pt; }
+.page--fit .p-spec-item span { font-size: 6.6pt; line-height: 1.35; }
+.page--fit .spec-strip { margin-top: 4mm; }
+.page--fit .spec-cell { padding: 7px 9px; }
+.page--fit .spec-cell p { font-size: 7.2pt; line-height: 1.45; }
+.page--fit .prod-layout { margin-top: 4mm; gap: 5mm; }
+.page--fit .prod-matrix { margin-top: 0; }
+.page--fit-process .prod-matrix--3 { margin-top: 4mm; }
+.page--fit-process .prod-cat-body li { padding: 2px 0; font-size: 7.2pt; }
 
 /* === TECH CHIPS PREMIUM === */
 .tech-chip {
@@ -876,8 +917,14 @@ p { line-height: 1.65; margin: 0; }
   width: 100%; height: 2pt;
   background: linear-gradient(90deg, var(--navy), var(--blue));
 }
-.ind-cell b { display: block; font-size: 8.8pt; color: var(--navy); margin-bottom: 4px; font-family: Georgia, serif; }
-.ind-cell span { font-size: 7.5pt; color: var(--text); line-height: 1.45; }
+.ind-cell b {
+  display: block; font-size: 8.8pt; color: var(--navy); margin-bottom: 4px;
+  font-family: Georgia, serif; text-align: center;
+}
+.ind-cell span {
+  display: block; font-size: 7.5pt; color: var(--text); line-height: 1.45;
+  text-align: justify; text-justify: inter-word; hyphens: auto;
+}
 
 /* === CLIENT STRIP === */
 
@@ -1081,6 +1128,7 @@ p { line-height: 1.65; margin: 0; }
   .global-strip, .cert-grid, .ct-grid, .mfg-grid, .fab-grid,
   .prod-matrix, .prod-matrix--3, .prod-layout, .prod-gallery,
   .p-showcase, .p-showcase--rev { grid-template-columns: 1fr; }
+  .client-logos { grid-template-columns: repeat(3, 1fr); }
   .p-showcase--rev .p-showcase-img { order: 0; }
   .cv-glass { padding: 20px 16px; }
   .cv-footer { flex-direction: column; align-items: flex-start; }
@@ -1509,7 +1557,7 @@ p { line-height: 1.65; margin: 0; }
 </div>
 
 <!-- PAGE 7: DAIRY & FOOD -->
-<div class="page reveal">
+<div class="page reveal page--fit">
   <div class="sp">
     <span class="eyebrow">Product Range - Dairy &amp; Food</span>
     <h2 class="pg-h">Dairy processing plants and <span>food equipment systems.</span></h2>
@@ -1541,7 +1589,21 @@ p { line-height: 1.65; margin: 0; }
         </div>
       </div>
     </div>
-    <div class="prod-layout" style="margin-top:5mm;">
+    <div class="spec-strip">
+      <div class="spec-cell">
+        <span class="sc-label">Construction Standard</span>
+        <p>SS 304 / SS 316L | 3-A Sanitary Standard | FSSAI Compliant | Mirror-polished product contact surfaces</p>
+      </div>
+      <div class="spec-cell">
+        <span class="sc-label">Automation</span>
+        <p>PLC / SCADA / HMI | Batch &amp; Continuous modes | CIP Integration | Flow diversion valve (FDD)</p>
+      </div>
+      <div class="spec-cell">
+        <span class="sc-label">Capacity Range</span>
+        <p>500 LPH to 1,00,000 LPH | Village collection level to large cooperative dairy scale</p>
+      </div>
+    </div>
+    <div class="prod-layout">
       <div class="prod-matrix">
         <div class="prod-cat">
           <div class="prod-cat-hd">
@@ -1590,28 +1652,14 @@ p { line-height: 1.65; margin: 0; }
         </div>
       </div>
       <div class="prod-visual-stack">
-        <div class="imgb" style="height:52mm;">
-          <img src="assets/ghee-making-plant.png" alt="Ghee making plant" style="height:52mm;">
+        <div class="imgb" style="height:36mm;">
+          <img src="assets/ghee-making-plant.png" alt="Ghee making plant" style="height:36mm;">
           <div class="icap">Ghee making and clarification plant</div>
         </div>
-        <div class="imgb" style="height:38mm;">
-          <img src="assets/butter-churner.png" alt="Butter churner" style="height:38mm;object-fit:contain;background:var(--grey-light);">
+        <div class="imgb" style="height:26mm;">
+          <img src="assets/butter-churner.png" alt="Butter churner" style="height:26mm;object-fit:contain;background:var(--grey-light);">
           <div class="icap">Butter churner and milk equipment</div>
         </div>
-      </div>
-    </div>
-    <div class="spec-strip">
-      <div class="spec-cell">
-        <span class="sc-label">Construction Standard</span>
-        <p>SS 304 / SS 316L | 3-A Sanitary Standard | FSSAI Compliant | Mirror-polished product contact surfaces</p>
-      </div>
-      <div class="spec-cell">
-        <span class="sc-label">Automation</span>
-        <p>PLC / SCADA / HMI | Batch &amp; Continuous modes | CIP Integration | Flow diversion valve (FDD)</p>
-      </div>
-      <div class="spec-cell">
-        <span class="sc-label">Capacity Range</span>
-        <p>500 LPH to 1,00,000 LPH | Village collection level to large cooperative dairy scale</p>
       </div>
     </div>
   </div>
@@ -1622,7 +1670,7 @@ p { line-height: 1.65; margin: 0; }
 </div>
 
 <!-- PAGE 8: PROCESS SYSTEMS -->
-<div class="page reveal">
+<div class="page reveal page--fit page--fit-process">
   <div class="sp">
     <span class="eyebrow">Product Range - Process Systems</span>
     <h2 class="pg-h">Evaporation, drying, heat transfer <span>and ancillary systems.</span></h2>
@@ -1739,20 +1787,6 @@ p { line-height: 1.65; margin: 0; }
             <li>WTP / UF-RO / Softener</li>
           </ul>
         </div>
-      </div>
-    </div>
-    <div class="prod-gallery" style="margin-top:5mm;">
-      <div class="imgb" style="height:42mm;">
-        <img src="assets/etp-stp-treatment-plants.png" alt="ETP/STP treatment" style="height:42mm;">
-        <div class="icap">ETP / STP effluent treatment</div>
-      </div>
-      <div class="imgb" style="height:42mm;">
-        <img src="assets/spray-dryer-nozzle-rotary-disc.jpeg" alt="Spray dryer" style="height:42mm;">
-        <div class="icap">Spray drying systems</div>
-      </div>
-      <div class="imgb" style="height:42mm;">
-        <img src="assets/plate-heat-exchanger-phe.jpeg" alt="Plate heat exchanger" style="height:42mm;">
-        <div class="icap">Plate heat exchangers</div>
       </div>
     </div>
   </div>
@@ -1882,9 +1916,16 @@ p { line-height: 1.65; margin: 0; }
     </div>
     <div class="client-strip">
       <span class="cl-label">Selected Client References</span>
-      <div class="client-names">
-        <span>GSK</span><span>Amul</span><span>Mother Dairy</span><span>Nestle</span>
-        <span>Patanjali</span><span>Prabhat Dairy</span><span>Hatsun Agro</span><span>Verka</span>
+      <div class="client-logos">
+        <img src="images/clients/gsk.svg" alt="GlaxoSmithKline">
+        <img src="images/clients/nectar-lifesciences.svg" alt="Nectar Lifesciences">
+        <img src="images/clients/covalent-laboratories.svg" alt="Covalent Laboratories">
+        <img src="images/clients/jain.svg" alt="Jain Irrigation">
+        <img src="images/clients/renuka.svg" alt="Shree Renuka Sugars">
+        <img src="images/clients/ccl.svg" alt="CCL Products">
+        <img src="images/clients/goodricke.svg" alt="Goodricke Tea">
+        <img src="images/clients/aurobindo.svg" alt="Aurobindo Pharma">
+        <img src="images/clients/ranbaxy.svg" alt="Ranbaxy">
       </div>
     </div>
     <div class="two-col" style="margin-top:7mm; grid-template-columns:0.88fr 1fr;">

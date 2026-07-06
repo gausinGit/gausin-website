@@ -439,16 +439,16 @@ PCB / CPCB compliant designs.`,
     },
     {
       id: 'tech-ai',
-      t: ['tech ai','tech & ai','tech ai software','artificial intelligence','machine learning','web development','mobile app','app development','business automation','custom software','digital solution','cloud solutions','web app','website development'],
-      r: `<strong>Tech & AI Services</strong> 💻<br><br>
+      t: ['digital solutions','tech ai','tech & ai','tech ai software','artificial intelligence','machine learning','web development','mobile app','app development','business automation','custom software','digital solution','cloud solutions','web app','website development'],
+      r: `<strong>Digital Solutions</strong> 💻<br><br>
 • <strong>Web Development</strong> — Corporate sites, e-commerce, web apps<br>
 • <strong>Mobile Apps</strong> — iOS & Android, plant monitoring dashboards<br>
 • <strong>Desktop Applications</strong> — Windows, macOS, Linux business tools<br>
-• <strong>AI/ML Solutions</strong> — Predictive analytics, computer vision, NLP<br>
-• <strong>Business Automation</strong> — RPA, API integrations, ERP/CRM workflows<br>
+• <strong>AI Solutions</strong> — Predictive analytics, computer vision, NLP<br>
+• <strong>Business Process Automation</strong> — RPA, API integrations, ERP/CRM workflows<br>
 • <strong>Cloud Solutions</strong> — AWS, Azure, GCP migration & DevOps<br>
 • <strong>Custom Software</strong> — End-to-end bespoke development<br><br>
-<a href="tech-ai.html" style="color:#2563EB;font-weight:700;">🔗 Explore Tech & AI →</a>`,
+<a href="tech-ai.html" style="color:#2563EB;font-weight:700;">🔗 Explore Digital Solutions →</a>`,
       q: ['Get a Quote', 'Speak to Engineer', 'View All Products']
     },
     {
@@ -458,9 +458,9 @@ PCB / CPCB compliant designs.`,
 🔵 <strong>Evaporators</strong> &nbsp; 🔵 <strong>Dryers</strong> &nbsp; 🔵 <strong>Heat Exchangers</strong><br>
 🔵 <strong>CIP Systems</strong> &nbsp; 🔵 <strong>Dairy Processing</strong> &nbsp; 🔵 <strong>Milk Equipment</strong><br>
 🔵 <strong>Dairy & Food Equipment</strong> &nbsp; 🔵 <strong>Pressure Vessels</strong> &nbsp; 🔵 <strong>Waste Management</strong><br>
-🔵 <strong>Tech & AI</strong><br><br>
+🔵 <strong>Digital Solutions</strong><br><br>
 Tap any product below or ask me anything specific!`,
-      q: ['Evaporators', 'Dryers', 'Heat Exchangers', 'CIP Systems', 'Dairy Processing', 'Milk Equipment', 'Dairy & Food Equipment', 'Pressure Vessels', 'Waste Management', 'Tech & AI']
+      q: ['Evaporators', 'Dryers', 'Heat Exchangers', 'CIP Systems', 'Dairy Processing', 'Milk Equipment', 'Dairy & Food Equipment', 'Pressure Vessels', 'Waste Management', 'Digital Solutions']
     },
     {
       id: 'services',
@@ -791,6 +791,7 @@ Feel free to return anytime.<br>
       'Dairy & Food Equipment': () => botReply(KB.find(e=>e.id==='dairy-food').r, KB.find(e=>e.id==='dairy-food').q, d),
       'Dairy Equipment':   () => botReply(KB.find(e=>e.id==='dairy-food').r, KB.find(e=>e.id==='dairy-food').q, d),
       'Waste Management':  () => botReply(KB.find(e=>e.id==='waste').r,      KB.find(e=>e.id==='waste').q, d),
+      'Digital Solutions': () => botReply(KB.find(e=>e.id==='tech-ai').r,    KB.find(e=>e.id==='tech-ai').q, d),
       'Tech & AI':         () => botReply(KB.find(e=>e.id==='tech-ai').r,    KB.find(e=>e.id==='tech-ai').q, d),
       'Turnkey Project':   () => botReply(KB.find(e=>e.id==='turnkey').r,    KB.find(e=>e.id==='turnkey').q, d),
       'Energy Audit':      () => botReply(KB.find(e=>e.id==='energy-audit').r, KB.find(e=>e.id==='energy-audit').q, d),

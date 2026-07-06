@@ -1225,6 +1225,10 @@ body.nav-open {
   background-image: url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1600&q=80&auto=format&fit=crop');
 }
 
+.page-hero--clients::before {
+  background-image: url('https://images.unsplash.com/photo-1521737711867-e3b97311f942?w=1600&q=80&auto=format&fit=crop');
+}
+
 .page-hero--technology::before {
   background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&q=80&auto=format&fit=crop');
 }
@@ -2324,6 +2328,29 @@ select.form-control { cursor: pointer; }
   .process-steps::before { display: none; }
   .mega-menu { width: min(560px, 92vw); max-width: 92vw; }
   .mega-menu-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+  /* Product detail pages — stop tab row from stretching layout wider than screen */
+  .prod-layout {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+  .prod-layout > * {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+  .prod-tabs {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .prod-hero-inner > * {
+    min-width: 0;
+    max-width: 100%;
+  }
+  .prod-tagline,
+  .prod-breadcrumb {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2446,6 +2473,58 @@ select.form-control { cursor: pointer; }
 
   .btn { white-space: normal; }
   .product-badges { flex-wrap: wrap; }
+
+  /* Keep main content inside viewport — wide tab bars / flex rows were clipping text on the right */
+  .section > .container,
+  .section > .container > * {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .prod-layout {
+    grid-template-columns: minmax(0, 1fr) !important;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .prod-layout > * {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .prod-tabs {
+    max-width: 100% !important;
+    width: 100% !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  .prod-tab {
+    flex-shrink: 0;
+  }
+
+  .prod-tab-pane,
+  .prod-tab-pane p,
+  .prod-tagline {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  .adv-card {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .adv-card > div:not(.adv-icon) {
+    min-width: 0;
+    flex: 1;
+  }
+
+  .adv-desc {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
 }
 
 /* Industries grid — homepage */
@@ -2526,8 +2605,8 @@ select.form-control { cursor: pointer; }
 
   .industry-card { min-height: 180px; }
 
-  /* Prevent any element from overflowing on small screens (topbar excluded — lang dropdown must show) */
-  .section, .container, .page-hero, .footer, .navbar, .mobile-nav { max-width: 100%; overflow-x: hidden; }
+  /* Constrain layout width; avoid overflow-x:hidden on containers (it clipped description text) */
+  .section, .container, .page-hero, .footer, .navbar, .mobile-nav { max-width: 100%; }
   table { display: block; overflow-x: auto; width: 100%; max-width: 100%; }
 }
 
@@ -2583,7 +2662,7 @@ select.form-control { cursor: pointer; }
 /* ── Back To Top ─────────────────────────────────────────── */
 #backToTop {
   position: fixed;
-  bottom: 28px;
+  bottom: 156px;
   right: 28px;
   width: 48px;
   height: 48px;
@@ -2599,7 +2678,7 @@ select.form-control { cursor: pointer; }
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease, transform 0.3s ease;
-  z-index: 500;
+  z-index: 1003;
   cursor: pointer;
 }
 #backToTop.visible {
