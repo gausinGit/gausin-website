@@ -6,22 +6,28 @@
 'use strict';
 
 /* ── Navbar ──────────────────────────────────────────────── */
-const navbar = document.getElementById('navbar');
-const navbarToggle = document.getElementById('navbarToggle');
+function getNavbar() {
+  return document.getElementById('navbar');
+}
+
+function getNavbarToggle() {
+  return document.getElementById('navbarToggle');
+}
 
 function getMobileNav() {
   return document.getElementById('mobileNav');
 }
 
 function closeMobileNav() {
-  navbarToggle?.classList.remove('open');
+  getNavbarToggle()?.classList.remove('open');
   getMobileNav()?.classList.remove('open');
   document.body.classList.remove('nav-open');
   document.body.style.overflow = '';
 }
 
-// Scroll state
+// Scroll state (navbar may be injected after this script on some pages)
 window.addEventListener('scroll', () => {
+  const navbar = getNavbar();
   if (window.scrollY > 20) {
     navbar?.classList.add('scrolled');
   } else {
@@ -29,11 +35,13 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// Mobile toggle (mobileNav may be injected after this script by components.js)
-navbarToggle?.addEventListener('click', () => {
+// Mobile toggle — delegated so injected navbar (our-clients, sitemap) still works
+document.addEventListener('click', (e) => {
+  const toggle = e.target.closest('#navbarToggle');
+  if (!toggle) return;
   const mobileNav = getMobileNav();
   const isOpen = !mobileNav?.classList.contains('open');
-  navbarToggle.classList.toggle('open', isOpen);
+  toggle.classList.toggle('open', isOpen);
   mobileNav?.classList.toggle('open', isOpen);
   document.body.classList.toggle('nav-open', isOpen);
   document.body.style.overflow = isOpen ? 'hidden' : '';
