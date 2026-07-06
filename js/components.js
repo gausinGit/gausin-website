@@ -952,6 +952,8 @@ function injectComponents() {
     localStorage.setItem('gausin_cookie_consent', 'rejected');
     hideCookieBanner();
   });
+
+  window.bindBackToTop?.();
 }
 
 /* ─── WhatsApp Styles ─────────────────────────────────────── */

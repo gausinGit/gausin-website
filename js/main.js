@@ -442,18 +442,27 @@ function formatNumber(n) {
   return n.toString();
 }
 
-/* ── Back to Top ─────────────────────────────────────────── */
-const backTopBtn = document.getElementById('backToTop');
-if (backTopBtn) {
-  window.addEventListener('scroll', () => {
-    backTopBtn.style.opacity = window.scrollY > 400 ? '1' : '0';
-    backTopBtn.style.pointerEvents = window.scrollY > 400 ? 'all' : 'none';
-  });
-
+/* ── Back to Top (button may be injected after this script on some pages) ── */
+function bindBackToTop() {
+  const backTopBtn = document.getElementById('backToTop');
+  if (!backTopBtn || backTopBtn.dataset.gausinBound) return;
+  backTopBtn.dataset.gausinBound = '1';
   backTopBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 }
+
+window.bindBackToTop = bindBackToTop;
+bindBackToTop();
+
+window.addEventListener('scroll', () => {
+  const backTopBtn = document.getElementById('backToTop');
+  if (!backTopBtn) return;
+  bindBackToTop();
+  const show = window.scrollY > 400;
+  backTopBtn.style.opacity = show ? '1' : '0';
+  backTopBtn.style.pointerEvents = show ? 'all' : 'none';
+}, { passive: true });
 
 /* ── Loading Animation ───────────────────────────────────── */
 window.addEventListener('load', () => {
