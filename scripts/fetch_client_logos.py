@@ -14,7 +14,7 @@ CTX.verify_mode = ssl.CERT_NONE
 
 SOURCES = {
     "gsk": [
-        "https://www.gsk.com/media/qk5h0v0k/gsk-logo.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Gsk-logo.webp/960px-Gsk-logo.webp.png",
     ],
     "chitale": [
         "https://www.chitaledairy.com/images/logo.png",
@@ -58,6 +58,8 @@ def fetch(url: str) -> bytes:
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     with urllib.request.urlopen(req, timeout=25, context=CTX) as resp:
         data = resp.read()
+    if data[:5].startswith(b"<!DOC") or data[:5].startswith(b"<html") or data[:2] == b"<!":
+        raise ValueError("response is HTML, not an image")
     if len(data) < 400:
         raise ValueError(f"response too small ({len(data)} bytes)")
     return data

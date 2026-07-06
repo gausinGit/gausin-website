@@ -475,7 +475,7 @@ const NAVBAR_HTML = `
 <nav class="navbar" id="navbar">
   <div class="container">
     <div class="navbar-inner">
-      <a href="index.html" class="navbar-logo footer-logo"><img src="images/gausin-logo.png" alt="" class="logo-img" width="110" height="52" aria-hidden="true"><div class="logo-text"><div class="logo-name">Gausin International</div><div class="logo-tagline">Engineers Pvt. Ltd.</div></div></a>
+      <a href="index.html" class="navbar-logo navbar-logo--image"><img src="images/gausin-logo.png" alt="Gausin International Engineers Pvt. Ltd." class="logo-img" width="220" height="52"></a>
 
       <nav class="navbar-nav">
         <div class="nav-item">

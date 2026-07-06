@@ -242,30 +242,6 @@
     /* Justify body paragraphs (equal left & right edges) */
     .card-desc { text-align: justify; }
     .feature-card .card-desc, .why-card .card-desc { text-align: justify; }
-
-    /* Homepage — Get a Quote CTA */
-    .btn-primary.btn-get-quote {
-      background: linear-gradient(135deg, #3385ff 0%, #0066ff 52%, #0052cc 100%);
-      box-shadow: 0 4px 18px rgba(0, 102, 255, 0.32);
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-    }
-    .btn-primary.btn-get-quote:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 28px rgba(0, 102, 255, 0.42);
-      background: linear-gradient(135deg, #4d94ff 0%, #0066ff 50%, #004dbf 100%);
-    }
-    .btn-primary.btn-get-quote:active {
-      transform: translateY(-1px);
-      box-shadow: 0 6px 20px rgba(0, 102, 255, 0.35);
-    }
-    .navbar-cta .btn-get-quote.btn-sm {
-      padding: 0.5625rem 1.15rem;
-      font-size: 0.875rem;
-    }
-    .mobile-nav .btn-get-quote {
-      padding: 0.84rem 1.68rem;
-      font-size: 0.9375rem;
-    }
   </style>
 </head>
 <body>
@@ -511,7 +487,7 @@
         <button type="button" class="site-search-btn" id="siteSearchBtn" aria-label="Search site" title="Search (Ctrl+K)">
           <svg class="site-search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><line x1="16.65" y1="16.65" x2="21" y2="21"></line></svg>
         </button>
-        <a href="contact.html" class="btn btn-primary btn-sm btn-get-quote">
+        <a href="contact.html" class="btn btn-primary btn-sm">
           <i class="fa-solid fa-paper-plane"></i> Get a Quote
         </a>
       </div>
@@ -539,7 +515,7 @@
   <a href="contact.html" class="mobile-nav-link mobile-nav-link-plain" style="display:flex;align-items:center;justify-content:space-between;padding:16px 0;font-size:1rem;font-weight:600;color:var(--gray-800);border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Contact</a>
   <div style="margin-top:24px;display:flex;flex-direction:column;gap:12px;">
     <button type="button" class="btn btn-outline site-search-trigger" id="siteSearchBtnMobile" style="width:100%;justify-content:center;"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
-    <a href="contact.html" class="btn btn-primary btn-get-quote" style="width:100%;justify-content:center;"><i class="fa-solid fa-paper-plane"></i> Get a Quote</a>
+    <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;"><i class="fa-solid fa-paper-plane"></i> Get a Quote</a>
   </div>
 </div>
 
@@ -1043,6 +1019,68 @@
           <div style="font-size:1rem;font-weight:700;color:white;font-family:'Montserrat',sans-serif;margin-bottom:6px;">CNC Fabrication</div>
           <div style="font-size:0.8125rem;color:rgba(255,255,255,0.55);">Laser Cutting & Precision Welding</div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTS -->
+<section class="section clients-section" id="clients">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-label"><i class="fa-solid fa-handshake"></i> Our Clients</div>
+      <h2 class="section-title">Trusted by <span>Industry Leaders</span></h2>
+      <p class="section-desc">From global pharmaceutical giants to leading dairy cooperatives — our engineering solutions power production lines across top organizations.</p>
+    </div>
+
+    <div class="clients-grid" data-aos="fade-up" data-aos-delay="100">
+      <div class="client-card">
+        <img src="images/clients/gsk.png" alt="Glaxo Smithkline Beecham Consumer Healthcare" class="client-logo" width="160" height="56" loading="lazy">
+        <span class="client-name">Glaxo Smithkline Beecham Consumer Healthcare</span>
+      </div>
+      <div class="client-card">
+        <img src="images/clients/chitale.svg" alt="Chitale Dairy" class="client-logo" width="160" height="56" loading="lazy">
+        <span class="client-name">Chitale Dairy</span>
+      </div>
+      <div class="client-card">
+        <img src="images/clients/nectar-lifesciences.png" alt="Nectar Lifesciences Ltd." class="client-logo" width="160" height="56" loading="lazy">
+        <span class="client-name">Nectar Lifesciences Ltd.</span>
+      </div>
+      <div class="client-card">
+        <img src="images/clients/covalent-laboratories.png" alt="Covalent Laboratories Ltd." class="client-logo" width="160" height="56" loading="lazy">
+        <span class="client-name">Covalent Laboratories Ltd.</span>
+      </div>
+      <div class="client-card">
+        <img src="images/clients/goodricke.png" alt="Goodricke Tea" class="client-logo" width="160" height="56" loading="lazy">
+        <span class="client-name">Goodricke Tea</span>
+      </div>
+      <div class="client-card">
+        <img src="images/clients/jain.png" alt="Jain Irrigation" class="client-logo" width="160" height="56" loading="lazy">
+        <span class="client-name">Jain Irrigation</span>
+      </div>
+      <div class="client-card">
+        <img src="images/clients/renuka.png" alt="Shree Renuka Sugars" class="client-logo" width="160" height="56" loading="lazy">
+        <span class="client-name">Shree Renuka Sugars</span>
+      </div>
+      <div class="client-card">
+        <img src="images/clients/ccl.png" alt="CCL Products" class="client-logo" width="160" height="56" loading="lazy">
+        <span class="client-name">CCL Products</span>
+      </div>
+      <div class="client-card">
+        <img src="images/clients/aurobindo.png" alt="Aurobindo Pharma" class="client-logo" width="160" height="56" loading="lazy">
+        <span class="client-name">Aurobindo Pharma</span>
+      </div>
+      <div class="client-card">
+        <img src="images/clients/ranbaxy.svg" alt="Ranbaxy" class="client-logo" width="160" height="56" loading="lazy">
+        <span class="client-name">Ranbaxy</span>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:48px;display:flex;flex-direction:column;align-items:center;gap:16px;" data-aos="fade-up">
+      <p style="font-size:1rem;color:var(--gray-500);margin:0;">Partnering with 200+ companies across India and internationally</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="our-clients.html" class="btn btn-primary"><i class="fa-solid fa-building"></i> View All Clients</a>
+        <a href="contact.html" class="btn btn-outline"><i class="fa-solid fa-envelope"></i> Become a Client</a>
       </div>
     </div>
   </div>
