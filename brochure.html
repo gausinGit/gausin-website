@@ -35,15 +35,17 @@
   --sp-x: 18mm;
   --sp-y: 18mm;
   --sp-foot: 24mm;
-  --font-serif: Georgia, 'Times New Roman', serif;
-  --font-sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-serif: Georgia, 'Times New Roman', Times, serif;
+  --font-sans: Arial, Helvetica, 'Helvetica Neue', sans-serif;
 }
 html, body {
-  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-family: var(--font-sans);
   background: #2E3A4A;
   color: var(--text-dark);
   -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 @page { size: A4; margin: 0; }
 h1, h2, h3, h4 {
@@ -100,11 +102,6 @@ p { line-height: 1.65; margin: 0; }
   color: var(--navy); margin: 7px 0 11px;
   font-weight: 700;
 }
-.pg-intro {
-  font-size: 9pt; color: var(--text);
-  line-height: 1.7; max-width: 168mm;
-  text-align: justify;
-}
 .pg-num {
   position: absolute; top: var(--sp-y); right: var(--sp-x);
   font-family: var(--font-serif);
@@ -122,6 +119,24 @@ p { line-height: 1.65; margin: 0; }
 .body {
   font-size: 8.8pt; color: var(--text);
   line-height: 1.65; text-align: justify;
+  hyphens: none;
+  -webkit-hyphens: none;
+  font-family: var(--font-sans);
+}
+.pg-intro {
+  font-size: 9pt; color: var(--text);
+  line-height: 1.7; max-width: 168mm;
+  text-align: justify;
+  hyphens: none;
+  -webkit-hyphens: none;
+  font-family: var(--font-sans);
+}
+/* PDF-safe justified copy — no auto-hyphens (prevents thick/broken "l" in print) */
+.nbox p, .info-box p, .mv-card p, .svc-card p, .cap-item p,
+.adv-card p, .sust-box p, .mfg-item p, .step p, .fab-step p {
+  hyphens: none;
+  -webkit-hyphens: none;
+  font-family: var(--font-sans);
 }
 
 /* === LAYOUT === */
@@ -359,14 +374,19 @@ p { line-height: 1.65; margin: 0; }
   border: 2pt solid var(--grey-border);
 }
 .lead-photo img { width: 100%; display: block; object-fit: cover; height: 68mm; }
-.lead-name { font-size: 13pt; color: var(--navy); margin-bottom: 4px; }
+.lead-name {
+  font-size: 13pt; color: var(--navy); margin-bottom: 4px;
+  font-family: var(--font-serif);
+  font-weight: 700;
+}
 .lead-role {
-  display: inline-block; font-size: 7pt; font-weight: 700;
+  display: inline-block; font-size: 7pt; font-weight: 600;
   color: var(--blue); background: #EBF2FC;
   border: 0.5pt solid #BFD4F5;
   padding: 4px 10px; border-radius: 99px;
-  text-transform: uppercase; letter-spacing: 0.08em;
+  text-transform: uppercase; letter-spacing: 0.03em;
   margin-bottom: 10px;
+  font-family: var(--font-sans);
 }
 .lead-quote {
   border-left: 2pt solid var(--gold);
@@ -426,7 +446,9 @@ p { line-height: 1.65; margin: 0; }
 }
 .val-card span {
   display: block; font-size: 7.2pt; color: var(--text); line-height: 1.45;
-  text-align: justify; text-justify: inter-word; hyphens: auto;
+  text-align: justify; text-justify: inter-word;
+  hyphens: none; -webkit-hyphens: none;
+  font-family: var(--font-sans);
 }
 
 /* === CAPABILITIES === */
@@ -923,7 +945,9 @@ p { line-height: 1.65; margin: 0; }
 }
 .ind-cell span {
   display: block; font-size: 7.5pt; color: var(--text); line-height: 1.45;
-  text-align: justify; text-justify: inter-word; hyphens: auto;
+  text-align: justify; text-justify: inter-word;
+  hyphens: none; -webkit-hyphens: none;
+  font-family: var(--font-sans);
 }
 
 /* === CLIENT STRIP === */
@@ -1149,6 +1173,19 @@ p { line-height: 1.65; margin: 0; }
   .cap-item, .svc-card, .val-card, .adv-card, .step, .fab-step,
   .ind-cell, .cert-cell, .cat-block, .prod-cat, .nbox, .mfg-item,
   .p-showcase, .p-spec-grid { break-inside: avoid; page-break-inside: avoid; }
+  /* Embed-safe fonts — avoids Segoe UI "l" / "I" weight mismatch in Adobe PDF */
+  html, body, p, span, div, li, td, th, label, a,
+  .body, .pg-intro, .foot, .eyebrow, .lead-role, .svc-card p,
+  .cap-item p, .adv-card p, .val-card span, .ind-cell span, .nbox p {
+    font-family: Arial, Helvetica, sans-serif !important;
+    hyphens: none !important;
+    -webkit-hyphens: none !important;
+    text-rendering: geometricPrecision;
+  }
+  h1, h2, h3, h4, .pg-h, .pg-num, .lead-name, .lead-quote p,
+  .ind-cell b, .mv-card h3, .cert-cell b, .cap-item b, .adv-card b {
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+  }
 }
 </style>
 </head>
@@ -1528,22 +1565,22 @@ p { line-height: 1.65; margin: 0; }
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 36" style="width:100%;margin-top:8mm;" aria-hidden="true">
       <defs><marker id="arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#0B5ED7"/></marker></defs>
       <rect x="0" y="10" width="90" height="16" rx="3" fill="#EBF2FC" stroke="#0B5ED7" stroke-width="0.8"/>
-      <text x="45" y="21" text-anchor="middle" font-size="7" fill="#0A2540" font-family="Segoe UI,sans-serif">Enquiry</text>
+      <text x="45" y="21" text-anchor="middle" font-size="7" fill="#0A2540" font-family="Arial,Helvetica,sans-serif">Enquiry</text>
       <line x1="90" y1="18" x2="110" y2="18" stroke="#0B5ED7" stroke-width="1" marker-end="url(#arr)"/>
       <rect x="110" y="10" width="90" height="16" rx="3" fill="#EBF2FC" stroke="#0B5ED7" stroke-width="0.8"/>
-      <text x="155" y="21" text-anchor="middle" font-size="7" fill="#0A2540" font-family="Segoe UI,sans-serif">Engineer</text>
+      <text x="155" y="21" text-anchor="middle" font-size="7" fill="#0A2540" font-family="Arial,Helvetica,sans-serif">Engineer</text>
       <line x1="200" y1="18" x2="220" y2="18" stroke="#0B5ED7" stroke-width="1" marker-end="url(#arr)"/>
       <rect x="220" y="10" width="90" height="16" rx="3" fill="#EBF2FC" stroke="#0B5ED7" stroke-width="0.8"/>
-      <text x="265" y="21" text-anchor="middle" font-size="7" fill="#0A2540" font-family="Segoe UI,sans-serif">Fabricate</text>
+      <text x="265" y="21" text-anchor="middle" font-size="7" fill="#0A2540" font-family="Arial,Helvetica,sans-serif">Fabricate</text>
       <line x1="310" y1="18" x2="330" y2="18" stroke="#0B5ED7" stroke-width="1" marker-end="url(#arr)"/>
       <rect x="330" y="10" width="90" height="16" rx="3" fill="#EBF2FC" stroke="#0B5ED7" stroke-width="0.8"/>
-      <text x="375" y="21" text-anchor="middle" font-size="7" fill="#0A2540" font-family="Segoe UI,sans-serif">Install</text>
+      <text x="375" y="21" text-anchor="middle" font-size="7" fill="#0A2540" font-family="Arial,Helvetica,sans-serif">Install</text>
       <line x1="420" y1="18" x2="440" y2="18" stroke="#0B5ED7" stroke-width="1" marker-end="url(#arr)"/>
       <rect x="440" y="10" width="90" height="16" rx="3" fill="#0A2540" stroke="#C9922A" stroke-width="0.8"/>
-      <text x="485" y="21" text-anchor="middle" font-size="7" fill="white" font-family="Segoe UI,sans-serif">Commission</text>
+      <text x="485" y="21" text-anchor="middle" font-size="7" fill="white" font-family="Arial,Helvetica,sans-serif">Commission</text>
       <line x1="530" y1="18" x2="550" y2="18" stroke="#0B5ED7" stroke-width="1" marker-end="url(#arr)"/>
       <rect x="550" y="10" width="90" height="16" rx="3" fill="#EBF2FC" stroke="#0B5ED7" stroke-width="0.8"/>
-      <text x="595" y="21" text-anchor="middle" font-size="7" fill="#0A2540" font-family="Segoe UI,sans-serif">Support</text>
+      <text x="595" y="21" text-anchor="middle" font-size="7" fill="#0A2540" font-family="Arial,Helvetica,sans-serif">Support</text>
     </svg>
     <div class="nbox" style="margin-top:6mm;">
       <h3>Service commitment</h3>
@@ -2115,18 +2152,18 @@ p { line-height: 1.65; margin: 0; }
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 28" style="width:100%;margin-top:4mm;margin-bottom:2mm;" aria-hidden="true">
       <defs><marker id="mfg-arr" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#C9922A"/></marker></defs>
       <line x1="30" y1="14" x2="650" y2="14" stroke="#D8E0EA" stroke-width="1"/>
-      <circle cx="50" cy="14" r="8" fill="#0A2540"/><text x="50" y="17" text-anchor="middle" font-size="6" fill="white" font-family="Segoe UI,sans-serif">1</text>
-      <circle cx="170" cy="14" r="8" fill="#0A2540"/><text x="170" y="17" text-anchor="middle" font-size="6" fill="white" font-family="Segoe UI,sans-serif">2</text>
-      <circle cx="290" cy="14" r="8" fill="#0B5ED7"/><text x="290" y="17" text-anchor="middle" font-size="6" fill="white" font-family="Segoe UI,sans-serif">3</text>
-      <circle cx="410" cy="14" r="8" fill="#0B5ED7"/><text x="410" y="17" text-anchor="middle" font-size="6" fill="white" font-family="Segoe UI,sans-serif">4</text>
-      <circle cx="530" cy="14" r="8" fill="#C9922A"/><text x="530" y="17" text-anchor="middle" font-size="6" fill="white" font-family="Segoe UI,sans-serif">5</text>
-      <circle cx="630" cy="14" r="8" fill="#C9922A"/><text x="630" y="17" text-anchor="middle" font-size="6" fill="white" font-family="Segoe UI,sans-serif">6</text>
-      <text x="50" y="26" text-anchor="middle" font-size="5.5" fill="#5A6E82" font-family="Segoe UI,sans-serif">Procure</text>
-      <text x="170" y="26" text-anchor="middle" font-size="5.5" fill="#5A6E82" font-family="Segoe UI,sans-serif">Fabricate</text>
-      <text x="290" y="26" text-anchor="middle" font-size="5.5" fill="#5A6E82" font-family="Segoe UI,sans-serif">Test</text>
-      <text x="410" y="26" text-anchor="middle" font-size="5.5" fill="#5A6E82" font-family="Segoe UI,sans-serif">Dispatch</text>
-      <text x="530" y="26" text-anchor="middle" font-size="5.5" fill="#5A6E82" font-family="Segoe UI,sans-serif">Install</text>
-      <text x="630" y="26" text-anchor="middle" font-size="5.5" fill="#5A6E82" font-family="Segoe UI,sans-serif">Commission</text>
+      <circle cx="50" cy="14" r="8" fill="#0A2540"/><text x="50" y="17" text-anchor="middle" font-size="6" fill="white" font-family="Arial,Helvetica,sans-serif">1</text>
+      <circle cx="170" cy="14" r="8" fill="#0A2540"/><text x="170" y="17" text-anchor="middle" font-size="6" fill="white" font-family="Arial,Helvetica,sans-serif">2</text>
+      <circle cx="290" cy="14" r="8" fill="#0B5ED7"/><text x="290" y="17" text-anchor="middle" font-size="6" fill="white" font-family="Arial,Helvetica,sans-serif">3</text>
+      <circle cx="410" cy="14" r="8" fill="#0B5ED7"/><text x="410" y="17" text-anchor="middle" font-size="6" fill="white" font-family="Arial,Helvetica,sans-serif">4</text>
+      <circle cx="530" cy="14" r="8" fill="#C9922A"/><text x="530" y="17" text-anchor="middle" font-size="6" fill="white" font-family="Arial,Helvetica,sans-serif">5</text>
+      <circle cx="630" cy="14" r="8" fill="#C9922A"/><text x="630" y="17" text-anchor="middle" font-size="6" fill="white" font-family="Arial,Helvetica,sans-serif">6</text>
+      <text x="50" y="26" text-anchor="middle" font-size="5.5" fill="#5A6E82" font-family="Arial,Helvetica,sans-serif">Procure</text>
+      <text x="170" y="26" text-anchor="middle" font-size="5.5" fill="#5A6E82" font-family="Arial,Helvetica,sans-serif">Fabricate</text>
+      <text x="290" y="26" text-anchor="middle" font-size="5.5" fill="#5A6E82" font-family="Arial,Helvetica,sans-serif">Test</text>
+      <text x="410" y="26" text-anchor="middle" font-size="5.5" fill="#5A6E82" font-family="Arial,Helvetica,sans-serif">Dispatch</text>
+      <text x="530" y="26" text-anchor="middle" font-size="5.5" fill="#5A6E82" font-family="Arial,Helvetica,sans-serif">Install</text>
+      <text x="630" y="26" text-anchor="middle" font-size="5.5" fill="#5A6E82" font-family="Arial,Helvetica,sans-serif">Commission</text>
     </svg>
     <div class="fab-grid">
       <div class="fab-step"><div class="fs-n">01</div><b>Material Procurement</b><p>Approved vendors with full MTR, heat numbers and certifications.</p></div>
