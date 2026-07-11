@@ -112,12 +112,6 @@
   "hero.label.0": "Pramonės šakos",
   "crumb.0": "Pradžia",
   "crumb.1": "Pramonės šakos",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "h2.0"
-  ],
   "indDetail.title.0": "Pieno perdirbimas",
   "indDetail.title.1": "Maisto pramonė",
   "indDetail.title.2": "Farmacijos pramonė",
@@ -140,6 +134,12 @@
   "indDetail.statLbl.3": "Pristatyti projektai",
   "indDetail.highlightTitle.0": "Pieno inžinerijos akcentas",
   "indDetail.highlightDesc.0": "Mūsų daugiafunkciniai krintančios plėvelės garintuvai užtikrina 4–6 kg vandens vienam kilogramui garų ekonomiją, todėl jūsų energijos sąnaudos sumažėja iki 60%, palyginti su vieno efekto sistemomis.",
-  "indDetail.note.0": "Maisto perdirbimui reikalingas griežtas higieninis dizainas, lengvas valymas ir pastovi gaminių kokybė. ",
-  "indDetail.note.1": "Cheminis išgarinimas dažnai apima korozinius, pleiskanojančius ar kristalizuojančius skysčius. "
+  "indDetail.note.0": "Maisto perdirbimui reikalingas griežtas higieninis dizainas, lengvas valymas ir pastovi gaminių kokybė. Mūsų garintuvai, džiovintuvai ir šilumokaičiai yra pagaminti su SS 304/316L kontaktiniais paviršiais, sanitarinėmis detalėmis ir CIP integracija, kad atitiktų FSSAI ir maisto kokybės sulčių, krakmolo, gliukozės ir ingredientų gamybos standartus.",
+  "indDetail.note.1": "Cheminis išgarinimas dažnai apima korozinius, pleiskanojančius ar kristalizuojančius skysčius. Mūsų priverstinės cirkuliacijos garintuvai palaiko didelį skysčio greitį, kad išvengtų užsiteršimo, o mūsų pasirinktos medžiagos apima CS, SS, Hastalloy, titano ir guma aptrauktus variantus.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "h2.0"
+  ]
 }

@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "category": "Qurutma maşınları",
   "breadcrumb.cat.0": "Qurutma maşınları",
   "qs.0.label": "Yataq sahəsi",
@@ -113,8 +107,14 @@
   "related.0.desc": "Bir addımda maye ilə toz halına salın.",
   "related.1.desc": "Pastaların və filtr tortlarının birbaşa qurudulması.",
   "related.2.desc": "Özlü, çirkləndirici yemlərin davamlı qurudulması.",
-  "tagline": "Qranul, kristal və tozlu materiallar üçün mayeləşdirilmiş yataq texnologiyası. ",
+  "tagline": "Qranul, kristal və tozlu materiallar üçün mayeləşdirilmiş yataq texnologiyası. İsti hava axını hissəcikləri dayandıraraq, dərman və qida üçün partiya və ya davamlı konfiqurasiyalarda dəqiq nəm nəzarəti ilə vahid, yumşaq qurutma təmin edir.",
   "overview.p0": "<strong style=\"color:var(--gray-900);\">Gausin Maye Yataq Quruducusu (FBD)</strong>, isti havanı perforasiya edilmiş paylayıcı lövhədən yuxarıya doğru ötürərək nəm qranulları və tozları qurudur, yatağı mayeləşdirir, beləliklə hər hissəcik quruyan hava ilə əhatə olunur. ",
   "overview.p1": "Hər bir hissəcik yumşaq bir şəkildə asıldığı və fərdi şəkildə qurudulduğu üçün FBD yerli həddindən artıq istiləşmənin qarşısını alır və sıx, təkrarlanan nəmlə sərbəst axan məhsul istehsal edir. ",
-  "overview.p2": "Gausin yüksək məhsuldarlıqlı süd, qida, duz və kimyəvi məhsullar üçün GMP icrası, partlayış təhlükəsizliyi və CIP variantları ilə davamlı maye yataq qurutma maşınları (Vibro və ya statik) təklif edir."
+  "overview.p2": "Gausin yüksək məhsuldarlıqlı süd, qida, duz və kimyəvi məhsullar üçün GMP icrası, partlayış təhlükəsizliyi və CIP variantları ilə davamlı maye yataq qurutma maşınları (Vibro və ya statik) təklif edir.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

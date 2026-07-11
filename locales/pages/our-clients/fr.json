@@ -29,10 +29,10 @@
   "cli.statLbl.0": "Entreprises desservies",
   "cli.statLbl.1": "Secteurs industriels",
   "cli.statLbl.2": "Projets livrés",
+  "cli.intro.0": "Gausin International Engineers est fier de s'associer à des noms respectés dans les secteurs pharmaceutique, laitier, alimentaire, chimique, de distillerie et de l'énergie, en fournissant des équipements de traitement fiables et des solutions d'usine clé en main.",
   "_htmlKeys": [
     "hero.title.0",
     "sec.title.0",
     "sec.title.1"
-  ],
-  "cli.intro.0": "Gausin International Engineers est fier de s'associer à des noms respectés dans les secteurs pharmaceutique, laitier, alimentaire, chimique, de distillerie et de l'énergie, en fournissant des équipements de traitement fiables et des solutions d'usine clé en main."
+  ]
 }

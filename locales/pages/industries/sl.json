@@ -112,12 +112,6 @@
   "hero.label.0": "Industrije",
   "crumb.0": "domov",
   "crumb.1": "Industrije",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "h2.0"
-  ],
   "indDetail.title.0": "Predelava mleka",
   "indDetail.title.1": "Živilska industrija",
   "indDetail.title.2": "Farmacevtska industrija",
@@ -140,6 +134,12 @@
   "indDetail.statLbl.3": "Dostavljeni projekti",
   "indDetail.highlightTitle.0": "Vrhunec mlekarstva",
   "indDetail.highlightDesc.0": "Naši uparjalniki s padajočim filmom z več učinki dosegajo prihranek pare 4–6 kg vode na kg pare, s čimer zmanjšajo vaše stroške energije do 60 % v primerjavi s sistemi z enim učinkom.",
-  "indDetail.note.0": "Predelava hrane zahteva strogo higiensko zasnovo, enostavno čiščenje in dosledno kakovost izdelkov. ",
-  "indDetail.note.1": "Kemično izhlapevanje pogosto vključuje jedke tekočine, tekočine z luščenjem ali kristalizacijo. "
+  "indDetail.note.0": "Predelava hrane zahteva strogo higiensko zasnovo, enostavno čiščenje in dosledno kakovost izdelkov. Naši uparjalniki, sušilniki in izmenjevalniki toplote so izdelani s kontaktnimi površinami iz SS 304/316L, sanitarnimi armaturami in integracijo CIP, da izpolnjujejo standarde FSSAI in živilske kakovosti za proizvodnjo sokov, škroba, glukoze in sestavin.",
+  "indDetail.note.1": "Kemično izhlapevanje pogosto vključuje jedke tekočine, tekočine z luščenjem ali kristalizacijo. Naši uparjalniki s prisilnim obtokom vzdržujejo visoke hitrosti tekočine, da preprečijo obraščanje, medtem ko naš izbor materialov zajema CS, SS, Hastalloy, Titanium in možnosti z gumo.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "h2.0"
+  ]
 }

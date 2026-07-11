@@ -112,12 +112,6 @@
   "hero.label.0": "Průmyslová odvětví",
   "crumb.0": "Domov",
   "crumb.1": "Průmyslová odvětví",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "h2.0"
-  ],
   "indDetail.title.0": "Zpracování mléčných výrobků",
   "indDetail.title.1": "Potravinářský průmysl",
   "indDetail.title.2": "Farmaceutický průmysl",
@@ -140,6 +134,12 @@
   "indDetail.statLbl.3": "Projekty doručeny",
   "indDetail.highlightTitle.0": "Mléčné inženýrství Highlight",
   "indDetail.highlightDesc.0": "Naše multiefektové odparky s padajícím filmem dosahují úspor páry 4 – 6 kg vody na kg páry, čímž snižují vaše náklady na energii až o 60 % ve srovnání s jednočinnými systémy.",
-  "indDetail.note.0": "Zpracování potravin vyžaduje přísný hygienický design, snadnou čistitelnost a stálou kvalitu produktů. ",
-  "indDetail.note.1": "Chemické odpařování často zahrnuje korozivní, usazující se nebo krystalizující tekutiny. "
+  "indDetail.note.0": "Zpracování potravin vyžaduje přísný hygienický design, snadnou čistitelnost a stálou kvalitu produktů. Naše výparníky, sušičky a výměníky tepla jsou vyrobeny s kontaktními plochami SS 304/316L, sanitárními armaturami a integrací CIP, aby splňovaly normy FSSAI a potravinářské normy pro výrobu šťáv, škrobu, glukózy a přísad.",
+  "indDetail.note.1": "Chemické odpařování často zahrnuje korozivní, usazující se nebo krystalizující tekutiny. Naše výparníky s nuceným oběhem udržují vysoké rychlosti kapaliny, aby se zabránilo znečištění, zatímco náš výběr materiálů zahrnuje varianty CS, SS, Hastalloy, Titan a pryžové obložení.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "h2.0"
+  ]
 }

@@ -112,12 +112,6 @@
   "hero.label.0": "산업",
   "crumb.0": "집",
   "crumb.1": "산업",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "h2.0"
-  ],
   "indDetail.title.0": "유제품 가공",
   "indDetail.title.1": "식품산업",
   "indDetail.title.2": "제약 산업",
@@ -140,6 +134,12 @@
   "indDetail.statLbl.3": "납품된 프로젝트",
   "indDetail.highlightTitle.0": "유제품 공학 하이라이트",
   "indDetail.highlightDesc.0": "당사의 다중 효과 낙하막 증발기는 증기 kg당 물 4~6kg의 증기 경제성을 달성하여 단일 효과 시스템에 비해 에너지 비용을 최대 60%까지 절감합니다.",
-  "indDetail.note.0": "식품 가공에는 엄격한 위생 설계, 손쉬운 세척성, 일관된 제품 품질이 요구됩니다. ",
-  "indDetail.note.1": "화학적 증발에는 부식성, 스케일링 또는 결정화 유체가 포함되는 경우가 많습니다. "
+  "indDetail.note.0": "식품 가공에는 엄격한 위생 설계, 손쉬운 세척성, 일관된 제품 품질이 요구됩니다. 당사의 증발기, 건조기 및 열 교환기는 SS 304/316L 접촉 표면, 위생 설비 및 CIP 통합으로 제작되어 주스, 전분, 포도당 및 성분 제조에 대한 FSSAI 및 식품 등급 표준을 충족합니다.",
+  "indDetail.note.1": "화학적 증발에는 부식성, 스케일링 또는 결정화 유체가 포함되는 경우가 많습니다. 당사의 강제 순환 증발기는 오염을 방지하기 위해 높은 액체 속도를 유지하며 당사의 재료 선택에는 CS, SS, Hastalloy, 티타늄 및 고무 라이닝 옵션이 포함됩니다.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "h2.0"
+  ]
 }

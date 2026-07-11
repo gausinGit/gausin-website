@@ -37,7 +37,6 @@
   "p.14": "我們的工程團隊可以討論您的工藝要求、審查您的規格並提出正確的解決方案。取得免費技術諮詢。",
   "btn.0": "請求技術諮詢",
   "_meta.title": "見解|高辛國際工程師兵。有限公司",
-  "_htmlKeys": [],
   "hero.label.0": "見解",
   "ins.statLbl.0": "科技文章",
   "ins.statLbl.1": "案例研究",
@@ -151,5 +150,6 @@
   "ins.secTitle.0": "案例研究",
   "ins.secTitle.1": "科技文章",
   "ins.secTitle.2": "產業報告",
-  "ins.secTitle.3": "操作指南"
+  "ins.secTitle.3": "操作指南",
+  "_htmlKeys": []
 }

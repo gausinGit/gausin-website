@@ -29,10 +29,10 @@
   "cli.statLbl.0": "Kiszolgált cégek",
   "cli.statLbl.1": "Ipari ágazatok",
   "cli.statLbl.2": "Projektek szállított",
+  "cli.intro.0": "A Gausin International Engineers büszke arra, hogy elismert nevekkel áll partnerkapcsolatban a gyógyszerészeti, tejipari, élelmiszeripari, vegyipari, szeszfőzdék és energetikai ágazatokban – megbízható folyamatberendezéseket és kulcsrakész üzemi megoldásokat szállítva.",
   "_htmlKeys": [
     "hero.title.0",
     "sec.title.0",
     "sec.title.1"
-  ],
-  "cli.intro.0": "A Gausin International Engineers büszke arra, hogy elismert nevekkel áll partnerkapcsolatban a gyógyszerészeti, tejipari, élelmiszeripari, vegyipari, szeszfőzdék és energetikai ágazatokban – megbízható folyamatberendezéseket és kulcsrakész üzemi megoldásokat szállítva."
+  ]
 }

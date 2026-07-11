@@ -274,7 +274,7 @@ function fixProductsMegaMenu() {
 
 /* ─── Top Utility Bar ─────────────────────────────────────── */
 const TOPBAR_LINKS = [
-  { href: 'tech-ai.html', label: 'Digital Solutions', icon: 'fa-microchip', i18n: 'nav.digitalSolutions' },
+  { href: 'digital-solutions.html', label: 'Digital Solutions', icon: 'fa-microchip', i18n: 'nav.digitalSolutions' },
   { href: 'insights.html', label: 'Insights', icon: 'fa-lightbulb', i18n: 'topbar.insights' },
   { href: 'career.html', label: 'Career', icon: 'fa-briefcase', i18n: 'topbar.career' },
   { href: 'downloads.html', label: 'Download', icon: 'fa-download', i18n: 'topbar.download' },
@@ -293,6 +293,7 @@ const LANG_CONTINENT_ORDER = [
 const LANGUAGES = [
   { id: 'au', code: 'en', label: 'Australia', flag: '🇦🇺', continent: 'oceania' },
   { id: 'at', code: 'de', label: 'Austria', flag: '🇦🇹', continent: 'europe' },
+  { id: 'af', code: 'ps', label: 'Afghanistan', flag: '🇦🇫', continent: 'asia' },
   { id: 'az', code: 'az', label: 'Azerbaijan', flag: '🇦🇿', continent: 'asia' },
   { id: 'be', code: 'nl', label: 'Belgium', flag: '🇧🇪', continent: 'europe' },
   { id: 'br', code: 'pt', label: 'Brazil', flag: '🇧🇷', continent: 'south-america' },
@@ -310,14 +311,17 @@ const LANGUAGES = [
   { id: 'in', code: 'hi', label: 'India', flag: '🇮🇳', continent: 'asia' },
   { id: 'id', code: 'id', label: 'Indonesia', flag: '🇮🇩', continent: 'asia' },
   { id: 'il', code: 'he', label: 'Israel', flag: '🇮🇱', continent: 'africa-middle-east' },
+  { id: 'ir', code: 'fa', label: 'Iran', flag: '🇮🇷', continent: 'africa-middle-east' },
   { id: 'my', code: 'ms', label: 'Malaysia', flag: '🇲🇾', continent: 'asia' },
   { id: 'sg', code: 'en', label: 'Singapore', flag: '🇸🇬', continent: 'asia' },
+  { id: 'lk', code: 'si', label: 'Sri Lanka', flag: '🇱🇰', continent: 'asia' },
   { id: 'it', code: 'it', label: 'Italy', flag: '🇮🇹', continent: 'europe' },
   { id: 'jp', code: 'ja', label: 'Japan', flag: '🇯🇵', continent: 'asia' },
   { id: 'kr', code: 'ko', label: 'Korea', flag: '🇰🇷', continent: 'asia' },
   { id: 'lv', code: 'lv', label: 'Latvia', flag: '🇱🇻', continent: 'europe' },
   { id: 'lt', code: 'lt', label: 'Lithuania', flag: '🇱🇹', continent: 'europe' },
   { id: 'me', code: 'ar', label: 'Middle East', flag: 'ME', continent: 'africa-middle-east' },
+  { id: 'qa', code: 'ar', label: 'Qatar', flag: '🇶🇦', continent: 'africa-middle-east' },
   { id: 'nl', code: 'nl', label: 'Netherlands', flag: '🇳🇱', continent: 'europe' },
   { id: 'nz', code: 'en', label: 'New Zealand', flag: '🇳🇿', continent: 'oceania' },
   { id: 'no', code: 'no', label: 'Norway', flag: '🇳🇴', continent: 'europe' },
@@ -445,6 +449,9 @@ const LANG_CODE_ALIASES = {
   id: ['indonesian'],
   ms: ['malay'],
   az: ['azerbaijani'],
+  ps: ['pashto', 'pashtun'],
+  fa: ['persian', 'farsi', 'dari'],
+  si: ['sinhala', 'sinhalese'],
   bg: ['bulgarian'],
   cs: ['czech'],
   el: ['greek'],
@@ -463,6 +470,10 @@ const LANG_CODE_ALIASES = {
 const LANG_REGION_ALIASES = {
   in: ['india', 'bharat', 'भारत', 'hindi', 'हिन्दी', 'हिंदी', 'hindustan', 'हिन्दुस्तान'],
   az: ['azerbaijan', 'baku'],
+  af: ['afghanistan', 'afganistan', 'kabul', 'pashto'],
+  lk: ['sri lanka', 'shri lanka', 'sinhala', 'colombo', 'lanka'],
+  ir: ['iran', 'persian', 'farsi', 'tehran'],
+  qa: ['qatar', 'quatar', 'doha'],
   cn: ['china', 'chinese', 'mandarin', '中国'],
   jp: ['japan', 'japanese', 'nippon'],
   kr: ['korea', 'korean', 'south korea'],
@@ -596,17 +607,17 @@ function syncTopbarLinks() {
         <i class="fa-solid ${item.icon}"></i> <span data-i18n="${item.i18n}">${item.label}</span>
       </a>
     `;
-    if (item.href === 'tech-ai.html') container.insertAdjacentHTML('afterbegin', html);
+    if (item.href === 'digital-solutions.html') container.insertAdjacentHTML('afterbegin', html);
     else container.insertAdjacentHTML('beforeend', html);
   });
 }
 
 function removeDigitalSolutionsFromNav() {
-  document.querySelectorAll('.navbar-nav .nav-item > a.nav-link[href="tech-ai.html"]').forEach((link) => {
+  document.querySelectorAll('.navbar-nav .nav-item > a.nav-link[href="digital-solutions.html"]').forEach((link) => {
     link.closest('.nav-item')?.remove();
   });
-  document.querySelectorAll('#mobileNav > a[href="tech-ai.html"]').forEach((link) => link.remove());
-  document.querySelectorAll('#mobileNav .mobile-nav-item--tech-ai').forEach((el) => el.remove());
+  document.querySelectorAll('#mobileNav > a[href="digital-solutions.html"]').forEach((link) => link.remove());
+  document.querySelectorAll('#mobileNav .mobile-nav-item--digital-solutions').forEach((el) => el.remove());
 }
 
 function buildMobileTopbarLinksHtml() {
@@ -768,7 +779,7 @@ const FOOTER_HTML = `
           <a href="industries.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i><span data-i18n="nav.industries">Industries</span></a>
           <a href="our-clients.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i><span data-i18n="nav.ourClients">Our Clients</span></a>
           <a href="technology.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i><span data-i18n="nav.technology">Technology</span></a>
-          <a href="tech-ai.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i><span data-i18n="nav.digitalSolutions">Digital Solutions</span></a>
+          <a href="digital-solutions.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i><span data-i18n="nav.digitalSolutions">Digital Solutions</span></a>
           <a href="insights.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i><span data-i18n="topbar.insights">Insights</span></a>
           <a href="career.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i><span data-i18n="topbar.career">Career</span></a>
           <a href="downloads.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i><span data-i18n="topbar.download">Download</span></a>
@@ -1786,7 +1797,7 @@ window.gausinGetLang = () => _TR.active;
 } // END LEGACY Google Translate
 
 /* ─── Hybrid Static i18n (Phase 1) ─────────────────────────── */
-const GAUSIN_I18N_ASSET_V = '20260711k';
+const GAUSIN_I18N_ASSET_V = '20260711m';
 (function preloadGausinI18n() {
   if (document.querySelector('script[data-gausin-i18n]')) return;
   const page = document.createElement('script');

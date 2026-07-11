@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "category": "Təzyiqli Gəmilər və Saxlama Çənləri",
   "breadcrumb.cat.0": "Təzyiqli Gəmilər və Saxlama Çənləri",
   "qs.0.label": "Həcmi",
@@ -84,7 +78,7 @@
   "how.2.title": "Hidrostatik test",
   "how.2.desc": "Gəmi təzyiqi 1,5° dizayn təzyiqində sınaqdan keçirilmişdir; ",
   "how.3.title": "Saytın quraşdırılması və boruların çəkilməsi",
-  "how.3.desc": "Gəmi bünövrəyə qoyulmuş; ",
+  "how.3.desc": "Gəmi bünövrəyə qoyulmuş; təhlükəsizlik klapanı, təzyiqölçən və zavod boru kəmərlərinə qoşulmuş texnoloji nozzilər.",
   "how.4.title": "Xidmətdə İstismar",
   "how.4.desc": "Gəmi nominal dizayn limitləri daxilində təzyiq altında buxar, sıxılmış hava və ya proses mayesini saxlayır.",
   "sidebar.title": "Sitat tələb edin",
@@ -107,5 +101,11 @@
   "tagline": "ASME Bölmə VIII Bölməyə uyğun olaraq hazırlanmış xüsusi təzyiqli gəmilər. ",
   "overview.p0": "<strong style=\"color:var(--gray-900);\">Gausin Təzyiqli Gəmilər (ASME / IBR)</strong> tələbkar sənaye mühitlərində etibarlı, gigiyenik performans üçün hazırlanmışdır. ",
   "overview.p1": "Hər bir vahid SS 304/316L təmas səthləri, təsdiqlənmiş proses dizaynı və tam sənədlərlə tutumunuza, məhsul xüsusiyyətlərinizə və zavodun yerləşdirilməsi tələblərinə uyğun olaraq xüsusi hazırlanmışdır.",
-  "overview.p2": "Gausin quraşdırma, istismara vermə və satışdan sonrakı xidmət vasitəsilə prosesin dizaynı və istehsalından tam mühəndislik dəstəyi təmin edir."
+  "overview.p2": "Gausin quraşdırma, istismara vermə və satışdan sonrakı xidmət vasitəsilə prosesin dizaynı və istehsalından tam mühəndislik dəstəyi təmin edir.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

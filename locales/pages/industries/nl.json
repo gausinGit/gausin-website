@@ -112,12 +112,6 @@
   "hero.label.0": "Industrieën",
   "crumb.0": "Thuis",
   "crumb.1": "Industrieën",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "h2.0"
-  ],
   "indDetail.title.0": "Zuivelverwerking",
   "indDetail.title.1": "Voedingsindustrie",
   "indDetail.title.2": "Farmaceutische Industrie",
@@ -140,6 +134,12 @@
   "indDetail.statLbl.3": "Projecten opgeleverd",
   "indDetail.highlightTitle.0": "Hoogtepunt van zuiveltechniek",
   "indDetail.highlightDesc.0": "Onze multi-effect vallende filmverdampers realiseren een stoombesparing van 4 - 6 kg water per kg stoom, waardoor uw energiekosten tot 60% worden verlaagd in vergelijking met systemen met enkel effect.",
-  "indDetail.note.0": "Voedselverwerking vereist een strikt hygiënisch ontwerp, gemakkelijke reinigbaarheid en een consistente productkwaliteit. ",
-  "indDetail.note.1": "Bij chemische verdamping zijn vaak corrosieve, schilferende of kristalliserende vloeistoffen betrokken. "
+  "indDetail.note.0": "Voedselverwerking vereist een strikt hygiënisch ontwerp, gemakkelijke reinigbaarheid en een consistente productkwaliteit. Onze verdampers, drogers en warmtewisselaars zijn gebouwd met SS 304/316L contactoppervlakken, sanitaire voorzieningen en CIP-integratie om te voldoen aan FSSAI- en voedselveilige normen voor de productie van sap, zetmeel, glucose en ingrediënten.",
+  "indDetail.note.1": "Bij chemische verdamping zijn vaak corrosieve, schilferende of kristalliserende vloeistoffen betrokken. Onze verdampers met geforceerde circulatie handhaven hoge vloeistofsnelheden om vervuiling te voorkomen, terwijl onze materiaalselectie CS, SS, Hastalloy, Titanium en met rubber beklede opties omvat.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "h2.0"
+  ]
 }

@@ -112,12 +112,6 @@
   "hero.label.0": "Secteurs",
   "crumb.0": "Maison",
   "crumb.1": "Secteurs",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "h2.0"
-  ],
   "indDetail.title.0": "Transformation des produits laitiers",
   "indDetail.title.1": "Industrie alimentaire",
   "indDetail.title.2": "Industrie pharmaceutique",
@@ -140,6 +134,12 @@
   "indDetail.statLbl.3": "Projets livrés",
   "indDetail.highlightTitle.0": "Point culminant de l’ingénierie laitière",
   "indDetail.highlightDesc.0": "Nos évaporateurs à film tombant multi-effets permettent d'économiser de la vapeur de 4 à 6 kg d'eau par kg de vapeur, réduisant ainsi vos coûts énergétiques jusqu'à 60 % par rapport aux systèmes à simple effet.",
-  "indDetail.note.0": "La transformation des aliments exige une conception hygiénique stricte, une facilité de nettoyage et une qualité de produit constante. ",
-  "indDetail.note.1": "L'évaporation chimique implique souvent des fluides corrosifs, entartrants ou cristallisants. "
+  "indDetail.note.0": "La transformation des aliments exige une conception hygiénique stricte, une facilité de nettoyage et une qualité de produit constante. Nos évaporateurs, séchoirs et échangeurs de chaleur sont construits avec des surfaces de contact SS 304/316L, des raccords sanitaires et une intégration CIP pour répondre aux normes FSSAI et de qualité alimentaire pour la fabrication de jus, d'amidon, de glucose et d'ingrédients.",
+  "indDetail.note.1": "L'évaporation chimique implique souvent des fluides corrosifs, entartrants ou cristallisants. Nos évaporateurs à circulation forcée maintiennent des vitesses de liquide élevées pour éviter l'encrassement, tandis que notre sélection de matériaux couvre les options CS, SS, Hastalloy, Titanium et doublées de caoutchouc.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "h2.0"
+  ]
 }

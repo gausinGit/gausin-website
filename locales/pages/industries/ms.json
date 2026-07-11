@@ -112,12 +112,6 @@
   "hero.label.0": "industri",
   "crumb.0": "Rumah",
   "crumb.1": "industri",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "h2.0"
-  ],
   "indDetail.title.0": "Pemprosesan tenusu",
   "indDetail.title.1": "Industri Makanan",
   "indDetail.title.2": "Industri Farmaseutikal",
@@ -140,6 +134,12 @@
   "indDetail.statLbl.3": "Projek Dihantar",
   "indDetail.highlightTitle.0": "Sorotan Kejuruteraan Tenusu",
   "indDetail.highlightDesc.0": "Penyejat filem jatuh berbilang kesan kami mencapai penjimatan wap sebanyak 4 - 6 kg air setiap kg stim, mengurangkan kos tenaga anda sehingga 60% berbanding sistem kesan tunggal.",
-  "indDetail.note.0": "Pemprosesan makanan memerlukan reka bentuk kebersihan yang ketat, mudah dibersihkan dan kualiti produk yang konsisten. ",
-  "indDetail.note.1": "Penyejatan kimia selalunya melibatkan cecair yang mengakis, bersisik, atau mengkristal. "
+  "indDetail.note.0": "Pemprosesan makanan memerlukan reka bentuk kebersihan yang ketat, mudah dibersihkan dan kualiti produk yang konsisten. Penyejat, pengering dan penukar haba kami dibina dengan permukaan sentuhan SS 304/316L, kelengkapan kebersihan, dan penyepaduan CIP untuk memenuhi piawaian FSSAI dan gred makanan untuk pembuatan jus, kanji, glukosa dan bahan.",
+  "indDetail.note.1": "Penyejatan kimia selalunya melibatkan cecair yang mengakis, bersisik, atau mengkristal. Penyejat peredaran paksa kami mengekalkan halaju cecair yang tinggi untuk mengelakkan kekotoran, manakala pemilihan bahan kami meliputi pilihan CS, SS, Hastalloy, Titanium dan bergaris getah.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "h2.0"
+  ]
 }

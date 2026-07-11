@@ -40,7 +40,6 @@
   "btn.11": "Vyžiadajte si cenovú ponuku",
   "btn.12": "Zavolajte nám",
   "_meta.title": "Na stiahnutie | ",
-  "_htmlKeys": [],
   "hero.label.0": "sťahovanie",
   "crumb.0": "Domov",
   "crumb.1": "sťahovanie",
@@ -92,5 +91,6 @@
   "dl.featTitle.0": "Gausin firemná brožúra",
   "dl.featDesc.0": "Kompletný prehľad Gausin International Engineers – naše schopnosti v oblasti odparovania, sušenia, spracovania mlieka, odpadového hospodárstva, služieb EPC na kľúč, odvetvia a prečo nám popredné organizácie dôverujú.",
   "dl.ctaTitle.0": "Potrebujete vlastný technický návrh?",
-  "dl.ctaDesc.0": "Podeľte sa o svoje procesné požiadavky, kapacitu a detaily aplikácie – náš inžiniersky tím pripraví riešenie na mieru so špecifikáciami, rozložením a komerčným návrhom do 24 – 48 hodín."
+  "dl.ctaDesc.0": "Podeľte sa o svoje procesné požiadavky, kapacitu a detaily aplikácie – náš inžiniersky tím pripraví riešenie na mieru so špecifikáciami, rozložením a komerčným návrhom do 24 – 48 hodín.",
+  "_htmlKeys": []
 }

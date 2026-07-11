@@ -8,7 +8,7 @@ const LANG = 'hi';
 const PAGES = [
   'index.html', 'about.html', 'services.html', 'products.html', 'industries.html',
   'contact.html', 'downloads.html', 'insights.html', 'career.html', 'news.html',
-  'our-clients.html', 'technology.html', 'tech-ai.html', 'privacy-policy.html', 'terms-of-service.html',
+  'our-clients.html', 'technology.html', 'digital-solutions.html', 'privacy-policy.html', 'terms-of-service.html',
   'product-falling-film-evaporator.html', 'product-spray-dryer.html', 'product-complete-milk-processing-plant.html',
 ];
 

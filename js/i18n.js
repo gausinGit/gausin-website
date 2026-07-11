@@ -4,7 +4,7 @@
    ============================================================ */
 'use strict';
 
-const I18N_RTL = new Set(['ar', 'he']);
+const I18N_RTL = new Set(['ar', 'he', 'fa']);
 const I18N_CACHE = Object.create(null);
 const I18N_PAGE_CACHE = Object.create(null);
 let _i18nActive = 'en';

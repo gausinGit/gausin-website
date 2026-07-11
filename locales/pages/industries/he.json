@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "h2.0"
-  ],
   "_meta.title": "תעשיות | ",
   "hero.desc.0": "המומחיות ההנדסית ופתרונות התהליך שלנו משתרעים על כל הספקטרום של יישומים תעשייתיים - החל ממוצרי חלב ופארמה ועד כימיקלים, אנרגיה ומעבר לכך.",
   "sec.label.0": "טווח ההגעה שלנו",
@@ -115,8 +109,8 @@
   "indDetail.statLbl.3": "פרויקטים שנמסרו",
   "indDetail.highlightTitle.0": "גולת הכותרת של הנדסת חלב",
   "indDetail.highlightDesc.0": "מאייד הסרטים הנפילים הרב-אפקטים שלנו משיגים חסכון בקיטור של 4 - 6 ק\"ג מים לק\"ג קיטור, ומפחיתים את עלויות האנרגיה שלך בעד 60% בהשוואה למערכות בעלות אפקט יחיד.",
-  "indDetail.note.0": "עיבוד מזון דורש עיצוב היגייני קפדני, יכולת ניקוי קלה ואיכות מוצר עקבית. ",
-  "indDetail.note.1": "אידוי כימי כרוך לעתים קרובות בנוזלים קורוזיביים, מתגבשים או מתגבשים. ",
+  "indDetail.note.0": "עיבוד מזון דורש עיצוב היגייני קפדני, יכולת ניקוי קלה ואיכות מוצר עקבית. המאיידים, המייבשים ומחלפי החום שלנו בנויים עם משטחי מגע SS 304/316L, אביזרי סניטריים ושילוב CIP כדי לעמוד בסטנדרטים של FSSAI ודרגת מזון לייצור מיץ, עמילן, גלוקוז ומרכיבים.",
+  "indDetail.note.1": "אידוי כימי כרוך לעתים קרובות בנוזלים קורוזיביים, מתגבשים או מתגבשים. מאיידי המחזור המאולץ שלנו שומרים על מהירויות נוזל גבוהות כדי למנוע התכלות, בעוד מבחר החומרים שלנו מכסה אפשרויות CS, SS, Hastalloy, טיטניום וגומי.",
   "moreInd.title.0": "מַזקֵקָה",
   "moreInd.title.1": "מגזר האנרגיה",
   "moreInd.title.2": "עיסת נייר",
@@ -141,5 +135,11 @@
   "hero.title.0": "משרת 8 מגזרי תעשייה מגוונים<br>",
   "sec.title.0": "תעשיות שאנו <span>מהנדסים עבור</span>",
   "sec.title.1": "ספציפי לתעשייה <span>פתרונות הנדסיים</span>",
-  "h2.0": "התעשייה שלך, <span style=\"background:linear-gradient(135deg,var(--blue-300),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;\">המומחיות שלנו</span>"
+  "h2.0": "התעשייה שלך, <span style=\"background:linear-gradient(135deg,var(--blue-300),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;\">המומחיות שלנו</span>",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "h2.0"
+  ]
 }

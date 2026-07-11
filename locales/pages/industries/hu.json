@@ -112,12 +112,6 @@
   "hero.label.0": "Iparágak",
   "crumb.0": "Otthon",
   "crumb.1": "Iparágak",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "h2.0"
-  ],
   "indDetail.title.0": "Tejfeldolgozás",
   "indDetail.title.1": "Élelmiszeripar",
   "indDetail.title.2": "Gyógyszeripar",
@@ -140,6 +134,12 @@
   "indDetail.statLbl.3": "Projektek szállított",
   "indDetail.highlightTitle.0": "Tejipari mérnöki kiemelés",
   "indDetail.highlightDesc.0": "Többhatású leeső fólia elpárologtatóink 4-6 kg víz/kg gőz gőzmegtakarítást érnek el, így akár 60%-kal csökkentik az energiaköltségeket az egyhatású rendszerekhez képest.",
-  "indDetail.note.0": "Az élelmiszer-feldolgozás szigorú higiéniai tervezést, könnyű tisztíthatóságot és állandó termékminőséget igényel. ",
-  "indDetail.note.1": "A kémiai párolgás gyakran korrozív, vízköves vagy kristályosodó folyadékokat foglal magában. "
+  "indDetail.note.0": "Az élelmiszer-feldolgozás szigorú higiéniai tervezést, könnyű tisztíthatóságot és állandó termékminőséget igényel. Elpárologtatóink, szárítóink és hőcserélőink SS 304/316L érintkezési felületekkel, szaniter szerelvényekkel és CIP-integrációval készülnek, hogy megfeleljenek az FSSAI és az élelmiszer-minőségű lé-, keményítő-, glükóz- és összetevőgyártási szabványoknak.",
+  "indDetail.note.1": "A kémiai párolgás gyakran korrozív, vízköves vagy kristályosodó folyadékokat foglal magában. Kényszerkeringésű elpárologtatóink nagy folyadéksebességet tartanak fenn, hogy megakadályozzák a szennyeződést, míg anyagválasztékunk a CS, SS, Hastalloy, titán és gumi burkolatú opciókra terjed ki.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "h2.0"
+  ]
 }

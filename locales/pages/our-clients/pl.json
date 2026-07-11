@@ -29,10 +29,10 @@
   "cli.statLbl.0": "Obsługiwane firmy",
   "cli.statLbl.1": "Sektory przemysłowe",
   "cli.statLbl.2": "Dostarczone projekty",
+  "cli.intro.0": "Gausin International Engineers z dumą współpracuje z szanowanymi markami z sektorów farmaceutycznego, mleczarskiego, spożywczego, chemicznego, gorzelniczego i energetycznego — dostarczając niezawodny sprzęt procesowy i rozwiązania zakładowe „pod klucz”.",
   "_htmlKeys": [
     "hero.title.0",
     "sec.title.0",
     "sec.title.1"
-  ],
-  "cli.intro.0": "Gausin International Engineers z dumą współpracuje z szanowanymi markami z sektorów farmaceutycznego, mleczarskiego, spożywczego, chemicznego, gorzelniczego i energetycznego — dostarczając niezawodny sprzęt procesowy i rozwiązania zakładowe „pod klucz”."
+  ]
 }

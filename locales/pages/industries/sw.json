@@ -112,12 +112,6 @@
   "hero.label.0": "Viwanda",
   "crumb.0": "Nyumbani",
   "crumb.1": "Viwanda",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "h2.0"
-  ],
   "indDetail.title.0": "Usindikaji wa Maziwa",
   "indDetail.title.1": "Sekta ya Chakula",
   "indDetail.title.2": "Sekta ya Dawa",
@@ -140,6 +134,12 @@
   "indDetail.statLbl.3": "Miradi Imetolewa",
   "indDetail.highlightTitle.0": "Muhtasari wa Uhandisi wa Maziwa",
   "indDetail.highlightDesc.0": "Vivukizi vyetu vya filamu vinavyopungua vyenye athari nyingi hufanikisha uchumi wa mvuke wa kilo 4 - 6 za maji kwa kila kilo ya mvuke, hivyo kupunguza gharama zako za nishati kwa hadi 60% ikilinganishwa na mifumo yenye athari moja.",
-  "indDetail.note.0": "Usindikaji wa chakula unahitaji muundo mkali wa usafi, usafishaji rahisi, na ubora thabiti wa bidhaa. ",
-  "indDetail.note.1": "Uvukizi wa kemikali mara nyingi huhusisha vimiminiko babuzi, kuongeza au kung'arisha fuwele. "
+  "indDetail.note.0": "Usindikaji wa chakula unahitaji muundo mkali wa usafi, usafishaji rahisi, na ubora thabiti wa bidhaa. Viyeyusho vyetu, vikaushio na vibadilisha joto vimejengwa kwa nyuso za mawasiliano za SS 304/316L, vifaa vya usafi, na muunganisho wa CIP ili kufikia FSSAI na viwango vya kiwango cha chakula kwa juisi, wanga, glukosi na utengenezaji wa viambato.",
+  "indDetail.note.1": "Uvukizi wa kemikali mara nyingi huhusisha vimiminiko babuzi, kuongeza au kung'arisha fuwele. Vivukizi vyetu vya kulazimishwa hudumisha kasi ya juu ya kioevu ili kuzuia uchafu, wakati uteuzi wetu wa nyenzo unashughulikia CS, SS, Hastalloy, Titanium, na chaguzi za mstari wa mpira.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "h2.0"
+  ]
 }

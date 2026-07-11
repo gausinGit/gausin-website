@@ -40,7 +40,6 @@
   "btn.11": "Be om et tilbud",
   "btn.12": "Ring oss nå",
   "_meta.title": "Nedlastinger | ",
-  "_htmlKeys": [],
   "hero.label.0": "Nedlastinger",
   "crumb.0": "Hjem",
   "crumb.1": "Nedlastinger",
@@ -92,5 +91,6 @@
   "dl.featTitle.0": "Gausin Bedriftsbrosjyre",
   "dl.featDesc.0": "Komplett oversikt over Gausin International Engineers - våre evner innen fordampning, tørking, meieribehandling, avfallshåndtering, nøkkelferdige EPC-tjenester, bransjer som betjenes, og hvorfor ledende organisasjoner stoler på oss.",
   "dl.ctaTitle.0": "Trenger du et tilpasset teknisk forslag?",
-  "dl.ctaDesc.0": "Del dine prosesskrav, kapasitet og applikasjonsdetaljer - ingeniørteamet vårt vil utarbeide en skreddersydd løsning med spesifikasjoner, layout og kommersielle forslag innen 24 - 48 timer."
+  "dl.ctaDesc.0": "Del dine prosesskrav, kapasitet og applikasjonsdetaljer - ingeniørteamet vårt vil utarbeide en skreddersydd løsning med spesifikasjoner, layout og kommersielle forslag innen 24 - 48 timer.",
+  "_htmlKeys": []
 }

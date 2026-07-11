@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "qs.0.label": "Kapazität l/h",
   "tagline": "Hocheffiziente und schonende Verdampfung für hitzeempfindliche Produkte. Erhältlich in Einzel- bis 7-Effekt-Konfigurationen mit optionaler MVR-Integration – entwickelt, um Ihren Dampfverbrauch zu minimieren und die Produktqualität zu maximieren.",
   "category": "Verdampfer",
@@ -138,5 +132,11 @@
   "related.2.title": "Automatisiertes CIP-System",
   "related.0.title": "Zwangsumlaufverdampfer",
   "related.1.desc": "Konvertieren Sie konzentrierte Flüssigkeit aus FFE direkt in frei fließendes Pulver.",
-  "related.2.desc": "Automatisiertes Clean-in-Place-System zur hygienischen Reinigung des Verdampfers."
+  "related.2.desc": "Automatisiertes Clean-in-Place-System zur hygienischen Reinigung des Verdampfers.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

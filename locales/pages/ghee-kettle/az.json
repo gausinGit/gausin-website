@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "category": "Süd Emalı Avadanlıqları",
   "breadcrumb.cat.0": "Süd Emalı Avadanlıqları",
   "qs.0.label": "litr",
@@ -78,9 +72,9 @@
   "how.0.title": "Yağ / Yağ Yükləmə",
   "how.0.desc": "Xam kərə yağı və ya krem ​​tələb olunan partiya miqdarına qədər gödəkçəli yağ çaydanına yüklənir.",
   "how.1.title": "Buxar istisi altında ərimə",
-  "how.1.desc": "Buxar gödəkçəsi məzmunu qızdırır; ",
+  "how.1.desc": "Buxar gödəkçəsi məzmunu qızdırır; kazıyıcı qarışdırıcı yerli həddindən artıq istiləşmənin və yanmanın qarşısını alır.",
   "how.2.title": "Köpüyün qırılması və aydınlaşdırılması",
-  "how.2.desc": "Qarışdırma köpüyü qırır; ",
+  "how.2.desc": "Qarışdırma köpüyü qırır; süd qatıları yüksəlir və qızdırma dövrü ərzində yağsızlaşdırılır.",
   "how.3.title": "Rütubətin Buxarlanması",
   "how.3.desc": "İstilik nəm buxarlanana və yağ şəffaf qızılı mayeyə çevrilənə qədər davam edir.",
   "how.4.title": "Ghee Kolleksiyası",
@@ -105,5 +99,11 @@
   "tagline": "Gigiyenik yağ istehsalı üçün SS 316L astarlı, kazıyıcı qarışdırıcı və əyilmə mexanizmi olan buxar gödəkçəli yağ təmizləyici çaynik.",
   "overview.p0": "<strong style=\"color:var(--gray-900);\">Gausin Ghee Çaydanı</strong> tələbkar sənaye mühitlərində etibarlı, gigiyenik performans üçün hazırlanmışdır. ",
   "overview.p1": "Hər bir vahid SS 304/316L təmas səthləri, təsdiqlənmiş proses dizaynı və tam sənədlərlə tutumunuza, məhsul xüsusiyyətlərinizə və zavodun yerləşdirilməsi tələblərinə uyğun olaraq xüsusi hazırlanmışdır.",
-  "overview.p2": "Gausin quraşdırma, istismara vermə və satışdan sonrakı xidmət vasitəsilə prosesin dizaynı və istehsalından tam mühəndislik dəstəyi təmin edir."
+  "overview.p2": "Gausin quraşdırma, istismara vermə və satışdan sonrakı xidmət vasitəsilə prosesin dizaynı və istehsalından tam mühəndislik dəstəyi təmin edir.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

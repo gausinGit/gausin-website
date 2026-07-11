@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "h2.0"
-  ],
   "_meta.title": "Sənaye | ",
   "hero.desc.0": "Mühəndislik təcrübəmiz və proses həllərimiz süd və əczaçılıqdan kimya, enerji və digər sahələrə qədər sənaye tətbiqlərinin tam spektrini əhatə edir.",
   "sec.label.0": "Bizim Erişimimiz",
@@ -115,8 +109,8 @@
   "indDetail.statLbl.3": "Təqdim olunan layihələr",
   "indDetail.highlightTitle.0": "Süd Mühəndisliyi Vurğulaması",
   "indDetail.highlightDesc.0": "Çox effektli düşən film buxarlandırıcılarımız tək effektli sistemlərlə müqayisədə enerji xərclərinizi 60%-ə qədər azaldaraq, hər kq buxar üçün 4-6 kq su buxar qənaətinə nail olur.",
-  "indDetail.note.0": "Qida emalı ciddi gigiyenik dizayn, asan təmizlənmə və davamlı məhsul keyfiyyəti tələb edir. ",
-  "indDetail.note.1": "Kimyəvi buxarlanma tez-tez aşındırıcı, miqyaslı və ya kristallaşan mayeləri əhatə edir. ",
+  "indDetail.note.0": "Qida emalı ciddi gigiyenik dizayn, asan təmizlənmə və davamlı məhsul keyfiyyəti tələb edir. Buxarlandırıcılarımız, quruducularımız və istilik dəyişdiricilərimiz şirə, nişasta, qlükoza və inqrediyent istehsalı üçün FSSAI və qida standartlarına cavab vermək üçün SS 304/316L kontakt səthləri, sanitar armaturlar və CIP inteqrasiyası ilə tikilmişdir.",
+  "indDetail.note.1": "Kimyəvi buxarlanma tez-tez aşındırıcı, miqyaslı və ya kristallaşan mayeləri əhatə edir. Məcburi dövriyyə buxarlandırıcılarımız çirklənmənin qarşısını almaq üçün yüksək maye sürətlərini saxlayır, material seçimimiz isə CS, SS, Hastalloy, Titan və rezin astarlı variantları əhatə edir.",
   "moreInd.title.0": "İçki zavodu",
   "moreInd.title.1": "Enerji Sektoru",
   "moreInd.title.2": "Selüloz və Kağız",
@@ -141,5 +135,11 @@
   "hero.title.0": "8 Müxtəlif<br>Sənaye Sektoruna xidmət göstərir",
   "sec.title.0": "<span>Mühəndis olduğumuz sənayelər</span>",
   "sec.title.1": "Sənaye Xüsusi <span>Mühəndislik Həlləri</span>",
-  "h2.0": "Sənayeniz, <span style=\"background:linear-gradient(135deg,var(--blue-300),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;\">Təcrübəmiz</span>"
+  "h2.0": "Sənayeniz, <span style=\"background:linear-gradient(135deg,var(--blue-300),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;\">Təcrübəmiz</span>",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "h2.0"
+  ]
 }

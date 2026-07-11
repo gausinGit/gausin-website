@@ -112,12 +112,6 @@
   "hero.label.0": "Endüstriler",
   "crumb.0": "Ev",
   "crumb.1": "Endüstriler",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "h2.0"
-  ],
   "indDetail.title.0": "Süt Ürünleri İşleme",
   "indDetail.title.1": "Gıda Endüstrisi",
   "indDetail.title.2": "İlaç Endüstrisi",
@@ -140,6 +134,12 @@
   "indDetail.statLbl.3": "Teslim Edilen Projeler",
   "indDetail.highlightTitle.0": "Süt Mühendisliğinde Öne Çıkanlar",
   "indDetail.highlightDesc.0": "Çok etkili düşen film evaporatörlerimiz, kg buhar başına 4 - 6 kg su buhar ekonomisi elde ederek, tek etkili sistemlere kıyasla enerji maliyetlerinizi %60'a kadar azaltır.",
-  "indDetail.note.0": "Gıda işleme sıkı hijyenik tasarım, kolay temizlenebilirlik ve tutarlı ürün kalitesi gerektirir. ",
-  "indDetail.note.1": "Kimyasal buharlaşma genellikle aşındırıcı, kireçlenen veya kristalleşen sıvıları içerir. "
+  "indDetail.note.0": "Gıda işleme sıkı hijyenik tasarım, kolay temizlenebilirlik ve tutarlı ürün kalitesi gerektirir. Evaporatörlerimiz, kurutucularımız ve ısı eşanjörlerimiz, meyve suyu, nişasta, glikoz ve içerik üretimi için FSSAI ve gıda sınıfı standartlarını karşılamak üzere SS 304/316L temas yüzeyleri, sıhhi tesisat parçaları ve CIP entegrasyonu ile üretilmiştir.",
+  "indDetail.note.1": "Kimyasal buharlaşma genellikle aşındırıcı, kireçlenen veya kristalleşen sıvıları içerir. Zorunlu sirkülasyonlu evaporatörlerimiz kirlenmeyi önlemek için yüksek sıvı hızlarını korurken malzeme seçimimiz CS, SS, Hastalloy, Titanyum ve kauçuk kaplı seçenekleri kapsar.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "h2.0"
+  ]
 }

@@ -40,7 +40,6 @@
   "btn.11": "Begär en offert",
   "btn.12": "Ring oss nu",
   "_meta.title": "Nedladdningar | ",
-  "_htmlKeys": [],
   "hero.label.0": "Nedladdningar",
   "crumb.0": "Hem",
   "crumb.1": "Nedladdningar",
@@ -92,5 +91,6 @@
   "dl.featTitle.0": "Gausin Corporate Broschyr",
   "dl.featDesc.0": "Fullständig översikt över Gausin International Engineers - vår kapacitet inom indunstning, torkning, mejeribearbetning, avfallshantering, nyckelfärdiga EPC-tjänster, industrier som betjänas och varför ledande organisationer litar på oss.",
   "dl.ctaTitle.0": "Behöver du ett anpassat tekniskt förslag?",
-  "dl.ctaDesc.0": "Dela dina processkrav, kapacitet och applikationsdetaljer - vårt ingenjörsteam kommer att förbereda en skräddarsydd lösning med specifikationer, layout och kommersiella förslag inom 24 - 48 timmar."
+  "dl.ctaDesc.0": "Dela dina processkrav, kapacitet och applikationsdetaljer - vårt ingenjörsteam kommer att förbereda en skräddarsydd lösning med specifikationer, layout och kommersiella förslag inom 24 - 48 timmar.",
+  "_htmlKeys": []
 }

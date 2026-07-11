@@ -112,12 +112,6 @@
   "hero.label.0": "Przemysły",
   "crumb.0": "Dom",
   "crumb.1": "Przemysły",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "h2.0"
-  ],
   "indDetail.title.0": "Przetwórstwo nabiału",
   "indDetail.title.1": "Przemysł spożywczy",
   "indDetail.title.2": "Przemysł farmaceutyczny",
@@ -140,6 +134,12 @@
   "indDetail.statLbl.3": "Dostarczone projekty",
   "indDetail.highlightTitle.0": "Najważniejsze informacje dotyczące inżynierii mleczarskiej",
   "indDetail.highlightDesc.0": "Nasze wielofunkcyjne wyparki z opadającym filmem osiągają oszczędność pary na poziomie 4–6 kg wody na kg pary, redukując koszty energii nawet o 60% w porównaniu z systemami z pojedynczym efektem.",
-  "indDetail.note.0": "Przetwórstwo żywności wymaga ścisłej higienicznej konstrukcji, łatwego czyszczenia i stałej jakości produktu. ",
-  "indDetail.note.1": "Odparowanie chemiczne często obejmuje płyny żrące, powodujące osadzanie się kamienia lub krystalizujące. "
+  "indDetail.note.0": "Przetwórstwo żywności wymaga ścisłej higienicznej konstrukcji, łatwego czyszczenia i stałej jakości produktu. Nasze parowniki, suszarki i wymienniki ciepła są zbudowane z powierzchni stykowych SS 304/316L, armatury sanitarnej i integracji CIP, aby spełnić standardy FSSAI i klasy spożywczej w zakresie produkcji soków, skrobi, glukozy i składników.",
+  "indDetail.note.1": "Odparowanie chemiczne często obejmuje płyny żrące, powodujące osadzanie się kamienia lub krystalizujące. Nasze parowniki z wymuszonym obiegiem utrzymują wysokie prędkości cieczy, aby zapobiec zabrudzeniu, a nasz wybór materiałów obejmuje opcje ze stali CS, SS, Hastalloy, tytanu i wyłożone gumą.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "h2.0"
+  ]
 }

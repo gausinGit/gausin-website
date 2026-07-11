@@ -112,12 +112,6 @@
   "hero.label.0": "Industrier",
   "crumb.0": "Hjem",
   "crumb.1": "Industrier",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "h2.0"
-  ],
   "indDetail.title.0": "Meieriforedling",
   "indDetail.title.1": "Næringsmiddelindustrien",
   "indDetail.title.2": "Farmasøytisk industri",
@@ -140,6 +134,12 @@
   "indDetail.statLbl.3": "Prosjekter levert",
   "indDetail.highlightTitle.0": "Høydepunkt for meieriteknikk",
   "indDetail.highlightDesc.0": "Våre multi-effekt fallfilm-fordampere oppnår dampøkonomier på 4 - 6 kg vann per kg damp, og reduserer energikostnadene dine med opptil 60 % sammenlignet med enkelteffektsystemer.",
-  "indDetail.note.0": "Matforedling krever strengt hygienisk design, enkel rengjøring og konsistent produktkvalitet. ",
-  "indDetail.note.1": "Kjemisk fordampning involverer ofte etsende, avleirende eller krystalliserende væsker. "
+  "indDetail.note.0": "Matforedling krever strengt hygienisk design, enkel rengjøring og konsistent produktkvalitet. Våre fordampere, tørketromler og varmevekslere er bygget med SS 304/316L kontaktflater, sanitærarmaturer og CIP-integrasjon for å møte FSSAI- og matvarestandarder for juice, stivelse, glukose og ingrediensproduksjon.",
+  "indDetail.note.1": "Kjemisk fordampning involverer ofte etsende, avleirende eller krystalliserende væsker. Våre fordampere med tvungen sirkulasjon opprettholder høye væskehastigheter for å forhindre begroing, mens materialutvalget vårt dekker alternativer for CS, SS, Hastalloy, Titanium og gummi.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "h2.0"
+  ]
 }

@@ -37,9 +37,6 @@
   "news.desc.8": "Gausin International Engineers 總部位於北方邦密拉特，在印度各地提供製程設備和統包工廠，為乳品合作社、藥品製造和工業加工領域的客戶提供支援。",
   "sec.title.0": "新聞&<span>公告</span>",
   "_meta.title": "新聞 |高辛國際工程師兵。有限公司",
-  "_htmlKeys": [
-    "sec.title.0"
-  ],
   "hero.label.0": "訊息",
   "news.cat.0": "產品發布",
   "news.cat.1": "職業機會",
@@ -60,5 +57,8 @@
   "news.link.7": "查看產品",
   "news.link.8": "我們服務的產業",
   "news.ctaTitle.0": "媒體查詢及合作夥伴",
-  "news.ctaDesc.0": "如需媒體報道、合作機會或專案諮詢，請直接聯絡我們的團隊。"
+  "news.ctaDesc.0": "如需媒體報道、合作機會或專案諮詢，請直接聯絡我們的團隊。",
+  "_htmlKeys": [
+    "sec.title.0"
+  ]
 }

@@ -112,12 +112,6 @@
   "hero.label.0": "Industrias",
   "crumb.0": "Hogar",
   "crumb.1": "Industrias",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "h2.0"
-  ],
   "indDetail.title.0": "Procesamiento de lácteos",
   "indDetail.title.1": "Industria alimentaria",
   "indDetail.title.2": "Industria Farmacéutica",
@@ -140,6 +134,12 @@
   "indDetail.statLbl.3": "Proyectos entregados",
   "indDetail.highlightTitle.0": "Lo más destacado de la ingeniería láctea",
   "indDetail.highlightDesc.0": "Nuestros evaporadores de película descendente de efecto múltiple logran economías de vapor de 4 a 6 kg de agua por kg de vapor, lo que reduce sus costos de energía hasta en un 60 % en comparación con los sistemas de efecto único.",
-  "indDetail.note.0": "El procesamiento de alimentos exige un diseño higiénico estricto, una fácil limpieza y una calidad constante del producto. ",
-  "indDetail.note.1": "La evaporación química a menudo involucra fluidos corrosivos, incrustados o cristalizados. "
+  "indDetail.note.0": "El procesamiento de alimentos exige un diseño higiénico estricto, una fácil limpieza y una calidad constante del producto. Nuestros evaporadores, secadores e intercambiadores de calor están construidos con superficies de contacto SS 304/316L, accesorios sanitarios e integración CIP para cumplir con los estándares FSSAI y de calidad alimentaria para la fabricación de jugos, almidón, glucosa e ingredientes.",
+  "indDetail.note.1": "La evaporación química a menudo involucra fluidos corrosivos, incrustados o cristalizados. Nuestros evaporadores de circulación forzada mantienen altas velocidades del líquido para evitar incrustaciones, mientras que nuestra selección de materiales cubre opciones CS, SS, Hastalloy, titanio y revestidos de caucho.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "h2.0"
+  ]
 }

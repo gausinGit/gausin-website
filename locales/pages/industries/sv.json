@@ -112,12 +112,6 @@
   "hero.label.0": "industrier",
   "crumb.0": "Hem",
   "crumb.1": "industrier",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "h2.0"
-  ],
   "indDetail.title.0": "Mejeribearbetning",
   "indDetail.title.1": "Livsmedelsindustrin",
   "indDetail.title.2": "Läkemedelsindustrin",
@@ -140,6 +134,12 @@
   "indDetail.statLbl.3": "Projekt levererade",
   "indDetail.highlightTitle.0": "Dairy Engineering Highlight",
   "indDetail.highlightDesc.0": "Våra multi-effekt fallfilmsförångare uppnår ångekonomier på 4 - 6 kg vatten per kg ånga, vilket minskar dina energikostnader med upp till 60 % jämfört med enkeleffektsystem.",
-  "indDetail.note.0": "Livsmedelsbearbetning kräver strikt hygienisk design, enkel rengöring och konsekvent produktkvalitet. ",
-  "indDetail.note.1": "Kemisk avdunstning involverar ofta frätande, avlagringar eller kristalliserande vätskor. "
+  "indDetail.note.0": "Livsmedelsbearbetning kräver strikt hygienisk design, enkel rengöring och konsekvent produktkvalitet. Våra förångare, torktumlare och värmeväxlare är byggda med SS 304/316L kontaktytor, sanitetsarmatur och CIP-integration för att möta FSSAI och livsmedelsklassade standarder för juice, stärkelse, glukos och ingredienstillverkning.",
+  "indDetail.note.1": "Kemisk avdunstning involverar ofta frätande, avlagringar eller kristalliserande vätskor. Våra förångare med tvångscirkulation upprätthåller höga vätskehastigheter för att förhindra nedsmutsning, medan vårt materialval täcker CS, SS, Hastalloy, Titan och gummifodrade alternativ.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "h2.0"
+  ]
 }

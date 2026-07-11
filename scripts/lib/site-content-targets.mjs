@@ -3,7 +3,7 @@
 export const SITE_PAGES = [
   'index.html', 'about.html', 'services.html', 'products.html', 'industries.html',
   'contact.html', 'downloads.html', 'insights.html', 'career.html', 'news.html',
-  'our-clients.html', 'technology.html', 'tech-ai.html', 'privacy-policy.html',
+  'our-clients.html', 'technology.html', 'digital-solutions.html', 'privacy-policy.html',
   'terms-of-service.html', 'sitemap.html', '404.html',
 ];
 

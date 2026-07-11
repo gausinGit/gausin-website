@@ -40,7 +40,6 @@
   "btn.11": "Vraag een offerte aan",
   "btn.12": "Bel ons nu",
   "_meta.title": "Downloaden | ",
-  "_htmlKeys": [],
   "hero.label.0": "Downloads",
   "crumb.0": "Thuis",
   "crumb.1": "Downloads",
@@ -92,5 +91,6 @@
   "dl.featTitle.0": "Gausin-bedrijfsbrochure",
   "dl.featDesc.0": "Compleet overzicht van Gausin International Engineers - onze capaciteiten op het gebied van verdamping, drogen, zuivelverwerking, afvalbeheer, kant-en-klare EPC-diensten, industrieën die worden bediend, en waarom toonaangevende organisaties ons vertrouwen.",
   "dl.ctaTitle.0": "Een technisch voorstel op maat nodig?",
-  "dl.ctaDesc.0": "Deel uw procesvereisten, capaciteit en toepassingsdetails - ons engineeringteam zal binnen 24 - 48 uur een oplossing op maat voorbereiden met specificaties, lay-out en commercieel voorstel."
+  "dl.ctaDesc.0": "Deel uw procesvereisten, capaciteit en toepassingsdetails - ons engineeringteam zal binnen 24 - 48 uur een oplossing op maat voorbereiden met specificaties, lay-out en commercieel voorstel.",
+  "_htmlKeys": []
 }

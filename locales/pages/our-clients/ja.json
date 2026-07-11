@@ -29,10 +29,10 @@
   "cli.statLbl.0": "サービスを提供する企業",
   "cli.statLbl.1": "産業部門",
   "cli.statLbl.2": "納品されたプロジェクト",
+  "cli.intro.0": "Gausin International Engineers は、製薬、乳製品、食品、化学、蒸留所、エネルギー分野にわたる著名な企業と提携できることを誇りに思っており、信頼性の高いプロセス機器とターンキー プラント ソリューションを提供しています。",
   "_htmlKeys": [
     "hero.title.0",
     "sec.title.0",
     "sec.title.1"
-  ],
-  "cli.intro.0": "Gausin International Engineers は、製薬、乳製品、食品、化学、蒸留所、エネルギー分野にわたる著名な企業と提携できることを誇りに思っており、信頼性の高いプロセス機器とターンキー プラント ソリューションを提供しています。"
+  ]
 }

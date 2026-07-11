@@ -29,10 +29,10 @@
   "cli.statLbl.0": "Betjänade företag",
   "cli.statLbl.1": "Industrisektorer",
   "cli.statLbl.2": "Projekt levererade",
+  "cli.intro.0": "Gausin International Engineers är stolta över att samarbeta med respekterade namn inom läkemedels-, mejeri-, livsmedels-, kemi-, destilleri- och energisektorerna – och levererar pålitlig processutrustning och nyckelfärdiga anläggningslösningar.",
   "_htmlKeys": [
     "hero.title.0",
     "sec.title.0",
     "sec.title.1"
-  ],
-  "cli.intro.0": "Gausin International Engineers är stolta över att samarbeta med respekterade namn inom läkemedels-, mejeri-, livsmedels-, kemi-, destilleri- och energisektorerna – och levererar pålitlig processutrustning och nyckelfärdiga anläggningslösningar."
+  ]
 }

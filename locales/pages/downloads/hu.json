@@ -40,7 +40,6 @@
   "btn.11": "Kérjen árajánlatot",
   "btn.12": "Hívjon most",
   "_meta.title": "Letöltések | ",
-  "_htmlKeys": [],
   "hero.label.0": "Letöltések",
   "crumb.0": "Otthon",
   "crumb.1": "Letöltések",
@@ -92,5 +91,6 @@
   "dl.featTitle.0": "Gausin vállalati prospektus",
   "dl.featDesc.0": "A Gausin International Engineers teljes áttekintése – a párologtatás, a szárítás, a tejfeldolgozás, a hulladékkezelés, a kulcsrakész EPC szolgáltatások, a kiszolgált iparágak és a vezető szervezetek miért bíznak bennünk.",
   "dl.ctaTitle.0": "Egyedi műszaki ajánlatra van szüksége?",
-  "dl.ctaDesc.0": "Ossza meg folyamatigényeit, kapacitását és alkalmazási adatait – mérnökcsapatunk 24-48 órán belül személyre szabott megoldást készít specifikációkkal, elrendezéssel és kereskedelmi javaslattal."
+  "dl.ctaDesc.0": "Ossza meg folyamatigényeit, kapacitását és alkalmazási adatait – mérnökcsapatunk 24-48 órán belül személyre szabott megoldást készít specifikációkkal, elrendezéssel és kereskedelmi javaslattal.",
+  "_htmlKeys": []
 }

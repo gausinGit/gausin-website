@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "category": "Buxarlandırıcılar",
   "breadcrumb.cat.0": "Buxarlandırıcılar",
   "qs.0.label": "L/saat Tutumu",
@@ -127,8 +121,14 @@
   "related.0.desc": "İstiliyə həssas məhsullar üçün nazik nazik təbəqəli buxarlanma.",
   "related.1.desc": "Aşağı özlülüklü yemlər üçün dırmaşan film dizaynı.",
   "related.2.desc": "Süd və qida üçün kompakt boşqab istilik mübadiləsi.",
-  "tagline": "Özlü, miqyaslı və kristallaşan proses mayeləri üçün nəzərdə tutulmuşdur. ",
+  "tagline": "Özlü, miqyaslı və kristallaşan proses mayeləri üçün nəzərdə tutulmuşdur. Məcburi dövriyyə çirklənmənin qarşısını almaq və çətin yemlərin etibarlı konsentrasiyasını təmin etmək üçün boru tərəfində yüksək sürəti saxlayır.",
   "overview.p0": "<strong style=\"color:var(--gray-900);\">Gausin Məcburi Sirkulyasiya Buxarlandırıcısı (FCE)</strong> mayeni istilik dəyişdirici boruları vasitəsilə yüksək sürətlə ötürmək üçün dövriyyə nasosundan istifadə edir. ",
   "overview.p1": "Pompalanan sirkulyasiya bərk maddələri süspansiyonda saxlayır, boru divarlarında miqyasları minimuma endirir və daha yüksək konsentrasiya faktorlarında işləməyə imkan verir. ",
-  "overview.p2": "Hər bir sistem isteğe bağlı çox effektli və vakuum konfiqurasiyaları ilə fasiləsiz 24/7 əməliyyat üçün CHEMCAD simulyasiyası və möhkəm mexaniki dizaynı ilə xüsusi olaraq hazırlanmışdır. "
+  "overview.p2": "Hər bir sistem isteğe bağlı çox effektli və vakuum konfiqurasiyaları ilə fasiləsiz 24/7 əməliyyat üçün CHEMCAD simulyasiyası və möhkəm mexaniki dizaynı ilə xüsusi olaraq hazırlanmışdır. ",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

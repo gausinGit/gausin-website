@@ -112,12 +112,6 @@
   "hero.label.0": "Industrie",
   "crumb.0": "Casa",
   "crumb.1": "Industrie",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "h2.0"
-  ],
   "indDetail.title.0": "Lavorazione lattiero-casearia",
   "indDetail.title.1": "Industria alimentare",
   "indDetail.title.2": "Industria farmaceutica",
@@ -140,6 +134,12 @@
   "indDetail.statLbl.3": "Progetti consegnati",
   "indDetail.highlightTitle.0": "Evidenziazione dell'ingegneria lattiero-casearia",
   "indDetail.highlightDesc.0": "I nostri evaporatori a film cadente multieffetto raggiungono un risparmio di vapore di 4 - 6 kg di acqua per kg di vapore, riducendo i costi energetici fino al 60% rispetto ai sistemi a singolo effetto.",
-  "indDetail.note.0": "La lavorazione degli alimenti richiede una progettazione igienica rigorosa, una facile pulibilità e una qualità del prodotto costante. ",
-  "indDetail.note.1": "L'evaporazione chimica spesso coinvolge fluidi corrosivi, incrostanti o cristallizzanti. "
+  "indDetail.note.0": "La lavorazione degli alimenti richiede una progettazione igienica rigorosa, una facile pulibilità e una qualità del prodotto costante. I nostri evaporatori, essiccatori e scambiatori di calore sono realizzati con superfici di contatto, raccordi sanitari e integrazione CIP in SS 304/316L per soddisfare gli standard FSSAI e di qualità alimentare per la produzione di succhi, amido, glucosio e ingredienti.",
+  "indDetail.note.1": "L'evaporazione chimica spesso coinvolge fluidi corrosivi, incrostanti o cristallizzanti. I nostri evaporatori a circolazione forzata mantengono elevate velocità del liquido per prevenire incrostazioni, mentre la nostra selezione di materiali comprende opzioni CS, SS, Hastalloy, titanio e rivestite in gomma.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "h2.0"
+  ]
 }

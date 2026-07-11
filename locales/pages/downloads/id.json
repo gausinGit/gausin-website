@@ -1,11 +1,11 @@
 {
   "hero.title.0": "Brosur & Sumber Daya Teknis",
-  "hero.desc.0": "Akses brosur perusahaan, literatur produk, dan sumber daya teknik kami. ",
+  "hero.desc.0": "Akses brosur perusahaan, literatur produk, dan sumber daya teknik kami. Minta lembar data terperinci, gambar GA, dan proposal khusus melalui tim kami.",
   "h2.0": "Brosur Perusahaan Gausin",
   "h3.0": "Literatur Produk",
   "h3.1": "Sumber Daya Teknis",
   "h3.2": "Butuh Proposal Teknis Khusus?",
-  "p.0": "Akses brosur perusahaan, literatur produk, dan sumber daya teknik kami. ",
+  "p.0": "Akses brosur perusahaan, literatur produk, dan sumber daya teknik kami. Minta lembar data terperinci, gambar GA, dan proposal khusus melalui tim kami.",
   "p.1": "Tinjauan lengkap tentang Gausin International Engineers - kemampuan kami dalam penguapan, pengeringan, pengolahan susu, pengelolaan limbah, layanan EPC siap pakai, industri yang dilayani, dan alasan organisasi terkemuka mempercayai kami.",
   "p.2": "Film jatuh, sirkulasi paksa, tipe pelat, film naik, dan evaporator panci vakum batch untuk industri susu, farmasi, kimia, dan makanan.",
   "p.3": "Pengering semprot, pengering spin flash, pengering unggun terfluidisasi, ATFD, dan sistem pengeringan sirkuit tertutup untuk bubuk dan padatan.",
@@ -40,7 +40,6 @@
   "btn.11": "Permintaan Penawaran",
   "btn.12": "Hubungi Kami Sekarang",
   "_meta.title": "Unduhan | ",
-  "_htmlKeys": [],
   "hero.label.0": "Unduhan",
   "crumb.0": "Rumah",
   "crumb.1": "Unduhan",
@@ -92,5 +91,6 @@
   "dl.featTitle.0": "Brosur Perusahaan Gausin",
   "dl.featDesc.0": "Tinjauan lengkap tentang Gausin International Engineers - kemampuan kami dalam penguapan, pengeringan, pengolahan susu, pengelolaan limbah, layanan EPC siap pakai, industri yang dilayani, dan alasan organisasi terkemuka mempercayai kami.",
   "dl.ctaTitle.0": "Butuh Proposal Teknis Khusus?",
-  "dl.ctaDesc.0": "Bagikan persyaratan proses, kapasitas, dan detail aplikasi Anda - tim teknik kami akan menyiapkan solusi yang disesuaikan dengan spesifikasi, tata letak, dan proposal komersial dalam waktu 24 - 48 jam."
+  "dl.ctaDesc.0": "Bagikan persyaratan proses, kapasitas, dan detail aplikasi Anda - tim teknik kami akan menyiapkan solusi yang disesuaikan dengan spesifikasi, tata letak, dan proposal komersial dalam waktu 24 - 48 jam.",
+  "_htmlKeys": []
 }

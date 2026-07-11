@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "category": "Buxarlandırıcılar",
   "breadcrumb.cat.0": "Buxarlandırıcılar",
   "qs.0.label": "L/saat Tutumu",
@@ -104,15 +98,15 @@
   "advantages.5.title": "Aşağı Baxım",
   "advantages.5.desc": "Buxarlandırıcı gövdəsində hərəkət edən hissələri olmayan sadə mexaniki dizayn. ",
   "how.0.title": "Yem paylanması",
-  "how.0.desc": "Maye yemi əvvəlcədən qızdırılır və buxarlandırıcının yuxarı paylayıcı qabına verilir. ",
+  "how.0.desc": "Maye yemi əvvəlcədən qızdırılır və buxarlandırıcının yuxarı paylayıcı qabına verilir. Patentli paylama sistemi mayenin bütün borulara vahid, bərabər paylanmasını təmin edir - quru ləkələrin qarşısını alır və ardıcıl film əmələ gəlməsini təmin edir.",
   "how.1.title": "Filmin əmələ gəlməsi və buxarlanması",
-  "how.1.desc": "Maye, boruların daxili divarında nazik bir təbəqə şəklində cazibə qüvvəsi altında aşağıya doğru axır. ",
+  "how.1.desc": "Maye, boruların daxili divarında nazik bir təbəqə şəklində cazibə qüvvəsi altında aşağıya doğru axır. Qabıq tərəfində kondensasiya olunan buxar, istiliyi boru divarından düşən maye filmə ötürür və film səthində suyun sürətlə buxarlanmasına səbəb olur.",
   "how.2.title": "Buxar-Maye Ayrılması",
   "how.2.desc": "Boruların dibində qatılaşdırılmış maye və yaranan buxarlar birlikdə çıxır və buxar-maye ayırıcısına daxil olur. ",
   "how.3.title": "Çox effektli buxarın təkrar istifadəsi",
   "how.3.desc": "Çox effektli sistemlərdə Effekt 1-də yaranan ikincili buxar Effekt 2 üçün qızdırıcı mühit kimi istifadə olunur (aşağı temperaturda/təzyiqdə işləyir) və s. ",
   "how.4.title": "Kondensat və məhsulun axıdılması",
-  "how.4.desc": "Son effektdən gələn buxar barometrik və ya səthi kondensatorda qatılaşdırılır. ",
+  "how.4.desc": "Son effektdən gələn buxar barometrik və ya səthi kondensatorda qatılaşdırılır. Buxar kondensatı bərpa olunur və təkrar istifadə olunur. Hədəf Ümumi Bərk tərkibli konsentrasiya edilmiş məhsul sıxlıq/Brix ilə idarə olunan çıxış pompası vasitəsilə boşaldılır.",
   "how.5.title": "Termo Buxar Rekompressoru (TVR)",
   "how.5.desc": "Termo Buxar Rekompressoru (TVR) təsirdən aşağı təzyiqli buxarı sıxmaq, onun təzyiqini və temperaturunu yüksəltmək üçün buxar reaktiv ejektorunda yüksək təzyiqli hərəkətverici buxardan istifadə edir ki, eyni və ya əvvəlki effektdə qızdırıcı buxar kimi yenidən istifadə olunsun. ",
   "how.6.title": "Mexanik Buxar Rekompressoru (MVR)",
@@ -135,8 +129,14 @@
   "related.0.desc": "Özlü, miqyaslı və ya kristallaşan mayelər üçün. ",
   "related.1.desc": "Konsentratlı mayeni FFE-dən birbaşa sərbəst axan toz halına çevirin.",
   "related.2.desc": "Buxarlandırıcının gigiyenik təmizlənməsi üçün avtomatlaşdırılmış Təmizləmə sistemi.",
-  "tagline": "İstiliyə həssas məhsullar üçün yüksək effektiv, yumşaq buxarlanma. ",
+  "tagline": "İstiliyə həssas məhsullar üçün yüksək effektiv, yumşaq buxarlanma. Opsiyonel MVR inteqrasiyası ilə təkdən 7 effektli konfiqurasiyalarda mövcuddur - buxar istehlakınızı minimuma endirmək və məhsulun keyfiyyətini artırmaq üçün nəzərdə tutulmuşdur.",
   "overview.p0": "<strong style=\"color:var(--gray-900);\">Gausin Falling Film Evaporator</strong> şaquli yönümlü istilik dəyişdiricisidir, burada maye qidalanma boruların yuxarı təbəqəsi üzərində bərabər paylanır və boruların daxili səthlərində nazik təbəqə kimi aşağıya doğru axır. ",
   "overview.p1": "Bu dizayn nisbətən aşağı temperaturlarda (vakuum əməliyyatı vasitəsilə) buxarlanmağa imkan verir və onu süd, meyvə şirələri, əczaçılıq məhlulları və kimyəvi mayelər kimi istiliyə həssas məhsullar üçün ideal edir. ",
-  "overview.p2": "Gausin-in FFE sistemləri CHEMCAD proses simulyasiyası və HTRI istilik dizayn proqram təminatından istifadə etməklə işlənib, dəqiq istilik ötürmə hesablamalarını, optimal boru ölçülərini və ilk gündən zəmanətli performansı təmin edir."
+  "overview.p2": "Gausin-in FFE sistemləri CHEMCAD proses simulyasiyası və HTRI istilik dizayn proqram təminatından istifadə etməklə işlənib, dəqiq istilik ötürmə hesablamalarını, optimal boru ölçülərini və ilk gündən zəmanətli performansı təmin edir.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

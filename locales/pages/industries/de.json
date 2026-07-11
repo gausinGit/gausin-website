@@ -112,12 +112,6 @@
   "hero.label.0": "Branchen",
   "crumb.0": "Heim",
   "crumb.1": "Branchen",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "h2.0"
-  ],
   "indDetail.title.0": "Milchverarbeitung",
   "indDetail.title.1": "Lebensmittelindustrie",
   "indDetail.title.2": "Pharmazeutische Industrie",
@@ -140,6 +134,12 @@
   "indDetail.statLbl.3": "Gelieferte Projekte",
   "indDetail.highlightTitle.0": "Highlight der Milchtechnik",
   "indDetail.highlightDesc.0": "Unsere Multieffekt-Fallfilmverdampfer erreichen eine Dampfeinsparung von 4 - 6 kg Wasser pro kg Dampf und senken Ihre Energiekosten um bis zu 60 % im Vergleich zu Single-Effekt-Systemen.",
-  "indDetail.note.0": "Die Lebensmittelverarbeitung erfordert strenges Hygienedesign, einfache Reinigung und gleichbleibende Produktqualität. ",
-  "indDetail.note.1": "Bei der chemischen Verdunstung entstehen oft korrosive, verkrustende oder kristallisierende Flüssigkeiten. "
+  "indDetail.note.0": "Die Lebensmittelverarbeitung erfordert strenges Hygienedesign, einfache Reinigung und gleichbleibende Produktqualität. Unsere Verdampfer, Trockner und Wärmetauscher sind mit Kontaktflächen aus SS 304/316L, Sanitärarmaturen und CIP-Integration ausgestattet, um FSSAI- und Lebensmittelstandards für die Herstellung von Saft, Stärke, Glukose und Zutaten zu erfüllen.",
+  "indDetail.note.1": "Bei der chemischen Verdunstung entstehen oft korrosive, verkrustende oder kristallisierende Flüssigkeiten. Unsere Zwangsumlaufverdampfer halten hohe Flüssigkeitsgeschwindigkeiten aufrecht, um Verschmutzungen vorzubeugen, während unsere Materialauswahl CS-, SS-, Hastalloy-, Titan- und gummibeschichtete Optionen umfasst.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "h2.0"
+  ]
 }

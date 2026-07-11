@@ -448,7 +448,7 @@ PCB / CPCB compliant designs.`,
 • <strong>Business Process Automation</strong> — RPA, API integrations, ERP/CRM workflows<br>
 • <strong>Cloud Solutions</strong> — AWS, Azure, GCP migration & DevOps<br>
 • <strong>Custom Software</strong> — End-to-end bespoke development<br><br>
-<a href="tech-ai.html" style="color:#2563EB;font-weight:700;">🔗 Explore Digital Solutions →</a>`,
+<a href="digital-solutions.html" style="color:#2563EB;font-weight:700;">🔗 Explore Digital Solutions →</a>`,
       q: ['Get a Quote', 'Speak to Engineer', 'View All Products']
     },
     {

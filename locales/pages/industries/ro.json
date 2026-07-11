@@ -112,12 +112,6 @@
   "hero.label.0": "Industrii",
   "crumb.0": "Acasă",
   "crumb.1": "Industrii",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "h2.0"
-  ],
   "indDetail.title.0": "Prelucrarea Lactatelor",
   "indDetail.title.1": "Industria alimentară",
   "indDetail.title.2": "Industria farmaceutică",
@@ -140,6 +134,12 @@
   "indDetail.statLbl.3": "Proiecte livrate",
   "indDetail.highlightTitle.0": "Repere de inginerie a produselor lactate",
   "indDetail.highlightDesc.0": "Evaporatoarele noastre cu film în cădere cu efect multiplu realizează economii de abur de 4 - 6 kg apă per kg abur, reducând costurile cu energie cu până la 60% în comparație cu sistemele cu un singur efect.",
-  "indDetail.note.0": "Procesarea alimentelor necesită un design igienic strict, curățare ușoară și calitate constantă a produsului. ",
-  "indDetail.note.1": "Evaporarea chimică implică adesea fluide corozive, detartrante sau cristalizante. "
+  "indDetail.note.0": "Procesarea alimentelor necesită un design igienic strict, curățare ușoară și calitate constantă a produsului. Evaporatoarele, uscătorul și schimbătoarele noastre de căldură sunt construite cu suprafețe de contact SS 304/316L, fitinguri sanitare și integrare CIP pentru a îndeplini standardele FSSAI și de calitate alimentară pentru producția de suc, amidon, glucoză și ingrediente.",
+  "indDetail.note.1": "Evaporarea chimică implică adesea fluide corozive, detartrante sau cristalizante. Evaporatoarele noastre cu circulație forțată mențin viteze mari ale lichidului pentru a preveni murdărirea, în timp ce selecția noastră de materiale acoperă opțiunile CS, SS, Hasalloy, Titan și căptușite cu cauciuc.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "h2.0"
+  ]
 }

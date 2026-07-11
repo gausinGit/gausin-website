@@ -112,12 +112,6 @@
   "hero.label.0": "Indústrias",
   "crumb.0": "Lar",
   "crumb.1": "Indústrias",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "h2.0"
-  ],
   "indDetail.title.0": "Processamento de laticínios",
   "indDetail.title.1": "Indústria Alimentar",
   "indDetail.title.2": "Indústria Farmacêutica",
@@ -140,6 +134,12 @@
   "indDetail.statLbl.3": "Projetos entregues",
   "indDetail.highlightTitle.0": "Destaque em Engenharia de Laticínios",
   "indDetail.highlightDesc.0": "Nossos evaporadores de filme descendente de múltiplos efeitos alcançam economias de vapor de 4 a 6 kg de água por kg de vapor, reduzindo seus custos de energia em até 60% em comparação com sistemas de efeito único.",
-  "indDetail.note.0": "O processamento de alimentos exige um design higiênico rigoroso, fácil limpeza e qualidade consistente do produto. ",
-  "indDetail.note.1": "A evaporação química geralmente envolve fluidos corrosivos, incrustados ou cristalizantes. "
+  "indDetail.note.0": "O processamento de alimentos exige um design higiênico rigoroso, fácil limpeza e qualidade consistente do produto. Nossos evaporadores, secadores e trocadores de calor são construídos com superfícies de contato SS 304/316L, acessórios sanitários e integração CIP para atender aos padrões FSSAI e de qualidade alimentar para fabricação de sucos, amido, glicose e ingredientes.",
+  "indDetail.note.1": "A evaporação química geralmente envolve fluidos corrosivos, incrustados ou cristalizantes. Nossos evaporadores de circulação forçada mantêm altas velocidades de líquido para evitar incrustações, enquanto nossa seleção de materiais abrange opções de CS, SS, Hastalloy, Titânio e revestimento de borracha.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "h2.0"
+  ]
 }

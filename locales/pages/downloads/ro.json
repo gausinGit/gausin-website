@@ -40,7 +40,6 @@
   "btn.11": "Solicitați o cotație",
   "btn.12": "Sună-ne acum",
   "_meta.title": "Descărcări | ",
-  "_htmlKeys": [],
   "hero.label.0": "Descărcări",
   "crumb.0": "Acasă",
   "crumb.1": "Descărcări",
@@ -92,5 +91,6 @@
   "dl.featTitle.0": "Broșura corporativă Gausin",
   "dl.featDesc.0": "Prezentare completă a Gausin International Engineers - capabilitățile noastre în evaporare, uscare, procesare a produselor lactate, gestionarea deșeurilor, servicii EPC la cheie, industrii deservite și de ce organizațiile de vârf au încredere în noi.",
   "dl.ctaTitle.0": "Aveți nevoie de o propunere tehnică personalizată?",
-  "dl.ctaDesc.0": "Partajați cerințele procesului, capacitatea și detaliile aplicației - echipa noastră de ingineri va pregăti o soluție personalizată cu specificații, aspect și propunere comercială în 24 - 48 de ore."
+  "dl.ctaDesc.0": "Partajați cerințele procesului, capacitatea și detaliile aplicației - echipa noastră de ingineri va pregăti o soluție personalizată cu specificații, aspect și propunere comercială în 24 - 48 de ore.",
+  "_htmlKeys": []
 }

@@ -37,9 +37,6 @@
   "news.desc.8": "Med huvudkontor i Meerut, Uttar Pradesh, levererar Gausin International Engineers processutrustning och nyckelfärdiga anläggningar över hela Indien - och stödjer kunder inom mejerikooperativ, läkemedelstillverkning och industriell bearbetning.",
   "sec.title.0": "Nyheter & <span>Meddelanden</span>",
   "_meta.title": "Nyheter | ",
-  "_htmlKeys": [
-    "sec.title.0"
-  ],
   "hero.label.0": "Nyheter",
   "news.cat.0": "Produktlansering",
   "news.cat.1": "Karriärer",
@@ -60,5 +57,8 @@
   "news.link.7": "Visa produkt",
   "news.link.8": "Branscher vi betjänar",
   "news.ctaTitle.0": "Pressförfrågningar & partnerskap",
-  "news.ctaDesc.0": "För mediabevakning, samarbetsmöjligheter eller projektkonsultationer, kontakta vårt team direkt."
+  "news.ctaDesc.0": "För mediabevakning, samarbetsmöjligheter eller projektkonsultationer, kontakta vårt team direkt.",
+  "_htmlKeys": [
+    "sec.title.0"
+  ]
 }

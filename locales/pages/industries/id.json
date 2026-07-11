@@ -112,12 +112,6 @@
   "hero.label.0": "Industri",
   "crumb.0": "Rumah",
   "crumb.1": "Industri",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "h2.0"
-  ],
   "indDetail.title.0": "Pengolahan Susu",
   "indDetail.title.1": "Industri Makanan",
   "indDetail.title.2": "Industri Farmasi",
@@ -140,6 +134,12 @@
   "indDetail.statLbl.3": "Proyek Disampaikan",
   "indDetail.highlightTitle.0": "Sorotan Teknik Susu",
   "indDetail.highlightDesc.0": "Evaporator film jatuh multi-efek kami mencapai penghematan uap sebesar 4 - 6 kg air per kg uap, sehingga mengurangi biaya energi hingga 60% dibandingkan dengan sistem efek tunggal.",
-  "indDetail.note.0": "Pengolahan makanan menuntut desain higienis yang ketat, mudah dibersihkan, dan kualitas produk yang konsisten. ",
-  "indDetail.note.1": "Penguapan kimia sering kali melibatkan cairan korosif, kerak, atau kristalisasi. "
+  "indDetail.note.0": "Pengolahan makanan menuntut desain higienis yang ketat, mudah dibersihkan, dan kualitas produk yang konsisten. Evaporator, pengering, dan penukar panas kami dibuat dengan permukaan kontak SS 304/316L, perlengkapan sanitasi, dan integrasi CIP untuk memenuhi standar FSSAI dan food-grade untuk pembuatan jus, pati, glukosa, dan bahan.",
+  "indDetail.note.1": "Penguapan kimia sering kali melibatkan cairan korosif, kerak, atau kristalisasi. Evaporator sirkulasi paksa kami mempertahankan kecepatan cairan yang tinggi untuk mencegah pengotoran, sementara pilihan material kami mencakup opsi CS, SS, Hastalloy, Titanium, dan berlapis karet.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "h2.0"
+  ]
 }

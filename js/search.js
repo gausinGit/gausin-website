@@ -14,7 +14,7 @@ const SEARCH_INDEX = [
   { title: 'Industries', url: 'industries.html', category: 'Pages', keywords: 'dairy pharma chemical food distillery' },
   { title: 'Our Clients', url: 'our-clients.html', category: 'Pages', keywords: 'clients references portfolio gsk ranbaxy aurobindo dairy pharma' },
   { title: 'Technology', url: 'technology.html', category: 'Pages', keywords: 'simulation cad fabrication automation iot' },
-  { title: 'Digital Solutions', url: 'tech-ai.html', category: 'Pages', keywords: 'software web mobile ai ml cloud automation digital solutions' },
+  { title: 'Digital Solutions', url: 'digital-solutions.html', category: 'Pages', keywords: 'software web mobile ai ml cloud automation digital solutions' },
   { title: 'Contact Us', url: 'contact.html', category: 'Pages', keywords: 'inquiry quote email phone address' },
   { title: 'Careers', url: 'career.html', category: 'Pages', keywords: 'jobs hiring recruitment apply resume' },
   { title: 'News', url: 'news.html', category: 'Pages', keywords: 'updates announcements press' },
@@ -82,13 +82,13 @@ const SEARCH_INDEX = [
   { title: 'Food Processing Industry', url: 'industries.html#food', category: 'Industries', keywords: 'hygienic food beverage' },
 
   /* Digital Solutions */
-  { title: 'AI Solutions', url: 'tech-ai.html#ai-solutions', category: 'Digital Solutions', keywords: 'machine learning artificial intelligence ai ml' },
-  { title: 'Web Development', url: 'tech-ai.html#web-development', category: 'Digital Solutions', keywords: 'website web application' },
-  { title: 'Mobile App Development', url: 'tech-ai.html#mobile-apps', category: 'Digital Solutions', keywords: 'iOS Android mobile app' },
-  { title: 'Desktop Applications', url: 'tech-ai.html#desktop-apps', category: 'Digital Solutions', keywords: 'windows mac linux desktop software' },
-  { title: 'Business Process Automation', url: 'tech-ai.html#business-automation', category: 'Digital Solutions', keywords: 'rpa workflow automation erp crm' },
-  { title: 'Cloud Solutions', url: 'tech-ai.html#cloud', category: 'Digital Solutions', keywords: 'cloud deployment migration AWS azure' },
-  { title: 'Custom Software Development', url: 'tech-ai.html#custom-software', category: 'Digital Solutions', keywords: 'bespoke custom software development' },
+  { title: 'AI Solutions', url: 'digital-solutions.html#ai-solutions', category: 'Digital Solutions', keywords: 'machine learning artificial intelligence ai ml' },
+  { title: 'Web Development', url: 'digital-solutions.html#web-development', category: 'Digital Solutions', keywords: 'website web application' },
+  { title: 'Mobile App Development', url: 'digital-solutions.html#mobile-apps', category: 'Digital Solutions', keywords: 'iOS Android mobile app' },
+  { title: 'Desktop Applications', url: 'digital-solutions.html#desktop-apps', category: 'Digital Solutions', keywords: 'windows mac linux desktop software' },
+  { title: 'Business Process Automation', url: 'digital-solutions.html#business-automation', category: 'Digital Solutions', keywords: 'rpa workflow automation erp crm' },
+  { title: 'Cloud Solutions', url: 'digital-solutions.html#cloud', category: 'Digital Solutions', keywords: 'cloud deployment migration AWS azure' },
+  { title: 'Custom Software Development', url: 'digital-solutions.html#custom-software', category: 'Digital Solutions', keywords: 'bespoke custom software development' },
 ];
 
 const CATEGORY_ICONS = {

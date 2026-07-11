@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "category": "Süd Emalı Avadanlıqları",
   "breadcrumb.cat.0": "Süd Emalı Avadanlıqları",
   "qs.0.label": "kq/saat",
@@ -80,7 +74,7 @@
   "how.0.title": "Süd doldurulması",
   "how.0.desc": "Təzə süd hər xoya partiyasının başlanğıcında açıq buxarlanan qaba yüklənir.",
   "how.1.title": "İstilik altında buxarlanma",
-  "how.1.desc": "Buxar gödəkçəsi istilik verir; ",
+  "how.1.desc": "Buxar gödəkçəsi istilik verir; suyun buxarlanması ilə südün həcmi tədricən azalır.",
   "how.2.title": "Davamlı kazıma",
   "how.2.desc": "Sürtünmə qarışdırıcısı yanmağın və yanmanın qarşısını almaq üçün süd filmini qızdırılan səthdə hərəkət etdirir.",
   "how.3.title": "Xoya ardıcıllığına çatdı",
@@ -107,5 +101,11 @@
   "tagline": "Paslanmayan poladdan hazırlanmış xoya (mawa) buxar gödəkçəli tava, kazıyıcı qarışdırıcı və avtomatlaşdırılmış temperatur nəzarəti ilə.",
   "overview.p0": "<strong style=\"color:var(--gray-900);\">Gausin Khoya Makinası</strong> tələbkar sənaye mühitlərində etibarlı, gigiyenik performans üçün hazırlanmışdır. ",
   "overview.p1": "Hər bir vahid SS 304/316L təmas səthləri, təsdiqlənmiş proses dizaynı və tam sənədlərlə tutumunuza, məhsul xüsusiyyətlərinizə və zavodun yerləşdirilməsi tələblərinə uyğun olaraq xüsusi hazırlanmışdır.",
-  "overview.p2": "Gausin quraşdırma, istismara vermə və satışdan sonrakı xidmət vasitəsilə prosesin dizaynı və istehsalından tam mühəndislik dəstəyi təmin edir."
+  "overview.p2": "Gausin quraşdırma, istismara vermə və satışdan sonrakı xidmət vasitəsilə prosesin dizaynı və istehsalından tam mühəndislik dəstəyi təmin edir.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

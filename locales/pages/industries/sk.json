@@ -112,12 +112,6 @@
   "hero.label.0": "Odvetvia",
   "crumb.0": "Domov",
   "crumb.1": "Odvetvia",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "h2.0"
-  ],
   "indDetail.title.0": "Spracovanie mlieka a mliečnych výrobkov",
   "indDetail.title.1": "Potravinársky priemysel",
   "indDetail.title.2": "Farmaceutický priemysel",
@@ -140,6 +134,12 @@
   "indDetail.statLbl.3": "Dodané projekty",
   "indDetail.highlightTitle.0": "Zvýraznenie mliečneho inžinierstva",
   "indDetail.highlightDesc.0": "Naše multiefektové odparovače s padajúcim filmom dosahujú úsporu pary 4 – 6 kg vody na kg pary, čím znižujú vaše náklady na energiu až o 60 % v porovnaní so systémami s jedným efektom.",
-  "indDetail.note.0": "Spracovanie potravín si vyžaduje prísny hygienický dizajn, ľahké čistenie a stálu kvalitu produktov. ",
-  "indDetail.note.1": "Chemické odparovanie často zahŕňa korozívne, usadzujúce sa alebo kryštalizujúce kvapaliny. "
+  "indDetail.note.0": "Spracovanie potravín si vyžaduje prísny hygienický dizajn, ľahké čistenie a stálu kvalitu produktov. Naše výparníky, sušičky a výmenníky tepla sú vyrobené s kontaktnými povrchmi SS 304/316L, sanitárnymi armatúrami a integráciou CIP, aby spĺňali normy FSSAI a potravinárske normy pre výrobu šťavy, škrobu, glukózy a prísad.",
+  "indDetail.note.1": "Chemické odparovanie často zahŕňa korozívne, usadzujúce sa alebo kryštalizujúce kvapaliny. Naše výparníky s núteným obehom si zachovávajú vysoké rýchlosti kvapaliny, aby sa zabránilo znečisteniu, zatiaľ čo náš výber materiálov zahŕňa varianty CS, SS, Hastalloy, titán a gumené varianty.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "h2.0"
+  ]
 }

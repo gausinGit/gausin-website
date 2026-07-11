@@ -112,12 +112,6 @@
   "hero.label.0": "產業",
   "crumb.0": "家",
   "crumb.1": "產業",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "h2.0"
-  ],
   "indDetail.title.0": "乳品加工",
   "indDetail.title.1": "食品工業",
   "indDetail.title.2": "醫藥行業",
@@ -141,5 +135,11 @@
   "indDetail.highlightTitle.0": "乳品工程亮點",
   "indDetail.highlightDesc.0": "我們的多效降膜蒸發器可實現每公斤蒸汽 4 - 6 公斤水的蒸汽經濟性，與單效系統相比，您的能源成本可降低高達 60%。",
   "indDetail.note.0": "食品加工需要嚴格的衛生設計、易於清潔和穩定的產品品質。我們的蒸發器、乾燥機和熱交換器採用 SS 304/316L 接觸表面、衛生配件和 CIP 整合製造，以滿足果汁、澱粉、葡萄糖和配料製造的 FSSAI 和食品級標準。",
-  "indDetail.note.1": "化學蒸發通常涉及腐蝕性、結垢或結晶流體。我們的強制循環蒸發器保持高液速以防止結垢，而我們的材料選擇涵蓋 CS、SS、哈氏合金、鈦和橡膠襯裡選項。"
+  "indDetail.note.1": "化學蒸發通常涉及腐蝕性、結垢或結晶流體。我們的強制循環蒸發器保持高液速以防止結垢，而我們的材料選擇涵蓋 CS、SS、哈氏合金、鈦和橡膠襯裡選項。",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "h2.0"
+  ]
 }

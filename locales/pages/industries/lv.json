@@ -112,12 +112,6 @@
   "hero.label.0": "Nozares",
   "crumb.0": "Sākums",
   "crumb.1": "Nozares",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "h2.0"
-  ],
   "indDetail.title.0": "Piena pārstrāde",
   "indDetail.title.1": "Pārtikas rūpniecība",
   "indDetail.title.2": "Farmācijas rūpniecība",
@@ -140,6 +134,12 @@
   "indDetail.statLbl.3": "Piegādāti projekti",
   "indDetail.highlightTitle.0": "Piena inženierijas izcēlums",
   "indDetail.highlightDesc.0": "Mūsu daudzefektu krītošās plēves iztvaicētāji nodrošina tvaika ekonomiju 4–6 kg ūdens uz kg tvaika, samazinot jūsu enerģijas izmaksas līdz pat 60%, salīdzinot ar viena efekta sistēmām.",
-  "indDetail.note.0": "Pārtikas pārstrādei ir nepieciešams stingrs higiēnisks dizains, viegla tīrāmība un nemainīga produktu kvalitāte. ",
-  "indDetail.note.1": "Ķīmiskā iztvaikošana bieži ietver korozīvus, zvīņojošus vai kristalizējošos šķidrumus. "
+  "indDetail.note.0": "Pārtikas pārstrādei ir nepieciešams stingrs higiēnisks dizains, viegla tīrāmība un nemainīga produktu kvalitāte. Mūsu iztvaicētāji, žāvētāji un siltummaiņi ir būvēti ar SS 304/316L kontaktvirsmām, sanitārajiem piederumiem un CIP integrāciju, lai atbilstu FSSAI un pārtikas kvalitātes standartiem sulas, cietes, glikozes un sastāvdaļu ražošanā.",
+  "indDetail.note.1": "Ķīmiskā iztvaikošana bieži ietver korozīvus, zvīņojošus vai kristalizējošos šķidrumus. Mūsu piespiedu cirkulācijas iztvaicētāji uztur lielu šķidruma ātrumu, lai novērstu piesārņojumu, savukārt mūsu materiālu izvēle aptver CS, SS, Hastalloy, Titanium un gumijas oderējumu.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "h2.0"
+  ]
 }

@@ -1,15 +1,4 @@
 {
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "sec.title.3",
-    "sec.title.4",
-    "sec.title.5",
-    "h2.0",
-    "h2.1"
-  ],
   "_meta.title": "Gausin International Engineers Pvt. ",
   "hero.badge.0": "Hindistanın Premyer Sənaye Mühəndisliyi Şirkəti",
   "hero.desc.0": "Gausin Beynəlxalq Mühəndisləri süd, qida və içki, əczaçılıq, içki, kimya, sellüloz və kağız və nişasta sənayeləri üçün qabaqcıl Buxarlandırıcıların, Quruducuların, Süd Soyuducu Mərkəzlərin, CIP Sistemləri, Tullantıların İdarə Edilməsi, ZLD və Proses Zavodlarının Layihələndirilməsi və İstehsalında ixtisaslaşmışdır.",
@@ -30,7 +19,7 @@
   "sec.desc.2": "Mühəndislik təcrübəmiz səkkiz əsas sənaye sektorunu əhatə edir və hər bir unikal tətbiq üçün fərdiləşdirilmiş proses həlləri təqdim edir.",
   "sec.desc.3": "Dünyanın aparıcı şirkətləri tərəfindən etibar edilən ən çox axtarılan sənaye mühəndisliyi məhsullarımız.",
   "sec.desc.4": "Qlobal əczaçılıq nəhənglərindən tutmuş aparıcı süd kooperativlərinə qədər - bizim mühəndis həllərimiz ən yaxşı təşkilatlar arasında elektrik istehsal xətləri.",
-  "p.0": "Gausin International Engineers Pvt. ",
+  "p.0": "Gausin International Engineers Pvt. Ltd. baş ofisi Hindistanın Uttar Pradeş ştatının Meerut şəhərində yerləşən aparıcı sənaye mühəndisliyi şirkətidir. Biz texnoloji cəhətdən qabaqcıl sənaye prosesi avadanlığının dizaynı, mühəndisliyi, istehsalı və təchizatı üzrə ixtisaslaşmışıq.",
   "p.1": "Portfelimiz Buxarlandırıcılar, Quruducular, Süd Soyutma Mərkəzləri, CIP sistemləri, İstilik dəyişdiriciləri, Təzyiqli Qablar, Tullantıların İdarə Edilməsi, ZLD və tam Açar Təslim Proses Zavodlarını əhatə edir - Süd, Əczaçılıq, Qida və İçki, Kimya, İçki zavodu, Selüloz və Kağız, Hindistanda və Beynəlxalq Enerji sahələrində xidmət göstərir.",
   "p.2": "Biz dəqiq, səmərəli və gələcəyə hazır olan həllər təqdim etmək üçün qabaqcıl mühəndis proqram təminatını və dəqiq istehsal texnologiyasını inteqrasiya edirik.",
   "p.3": "Hindistanda və beynəlxalq səviyyədə 200-dən çox şirkətlə əməkdaşlıq",
@@ -178,7 +167,7 @@
   "float.sub.3": "3D Modelləşdirmə və P&ID",
   "float.sub.4": "PLC/SCADA/IoT Sistemləri",
   "float.sub.5": "Lazer Kəsmə və Dəqiq Qaynaq",
-  "hero.title.0": "Təkmil <span class=\"gradient-text\">Mühəndislik</span><br>\n          ",
+  "hero.title.0": "Təkmil <span class=\"gradient-text\">Mühəndislik</span><br>\n          Sənaye üçün Həllər<br>\n          Proses <span class=\"gradient-text\">Mükəmməllik</span>",
   "sec.title.0": "<span>Proses Mühəndisliyi</span>-də Hindistanın Etibarlı Adı",
   "sec.title.1": "Hərtərəfli <span>Mühəndislik Həlləri</span>",
   "sec.title.2": "<span>Engineering Excellence</span> üzərində qurulub",
@@ -186,5 +175,16 @@
   "sec.title.4": "Flaqman <span>Sənaye Sistemləri və Avadanlıqları</span>",
   "sec.title.5": "Etibarlı <span>Sənaye Liderləri</span>",
   "h2.0": "Mühəndislik <span style=\"background:linear-gradient(135deg,var(--blue-300),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;\">Qabaqcıl Texnologiya</span> tərəfindən dəstəklənir",
-  "h2.1": "Növbəti <span style=\"background:linear-gradient(135deg,var(--blue-300),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;\">Sənaye Prosesinizi tərtib etməyə hazırsınız?</span>"
+  "h2.1": "Növbəti <span style=\"background:linear-gradient(135deg,var(--blue-300),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;\">Sənaye Prosesinizi tərtib etməyə hazırsınız?</span>",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "sec.title.3",
+    "sec.title.4",
+    "sec.title.5",
+    "h2.0",
+    "h2.1"
+  ]
 }

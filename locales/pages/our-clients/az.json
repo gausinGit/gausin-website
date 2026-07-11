@@ -1,9 +1,4 @@
 {
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1"
-  ],
   "_meta.title": "Müştərilərimiz | ",
   "hero.desc.0": "Qlobal əczaçılıq nəhənglərindən tutmuş aparıcı süd kooperativlərinə qədər - Hindistanda və beynəlxalq miqyasda ən yaxşı təşkilatlarda mühəndislik həllərimiz elektrik istehsal xətləri.",
   "sec.label.0": "Müştəri Referansları",
@@ -34,5 +29,10 @@
   "btn.2": "İndi Bizə Zəng Edin",
   "hero.title.0": "<br>Sənaye Liderləri tərəfindən etibarlıdır",
   "sec.title.0": "Seçilmiş <span>Müştəri Portfeli</span>",
-  "sec.title.1": "Müştəri Şəbəkəmizə Qoşulmağa Hazırsınız?"
+  "sec.title.1": "Müştəri Şəbəkəmizə Qoşulmağa Hazırsınız?",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1"
+  ]
 }
