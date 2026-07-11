@@ -13,6 +13,7 @@ const EN_PATH = path.join(LOCALES, 'en.json');
 const ALL_LANGS = [
   'de', 'hi', 'fr', 'ar', 'es', 'pt', 'bg', 'cs', 'el', 'hu', 'id', 'it', 'ja', 'ko',
   'lt', 'lv', 'ms', 'nl', 'no', 'pl', 'ro', 'sk', 'sl', 'sr', 'sv', 'sw', 'th', 'tr', 'uk', 'zh-CN', 'zh-TW',
+  'az', 'he',
 ];
 
 const DE_OVERRIDES = {
@@ -68,7 +69,10 @@ async function buildLang(lang, en) {
 }
 
 const en = JSON.parse(fs.readFileSync(EN_PATH, 'utf8'));
-for (const lang of ALL_LANGS) {
+const langsToBuild = process.env.I18N_LANGS
+  ? process.env.I18N_LANGS.split(',').map((s) => s.trim()).filter(Boolean)
+  : ALL_LANGS;
+for (const lang of langsToBuild) {
   await buildLang(lang, en);
 }
 console.log('Done.');

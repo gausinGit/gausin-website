@@ -12,6 +12,7 @@ const PAGES_ROOT = path.join(ROOT, 'locales', 'pages');
 const ALL_LANGS = [
   'de', 'hi', 'fr', 'ar', 'es', 'pt', 'bg', 'cs', 'el', 'hu', 'id', 'it', 'ja', 'ko',
   'lt', 'lv', 'ms', 'nl', 'no', 'pl', 'ro', 'sk', 'sl', 'sr', 'sv', 'sw', 'th', 'tr', 'uk', 'zh-CN', 'zh-TW',
+  'az', 'he',
 ];
 
 const DE_TERM_FIXES = [
@@ -169,8 +170,11 @@ async function buildPage(slug) {
   }
   const enPayload = JSON.parse(fs.readFileSync(enPath, 'utf8'));
   console.log(`Building ${slug}...`);
-  for (let i = 0; i < ALL_LANGS.length; i += LANG_PARALLEL) {
-    const chunk = ALL_LANGS.slice(i, i + LANG_PARALLEL);
+  const langsToBuild = process.env.I18N_LANGS
+    ? process.env.I18N_LANGS.split(',').map((s) => s.trim()).filter(Boolean)
+    : ALL_LANGS;
+  for (let i = 0; i < langsToBuild.length; i += LANG_PARALLEL) {
+    const chunk = langsToBuild.slice(i, i + LANG_PARALLEL);
     await Promise.all(chunk.map((lang) => buildPageLang(slug, lang, enPayload)));
   }
 }

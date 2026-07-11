@@ -293,6 +293,7 @@ const LANG_CONTINENT_ORDER = [
 const LANGUAGES = [
   { id: 'au', code: 'en', label: 'Australia', flag: '🇦🇺', continent: 'oceania' },
   { id: 'at', code: 'de', label: 'Austria', flag: '🇦🇹', continent: 'europe' },
+  { id: 'az', code: 'az', label: 'Azerbaijan', flag: '🇦🇿', continent: 'asia' },
   { id: 'be', code: 'nl', label: 'Belgium', flag: '🇧🇪', continent: 'europe' },
   { id: 'br', code: 'pt', label: 'Brazil', flag: '🇧🇷', continent: 'south-america' },
   { id: 'bg', code: 'bg', label: 'Bulgaria', flag: '🇧🇬', continent: 'europe' },
@@ -308,6 +309,7 @@ const LANGUAGES = [
   { id: 'hu', code: 'hu', label: 'Hungary', flag: '🇭🇺', continent: 'europe' },
   { id: 'in', code: 'hi', label: 'India', flag: '🇮🇳', continent: 'asia' },
   { id: 'id', code: 'id', label: 'Indonesia', flag: '🇮🇩', continent: 'asia' },
+  { id: 'il', code: 'he', label: 'Israel', flag: '🇮🇱', continent: 'africa-middle-east' },
   { id: 'my', code: 'ms', label: 'Malaysia', flag: '🇲🇾', continent: 'asia' },
   { id: 'sg', code: 'en', label: 'Singapore', flag: '🇸🇬', continent: 'asia' },
   { id: 'it', code: 'it', label: 'Italy', flag: '🇮🇹', continent: 'europe' },
@@ -513,8 +515,21 @@ function removeDigitalSolutionsFromNav() {
   document.querySelectorAll('#mobileNav .mobile-nav-item--tech-ai').forEach((el) => el.remove());
 }
 
-/* Topbar links + language live in the fixed topbar on all screen sizes — no duplicate mobile menu block. */
-function injectTopbarMobileLinks() {}
+function buildMobileTopbarLinksHtml() {
+  const links = TOPBAR_LINKS.map((item) => `
+    <a href="${item.href}" class="mobile-topbar-link${_page === item.href ? ' active' : ''}">
+      <i class="fa-solid ${item.icon}"></i>
+      <span data-i18n="${item.i18n}">${item.label}</span>
+    </a>
+  `).join('');
+  return `<div class="mobile-topbar-links" aria-label="Quick links">${links}</div>`;
+}
+
+function injectTopbarMobileLinks() {
+  const nav = document.getElementById('mobileNav');
+  if (!nav || nav.querySelector('.mobile-topbar-links')) return;
+  nav.insertAdjacentHTML('afterbegin', buildMobileTopbarLinksHtml());
+}
 
 /* ─── Navbar HTML ─────────────────────────────────────────── */
 const NAVBAR_HTML = `
@@ -1677,7 +1692,7 @@ window.gausinGetLang = () => _TR.active;
 } // END LEGACY Google Translate
 
 /* ─── Hybrid Static i18n (Phase 1) ─────────────────────────── */
-const GAUSIN_I18N_ASSET_V = '20260711e';
+const GAUSIN_I18N_ASSET_V = '20260711g';
 (function preloadGausinI18n() {
   if (document.querySelector('script[data-gausin-i18n]')) return;
   const page = document.createElement('script');
