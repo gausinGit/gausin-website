@@ -281,54 +281,63 @@ const TOPBAR_LINKS = [
   { href: 'news.html', label: 'News', icon: 'fa-newspaper', i18n: 'topbar.news' },
 ];
 
+const LANG_CONTINENT_ORDER = [
+  { key: 'asia', label: 'Asia' },
+  { key: 'europe', label: 'Europe' },
+  { key: 'north-america', label: 'North America' },
+  { key: 'south-america', label: 'South America' },
+  { key: 'africa-middle-east', label: 'Africa & Middle East' },
+  { key: 'oceania', label: 'Oceania' },
+];
+
 const LANGUAGES = [
-  { id: 'au', code: 'en', label: 'Australia', flag: '🇦🇺' },
-  { id: 'at', code: 'de', label: 'Austria', flag: '🇦🇹' },
-  { id: 'be', code: 'nl', label: 'Belgium', flag: '🇧🇪' },
-  { id: 'br', code: 'pt', label: 'Brazil', flag: '🇧🇷' },
-  { id: 'bg', code: 'bg', label: 'Bulgaria', flag: '🇧🇬' },
-  { id: 'ca-en', code: 'en', label: 'Canada (English)', flag: '🇨🇦' },
-  { id: 'ca-fr', code: 'fr', label: 'Canada (Français)', flag: '🇨🇦' },
-  { id: 'cl', code: 'es', label: 'Chile', flag: '🇨🇱' },
-  { id: 'cn', code: 'zh-CN', label: 'China Mainland', flag: '🇨🇳' },
-  { id: 'co', code: 'es', label: 'Colombia', flag: '🇨🇴' },
-  { id: 'cz', code: 'cs', label: 'Czech Republic', flag: '🇨🇿' },
-  { id: 'fr', code: 'fr', label: 'France', flag: '🇫🇷' },
-  { id: 'de', code: 'de', label: 'Germany', flag: '🇩🇪' },
-  { id: 'gr', code: 'el', label: 'Greece', flag: '🇬🇷' },
-  { id: 'hu', code: 'hu', label: 'Hungary', flag: '🇭🇺' },
-  { id: 'in', code: 'hi', label: 'India', flag: '🇮🇳' },
-  { id: 'id', code: 'id', label: 'Indonesia', flag: '🇮🇩' },
-  { id: 'my', code: 'ms', label: 'Malaysia', flag: '🇲🇾' },
-  { id: 'sg', code: 'en', label: 'Singapore', flag: '🇸🇬' },
-  { id: 'it', code: 'it', label: 'Italy', flag: '🇮🇹' },
-  { id: 'jp', code: 'ja', label: 'Japan', flag: '🇯🇵' },
-  { id: 'kr', code: 'ko', label: 'Korea', flag: '🇰🇷' },
-  { id: 'lv', code: 'lv', label: 'Latvia', flag: '🇱🇻' },
-  { id: 'lt', code: 'lt', label: 'Lithuania', flag: '🇱🇹' },
-  { id: 'me', code: 'ar', label: 'Middle East', flag: 'ME' },
-  { id: 'nl', code: 'nl', label: 'Netherlands', flag: '🇳🇱' },
-  { id: 'nz', code: 'en', label: 'New Zealand', flag: '🇳🇿' },
-  { id: 'no', code: 'no', label: 'Norway', flag: '🇳🇴' },
-  { id: 'pe', code: 'es', label: 'Peru', flag: '🇵🇪' },
-  { id: 'pl', code: 'pl', label: 'Poland', flag: '🇵🇱' },
-  { id: 'ro', code: 'ro', label: 'Romania', flag: '🇷🇴' },
-  { id: 'rs', code: 'sr', label: 'Serbia', flag: '🇷🇸' },
-  { id: 'sk', code: 'sk', label: 'Slovakia', flag: '🇸🇰' },
-  { id: 'si', code: 'sl', label: 'Slovenia', flag: '🇸🇮' },
-  { id: 'ea', code: 'sw', label: 'East Africa', flag: 'EA' },
-  { id: 'na', code: 'ar', label: 'North Africa', flag: 'NA' },
-  { id: 'za', code: 'en', label: 'South Africa', flag: 'ZA' },
-  { id: 'wa', code: 'fr', label: 'West Africa', flag: 'WA' },
-  { id: 'se', code: 'sv', label: 'Sweden', flag: '🇸🇪' },
-  { id: 'ch', code: 'de', label: 'Switzerland', flag: '🇨🇭' },
-  { id: 'tw', code: 'zh-TW', label: 'Taiwan, Region', flag: '🇹🇼' },
-  { id: 'th', code: 'th', label: 'Thailand', flag: '🇹🇭' },
-  { id: 'tr', code: 'tr', label: 'Türkiye', flag: '🇹🇷' },
-  { id: 'ae', code: 'ar', label: 'United Arab Emirates', flag: '🇦🇪' },
-  { id: 'gb', code: 'en', label: 'United Kingdom', flag: '🇬🇧' },
-  { id: 'us', code: 'en', label: 'United States', flag: '🇺🇸' },
-  { id: 'ua', code: 'uk', label: 'Ukraine', flag: '🇺🇦' },
+  { id: 'au', code: 'en', label: 'Australia', flag: '🇦🇺', continent: 'oceania' },
+  { id: 'at', code: 'de', label: 'Austria', flag: '🇦🇹', continent: 'europe' },
+  { id: 'be', code: 'nl', label: 'Belgium', flag: '🇧🇪', continent: 'europe' },
+  { id: 'br', code: 'pt', label: 'Brazil', flag: '🇧🇷', continent: 'south-america' },
+  { id: 'bg', code: 'bg', label: 'Bulgaria', flag: '🇧🇬', continent: 'europe' },
+  { id: 'ca-en', code: 'en', label: 'Canada (English)', flag: '🇨🇦', continent: 'north-america' },
+  { id: 'ca-fr', code: 'fr', label: 'Canada (Français)', flag: '🇨🇦', continent: 'north-america' },
+  { id: 'cl', code: 'es', label: 'Chile', flag: '🇨🇱', continent: 'south-america' },
+  { id: 'cn', code: 'zh-CN', label: 'China Mainland', flag: '🇨🇳', continent: 'asia' },
+  { id: 'co', code: 'es', label: 'Colombia', flag: '🇨🇴', continent: 'south-america' },
+  { id: 'cz', code: 'cs', label: 'Czech Republic', flag: '🇨🇿', continent: 'europe' },
+  { id: 'fr', code: 'fr', label: 'France', flag: '🇫🇷', continent: 'europe' },
+  { id: 'de', code: 'de', label: 'Germany', flag: '🇩🇪', continent: 'europe' },
+  { id: 'gr', code: 'el', label: 'Greece', flag: '🇬🇷', continent: 'europe' },
+  { id: 'hu', code: 'hu', label: 'Hungary', flag: '🇭🇺', continent: 'europe' },
+  { id: 'in', code: 'hi', label: 'India', flag: '🇮🇳', continent: 'asia' },
+  { id: 'id', code: 'id', label: 'Indonesia', flag: '🇮🇩', continent: 'asia' },
+  { id: 'my', code: 'ms', label: 'Malaysia', flag: '🇲🇾', continent: 'asia' },
+  { id: 'sg', code: 'en', label: 'Singapore', flag: '🇸🇬', continent: 'asia' },
+  { id: 'it', code: 'it', label: 'Italy', flag: '🇮🇹', continent: 'europe' },
+  { id: 'jp', code: 'ja', label: 'Japan', flag: '🇯🇵', continent: 'asia' },
+  { id: 'kr', code: 'ko', label: 'Korea', flag: '🇰🇷', continent: 'asia' },
+  { id: 'lv', code: 'lv', label: 'Latvia', flag: '🇱🇻', continent: 'europe' },
+  { id: 'lt', code: 'lt', label: 'Lithuania', flag: '🇱🇹', continent: 'europe' },
+  { id: 'me', code: 'ar', label: 'Middle East', flag: 'ME', continent: 'africa-middle-east' },
+  { id: 'nl', code: 'nl', label: 'Netherlands', flag: '🇳🇱', continent: 'europe' },
+  { id: 'nz', code: 'en', label: 'New Zealand', flag: '🇳🇿', continent: 'oceania' },
+  { id: 'no', code: 'no', label: 'Norway', flag: '🇳🇴', continent: 'europe' },
+  { id: 'pe', code: 'es', label: 'Peru', flag: '🇵🇪', continent: 'south-america' },
+  { id: 'pl', code: 'pl', label: 'Poland', flag: '🇵🇱', continent: 'europe' },
+  { id: 'ro', code: 'ro', label: 'Romania', flag: '🇷🇴', continent: 'europe' },
+  { id: 'rs', code: 'sr', label: 'Serbia', flag: '🇷🇸', continent: 'europe' },
+  { id: 'sk', code: 'sk', label: 'Slovakia', flag: '🇸🇰', continent: 'europe' },
+  { id: 'si', code: 'sl', label: 'Slovenia', flag: '🇸🇮', continent: 'europe' },
+  { id: 'ea', code: 'sw', label: 'East Africa', flag: 'EA', continent: 'africa-middle-east' },
+  { id: 'na', code: 'ar', label: 'North Africa', flag: 'NA', continent: 'africa-middle-east' },
+  { id: 'za', code: 'en', label: 'South Africa', flag: 'ZA', continent: 'africa-middle-east' },
+  { id: 'wa', code: 'fr', label: 'West Africa', flag: 'WA', continent: 'africa-middle-east' },
+  { id: 'se', code: 'sv', label: 'Sweden', flag: '🇸🇪', continent: 'europe' },
+  { id: 'ch', code: 'de', label: 'Switzerland', flag: '🇨🇭', continent: 'europe' },
+  { id: 'tw', code: 'zh-TW', label: 'Taiwan, Region', flag: '🇹🇼', continent: 'asia' },
+  { id: 'th', code: 'th', label: 'Thailand', flag: '🇹🇭', continent: 'asia' },
+  { id: 'tr', code: 'tr', label: 'Türkiye', flag: '🇹🇷', continent: 'asia' },
+  { id: 'ae', code: 'ar', label: 'United Arab Emirates', flag: '🇦🇪', continent: 'africa-middle-east' },
+  { id: 'gb', code: 'en', label: 'United Kingdom', flag: '🇬🇧', continent: 'europe' },
+  { id: 'us', code: 'en', label: 'United States', flag: '🇺🇸', continent: 'north-america' },
+  { id: 'ua', code: 'uk', label: 'Ukraine', flag: '🇺🇦', continent: 'europe' },
 ];
 
 function getLangCodeDisplay(code) {
@@ -412,14 +421,31 @@ function _isLangSwitcherNode(node) {
   return !!(node.parentElement && node.parentElement.closest('#langSwitcher,.mobile-lang-btns'));
 }
 
+function buildLangOptionHtml(lang, activeId) {
+  return `
+    <button class="lang-option${lang.id === activeId ? ' active' : ''}" data-lang-id="${lang.id}" data-lang="${lang.code}" type="button" role="option">
+      ${renderLangFlagHtml(lang)}
+      <span class="lang-label">${lang.label}</span>
+    </button>
+  `;
+}
+
+function buildLangSwitcherGroupsHtml(activeId) {
+  return LANG_CONTINENT_ORDER.map(({ key, label }) => {
+    const langs = LANGUAGES.filter((l) => l.continent === key);
+    if (!langs.length) return '';
+    const options = langs.map((l) => buildLangOptionHtml(l, activeId)).join('');
+    return `
+      <div class="lang-group" role="group" aria-label="${label}">
+        <div class="lang-group-title">${label}</div>
+        ${options}
+      </div>
+    `;
+  }).join('');
+}
+
 function buildLangSwitcher() {
   const active = getActiveLangEntry();
-  const items = LANGUAGES.map(l => `
-    <button class="lang-option${l.id === active.id ? ' active' : ''}" data-lang-id="${l.id}" data-lang="${l.code}" type="button" role="option">
-      ${renderLangFlagHtml(l)}
-      <span class="lang-label">${l.label}</span>
-    </button>
-  `).join('');
   return `
     <div class="lang-switcher notranslate" id="langSwitcher" translate="no">
       <button class="lang-trigger" id="langTrigger" type="button" aria-haspopup="listbox" aria-expanded="false" data-i18n-aria="aria.langSelect" aria-label="Select region or language">
@@ -428,7 +454,7 @@ function buildLangSwitcher() {
         <i class="fa-solid fa-chevron-down lang-chevron"></i>
       </button>
       <div class="lang-dropdown" id="langDropdown" role="listbox" aria-label="Select region or language">
-        ${items}
+        ${buildLangSwitcherGroupsHtml(active.id)}
       </div>
     </div>
   `;
@@ -1651,7 +1677,7 @@ window.gausinGetLang = () => _TR.active;
 } // END LEGACY Google Translate
 
 /* ─── Hybrid Static i18n (Phase 1) ─────────────────────────── */
-const GAUSIN_I18N_ASSET_V = '20260711d';
+const GAUSIN_I18N_ASSET_V = '20260711e';
 (function preloadGausinI18n() {
   if (document.querySelector('script[data-gausin-i18n]')) return;
   const page = document.createElement('script');
