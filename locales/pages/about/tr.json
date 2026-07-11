@@ -16,8 +16,8 @@
   "h3.2": "Teknik Yeterlilik",
   "h3.3": "Endüstri Uzmanlığı",
   "p.0": "On yıllık hassas mühendislik, teknolojik yenilik ve endüstriyel performansa sarsılmaz bağlılık - Gausin'in hikayesini keşfedin.",
-  "p.1": "Gausin Uluslararası Mühendisler Pvt. ",
-  "p.2": "Merkezi Meerut, Uttar Pradesh'de bulunan, uzmanlaşmış bir evaporatör üreticisinden tam kapsamlı bir endüstri mühendisliği şirketine dönüştük. ",
+  "p.1": "Gausin Uluslararası Mühendisler Pvt. Ltd. tek bir vizyonla kuruldu: kalite veya performanstan ödün vermeden, Hindistan ve küresel endüstrilere rekabetçi maliyetlerle birinci sınıf, teknolojik olarak gelişmiş, çevre dostu ve enerji açısından verimli endüstriyel proses mühendisliği çözümleri sunmak.",
+  "p.2": "Merkezi Meerut, Uttar Pradesh'de bulunan, uzmanlaşmış bir evaporatör üreticisinden tam kapsamlı bir endüstri mühendisliği şirketine dönüştük. Uzmanlığımız, ilk fizibilite ve proses tasarımından ayrıntılı mühendislik, imalat, tedarik, kurulum, devreye alma ve satış sonrası desteğe kadar proses tesislerinin tüm yaşam döngüsünü kapsar.",
   "p.3": "Özel proses mühendisleri, imalatçılar ve proje yöneticilerinden oluşan bir ekiple, süt ürünleri, ilaç, gıda işleme, kimya, içki imalathanesi, kağıt, tekstil ve enerji olmak üzere sekiz farklı endüstriyel sektörde 100'den fazla projeyi başarıyla teslim ettik.",
   "p.4": "Müşterilerimizin üretim performansını optimize eden, işletme maliyetlerini azaltan ve uluslararası kalite standartlarını aşan, teknolojik açıdan gelişmiş, enerji açısından verimli ve güvenilir endüstriyel proses ekipmanları ve mühendislik çözümleri sunmak.",
   "p.5": "Sürdürülebilir endüstriyel büyümeye katkıda bulunurken buharlaştırma, kurutma ve tesis mühendisliği teknolojisinde standartları belirleyen, Hindistan'ın en güvenilir ve küresel olarak rekabetçi endüstriyel proses mühendisliği şirketi olarak tanınmak.",
@@ -29,8 +29,8 @@
   "team.name.1": "Bay Vijay Kumar Dubey",
   "team.role.0": "Kurucu ve İcra Kurulu Başkanı",
   "team.role.1": "Müdür",
-  "team.bio.0": "Bay Gaurav Singhal, bir Kimya Mühendisi ve endüstriyel operasyonlar, tesis tasarımı ve mühendisliği, proje yönetimi, iş geliştirme ve organizasyonel liderlik alanlarında 25 yılı aşkın dinamik deneyime sahip başarılı bir iş lideridir. ",
-  "team.bio.1": "Bay Vijay Kumar Dubey, organizasyon yönetimi, iş operasyonları ve müşteri ilişkileri geliştirme konularında kapsamlı uzmanlığa sahip dinamik bir liderdir. ",
+  "team.bio.0": "Bay Gaurav Singhal, bir Kimya Mühendisi ve endüstriyel operasyonlar, tesis tasarımı ve mühendisliği, proje yönetimi, iş geliştirme ve organizasyonel liderlik alanlarında 25 yılı aşkın dinamik deneyime sahip başarılı bir iş lideridir. Kurucu ve İcra Kurulu Başkanı olarak şirkete stratejik yön vererek inovasyonu, operasyonel mükemmelliği ve sürdürülebilir büyümeyi teşvik ediyor. Kapsamlı sektör bilgisi, müşteri memnuniyeti ve kaliteli teslimata güçlü bir şekilde odaklanmayla birleştiğinde, karmaşık mühendislik projelerinin başarılı bir şekilde yürütülmesinde etkili olmuştur. Onun liderliğinde şirket, pazardaki varlığını güçlendirmeye, kalıcı müşteri ilişkileri kurmaya ve çeşitli sektörlerde değer odaklı çözümler sunmaya devam ediyor. Bay Singhal, organizasyonun mükemmellik ve müşteri güveni konusunda ön planda kalmasını sağlayarak profesyonellik, dürüstlük ve sürekli iyileştirme kültürünü geliştirmeye kendini adamıştır.",
+  "team.bio.1": "Bay Vijay Kumar Dubey, organizasyon yönetimi, iş operasyonları ve müşteri ilişkileri geliştirme konularında kapsamlı uzmanlığa sahip dinamik bir liderdir. Bir Direktör olarak, stratejik vizyonu, müşteri memnuniyetine olan bağlılığı ve kaliteli hizmet sunumuna odaklanması sayesinde şirketin büyümesinde etkili olmuştur. Güçlü paydaş ilişkilerini teşvik ederek, operasyonel mükemmelliği sağlayarak ve dürüstlük ve profesyonellik kültürünü teşvik ederek altyapı projelerinin başarılı bir şekilde kurulmasında ve yürütülmesinde önemli bir rol oynamıştır. Liderliği, kuruluşa sürdürülebilir büyüme ve müşteriler ve ortaklar için uzun vadeli değer yaratma yönünde rehberlik etmeye devam ediyor.",
   "btn.0": "Ekibimizle Konuşun",
   "btn.1": "Ürünlerimiz",
   "btn.2": "Fiyat Teklifi İste",
@@ -99,17 +99,6 @@
   "cert.desc.6": "BEE Yönergelerine Uyumlu",
   "cert.desc.7": "CPCB / PCB Yönergeleri",
   "cert.desc.8": "Basınçlı Ekipman Direktifi (AB)",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "sec.title.3",
-    "sec.title.4",
-    "sec.title.5",
-    "sec.title.6",
-    "h2.0"
-  ],
   "cap.label.0": "Proses Mühendisliği ve Tasarımı",
   "cap.label.1": "Buharlaşma Teknolojisi",
   "cap.label.2": "Kurutma Teknolojisi",
@@ -120,5 +109,16 @@
   "exp.title.0": "Süt Endüstrisi",
   "exp.title.1": "İlaç",
   "exp.title.2": "Kimya Endüstrisi",
-  "exp.title.3": "Gıda İşleme"
+  "exp.title.3": "Gıda İşleme",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "sec.title.3",
+    "sec.title.4",
+    "sec.title.5",
+    "sec.title.6",
+    "h2.0"
+  ]
 }

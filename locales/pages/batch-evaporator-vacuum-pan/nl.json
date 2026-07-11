@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "breadcrumb.cat.0": "Verdampers",
   "category": "Verdampers",
   "tagline": "Vacuümpanverdamper met mantel voor batchconcentratie met nauwkeurige controle. Vacuümwerking verlaagt het kookpunt om hittegevoelige producten tijdens elke batchcyclus te beschermen.",
@@ -118,5 +112,11 @@
   "related.0.desc": "Continue verdamping met hoge capaciteit.",
   "related.2.title": "Sproeidroger",
   "related.2.desc": "Poederproductie uit concentraten.",
-  "related.1.desc": "Compacte continue platenverdamper."
+  "related.1.desc": "Compacte continue platenverdamper.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

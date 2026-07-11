@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "breadcrumb.cat.0": "Džiovintuvai",
   "category": "Džiovintuvai",
   "tagline": "Nuolatinis džiovintuvas klampioms, karščiui jautrioms ir nešvarioms medžiagoms. Besisukantis peilių mazgas paskirsto pašarus į ploną, audringą plėvelę ant šildomos sienos, leidžiančią greitai išgaruoti vakuume, idealiai tinka ZLD, nuotekų druskoms ir didelės vertės produktams.",
@@ -118,5 +112,11 @@
   "related.0.title": "„Flash Flash“ džiovintuvas",
   "related.0.desc": "Tiesioginis pastų ir filtrų džiovinimas.",
   "related.2.desc": "Koncentruokite pašarą prieš ATFD.",
-  "related.1.desc": "Švelnus tolygus granuliuotų kietųjų medžiagų džiovinimas."
+  "related.1.desc": "Švelnus tolygus granuliuotų kietųjų medžiagų džiovinimas.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

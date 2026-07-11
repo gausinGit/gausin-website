@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "qs.0.label": "標準",
   "tagline": "PLC 制御のプレリンス、苛性洗浄、酸洗浄、および最終リンスのシーケンスを備えた完全自動定置洗浄システム。",
   "breadcrumb.cat.0": "CIP および洗浄システム",
@@ -107,5 +101,11 @@
   "related.1.title": "牛乳殺菌装置",
   "related.0.desc": "統合されたCIP乳製品プラント。",
   "related.1.desc": "CIP対応低温殺菌装置。",
-  "related.2.desc": "CIPスプレーボールタンク。"
+  "related.2.desc": "CIPスプレーボールタンク。",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

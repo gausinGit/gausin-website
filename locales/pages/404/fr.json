@@ -1,6 +1,5 @@
 {
   "_meta.title": "404 - Page introuvable | ",
-  "_htmlKeys": [],
   "err.title.0": "Page introuvable",
   "err.desc.0": "La page que vous recherchez semble avoir été déplacée, supprimée ou est temporairement indisponible. ",
   "err.quick.0": "Produits",
@@ -8,5 +7,6 @@
   "err.quick.2": "Séchoirs",
   "err.quick.3": "Services",
   "err.quick.4": "Secteurs",
-  "err.quick.5": "À propos"
+  "err.quick.5": "À propos",
+  "_htmlKeys": []
 }

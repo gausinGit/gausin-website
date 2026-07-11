@@ -16,7 +16,7 @@
   "h3.2": "Competență tehnică",
   "h3.3": "Expertiza în industrie",
   "p.0": "Un deceniu de inginerie de precizie, inovație tehnologică și angajament neclintit față de performanța industrială - descoperiți povestea lui Gausin.",
-  "p.1": "Gausin International Engineers Pvt. ",
+  "p.1": "Gausin International Engineers Pvt. Ltd. a fost fondată cu o viziune singulară: să aducă soluții de inginerie a proceselor industriale de clasă mondială, avansate din punct de vedere tehnologic, ecologice și eficiente din punct de vedere energetic industriilor indiene și globale, la costuri competitive, fără a compromite calitatea sau performanța.",
   "p.2": "Cu sediul central în Meerut, Uttar Pradesh, am crescut de la un producător specializat de evaporatoare la o companie de inginerie industrială cu spectru complet. ",
   "p.3": "Cu o echipă de ingineri de proces, fabricatori și manageri de proiect dedicati, am livrat cu succes peste 100 de proiecte în opt sectoare industriale diverse - produse lactate, farmaceutice, prelucrare alimentară, chimie, distilerii, hârtie, textile și energie.",
   "p.4": "Pentru a furniza echipamente de procese industriale și soluții de inginerie avansate din punct de vedere tehnologic, eficiente din punct de vedere energetic și fiabile, care optimizează performanța de producție a clienților noștri, reduc costurile de operare și depășesc standardele internaționale de calitate.",
@@ -29,8 +29,8 @@
   "team.name.1": "domnule Vijay Kumar Dubey",
   "team.role.0": "Fondator și director executiv",
   "team.role.1": "Director",
-  "team.bio.0": "Domnul Gaurav Singhal este un inginer chimist și un lider de afaceri desăvârșit, cu peste 25 de ani de experiență dinamică în operațiuni industriale, proiectare și inginerie de instalații, management de proiect, dezvoltare de afaceri și conducere organizațională. ",
-  "team.bio.1": "Domnul Vijay Kumar Dubey este un lider dinamic, cu o experiență vastă în managementul organizațional, operațiunile de afaceri și dezvoltarea relațiilor cu clienții. ",
+  "team.bio.0": "Domnul Gaurav Singhal este un inginer chimist și un lider de afaceri desăvârșit, cu peste 25 de ani de experiență dinamică în operațiuni industriale, proiectare și inginerie de instalații, management de proiect, dezvoltare de afaceri și conducere organizațională. În calitate de fondator și director executiv, el oferă direcție strategică companiei, stimulând inovația, excelența operațională și creșterea durabilă. Cunoștințele sale extinse din industrie, combinate cu un accent puternic pe satisfacția clienților și livrarea de calitate, au fost esențiale în executarea cu succes a proiectelor de inginerie complexe. Sub conducerea sa, compania continuă să-și consolideze prezența pe piață, să construiască relații de durată cu clienții și să ofere soluții bazate pe valoare în diverse sectoare. Domnul Singhal se angajează să promoveze o cultură a profesionalismului, integrității și îmbunătățirii continue, asigurându-se că organizația rămâne în fruntea excelenței și a încrederii clienților.",
+  "team.bio.1": "Domnul Vijay Kumar Dubey este un lider dinamic, cu o experiență vastă în managementul organizațional, operațiunile de afaceri și dezvoltarea relațiilor cu clienții. În calitate de director, el a jucat un rol esențial în stimularea creșterii companiei prin viziunea sa strategică, angajamentul față de satisfacția clienților și concentrarea pe furnizarea de servicii de calitate. El a jucat un rol cheie în stabilirea și execuția cu succes a proiectelor de infrastructură prin promovarea unor relații puternice cu părțile interesate, asigurând excelența operațională și promovând o cultură a integrității și profesionalismului. Conducerea sa continuă să ghideze organizația către creșterea durabilă și crearea de valoare pe termen lung pentru clienți și parteneri.",
   "btn.0": "Discutați cu echipa noastră",
   "btn.1": "Produsele noastre",
   "btn.2": "Solicitați o cotație",
@@ -99,17 +99,6 @@
   "cert.desc.6": "Conform orientărilor BEE",
   "cert.desc.7": "Ghid CPCB / PCB",
   "cert.desc.8": "Directiva privind echipamentele sub presiune (UE)",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "sec.title.3",
-    "sec.title.4",
-    "sec.title.5",
-    "sec.title.6",
-    "h2.0"
-  ],
   "cap.label.0": "Ingineria proceselor și proiectarea",
   "cap.label.1": "Tehnologia de evaporare",
   "cap.label.2": "Tehnologia de uscare",
@@ -120,5 +109,16 @@
   "exp.title.0": "Industria Lactatelor",
   "exp.title.1": "Farmaceutic",
   "exp.title.2": "Industria chimică",
-  "exp.title.3": "Prelucrarea alimentelor"
+  "exp.title.3": "Prelucrarea alimentelor",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "sec.title.3",
+    "sec.title.4",
+    "sec.title.5",
+    "sec.title.6",
+    "h2.0"
+  ]
 }

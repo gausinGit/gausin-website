@@ -16,8 +16,8 @@
   "h3.2": "Kemahiran Teknis",
   "h3.3": "Keahlian Industri",
   "p.0": "Satu dekade rekayasa presisi, inovasi teknologi, dan komitmen teguh terhadap kinerja industri - temukan kisah Gausin.",
-  "p.1": "Gausin Insinyur Internasional Pvt. ",
-  "p.2": "Berkantor pusat di Meerut, Uttar Pradesh, kami telah berkembang dari produsen evaporator khusus menjadi perusahaan teknik industri berspektrum penuh. ",
+  "p.1": "Gausin Insinyur Internasional Pvt. Ltd. didirikan dengan visi tunggal: untuk menghadirkan solusi rekayasa proses industri kelas dunia, berteknologi maju, ramah lingkungan, dan hemat energi ke industri India dan global dengan biaya kompetitif, tanpa mengorbankan kualitas atau kinerja.",
+  "p.2": "Berkantor pusat di Meerut, Uttar Pradesh, kami telah berkembang dari produsen evaporator khusus menjadi perusahaan teknik industri berspektrum penuh. Keahlian kami mencakup seluruh siklus hidup pabrik proses - mulai dari kelayakan awal dan desain proses hingga rekayasa rinci, fabrikasi, pasokan, instalasi, commissioning, dan dukungan purna jual.",
   "p.3": "Dengan tim yang terdiri dari insinyur proses, perakit, dan manajer proyek yang berdedikasi, kami telah berhasil menyelesaikan 100+ proyek di delapan sektor industri yang berbeda - susu, farmasi, pengolahan makanan, kimia, penyulingan, kertas, tekstil, dan energi.",
   "p.4": "Untuk memberikan solusi teknik dan peralatan proses industri yang berteknologi maju, hemat energi, dan andal yang mengoptimalkan kinerja produksi klien kami, mengurangi biaya pengoperasian, dan melampaui standar kualitas internasional.",
   "p.5": "Diakui sebagai perusahaan rekayasa proses industri yang paling tepercaya dan berdaya saing global di India, menetapkan tolok ukur dalam teknologi evaporasi, pengeringan, dan rekayasa pabrik sekaligus berkontribusi terhadap pertumbuhan industri yang berkelanjutan.",
@@ -29,8 +29,8 @@
   "team.name.1": "Tuan Vijay Kumar Dubey",
   "team.role.0": "Pendiri & Kepala Eksekutif",
   "team.role.1": "Direktur",
-  "team.bio.0": "Bapak Gaurav Singhal adalah Insinyur Kimia dan pemimpin bisnis berprestasi dengan lebih dari 25 tahun pengalaman dinamis dalam operasi industri, desain dan teknik pabrik, manajemen proyek, pengembangan bisnis, dan kepemimpinan organisasi. ",
-  "team.bio.1": "Bapak Vijay Kumar Dubey adalah pemimpin dinamis dengan keahlian luas dalam manajemen organisasi, operasi bisnis, dan pengembangan hubungan pelanggan. ",
+  "team.bio.0": "Bapak Gaurav Singhal adalah Insinyur Kimia dan pemimpin bisnis berprestasi dengan lebih dari 25 tahun pengalaman dinamis dalam operasi industri, desain dan teknik pabrik, manajemen proyek, pengembangan bisnis, dan kepemimpinan organisasi. Sebagai Pendiri & Chief Executive Officer, beliau memberikan arahan strategis bagi perusahaan, mendorong inovasi, keunggulan operasional, dan pertumbuhan berkelanjutan. Pengetahuan industrinya yang luas, dikombinasikan dengan fokus yang kuat pada kepuasan pelanggan dan kualitas pengiriman, telah berperan penting dalam keberhasilan pelaksanaan proyek-proyek teknik yang kompleks. Di bawah kepemimpinannya, perusahaan terus memperkuat kehadirannya di pasar, membangun hubungan jangka panjang dengan klien, dan memberikan solusi berbasis nilai di berbagai sektor. Bapak Singhal berkomitmen untuk memupuk budaya profesionalisme, integritas, dan perbaikan berkelanjutan, memastikan bahwa organisasi tetap berada di garis depan dalam keunggulan dan kepercayaan pelanggan.",
+  "team.bio.1": "Bapak Vijay Kumar Dubey adalah pemimpin dinamis dengan keahlian luas dalam manajemen organisasi, operasi bisnis, dan pengembangan hubungan pelanggan. Sebagai Direktur, beliau berperan penting dalam mendorong pertumbuhan perusahaan melalui visi strategisnya, komitmen terhadap kepuasan pelanggan, dan fokus pada pemberian layanan berkualitas. Beliau telah memainkan peran penting dalam keberhasilan pendirian dan pelaksanaan proyek infrastruktur dengan membina hubungan yang kuat dengan pemangku kepentingan, memastikan keunggulan operasional, dan mendorong budaya integritas dan profesionalisme. Kepemimpinannya terus membimbing organisasi menuju pertumbuhan berkelanjutan dan penciptaan nilai jangka panjang bagi klien dan mitra.",
   "btn.0": "Bicaralah dengan Tim Kami",
   "btn.1": "Produk Kami",
   "btn.2": "Permintaan Penawaran",
@@ -99,17 +99,6 @@
   "cert.desc.6": "Sesuai dengan Pedoman BEE",
   "cert.desc.7": "Pedoman BPKB / PCB",
   "cert.desc.8": "Petunjuk Peralatan Tekanan (UE)",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "sec.title.3",
-    "sec.title.4",
-    "sec.title.5",
-    "sec.title.6",
-    "h2.0"
-  ],
   "cap.label.0": "Rekayasa & Desain Proses",
   "cap.label.1": "Teknologi Evaporasi",
   "cap.label.2": "Teknologi Pengeringan",
@@ -120,5 +109,16 @@
   "exp.title.0": "Industri Susu",
   "exp.title.1": "Farmasi",
   "exp.title.2": "Industri Kimia",
-  "exp.title.3": "Pengolahan Makanan"
+  "exp.title.3": "Pengolahan Makanan",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "sec.title.3",
+    "sec.title.4",
+    "sec.title.5",
+    "sec.title.6",
+    "h2.0"
+  ]
 }

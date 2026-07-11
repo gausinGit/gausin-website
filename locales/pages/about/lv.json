@@ -16,8 +16,8 @@
   "h3.2": "Tehniskās prasmes",
   "h3.3": "Nozares ekspertīze",
   "p.0": "Desmit gadus ilga precīza inženierija, tehnoloģiski jauninājumi un nelokāma apņemšanās nodrošināt rūpniecisko veiktspēju — atklājiet Gausina stāstu.",
-  "p.1": "Gausin International Engineers Pvt. ",
-  "p.2": "Galvenā mītne atrodas Mērutā, Uttar Pradešā, un mēs esam izauguši no specializēta iztvaicētāja ražotāja līdz pilna spektra rūpnieciskās inženierijas uzņēmumam. ",
+  "p.1": "Gausin International Engineers Pvt. SIA tika dibināta ar unikālu vīziju: nodrošināt pasaules līmeņa, tehnoloģiski progresīvus, videi draudzīgus un energoefektīvus rūpniecisko procesu inženierijas risinājumus Indijas un pasaules rūpniecībā par konkurētspējīgām izmaksām, neapdraudot kvalitāti vai veiktspēju.",
+  "p.2": "Galvenā mītne atrodas Mērutā, Uttar Pradešā, un mēs esam izauguši no specializēta iztvaicētāja ražotāja līdz pilna spektra rūpnieciskās inženierijas uzņēmumam. Mūsu zināšanas aptver visu ražošanas iekārtu dzīves ciklu – no sākotnējās iespējamības un procesa projektēšanas līdz detalizētai projektēšanai, izgatavošanai, piegādei, uzstādīšanai, nodošanai ekspluatācijā un pēcpārdošanas atbalstam.",
   "p.3": "Ar īpašu procesu inženieru, ražotāju un projektu vadītāju komandu esam veiksmīgi īstenojuši 100+ projektus astoņās dažādās rūpniecības nozarēs – piena, farmācijas, pārtikas pārstrādes, ķīmijas, spirta rūpnīcā, papīra, tekstila un enerģētikas nozarē.",
   "p.4": "Piegādāt tehnoloģiski progresīvas, energoefektīvas un uzticamas rūpniecisko procesu iekārtas un inženiertehniskos risinājumus, kas optimizē mūsu klientu ražošanas veiktspēju, samazina ekspluatācijas izmaksas un pārsniedz starptautiskos kvalitātes standartus.",
   "p.5": "Būt atzītam par Indijas uzticamāko un globāli konkurētspējīgāko rūpniecisko procesu inženieriju uzņēmumu, kas nosaka etalonus iztvaikošanas, žāvēšanas un iekārtu inženierijas tehnoloģijās, vienlaikus veicinot ilgtspējīgu rūpniecības izaugsmi.",
@@ -29,8 +29,8 @@
   "team.name.1": "Vijay Kumar Dubey kungs",
   "team.role.0": "Dibinātājs un izpilddirektors",
   "team.role.1": "Direktors",
-  "team.bio.0": "Gauravs Singhals ir ķīmijas inženieris un izcils biznesa vadītājs ar vairāk nekā 25 gadu dinamisku pieredzi rūpnieciskās darbībās, rūpnīcu projektēšanā un inženierijā, projektu vadībā, biznesa attīstībā un organizācijas vadībā. ",
-  "team.bio.1": "Vijay Kumar Dubey kungs ir dinamisks līderis ar plašām zināšanām organizācijas vadībā, biznesa operācijās un klientu attiecību attīstībā. ",
+  "team.bio.0": "Gauravs Singhals ir ķīmijas inženieris un izcils biznesa vadītājs ar vairāk nekā 25 gadu dinamisku pieredzi rūpnieciskās darbībās, rūpnīcu projektēšanā un inženierijā, projektu vadībā, biznesa attīstībā un organizācijas vadībā. Būdams dibinātājs un izpilddirektors, viņš nodrošina uzņēmuma stratēģisko virzību, virzot inovācijas, darbības izcilību un ilgtspējīgu izaugsmi. Viņa plašās nozares zināšanas apvienojumā ar lielu uzsvaru uz klientu apmierinātību un kvalitatīvu piegādi ir palīdzējušas sekmīgi īstenot sarežģītus inženiertehniskos projektus. Viņa vadībā uzņēmums turpina stiprināt savu klātbūtni tirgū, veidot ilgstošas ​​attiecības ar klientiem un nodrošināt uz vērtību orientētus risinājumus dažādās nozarēs. Singāla kungs ir apņēmies veicināt profesionalitātes, integritātes un nepārtrauktu uzlabojumu kultūru, nodrošinot, ka organizācija joprojām ir izcilības un klientu uzticības priekšgalā.",
+  "team.bio.1": "Vijay Kumar Dubey kungs ir dinamisks līderis ar plašām zināšanām organizācijas vadībā, biznesa operācijās un klientu attiecību attīstībā. Kā direktors viņš ir veicinājis uzņēmuma izaugsmi, izmantojot savu stratēģisko redzējumu, apņemšanos nodrošināt klientu apmierinātību un koncentrējoties uz kvalitatīvu pakalpojumu sniegšanu. Viņam ir bijusi galvenā loma veiksmīgā infrastruktūras projektu izveidē un izpildē, veicinot spēcīgas attiecības ar ieinteresētajām pusēm, nodrošinot darbības izcilību un veicinot integritātes un profesionalitātes kultūru. Viņa vadība turpina virzīt organizāciju uz ilgtspējīgu izaugsmi un ilgtermiņa vērtības radīšanu klientiem un partneriem.",
   "btn.0": "Runājiet ar mūsu komandu",
   "btn.1": "Mūsu produkti",
   "btn.2": "Pieprasīt cenas piedāvājumu",
@@ -99,17 +99,6 @@
   "cert.desc.6": "Atbilst BEE vadlīnijām",
   "cert.desc.7": "CPCB/PCB vadlīnijas",
   "cert.desc.8": "Spiediena iekārtu direktīva (ES)",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "sec.title.3",
-    "sec.title.4",
-    "sec.title.5",
-    "sec.title.6",
-    "h2.0"
-  ],
   "cap.label.0": "Procesu inženierija un dizains",
   "cap.label.1": "Iztvaikošanas tehnoloģija",
   "cap.label.2": "Žāvēšanas tehnoloģija",
@@ -120,5 +109,16 @@
   "exp.title.0": "Piena rūpniecība",
   "exp.title.1": "Farmaceitiskā",
   "exp.title.2": "Ķīmiskā rūpniecība",
-  "exp.title.3": "Pārtikas pārstrāde"
+  "exp.title.3": "Pārtikas pārstrāde",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "sec.title.3",
+    "sec.title.4",
+    "sec.title.5",
+    "sec.title.6",
+    "h2.0"
+  ]
 }

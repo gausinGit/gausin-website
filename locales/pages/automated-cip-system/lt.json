@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "qs.0.label": "Standartinis",
   "tagline": "Visiškai automatizuotos „Clean-in-Place“ sistemos su PLC valdomu pirminiu skalavimu, šarminiu plovimu, plovimu rūgštimi ir galutiniu skalavimu.",
   "breadcrumb.cat.0": "CIP ir valymo sistemos",
@@ -107,5 +101,11 @@
   "related.1.title": "Pieno pasterizatorius",
   "related.1.desc": "CIP paruoštas pasterizatorius.",
   "related.2.desc": "CIP purškimo rutuliniai bakai.",
-  "related.0.desc": "Integruota CIP pieno gamykla."
+  "related.0.desc": "Integruota CIP pieno gamykla.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

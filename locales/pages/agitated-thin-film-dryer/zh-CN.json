@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "qs.0.label": "加热区",
   "breadcrumb.cat.0": "烘干机",
   "category": "烘干机",
@@ -118,5 +112,11 @@
   "related.1.title": "流化床干燥机 (FBD)",
   "related.0.desc": "直接干燥糊状物和滤饼。",
   "related.1.desc": "温和均匀地干燥颗粒状固体。",
-  "related.2.desc": "在 ATFD 之前集中进料。"
+  "related.2.desc": "在 ATFD 之前集中进料。",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

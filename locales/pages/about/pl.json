@@ -16,7 +16,7 @@
   "h3.2": "Biegłość techniczna",
   "h3.3": "Wiedza branżowa",
   "p.0": "Dekada inżynierii precyzyjnej, innowacji technologicznych i niezachwianego zaangażowania w wydajność przemysłową – odkryj historię Gausina.",
-  "p.1": "Gausin International Engineers Pvt. ",
+  "p.1": "Gausin International Engineers Pvt. Ltd. została założona z jedną wizją: dostarczać światowej klasy, zaawansowane technologicznie, przyjazne dla środowiska i energooszczędne rozwiązania w zakresie inżynierii procesów przemysłowych dla przemysłu indyjskiego i światowego po konkurencyjnych kosztach, bez uszczerbku dla jakości i wydajności.",
   "p.2": "Z siedzibą w Meerut w stanie Uttar Pradesh, rozwinęliśmy się z wyspecjalizowanego producenta parowników do firmy oferującej kompleksowe usługi w zakresie inżynierii przemysłowej. ",
   "p.3": "Dzięki zespołowi oddanych inżynierów procesu, producentów i kierowników projektów z sukcesem zrealizowaliśmy ponad 100 projektów w ośmiu różnych sektorach przemysłu – mleczarskim, farmaceutycznym, przetwórstwa spożywczego, chemicznym, gorzelniczym, papierniczym, tekstylnym i energetycznym.",
   "p.4": "Dostarczanie zaawansowanych technologicznie, energooszczędnych i niezawodnych urządzeń i rozwiązań inżynieryjnych do procesów przemysłowych, które optymalizują wydajność produkcji naszych klientów, obniżają koszty operacyjne i przekraczają międzynarodowe standardy jakości.",
@@ -29,8 +29,8 @@
   "team.name.1": "Pan Vijay Kumar Dubey",
   "team.role.0": "Założyciel i dyrektor generalny",
   "team.role.1": "Dyrektor",
-  "team.bio.0": "Pan Gaurav Singhal jest inżynierem chemikiem i utalentowanym liderem biznesowym z ponad 25-letnim dynamicznym doświadczeniem w operacjach przemysłowych, projektowaniu i inżynierii instalacji, zarządzaniu projektami, rozwoju biznesu i przywództwie organizacyjnym. ",
-  "team.bio.1": "Pan Vijay Kumar Dubey jest dynamicznym liderem posiadającym rozległą wiedzę specjalistyczną w zakresie zarządzania organizacją, operacji biznesowych i rozwoju relacji z klientami. ",
+  "team.bio.0": "Pan Gaurav Singhal jest inżynierem chemikiem i utalentowanym liderem biznesowym z ponad 25-letnim dynamicznym doświadczeniem w operacjach przemysłowych, projektowaniu i inżynierii instalacji, zarządzaniu projektami, rozwoju biznesu i przywództwie organizacyjnym. Jako założyciel i dyrektor generalny wyznacza kierunek strategiczny firmy, stymulując innowacje, doskonałość operacyjną i zrównoważony rozwój. Jego rozległa wiedza branżowa w połączeniu z silnym naciskiem na satysfakcję klienta i jakość dostaw odegrała kluczową rolę w pomyślnej realizacji złożonych projektów inżynieryjnych. Pod jego kierownictwem firma w dalszym ciągu wzmacnia swoją obecność na rynku, buduje trwałe relacje z klientami i dostarcza rozwiązania oparte na wartości w różnych sektorach. Pan Singhal angażuje się w wspieranie kultury profesjonalizmu, uczciwości i ciągłego doskonalenia, zapewniając, że organizacja pozostaje w czołówce pod względem doskonałości i zaufania klientów.",
+  "team.bio.1": "Pan Vijay Kumar Dubey jest dynamicznym liderem posiadającym rozległą wiedzę specjalistyczną w zakresie zarządzania organizacją, operacji biznesowych i rozwoju relacji z klientami. Jako dyrektor odegrał kluczową rolę w napędzaniu rozwoju firmy poprzez swoją strategiczną wizję, zaangażowanie w zadowolenie klientów i skupienie się na świadczeniu wysokiej jakości usług. Odegrał kluczową rolę w pomyślnym ustanawianiu i realizacji projektów infrastrukturalnych, wspierając silne relacje z interesariuszami, zapewniając doskonałość operacyjną oraz promując kulturę uczciwości i profesjonalizmu. Jego przywództwo w dalszym ciągu prowadzi organizację w kierunku zrównoważonego wzrostu i tworzenia długoterminowej wartości dla klientów i partnerów.",
   "btn.0": "Porozmawiaj z naszym zespołem",
   "btn.1": "Nasze produkty",
   "btn.2": "Poproś o wycenę",
@@ -99,17 +99,6 @@
   "cert.desc.6": "Zgodny z wytycznymi BEE",
   "cert.desc.7": "Wytyczne CPCB/PCB",
   "cert.desc.8": "Dyrektywa w sprawie urządzeń ciśnieniowych (UE)",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "sec.title.3",
-    "sec.title.4",
-    "sec.title.5",
-    "sec.title.6",
-    "h2.0"
-  ],
   "cap.label.0": "Inżynieria procesowa i projektowanie",
   "cap.label.1": "Technologia odparowania",
   "cap.label.2": "Technologia suszenia",
@@ -120,5 +109,16 @@
   "exp.title.0": "Przemysł mleczarski",
   "exp.title.1": "Farmaceutyczny",
   "exp.title.2": "Przemysł Chemiczny",
-  "exp.title.3": "Przetwórstwo spożywcze"
+  "exp.title.3": "Przetwórstwo spożywcze",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "sec.title.3",
+    "sec.title.4",
+    "sec.title.5",
+    "sec.title.6",
+    "h2.0"
+  ]
 }

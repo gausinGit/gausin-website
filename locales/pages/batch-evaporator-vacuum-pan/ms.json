@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "breadcrumb.cat.0": "Penyejat",
   "category": "Penyejat",
   "qs.0.label": "L/kelompok",
@@ -118,5 +112,11 @@
   "related.2.title": "Pengering Sembur",
   "related.0.desc": "Penyejatan berkapasiti tinggi berterusan.",
   "related.1.desc": "Penyejat plat berterusan padat.",
-  "related.2.desc": "Pengeluaran serbuk daripada pekat."
+  "related.2.desc": "Pengeluaran serbuk daripada pekat.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

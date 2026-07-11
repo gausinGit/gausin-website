@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
   <link rel="icon" href="/favicon.ico" sizes="48x48">
   <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
   <link rel="icon" type="image/png" sizes="48x48" href="/images/favicon-48x48.png">
@@ -110,7 +112,7 @@
 <body>
   <div class="card">
     <div class="logo-row">
-      <img src="../images/gausin-logo.png" alt="Gausin Logo">
+      <img src="/images/gausin-logo.png" alt="Gausin Logo">
       <div class="brand">
         Gausin International Engineers
         <span>Pvt. Ltd.</span>
@@ -129,7 +131,7 @@
         <button type="submit" id="loginBtn">Login</button>
         <div class="error-msg" id="loginError"></div>
       </form>
-      <button class="toggle-link" onclick="showPanel('register')">+ Create New Admin Account</button>
+      <button type="button" class="toggle-link" id="registerToggle" onclick="showPanel('register')" hidden>+ Create New Admin Account</button>
     </div>
 
     <!-- REGISTER FORM -->
@@ -151,10 +153,12 @@
     </div>
   </div>
 
+  <script src="/js/config.js"></script>
   <script>
-    const API = window.GAUSIN_API_URL || 'http://localhost:5000';
+    const API = window.GAUSIN_API_URL || window.location.origin || 'http://localhost:5000';
 
     function showPanel(panel) {
+      if (panel === 'register' && !window.__adminRegisterEnabled) return;
       document.getElementById('loginPanel').classList.toggle('active', panel === 'login');
       document.getElementById('registerPanel').classList.toggle('active', panel === 'register');
       document.getElementById('cardTitle').textContent = panel === 'login' ? 'Admin Login' : 'Create Admin Account';
@@ -162,6 +166,21 @@
         ? 'Access the inquiries & applications dashboard'
         : 'Set up a new admin account with a setup key';
     }
+
+    async function initAdminSecurity() {
+      try {
+        const res = await fetch(`${API}/api/admin/config`);
+        const json = await res.json();
+        window.__adminRegisterEnabled = !!json.registerEnabled;
+        const toggle = document.getElementById('registerToggle');
+        if (toggle) toggle.hidden = !window.__adminRegisterEnabled;
+      } catch {
+        window.__adminRegisterEnabled = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+        const toggle = document.getElementById('registerToggle');
+        if (toggle) toggle.hidden = !window.__adminRegisterEnabled;
+      }
+    }
+    initAdminSecurity();
 
     // ── Login ──────────────────────────────────────────────────────────────────
     document.getElementById('loginForm').addEventListener('submit', async (e) => {
@@ -201,6 +220,7 @@
     // ── Register ───────────────────────────────────────────────────────────────
     document.getElementById('registerForm').addEventListener('submit', async (e) => {
       e.preventDefault();
+      if (!window.__adminRegisterEnabled) return;
       const btn = document.getElementById('registerBtn');
       const errEl = document.getElementById('registerError');
       const successEl = document.getElementById('registerSuccess');

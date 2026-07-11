@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "breadcrumb.cat.0": "Parowniki",
   "category": "Parowniki",
   "tagline": "Płaszczowa wyparka z misą próżniową do zagęszczania wsadu z precyzyjną kontrolą. Działanie próżniowe obniża temperaturę wrzenia, aby chronić produkty wrażliwe na ciepło podczas każdego cyklu wsadowego.",
@@ -118,5 +112,11 @@
   "related.2.title": "Suszarka rozpyłowa",
   "related.0.desc": "Ciągłe parowanie o dużej wydajności.",
   "related.2.desc": "Produkcja proszku z koncentratów.",
-  "related.1.desc": "Kompaktowa wyparka płytowa o działaniu ciągłym."
+  "related.1.desc": "Kompaktowa wyparka płytowa o działaniu ciągłym.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

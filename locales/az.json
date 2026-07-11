@@ -143,5 +143,8 @@
   "chat.close": "Bağlayın",
   "mega.milkProcessing": "Süd emalı",
   "chat.placeholder": "Mesajınızı yazın...",
-  "mega.dairyFoodEquipments": "Süd və Qida Avadanlıqları"
+  "mega.dairyFoodEquipments": "Süd və Qida Avadanlıqları",
+  "footer.address": "DH-249, Pallavpuram Phase-1, Roorkee Road, Meerut, Uttar Pradesh, Hindistan - 250110",
+  "lang.searchPlaceholder": "Dil və ya bölgə axtarın...",
+  "lang.searchEmpty": "Uyğun dil yoxdur"
 }

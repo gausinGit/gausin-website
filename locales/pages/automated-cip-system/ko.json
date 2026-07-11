@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "qs.0.label": "기준",
   "category": "CIP 및 세척 시스템",
   "breadcrumb.cat.0": "CIP 및 세척 시스템",
@@ -107,5 +101,11 @@
   "related.0.title": "우유 가공 공장",
   "related.0.desc": "통합 CIP 낙농 공장.",
   "related.1.desc": "CIP 지원 저온살균기.",
-  "related.2.desc": "CIP 스프레이 볼 탱크."
+  "related.2.desc": "CIP 스프레이 볼 탱크.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

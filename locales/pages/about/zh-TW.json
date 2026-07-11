@@ -99,17 +99,6 @@
   "cert.desc.6": "符合 BEE 準則",
   "cert.desc.7": "CPCB / PCB 指南",
   "cert.desc.8": "壓力設備指令（歐盟）",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "sec.title.3",
-    "sec.title.4",
-    "sec.title.5",
-    "sec.title.6",
-    "h2.0"
-  ],
   "cap.label.0": "製程工程與設計",
   "cap.label.1": "蒸發技術",
   "cap.label.2": "乾燥技術",
@@ -120,5 +109,16 @@
   "exp.title.0": "乳製品業",
   "exp.title.1": "製藥",
   "exp.title.2": "化工",
-  "exp.title.3": "食品加工"
+  "exp.title.3": "食品加工",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "sec.title.3",
+    "sec.title.4",
+    "sec.title.5",
+    "sec.title.6",
+    "h2.0"
+  ]
 }

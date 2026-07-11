@@ -143,5 +143,8 @@
   "chat.close": "Dichtbij",
   "mega.milkProcessing": "Melkverwerking",
   "mega.dairyFoodEquipments": "Zuivel- en voedselapparatuur",
-  "chat.placeholder": "Typ uw bericht…"
+  "chat.placeholder": "Typ uw bericht…",
+  "footer.address": "DH-249, Pallavpuram Fase-1, Roorkee Road, Meerut, Uttar Pradesh, India - 250.110",
+  "lang.searchEmpty": "Geen overeenkomende talen",
+  "lang.searchPlaceholder": "Zoek taal of regio…"
 }

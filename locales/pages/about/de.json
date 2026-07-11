@@ -16,7 +16,7 @@
   "h3.2": "Technische Kompetenz",
   "h3.3": "Branchenkompetenz",
   "p.0": "Ein Jahrzehnt Präzisionstechnik, technologische Innovation und unerschütterliches Engagement für industrielle Leistung – entdecken Sie die Geschichte von Gausin.",
-  "p.1": "Gausin International Engineers Pvt. ",
+  "p.1": "Gausin International Engineers Pvt. Ltd. wurde mit einer einzigartigen Vision gegründet: erstklassige, technologisch fortschrittliche, umweltfreundliche und energieeffiziente industrielle Verfahrenstechniklösungen zu wettbewerbsfähigen Kosten für die indische und globale Industrie bereitzustellen, ohne Kompromisse bei Qualität oder Leistung einzugehen.",
   "p.2": "Mit Hauptsitz in Meerut, Uttar Pradesh, haben wir uns von einem spezialisierten Verdampferhersteller zu einem umfassenden Industrietechnikunternehmen entwickelt. ",
   "p.3": "Mit einem Team aus engagierten Verfahrensingenieuren, Herstellern und Projektmanagern haben wir über 100 Projekte in acht verschiedenen Industriesektoren erfolgreich durchgeführt – Molkerei, Pharmazie, Lebensmittelverarbeitung, Chemie, Brennerei, Papier, Textil und Energie.",
   "p.4": "Wir liefern technologisch fortschrittliche, energieeffiziente und zuverlässige industrielle Prozessausrüstung und technische Lösungen, die die Produktionsleistung unserer Kunden optimieren, die Betriebskosten senken und internationale Qualitätsstandards übertreffen.",
@@ -29,8 +29,8 @@
   "team.name.1": "Herr Vijay Kumar Dubey",
   "team.role.0": "Gründer und Geschäftsführer",
   "team.role.1": "Direktor",
-  "team.bio.0": "Herr Gaurav Singhal ist Chemieingenieur und ein versierter Unternehmensführer mit über 25 Jahren dynamischer Erfahrung in den Bereichen Industriebetrieb, Anlagendesign und -technik, Projektmanagement, Geschäftsentwicklung und Organisationsführung. ",
-  "team.bio.1": "Herr Vijay Kumar Dubey ist eine dynamische Führungskraft mit umfassender Expertise in den Bereichen Organisationsmanagement, Geschäftsbetrieb und Kundenbeziehungsentwicklung. ",
+  "team.bio.0": "Herr Gaurav Singhal ist Chemieingenieur und ein versierter Unternehmensführer mit über 25 Jahren dynamischer Erfahrung in den Bereichen Industriebetrieb, Anlagendesign und -technik, Projektmanagement, Geschäftsentwicklung und Organisationsführung. Als Gründer und Chief Executive Officer gibt er dem Unternehmen die strategische Ausrichtung vor und treibt Innovation, operative Exzellenz und nachhaltiges Wachstum voran. Seine umfassenden Branchenkenntnisse, gepaart mit einem starken Fokus auf Kundenzufriedenheit und qualitativ hochwertige Lieferung, waren maßgeblich an der erfolgreichen Durchführung komplexer technischer Projekte beteiligt. Unter seiner Führung stärkt das Unternehmen weiterhin seine Marktpräsenz, baut dauerhafte Kundenbeziehungen auf und liefert wertorientierte Lösungen in verschiedenen Branchen. Herr Singhal setzt sich dafür ein, eine Kultur der Professionalität, Integrität und kontinuierlichen Verbesserung zu fördern und sicherzustellen, dass das Unternehmen in Sachen Exzellenz und Kundenvertrauen an der Spitze bleibt.",
+  "team.bio.1": "Herr Vijay Kumar Dubey ist eine dynamische Führungskraft mit umfassender Expertise in den Bereichen Organisationsmanagement, Geschäftsbetrieb und Kundenbeziehungsentwicklung. Als Direktor hat er durch seine strategische Vision, sein Engagement für die Kundenzufriedenheit und seinen Fokus auf die Bereitstellung qualitativ hochwertiger Dienstleistungen maßgeblich zum Wachstum des Unternehmens beigetragen. Er spielte eine Schlüsselrolle bei der erfolgreichen Einrichtung und Durchführung von Infrastrukturprojekten, indem er starke Stakeholder-Beziehungen pflegte, operative Exzellenz sicherstellte und eine Kultur der Integrität und Professionalität förderte. Seine Führung führt die Organisation weiterhin zu nachhaltigem Wachstum und langfristiger Wertschöpfung für Kunden und Partner.",
   "btn.0": "Sprechen Sie mit unserem Team",
   "btn.1": "Unsere Produkte",
   "btn.2": "Fordern Sie ein Angebot an",
@@ -99,17 +99,6 @@
   "cert.desc.6": "Entspricht den BEE-Richtlinien",
   "cert.desc.7": "CPCB/PCB-Richtlinien",
   "cert.desc.8": "Druckgeräterichtlinie (EU)",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "sec.title.3",
-    "sec.title.4",
-    "sec.title.5",
-    "sec.title.6",
-    "h2.0"
-  ],
   "cap.label.0": "Verfahrenstechnik und Design",
   "cap.label.1": "Verdampfungstechnologie",
   "cap.label.2": "Trocknungstechnik",
@@ -120,5 +109,16 @@
   "exp.title.0": "Milchindustrie",
   "exp.title.1": "Pharmazeutisch",
   "exp.title.2": "Chemische Industrie",
-  "exp.title.3": "Lebensmittelverarbeitung"
+  "exp.title.3": "Lebensmittelverarbeitung",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "sec.title.3",
+    "sec.title.4",
+    "sec.title.5",
+    "sec.title.6",
+    "h2.0"
+  ]
 }

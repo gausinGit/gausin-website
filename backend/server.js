@@ -8,12 +8,16 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const rateLimit = require('express-rate-limit');
 const { logMailProvider } = require('./utils/mailer');
+const securityHeaders = require('./middleware/securityHeaders');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Render / reverse-proxy — required for rate-limit + real client IP
 app.set('trust proxy', 1);
+
+// ── Security headers (all routes) ─────────────────────────────────────────────
+app.use(securityHeaders);
 
 // ── CORS ─────────────────────────────────────────────────────────────────────
 const allowedOrigins = (process.env.ALLOWED_ORIGINS || 'http://localhost:3000')

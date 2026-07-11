@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "breadcrumb.cat.0": "Εξατμιστήρες",
   "category": "Εξατμιστήρες",
   "qs.0.label": "L/παρτίδα",
@@ -118,5 +112,11 @@
   "related.2.title": "Στεγνωτήριο ψεκασμού",
   "related.0.desc": "Συνεχής εξάτμιση υψηλής χωρητικότητας.",
   "related.1.desc": "Συμπαγής συνεχής πλάκα εξατμιστήρας.",
-  "related.2.desc": "Παραγωγή σκόνης από συμπυκνώματα."
+  "related.2.desc": "Παραγωγή σκόνης από συμπυκνώματα.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

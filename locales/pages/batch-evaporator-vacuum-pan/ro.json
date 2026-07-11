@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "category": "Evaporatoare",
   "breadcrumb.cat.0": "Evaporatoare",
   "qs.0.label": "L/lot",
@@ -118,5 +112,11 @@
   "related.2.title": "Uscator cu pulverizare",
   "related.0.desc": "Evaporare continuă de mare capacitate.",
   "related.1.desc": "Evaporator compact cu plăci continue.",
-  "related.2.desc": "Producția de pulbere din concentrate."
+  "related.2.desc": "Producția de pulbere din concentrate.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

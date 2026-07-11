@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "qs.0.label": "Standard",
   "breadcrumb.cat.0": "Sistemi CIP e di pulizia",
   "category": "Sistemi CIP e di pulizia",
@@ -107,5 +101,11 @@
   "related.2.title": "Silos di stoccaggio delle SS",
   "related.0.desc": "Impianto caseario CIP integrato.",
   "related.2.desc": "Serbatoi con sfere di spruzzatura CIP.",
-  "related.1.desc": "Pastorizzatore pronto per CIP."
+  "related.1.desc": "Pastorizzatore pronto per CIP.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

@@ -143,5 +143,8 @@
   "chat.send": "يرسل",
   "mega.milkProcessing": "تجهيز الحليب",
   "mega.dairyFoodEquipments": "معدات الألبان والأغذية",
-  "chat.placeholder": "اكتب رسالتك..."
+  "chat.placeholder": "اكتب رسالتك...",
+  "footer.address": "DH-249، بالافبورام المرحلة 1، طريق روركي، ميروت، ولاية أوتار براديش، الهند - 250110",
+  "lang.searchEmpty": "لا توجد لغات مطابقة",
+  "lang.searchPlaceholder": "ابحث عن اللغة أو المنطقة..."
 }

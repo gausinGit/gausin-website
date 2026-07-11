@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "category": "Pengering",
   "breadcrumb.cat.0": "Pengering",
   "qs.0.label": "Kawasan Pemanasan",
@@ -118,5 +112,11 @@
   "related.0.title": "Pengering Kilat Putar",
   "related.0.desc": "Pengeringan terus pes dan kek penapis.",
   "related.1.desc": "Pengeringan seragam lembut pepejal berbutir.",
-  "related.2.desc": "Tumpukan suapan di hadapan ATFD."
+  "related.2.desc": "Tumpukan suapan di hadapan ATFD.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "qs.0.label": "Estándar",
   "breadcrumb.cat.0": "CIP y sistemas de limpieza",
   "category": "CIP y sistemas de limpieza",
@@ -107,5 +101,11 @@
   "related.1.title": "Pasteurizador de leche",
   "related.0.desc": "Planta láctea CIP integrada.",
   "related.2.desc": "Tanques de bolas de aspersión CIP.",
-  "related.1.desc": "Pasteurizador listo para CIP."
+  "related.1.desc": "Pasteurizador listo para CIP.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

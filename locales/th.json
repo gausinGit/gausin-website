@@ -143,5 +143,8 @@
   "chat.send": "ส่ง",
   "chat.placeholder": "พิมพ์ข้อความของคุณ...",
   "mega.milkProcessing": "การแปรรูปนม",
-  "mega.dairyFoodEquipments": "ผลิตภัณฑ์นมและอาหาร"
+  "mega.dairyFoodEquipments": "ผลิตภัณฑ์นมและอาหาร",
+  "footer.address": "DH-249, Pallavpuram Phase-1, Roorkee Road, มีรุต, อุตตรประเทศ, อินเดีย - 250110",
+  "lang.searchEmpty": "ไม่มีภาษาที่ตรงกัน",
+  "lang.searchPlaceholder": "ค้นหาภาษาหรือภูมิภาค..."
 }

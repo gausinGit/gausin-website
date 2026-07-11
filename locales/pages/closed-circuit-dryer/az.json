@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "category": "Qurutma maşınları",
   "breadcrumb.cat.0": "Qurutma maşınları",
   "qs.0.label": "Atmosfer",
@@ -115,8 +109,14 @@
   "related.0.desc": "Açıq dövrəli maye-toz sprey qurutma.",
   "related.1.desc": "Dənəvər bərk maddələrin yumşaq vahid qurudulması.",
   "related.2.desc": "Özlü yemlərin davamlı vakuumla qurudulması.",
-  "tagline": "Atmosfer oksigeninə məruz qala bilməyən məhsullar üçün inert qazlı (azotlu) qapalı quruducu. ",
+  "tagline": "Atmosfer oksigeninə məruz qala bilməyən məhsullar üçün inert qazlı (azotlu) qapalı quruducu. Solventin bərpası, sıfır emissiya və partlayıcı və ya oksidləşməyə həssas materialların təhlükəsiz istifadəsi üçün nəzərdə tutulmuşdur.",
   "overview.p0": "<strong style=\"color:var(--gray-900);\">Gausin Qapalı Dövrəli Quruducu</strong> hava əvəzinə inert qazdan (adətən azot) istifadə edərək möhürlənmiş dövrədə işləyir. ",
   "overview.p1": "Bu qapalı dövrə quruluşu yem üzvi həlledicidə həll edildikdə və ya məhsul oksigenə həssas, zəhərli və ya potensial partlayıcı olduqda vacibdir. ",
-  "overview.p2": "Sistem sprey, maye yatağı və ya flaş quruducunun nüvəsi ətrafında qurula bilər və kondensator/skrubber, qaz üfürücü, inert qaz makiyajı və tam ATEX-li alətlər və təhlükəsizlik blokları ilə təchiz edilir."
+  "overview.p2": "Sistem sprey, maye yatağı və ya flaş quruducunun nüvəsi ətrafında qurula bilər və kondensator/skrubber, qaz üfürücü, inert qaz makiyajı və tam ATEX-li alətlər və təhlükəsizlik blokları ilə təchiz edilir.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

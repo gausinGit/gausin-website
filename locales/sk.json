@@ -143,5 +143,8 @@
   "chat.close": "Zavrieť",
   "mega.dairyFoodEquipments": "Mliečne a potravinárske zariadenia",
   "chat.placeholder": "Napíšte svoju správu…",
-  "mega.milkProcessing": "Spracovanie mlieka"
+  "mega.milkProcessing": "Spracovanie mlieka",
+  "footer.address": "DH-249, Pallavpuram Phase-1, Roorkee Road, Meerut, Uttar Pradesh, India - 250110",
+  "lang.searchEmpty": "Žiadne zodpovedajúce jazyky",
+  "lang.searchPlaceholder": "Hľadať jazyk alebo región…"
 }

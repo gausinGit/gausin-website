@@ -16,8 +16,8 @@
   "h3.2": "Kemahiran Teknikal",
   "h3.3": "Kepakaran Industri",
   "p.0": "Satu dekad kejuruteraan ketepatan, inovasi teknologi dan komitmen yang tidak berbelah bahagi terhadap prestasi industri - temui kisah Gausin.",
-  "p.1": "Gausin International Engineers Pvt. ",
-  "p.2": "Beribu pejabat di Meerut, Uttar Pradesh, kami telah berkembang daripada pengeluar penyejat khusus kepada syarikat kejuruteraan industri spektrum penuh. ",
+  "p.1": "Gausin International Engineers Pvt. Ltd. telah diasaskan dengan visi tunggal: untuk membawa penyelesaian kejuruteraan proses industri bertaraf dunia, maju dari segi teknologi, mesra alam dan cekap tenaga kepada industri India dan global pada kos yang kompetitif, tanpa menjejaskan kualiti atau prestasi.",
+  "p.2": "Beribu pejabat di Meerut, Uttar Pradesh, kami telah berkembang daripada pengeluar penyejat khusus kepada syarikat kejuruteraan industri spektrum penuh. Kepakaran kami merangkumi kitaran hayat lengkap loji proses - daripada kebolehlaksanaan awal dan reka bentuk proses kepada kejuruteraan terperinci, fabrikasi, bekalan, pemasangan, pentauliahan dan sokongan selepas jualan.",
   "p.3": "Dengan pasukan jurutera proses, fabrikasi dan pengurus projek yang berdedikasi, kami telah berjaya menyampaikan 100+ projek merentasi lapan sektor perindustrian yang pelbagai - tenusu, farmaseutikal, pemprosesan makanan, kimia, penyulingan, kertas, tekstil dan tenaga.",
   "p.4": "Untuk menyampaikan peralatan proses industri dan penyelesaian kejuruteraan yang berteknologi maju, cekap tenaga dan boleh dipercayai yang mengoptimumkan prestasi pengeluaran pelanggan kami, mengurangkan kos operasi dan melebihi piawaian kualiti antarabangsa.",
   "p.5": "Untuk diiktiraf sebagai syarikat kejuruteraan proses industri yang paling dipercayai dan berdaya saing global di India, menetapkan penanda aras dalam penyejatan, pengeringan dan teknologi kejuruteraan tumbuhan sambil menyumbang kepada pertumbuhan industri yang mampan.",
@@ -29,8 +29,8 @@
   "team.name.1": "Encik Vijay Kumar Dubey",
   "team.role.0": "Pengasas & Ketua Pegawai Eksekutif",
   "team.role.1": "Pengarah",
-  "team.bio.0": "Encik Gaurav Singhal ialah seorang Jurutera Kimia dan peneraju perniagaan yang berjaya dengan lebih 25 tahun pengalaman dinamik dalam operasi industri, reka bentuk dan kejuruteraan loji, pengurusan projek, pembangunan perniagaan dan kepimpinan organisasi. ",
-  "team.bio.1": "En. Vijay Kumar Dubey ialah pemimpin dinamik dengan kepakaran luas dalam pengurusan organisasi, operasi perniagaan dan pembangunan perhubungan pelanggan. ",
+  "team.bio.0": "Encik Gaurav Singhal ialah seorang Jurutera Kimia dan peneraju perniagaan yang berjaya dengan lebih 25 tahun pengalaman dinamik dalam operasi industri, reka bentuk dan kejuruteraan loji, pengurusan projek, pembangunan perniagaan dan kepimpinan organisasi. Sebagai Pengasas & Ketua Pegawai Eksekutif, beliau menyediakan hala tuju strategik kepada syarikat, memacu inovasi, kecemerlangan operasi, dan pertumbuhan yang mampan. Pengetahuan industrinya yang luas, digabungkan dengan tumpuan yang kuat terhadap kepuasan pelanggan dan penyampaian yang berkualiti, telah memainkan peranan penting dalam kejayaan melaksanakan projek kejuruteraan yang kompleks. Di bawah kepimpinannya, syarikat itu terus mengukuhkan kehadiran pasarannya, membina hubungan pelanggan yang berkekalan, dan menyampaikan penyelesaian yang dipacu nilai merentasi pelbagai sektor. Encik Singhal komited untuk memupuk budaya profesionalisme, integriti, dan penambahbaikan berterusan, memastikan organisasi kekal di barisan hadapan dalam kecemerlangan dan kepercayaan pelanggan.",
+  "team.bio.1": "En. Vijay Kumar Dubey ialah pemimpin dinamik dengan kepakaran luas dalam pengurusan organisasi, operasi perniagaan dan pembangunan perhubungan pelanggan. Sebagai Pengarah, beliau telah memainkan peranan penting dalam memacu pertumbuhan syarikat melalui visi strategiknya, komitmen terhadap kepuasan pelanggan, dan tumpuan kepada penyampaian perkhidmatan yang berkualiti. Beliau telah memainkan peranan penting dalam kejayaan penubuhan dan pelaksanaan projek infrastruktur dengan memupuk hubungan pemegang kepentingan yang kukuh, memastikan kecemerlangan operasi, dan menggalakkan budaya integriti dan profesionalisme. Kepimpinan beliau terus membimbing organisasi ke arah pertumbuhan yang mampan dan penciptaan nilai jangka panjang untuk pelanggan dan rakan kongsi.",
   "btn.0": "Bercakap dengan Pasukan Kami",
   "btn.1": "Produk Kami",
   "btn.2": "Minta Sebut Harga",
@@ -99,17 +99,6 @@
   "cert.desc.6": "Mematuhi Garis Panduan BEE",
   "cert.desc.7": "Garis Panduan CPCB / PCB",
   "cert.desc.8": "Arahan Peralatan Tekanan (EU)",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "sec.title.3",
-    "sec.title.4",
-    "sec.title.5",
-    "sec.title.6",
-    "h2.0"
-  ],
   "cap.label.0": "Kejuruteraan Proses & Reka Bentuk",
   "cap.label.1": "Teknologi Penyejatan",
   "cap.label.2": "Teknologi Pengeringan",
@@ -120,5 +109,16 @@
   "exp.title.0": "Industri tenusu",
   "exp.title.1": "Farmaseutikal",
   "exp.title.2": "Industri Kimia",
-  "exp.title.3": "Pemprosesan Makanan"
+  "exp.title.3": "Pemprosesan Makanan",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "sec.title.3",
+    "sec.title.4",
+    "sec.title.5",
+    "sec.title.6",
+    "h2.0"
+  ]
 }

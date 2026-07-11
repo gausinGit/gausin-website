@@ -423,6 +423,80 @@ function _isLangSwitcherNode(node) {
   return !!(node.parentElement && node.parentElement.closest('#langSwitcher,.mobile-lang-btns'));
 }
 
+const LANG_CODE_ALIASES = {
+  en: ['english'],
+  hi: ['hindi', 'हिन्दी', 'हिंदी'],
+  de: ['german', 'deutsch'],
+  fr: ['french', 'français', 'francais'],
+  es: ['spanish', 'español', 'espanol'],
+  pt: ['portuguese', 'português', 'portugues'],
+  ar: ['arabic', 'العربية'],
+  he: ['hebrew', 'עברית'],
+  ja: ['japanese'],
+  ko: ['korean'],
+  'zh-CN': ['chinese', 'mandarin', 'simplified'],
+  'zh-TW': ['chinese', 'taiwan', 'traditional'],
+  it: ['italian', 'italiano'],
+  nl: ['dutch', 'nederlands'],
+  pl: ['polish', 'polski'],
+  tr: ['turkish', 'turkey', 'türkçe', 'turkiye'],
+  uk: ['ukrainian'],
+  th: ['thai'],
+  id: ['indonesian'],
+  ms: ['malay'],
+  az: ['azerbaijani'],
+  bg: ['bulgarian'],
+  cs: ['czech'],
+  el: ['greek'],
+  hu: ['hungarian'],
+  lv: ['latvian'],
+  lt: ['lithuanian'],
+  no: ['norwegian'],
+  ro: ['romanian'],
+  sr: ['serbian'],
+  sk: ['slovak'],
+  sl: ['slovenian'],
+  sv: ['swedish'],
+  sw: ['swahili'],
+};
+
+const LANG_REGION_ALIASES = {
+  in: ['india', 'bharat', 'भारत', 'hindi', 'हिन्दी', 'हिंदी', 'hindustan', 'हिन्दुस्तान'],
+  az: ['azerbaijan', 'baku'],
+  cn: ['china', 'chinese', 'mandarin', '中国'],
+  jp: ['japan', 'japanese', 'nippon'],
+  kr: ['korea', 'korean', 'south korea'],
+  tw: ['taiwan', 'taipei'],
+  tr: ['turkey', 'turkiye', 'istanbul'],
+  ae: ['uae', 'dubai', 'emirates', 'arab emirates'],
+  gb: ['uk', 'united kingdom', 'britain', 'england'],
+  us: ['usa', 'america', 'united states'],
+  de: ['germany', 'deutschland'],
+  fr: ['france', 'french'],
+  il: ['israel', 'israeli'],
+  sa: ['saudi', 'arabia'],
+};
+
+function normalizeLangSearchQuery(query) {
+  return (query || '').trim().toLowerCase().normalize('NFD').replace(/\p{M}/gu, '');
+}
+
+function getLangSearchHaystack(lang) {
+  const continent = LANG_CONTINENT_ORDER.find((c) => c.key === lang.continent)?.label || '';
+  const aliases = LANG_CODE_ALIASES[lang.code] || [];
+  const regionAliases = LANG_REGION_ALIASES[lang.id] || [];
+  return [
+    lang.label,
+    lang.code,
+    lang.id,
+    getLangCodeDisplay(lang.code),
+    getLangRegionDisplay(lang),
+    continent,
+    ...aliases,
+    ...regionAliases,
+  ].join(' ').toLowerCase();
+}
+
 function buildLangOptionHtml(lang, activeId) {
   return `
     <button class="lang-option${lang.id === activeId ? ' active' : ''}" data-lang-id="${lang.id}" data-lang="${lang.code}" type="button" role="option">
@@ -446,6 +520,19 @@ function buildLangSwitcherGroupsHtml(activeId) {
   }).join('');
 }
 
+function buildLangDropdownInnerHtml(activeId) {
+  return `
+    <div class="lang-search-wrap">
+      <i class="fa-solid fa-magnifying-glass lang-search-icon" aria-hidden="true"></i>
+      <input type="search" class="lang-search-input" id="langSearchInput" autocomplete="off" spellcheck="false" data-i18n-placeholder="lang.searchPlaceholder" placeholder="Search language or region…" aria-controls="langDropdownList" />
+    </div>
+    <div class="lang-dropdown-body" id="langDropdownList" role="listbox" aria-label="Select region or language">
+      ${buildLangSwitcherGroupsHtml(activeId)}
+    </div>
+    <div class="lang-search-empty" id="langSearchEmpty" hidden data-i18n="lang.searchEmpty">No matching languages</div>
+  `;
+}
+
 function buildLangSwitcher() {
   const active = getActiveLangEntry();
   return `
@@ -455,8 +542,8 @@ function buildLangSwitcher() {
         <span class="lang-code">${getLangCodeDisplay(active.code)}</span>
         <i class="fa-solid fa-chevron-down lang-chevron"></i>
       </button>
-      <div class="lang-dropdown" id="langDropdown" role="listbox" aria-label="Select region or language">
-        ${buildLangSwitcherGroupsHtml(active.id)}
+      <div class="lang-dropdown" id="langDropdown">
+        ${buildLangDropdownInnerHtml(active.id)}
       </div>
     </div>
   `;
@@ -489,7 +576,14 @@ function injectTopbar() {
     navbar.parentNode.insertBefore(wrapper.firstElementChild, navbar);
   } else {
     syncTopbarLinks();
+    upgradeLangSwitcherIfNeeded();
   }
+}
+
+function upgradeLangSwitcherIfNeeded() {
+  const dropdown = document.getElementById('langDropdown');
+  if (!dropdown || document.getElementById('langSearchInput')) return;
+  dropdown.innerHTML = buildLangDropdownInnerHtml(getActiveLangEntry().id);
 }
 
 function syncTopbarLinks() {
@@ -687,7 +781,7 @@ const FOOTER_HTML = `
         <div class="footer-title" data-i18n="footer.contactUs">Contact Us</div>
         <div class="footer-contact-item">
           <div class="footer-contact-icon"><i class="fa-solid fa-location-dot"></i></div>
-          <div class="footer-contact-text">DH-249, Pallavpuram Phase-1, Roorkee Road, Meerut, Uttar Pradesh, India  -  250110</div>
+          <div class="footer-contact-text" data-i18n="footer.address">DH-249, Pallavpuram Phase-1, Roorkee Road, Meerut, Uttar Pradesh, India - 250110</div>
         </div>
         <div class="footer-contact-item">
           <div class="footer-contact-icon"><i class="fa-solid fa-phone"></i></div>
@@ -1692,7 +1786,7 @@ window.gausinGetLang = () => _TR.active;
 } // END LEGACY Google Translate
 
 /* ─── Hybrid Static i18n (Phase 1) ─────────────────────────── */
-const GAUSIN_I18N_ASSET_V = '20260711g';
+const GAUSIN_I18N_ASSET_V = '20260711k';
 (function preloadGausinI18n() {
   if (document.querySelector('script[data-gausin-i18n]')) return;
   const page = document.createElement('script');
@@ -1758,34 +1852,119 @@ function applyLangChange(entry) {
 }
 
 /* ─── Init on DOM ready ───────────────────────────────────── */
+function resetLangSearch() {
+  const searchInput = document.getElementById('langSearchInput');
+  const emptyEl = document.getElementById('langSearchEmpty');
+  if (searchInput) searchInput.value = '';
+  dropdownQueryAllLangOptions().forEach((opt) => {
+    opt.hidden = false;
+    opt.classList.remove('lang-option--hidden');
+  });
+  dropdownQueryAllLangGroups().forEach((group) => {
+    group.hidden = false;
+    group.classList.remove('lang-group--hidden');
+  });
+  if (emptyEl) emptyEl.hidden = true;
+}
+
+function dropdownQueryAllLangOptions() {
+  return document.querySelectorAll('#langDropdownList .lang-option');
+}
+
+function dropdownQueryAllLangGroups() {
+  return document.querySelectorAll('#langDropdownList .lang-group');
+}
+
+function filterLangDropdown(query) {
+  const q = normalizeLangSearchQuery(query);
+  const emptyEl = document.getElementById('langSearchEmpty');
+  let visibleCount = 0;
+
+  dropdownQueryAllLangOptions().forEach((opt) => {
+    const entry = LANGUAGES.find((l) => l.id === opt.dataset.langId);
+    const hay = entry ? normalizeLangSearchQuery(getLangSearchHaystack(entry)) : '';
+    const match = !q || hay.includes(q);
+    opt.hidden = !match;
+    opt.classList.toggle('lang-option--hidden', !match);
+    if (match) visibleCount += 1;
+  });
+
+  dropdownQueryAllLangGroups().forEach((group) => {
+    const hasVisible = group.querySelector('.lang-option:not(.lang-option--hidden):not([hidden])');
+    group.hidden = !hasVisible;
+    group.classList.toggle('lang-group--hidden', !hasVisible);
+  });
+
+  if (emptyEl) emptyEl.hidden = visibleCount > 0 || !q;
+}
+
+function closeLangSwitcher() {
+  const switcher = document.getElementById('langSwitcher');
+  const trigger = document.getElementById('langTrigger');
+  if (!switcher || !trigger) return;
+  switcher.classList.remove('open');
+  trigger.setAttribute('aria-expanded', 'false');
+  resetLangSearch();
+}
+
+let _langSwitcherUiBound = false;
+
 function initLangSwitcher() {
+  upgradeLangSwitcherIfNeeded();
+
   const trigger  = document.getElementById('langTrigger');
   const dropdown = document.getElementById('langDropdown');
   const switcher = document.getElementById('langSwitcher');
-  if (!trigger || !dropdown) return;
+  if (!trigger || !dropdown || !switcher) return;
+
+  if (_langSwitcherUiBound) return;
+  _langSwitcherUiBound = true;
 
   /* Toggle dropdown */
   trigger.addEventListener('click', (e) => {
     e.stopPropagation();
     const isOpen = switcher.classList.toggle('open');
     trigger.setAttribute('aria-expanded', isOpen);
+    if (isOpen) {
+      setTimeout(() => document.getElementById('langSearchInput')?.focus(), 0);
+    } else {
+      resetLangSearch();
+    }
   });
 
-  /* Close on outside click */
-  document.addEventListener('click', () => {
-    switcher.classList.remove('open');
-    trigger.setAttribute('aria-expanded', 'false');
+  /* Close only when clicking outside the switcher */
+  document.addEventListener('click', (e) => {
+    if (!switcher.classList.contains('open')) return;
+    if (switcher.contains(e.target)) return;
+    closeLangSwitcher();
   });
 
-  /* Desktop language selection */
+  /* Keep dropdown open while interacting inside it */
+  dropdown.addEventListener('mousedown', (e) => e.stopPropagation());
+
+  /* Filter as user types — delegated so upgraded markup still works */
+  document.addEventListener('input', (e) => {
+    if (e.target?.id === 'langSearchInput') filterLangDropdown(e.target.value);
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.target?.id !== 'langSearchInput') return;
+    e.stopPropagation();
+    if (e.key === 'Escape') {
+      e.preventDefault();
+      closeLangSwitcher();
+      trigger.focus();
+    }
+  });
+
+  /* Language selection */
   dropdown.addEventListener('click', (e) => {
     const btn = e.target.closest('.lang-option');
-    if (!btn) return;
+    if (!btn || btn.hidden || btn.classList.contains('lang-option--hidden')) return;
     e.stopPropagation();
     const entry = LANGUAGES.find(l => l.id === btn.dataset.langId);
     if (!entry) return;
-    switcher.classList.remove('open');
-    trigger.setAttribute('aria-expanded', 'false');
+    closeLangSwitcher();
     applyLangChange(entry);
   });
 

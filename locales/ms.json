@@ -143,5 +143,8 @@
   "chat.send": "Hantar",
   "chat.placeholder": "Taip mesej anda…",
   "mega.milkProcessing": "Pemprosesan Susu",
-  "mega.dairyFoodEquipments": "Peralatan Tenusu & Makanan"
+  "mega.dairyFoodEquipments": "Peralatan Tenusu & Makanan",
+  "footer.address": "DH-249, Pallavpuram Fasa-1, Jalan Roorkee, Meerut, Uttar Pradesh, India - 250110",
+  "lang.searchEmpty": "Tiada bahasa yang sepadan",
+  "lang.searchPlaceholder": "Cari bahasa atau wilayah…"
 }

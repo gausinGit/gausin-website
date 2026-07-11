@@ -143,5 +143,8 @@
   "chat.send": "Inviare",
   "chat.placeholder": "Scrivi il tuo messaggio...",
   "mega.dairyFoodEquipments": "Attrezzature per prodotti lattiero-caseari e alimentari",
-  "mega.milkProcessing": "Lavorazione del latte"
+  "mega.milkProcessing": "Lavorazione del latte",
+  "footer.address": "DH-249, Pallavpuram Phase-1, Roorkee Road, Meerut, Uttar Pradesh, India - 250110",
+  "lang.searchEmpty": "Nessuna lingua corrispondente",
+  "lang.searchPlaceholder": "Cerca lingua o regione..."
 }

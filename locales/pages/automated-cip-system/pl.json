@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "qs.0.label": "Standard",
   "tagline": "W pełni zautomatyzowane systemy Clean-in-Place ze sterowanymi przez sterownik PLC sekwencjami płukania wstępnego, mycia żrącego, mycia kwasem i płukania końcowego.",
   "breadcrumb.cat.0": "Systemy CIP i czyszczenia",
@@ -107,5 +101,11 @@
   "related.0.title": "Zakład Przetwórstwa Mleka",
   "related.0.desc": "Zintegrowana mleczarnia CIP.",
   "related.1.desc": "Pasteryzator przystosowany do pracy w trybie CIP.",
-  "related.2.desc": "Zbiorniki kulowe natryskowe CIP."
+  "related.2.desc": "Zbiorniki kulowe natryskowe CIP.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

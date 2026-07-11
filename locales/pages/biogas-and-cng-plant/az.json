@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "category": "Tullantıların idarə edilməsi",
   "breadcrumb.cat.0": "Tullantıların idarə edilməsi",
   "qs.0.label": "m3/gün qaz",
@@ -107,5 +101,11 @@
   "tagline": "Üzvi tullantıları və biokütləni təmiz yanacağa çevirmək üçün anaerob qazma, qaz saxlama, təmizləmə və CNG sıxılma ilə açar təslim bioqaz qurğusu. ",
   "overview.p0": "<strong style=\"color:var(--gray-900);\">Gausin Bioqaz və CNG Zavodu</strong> üzvi tullantı axınlarını anaerob həzm, qazın təmizlənməsi və çoxmərhələli sıxılma yolu ilə boru kəməri keyfiyyətli bioqaz və ya sıxılmış bio-CNG-yə çevirir.",
   "overview.p1": "Zavodlar süd kooperativləri, içki zavodları, qida emalçıları və məişət üzvi tullantı obyektləri üçün nəzərdə tutulub - həzm cihazının qızdırılması, qarışdırılması, H<sub>2</sub>S / CO<sub>2</sub> yuyulması və CNG paylanması və ya şəbəkəyə vurulması variantları.",
-  "overview.p2": "Gausin, qazın təkmilləşdirilməsi, sıxılması, saxlanması və istismara verilməsi vasitəsilə yemin hazırlanmasından və həzm cihazının dizaynından tam əhatə dairəsini təmin edir."
+  "overview.p2": "Gausin, qazın təkmilləşdirilməsi, sıxılması, saxlanması və istismara verilməsi vasitəsilə yemin hazırlanmasından və həzm cihazının dizaynından tam əhatə dairəsini təmin edir.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

@@ -143,5 +143,8 @@
   "mega.milkProcessing": "Piena pārstrāde",
   "mega.dairyFoodEquipments": "Piena un pārtikas aprīkojums",
   "chat.close": "Aizvērt",
-  "chat.send": "Sūtīt"
+  "chat.send": "Sūtīt",
+  "footer.address": "DH-249, Pallavpuram Phase-1, Roorkee Road, Meerut, Uttar Pradesh, Indija — 250110",
+  "lang.searchPlaceholder": "Meklēt valodu vai reģionu…",
+  "lang.searchEmpty": "Nav atbilstošu valodu"
 }

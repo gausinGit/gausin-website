@@ -140,18 +140,6 @@
   "form.err.4": "此欄位是必需的。",
   "form.err.5": "請提供您的留言。",
   "map.btn.0": "在 Google 地圖中開啟",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0",
-    "loc.addr.0",
-    "loc.detail.0",
-    "partner.addr.0",
-    "partner.rep.0",
-    "form.consent.0"
-  ],
   "info.value.0": "DH-249，帕拉普蘭一期",
   "social.heading.0": "跟著我們",
   "connect.title.0": "致電我們的工程師",
@@ -191,5 +179,17 @@
   "loc.detail.0": "<strong style=\"color:var(--gray-800);\">工作時間：</strong>週一至週六，上午 9:00 至下午 6:00",
   "partner.addr.0": "肖維爾大道 240 - 70 號 1036 室SE<br>\r\n                加拿大艾伯塔省卡加利 T2Y 2Z3",
   "partner.rep.0": "<strong style=\"color:var(--gray-900);font-family:'Montserrat',sans-serif;\">代表人：</strong> Stanley Foster先生",
-  "form.consent.0": "我同意高信國際工程師使用我的資訊來回覆此詢問並就相關產品和服務與我聯繫。 <a href=\"privacy-policy.html\" style=\"color:var(--blue-500);\">隱私權政策</a>"
+  "form.consent.0": "我同意高信國際工程師使用我的資訊來回覆此詢問並就相關產品和服務與我聯繫。 <a href=\"privacy-policy.html\" style=\"color:var(--blue-500);\">隱私權政策</a>",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0",
+    "loc.addr.0",
+    "loc.detail.0",
+    "partner.addr.0",
+    "partner.rep.0",
+    "form.consent.0"
+  ]
 }

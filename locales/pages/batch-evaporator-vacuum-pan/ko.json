@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "breadcrumb.cat.0": "증발기",
   "category": "증발기",
   "qs.0.label": "L/배치",
@@ -118,5 +112,11 @@
   "related.1.title": "판형 증발기",
   "related.0.desc": "지속적인 대용량 증발.",
   "related.2.desc": "농축물로부터 분말 생산.",
-  "related.1.desc": "소형 연속 플레이트 증발기."
+  "related.1.desc": "소형 연속 플레이트 증발기.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

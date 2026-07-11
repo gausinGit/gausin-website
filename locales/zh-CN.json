@@ -143,5 +143,8 @@
   "chat.send": "发送",
   "chat.close": "关闭",
   "mega.dairyFoodEquipments": "乳品及食品设备",
-  "mega.milkProcessing": "牛奶加工"
+  "mega.milkProcessing": "牛奶加工",
+  "footer.address": "DH-249，Pallavpuram Phase-1，Roorkee Road，密拉特，北方邦，印度 - 250110",
+  "lang.searchEmpty": "没有匹配的语言",
+  "lang.searchPlaceholder": "搜索语言或地区..."
 }

@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "qs.0.label": "Norma",
   "breadcrumb.cat.0": "CIP a čisticí systémy",
   "category": "CIP a čisticí systémy",
@@ -107,5 +101,11 @@
   "related.0.title": "Závod na zpracování mléka",
   "related.1.desc": "CIP-ready pasterizátor.",
   "related.2.desc": "CIP stříkací kulové nádrže.",
-  "related.0.desc": "Integrovaná mlékárna CIP."
+  "related.0.desc": "Integrovaná mlékárna CIP.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

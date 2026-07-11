@@ -65,6 +65,18 @@ async function translateBatch(texts, lang) {
   return out;
 }
 
+function isLikelyTruncated(translated, english) {
+  if (!english || english.length < 80) return false;
+  if (!translated || typeof translated !== 'string') return true;
+  const t = translated.trim();
+  const e = english.trim();
+  if (t.length >= e.length * 0.55) return false;
+  if (/\bPvt\.?\s*$/i.test(t)) return true;
+  if (/\bLtd\.?\s*$/i.test(t) && e.length > t.length + 40) return true;
+  if (t.length < e.length * 0.45) return true;
+  return false;
+}
+
 async function translateBatchSingle(texts, lang) {
   if (!texts.length) return [];
   const tl = googleLang(lang);
@@ -74,7 +86,14 @@ async function translateBatchSingle(texts, lang) {
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const dat = await res.json();
   const segs = dat[0] || [];
-  return texts.map((_, i) => (segs[i] && segs[i][0]) ? segs[i][0] : texts[i]);
+
+  /* Google returns one array entry per sentence; join all parts for one query. */
+  if (texts.length === 1) {
+    return [segs.map((s) => s[0]).join('')];
+  }
+
+  /* Multi-q responses do not map 1:1 to segs[i]; translate individually. */
+  return Promise.all(texts.map((t) => translateBatchSingle([t], lang).then((r) => r[0])));
 }
 
 async function translateText(text, lang) {
@@ -112,7 +131,8 @@ async function buildPageLang(slug, lang, enPayload) {
   const pending = Object.keys(en).filter((k) => {
     if (k === '_htmlKeys') return false;
     if (k.startsWith('_') && k !== '_meta.title') return false;
-    return out[k] == null || out[k] === en[k];
+    if (out[k] == null || out[k] === en[k]) return true;
+    return isLikelyTruncated(out[k], en[k]);
   });
   if (!pending.length) return 0;
 

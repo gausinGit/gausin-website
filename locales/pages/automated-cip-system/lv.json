@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "qs.0.label": "Standarta",
   "breadcrumb.cat.0": "CIP un tīrīšanas sistēmas",
   "tagline": "Pilnībā automatizētas Clean-in-Place sistēmas ar PLC kontrolētu priekšskalošanu, kodīgu mazgāšanu, mazgāšanu ar skābi un galīgo skalošanu.",
@@ -107,5 +101,11 @@
   "related.0.title": "Piena pārstrādes rūpnīca",
   "related.1.desc": "CIP gatavs pasterizators.",
   "related.2.desc": "CIP smidzināšanas lodīšu tvertnes.",
-  "related.0.desc": "Integrēta CIP piena rūpnīca."
+  "related.0.desc": "Integrēta CIP piena rūpnīca.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

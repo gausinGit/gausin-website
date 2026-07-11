@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "qs.0.label": "Standaard",
   "tagline": "Volledig geautomatiseerde Clean-in-Place-systemen met PLC-gestuurde voorspoel-, bijtende was-, zuurwas- en laatste spoelsequenties.",
   "breadcrumb.cat.0": "CIP- en reinigingssystemen",
@@ -76,7 +70,7 @@
   "advantages.2.desc": "Bijtende en zure oplossingen keerden terug naar opslagtanks, waardoor het chemicaliënverbruik en de kosten daalden.",
   "advantages.3.desc": "Eén enkele CIP-skid reinigt pasteurisatieapparatuur, tanks, vullers en leidingen in de hele fabriek.",
   "advantages.2.title": "Chemische terugwinning en hergebruik",
-  "advantages.3.title": "Multi-Circuit Coverage",
+  "advantages.3.title": "Dekking van meerdere circuits",
   "advantages.5.title": "Minder schoonmaakonderbrekingen",
   "advantages.4.desc": "Inline geleidbaarheidssensor bevestigt de verwijdering van chemicaliën voordat de volgende productiecyclus begint.",
   "advantages.5.desc": "Geoptimaliseerde stroompaden en retourpompen verkorten de totale CIP-cyclustijd vergeleken met handmatige reiniging.",
@@ -107,5 +101,11 @@
   "related.1.title": "Pasteurisatieapparaat voor melk",
   "related.0.desc": "Geïntegreerde CIP-zuivelfabriek.",
   "related.1.desc": "CIP-ready pasteur.",
-  "related.2.desc": "CIP-spuitbaltanks."
+  "related.2.desc": "CIP-spuitbaltanks.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

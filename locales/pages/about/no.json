@@ -16,8 +16,8 @@
   "h3.2": "Tekniske ferdigheter",
   "h3.3": "Bransjekompetanse",
   "p.0": "Et tiår med presisjonsteknikk, teknologisk innovasjon og urokkelig forpliktelse til industriell ytelse - oppdag Gausin-historien.",
-  "p.1": "Gausin International Engineers Pvt. ",
-  "p.2": "Med hovedkontor i Meerut, Uttar Pradesh, har vi vokst fra en spesialisert fordamperprodusent til et fullspektret industrielt ingeniørfirma. ",
+  "p.1": "Gausin International Engineers Pvt. Ltd. ble grunnlagt med en enestående visjon: å bringe verdensklasse, teknologisk avanserte, miljøvennlige og energieffektive industrielle prosesstekniske løsninger til indisk og global industri til konkurransedyktige kostnader, uten å gå på kompromiss med kvalitet eller ytelse.",
+  "p.2": "Med hovedkontor i Meerut, Uttar Pradesh, har vi vokst fra en spesialisert fordamperprodusent til et fullspektret industrielt ingeniørfirma. Vår ekspertise spenner over hele livssyklusen til prosessanlegg – fra innledende gjennomførbarhet og prosessdesign til detaljert konstruksjon, fabrikasjon, forsyning, installasjon, igangkjøring og ettersalgsstøtte.",
   "p.3": "Med et team av dedikerte prosessingeniører, produsenter og prosjektledere, har vi levert mer enn 100 prosjekter på tvers av åtte forskjellige industrisektorer - meieri, farmasøytisk, matforedling, kjemisk industri, destilleri, papir, tekstil og energi.",
   "p.4": "Å levere teknologisk avansert, energieffektivt og pålitelig industrielt prosessutstyr og tekniske løsninger som optimerer våre kunders produksjonsytelse, reduserer driftskostnader og overgår internasjonale kvalitetsstandarder.",
   "p.5": "Å bli anerkjent som Indias mest pålitelige og globalt konkurransedyktige industrielle prosessingeniørselskap, som setter standarder innen fordampnings-, tørkings- og planteteknologi samtidig som det bidrar til bærekraftig industriell vekst.",
@@ -29,8 +29,8 @@
   "team.name.1": "Mr. Vijay Kumar Dubey",
   "team.role.0": "Grunnlegger og administrerende direktør",
   "team.role.1": "Direktør",
-  "team.bio.0": "Mr. Gaurav Singhal er en kjemisk ingeniør og en dyktig bedriftsleder med over 25 års dynamisk erfaring innen industriell drift, anleggsdesign og prosjektering, prosjektledelse, forretningsutvikling og organisasjonsledelse. ",
-  "team.bio.1": "Mr. Vijay Kumar Dubey er en dynamisk leder med omfattende ekspertise innen organisasjonsledelse, forretningsdrift og utvikling av kunderelasjoner. ",
+  "team.bio.0": "Mr. Gaurav Singhal er en kjemisk ingeniør og en dyktig bedriftsleder med over 25 års dynamisk erfaring innen industriell drift, anleggsdesign og prosjektering, prosjektledelse, forretningsutvikling og organisasjonsledelse. Som grunnlegger og administrerende direktør gir han strategisk retning til selskapet, driver innovasjon, operasjonell fortreffelighet og bærekraftig vekst. Hans omfattende bransjekunnskap, kombinert med et sterkt fokus på kundetilfredshet og kvalitetslevering, har vært avgjørende for å lykkes med å gjennomføre komplekse ingeniørprosjekter. Under hans ledelse fortsetter selskapet å styrke sin markedstilstedeværelse, bygge varige kunderelasjoner og levere verdidrevne løsninger på tvers av ulike sektorer. Mr. Singhal er forpliktet til å fremme en kultur av profesjonalitet, integritet og kontinuerlig forbedring, for å sikre at organisasjonen forblir i forkant av fortreffelighet og kundetillit.",
+  "team.bio.1": "Mr. Vijay Kumar Dubey er en dynamisk leder med omfattende ekspertise innen organisasjonsledelse, forretningsdrift og utvikling av kunderelasjoner. Som direktør har han vært medvirkende til å drive selskapets vekst gjennom sin strategiske visjon, forpliktelse til kundetilfredshet og fokus på levering av kvalitetstjenester. Han har spilt en nøkkelrolle i den vellykkede etableringen og gjennomføringen av infrastrukturprosjekter ved å fremme sterke interessentrelasjoner, sikre operasjonell fortreffelighet og fremme en kultur av integritet og profesjonalitet. Hans lederskap fortsetter å lede organisasjonen mot bærekraftig vekst og langsiktig verdiskaping for kunder og partnere.",
   "btn.0": "Snakk med teamet vårt",
   "btn.1": "Våre produkter",
   "btn.2": "Be om et tilbud",
@@ -99,17 +99,6 @@
   "cert.desc.6": "Samsvar med BEE-retningslinjene",
   "cert.desc.7": "CPCB / PCB retningslinjer",
   "cert.desc.8": "Direktivet for trykkutstyr (EU)",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "sec.title.3",
-    "sec.title.4",
-    "sec.title.5",
-    "sec.title.6",
-    "h2.0"
-  ],
   "cap.label.0": "Prosessteknikk og design",
   "cap.label.1": "Fordampningsteknologi",
   "cap.label.2": "Tørketeknologi",
@@ -120,5 +109,16 @@
   "exp.title.0": "Meieriindustri",
   "exp.title.1": "Farmasøytisk",
   "exp.title.2": "Kjemisk industri",
-  "exp.title.3": "Matforedling"
+  "exp.title.3": "Matforedling",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "sec.title.3",
+    "sec.title.4",
+    "sec.title.5",
+    "sec.title.6",
+    "h2.0"
+  ]
 }

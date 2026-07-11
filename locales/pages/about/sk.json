@@ -16,8 +16,8 @@
   "h3.2": "Technická spôsobilosť",
   "h3.3": "Odbornosť v odvetví",
   "p.0": "Desaťročie presného inžinierstva, technologických inovácií a neochvejného záväzku k priemyselnému výkonu – objavte príbeh Gausina.",
-  "p.1": "Gausin International Engineers Pvt. ",
-  "p.2": "So sídlom v Meerute, Uttar Pradesh, sme sa rozrástli zo špecializovaného výrobcu výparníkov na celospektrálnu priemyselnú inžiniersku spoločnosť. ",
+  "p.1": "Gausin International Engineers Pvt. Ltd. bola založená s jedinečnou víziou: prinášať svetové, technologicky vyspelé, ekologické a energeticky efektívne riešenia priemyselného procesu pre indický a globálny priemysel za konkurencieschopné náklady, bez kompromisov v oblasti kvality alebo výkonu.",
+  "p.2": "So sídlom v Meerute, Uttar Pradesh, sme sa rozrástli zo špecializovaného výrobcu výparníkov na celospektrálnu priemyselnú inžiniersku spoločnosť. Naša odbornosť pokrýva celý životný cyklus procesných závodov – od počiatočnej realizovateľnosti a návrhu procesu až po podrobné inžinierstvo, výrobu, dodávku, inštaláciu, uvedenie do prevádzky a popredajnú podporu.",
   "p.3": "S tímom špecializovaných procesných inžinierov, výrobcov a projektových manažérov sme úspešne zrealizovali viac ako 100 projektov v ôsmich rôznych priemyselných odvetviach – mliekarenský, farmaceutický, potravinársky, chemický, liehovarnícky, papierenský, textilný a energetický.",
   "p.4": "Dodávať technologicky vyspelé, energeticky účinné a spoľahlivé zariadenia na priemyselné procesy a inžinierske riešenia, ktoré optimalizujú výrobný výkon našich klientov, znižujú prevádzkové náklady a prekračujú medzinárodné štandardy kvality.",
   "p.5": "Byť uznaná ako najdôveryhodnejšia a celosvetovo konkurencieschopná spoločnosť zaoberajúca sa inžinierskymi priemyselnými procesmi v Indii, ktorá stanovuje meradlá v technológiách odparovania, sušenia a inžinierstva zariadení a zároveň prispieva k udržateľnému priemyselnému rastu.",
@@ -29,8 +29,8 @@
   "team.name.1": "Pán Vijay Kumar Dubey",
   "team.role.0": "Zakladateľ a generálny riaditeľ",
   "team.role.1": "riaditeľ",
-  "team.bio.0": "Pán Gaurav Singhal je chemický inžinier a uznávaný obchodný líder s viac ako 25-ročnými dynamickými skúsenosťami v priemyselných prevádzkach, projektovaní a inžinierstve závodu, projektovom manažmente, rozvoji podnikania a organizačnom vedení. ",
-  "team.bio.1": "Pán Vijay Kumar Dubey je dynamický líder s rozsiahlymi odbornými znalosťami v oblasti organizačného riadenia, obchodných operácií a rozvoja vzťahov so zákazníkmi. ",
+  "team.bio.0": "Pán Gaurav Singhal je chemický inžinier a uznávaný obchodný líder s viac ako 25-ročnými dynamickými skúsenosťami v priemyselných prevádzkach, projektovaní a inžinierstve závodu, projektovom manažmente, rozvoji podnikania a organizačnom vedení. Ako zakladateľ a generálny riaditeľ poskytuje spoločnosti strategické smerovanie, podporuje inovácie, prevádzkovú dokonalosť a udržateľný rast. Jeho rozsiahle znalosti v odbore v kombinácii so silným zameraním na spokojnosť zákazníkov a kvalitné dodanie boli nápomocné pri úspešnej realizácii zložitých inžinierskych projektov. Pod jeho vedením spoločnosť naďalej posilňuje svoju prítomnosť na trhu, buduje trvalé vzťahy s klientmi a dodáva riešenia založené na hodnote v rôznych sektoroch. Pán Singhal sa zaviazal podporovať kultúru profesionality, integrity a neustáleho zlepšovania, čím sa zaistí, že organizácia zostane na čele excelentnosti a dôvery zákazníkov.",
+  "team.bio.1": "Pán Vijay Kumar Dubey je dynamický líder s rozsiahlymi odbornými znalosťami v oblasti organizačného riadenia, obchodných operácií a rozvoja vzťahov so zákazníkmi. Ako riaditeľ sa podieľal na riadení rastu spoločnosti prostredníctvom svojej strategickej vízie, záväzku k spokojnosti zákazníkov a zamerania sa na poskytovanie kvalitných služieb. Zohral kľúčovú úlohu pri úspešnom zakladaní a realizácii projektov infraštruktúry tým, že podporoval silné vzťahy so zainteresovanými stranami, zabezpečoval prevádzkovú dokonalosť a podporoval kultúru integrity a profesionality. Jeho vedenie naďalej vedie organizáciu smerom k udržateľnému rastu a vytváraniu dlhodobej hodnoty pre klientov a partnerov.",
   "btn.0": "Porozprávajte sa s naším tímom",
   "btn.1": "Naše produkty",
   "btn.2": "Vyžiadajte si cenovú ponuku",
@@ -99,17 +99,6 @@
   "cert.desc.6": "V súlade so smernicami BEE",
   "cert.desc.7": "Smernice CPCB / PCB",
   "cert.desc.8": "Smernica o tlakových zariadeniach (EÚ)",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "sec.title.3",
-    "sec.title.4",
-    "sec.title.5",
-    "sec.title.6",
-    "h2.0"
-  ],
   "cap.label.0": "Procesné inžinierstvo a dizajn",
   "cap.label.1": "Technológia odparovania",
   "cap.label.2": "Technológia sušenia",
@@ -120,5 +109,16 @@
   "exp.title.0": "Mliečny priemysel",
   "exp.title.1": "Farmaceutický",
   "exp.title.2": "Chemický priemysel",
-  "exp.title.3": "Spracovanie potravín"
+  "exp.title.3": "Spracovanie potravín",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "sec.title.3",
+    "sec.title.4",
+    "sec.title.5",
+    "sec.title.6",
+    "h2.0"
+  ]
 }

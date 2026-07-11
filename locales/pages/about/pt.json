@@ -16,8 +16,8 @@
   "h3.2": "Proficiência Técnica",
   "h3.3": "Experiência na indústria",
   "p.0": "Uma década de engenharia de precisão, inovação tecnológica e compromisso inabalável com o desempenho industrial – descubra a história de Gausin.",
-  "p.1": "Gausin Engenheiros Internacionais Unip. ",
-  "p.2": "Com sede em Meerut, Uttar Pradesh, passamos de um fabricante especializado de evaporadores a uma empresa de engenharia industrial de amplo espectro. ",
+  "p.1": "Gausin Engenheiros Internacionais Unip. foi fundada com uma visão singular: trazer soluções de engenharia de processos industriais de classe mundial, tecnologicamente avançadas, ecologicamente corretas e com eficiência energética para indústrias indianas e globais a custos competitivos, sem comprometer a qualidade ou o desempenho.",
+  "p.2": "Com sede em Meerut, Uttar Pradesh, passamos de um fabricante especializado de evaporadores a uma empresa de engenharia industrial de amplo espectro. Nossa experiência abrange todo o ciclo de vida das plantas de processo - desde a viabilidade inicial e projeto do processo até a engenharia detalhada, fabricação, fornecimento, instalação, comissionamento e suporte pós-venda.",
   "p.3": "Com uma equipe de engenheiros de processo, fabricantes e gerentes de projeto dedicados, entregamos com sucesso mais de 100 projetos em oito setores industriais diversos: laticínios, farmacêutico, processamento de alimentos, químico, destilaria, papel, têxtil e energia.",
   "p.4": "Fornecer equipamentos de processo industrial tecnologicamente avançados, eficientes em termos energéticos e confiáveis ​​e soluções de engenharia que otimizem o desempenho de produção de nossos clientes, reduzam custos operacionais e excedam os padrões internacionais de qualidade.",
   "p.5": "Ser reconhecida como a empresa de engenharia de processos industriais mais confiável e globalmente competitiva da Índia, estabelecendo referências em tecnologia de evaporação, secagem e engenharia de plantas, ao mesmo tempo que contribui para o crescimento industrial sustentável.",
@@ -29,8 +29,8 @@
   "team.name.1": "Sr. Vijay Kumar Dubey",
   "team.role.0": "Fundador e CEO",
   "team.role.1": "Diretor",
-  "team.bio.0": "Sr. Gaurav Singhal é Engenheiro Químico e um líder empresarial talentoso com mais de 25 anos de experiência dinâmica em operações industriais, projeto e engenharia de plantas, gerenciamento de projetos, desenvolvimento de negócios e liderança organizacional. ",
-  "team.bio.1": "O Sr. Vijay Kumar Dubey é um líder dinâmico com ampla experiência em gestão organizacional, operações comerciais e desenvolvimento de relacionamento com clientes. ",
+  "team.bio.0": "Sr. Gaurav Singhal é Engenheiro Químico e um líder empresarial talentoso com mais de 25 anos de experiência dinâmica em operações industriais, projeto e engenharia de plantas, gerenciamento de projetos, desenvolvimento de negócios e liderança organizacional. Como fundador e CEO, ele fornece orientação estratégica à empresa, impulsionando a inovação, a excelência operacional e o crescimento sustentável. Seu amplo conhecimento do setor, combinado com um forte foco na satisfação do cliente e na entrega de qualidade, tem sido fundamental na execução bem-sucedida de projetos complexos de engenharia. Sob a sua liderança, a empresa continua a fortalecer a sua presença no mercado, a construir relações duradouras com os clientes e a fornecer soluções orientadas para o valor em diversos setores. O Sr. Singhal está empenhado em promover uma cultura de profissionalismo, integridade e melhoria contínua, garantindo que a organização permaneça na vanguarda da excelência e da confiança do cliente.",
+  "team.bio.1": "O Sr. Vijay Kumar Dubey é um líder dinâmico com ampla experiência em gestão organizacional, operações comerciais e desenvolvimento de relacionamento com clientes. Como Diretor, tem sido fundamental para impulsionar o crescimento da empresa por meio de sua visão estratégica, compromisso com a satisfação do cliente e foco na prestação de serviços de qualidade. Ele desempenhou um papel fundamental no estabelecimento e execução bem-sucedidos de projetos de infraestrutura, promovendo relacionamentos sólidos com as partes interessadas, garantindo a excelência operacional e promovendo uma cultura de integridade e profissionalismo. Sua liderança continua a orientar a organização em direção ao crescimento sustentável e à criação de valor de longo prazo para clientes e parceiros.",
   "btn.0": "Fale com nossa equipe",
   "btn.1": "Nossos produtos",
   "btn.2": "Solicite um orçamento",
@@ -99,17 +99,6 @@
   "cert.desc.6": "Compatível com as Diretrizes BEE",
   "cert.desc.7": "Diretrizes CPCB/PCB",
   "cert.desc.8": "Diretiva de Equipamentos de Pressão (UE)",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "sec.title.3",
-    "sec.title.4",
-    "sec.title.5",
-    "sec.title.6",
-    "h2.0"
-  ],
   "cap.label.0": "Engenharia e Design de Processos",
   "cap.label.1": "Tecnologia de Evaporação",
   "cap.label.2": "Tecnologia de Secagem",
@@ -120,5 +109,16 @@
   "exp.title.0": "Indústria de laticínios",
   "exp.title.1": "Farmacêutico",
   "exp.title.2": "Indústria química",
-  "exp.title.3": "Processamento de Alimentos"
+  "exp.title.3": "Processamento de Alimentos",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "sec.title.3",
+    "sec.title.4",
+    "sec.title.5",
+    "sec.title.6",
+    "h2.0"
+  ]
 }

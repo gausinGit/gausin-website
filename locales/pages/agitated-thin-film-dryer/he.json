@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "category": "מייבשים",
   "breadcrumb.cat.0": "מייבשים",
   "qs.0.label": "אזור חימום",
@@ -115,8 +109,14 @@
   "related.0.desc": "ייבוש ישיר של משחות ועוגות סינון.",
   "related.1.desc": "ייבוש אחיד עדין של מוצקים גרגירים.",
   "related.2.desc": "רכז הזנה לפני ה-ATFD.",
-  "tagline": "מייבש רציף לחומרים צמיגיים, רגישים לחום ומתכלים. ",
+  "tagline": "מייבש רציף לחומרים צמיגיים, רגישים לחום ומתכלים. מכלול להבים מסתובב מפזר את ההזנה לסרט דק וסוער על הקיר המחומם, ומאפשר אידוי מהיר תחת ואקום, אידיאלי עבור ZLD, מלחי קולחים ומוצרים בעלי ערך גבוה.",
   "overview.p0": "<strong style=\"color:var(--gray-900);\">Gausin Agitated Thin Film Dryer (ATFD)</strong> הוא צילינדר אנכי עם מעיל מצויד ברוטור הנושא להבים צירים או קבועים. ",
   "overview.p1": "מכיוון שהסרט נמחק ומתחדש כל הזמן, ה-ATFD מטפל בהזנות צמיגות, עכירות, קצף ורגישות לחום, אשר יתגלו או יישרפו במייבשים רגילים. ",
-  "overview.p2": "ATFDs הם מרכיב מפתח במפעלי <strong style=\"color:var(--gray-900);\">Zero Liquid Discharge (ZLD)</strong>, הממירים תרכיז מאייד לאבקה או פתיתים יבשים וניתנים לטיפול. "
+  "overview.p2": "ATFDs הם מרכיב מפתח במפעלי <strong style=\"color:var(--gray-900);\">Zero Liquid Discharge (ZLD)</strong>, הממירים תרכיז מאייד לאבקה או פתיתים יבשים וניתנים לטיפול. ",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

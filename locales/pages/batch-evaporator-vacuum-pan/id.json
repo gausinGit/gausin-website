@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "breadcrumb.cat.0": "Evaporator",
   "category": "Evaporator",
   "tagline": "Evaporator panci vakum berjaket untuk konsentrasi batch dengan kontrol presisi. Pengoperasian vakum menurunkan titik didih untuk melindungi produk yang sensitif terhadap panas selama setiap siklus batch.",
@@ -118,5 +112,11 @@
   "related.1.title": "Evaporator Tipe Pelat",
   "related.0.desc": "Penguapan berkapasitas tinggi secara terus menerus.",
   "related.1.desc": "Evaporator pelat kontinu kompak.",
-  "related.2.desc": "Produksi bubuk dari konsentrat."
+  "related.2.desc": "Produksi bubuk dari konsentrat.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

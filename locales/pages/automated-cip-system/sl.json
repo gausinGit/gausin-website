@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "qs.0.label": "Standardno",
   "tagline": "Popolnoma avtomatizirani sistemi Clean-in-Place z zaporedji predizpiranja, kavstičnega izpiranja, izpiranja s kislino in končnega izpiranja, ki jih nadzoruje PLC.",
   "breadcrumb.cat.0": "CIP in čistilni sistemi",
@@ -107,5 +101,11 @@
   "related.1.title": "Pasterizator mleka",
   "related.0.desc": "Integrirana CIP mlekarna.",
   "related.1.desc": "Pasterizator, pripravljen za CIP.",
-  "related.2.desc": "CIP kroglični rezervoarji za pršenje."
+  "related.2.desc": "CIP kroglični rezervoarji za pršenje.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

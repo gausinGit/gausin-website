@@ -143,5 +143,8 @@
   "chat.close": "近い",
   "mega.dairyFoodEquipments": "乳製品および食品機器",
   "chat.placeholder": "メッセージを入力してください…",
-  "mega.milkProcessing": "牛乳の加工"
+  "mega.milkProcessing": "牛乳の加工",
+  "footer.address": "DH-249、Pallavpuram Phase-1、Roorkee Road、メーラト、ウッタル プラデーシュ州、インド - 250110",
+  "lang.searchPlaceholder": "言語または地域を検索…",
+  "lang.searchEmpty": "一致する言語がありません"
 }

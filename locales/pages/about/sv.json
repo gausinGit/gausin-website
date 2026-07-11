@@ -16,8 +16,8 @@
   "h3.2": "Teknisk skicklighet",
   "h3.3": "Branschkompetens",
   "p.0": "Ett decennium av precisionsteknik, teknisk innovation och orubbligt engagemang för industriell prestanda - upptäck Gausin-historien.",
-  "p.1": "Gausin International Engineers Pvt. ",
-  "p.2": "Med huvudkontor i Meerut, Uttar Pradesh, har vi vuxit från en specialiserad förångartillverkare till ett fullspektrum industriteknikföretag. ",
+  "p.1": "Gausin International Engineers Pvt. Ltd. grundades med en unik vision: att erbjuda världsklass, tekniskt avancerade, miljövänliga och energieffektiva industriella processtekniska lösningar till indiska och globala industrier till konkurrenskraftiga kostnader, utan att kompromissa med kvalitet eller prestanda.",
+  "p.2": "Med huvudkontor i Meerut, Uttar Pradesh, har vi vuxit från en specialiserad förångartillverkare till ett fullspektrum industriteknikföretag. Vår expertis sträcker sig över hela livscykeln för processanläggningar - från initial genomförbarhet och processdesign till detaljerad ingenjörskonst, tillverkning, leverans, installation, driftsättning och support efter försäljning.",
   "p.3": "Med ett team av dedikerade processingenjörer, tillverkare och projektledare har vi framgångsrikt levererat över 100 projekt inom åtta olika industrisektorer - mejeri, läkemedel, livsmedelsförädling, kemi, destilleri, papper, textil och energi.",
   "p.4": "Att leverera tekniskt avancerad, energieffektiv och pålitlig industriell processutrustning och tekniska lösningar som optimerar våra kunders produktionsprestanda, minskar driftskostnaderna och överträffar internationella kvalitetsstandarder.",
   "p.5": "Att bli erkänd som Indiens mest pålitliga och globalt konkurrenskraftiga industriella processteknikföretag, som sätter riktmärken inom avdunstning, torkning och växtteknik samtidigt som det bidrar till hållbar industriell tillväxt.",
@@ -29,8 +29,8 @@
   "team.name.1": "Mr. Vijay Kumar Dubey",
   "team.role.0": "Grundare och verkställande direktör",
   "team.role.1": "Direktör",
-  "team.bio.0": "Gaurav Singhal är en kemiingenjör och en skicklig företagsledare med över 25 års dynamisk erfarenhet av industriell verksamhet, anläggningsdesign och ingenjörskonst, projektledning, affärsutveckling och organisatoriskt ledarskap. ",
-  "team.bio.1": "Mr. Vijay Kumar Dubey är en dynamisk ledare med omfattande expertis inom organisationsledning, affärsverksamhet och utveckling av kundrelationer. ",
+  "team.bio.0": "Gaurav Singhal är en kemiingenjör och en skicklig företagsledare med över 25 års dynamisk erfarenhet av industriell verksamhet, anläggningsdesign och ingenjörskonst, projektledning, affärsutveckling och organisatoriskt ledarskap. Som grundare och verkställande direktör ger han strategisk riktning till företaget, driver innovation, operationell excellens och hållbar tillväxt. Hans omfattande branschkunskap, kombinerat med ett starkt fokus på kundnöjdhet och kvalitetsleverans, har varit avgörande för att framgångsrikt genomföra komplexa ingenjörsprojekt. Under hans ledning fortsätter företaget att stärka sin marknadsnärvaro, bygga varaktiga kundrelationer och leverera värdedrivna lösningar inom olika sektorer. Mr. Singhal är engagerad i att främja en kultur av professionalism, integritet och ständiga förbättringar, för att säkerställa att organisationen förblir i framkant när det gäller excellens och kundernas förtroende.",
+  "team.bio.1": "Mr. Vijay Kumar Dubey är en dynamisk ledare med omfattande expertis inom organisationsledning, affärsverksamhet och utveckling av kundrelationer. Som styrelseledamot har han varit avgörande för att driva företagets tillväxt genom sin strategiska vision, engagemang för kundnöjdhet och fokus på kvalitetsservice. Han har spelat en nyckelroll i framgångsrik etablering och genomförande av infrastrukturprojekt genom att främja starka intressentrelationer, säkerställa operativ excellens och främja en kultur av integritet och professionalism. Hans ledarskap fortsätter att vägleda organisationen mot hållbar tillväxt och långsiktigt värdeskapande för kunder och partners.",
   "btn.0": "Prata med vårt team",
   "btn.1": "Våra produkter",
   "btn.2": "Begär en offert",
@@ -99,17 +99,6 @@
   "cert.desc.6": "Överensstämmer med BEE-riktlinjer",
   "cert.desc.7": "CPCB / PCB riktlinjer",
   "cert.desc.8": "Direktiv om tryckutrustning (EU)",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "sec.title.3",
-    "sec.title.4",
-    "sec.title.5",
-    "sec.title.6",
-    "h2.0"
-  ],
   "cap.label.0": "Processteknik & Design",
   "cap.label.1": "Indunstningsteknik",
   "cap.label.2": "Torkningsteknik",
@@ -120,5 +109,16 @@
   "exp.title.0": "Mejeriindustrin",
   "exp.title.1": "Farmaceutisk",
   "exp.title.2": "Kemisk industri",
-  "exp.title.3": "Livsmedelsbearbetning"
+  "exp.title.3": "Livsmedelsbearbetning",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "sec.title.3",
+    "sec.title.4",
+    "sec.title.5",
+    "sec.title.6",
+    "h2.0"
+  ]
 }

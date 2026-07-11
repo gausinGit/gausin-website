@@ -143,5 +143,8 @@
   "chat.close": "לִסְגוֹר",
   "mega.milkProcessing": "עיבוד חלב",
   "mega.dairyFoodEquipments": "מוצרי חלב ומזון",
-  "chat.placeholder": "הקלד את ההודעה שלך..."
+  "chat.placeholder": "הקלד את ההודעה שלך...",
+  "footer.address": "DH-249, Pallavpuram Phase-1, Roorkee Road, Meerut, Uttar Pradesh, הודו - 250110",
+  "lang.searchEmpty": "אין שפות תואמות",
+  "lang.searchPlaceholder": "חפש בשפה או אזור..."
 }

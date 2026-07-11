@@ -6,8 +6,17 @@ const path        = require('path');
 const Inquiry     = require('../models/Inquiry');
 const Application = require('../models/Application');
 const adminAuth   = require('../middleware/adminAuth');
+const { isAdminRegisterEnabled, getJwtExpiresIn } = require('../utils/adminConfig');
 
 const loginLimit = rateLimit({ windowMs: 15 * 60 * 1000, max: 10 });
+
+// ── GET /api/admin/config — public UI flags (no secrets) ─────────────────────
+router.get('/config', (req, res) => {
+  res.json({
+    success: true,
+    registerEnabled: isAdminRegisterEnabled(),
+  });
+});
 
 // ── POST /api/admin/login ─────────────────────────────────────────────────────
 router.post('/login', loginLimit, async (req, res) => {
@@ -21,7 +30,7 @@ router.post('/login', loginLimit, async (req, res) => {
       return res.status(401).json({ success: false, message: 'Invalid credentials.' });
     }
 
-    const token = jwt.sign({ username }, process.env.JWT_SECRET, { expiresIn: '8h' });
+    const token = jwt.sign({ username }, process.env.JWT_SECRET, { expiresIn: getJwtExpiresIn() });
     res.json({ success: true, token });
   } catch (err) {
     console.error('Admin login error:', err);
@@ -32,6 +41,10 @@ router.post('/login', loginLimit, async (req, res) => {
 // ── POST /api/admin/register ─────────────────────────────────────────────────
 router.post('/register', loginLimit, async (req, res) => {
   try {
+    if (!isAdminRegisterEnabled()) {
+      return res.status(403).json({ success: false, message: 'Admin registration is disabled.' });
+    }
+
     const { username, password, confirmPassword, setupKey } = req.body;
 
     if (!username || !password || !setupKey)

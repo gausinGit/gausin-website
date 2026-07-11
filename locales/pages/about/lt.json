@@ -16,8 +16,8 @@
   "h3.2": "Techninis įgudimas",
   "h3.3": "Pramonės ekspertizė",
   "p.0": "Dešimtmetis tikslios inžinerijos, technologinės naujovės ir nepalaužiamas įsipareigojimas siekti pramonės našumo – atraskite Gausino istoriją.",
-  "p.1": "Gausin International Engineers Pvt. ",
-  "p.2": "Pagrindinė būstinė yra Meerute, Utar Pradeše, iš specializuoto garintuvų gamintojo išaugome iki viso spektro pramonės inžinerijos įmonės. ",
+  "p.1": "Gausin International Engineers Pvt. Ltd. buvo įkurta siekiant išskirtinės vizijos: pristatyti pasaulinio lygio, technologiškai pažangius, aplinką tausojančius ir energiją taupančius pramoninių procesų inžinerinius sprendimus Indijos ir pasaulio pramonei konkurencingomis kainomis, nepakenkiant kokybei ar našumui.",
+  "p.2": "Pagrindinė būstinė yra Meerute, Utar Pradeše, iš specializuoto garintuvų gamintojo išaugome iki viso spektro pramonės inžinerijos įmonės. Mūsų patirtis apima visą technologinių įrenginių gyvavimo ciklą – nuo ​​pradinių galimybių ir proceso projektavimo iki išsamios inžinerijos, gamybos, tiekimo, įrengimo, paleidimo ir aptarnavimo po pardavimo.",
   "p.3": "Su procesų inžinierių, gamintojų ir projektų vadovų komanda sėkmingai įgyvendinome daugiau nei 100 projektų aštuoniuose įvairiuose pramonės sektoriuose – pieno, farmacijos, maisto perdirbimo, chemijos, distiliavimo, popieriaus, tekstilės ir energetikos.",
   "p.4": "Pateikti technologiškai pažangią, energiją taupančią ir patikimą pramoninių procesų įrangą ir inžinerinius sprendimus, kurie optimizuoja mūsų klientų gamybos našumą, mažina eksploatacines išlaidas ir viršija tarptautinius kokybės standartus.",
   "p.5": "Būti pripažinta Indijos patikimiausia ir pasaulyje konkurencingiausia pramoninių procesų inžinerijos įmone, nustatančia garinimo, džiovinimo ir augalų inžinerijos technologijų etalonus, kartu prisidedant prie tvaraus pramonės augimo.",
@@ -29,8 +29,8 @@
   "team.name.1": "Ponas Vijay Kumar Dubey",
   "team.role.0": "Įkūrėjas ir generalinis direktorius",
   "team.role.1": "direktorius",
-  "team.bio.0": "Ponas Gauravas Singhalas yra chemijos inžinierius ir patyręs verslo lyderis, turintis daugiau nei 25 metų dinamišką patirtį pramoninių operacijų, gamyklų projektavimo ir inžinerijos, projektų valdymo, verslo plėtros ir vadovavimo organizacijoje srityse. ",
-  "team.bio.1": "Vijay Kumar Dubey yra dinamiškas lyderis, turintis didelę patirtį organizacijos valdymo, verslo operacijų ir santykių su klientais vystymo srityse. ",
+  "team.bio.0": "Ponas Gauravas Singhalas yra chemijos inžinierius ir patyręs verslo lyderis, turintis daugiau nei 25 metų dinamišką patirtį pramoninių operacijų, gamyklų projektavimo ir inžinerijos, projektų valdymo, verslo plėtros ir vadovavimo organizacijoje srityse. Kaip įkūrėjas ir vykdomasis direktorius, jis teikia strateginę įmonės kryptį, skatina inovacijas, veiklos meistriškumą ir tvarų augimą. Jo plačios pramonės žinios kartu su dideliu dėmesiu klientų pasitenkinimui ir kokybiškam pristatymui padėjo sėkmingai įgyvendinti sudėtingus inžinerinius projektus. Jam vadovaujant, įmonė toliau stiprina savo buvimą rinkoje, kuria ilgalaikius santykius su klientais ir teikia į vertę pagrįstus sprendimus įvairiuose sektoriuose. P. Singhal yra įsipareigojęs puoselėti profesionalumo, sąžiningumo ir nuolatinio tobulėjimo kultūrą, užtikrindamas, kad organizacija išliktų meistriškumo ir klientų pasitikėjimo priešakyje.",
+  "team.bio.1": "Vijay Kumar Dubey yra dinamiškas lyderis, turintis didelę patirtį organizacijos valdymo, verslo operacijų ir santykių su klientais vystymo srityse. Būdamas direktoriumi, jis prisidėjo prie įmonės augimo per savo strateginę viziją, įsipareigojimą patenkinti klientus ir sutelkti dėmesį į kokybiškų paslaugų teikimą. Jis atliko pagrindinį vaidmenį sėkmingai steigiant ir įgyvendinant infrastruktūros projektus, puoselėdamas stiprius suinteresuotųjų šalių santykius, užtikrindamas veiklos meistriškumą, skatindamas sąžiningumo ir profesionalumo kultūrą. Jo vadovavimas ir toliau veda organizaciją link tvaraus augimo ir ilgalaikės vertės kūrimo klientams ir partneriams.",
   "btn.0": "Pasikalbėkite su mūsų komanda",
   "btn.1": "Mūsų gaminiai",
   "btn.2": "Prašyti kainos pasiūlymo",
@@ -99,17 +99,6 @@
   "cert.desc.6": "Atitinka BEE gaires",
   "cert.desc.7": "CPCB / PCB gairės",
   "cert.desc.8": "Slėginės įrangos direktyva (ES)",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "sec.title.3",
-    "sec.title.4",
-    "sec.title.5",
-    "sec.title.6",
-    "h2.0"
-  ],
   "cap.label.0": "Procesų inžinerija ir projektavimas",
   "cap.label.1": "Garinimo technologija",
   "cap.label.2": "Džiovinimo technologija",
@@ -120,5 +109,16 @@
   "exp.title.0": "Pieno pramonė",
   "exp.title.1": "Farmacijos",
   "exp.title.2": "Chemijos pramonė",
-  "exp.title.3": "Maisto perdirbimas"
+  "exp.title.3": "Maisto perdirbimas",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "sec.title.3",
+    "sec.title.4",
+    "sec.title.5",
+    "sec.title.6",
+    "h2.0"
+  ]
 }

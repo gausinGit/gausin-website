@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "breadcrumb.cat.0": "Iztvaicētāji",
   "category": "Iztvaicētāji",
   "tagline": "Vakuuma pannas iztvaicētājs ar apvalku partijas koncentrācijai ar precīzu kontroli. Vakuuma darbība pazemina viršanas temperatūru, lai aizsargātu karstumjutīgos produktus katrā partijas ciklā.",
@@ -118,5 +112,11 @@
   "related.0.desc": "Nepārtraukta lielas jaudas iztvaikošana.",
   "related.2.title": "Izsmidzināmais žāvētājs",
   "related.1.desc": "Kompakts nepārtrauktas plākšņu iztvaicētājs.",
-  "related.2.desc": "Pulvera ražošana no koncentrātiem."
+  "related.2.desc": "Pulvera ražošana no koncentrātiem.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

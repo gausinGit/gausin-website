@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "breadcrumb.cat.0": "Sušilniki",
   "category": "Sušilniki",
   "tagline": "Neprekinjeno sušenje viskoznih, toplotno občutljivih in umazanih materialov. Sklop vrtljivih rezil razprši dovod v tanek, turbulenten film na segreti steni, kar omogoča hitro izhlapevanje pod vakuumom, kar je idealno za ZLD, odpadne soli in izdelke visoke vrednosti.",
@@ -118,5 +112,11 @@
   "related.0.title": "Spin Flash sušilnik",
   "related.0.desc": "Neposredno sušenje past in filtrskih pogač.",
   "related.1.desc": "Nežno enakomerno sušenje zrnatih trdnih snovi.",
-  "related.2.desc": "Koncentrirana krma pred ATFD."
+  "related.2.desc": "Koncentrirana krma pred ATFD.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

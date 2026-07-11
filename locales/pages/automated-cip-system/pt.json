@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "qs.0.label": "Padrão",
   "breadcrumb.cat.0": "CIP e sistemas de limpeza",
   "category": "CIP e sistemas de limpeza",
@@ -107,5 +101,11 @@
   "related.2.title": "Silos de armazenamento SS",
   "related.1.desc": "Pasteurizador pronto para CIP.",
   "related.2.desc": "Tanques de esferas de pulverização CIP.",
-  "related.0.desc": "Planta integrada de laticínios CIP."
+  "related.0.desc": "Planta integrada de laticínios CIP.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

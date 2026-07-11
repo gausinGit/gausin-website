@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "breadcrumb.cat.0": "Vikaushio",
   "category": "Vikaushio",
   "qs.0.label": "Eneo la Kupokanzwa",
@@ -118,5 +112,11 @@
   "related.0.title": "Spin Flash Dryer",
   "related.0.desc": "Kukausha moja kwa moja kwa pastes na keki za chujio.",
   "related.2.desc": "Zingatia malisho kabla ya ATFD.",
-  "related.1.desc": "Kukausha kwa upole sare ya mango ya punjepunje."
+  "related.1.desc": "Kukausha kwa upole sare ya mango ya punjepunje.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

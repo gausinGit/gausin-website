@@ -16,8 +16,8 @@
   "h3.2": "Compétence technique",
   "h3.3": "Expertise industrielle",
   "p.0": "Une décennie d'ingénierie de précision, d'innovation technologique et d'engagement indéfectible envers la performance industrielle - découvrez l'histoire de Gausin.",
-  "p.1": "Gausin International Ingénieurs Pvt. ",
-  "p.2": "Basés à Meerut, dans l'Uttar Pradesh, nous sommes passés d'un fabricant spécialisé d'évaporateurs à une société d'ingénierie industrielle à spectre complet. ",
+  "p.1": "Gausin International Ingénieurs Pvt. Ltd. a été fondée avec une vision singulière : apporter aux industries indiennes et mondiales des solutions d'ingénierie de processus industriels de classe mondiale, technologiquement avancées, respectueuses de l'environnement et économes en énergie, à des coûts compétitifs, sans compromettre la qualité ou les performances.",
+  "p.2": "Basés à Meerut, dans l'Uttar Pradesh, nous sommes passés d'un fabricant spécialisé d'évaporateurs à une société d'ingénierie industrielle à spectre complet. Notre expertise couvre le cycle de vie complet des usines de traitement - depuis la faisabilité initiale et la conception du processus jusqu'à l'ingénierie détaillée, la fabrication, la fourniture, l'installation, la mise en service et le support après-vente.",
   "p.3": "Avec une équipe d'ingénieurs de procédés, de fabricants et de chefs de projet dédiés, nous avons réalisé avec succès plus de 100 projets dans huit secteurs industriels divers : produits laitiers, pharmaceutique, transformation alimentaire, chimie, distillerie, papier, textile et énergie.",
   "p.4": "Fournir des équipements de processus industriels et des solutions d'ingénierie technologiquement avancés, économes en énergie et fiables qui optimisent les performances de production de nos clients, réduisent les coûts d'exploitation et dépassent les normes de qualité internationales.",
   "p.5": "Être reconnue comme la société indienne d'ingénierie de procédés industriels la plus fiable et la plus compétitive à l'échelle mondiale, établissant des références en matière de technologie d'évaporation, de séchage et d'ingénierie d'usines tout en contribuant à une croissance industrielle durable.",
@@ -29,8 +29,8 @@
   "team.name.1": "M. Vijay Kumar Dubey",
   "team.role.0": "Fondateur et PDG",
   "team.role.1": "Directeur",
-  "team.bio.0": "M. Gaurav Singhal est un ingénieur chimiste et un chef d'entreprise accompli avec plus de 25 ans d'expérience dynamique dans les opérations industrielles, la conception et l'ingénierie d'usines, la gestion de projets, le développement commercial et le leadership organisationnel. ",
-  "team.bio.1": "M. Vijay Kumar Dubey est un leader dynamique possédant une vaste expertise en gestion organisationnelle, en opérations commerciales et en développement de relations clients. ",
+  "team.bio.0": "M. Gaurav Singhal est un ingénieur chimiste et un chef d'entreprise accompli avec plus de 25 ans d'expérience dynamique dans les opérations industrielles, la conception et l'ingénierie d'usines, la gestion de projets, le développement commercial et le leadership organisationnel. En tant que fondateur et président-directeur général, il fournit une orientation stratégique à l'entreprise, favorisant l'innovation, l'excellence opérationnelle et la croissance durable. Sa connaissance approfondie du secteur, combinée à une forte concentration sur la satisfaction du client et la qualité de la livraison, a joué un rôle déterminant dans l'exécution réussie de projets d'ingénierie complexes. Sous sa direction, l'entreprise continue de renforcer sa présence sur le marché, d'établir des relations clients durables et de proposer des solutions axées sur la valeur dans divers secteurs. M. Singhal s'engage à favoriser une culture de professionnalisme, d'intégrité et d'amélioration continue, garantissant que l'organisation reste à la pointe de l'excellence et de la confiance des clients.",
+  "team.bio.1": "M. Vijay Kumar Dubey est un leader dynamique possédant une vaste expertise en gestion organisationnelle, en opérations commerciales et en développement de relations clients. En tant que directeur, il a joué un rôle déterminant dans la croissance de l'entreprise grâce à sa vision stratégique, son engagement envers la satisfaction de la clientèle et sa concentration sur la prestation de services de qualité. Il a joué un rôle clé dans la mise en place et l'exécution réussies de projets d'infrastructure en favorisant de solides relations avec les parties prenantes, en garantissant l'excellence opérationnelle et en promouvant une culture d'intégrité et de professionnalisme. Son leadership continue de guider l'organisation vers une croissance durable et une création de valeur à long terme pour les clients et les partenaires.",
   "btn.0": "Parlez à notre équipe",
   "btn.1": "Nos produits",
   "btn.2": "Demander un devis",
@@ -99,17 +99,6 @@
   "cert.desc.6": "Conforme aux directives BEE",
   "cert.desc.7": "Lignes directrices CPCB/PCB",
   "cert.desc.8": "Directive sur les équipements sous pression (UE)",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "sec.title.3",
-    "sec.title.4",
-    "sec.title.5",
-    "sec.title.6",
-    "h2.0"
-  ],
   "cap.label.0": "Ingénierie et conception des procédés",
   "cap.label.1": "Technologie d'évaporation",
   "cap.label.2": "Technologie de séchage",
@@ -120,5 +109,16 @@
   "exp.title.0": "Industrie laitière",
   "exp.title.1": "Pharmaceutique",
   "exp.title.2": "Industrie chimique",
-  "exp.title.3": "Transformation des aliments"
+  "exp.title.3": "Transformation des aliments",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "sec.title.3",
+    "sec.title.4",
+    "sec.title.5",
+    "sec.title.6",
+    "h2.0"
+  ]
 }

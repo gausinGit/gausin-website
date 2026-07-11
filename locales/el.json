@@ -143,5 +143,8 @@
   "chat.close": "Κοντά",
   "mega.milkProcessing": "Επεξεργασία γάλακτος",
   "mega.dairyFoodEquipments": "Εξοπλισμός Γαλακτοκομικών & Τροφίμων",
-  "chat.placeholder": "Πληκτρολογήστε το μήνυμά σας…"
+  "chat.placeholder": "Πληκτρολογήστε το μήνυμά σας…",
+  "footer.address": "DH-249, Pallavpuram Phase-1, Roorkee Road, Meerut, Uttar Pradesh, Ινδία - 250110",
+  "lang.searchPlaceholder": "Αναζήτηση γλώσσας ή περιοχής…",
+  "lang.searchEmpty": "Δεν υπάρχουν αντίστοιχες γλώσσες"
 }

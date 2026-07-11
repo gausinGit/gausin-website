@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "breadcrumb.cat.0": "Evaporatori",
   "tagline": "Evaporatore a vaschetta sottovuoto incamiciato per concentrazione batch con controllo preciso. Il funzionamento sotto vuoto abbassa il punto di ebollizione per proteggere i prodotti sensibili al calore durante ogni ciclo batch.",
   "qs.0.label": "L/lotto",
@@ -118,5 +112,11 @@
   "related.2.title": "Essiccatore a spruzzo",
   "related.0.desc": "Evaporazione continua ad alta capacità.",
   "related.1.desc": "Evaporatore compatto a piastre continue.",
-  "related.2.desc": "Produzione di polveri da concentrati."
+  "related.2.desc": "Produzione di polveri da concentrati.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

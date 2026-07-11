@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "category": "Pengering",
   "breadcrumb.cat.0": "Pengering",
   "tagline": "Pengering berkelanjutan untuk bahan kental, peka panas, dan kotor. Rakitan pisau yang berputar menyebarkan umpan ke dalam lapisan film tipis yang bergejolak di dinding yang dipanaskan, memungkinkan penguapan yang cepat dalam kondisi vakum, ideal untuk ZLD, garam limbah, dan produk bernilai tinggi.",
@@ -118,5 +112,11 @@
   "related.2.title": "Evaporator Sirkulasi Paksa",
   "related.0.desc": "Pengeringan langsung pasta dan kue saring.",
   "related.2.desc": "Konsentrasikan umpan sebelum ATFD.",
-  "related.1.desc": "Pengeringan padatan granular yang seragam dan lembut."
+  "related.1.desc": "Pengeringan padatan granular yang seragam dan lembut.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "breadcrumb.cat.0": "Évaporateurs",
   "category": "Évaporateurs",
   "tagline": "Évaporateur à cuve sous vide à enveloppe pour la concentration de lots avec un contrôle précis. Le fonctionnement sous vide abaisse le point d’ébullition pour protéger les produits sensibles à la chaleur pendant chaque cycle de lots.",
@@ -118,5 +112,11 @@
   "related.0.desc": "Évaporation continue de grande capacité.",
   "related.2.title": "Séchoir par pulvérisation",
   "related.1.desc": "Évaporateur à plaques continues compact.",
-  "related.2.desc": "Production de poudre à partir de concentrés."
+  "related.2.desc": "Production de poudre à partir de concentrés.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

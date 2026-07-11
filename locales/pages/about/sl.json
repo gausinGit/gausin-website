@@ -16,8 +16,8 @@
   "h3.2": "Tehnična usposobljenost",
   "h3.3": "Strokovno znanje v industriji",
   "p.0": "Desetletje natančnega inženiringa, tehnoloških inovacij in neomajne zavezanosti industrijski uspešnosti – odkrijte zgodbo Gausin.",
-  "p.1": "Gausin International Engineers Pvt. ",
-  "p.2": "S sedežem v Meerutu, Uttar Pradesh, smo zrasli iz specializiranega proizvajalca uparjalnikov v podjetje za industrijski inženiring celotnega spektra. ",
+  "p.1": "Gausin International Engineers Pvt. Ltd. je bilo ustanovljeno z edinstveno vizijo: prinesti vrhunske, tehnološko napredne, okolju prijazne in energetsko učinkovite industrijske procesne inženirske rešitve v indijsko in globalno industrijo po konkurenčnih cenah, brez kompromisov glede kakovosti ali učinkovitosti.",
+  "p.2": "S sedežem v Meerutu, Uttar Pradesh, smo zrasli iz specializiranega proizvajalca uparjalnikov v podjetje za industrijski inženiring celotnega spektra. Naše strokovno znanje zajema celoten življenjski cikel procesnih obratov – od začetne izvedljivosti in načrtovanja procesa do podrobnega inženiringa, izdelave, dobave, namestitve, zagona in poprodajne podpore.",
   "p.3": "Z ekipo predanih procesnih inženirjev, proizvajalcev in vodij projektov smo uspešno izvedli več kot 100 projektov v osmih različnih industrijskih sektorjih – mlečni, farmacevtski, živilskopredelovalni, kemični, destilarni, papirniški, tekstilni in energetski.",
   "p.4": "Zagotoviti tehnološko napredno, energetsko učinkovito in zanesljivo industrijsko procesno opremo in inženirske rešitve, ki optimizirajo proizvodno zmogljivost naših strank, zmanjšajo operativne stroške in presežejo mednarodne standarde kakovosti.",
   "p.5": "Biti priznan kot indijsko najbolj zaupanja vredno in globalno konkurenčno podjetje za industrijski procesni inženiring, ki postavlja merila uspešnosti na področju tehnologije izparevanja, sušenja in inženiringa obratov, hkrati pa prispeva k trajnostni industrijski rasti.",
@@ -29,8 +29,8 @@
   "team.name.1": "G. Vijay Kumar Dubey",
   "team.role.0": "Ustanovitelj in glavni izvršni direktor",
   "team.role.1": "Direktor",
-  "team.bio.0": "G. Gaurav Singhal je kemijski inženir in uspešen poslovni vodja z več kot 25-letnimi dinamičnimi izkušnjami na področju industrijskih operacij, načrtovanja obratov in inženiringa, vodenja projektov, poslovnega razvoja in organizacijskega vodenja. ",
-  "team.bio.1": "G. Vijay Kumar Dubey je dinamičen vodja z obsežnim strokovnim znanjem na področju organizacijskega vodenja, poslovnih operacij in razvoja odnosov s strankami. ",
+  "team.bio.0": "G. Gaurav Singhal je kemijski inženir in uspešen poslovni vodja z več kot 25-letnimi dinamičnimi izkušnjami na področju industrijskih operacij, načrtovanja obratov in inženiringa, vodenja projektov, poslovnega razvoja in organizacijskega vodenja. Kot ustanovitelj in glavni izvršni direktor zagotavlja strateško usmeritev podjetja, spodbuja inovacije, operativno odličnost in trajnostno rast. Njegovo obsežno poznavanje industrije, skupaj z močno osredotočenostjo na zadovoljstvo strank in kakovost dostave, je bilo ključnega pomena pri uspešni izvedbi zapletenih inženirskih projektov. Pod njegovim vodstvom podjetje še naprej krepi svojo prisotnost na trgu, gradi trajne odnose s strankami in zagotavlja rešitve, ki temeljijo na vrednosti v različnih sektorjih. G. Singhal je zavezan spodbujanju kulture strokovnosti, integritete in nenehnega izboljševanja, s čimer zagotavlja, da organizacija ostaja v ospredju odličnosti in zaupanja strank.",
+  "team.bio.1": "G. Vijay Kumar Dubey je dinamičen vodja z obsežnim strokovnim znanjem na področju organizacijskega vodenja, poslovnih operacij in razvoja odnosov s strankami. Kot direktor je s svojo strateško vizijo, predanostjo zadovoljstvu strank in osredotočanjem na zagotavljanje kakovosti storitev ključno prispeval k rasti podjetja. Imel je ključno vlogo pri uspešni vzpostavitvi in ​​izvedbi infrastrukturnih projektov s spodbujanjem močnih odnosov med deležniki, zagotavljanjem operativne odličnosti in spodbujanjem kulture integritete in strokovnosti. Njegovo vodstvo še naprej vodi organizacijo k trajnostni rasti in ustvarjanju dolgoročne vrednosti za stranke in partnerje.",
   "btn.0": "Pogovorite se z našo ekipo",
   "btn.1": "Naši izdelki",
   "btn.2": "Zahtevajte ponudbo",
@@ -99,17 +99,6 @@
   "cert.desc.6": "Skladno s smernicami BEE",
   "cert.desc.7": "Smernice CPCB / PCB",
   "cert.desc.8": "Direktiva o tlačni opremi (EU)",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "sec.title.3",
-    "sec.title.4",
-    "sec.title.5",
-    "sec.title.6",
-    "h2.0"
-  ],
   "cap.label.0": "Procesno inženirstvo in oblikovanje",
   "cap.label.1": "Tehnologija izhlapevanja",
   "cap.label.2": "Tehnologija sušenja",
@@ -120,5 +109,16 @@
   "exp.title.0": "Mlečna industrija",
   "exp.title.1": "Farmacevtski",
   "exp.title.2": "Kemijska industrija",
-  "exp.title.3": "Predelava hrane"
+  "exp.title.3": "Predelava hrane",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "sec.title.3",
+    "sec.title.4",
+    "sec.title.5",
+    "sec.title.6",
+    "h2.0"
+  ]
 }

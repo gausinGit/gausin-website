@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "qs.0.label": "Kawaida",
   "category": "CIP & Kusafisha Systems",
   "breadcrumb.cat.0": "CIP & Kusafisha Systems",
@@ -107,5 +101,11 @@
   "related.1.title": "Mchungaji wa Maziwa",
   "related.2.desc": "Mizinga ya mpira ya kunyunyizia CIP.",
   "related.1.desc": "CIP-tayari mfugaji.",
-  "related.0.desc": "Kiwanda cha maziwa cha CIP kilichojumuishwa."
+  "related.0.desc": "Kiwanda cha maziwa cha CIP kilichojumuishwa.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

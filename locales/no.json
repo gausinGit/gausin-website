@@ -143,5 +143,8 @@
   "chat.send": "Sende",
   "mega.milkProcessing": "Melkeforedling",
   "mega.dairyFoodEquipments": "Meieri og matutstyr",
-  "chat.placeholder": "Skriv inn meldingen din..."
+  "chat.placeholder": "Skriv inn meldingen din...",
+  "footer.address": "DH-249, Pallavpuram Phase-1, Roorkee Road, Meerut, Uttar Pradesh, India - 250110",
+  "lang.searchEmpty": "Ingen samsvarende språk",
+  "lang.searchPlaceholder": "Søk etter språk eller region …"
 }

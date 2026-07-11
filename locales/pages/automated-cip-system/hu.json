@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "qs.0.label": "Standard",
   "tagline": "Teljesen automatizált Clean-in-Place rendszerek PLC-vezérelt előöblítéssel, maró mosással, savas mosással és végső öblítéssel.",
   "breadcrumb.cat.0": "CIP és tisztítórendszerek",
@@ -107,5 +101,11 @@
   "related.1.title": "Tejpasztőröző",
   "related.2.desc": "CIP permetezőgolyós tartályok.",
   "related.1.desc": "CIP-kész pasztőröző.",
-  "related.0.desc": "Integrált CIP tejüzem."
+  "related.0.desc": "Integrált CIP tejüzem.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "breadcrumb.cat.0": "Sušičky",
   "category": "Sušičky",
   "qs.0.label": "Vykurovacia plocha",
@@ -118,5 +112,11 @@
   "related.0.title": "Odstreďovacia blesková sušička",
   "related.0.desc": "Priame sušenie pást a filtračných koláčov.",
   "related.1.desc": "Jemné rovnomerné sušenie zrnitých pevných látok.",
-  "related.2.desc": "Koncentrujte krmivo pred ATFD."
+  "related.2.desc": "Koncentrujte krmivo pred ATFD.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

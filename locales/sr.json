@@ -143,5 +143,8 @@
   "mega.milkProcessing": "Прерада млека",
   "mega.dairyFoodEquipments": "Опрема за млечне производе и храну",
   "chat.send": "Пошаљи",
-  "chat.placeholder": "Унесите своју поруку…"
+  "chat.placeholder": "Унесите своју поруку…",
+  "footer.address": "ДХ-249, Паллавпурам Пхасе-1, Рооркее Роад, Меерут, Уттар Прадесх, Индија - 250110",
+  "lang.searchPlaceholder": "Претражи језик или регион…",
+  "lang.searchEmpty": "Нема одговарајућих језика"
 }

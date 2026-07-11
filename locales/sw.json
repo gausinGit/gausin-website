@@ -143,5 +143,8 @@
   "chat.placeholder": "Andika ujumbe wako...",
   "mega.milkProcessing": "Usindikaji wa Maziwa",
   "chat.send": "Tuma",
-  "mega.dairyFoodEquipments": "Vifaa vya Maziwa na Chakula"
+  "mega.dairyFoodEquipments": "Vifaa vya Maziwa na Chakula",
+  "footer.address": "DH-249, Pallavpuram Phase-1, Roorkee Road, Meerut, Uttar Pradesh, India - 250110",
+  "lang.searchPlaceholder": "Tafuta lugha au eneo...",
+  "lang.searchEmpty": "Hakuna lugha zinazolingana"
 }

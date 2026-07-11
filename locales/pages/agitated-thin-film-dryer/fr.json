@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "qs.0.label": "Zone de chauffage",
   "breadcrumb.cat.0": "Séchoirs",
   "category": "Séchoirs",
@@ -118,5 +112,11 @@
   "related.1.title": "Sécheur à lit fluidisé (FBD)",
   "related.0.desc": "Séchage direct des pâtes et gâteaux de filtration.",
   "related.1.desc": "Séchage doux et uniforme des solides granulaires.",
-  "related.2.desc": "Concentrez l’alimentation devant l’ATFD."
+  "related.2.desc": "Concentrez l’alimentation devant l’ATFD.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "category": "Drogers",
   "breadcrumb.cat.0": "Drogers",
   "qs.0.label": "Verwarmingsruimte",
@@ -118,5 +112,11 @@
   "related.0.title": "Spin Flash-droger",
   "related.0.desc": "Direct drogen van pasta's en filterkoeken.",
   "related.1.desc": "Zachte, gelijkmatige droging van korrelige vaste stoffen.",
-  "related.2.desc": "Krachtvoer vóór de ATFD."
+  "related.2.desc": "Krachtvoer vóór de ATFD.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

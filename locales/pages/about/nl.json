@@ -16,7 +16,7 @@
   "h3.2": "Technische vaardigheid",
   "h3.3": "Industrie-expertise",
   "p.0": "Een decennium van precisietechniek, technologische innovatie en niet-aflatende toewijding aan industriële prestaties: ontdek het Gausin-verhaal.",
-  "p.1": "Gausin Internationale Ingenieurs Pvt. ",
+  "p.1": "Gausin Internationale Ingenieurs Pvt. Ltd. werd opgericht met een unieke visie: het bieden van technologisch geavanceerde, milieuvriendelijke en energie-efficiënte industriële procestechnische oplossingen van wereldklasse aan Indiase en mondiale industrieën tegen concurrerende kosten, zonder concessies te doen aan kwaliteit of prestaties.",
   "p.2": "Met het hoofdkantoor in Meerut, Uttar Pradesh, zijn we uitgegroeid van een gespecialiseerde fabrikant van verdampers tot een industrieel engineeringbedrijf met een volledig spectrum. ",
   "p.3": "Met een team van toegewijde procesingenieurs, fabrikanten en projectmanagers hebben we met succes meer dan 100 projecten opgeleverd in acht verschillende industriële sectoren: zuivel, farmacie, voedselverwerking, chemie, distilleerderij, papier, textiel en energie.",
   "p.4": "Het leveren van technologisch geavanceerde, energie-efficiënte en betrouwbare industriële procesapparatuur en technische oplossingen die de productieprestaties van onze klanten optimaliseren, de bedrijfskosten verlagen en de internationale kwaliteitsnormen overtreffen.",
@@ -29,8 +29,8 @@
   "team.name.1": "De heer Vijay Kumar Dubey",
   "team.role.0": "Oprichter en algemeen directeur",
   "team.role.1": "Directeur",
-  "team.bio.0": "De heer Gaurav Singhal is een chemisch ingenieur en een ervaren bedrijfsleider met meer dan 25 jaar dynamische ervaring in industriële activiteiten, fabrieksontwerp en -engineering, projectmanagement, bedrijfsontwikkeling en organisatorisch leiderschap. ",
-  "team.bio.1": "De heer Vijay Kumar Dubey is een dynamische leider met uitgebreide expertise op het gebied van organisatiemanagement, bedrijfsvoering en ontwikkeling van klantrelaties. ",
+  "team.bio.0": "De heer Gaurav Singhal is een chemisch ingenieur en een ervaren bedrijfsleider met meer dan 25 jaar dynamische ervaring in industriële activiteiten, fabrieksontwerp en -engineering, projectmanagement, bedrijfsontwikkeling en organisatorisch leiderschap. Als oprichter en Chief Executive Officer geeft hij strategische leiding aan het bedrijf en stimuleert hij innovatie, operationele uitmuntendheid en duurzame groei. Zijn uitgebreide branchekennis, gecombineerd met een sterke focus op klanttevredenheid en kwaliteitslevering, heeft een belangrijke rol gespeeld bij het succesvol uitvoeren van complexe engineeringprojecten. Onder zijn leiding blijft het bedrijf zijn marktaanwezigheid versterken, duurzame klantrelaties opbouwen en waardegedreven oplossingen leveren in diverse sectoren. De heer Singhal zet zich in voor het bevorderen van een cultuur van professionaliteit, integriteit en voortdurende verbetering, en zorgt ervoor dat de organisatie voorop blijft lopen op het gebied van uitmuntendheid en klantvertrouwen.",
+  "team.bio.1": "De heer Vijay Kumar Dubey is een dynamische leider met uitgebreide expertise op het gebied van organisatiemanagement, bedrijfsvoering en ontwikkeling van klantrelaties. Als directeur heeft hij een belangrijke rol gespeeld bij het stimuleren van de groei van het bedrijf door zijn strategische visie, toewijding aan klanttevredenheid en focus op hoogwaardige dienstverlening. Hij heeft een sleutelrol gespeeld bij het succesvol opzetten en uitvoeren van infrastructuurprojecten door sterke relaties met belanghebbenden te bevorderen, operationele uitmuntendheid te garanderen en een cultuur van integriteit en professionaliteit te bevorderen. Zijn leiderschap blijft de organisatie begeleiden in de richting van duurzame groei en waardecreatie op lange termijn voor klanten en partners.",
   "btn.0": "Praat met ons team",
   "btn.1": "Onze producten",
   "btn.2": "Vraag een offerte aan",
@@ -99,17 +99,6 @@
   "cert.desc.6": "Voldoet aan de BEE-richtlijnen",
   "cert.desc.7": "CPCB/PCB-richtlijnen",
   "cert.desc.8": "Richtlijn drukapparatuur (EU)",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "sec.title.3",
-    "sec.title.4",
-    "sec.title.5",
-    "sec.title.6",
-    "h2.0"
-  ],
   "cap.label.0": "Procestechniek & Ontwerp",
   "cap.label.1": "Verdampingstechnologie",
   "cap.label.2": "Droogtechnologie",
@@ -120,5 +109,16 @@
   "exp.title.0": "Zuivelindustrie",
   "exp.title.1": "Farmaceutisch",
   "exp.title.2": "Chemische Industrie",
-  "exp.title.3": "Voedselverwerking"
+  "exp.title.3": "Voedselverwerking",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "sec.title.3",
+    "sec.title.4",
+    "sec.title.5",
+    "sec.title.6",
+    "h2.0"
+  ]
 }

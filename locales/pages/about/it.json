@@ -16,8 +16,8 @@
   "h3.2": "Competenza tecnica",
   "h3.3": "Competenza nel settore",
   "p.0": "Un decennio di ingegneria di precisione, innovazione tecnologica e impegno costante per le prestazioni industriali: scopri la storia di Gausin.",
-  "p.1": "Gausin International Ingegneri Pvt. ",
-  "p.2": "Con sede a Meerut, Uttar Pradesh, siamo passati da un produttore specializzato di evaporatori a una società di ingegneria industriale a spettro completo. ",
+  "p.1": "Gausin International Ingegneri Pvt. Ltd. è stata fondata con una visione singolare: offrire soluzioni di ingegneria dei processi industriali di livello mondiale, tecnologicamente avanzate, rispettose dell'ambiente ed efficienti dal punto di vista energetico alle industrie indiane e globali a costi competitivi, senza compromettere la qualità o le prestazioni.",
+  "p.2": "Con sede a Meerut, Uttar Pradesh, siamo passati da un produttore specializzato di evaporatori a una società di ingegneria industriale a spettro completo. La nostra esperienza copre l'intero ciclo di vita degli impianti di processo: dalla fattibilità iniziale e progettazione del processo all'ingegneria dettagliata, fabbricazione, fornitura, installazione, messa in servizio e supporto post-vendita.",
   "p.3": "Con un team dedicato di ingegneri di processo, produttori e project manager, abbiamo realizzato con successo oltre 100 progetti in otto diversi settori industriali: lattiero-caseario, farmaceutico, trasformazione alimentare, chimico, distilleria, carta, tessile ed energia.",
   "p.4": "Fornire apparecchiature per processi industriali e soluzioni ingegneristiche tecnologicamente avanzate, efficienti dal punto di vista energetico e affidabili che ottimizzino le prestazioni di produzione dei nostri clienti, riducano i costi operativi e superino gli standard di qualità internazionali.",
   "p.5": "Essere riconosciuti come l'azienda indiana di ingegneria dei processi industriali più affidabile e competitiva a livello globale, stabilendo parametri di riferimento nella tecnologia di evaporazione, essiccazione e ingegneria impiantistica, contribuendo al contempo alla crescita industriale sostenibile.",
@@ -29,8 +29,8 @@
   "team.name.1": "Signor Vijay Kumar Dubey",
   "team.role.0": "Fondatore e amministratore delegato",
   "team.role.1": "Direttore",
-  "team.bio.0": "Il signor Gaurav Singhal è un ingegnere chimico e un affermato leader aziendale con oltre 25 anni di esperienza dinamica in operazioni industriali, progettazione e ingegneria di impianti, gestione di progetti, sviluppo aziendale e leadership organizzativa. ",
-  "team.bio.1": "Il signor Vijay Kumar Dubey è un leader dinamico con una vasta esperienza nella gestione organizzativa, nelle operazioni aziendali e nello sviluppo delle relazioni con i clienti. ",
+  "team.bio.0": "Il signor Gaurav Singhal è un ingegnere chimico e un affermato leader aziendale con oltre 25 anni di esperienza dinamica in operazioni industriali, progettazione e ingegneria di impianti, gestione di progetti, sviluppo aziendale e leadership organizzativa. In qualità di fondatore e amministratore delegato, fornisce la direzione strategica all'azienda, guidando l'innovazione, l'eccellenza operativa e la crescita sostenibile. La sua vasta conoscenza del settore, combinata con una forte attenzione alla soddisfazione del cliente e alla qualità della fornitura, è stata determinante nell'esecuzione con successo di progetti ingegneristici complessi. Sotto la sua guida, l’azienda continua a rafforzare la propria presenza sul mercato, a costruire relazioni durature con i clienti e a fornire soluzioni orientate al valore in diversi settori. Il signor Singhal si impegna a promuovere una cultura di professionalità, integrità e miglioramento continuo, garantendo che l'organizzazione rimanga in prima linea nell'eccellenza e nella fiducia dei clienti.",
+  "team.bio.1": "Il signor Vijay Kumar Dubey è un leader dinamico con una vasta esperienza nella gestione organizzativa, nelle operazioni aziendali e nello sviluppo delle relazioni con i clienti. In qualità di Direttore, ha avuto un ruolo determinante nel guidare la crescita dell'azienda attraverso la sua visione strategica, l'impegno per la soddisfazione del cliente e l'attenzione alla fornitura di servizi di qualità. Ha svolto un ruolo chiave nella creazione e nell'esecuzione di progetti infrastrutturali di successo, favorendo forti relazioni con le parti interessate, garantendo l'eccellenza operativa e promuovendo una cultura di integrità e professionalità. La sua leadership continua a guidare l'organizzazione verso una crescita sostenibile e la creazione di valore a lungo termine per clienti e partner.",
   "btn.0": "Parla con il nostro team",
   "btn.1": "I nostri prodotti",
   "btn.2": "Richiedi un preventivo",
@@ -99,17 +99,6 @@
   "cert.desc.6": "Conforme alle linee guida BEE",
   "cert.desc.7": "Linee guida CPCB/PCB",
   "cert.desc.8": "Direttiva sulle attrezzature a pressione (UE)",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "sec.title.3",
-    "sec.title.4",
-    "sec.title.5",
-    "sec.title.6",
-    "h2.0"
-  ],
   "cap.label.0": "Ingegneria e progettazione di processo",
   "cap.label.1": "Tecnologia di evaporazione",
   "cap.label.2": "Tecnologia di essiccazione",
@@ -120,5 +109,16 @@
   "exp.title.0": "Industria lattiero-casearia",
   "exp.title.1": "Farmaceutico",
   "exp.title.2": "Industria chimica",
-  "exp.title.3": "Trasformazione alimentare"
+  "exp.title.3": "Trasformazione alimentare",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "sec.title.3",
+    "sec.title.4",
+    "sec.title.5",
+    "sec.title.6",
+    "h2.0"
+  ]
 }

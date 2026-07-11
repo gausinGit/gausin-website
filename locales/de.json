@@ -143,5 +143,8 @@
   "chat.placeholder": "Geben Sie Ihre Nachricht ein ...",
   "chat.send": "Schicken",
   "mega.milkProcessing": "Milchverarbeitung",
-  "mega.dairyFoodEquipments": "Molkerei- und Lebensmittelausrüstung"
+  "mega.dairyFoodEquipments": "Molkerei- und Lebensmittelausrüstung",
+  "footer.address": "DH-249, Pallavpuram Phase-1, Roorkee Road, Meerut, Uttar Pradesh, Indien – 250110",
+  "lang.searchEmpty": "Keine passenden Sprachen",
+  "lang.searchPlaceholder": "Sprache oder Region suchen…"
 }

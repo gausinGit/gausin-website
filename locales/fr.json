@@ -143,5 +143,8 @@
   "mega.milkProcessing": "Transformation du lait",
   "chat.placeholder": "Tapez votre message…",
   "chat.send": "Envoyer",
-  "mega.dairyFoodEquipments": "Équipements pour produits laitiers et alimentaires"
+  "mega.dairyFoodEquipments": "Équipements pour produits laitiers et alimentaires",
+  "footer.address": "DH-249, Pallavpuram Phase-1, Roorkee Road, Meerut, Uttar Pradesh, Inde - 250110",
+  "lang.searchEmpty": "Aucune langue correspondante",
+  "lang.searchPlaceholder": "Rechercher une langue ou une région…"
 }

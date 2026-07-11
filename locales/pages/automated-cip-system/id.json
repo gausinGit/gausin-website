@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "qs.0.label": "Standar",
   "tagline": "Sistem Clean-in-Place yang sepenuhnya otomatis dengan urutan pra-bilas, pencucian kaustik, pencucian asam, dan pembilasan akhir yang dikontrol PLC.",
   "breadcrumb.cat.0": "CIP & Sistem Pembersihan",
@@ -107,5 +101,11 @@
   "related.1.title": "Pasteurisasi Susu",
   "related.0.desc": "Pabrik susu CIP terintegrasi.",
   "related.1.desc": "Pasteurisasi siap CIP.",
-  "related.2.desc": "Tangki bola semprot CIP."
+  "related.2.desc": "Tangki bola semprot CIP.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

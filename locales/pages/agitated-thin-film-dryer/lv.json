@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "category": "Žāvētāji",
   "breadcrumb.cat.0": "Žāvētāji",
   "qs.0.label": "Apkures zona",
@@ -118,5 +112,11 @@
   "related.2.title": "Piespiedu cirkulācijas iztvaicētājs",
   "related.0.desc": "Tieša pastas un filtru kūku žāvēšana.",
   "related.2.desc": "Koncentrējiet barību pirms ATFD.",
-  "related.1.desc": "Maiga vienmērīga granulētu cietvielu žāvēšana."
+  "related.1.desc": "Maiga vienmērīga granulētu cietvielu žāvēšana.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

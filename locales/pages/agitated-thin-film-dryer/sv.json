@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "category": "Torktumlare",
   "breadcrumb.cat.0": "Torktumlare",
   "qs.0.label": "Värmeområde",
@@ -118,5 +112,11 @@
   "related.2.title": "Forcerad cirkulationsförångare",
   "related.0.desc": "Direkt torkning av pastor och filterkakor.",
   "related.1.desc": "Skonsam enhetlig torkning av granulära fasta ämnen.",
-  "related.2.desc": "Kraftfoder före ATFD."
+  "related.2.desc": "Kraftfoder före ATFD.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

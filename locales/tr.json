@@ -143,5 +143,8 @@
   "chat.send": "Göndermek",
   "mega.dairyFoodEquipments": "Süt ve Gıda Ekipmanları",
   "chat.placeholder": "Mesajınızı yazın…",
-  "mega.milkProcessing": "Süt İşleme"
+  "mega.milkProcessing": "Süt İşleme",
+  "footer.address": "DH-249, Pallavpuram Faz-1, Roorkee Yolu, Meerut, Uttar Pradesh, Hindistan - 250110",
+  "lang.searchPlaceholder": "Dil veya bölgeyi arayın…",
+  "lang.searchEmpty": "Eşleşen dil yok"
 }

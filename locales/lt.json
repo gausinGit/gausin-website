@@ -143,5 +143,8 @@
   "chat.placeholder": "Įveskite savo žinutę…",
   "chat.send": "Siųsti",
   "mega.dairyFoodEquipments": "Pieno ir maisto įranga",
-  "mega.milkProcessing": "Pieno perdirbimas"
+  "mega.milkProcessing": "Pieno perdirbimas",
+  "footer.address": "DH-249, Pallavpuram Phase-1, Roorkee Road, Meerut, Uttar Pradesh, Indija – 250110",
+  "lang.searchPlaceholder": "Ieškoti kalbos arba regiono…",
+  "lang.searchEmpty": "Nėra atitinkančių kalbų"
 }

@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "tagline": "Kontinuierlicher Trockner für viskose, wärmeempfindliche und verschmutzende Materialien. Eine rotierende Messeranordnung verteilt das Futter in einem dünnen, turbulenten Film auf der beheizten Wand und ermöglicht so eine schnelle Verdampfung unter Vakuum, ideal für ZLD, Abwassersalze und hochwertige Produkte.",
   "category": "Trockner",
   "breadcrumb.cat.0": "Trockner",
@@ -118,5 +112,11 @@
   "related.1.title": "Wirbelschichttrockner (FBD)",
   "related.2.title": "Zwangsumlaufverdampfer",
   "related.2.desc": "Kraftfutter vor dem ATFD.",
-  "related.1.desc": "Schonende und gleichmäßige Trocknung körniger Feststoffe."
+  "related.1.desc": "Schonende und gleichmäßige Trocknung körniger Feststoffe.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

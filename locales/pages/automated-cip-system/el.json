@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "qs.0.label": "Πρότυπο",
   "tagline": "Πλήρως αυτοματοποιημένα συστήματα Clean-in-Place με ελεγχόμενη με PLC προ-ξέπλυμα, καυστική πλύση, πλύση με οξύ και τελικές ακολουθίες ξεβγάλματος.",
   "category": "Συστήματα CIP & Cleaning",
@@ -107,5 +101,11 @@
   "related.1.title": "Παστεριωτής γάλακτος",
   "related.2.desc": "Δεξαμενές σφαιρών ψεκασμού CIP.",
   "related.0.desc": "Ολοκληρωμένη γαλακτοκομική μονάδα CIP.",
-  "related.1.desc": "Παστεριωτής έτοιμος για CIP."
+  "related.1.desc": "Παστεριωτής έτοιμος για CIP.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

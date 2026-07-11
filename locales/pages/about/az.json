@@ -1,15 +1,4 @@
 {
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "sec.title.3",
-    "sec.title.4",
-    "sec.title.5",
-    "sec.title.6",
-    "h2.0"
-  ],
   "_meta.title": "Haqqımızda | ",
   "hero.desc.0": "On illik dəqiq mühəndislik, texnoloji yenilik və sənaye performansına sarsılmaz sadiqlik - Gausin hekayəsini kəşf edin.",
   "sec.label.0": "Bizim Hekayəmiz",
@@ -28,7 +17,7 @@
   "h3.2": "Texniki Bacarıq",
   "h3.3": "Sənaye Ekspertizası",
   "p.0": "On illik dəqiq mühəndislik, texnoloji yenilik və sənaye performansına sarsılmaz sadiqlik - Gausin hekayəsini kəşf edin.",
-  "p.1": "Gausin International Engineers Pvt. ",
+  "p.1": "Gausin International Engineers Pvt. Ltd unikal bir baxışla yaradılmışdır: keyfiyyət və performansdan ödün vermədən Hindistan və qlobal sənayelərə dünya səviyyəli, texnoloji cəhətdən qabaqcıl, ekoloji cəhətdən təmiz və enerjiyə qənaət edən sənaye proses mühəndisliyi həllərini rəqabətqabiliyyətli xərclərlə gətirmək.",
   "p.2": "Baş ofisi Uttar Pradeş ştatının Meerut şəhərində yerləşən biz ixtisaslaşmış buxarlandırıcı istehsalçıdan tam spektrli sənaye mühəndisliyi şirkətinə çevrilmişik. ",
   "p.3": "Xüsusi proses mühəndisləri, istehsalçılar və layihə menecerlərindən ibarət komanda ilə biz səkkiz müxtəlif sənaye sektorunda - süd, əczaçılıq, qida emalı, kimya, içki, kağız, tekstil və enerji üzrə 100-dən çox layihəni uğurla həyata keçirmişik.",
   "p.4": "Müştərilərimizin istehsal göstəricilərini optimallaşdıran, əməliyyat xərclərini azaldan və beynəlxalq keyfiyyət standartlarını aşan texnoloji cəhətdən qabaqcıl, enerjiyə qənaət edən və etibarlı sənaye proses avadanlığı və mühəndis həlləri təqdim etmək.",
@@ -41,8 +30,8 @@
   "team.name.1": "Cənab Vijay Kumar Dubey",
   "team.role.0": "Təsisçi və Baş İcraçı Direktor",
   "team.role.1": "Direktor",
-  "team.bio.0": "Cənab Gaurav Singhal Kimya Mühəndisi və sənaye əməliyyatları, zavodun dizaynı və mühəndisliyi, layihələrin idarə edilməsi, biznesin inkişafı və təşkilati liderlik sahələrində 25 ildən çox dinamik təcrübəyə malik bacarıqlı biznes lideridir. ",
-  "team.bio.1": "Cənab Vijay Kumar Dubey təşkilati idarəetmə, biznes əməliyyatları və müştəri münasibətlərinin inkişafı sahəsində geniş təcrübəyə malik dinamik liderdir. ",
+  "team.bio.0": "Cənab Gaurav Singhal Kimya Mühəndisi və sənaye əməliyyatları, zavodun dizaynı və mühəndisliyi, layihələrin idarə edilməsi, biznesin inkişafı və təşkilati liderlik sahələrində 25 ildən çox dinamik təcrübəyə malik bacarıqlı biznes lideridir. Təsisçi və Baş İcraçı Direktor kimi o, şirkətə strateji istiqamət verir, innovasiyaları, əməliyyat mükəmməlliyini və davamlı inkişafı təmin edir. Onun geniş sənaye biliyi, müştəri məmnuniyyətinə və keyfiyyətli çatdırılmaya güclü diqqət yetirməklə birlikdə mürəkkəb mühəndislik layihələrinin uğurla həyata keçirilməsində mühüm rol oynamışdır. Onun rəhbərliyi altında şirkət bazardakı mövcudluğunu gücləndirməyə, davamlı müştəri əlaqələri qurmağa və müxtəlif sektorlarda dəyərə əsaslanan həllər təqdim etməyə davam edir. Cənab Sinqhal peşəkarlıq, dürüstlük və davamlı təkmilləşmə mədəniyyətini inkişaf etdirməyə sadiqdir, təşkilatın mükəmməllik və müştəri etimadının önündə qalmasını təmin edir.",
+  "team.bio.1": "Cənab Vijay Kumar Dubey təşkilati idarəetmə, biznes əməliyyatları və müştəri münasibətlərinin inkişafı sahəsində geniş təcrübəyə malik dinamik liderdir. Direktor olaraq, o, strateji baxışı, müştəri məmnuniyyətinə sadiqliyi və keyfiyyətli xidmətin göstərilməsi üzərində dayanması ilə şirkətin böyüməsinə təkan verməkdə mühüm rol oynamışdır. O, güclü maraqlı tərəflər əlaqələrini inkişaf etdirmək, əməliyyat mükəmməlliyini təmin etmək, dürüstlük və peşəkarlıq mədəniyyətini təşviq etməklə infrastruktur layihələrinin uğurla qurulmasında və icrasında əsas rol oynamışdır. Onun rəhbərliyi təşkilatı davamlı inkişafa və müştərilər və tərəfdaşlar üçün uzunmüddətli dəyər yaratmağa yönəltməyə davam edir.",
   "hero.label.0": "Haqqımızda",
   "crumb.0": "Ev",
   "crumb.1": "Haqqımızda",
@@ -120,5 +109,16 @@
   "sec.title.4": "Onillik <span>Mühəndislik İnkişafı</span>",
   "sec.title.5": "Mühəndislik <span>Bacarıqlar və Ekspertiza</span>",
   "sec.title.6": "Standartlar və <span>Sertifikatlar</span>",
-  "h2.0": "<span style=\"background:linear-gradient(135deg,var(--blue-300),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;\">Gausin ilə tərəfdaş olmağa hazırsınız?</span>"
+  "h2.0": "<span style=\"background:linear-gradient(135deg,var(--blue-300),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;\">Gausin ilə tərəfdaş olmağa hazırsınız?</span>",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "sec.title.3",
+    "sec.title.4",
+    "sec.title.5",
+    "sec.title.6",
+    "h2.0"
+  ]
 }

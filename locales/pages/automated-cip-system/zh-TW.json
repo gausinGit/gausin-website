@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "qs.0.label": "標準",
   "tagline": "全自動就地清洗系統，具有 PLC 控制的預沖洗、鹼洗、酸洗和最終沖洗順序。",
   "breadcrumb.cat.0": "CIP 和清洗系統",
@@ -107,5 +101,11 @@
   "related.0.title": "牛奶加工廠",
   "related.0.desc": "綜合 CIP 乳品廠。",
   "related.2.desc": "CIP 噴霧球罐。",
-  "related.1.desc": "CIP 巴氏滅菌器。"
+  "related.1.desc": "CIP 巴氏滅菌器。",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "breadcrumb.cat.0": "Kurutucular",
   "category": "Kurutucular",
   "qs.0.label": "Isıtma Alanı",
@@ -118,5 +112,11 @@
   "related.1.title": "Akışkan Yataklı Kurutucu (FBD)",
   "related.0.desc": "Macunların ve filtre keklerinin doğrudan kurutulması.",
   "related.1.desc": "Granül katıların nazik ve eşit şekilde kurutulması.",
-  "related.2.desc": "Yemi ATFD'den önce konsantre edin."
+  "related.2.desc": "Yemi ATFD'den önce konsantre edin.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

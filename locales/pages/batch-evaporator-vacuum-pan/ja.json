@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "breadcrumb.cat.0": "蒸発器",
   "category": "蒸発器",
   "tagline": "正確な制御によるバッチ濃縮のためのジャケット付き真空パンエバポレーター。真空操作により沸点が下がり、各バッチサイクル中に熱に弱い製品を保護します。",
@@ -118,5 +112,11 @@
   "related.0.desc": "連続大容量蒸着。",
   "related.2.title": "スプレードライヤー",
   "related.2.desc": "濃縮物からの粉末の製造。",
-  "related.1.desc": "コンパクトな連続プレート式蒸発器。"
+  "related.1.desc": "コンパクトな連続プレート式蒸発器。",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

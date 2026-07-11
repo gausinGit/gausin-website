@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "breadcrumb.cat.0": "Essiccatori",
   "category": "Essiccatori",
   "qs.0.label": "Zona riscaldamento",
@@ -118,5 +112,11 @@
   "related.2.title": "Evaporatore a Circolazione Forzata",
   "related.0.desc": "Essiccazione diretta di paste e panelli filtranti.",
   "related.2.desc": "Concentrare il mangime prima dell'ATFD.",
-  "related.1.desc": "Essiccazione delicata e uniforme di solidi granulari."
+  "related.1.desc": "Essiccazione delicata e uniforme di solidi granulari.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

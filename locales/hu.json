@@ -143,5 +143,8 @@
   "chat.close": "Közeli",
   "chat.placeholder": "Írja be üzenetét…",
   "mega.milkProcessing": "Tejfeldolgozás",
-  "mega.dairyFoodEquipments": "Tejipari és élelmiszeripari berendezések"
+  "mega.dairyFoodEquipments": "Tejipari és élelmiszeripari berendezések",
+  "footer.address": "DH-249, Pallavpuram Phase-1, Roorkee Road, Meerut, Uttar Pradesh, India - 250110",
+  "lang.searchPlaceholder": "Nyelv vagy régió keresése…",
+  "lang.searchEmpty": "Nincsenek megfelelő nyelvek"
 }

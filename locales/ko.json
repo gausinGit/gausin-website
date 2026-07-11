@@ -143,5 +143,8 @@
   "chat.send": "보내다",
   "mega.milkProcessing": "우유 가공",
   "chat.placeholder": "메시지를 입력하세요…",
-  "mega.dairyFoodEquipments": "유제품 및 식품 장비"
+  "mega.dairyFoodEquipments": "유제품 및 식품 장비",
+  "footer.address": "DH-249, Pallavpuram Phase-1, Roorkee Road, Meerut, 우타르프라데시, 인도 - 250110",
+  "lang.searchPlaceholder": "언어 또는 지역 검색…",
+  "lang.searchEmpty": "일치하는 언어가 없습니다."
 }

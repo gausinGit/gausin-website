@@ -143,5 +143,8 @@
   "mega.milkProcessing": "दूध प्रसंस्करण",
   "chat.send": "भेजना",
   "chat.placeholder": "अपना संदेश टाइप करें...",
-  "mega.dairyFoodEquipments": "डेयरी एवं खाद्य उपकरण"
+  "mega.dairyFoodEquipments": "डेयरी एवं खाद्य उपकरण",
+  "footer.address": "डीएच-249, पल्लवपुरम फेज़-1, रूड़की रोड, मेरठ, उत्तर प्रदेश, भारत - 250110",
+  "lang.searchEmpty": "कोई मेल खाती भाषा नहीं",
+  "lang.searchPlaceholder": "भाषा या क्षेत्र खोजें..."
 }

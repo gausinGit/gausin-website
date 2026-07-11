@@ -16,7 +16,7 @@
   "h3.2": "Műszaki jártasság",
   "h3.3": "Iparági szakértelem",
   "p.0": "Egy évtizednyi precíziós tervezés, technológiai innováció és rendíthetetlen elkötelezettség az ipari teljesítmény iránt – fedezze fel Gausin történetét.",
-  "p.1": "Gausin International Engineers Pvt. ",
+  "p.1": "Gausin International Engineers Pvt. Ltd.-t azzal a céllal alapították, hogy világszínvonalú, technológiailag fejlett, környezetbarát és energiahatékony ipari folyamatmérnöki megoldásokat vigyen el az indiai és a globális iparágakba versenyképes áron, minőségi vagy teljesítménybeli kompromisszumok nélkül.",
   "p.2": "Székhelyünk Meerutban, Uttar Pradesh államban található, és egy speciális elpárologtatógyártóból egy teljes spektrumú ipari mérnöki vállalattá nőttük ki magunkat. ",
   "p.3": "Elkötelezett folyamatmérnökökből, gyártókból és projektmenedzserekből álló csapattal több mint 100 projektet valósítottunk meg sikeresen nyolc különböző ipari ágazatban – tejipar, gyógyszeripar, élelmiszer-feldolgozás, vegyipar, szeszfőzdék, papír-, textil- és energiaipar.",
   "p.4": "Technológiailag fejlett, energiahatékony és megbízható ipari folyamatberendezések és mérnöki megoldások szállítása, amelyek optimalizálják ügyfeleink termelési teljesítményét, csökkentik a működési költségeket és felülmúlják a nemzetközi minőségi szabványokat.",
@@ -29,8 +29,8 @@
   "team.name.1": "Vijay Kumar Dubey úr",
   "team.role.0": "Alapító és vezérigazgató",
   "team.role.1": "Igazgató",
-  "team.bio.0": "Gaurav Singhal úr vegyészmérnök és kiváló üzleti vezető, aki több mint 25 éves dinamikus tapasztalattal rendelkezik az ipari műveletek, üzemtervezés és mérnöki munka, projektmenedzsment, üzletfejlesztés és szervezeti vezetés terén. ",
-  "team.bio.1": "Vijay Kumar Dubey dinamikus vezető, kiterjedt szakértelemmel a szervezetirányítás, az üzleti műveletek és az ügyfélkapcsolatok fejlesztése terén. ",
+  "team.bio.0": "Gaurav Singhal úr vegyészmérnök és kiváló üzleti vezető, aki több mint 25 éves dinamikus tapasztalattal rendelkezik az ipari műveletek, üzemtervezés és mérnöki munka, projektmenedzsment, üzletfejlesztés és szervezeti vezetés terén. Alapítóként és vezérigazgatóként stratégiai iránymutatást ad a vállalat számára, ösztönözve az innovációt, a működési kiválóságot és a fenntartható növekedést. Széleskörű iparági tudása, valamint a vevői elégedettségre és a minőségi szállításra való erős összpontosítás együttesen hozzájárult az összetett mérnöki projektek sikeres végrehajtásához. Irányítása alatt a vállalat továbbra is erősíti piaci jelenlétét, tartós ügyfélkapcsolatokat épít ki, és értékvezérelt megoldásokat szállít különböző ágazatokban. Mr. Singhal elkötelezett a professzionalizmus, az integritás és a folyamatos fejlesztés kultúrájának előmozdítása mellett, biztosítva, hogy a szervezet továbbra is a kiválóság és az ügyfelek bizalmának élvonalában maradjon.",
+  "team.bio.1": "Vijay Kumar Dubey dinamikus vezető, kiterjedt szakértelemmel a szervezetirányítás, az üzleti műveletek és az ügyfélkapcsolatok fejlesztése terén. Igazgatóként stratégiai víziója, az ügyfelek elégedettsége iránti elkötelezettsége és a minőségi szolgáltatásnyújtásra való összpontosítás révén jelentős szerepet játszott a vállalat növekedésében. Kulcsszerepet játszott az infrastrukturális projektek sikeres létrehozásában és végrehajtásában azáltal, hogy erősítette az érdekelt felekkel szoros kapcsolatokat, biztosította a működési kiválóságot, valamint előmozdította az integritás és a professzionalizmus kultúráját. Vezetése továbbra is a fenntartható növekedés és a hosszú távú értékteremtés felé irányítja a szervezetet az ügyfelek és partnerek számára.",
   "btn.0": "Beszéljen csapatunkkal",
   "btn.1": "Termékeink",
   "btn.2": "Kérjen árajánlatot",
@@ -99,17 +99,6 @@
   "cert.desc.6": "Megfelel a BEE irányelveinek",
   "cert.desc.7": "CPCB / PCB irányelvek",
   "cert.desc.8": "Nyomástartó berendezésekről szóló irányelv (EU)",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "sec.title.3",
-    "sec.title.4",
-    "sec.title.5",
-    "sec.title.6",
-    "h2.0"
-  ],
   "cap.label.0": "Process Engineering & Design",
   "cap.label.1": "Párolgási technológia",
   "cap.label.2": "Szárítási technológia",
@@ -120,5 +109,16 @@
   "exp.title.0": "Tejipar",
   "exp.title.1": "Gyógyszerészeti",
   "exp.title.2": "Vegyipar",
-  "exp.title.3": "Élelmiszer-feldolgozás"
+  "exp.title.3": "Élelmiszer-feldolgozás",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "sec.title.3",
+    "sec.title.4",
+    "sec.title.5",
+    "sec.title.6",
+    "h2.0"
+  ]
 }
