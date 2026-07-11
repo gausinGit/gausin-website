@@ -40,16 +40,16 @@ const SOCIAL_LINKS = {
 };
 
 const PRODUCT_MOBILE_LINKS = [
-  { href: 'products.html', label: 'All Products', icon: 'fa-border-all' },
-  { href: 'products.html#evaporators', label: 'Evaporators', icon: 'fa-droplet' },
-  { href: 'products.html#dryers', label: 'Dryers', icon: 'fa-wind' },
-  { href: 'products.html#heat-exchangers', label: 'Heat Exchangers', icon: 'fa-temperature-high' },
-  { href: 'products.html#cip', label: 'CIP Systems', icon: 'fa-recycle' },
-  { href: 'products.html#milk-processing', label: 'Dairy Processing', icon: 'fa-flask' },
-  { href: 'products.html#vessels', label: 'Pressure Vessels & Tanks', icon: 'fa-database' },
-  { href: 'products.html#milk-equipment', label: 'Milk Equipment', icon: 'fa-jar' },
-  { href: 'products.html#dairy-food-equipment', label: 'Dairy & Food Equipment', icon: 'fa-industry' },
-  { href: 'products.html#waste-management', label: 'Waste Management', icon: 'fa-leaf' },
+  { href: 'products.html', label: 'All Products', icon: 'fa-border-all', i18n: 'mobile.allProducts' },
+  { href: 'products.html#evaporators', label: 'Evaporators', icon: 'fa-droplet', i18n: 'mega.evaporators' },
+  { href: 'products.html#dryers', label: 'Dryers', icon: 'fa-wind', i18n: 'mega.dryers' },
+  { href: 'products.html#heat-exchangers', label: 'Heat Exchangers', icon: 'fa-temperature-high', i18n: 'mega.heatExchangers' },
+  { href: 'products.html#cip', label: 'CIP Systems', icon: 'fa-recycle', i18n: 'mega.cip' },
+  { href: 'products.html#milk-processing', label: 'Dairy Processing', icon: 'fa-flask', i18n: 'mega.dairyProcessing' },
+  { href: 'products.html#vessels', label: 'Pressure Vessels & Tanks', icon: 'fa-database', i18n: 'mega.vessels' },
+  { href: 'products.html#milk-equipment', label: 'Milk Equipment', icon: 'fa-jar', i18n: 'mega.milkEquipment' },
+  { href: 'products.html#dairy-food-equipment', label: 'Dairy & Food Equipment', icon: 'fa-industry', i18n: 'mega.dairyFood' },
+  { href: 'products.html#waste-management', label: 'Waste Management', icon: 'fa-leaf', i18n: 'mega.wasteManagement' },
 ];
 
 /* ─── Detect current page for active nav link ─────────────── */
@@ -66,48 +66,51 @@ const SECONDARY_MEGA_MENUS = [
     pageHref: 'services.html',
     navLabel: 'Services',
     navI18n: 'nav.services',
+    mobileAllI18n: 'mobile.allServices',
     headerIcon: 'fa-screwdriver-wrench',
     headerTitle: 'Engineering Services',
     headerDesc: 'End-to-End Project Delivery',
     items: [
-      { href: 'services.html#process-design',        icon: 'fa-drafting-compass',  title: 'Process Design',         desc: 'Simulation, P&ID, Equipment Sizing' },
-      { href: 'services.html#detailed-engineering',  icon: 'fa-ruler-combined',    title: 'Detailed Engineering',   desc: '3D CAD, Piping, Instrumentation' },
-      { href: 'services.html#turnkey-execution',     icon: 'fa-project-diagram',   title: 'Turnkey Execution',      desc: 'Planning, Commissioning, Handover' },
-      { href: 'services.html#energy-optimization',   icon: 'fa-bolt',              title: 'Energy Optimization',    desc: 'MVR, Heat Recovery, Audits' },
-      { href: 'services.html#automation-control',    icon: 'fa-robot',             title: 'Automation & Control',   desc: 'PLC/SCADA, IoT Integration' },
-      { href: 'services.html#consultancy',           icon: 'fa-headset',           title: 'Technical Consultancy',  desc: 'Troubleshooting, De-Bottlenecking' },
+      { href: 'services.html#process-design',        icon: 'fa-drafting-compass',  title: 'Process Design',         desc: 'Simulation, P&ID, Equipment Sizing', titleI18n: 'mega.serv.processDesign', descI18n: 'mega.serv.processDesignDesc' },
+      { href: 'services.html#detailed-engineering',  icon: 'fa-ruler-combined',    title: 'Detailed Engineering',   desc: '3D CAD, Piping, Instrumentation', titleI18n: 'mega.serv.detailedEngineering', descI18n: 'mega.serv.detailedEngineeringDesc' },
+      { href: 'services.html#turnkey-execution',     icon: 'fa-project-diagram',   title: 'Turnkey Execution',      desc: 'Planning, Commissioning, Handover', titleI18n: 'mega.serv.turnkeyExecution', descI18n: 'mega.serv.turnkeyExecutionDesc' },
+      { href: 'services.html#energy-optimization',   icon: 'fa-bolt',              title: 'Energy Optimization',    desc: 'MVR, Heat Recovery, Audits', titleI18n: 'mega.serv.energyOptimization', descI18n: 'mega.serv.energyOptimizationDesc' },
+      { href: 'services.html#automation-control',    icon: 'fa-robot',             title: 'Automation & Control',   desc: 'PLC/SCADA, IoT Integration', titleI18n: 'mega.serv.automationControl', descI18n: 'mega.serv.automationControlDesc' },
+      { href: 'services.html#consultancy',           icon: 'fa-headset',           title: 'Technical Consultancy',  desc: 'Troubleshooting, De-Bottlenecking', titleI18n: 'mega.serv.consultancy', descI18n: 'mega.serv.consultancyDesc' },
     ],
   },
   {
     pageHref: 'industries.html',
     navLabel: 'Industries',
     navI18n: 'nav.industries',
+    mobileAllI18n: 'mobile.allIndustries',
     headerIcon: 'fa-building',
     headerTitle: 'Industries We Serve',
     headerDesc: 'Sector-Specific Engineering Solutions',
     items: [
-      { href: 'industries.html#dairy',    icon: 'fa-cow',          title: 'Dairy Industry',    desc: 'Dairy Processing, Evaporators' },
-      { href: 'industries.html#pharma',   icon: 'fa-pills',        title: 'Pharmaceutical',    desc: 'GMP-Compliant Systems' },
-      { href: 'industries.html#chemical', icon: 'fa-flask-vial',   title: 'Chemical Industry', desc: 'Process Plants, Reactors' },
-      { href: 'industries.html#food',     icon: 'fa-utensils',     title: 'Food Processing',   desc: 'Hygienic Plant Solutions' },
-      { href: 'industries.html',          icon: 'fa-wine-bottle',  title: 'Distillery',        desc: 'Evaporation, Dehydration' },
-      { href: 'industries.html',          icon: 'fa-bolt-lightning',title: 'Energy & More',    desc: 'Paper, Textile, Energy Sectors' },
+      { href: 'industries.html#dairy',    icon: 'fa-cow',          title: 'Dairy Industry',    desc: 'Dairy Processing, Evaporators', titleI18n: 'mega.ind.dairy', descI18n: 'mega.ind.dairyDesc' },
+      { href: 'industries.html#pharma',   icon: 'fa-pills',        title: 'Pharmaceutical',    desc: 'GMP-Compliant Systems', titleI18n: 'mega.ind.pharma', descI18n: 'mega.ind.pharmaDesc' },
+      { href: 'industries.html#chemical', icon: 'fa-flask-vial',   title: 'Chemical Industry', desc: 'Process Plants, Reactors', titleI18n: 'mega.ind.chemical', descI18n: 'mega.ind.chemicalDesc' },
+      { href: 'industries.html#food',     icon: 'fa-utensils',     title: 'Food Processing',   desc: 'Hygienic Plant Solutions', titleI18n: 'mega.ind.food', descI18n: 'mega.ind.foodDesc' },
+      { href: 'industries.html',          icon: 'fa-wine-bottle',  title: 'Distillery',        desc: 'Evaporation, Dehydration', titleI18n: 'mega.ind.distillery', descI18n: 'mega.ind.distilleryDesc' },
+      { href: 'industries.html',          icon: 'fa-bolt-lightning',title: 'Energy & More',    desc: 'Paper, Textile, Energy Sectors', titleI18n: 'mega.ind.energyMore', descI18n: 'mega.ind.energyMoreDesc' },
     ],
   },
   {
     pageHref: 'technology.html',
     navLabel: 'Technology',
     navI18n: 'nav.technology',
+    mobileAllI18n: 'mobile.allTechnology',
     headerIcon: 'fa-microchip',
     headerTitle: 'Technology & Innovation',
     headerDesc: 'Advanced Tools and Manufacturing',
     items: [
-      { href: 'technology.html#process-simulation', icon: 'fa-atom',             title: 'Process Simulation',    desc: 'CHEMCAD, Mass & Energy Balance' },
-      { href: 'technology.html#process-simulation', icon: 'fa-fire-flame-curved',title: 'Thermal Design',        desc: 'HTRI Xchanger Suite' },
-      { href: 'technology.html#process-simulation', icon: 'fa-pen-ruler',        title: 'CAD & 3D Design',       desc: 'AutoCAD, P&IDs, Plant Layout' },
-      { href: 'technology.html#fabrication',        icon: 'fa-industry',         title: 'Fabrication Technology',desc: 'CNC, TIG/MIG Welding, NDT' },
-      { href: 'technology.html#automation-iot',     icon: 'fa-sliders',          title: 'PLC/SCADA Automation',  desc: 'Control Panels, HMI Systems' },
-      { href: 'technology.html#automation-iot',     icon: 'fa-satellite-dish',   title: 'IoT & Remote Monitoring',desc: 'Cloud Analytics, Diagnostics' },
+      { href: 'technology.html#process-simulation', icon: 'fa-atom',             title: 'Process Simulation',    desc: 'CHEMCAD, Mass & Energy Balance', titleI18n: 'mega.tech.processSimulation', descI18n: 'mega.tech.processSimulationDesc' },
+      { href: 'technology.html#process-simulation', icon: 'fa-fire-flame-curved',title: 'Thermal Design',        desc: 'HTRI Xchanger Suite', titleI18n: 'mega.tech.thermalDesign', descI18n: 'mega.tech.thermalDesignDesc' },
+      { href: 'technology.html#process-simulation', icon: 'fa-pen-ruler',        title: 'CAD & 3D Design',       desc: 'AutoCAD, P&IDs, Plant Layout', titleI18n: 'mega.tech.cadDesign', descI18n: 'mega.tech.cadDesignDesc' },
+      { href: 'technology.html#fabrication',        icon: 'fa-industry',         title: 'Fabrication Technology',desc: 'CNC, TIG/MIG Welding, NDT', titleI18n: 'mega.tech.fabrication', descI18n: 'mega.tech.fabricationDesc' },
+      { href: 'technology.html#automation-iot',     icon: 'fa-sliders',          title: 'PLC/SCADA Automation',  desc: 'Control Panels, HMI Systems', titleI18n: 'mega.tech.plcScada', descI18n: 'mega.tech.plcScadaDesc' },
+      { href: 'technology.html#automation-iot',     icon: 'fa-satellite-dish',   title: 'IoT & Remote Monitoring',desc: 'Cloud Analytics, Diagnostics', titleI18n: 'mega.tech.iotMonitoring', descI18n: 'mega.tech.iotMonitoringDesc' },
     ],
   },
 ];
@@ -116,7 +119,7 @@ function buildMegaMenuHtml(menu) {
   const items = menu.items.map((item) => `
     <a href="${item.href}" class="mega-menu-item">
       <div class="mega-menu-item-icon"><i class="fa-solid ${item.icon}"></i></div>
-      <div><div class="mega-menu-item-title">${item.title}</div><div class="mega-menu-item-desc">${item.desc}</div></div>
+      <div><div class="mega-menu-item-title"${item.titleI18n ? ` data-i18n="${item.titleI18n}"` : ''}>${item.title}</div><div class="mega-menu-item-desc"${item.descI18n ? ` data-i18n="${item.descI18n}"` : ''}>${item.desc}</div></div>
     </a>
   `).join('');
   return `
@@ -217,6 +220,51 @@ function injectSecondaryMegaMenus() {
   });
 }
 
+function buildProductsMegaMenuHtml() {
+  return `
+    <div class="mega-menu">
+      <div class="mega-menu-grid">
+        <a href="products.html#evaporators" class="mega-menu-item">
+          <div class="mega-menu-item-icon"><i class="fa-solid fa-droplet"></i></div>
+          <div><div class="mega-menu-item-title" data-i18n="mega.evaporators">Evaporators</div><div class="mega-menu-item-desc" data-i18n="mega.evaporatorsDesc">Falling Film, Forced Circulation, Plate Type</div></div>
+        </a>
+        <a href="products.html#dryers" class="mega-menu-item">
+          <div class="mega-menu-item-icon"><i class="fa-solid fa-wind"></i></div>
+          <div><div class="mega-menu-item-title" data-i18n="mega.dryers">Dryers</div><div class="mega-menu-item-desc" data-i18n="mega.dryersDesc">Spray, Spin Flash, Fluidized Bed</div></div>
+        </a>
+        <a href="products.html#heat-exchangers" class="mega-menu-item">
+          <div class="mega-menu-item-icon"><i class="fa-solid fa-temperature-high"></i></div>
+          <div><div class="mega-menu-item-title" data-i18n="mega.heatExchangers">Heat Exchangers</div><div class="mega-menu-item-desc" data-i18n="mega.heatExchangersDesc">Shell & Tube, Plate Type</div></div>
+        </a>
+        <a href="products.html#cip" class="mega-menu-item">
+          <div class="mega-menu-item-icon"><i class="fa-solid fa-recycle"></i></div>
+          <div><div class="mega-menu-item-title" data-i18n="mega.cip">CIP Systems</div><div class="mega-menu-item-desc" data-i18n="mega.cipDesc">Clean-In-Place Automation</div></div>
+        </a>
+        <a href="products.html#milk-processing" class="mega-menu-item">
+          <div class="mega-menu-item-icon"><i class="fa-solid fa-flask"></i></div>
+          <div><div class="mega-menu-item-title" data-i18n="mega.dairyProcessing">Dairy Processing</div><div class="mega-menu-item-desc" data-i18n="mega.dairyProcessingDesc">Pasteurizer, Deodorizer, Full Plant</div></div>
+        </a>
+        <a href="products.html#vessels" class="mega-menu-item">
+          <div class="mega-menu-item-icon"><i class="fa-solid fa-database"></i></div>
+          <div><div class="mega-menu-item-title" data-i18n="mega.vessels">Pressure Vessels & Tanks</div><div class="mega-menu-item-desc" data-i18n="mega.vesselsDesc">SS Tanks, Pressure Vessels</div></div>
+        </a>
+        <a href="products.html#milk-equipment" class="mega-menu-item">
+          <div class="mega-menu-item-icon"><i class="fa-solid fa-jar"></i></div>
+          <div><div class="mega-menu-item-title" data-i18n="mega.milkEquipment">Milk Equipment</div><div class="mega-menu-item-desc" data-i18n="mega.milkEquipmentDesc">Butter Churner, Ghee Kettle, Khoya</div></div>
+        </a>
+        <a href="products.html#dairy-food-equipment" class="mega-menu-item">
+          <div class="mega-menu-item-icon"><i class="fa-solid fa-industry"></i></div>
+          <div><div class="mega-menu-item-title" data-i18n="mega.dairyFood">Dairy & Food Equipment</div><div class="mega-menu-item-desc" data-i18n="mega.dairyFoodDesc">Milk Can Conveyor, BMC, Crystallization Tank</div></div>
+        </a>
+        <a href="products.html#waste-management" class="mega-menu-item">
+          <div class="mega-menu-item-icon"><i class="fa-solid fa-leaf"></i></div>
+          <div><div class="mega-menu-item-title" data-i18n="mega.wasteManagement">Waste Management</div><div class="mega-menu-item-desc" data-i18n="mega.wasteManagementDesc">ETP/STP, Biogas, Scrubber, Incinerator</div></div>
+        </a>
+      </div>
+    </div>
+  `;
+}
+
 /* Always ensure Products mega menu has all 9 items — fixes pages where
    the hardcoded navbar only had 6 items */
 function fixProductsMegaMenu() {
@@ -228,48 +276,7 @@ function fixProductsMegaMenu() {
   const existing = navItem.querySelector('.mega-menu');
   if (existing) existing.remove();
 
-  navItem.insertAdjacentHTML('beforeend', `
-    <div class="mega-menu">
-      <div class="mega-menu-grid">
-        <a href="products.html#evaporators" class="mega-menu-item">
-          <div class="mega-menu-item-icon"><i class="fa-solid fa-droplet"></i></div>
-          <div><div class="mega-menu-item-title">Evaporators</div><div class="mega-menu-item-desc">Falling Film, Forced Circulation, Plate Type</div></div>
-        </a>
-        <a href="products.html#dryers" class="mega-menu-item">
-          <div class="mega-menu-item-icon"><i class="fa-solid fa-wind"></i></div>
-          <div><div class="mega-menu-item-title">Dryers</div><div class="mega-menu-item-desc">Spray, Spin Flash, Fluidized Bed</div></div>
-        </a>
-        <a href="products.html#heat-exchangers" class="mega-menu-item">
-          <div class="mega-menu-item-icon"><i class="fa-solid fa-temperature-high"></i></div>
-          <div><div class="mega-menu-item-title">Heat Exchangers</div><div class="mega-menu-item-desc">Shell & Tube, Plate Type</div></div>
-        </a>
-        <a href="products.html#cip" class="mega-menu-item">
-          <div class="mega-menu-item-icon"><i class="fa-solid fa-recycle"></i></div>
-          <div><div class="mega-menu-item-title">CIP Systems</div><div class="mega-menu-item-desc">Clean-In-Place Automation</div></div>
-        </a>
-        <a href="products.html#milk-processing" class="mega-menu-item">
-          <div class="mega-menu-item-icon"><i class="fa-solid fa-flask"></i></div>
-          <div><div class="mega-menu-item-title">Dairy Processing</div><div class="mega-menu-item-desc">Pasteurizer, Deodorizer, Full Plant</div></div>
-        </a>
-        <a href="products.html#vessels" class="mega-menu-item">
-          <div class="mega-menu-item-icon"><i class="fa-solid fa-database"></i></div>
-          <div><div class="mega-menu-item-title">Pressure Vessels & Tanks</div><div class="mega-menu-item-desc">SS Tanks, Pressure Vessels</div></div>
-        </a>
-        <a href="products.html#milk-equipment" class="mega-menu-item">
-          <div class="mega-menu-item-icon"><i class="fa-solid fa-jar"></i></div>
-          <div><div class="mega-menu-item-title">Milk Equipment</div><div class="mega-menu-item-desc">Butter Churner, Ghee Kettle, Khoya</div></div>
-        </a>
-        <a href="products.html#dairy-food-equipment" class="mega-menu-item">
-          <div class="mega-menu-item-icon"><i class="fa-solid fa-industry"></i></div>
-          <div><div class="mega-menu-item-title">Dairy & Food Equipment</div><div class="mega-menu-item-desc">Milk Can Conveyor, BMC, Crystallization Tank</div></div>
-        </a>
-        <a href="products.html#waste-management" class="mega-menu-item">
-          <div class="mega-menu-item-icon"><i class="fa-solid fa-leaf"></i></div>
-          <div><div class="mega-menu-item-title">Waste Management</div><div class="mega-menu-item-desc">ETP/STP, Biogas, Scrubber, Incinerator</div></div>
-        </a>
-      </div>
-    </div>
-  `);
+  navItem.insertAdjacentHTML('beforeend', buildProductsMegaMenuHtml());
 }
 
 /* ─── Top Utility Bar ─────────────────────────────────────── */
@@ -282,12 +289,12 @@ const TOPBAR_LINKS = [
 ];
 
 const LANG_CONTINENT_ORDER = [
-  { key: 'asia', label: 'Asia' },
-  { key: 'europe', label: 'Europe' },
-  { key: 'north-america', label: 'North America' },
-  { key: 'south-america', label: 'South America' },
-  { key: 'africa-middle-east', label: 'Africa & Middle East' },
-  { key: 'oceania', label: 'Oceania' },
+  { key: 'asia', label: 'Asia', i18n: 'lang.continent.asia' },
+  { key: 'europe', label: 'Europe', i18n: 'lang.continent.europe' },
+  { key: 'north-america', label: 'North America', i18n: 'lang.continent.northAmerica' },
+  { key: 'south-america', label: 'South America', i18n: 'lang.continent.southAmerica' },
+  { key: 'africa-middle-east', label: 'Africa & Middle East', i18n: 'lang.continent.africaMiddleEast' },
+  { key: 'oceania', label: 'Oceania', i18n: 'lang.continent.oceania' },
 ];
 
 const LANGUAGES = [
@@ -518,13 +525,13 @@ function buildLangOptionHtml(lang, activeId) {
 }
 
 function buildLangSwitcherGroupsHtml(activeId) {
-  return LANG_CONTINENT_ORDER.map(({ key, label }) => {
+  return LANG_CONTINENT_ORDER.map(({ key, label, i18n }) => {
     const langs = LANGUAGES.filter((l) => l.continent === key);
     if (!langs.length) return '';
     const options = langs.map((l) => buildLangOptionHtml(l, activeId)).join('');
     return `
       <div class="lang-group" role="group" aria-label="${label}">
-        <div class="lang-group-title">${label}</div>
+        <div class="lang-group-title"${i18n ? ` data-i18n="${i18n}"` : ''}>${label}</div>
         ${options}
       </div>
     `;
@@ -981,7 +988,7 @@ function injectMobileNavIfMissing() {
   if (mobileNav) navbar.insertAdjacentElement('afterend', mobileNav);
 }
 
-function replaceMobileNavLinkWithAccordion(mobileNav, pageHref, label, links, className) {
+function replaceMobileNavLinkWithAccordion(mobileNav, pageHref, label, links, className, labelI18n) {
   if (mobileNav.querySelector('.' + className)) return;
 
   const navLink = mobileNav.querySelector(
@@ -991,14 +998,14 @@ function replaceMobileNavLinkWithAccordion(mobileNav, pageHref, label, links, cl
 
   const isActive = _page === pageHref;
   const subLinks = links.map((item) =>
-    `<a href="${item.href}" class="mobile-sub-link"><i class="fa-solid ${item.icon}" style="width:18px;color:var(--blue-500);"></i> ${item.label}</a>`
+    `<a href="${item.href}" class="mobile-sub-link"><i class="fa-solid ${item.icon}" style="width:18px;color:var(--blue-500);"></i>${item.i18n ? `<span data-i18n="${item.i18n}">${item.label}</span>` : ` ${item.label}`}</a>`
   ).join('');
 
   const accordion = document.createElement('div');
   accordion.className = `mobile-nav-item ${className}`;
   accordion.innerHTML = `
     <button type="button" class="mobile-nav-link mobile-toggle">
-      <span style="color:${isActive ? 'var(--blue-500)' : 'inherit'}">${label}</span>
+      <span style="color:${isActive ? 'var(--blue-500)' : 'inherit'}"${labelI18n ? ` data-i18n="${labelI18n}"` : ''}>${label}</span>
       <i class="fa-solid fa-chevron-down toggle-arrow"></i>
     </button>
     <div class="mobile-sub-links">${subLinks}</div>
@@ -1015,21 +1022,23 @@ function injectMobileNavAccordions() {
     'products.html',
     'Products',
     PRODUCT_MOBILE_LINKS,
-    'mobile-nav-item--products'
+    'mobile-nav-item--products',
+    'nav.products'
   );
 
   SECONDARY_MEGA_MENUS.forEach((menu) => {
     const slug = menu.pageHref.replace('.html', '');
     const links = [
-      { href: menu.pageHref, label: `All ${menu.navLabel}`, icon: menu.headerIcon || 'fa-border-all' },
-      ...menu.items.map((item) => ({ href: item.href, label: item.title, icon: item.icon })),
+      { href: menu.pageHref, label: `All ${menu.navLabel}`, icon: menu.headerIcon || 'fa-border-all', i18n: menu.mobileAllI18n },
+      ...menu.items.map((item) => ({ href: item.href, label: item.title, icon: item.icon, i18n: item.titleI18n })),
     ];
     replaceMobileNavLinkWithAccordion(
       mobileNav,
       menu.pageHref,
       menu.navLabel,
       links,
-      `mobile-nav-item--${slug}`
+      `mobile-nav-item--${slug}`,
+      menu.navI18n
     );
   });
 }
@@ -1158,9 +1167,9 @@ function injectComponents() {
     btt.setAttribute('data-i18n-aria', 'aria.backToTop');
   }
 
-  const lang = localStorage.getItem('gausin_lang');
-  if (lang && lang !== 'en' && window.gausinApplyI18n) {
-    window.gausinApplyI18n(lang);
+  const entry = getActiveLangEntry();
+  if (entry.code !== 'en') {
+    whenI18nReady(() => applyLangChange(entry));
   }
 }
 
@@ -1416,7 +1425,11 @@ const NAVBAR_CTA_LABELS = {
   ms: 'Sebut Harga',
   id: 'Penawaran',
   lv: 'Piedāvājums',
-  lt: 'Pasiūlymas',
+  az: 'Təklif',
+  he: 'הצעת מחיר',
+  ps: 'کوټ',
+  fa: 'پیشنهاد',
+  si: 'කෝට්',
 };
 
 const NAVBAR_CTA_TITLES = {
@@ -1437,11 +1450,10 @@ function _navbarCtaLinks() {
 
 function syncNavbarCtaLabels(lang) {
   const code = lang || 'en';
+  const label = NAVBAR_CTA_LABELS[code] ?? (code === 'en' ? 'Get a Quote' : null);
+  if (!label) return;
+
   _navbarCtaLinks().forEach((link) => {
-    if (!link.dataset.gausinCtaOrig) {
-      link.dataset.gausinCtaOrig = link.textContent.replace(/\s+/g, ' ').trim();
-    }
-    const label = NAVBAR_CTA_LABELS[code] || link.dataset.gausinCtaOrig;
     const icon = link.querySelector('i');
     link.textContent = '';
     if (icon) link.appendChild(icon);
@@ -1797,7 +1809,7 @@ window.gausinGetLang = () => _TR.active;
 } // END LEGACY Google Translate
 
 /* ─── Hybrid Static i18n (Phase 1) ─────────────────────────── */
-const GAUSIN_I18N_ASSET_V = '20260711m';
+const GAUSIN_I18N_ASSET_V = '20260712d';
 (function preloadGausinI18n() {
   if (document.querySelector('script[data-gausin-i18n]')) return;
   const page = document.createElement('script');
@@ -1851,6 +1863,7 @@ function applyStoredLanguage() {
     const entry = getActiveLangEntry();
     syncLangSwitcherUi(entry);
     if (window.gausinApplyI18n) await window.gausinApplyI18n(entry.code);
+    syncNavbarCtaLabels(entry.code);
   }, 250);
 }
 
@@ -1858,7 +1871,10 @@ function applyStoredLanguage() {
 function applyLangChange(entry) {
   setActiveLangEntry(entry);
   syncLangSwitcherUi(entry);
-  if (window.gausinApplyI18n) return window.gausinApplyI18n(entry.code);
+  if (window.gausinApplyI18n) {
+    return window.gausinApplyI18n(entry.code).then(() => syncNavbarCtaLabels(entry.code));
+  }
+  syncNavbarCtaLabels(entry.code);
   return Promise.resolve();
 }
 

@@ -115,7 +115,7 @@ async function gausinLoadLocale(code) {
   if (I18N_CACHE[lang]) return I18N_CACHE[lang];
 
   const loadFile = async (file) => {
-    const res = await fetch(`locales/${file}.json`, { cache: 'default' });
+    const res = await fetch(`locales/${file}.json`, { cache: 'no-store' });
     if (!res.ok) throw new Error(`locale ${file} missing`);
     return res.json();
   };

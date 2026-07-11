@@ -116,7 +116,7 @@
   "mfg.mat.4": "ටයිටේනියම්",
   "mfg.mat.5": "හස්ටෙලෝයි",
   "mfg.mat.6": "තඹ මිශ්ර ලෝහය",
-  "btn.0": "Demo එකක් ඉල්ලන්න",
+  "btn.0": "ප්‍රදර්ශනයක් ඉල්ලන්න",
   "btn.1": "නිෂ්පාදන බලන්න",
   "float.1": "4.8t",
   "float.2": "අංශක 48 DS",
@@ -126,8 +126,8 @@
   "float.sub.7": "සමාධිය",
   "hero.title.0": "ඉංජිනේරු විද්‍යාව බලගන්වන්නේ<br>උසස් තාක්ෂණයෙන්",
   "sec.title.0": "ක්‍රියාවලි නිර්මාණය <span>මෘදුකාංග සහ මෙවලම්</span>",
-  "sec.title.1": "නිරවද්‍යතාවය <span>Fabrication Technology</span>",
-  "sec.title.2": "අපගේ <span>Fabrication Process</span>",
+  "sec.title.1": "නිරවද්‍යතාවය <span>නිෂ්පාදන තාක්ෂණය</span>",
+  "sec.title.2": "ලේඛනගත <span>නිෂ්පාදන ක්‍රියාවලිය</span>",
   "h2.0": "Smart Industrial <span style=\"background:linear-gradient(135deg,var(--blue-300),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;\">Automation Systems</span>",
-  "h2.1": "පළපුරුද්ද <span style=\"background:linear-gradient(135deg,var(--blue-300),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;\">Technology-Led Engineering</span>"
+  "h2.1": "පළපුරුද්ද <span style=background:linear-gradient(135deg,var(--blue-300),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;>තාක්ෂණය මත පදනම් වූ ඉංජිනේරු</span>"
 }

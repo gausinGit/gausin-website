@@ -177,6 +177,7 @@ function gausinCollectSitePageContentItemsFromDom(doc, slug) {
   });
 
   doc.querySelectorAll('.cat-name').forEach((el, i) => gausinAddEl(out, slug, `cat.name.${i}`, el));
+  doc.querySelectorAll('.cat-count').forEach((el, i) => gausinAddEl(out, slug, `cat.count.${i}`, el));
   doc.querySelectorAll('.advantage-desc').forEach((el, i) => gausinAddEl(out, slug, `adv.desc.${i}`, el));
   doc.querySelectorAll('section h4').forEach((el, i) => {
     if (el.closest('.proc-content')) return;
