@@ -732,7 +732,7 @@ Feel free to return anytime.<br>
             if (chips) addChips(chips);
             streaming = false;
             if (sendBtn) sendBtn.disabled = false;
-            if (window.gausinTranslateSubtree) window.gausinTranslateSubtree(gc());
+            /* LEGACY: if (window.gausinTranslateSubtree) window.gausinTranslateSubtree(gc()); */
           }, 80);
         }
       }, 38);
@@ -755,7 +755,7 @@ Feel free to return anytime.<br>
     });
     gc().appendChild(wrap);
     scrollBot();
-    if (window.gausinTranslateSubtree) window.gausinTranslateSubtree(wrap);
+    /* LEGACY: if (window.gausinTranslateSubtree) window.gausinTranslateSubtree(wrap); */
   }
 
   /* ── Route chip click (no user bubble for internal routes) ── */
@@ -881,7 +881,10 @@ Feel free to return anytime.<br>
     hw.innerHTML = HTML;
     while (hw.firstChild) document.body.appendChild(hw.firstChild);
 
-    if (window.gausinTranslateSubtree) window.gausinTranslateSubtree($('gcWin'));
+    /* LEGACY: if (window.gausinTranslateSubtree) window.gausinTranslateSubtree($('gcWin')); */
+    if (window.gausinPatchDomForI18n) window.gausinPatchDomForI18n();
+    const lang = window.gausinGetLang?.();
+    if (lang && lang !== 'en' && window.gausinApplyI18n) window.gausinApplyI18n(lang);
 
     const fab    = $('gcFab');
     const win    = $('gcWin');

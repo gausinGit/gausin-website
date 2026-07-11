@@ -209,7 +209,7 @@
 
         <!-- Social Links -->
         <div style="padding:24px;background:white;border:1px solid var(--gray-200);border-radius:16px;">
-          <div style="font-size:0.875rem;font-weight:700;color:var(--gray-700);font-family:'Montserrat',sans-serif;margin-bottom:16px;letter-spacing:0.05em;text-transform:uppercase;">Follow Us</div>
+          <div class="contact-social-heading" style="font-size:0.875rem;font-weight:700;color:var(--gray-700);font-family:'Montserrat',sans-serif;margin-bottom:16px;letter-spacing:0.05em;text-transform:uppercase;">Follow Us</div>
           <div class="contact-social">
             <a href="#" class="contact-social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
             <a href="https://www.facebook.com/profile.php?id=61590538293790" class="contact-social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
@@ -364,7 +364,7 @@
 
             <div style="display:flex;align-items:center;gap:12px;padding:16px;background:var(--gray-50);border-radius:12px;border:1px solid var(--gray-200);margin-bottom:24px;">
               <input type="checkbox" id="consent" name="consent" style="width:18px;height:18px;accent-color:var(--blue-500);cursor:pointer;">
-              <label for="consent" style="font-size:0.875rem;color:var(--gray-600);cursor:pointer;line-height:1.5;">
+              <label for="consent" class="form-consent-label" style="font-size:0.875rem;color:var(--gray-600);cursor:pointer;line-height:1.5;">
                 I consent to Gausin International Engineers using my information to respond to this inquiry and contact me about relevant products and services. <a href="privacy-policy.html" style="color:var(--blue-500);">Privacy Policy</a>
               </label>
             </div>
@@ -373,9 +373,9 @@
               <i class="fa-solid fa-paper-plane"></i> Send Inquiry
             </button>
 
-            <div style="display:flex;align-items:center;gap:6px;justify-content:center;margin-top:16px;font-size:0.8125rem;color:var(--gray-500);">
+            <div class="form-security-note" style="display:flex;align-items:center;gap:6px;justify-content:center;margin-top:16px;font-size:0.8125rem;color:var(--gray-500);">
               <i class="fa-solid fa-shield-halved" style="color:var(--blue-500);"></i>
-              Your information is secure and will not be shared with third parties.
+              <span>Your information is secure and will not be shared with third parties.</span>
             </div>
           </form>
 
@@ -408,8 +408,8 @@
           <div style="display:flex;align-items:flex-start;gap:14px;">
             <div style="width:40px;height:40px;background:var(--blue-500);border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;font-size:1rem;flex-shrink:0;"><i class="fa-solid fa-location-dot"></i></div>
             <div>
-              <div style="font-size:0.9375rem;font-weight:700;color:var(--gray-900);font-family:'Montserrat',sans-serif;margin-bottom:6px;">Gausin International Engineers Pvt. Ltd.</div>
-              <div style="font-size:0.9rem;color:var(--gray-600);line-height:1.7;">DH-249, Pallavpuram Phase-1,<br>Roorkee Road, Meerut,<br>Uttar Pradesh, India  -  250110</div>
+              <div class="loc-org-name" style="font-size:0.9375rem;font-weight:700;color:var(--gray-900);font-family:'Montserrat',sans-serif;margin-bottom:6px;">Gausin International Engineers Pvt. Ltd.</div>
+              <div class="loc-address" style="font-size:0.9rem;color:var(--gray-600);line-height:1.7;">DH-249, Pallavpuram Phase-1,<br>Roorkee Road, Meerut,<br>Uttar Pradesh, India  -  250110</div>
             </div>
           </div>
         </div>
@@ -417,15 +417,15 @@
         <div style="display:flex;flex-direction:column;gap:12px;">
           <div style="display:flex;align-items:center;gap:10px;font-size:0.9rem;color:var(--gray-600);">
             <i class="fa-solid fa-clock" style="color:var(--blue-500);width:20px;"></i>
-            <span><strong style="color:var(--gray-800);">Working Hours:</strong> Monday - Saturday, 9:00 AM  -  6:00 PM</span>
+            <span class="loc-detail-text"><strong style="color:var(--gray-800);">Working Hours:</strong> Monday - Saturday, 9:00 AM  -  6:00 PM</span>
           </div>
           <div style="display:flex;align-items:center;gap:10px;font-size:0.9rem;color:var(--gray-600);">
             <i class="fa-solid fa-car" style="color:var(--blue-500);width:20px;"></i>
-            <span>Parking available on premises for visiting clients</span>
+            <span class="loc-detail-text">Parking available on premises for visiting clients</span>
           </div>
           <div style="display:flex;align-items:center;gap:10px;font-size:0.9rem;color:var(--gray-600);">
             <i class="fa-solid fa-train" style="color:var(--blue-500);width:20px;"></i>
-            <span>12 km from Meerut City Railway Station</span>
+            <span class="loc-detail-text">12 km from Meerut City Railway Station</span>
           </div>
         </div>
 
@@ -466,21 +466,21 @@
     <div class="grid-3" data-aos="fade-up" data-aos-delay="100">
       <div style="background:linear-gradient(135deg,var(--blue-900),var(--blue-700));border-radius:20px;padding:36px;text-align:center;color:white;">
         <div style="font-size:2.2rem;margin-bottom:16px;color:var(--blue-500);"><i class="fa-solid fa-phone"></i></div>
-        <div style="font-size:1.125rem;font-weight:700;font-family:'Montserrat',sans-serif;margin-bottom:8px;">Call Our Engineers</div>
+        <div class="connect-card-title" style="font-size:1.125rem;font-weight:700;font-family:'Montserrat',sans-serif;margin-bottom:8px;">Call Our Engineers</div>
         <div class="connect-card-desc" style="font-size:0.9rem;color:rgba(255,255,255,0.7);margin-bottom:20px;line-height:1.65;">Speak directly with our process engineering team for immediate technical assistance.</div>
         <a href="tel:+919870840779" class="btn btn-white btn-sm" style="width:100%;justify-content:center;"><i class="fa-solid fa-phone"></i> +91 98708 40779</a>
       </div>
 
       <div style="background:white;border:1px solid var(--gray-200);border-radius:20px;padding:36px;text-align:center;">
         <div style="font-size:2.2rem;margin-bottom:16px;color:var(--blue-500);"><i class="fa-solid fa-envelope"></i></div>
-        <div style="font-size:1.125rem;font-weight:700;color:var(--gray-900);font-family:'Montserrat',sans-serif;margin-bottom:8px;">Email Us</div>
+        <div class="connect-card-title" style="font-size:1.125rem;font-weight:700;color:var(--gray-900);font-family:'Montserrat',sans-serif;margin-bottom:8px;">Email Us</div>
         <div class="connect-card-desc" style="font-size:0.9rem;color:var(--gray-600);margin-bottom:20px;line-height:1.65;">Send detailed project specifications and receive a comprehensive technical proposal.</div>
         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in" target="_blank" rel="noopener" class="btn btn-primary btn-sm" style="width:100%;justify-content:center;"><i class="fa-solid fa-envelope"></i> info@gausin.in</a>
       </div>
 
       <div style="background:white;border:1px solid var(--gray-200);border-radius:20px;padding:36px;text-align:center;">
         <div style="font-size:2.2rem;margin-bottom:16px;color:var(--blue-500);"><i class="fa-solid fa-industry"></i></div>
-        <div style="font-size:1.125rem;font-weight:700;color:var(--gray-900);font-family:'Montserrat',sans-serif;margin-bottom:8px;">Visit Our Facility</div>
+        <div class="connect-card-title" style="font-size:1.125rem;font-weight:700;color:var(--gray-900);font-family:'Montserrat',sans-serif;margin-bottom:8px;">Visit Our Facility</div>
         <div class="connect-card-desc" style="font-size:0.9rem;color:var(--gray-600);margin-bottom:20px;line-height:1.65;">Schedule a facility visit to see our manufacturing capabilities and discuss your project in person.</div>
         <a href="#inquiry" class="btn btn-outline btn-sm" style="width:100%;justify-content:center;"><i class="fa-solid fa-calendar-check"></i> Schedule Visit</a>
       </div>
@@ -504,29 +504,29 @@
             <div style="width:42px;height:42px;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.25);border-radius:11px;display:flex;align-items:center;justify-content:center;">
               <i class="fa-solid fa-earth-americas"></i>
             </div>
-            <div style="font-family:'Montserrat',sans-serif;font-size:1rem;font-weight:700;">Canada &amp; USA Representation</div>
+            <div class="partner-region" style="font-family:'Montserrat',sans-serif;font-size:1rem;font-weight:700;">Canada &amp; USA Representation</div>
           </div>
-          <div style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);border-radius:30px;padding:6px 12px;color:var(--blue-100);font-size:0.75rem;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;">Partner Office</div>
+          <div class="partner-office-badge" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);border-radius:30px;padding:6px 12px;color:var(--blue-100);font-size:0.75rem;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;">Partner Office</div>
         </div>
 
         <div style="padding:24px;">
           <div class="partner-grid" style="display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:20px;align-items:stretch;">
             <div style="background:white;border:1px solid var(--gray-200);border-radius:14px;padding:18px;">
-              <div style="font-size:1.25rem;font-weight:800;color:var(--gray-900);font-family:'Montserrat',sans-serif;margin-bottom:10px;">FP Process Corp.</div>
-              <div style="display:inline-flex;align-items:center;gap:8px;background:var(--blue-50);border:1px solid var(--blue-200);border-radius:999px;padding:6px 12px;color:var(--blue-700);font-size:0.75rem;font-weight:700;margin-bottom:14px;">
+              <div class="partner-name" style="font-size:1.25rem;font-weight:800;color:var(--gray-900);font-family:'Montserrat',sans-serif;margin-bottom:10px;">FP Process Corp.</div>
+              <div class="partner-badge" style="display:inline-flex;align-items:center;gap:8px;background:var(--blue-50);border:1px solid var(--blue-200);border-radius:999px;padding:6px 12px;color:var(--blue-700);font-size:0.75rem;font-weight:700;margin-bottom:14px;">
                 <i class="fa-solid fa-location-dot"></i> Calgary, Alberta
               </div>
-              <div style="font-size:0.94rem;color:var(--gray-700);line-height:1.75;">
+              <div class="partner-address" style="font-size:0.94rem;color:var(--gray-700);line-height:1.75;">
                 Suite 1036, 240 - 70 Shawville Blvd. SE<br>
                 Calgary, AB, Canada T2Y 2Z3
               </div>
-              <div style="margin-top:14px;padding-top:14px;border-top:1px dashed var(--gray-200);font-size:0.9rem;color:var(--gray-700);">
+              <div class="partner-rep" style="margin-top:14px;padding-top:14px;border-top:1px dashed var(--gray-200);font-size:0.9rem;color:var(--gray-700);">
                 <strong style="color:var(--gray-900);font-family:'Montserrat',sans-serif;">Representative:</strong> Mr. Stanley Foster
               </div>
             </div>
 
             <div style="background:white;border:1px solid var(--gray-200);border-radius:14px;padding:18px;">
-              <div style="font-size:0.95rem;font-weight:700;color:var(--gray-900);font-family:'Montserrat',sans-serif;margin-bottom:12px;">Direct Contact</div>
+              <div class="partner-contact-title" style="font-size:0.95rem;font-weight:700;color:var(--gray-900);font-family:'Montserrat',sans-serif;margin-bottom:12px;">Direct Contact</div>
               <div style="display:flex;flex-direction:column;gap:10px;">
                 <a href="tel:+14038796174" style="display:flex;align-items:center;gap:10px;padding:10px 12px;background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;color:var(--gray-800);font-size:0.9rem;font-weight:600;">
                   <i class="fa-solid fa-phone" style="color:var(--blue-500);width:16px;"></i> (403) 879-6174
@@ -538,7 +538,7 @@
                   <i class="fa-solid fa-globe" style="color:var(--blue-500);width:16px;"></i> www.fpprocess.ca
                 </a>
               </div>
-              <div style="margin-top:14px;padding:10px 12px;background:var(--blue-50);border:1px solid var(--blue-100);border-radius:10px;font-size:0.82rem;color:var(--blue-800);line-height:1.6;">
+              <div class="partner-note" style="margin-top:14px;padding:10px 12px;background:var(--blue-50);border:1px solid var(--blue-100);border-radius:10px;font-size:0.82rem;color:var(--blue-800);line-height:1.6;">
                 For Canada and USA inquiries, you may directly connect with FP Process Corp. for local coordination and response support.
               </div>
             </div>
@@ -657,7 +657,7 @@
 
 <script src="js/config.js"></script>
 <script src="js/main.js" defer></script>
-<script src="js/components.js" defer></script>
+<script src="js/components.js?v=20260711d" defer></script>
 <script>
   // Pre-select product from ?product= (e.g. from product detail pages)
   (function () {

@@ -65,6 +65,7 @@ const SECONDARY_MEGA_MENUS = [
   {
     pageHref: 'services.html',
     navLabel: 'Services',
+    navI18n: 'nav.services',
     headerIcon: 'fa-screwdriver-wrench',
     headerTitle: 'Engineering Services',
     headerDesc: 'End-to-End Project Delivery',
@@ -80,6 +81,7 @@ const SECONDARY_MEGA_MENUS = [
   {
     pageHref: 'industries.html',
     navLabel: 'Industries',
+    navI18n: 'nav.industries',
     headerIcon: 'fa-building',
     headerTitle: 'Industries We Serve',
     headerDesc: 'Sector-Specific Engineering Solutions',
@@ -95,6 +97,7 @@ const SECONDARY_MEGA_MENUS = [
   {
     pageHref: 'technology.html',
     navLabel: 'Technology',
+    navI18n: 'nav.technology',
     headerIcon: 'fa-microchip',
     headerTitle: 'Technology & Innovation',
     headerDesc: 'Advanced Tools and Manufacturing',
@@ -105,19 +108,6 @@ const SECONDARY_MEGA_MENUS = [
       { href: 'technology.html#fabrication',        icon: 'fa-industry',         title: 'Fabrication Technology',desc: 'CNC, TIG/MIG Welding, NDT' },
       { href: 'technology.html#automation-iot',     icon: 'fa-sliders',          title: 'PLC/SCADA Automation',  desc: 'Control Panels, HMI Systems' },
       { href: 'technology.html#automation-iot',     icon: 'fa-satellite-dish',   title: 'IoT & Remote Monitoring',desc: 'Cloud Analytics, Diagnostics' },
-    ],
-  },
-  {
-    pageHref: 'tech-ai.html',
-    navLabel: 'Digital Solutions',
-    items: [
-      { href: 'tech-ai.html#ai-solutions', icon: 'fa-brain', title: 'AI Solutions', desc: 'Machine Learning & AI Systems' },
-      { href: 'tech-ai.html#web-development', icon: 'fa-code', title: 'Web Development', desc: 'Websites & Web Applications' },
-      { href: 'tech-ai.html#mobile-apps', icon: 'fa-mobile-screen', title: 'Mobile App Development', desc: 'iOS & Android Applications' },
-      { href: 'tech-ai.html#desktop-apps', icon: 'fa-desktop', title: 'Desktop Applications', desc: 'Cross-Platform Desktop Software' },
-      { href: 'tech-ai.html#business-automation', icon: 'fa-gears', title: 'Business Process Automation', desc: 'Workflow & Process Automation' },
-      { href: 'tech-ai.html#cloud', icon: 'fa-cloud', title: 'Cloud Solutions', desc: 'Cloud Deployment & Migration' },
-      { href: 'tech-ai.html#custom-software', icon: 'fa-laptop-code', title: 'Custom Software Development', desc: 'Tailored Software Solutions' },
     ],
   },
 ];
@@ -137,10 +127,11 @@ function buildMegaMenuHtml(menu) {
 }
 
 function buildNavItemHtml(menu, currentPage) {
+  const labelI18n = menu.navI18n ? ` data-i18n="${menu.navI18n}"` : '';
   return `
     <div class="nav-item">
       <a href="${menu.pageHref}" class="nav-link${currentPage === menu.pageHref ? ' active' : ''}">
-        ${menu.navLabel}
+        <span${labelI18n}>${menu.navLabel}</span>
         ${CHEVRON_SVG}
       </a>
       ${buildMegaMenuHtml(menu)}
@@ -151,10 +142,11 @@ function buildNavItemHtml(menu, currentPage) {
 const OUR_CLIENTS_HREF = 'our-clients.html';
 const OUR_CLIENTS_LABEL = 'Our Clients';
 
-function buildSimpleNavItemHtml(href, label, currentPage) {
+function buildSimpleNavItemHtml(href, label, currentPage, i18nKey) {
+  const labelI18n = i18nKey ? ` data-i18n="${i18nKey}"` : '';
   return `
     <div class="nav-item">
-      <a href="${href}" class="nav-link${currentPage === href ? ' active' : ''}">${label}</a>
+      <a href="${href}" class="nav-link${currentPage === href ? ' active' : ''}"><span${labelI18n}>${label}</span></a>
     </div>
   `;
 }
@@ -162,7 +154,7 @@ function buildSimpleNavItemHtml(href, label, currentPage) {
 function buildSecondaryNavItems(currentPage) {
   return SECONDARY_MEGA_MENUS.map((menu) => {
     if (menu.pageHref === 'technology.html') {
-      return buildSimpleNavItemHtml(OUR_CLIENTS_HREF, OUR_CLIENTS_LABEL, currentPage) + buildNavItemHtml(menu, currentPage);
+      return buildSimpleNavItemHtml(OUR_CLIENTS_HREF, OUR_CLIENTS_LABEL, currentPage, 'nav.ourClients') + buildNavItemHtml(menu, currentPage);
     }
     return buildNavItemHtml(menu, currentPage);
   }).join('');
@@ -172,7 +164,7 @@ function injectMissingOurClientsNav() {
   if (document.querySelector(`.navbar-nav .nav-item > a.nav-link[href="${OUR_CLIENTS_HREF}"]`)) return;
   const techItem = document.querySelector('.navbar-nav .nav-item > a.nav-link[href="technology.html"]')?.closest('.nav-item');
   if (!techItem) return;
-  techItem.insertAdjacentHTML('beforebegin', buildSimpleNavItemHtml(OUR_CLIENTS_HREF, OUR_CLIENTS_LABEL, _page));
+  techItem.insertAdjacentHTML('beforebegin', buildSimpleNavItemHtml(OUR_CLIENTS_HREF, OUR_CLIENTS_LABEL, _page, 'nav.ourClients'));
 }
 
 function injectMissingOurClientsMobileLink() {
@@ -282,10 +274,11 @@ function fixProductsMegaMenu() {
 
 /* ─── Top Utility Bar ─────────────────────────────────────── */
 const TOPBAR_LINKS = [
-  { href: 'insights.html', label: 'Insights', icon: 'fa-lightbulb' },
-  { href: 'career.html', label: 'Career', icon: 'fa-briefcase' },
-  { href: 'downloads.html', label: 'Download', icon: 'fa-download' },
-  { href: 'news.html', label: 'News', icon: 'fa-newspaper' },
+  { href: 'tech-ai.html', label: 'Digital Solutions', icon: 'fa-microchip', i18n: 'nav.digitalSolutions' },
+  { href: 'insights.html', label: 'Insights', icon: 'fa-lightbulb', i18n: 'topbar.insights' },
+  { href: 'career.html', label: 'Career', icon: 'fa-briefcase', i18n: 'topbar.career' },
+  { href: 'downloads.html', label: 'Download', icon: 'fa-download', i18n: 'topbar.download' },
+  { href: 'news.html', label: 'News', icon: 'fa-newspaper', i18n: 'topbar.news' },
 ];
 
 const LANGUAGES = [
@@ -429,7 +422,7 @@ function buildLangSwitcher() {
   `).join('');
   return `
     <div class="lang-switcher notranslate" id="langSwitcher" translate="no">
-      <button class="lang-trigger" id="langTrigger" type="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Select region or language">
+      <button class="lang-trigger" id="langTrigger" type="button" aria-haspopup="listbox" aria-expanded="false" data-i18n-aria="aria.langSelect" aria-label="Select region or language">
         ${renderLangFlagHtml(active)}
         <span class="lang-code">${getLangCodeDisplay(active.code)}</span>
         <i class="fa-solid fa-chevron-down lang-chevron"></i>
@@ -444,7 +437,7 @@ function buildLangSwitcher() {
 function buildTopbarHtml() {
   const links = TOPBAR_LINKS.map((item) => `
     <a href="${item.href}" class="topbar-link${_page === item.href ? ' active' : ''}">
-      <i class="fa-solid ${item.icon}"></i> ${item.label}
+      <i class="fa-solid ${item.icon}"></i> <span data-i18n="${item.i18n}">${item.label}</span>
     </a>
   `).join('');
   return `
@@ -461,10 +454,37 @@ function buildTopbarHtml() {
 
 function injectTopbar() {
   const navbar = document.getElementById('navbar');
-  if (!navbar || document.getElementById('topbar')) return;
-  const wrapper = document.createElement('div');
-  wrapper.innerHTML = buildTopbarHtml();
-  navbar.parentNode.insertBefore(wrapper.firstElementChild, navbar);
+  if (!navbar) return;
+  if (!document.getElementById('topbar')) {
+    const wrapper = document.createElement('div');
+    wrapper.innerHTML = buildTopbarHtml();
+    navbar.parentNode.insertBefore(wrapper.firstElementChild, navbar);
+  } else {
+    syncTopbarLinks();
+  }
+}
+
+function syncTopbarLinks() {
+  const container = document.querySelector('.topbar-links');
+  if (!container) return;
+  TOPBAR_LINKS.forEach((item) => {
+    if (container.querySelector(`a[href="${item.href}"]`)) return;
+    const html = `
+      <a href="${item.href}" class="topbar-link${_page === item.href ? ' active' : ''}">
+        <i class="fa-solid ${item.icon}"></i> <span data-i18n="${item.i18n}">${item.label}</span>
+      </a>
+    `;
+    if (item.href === 'tech-ai.html') container.insertAdjacentHTML('afterbegin', html);
+    else container.insertAdjacentHTML('beforeend', html);
+  });
+}
+
+function removeDigitalSolutionsFromNav() {
+  document.querySelectorAll('.navbar-nav .nav-item > a.nav-link[href="tech-ai.html"]').forEach((link) => {
+    link.closest('.nav-item')?.remove();
+  });
+  document.querySelectorAll('#mobileNav > a[href="tech-ai.html"]').forEach((link) => link.remove());
+  document.querySelectorAll('#mobileNav .mobile-nav-item--tech-ai').forEach((el) => el.remove());
 }
 
 /* Topbar links + language live in the fixed topbar on all screen sizes — no duplicate mobile menu block. */
@@ -479,73 +499,73 @@ const NAVBAR_HTML = `
 
       <nav class="navbar-nav">
         <div class="nav-item">
-          <a href="index.html" class="nav-link ${_page==='index.html'?'active':''}">Home</a>
+          <a href="index.html" class="nav-link ${_page==='index.html'?'active':''}" data-i18n="nav.home">Home</a>
         </div>
         <div class="nav-item">
-          <a href="about.html" class="nav-link ${_page==='about.html'?'active':''}">About</a>
+          <a href="about.html" class="nav-link ${_page==='about.html'?'active':''}" data-i18n="nav.about">About</a>
         </div>
         <div class="nav-item">
           <a href="products.html" class="nav-link ${_page==='products.html'?'active':''}">
-            Products
+            <span data-i18n="nav.products">Products</span>
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
           </a>
           <div class="mega-menu">
             <div class="mega-menu-grid">
               <a href="products.html#evaporators" class="mega-menu-item">
                 <div class="mega-menu-item-icon"><i class="fa-solid fa-droplet"></i></div>
-                <div><div class="mega-menu-item-title">Evaporators</div><div class="mega-menu-item-desc">Falling Film, Forced Circulation, Plate Type</div></div>
+                <div><div class="mega-menu-item-title" data-i18n="mega.evaporators">Evaporators</div><div class="mega-menu-item-desc" data-i18n="mega.evaporatorsDesc">Falling Film, Forced Circulation, Plate Type</div></div>
               </a>
               <a href="products.html#dryers" class="mega-menu-item">
                 <div class="mega-menu-item-icon"><i class="fa-solid fa-wind"></i></div>
-                <div><div class="mega-menu-item-title">Dryers</div><div class="mega-menu-item-desc">Spray, Spin Flash, Fluidized Bed</div></div>
+                <div><div class="mega-menu-item-title" data-i18n="mega.dryers">Dryers</div><div class="mega-menu-item-desc" data-i18n="mega.dryersDesc">Spray, Spin Flash, Fluidized Bed</div></div>
               </a>
               <a href="products.html#heat-exchangers" class="mega-menu-item">
                 <div class="mega-menu-item-icon"><i class="fa-solid fa-temperature-high"></i></div>
-                <div><div class="mega-menu-item-title">Heat Exchangers</div><div class="mega-menu-item-desc">Shell & Tube, Plate Type</div></div>
+                <div><div class="mega-menu-item-title" data-i18n="mega.heatExchangers">Heat Exchangers</div><div class="mega-menu-item-desc" data-i18n="mega.heatExchangersDesc">Shell & Tube, Plate Type</div></div>
               </a>
               <a href="products.html#cip" class="mega-menu-item">
                 <div class="mega-menu-item-icon"><i class="fa-solid fa-recycle"></i></div>
-                <div><div class="mega-menu-item-title">CIP Systems</div><div class="mega-menu-item-desc">Clean-In-Place Automation</div></div>
+                <div><div class="mega-menu-item-title" data-i18n="mega.cip">CIP Systems</div><div class="mega-menu-item-desc" data-i18n="mega.cipDesc">Clean-In-Place Automation</div></div>
               </a>
               <a href="products.html#milk-processing" class="mega-menu-item">
                 <div class="mega-menu-item-icon"><i class="fa-solid fa-flask"></i></div>
-                <div><div class="mega-menu-item-title">Dairy Processing</div><div class="mega-menu-item-desc">Pasteurizer, Deodorizer, Full Plant</div></div>
+                <div><div class="mega-menu-item-title" data-i18n="mega.dairyProcessing">Dairy Processing</div><div class="mega-menu-item-desc" data-i18n="mega.dairyProcessingDesc">Pasteurizer, Deodorizer, Full Plant</div></div>
               </a>
               <a href="products.html#vessels" class="mega-menu-item">
                 <div class="mega-menu-item-icon"><i class="fa-solid fa-database"></i></div>
-                <div><div class="mega-menu-item-title">Pressure Vessels & Tanks</div><div class="mega-menu-item-desc">SS Tanks, Pressure Vessels</div></div>
+                <div><div class="mega-menu-item-title" data-i18n="mega.vessels">Pressure Vessels & Tanks</div><div class="mega-menu-item-desc" data-i18n="mega.vesselsDesc">SS Tanks, Pressure Vessels</div></div>
               </a>
               <a href="products.html#milk-equipment" class="mega-menu-item">
                 <div class="mega-menu-item-icon"><i class="fa-solid fa-jar"></i></div>
-                <div><div class="mega-menu-item-title">Milk Equipment</div><div class="mega-menu-item-desc">Butter Churner, Ghee Kettle, Khoya</div></div>
+                <div><div class="mega-menu-item-title" data-i18n="mega.milkEquipment">Milk Equipment</div><div class="mega-menu-item-desc" data-i18n="mega.milkEquipmentDesc">Butter Churner, Ghee Kettle, Khoya</div></div>
               </a>
               <a href="products.html#dairy-food-equipment" class="mega-menu-item">
                 <div class="mega-menu-item-icon"><i class="fa-solid fa-industry"></i></div>
-                <div><div class="mega-menu-item-title">Dairy & Food Equipment</div><div class="mega-menu-item-desc">Milk Can Conveyor, BMC, Crystallization Tank</div></div>
+                <div><div class="mega-menu-item-title" data-i18n="mega.dairyFood">Dairy & Food Equipment</div><div class="mega-menu-item-desc" data-i18n="mega.dairyFoodDesc">Milk Can Conveyor, BMC, Crystallization Tank</div></div>
               </a>
               <a href="products.html#waste-management" class="mega-menu-item">
                 <div class="mega-menu-item-icon"><i class="fa-solid fa-leaf"></i></div>
-                <div><div class="mega-menu-item-title">Waste Management</div><div class="mega-menu-item-desc">ETP/STP, Biogas, Scrubber, Incinerator</div></div>
+                <div><div class="mega-menu-item-title" data-i18n="mega.wasteManagement">Waste Management</div><div class="mega-menu-item-desc" data-i18n="mega.wasteManagementDesc">ETP/STP, Biogas, Scrubber, Incinerator</div></div>
               </a>
             </div>
           </div>
         </div>
         ${buildSecondaryNavItems(_page)}
         <div class="nav-item">
-          <a href="contact.html" class="nav-link ${_page==='contact.html'?'active':''}">Contact</a>
+          <a href="contact.html" class="nav-link ${_page==='contact.html'?'active':''}" data-i18n="nav.contact">Contact</a>
         </div>
       </nav>
 
       <div class="navbar-cta">
-        <button type="button" class="site-search-btn" id="siteSearchBtn" aria-label="Search site" title="Search (Ctrl+K)">
+        <button type="button" class="site-search-btn" id="siteSearchBtn" data-i18n-aria="aria.searchSite" aria-label="Search site" title="Search (Ctrl+K)">
           ${SEARCH_ICON_SVG}
         </button>
         <a href="contact.html" class="btn btn-primary btn-sm">
-          <i class="fa-solid fa-paper-plane"></i> Get a Quote
+          <i class="fa-solid fa-paper-plane"></i> <span data-i18n="cta.quote">Get a Quote</span>
         </a>
       </div>
 
-      <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle menu">
+      <button class="navbar-toggle" id="navbarToggle" data-i18n-aria="aria.toggleMenu" aria-label="Toggle menu">
         <span class="toggle-bar"></span>
         <span class="toggle-bar"></span>
         <span class="toggle-bar"></span>
@@ -555,19 +575,18 @@ const NAVBAR_HTML = `
 </nav>
 
 <div class="mobile-nav" id="mobileNav">
-  <a href="index.html" class="mobile-nav-link-plain" style="display:flex;justify-content:space-between;padding:16px 0;font-weight:600;color:${_page==='index.html'?'var(--blue-500)':'var(--gray-800)'};border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Home</a>
-  <a href="about.html" class="mobile-nav-link-plain" style="display:flex;justify-content:space-between;padding:16px 0;font-weight:600;color:${_page==='about.html'?'var(--blue-500)':'var(--gray-800)'};border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">About Us</a>
-  <a href="products.html" class="mobile-nav-link-plain" style="display:flex;justify-content:space-between;padding:16px 0;font-weight:600;color:${_page==='products.html'?'var(--blue-500)':'var(--gray-800)'};border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Products</a>
-  <a href="services.html" class="mobile-nav-link-plain" style="display:flex;justify-content:space-between;padding:16px 0;font-weight:600;color:${_page==='services.html'?'var(--blue-500)':'var(--gray-800)'};border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Services</a>
-  <a href="industries.html" class="mobile-nav-link-plain" style="display:flex;justify-content:space-between;padding:16px 0;font-weight:600;color:${_page==='industries.html'?'var(--blue-500)':'var(--gray-800)'};border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Industries</a>
-  <a href="our-clients.html" class="mobile-nav-link-plain" style="display:flex;justify-content:space-between;padding:16px 0;font-weight:600;color:${_page==='our-clients.html'?'var(--blue-500)':'var(--gray-800)'};border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Our Clients</a>
-  <a href="technology.html" class="mobile-nav-link-plain" style="display:flex;justify-content:space-between;padding:16px 0;font-weight:600;color:${_page==='technology.html'?'var(--blue-500)':'var(--gray-800)'};border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Technology</a>
-  <a href="tech-ai.html" class="mobile-nav-link-plain" style="display:flex;justify-content:space-between;padding:16px 0;font-weight:600;color:${_page==='tech-ai.html'?'var(--blue-500)':'var(--gray-800)'};border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Digital Solutions</a>
-  <a href="contact.html" class="mobile-nav-link-plain" style="display:flex;justify-content:space-between;padding:16px 0;font-weight:600;color:${_page==='contact.html'?'var(--blue-500)':'var(--gray-800)'};border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;">Contact</a>
+  <a href="index.html" class="mobile-nav-link-plain" style="display:flex;justify-content:space-between;padding:16px 0;font-weight:600;color:${_page==='index.html'?'var(--blue-500)':'var(--gray-800)'};border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;"><span data-i18n="nav.home">Home</span></a>
+  <a href="about.html" class="mobile-nav-link-plain" style="display:flex;justify-content:space-between;padding:16px 0;font-weight:600;color:${_page==='about.html'?'var(--blue-500)':'var(--gray-800)'};border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;"><span data-i18n="nav.aboutMobile">About Us</span></a>
+  <a href="products.html" class="mobile-nav-link-plain" style="display:flex;justify-content:space-between;padding:16px 0;font-weight:600;color:${_page==='products.html'?'var(--blue-500)':'var(--gray-800)'};border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;"><span data-i18n="nav.products">Products</span></a>
+  <a href="services.html" class="mobile-nav-link-plain" style="display:flex;justify-content:space-between;padding:16px 0;font-weight:600;color:${_page==='services.html'?'var(--blue-500)':'var(--gray-800)'};border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;"><span data-i18n="nav.services">Services</span></a>
+  <a href="industries.html" class="mobile-nav-link-plain" style="display:flex;justify-content:space-between;padding:16px 0;font-weight:600;color:${_page==='industries.html'?'var(--blue-500)':'var(--gray-800)'};border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;"><span data-i18n="nav.industries">Industries</span></a>
+  <a href="our-clients.html" class="mobile-nav-link-plain" style="display:flex;justify-content:space-between;padding:16px 0;font-weight:600;color:${_page==='our-clients.html'?'var(--blue-500)':'var(--gray-800)'};border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;"><span data-i18n="nav.ourClients">Our Clients</span></a>
+  <a href="technology.html" class="mobile-nav-link-plain" style="display:flex;justify-content:space-between;padding:16px 0;font-weight:600;color:${_page==='technology.html'?'var(--blue-500)':'var(--gray-800)'};border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;"><span data-i18n="nav.technology">Technology</span></a>
+  <a href="contact.html" class="mobile-nav-link-plain" style="display:flex;justify-content:space-between;padding:16px 0;font-weight:600;color:${_page==='contact.html'?'var(--blue-500)':'var(--gray-800)'};border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;"><span data-i18n="nav.contact">Contact</span></a>
   <div style="margin-top:24px;display:flex;flex-direction:column;gap:12px;">
-    <button type="button" class="btn btn-outline site-search-trigger" id="siteSearchBtnMobile" style="width:100%;justify-content:center;"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
-    <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;"><i class="fa-solid fa-paper-plane"></i> Get a Quote</a>
-    <a href="tel:+919870840779" class="btn btn-outline" style="width:100%;justify-content:center;"><i class="fa-solid fa-phone"></i> Call Us Now</a>
+    <button type="button" class="btn btn-outline site-search-trigger" id="siteSearchBtnMobile" style="width:100%;justify-content:center;"><i class="fa-solid fa-magnifying-glass"></i> <span data-i18n="cta.search">Search</span></button>
+    <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;"><i class="fa-solid fa-paper-plane"></i> <span data-i18n="cta.quote">Get a Quote</span></a>
+    <a href="tel:+919870840779" class="btn btn-outline" style="width:100%;justify-content:center;"><i class="fa-solid fa-phone"></i> <span data-i18n="cta.callUs">Call Us Now</span></a>
   </div>
 </div>
 `;
@@ -579,7 +598,7 @@ const FOOTER_HTML = `
     <div class="footer-top">
       <div class="footer-brand">
         <a href="index.html" class="navbar-logo footer-logo"><img src="images/gausin-logo.png" alt="" class="logo-img" width="110" height="52" aria-hidden="true"><div class="logo-text"><div class="logo-name">Gausin International</div><div class="logo-tagline">Engineers Pvt. Ltd.</div></div></a>
-        <p class="footer-brand-desc">Engineering process excellence through advanced evaporation, drying, and industrial plant solutions. Serving dairy, pharma, chemical, and food industries with precision-engineered systems.</p>
+        <p class="footer-brand-desc" data-i18n="footer.brandDesc">Engineering process excellence through advanced evaporation, drying, and industrial plant solutions. Serving dairy, pharma, chemical, and food industries with precision-engineered systems.</p>
         <div class="footer-social">
           <a href="${SOCIAL_LINKS.linkedin}" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
           <a href="${SOCIAL_LINKS.x}" class="social-link" aria-label="X" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
@@ -590,41 +609,41 @@ const FOOTER_HTML = `
       </div>
 
       <div>
-        <div class="footer-title">Products</div>
+        <div class="footer-title" data-i18n="footer.products">Products</div>
         <div class="footer-links">
-          <a href="products.html#evaporators" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Falling Film Evaporator</a>
-          <a href="products.html#evaporators" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Forced Circulation Evaporator</a>
-          <a href="products.html#dryers" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Spray Dryer (Nozzle/Disc)</a>
-          <a href="product-closed-circuit-dryer.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Closed Circuit Dryer</a>
-          <a href="products.html#cip" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>CIP Systems</a>
-          <a href="products.html#milk-processing" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Dairy Processing Plant</a>
-          <a href="products.html#heat-exchangers" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Heat Exchangers</a>
-          <a href="products.html#vessels" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Pressure Vessels & Tanks</a>
-          <a href="product-etp-stp-treatment-plants.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>ETP/STP Treatment Plants</a>
-          <a href="product-biomass-solid-waste-treatment-plant.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Biomass Solid Waste Treatment Plant</a>
+          <a href="products.html#evaporators" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i><span data-i18n="footer.fallingFilm">Falling Film Evaporator</span></a>
+          <a href="products.html#evaporators" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i><span data-i18n="footer.forcedCirculation">Forced Circulation Evaporator</span></a>
+          <a href="products.html#dryers" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i><span data-i18n="footer.sprayDryer">Spray Dryer (Nozzle/Disc)</span></a>
+          <a href="product-closed-circuit-dryer.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i><span data-i18n="footer.closedCircuitDryer">Closed Circuit Dryer</span></a>
+          <a href="products.html#cip" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i><span data-i18n="footer.cipSystems">CIP Systems</span></a>
+          <a href="products.html#milk-processing" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i><span data-i18n="footer.dairyPlant">Dairy Processing Plant</span></a>
+          <a href="products.html#heat-exchangers" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i><span data-i18n="footer.heatExchangers">Heat Exchangers</span></a>
+          <a href="products.html#vessels" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i><span data-i18n="footer.pressureVessels">Pressure Vessels & Tanks</span></a>
+          <a href="product-etp-stp-treatment-plants.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i><span data-i18n="footer.etpStp">ETP/STP Treatment Plants</span></a>
+          <a href="product-biomass-solid-waste-treatment-plant.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i><span data-i18n="footer.biomassWaste">Biomass Solid Waste Treatment Plant</span></a>
         </div>
       </div>
 
       <div>
-        <div class="footer-title">Company</div>
+        <div class="footer-title" data-i18n="footer.company">Company</div>
         <div class="footer-links">
-          <a href="about.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>About</a>
-          <a href="products.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Products</a>
-          <a href="services.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Services</a>
-          <a href="industries.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Industries</a>
-          <a href="our-clients.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Our Clients</a>
-          <a href="technology.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Technology</a>
-          <a href="tech-ai.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Digital Solutions</a>
-          <a href="insights.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Insights</a>
-          <a href="career.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Career</a>
-          <a href="downloads.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Download</a>
-          <a href="news.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>News</a>
-          <a href="contact.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i>Contact</a>
+          <a href="about.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i><span data-i18n="nav.about">About</span></a>
+          <a href="products.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i><span data-i18n="nav.products">Products</span></a>
+          <a href="services.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i><span data-i18n="nav.services">Services</span></a>
+          <a href="industries.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i><span data-i18n="nav.industries">Industries</span></a>
+          <a href="our-clients.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i><span data-i18n="nav.ourClients">Our Clients</span></a>
+          <a href="technology.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i><span data-i18n="nav.technology">Technology</span></a>
+          <a href="tech-ai.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i><span data-i18n="nav.digitalSolutions">Digital Solutions</span></a>
+          <a href="insights.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i><span data-i18n="topbar.insights">Insights</span></a>
+          <a href="career.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i><span data-i18n="topbar.career">Career</span></a>
+          <a href="downloads.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i><span data-i18n="topbar.download">Download</span></a>
+          <a href="news.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i><span data-i18n="topbar.news">News</span></a>
+          <a href="contact.html" class="footer-link"><i class="fa-solid fa-chevron-right" style="font-size:0.625rem;color:var(--blue-500);"></i><span data-i18n="nav.contact">Contact</span></a>
         </div>
       </div>
 
       <div>
-        <div class="footer-title">Contact Us</div>
+        <div class="footer-title" data-i18n="footer.contactUs">Contact Us</div>
         <div class="footer-contact-item">
           <div class="footer-contact-icon"><i class="fa-solid fa-location-dot"></i></div>
           <div class="footer-contact-text">DH-249, Pallavpuram Phase-1, Roorkee Road, Meerut, Uttar Pradesh, India  -  250110</div>
@@ -650,13 +669,13 @@ const FOOTER_HTML = `
 
     <div class="footer-bottom">
       <div class="footer-bottom-left">
-        <div>&copy; ${new Date().getFullYear()} Gausin International Engineers Pvt. Ltd. All rights reserved.</div>
-        <div class="footer-credit">Designed &amp; Developed by Gausin International Engineers Pvt. Ltd.</div>
+        <div>&copy; ${new Date().getFullYear()} Gausin International Engineers Pvt. Ltd. <span data-i18n="footer.rights">All rights reserved.</span></div>
+        <div class="footer-credit" data-i18n="footer.credit">Designed &amp; Developed by Gausin International Engineers Pvt. Ltd.</div>
       </div>
       <div class="footer-bottom-links">
-        <a href="privacy-policy.html" class="footer-bottom-link">Privacy Policy</a>
-        <a href="terms-of-service.html" class="footer-bottom-link">Terms of Service</a>
-        <a href="sitemap.html" class="footer-bottom-link">Sitemap</a>
+        <a href="privacy-policy.html" class="footer-bottom-link" data-i18n="footer.privacy">Privacy Policy</a>
+        <a href="terms-of-service.html" class="footer-bottom-link" data-i18n="footer.terms">Terms of Service</a>
+        <a href="sitemap.html" class="footer-bottom-link" data-i18n="footer.sitemap">Sitemap</a>
       </div>
     </div>
   </div>
@@ -679,13 +698,13 @@ function injectFooter() {
 const FLOATING_HTML = `
 <!-- WhatsApp Float -->
 <a href="https://wa.me/919870840779?text=Hello%20Gausin%20International%20Engineers%2C%20I%20am%20interested%20in%20your%20industrial%20engineering%20products%20and%20services.%20Please%20provide%20more%20information."
-   target="_blank" rel="noopener" class="whatsapp-float" id="whatsappFloat" aria-label="Chat on WhatsApp">
+   target="_blank" rel="noopener" class="whatsapp-float" id="whatsappFloat" data-i18n-aria="aria.whatsapp" aria-label="Chat on WhatsApp">
   <i class="fa-brands fa-whatsapp"></i>
-  <span class="whatsapp-tooltip">Chat on WhatsApp</span>
+  <span class="whatsapp-tooltip" data-i18n="float.whatsapp">Chat on WhatsApp</span>
 </a>
 
 <!-- Back To Top -->
-<button id="backToTop" aria-label="Back to top">
+<button id="backToTop" data-i18n-aria="aria.backToTop" aria-label="Back to top">
   <i class="fa-solid fa-arrow-up"></i>
 </button>
 
@@ -710,11 +729,11 @@ const COOKIE_HTML = `
       <div style="flex:1;min-width:280px;">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
           <i class="fa-solid fa-cookie-bite" style="color:var(--blue-400);font-size:1.125rem;"></i>
-          <span style="font-size:0.9375rem;font-weight:700;color:white;font-family:'Montserrat',sans-serif;">We use cookies</span>
+          <span style="font-size:0.9375rem;font-weight:700;color:white;font-family:'Montserrat',sans-serif;" data-i18n="cookie.title">We use cookies</span>
         </div>
         <p style="font-size:0.875rem;color:var(--gray-400);line-height:1.6;margin:0;">
-          We use cookies to enhance your experience and analyze website traffic. By clicking "Accept All", you consent to our use of cookies.
-          <a href="privacy-policy.html" style="color:var(--blue-400);text-decoration:underline;margin-left:4px;">Learn more</a>
+          <span data-i18n="cookie.body">We use cookies to enhance your experience and analyze website traffic. By clicking "Accept All", you consent to our use of cookies.</span>
+          <a href="privacy-policy.html" style="color:var(--blue-400);text-decoration:underline;margin-left:4px;" data-i18n="cookie.learnMore">Learn more</a>
         </p>
       </div>
       <div style="display:flex;gap:10px;flex-shrink:0;flex-wrap:wrap;">
@@ -723,7 +742,7 @@ const COOKIE_HTML = `
           background:transparent;color:var(--gray-400);font-size:0.875rem;font-weight:600;
           cursor:pointer;transition:all 0.2s;font-family:'Montserrat',sans-serif;
         " onmouseover="this.style.borderColor='rgba(255,255,255,0.4)';this.style.color='white'"
-           onmouseout="this.style.borderColor='rgba(255,255,255,0.2)';this.style.color='var(--gray-400)'">
+           onmouseout="this.style.borderColor='rgba(255,255,255,0.2)';this.style.color='var(--gray-400)'" data-i18n="cookie.reject">
           Reject
         </button>
         <button id="cookieAccept" style="
@@ -735,7 +754,7 @@ const COOKIE_HTML = `
           box-shadow:0 4px 12px rgba(11,94,215,0.3);
         " onmouseover="this.style.transform='translateY(-1px)';this.style.boxShadow='0 6px 18px rgba(11,94,215,0.4)'"
            onmouseout="this.style.transform='';this.style.boxShadow='0 4px 12px rgba(11,94,215,0.3)'">
-          <i class="fa-solid fa-check" style="margin-right:6px;"></i>Accept All
+          <i class="fa-solid fa-check" style="margin-right:6px;"></i><span data-i18n="cookie.accept">Accept All</span>
         </button>
       </div>
     </div>
@@ -883,23 +902,56 @@ function fixSocialLinks() {
 }
 
 /* ─── Inject all components ───────────────────────────────── */
+function upgradeInlineShell() {
+  const nav = document.getElementById('navbar');
+  if (!nav || nav.dataset.gausinShellV2) return;
+  if (nav.querySelector('[data-i18n]')) {
+    nav.dataset.gausinShellV2 = '1';
+    return;
+  }
+
+  const tmp = document.createElement('div');
+  tmp.innerHTML = NAVBAR_HTML;
+  const newNav = tmp.firstElementChild;
+  nav.replaceWith(newNav);
+
+  const oldMobile = document.getElementById('mobileNav');
+  if (oldMobile) oldMobile.remove();
+
+  const tmpMobile = document.createElement('div');
+  tmpMobile.innerHTML = getMobileNavHtml();
+  newNav.insertAdjacentElement('afterend', tmpMobile.firstElementChild);
+
+  newNav.dataset.gausinShellV2 = '1';
+  injectMissingSecondaryNavItems();
+  injectMissingOurClientsNav();
+  injectSecondaryMegaMenus();
+  fixProductsMegaMenu();
+  injectMobileNavIfMissing();
+  injectMissingMobileNavLinks();
+  injectMissingOurClientsMobileLink();
+  injectMobileNavAccordions();
+  injectSearchButtons();
+}
+
 function injectComponents() {
   ensureFlagIcons();
 
-  // Navbar (only if not already present from inline HTML)
   if (!document.getElementById('navbar')) {
     const navWrapper = document.createElement('div');
     navWrapper.innerHTML = NAVBAR_HTML;
     document.body.insertBefore(navWrapper.firstElementChild, document.body.firstChild);
-    // Mobile nav
     const mobileWrapper = document.createElement('div');
     mobileWrapper.innerHTML = getMobileNavHtml();
     document.body.insertBefore(mobileWrapper.firstElementChild, document.body.children[1]);
+  } else {
+    upgradeInlineShell();
   }
 
   injectMobileNavIfMissing();
 
   injectTopbar();
+  removeDigitalSolutionsFromNav();
   injectFooter();
 
   // Floating buttons (skip backToTop if page already has one)
@@ -954,6 +1006,16 @@ function injectComponents() {
   });
 
   window.bindBackToTop?.();
+
+  const btt = document.getElementById('backToTop');
+  if (btt && !btt.hasAttribute('data-i18n-aria')) {
+    btt.setAttribute('data-i18n-aria', 'aria.backToTop');
+  }
+
+  const lang = localStorage.getItem('gausin_lang');
+  if (lang && lang !== 'en' && window.gausinApplyI18n) {
+    window.gausinApplyI18n(lang);
+  }
 }
 
 /* ─── WhatsApp Styles ─────────────────────────────────────── */
@@ -1142,9 +1204,8 @@ function initPageTransitions() {
 /* ─── Inject styles ───────────────────────────────────────── */
 document.head.insertAdjacentHTML('beforeend', WHATSAPP_STYLES);
 
-/* ─── Custom Translation Engine ──────────────────────────────
-   Uses translate.googleapis.com directly — no widget, no toolbar
-   ─────────────────────────────────────────────────────────── */
+// ═══ LEGACY: Google Translate engine (DISABLED — replaced by js/i18n.js) ═══
+if (false) {
 const _TR = {
   cache:          {},
   originals:      [],
@@ -1154,8 +1215,96 @@ const _TR = {
   docMeta:        null,
 };
 
-/* Only skip language UI — chatbot, search, and page content all translate */
-const _TR_SKIP = '#langSwitcher,.mobile-lang-btns,.notranslate,[translate="no"],#google_translate_element,.topbar-link i';
+/* Only skip language UI + navbar CTA + product H1 (whole-title German terms) */
+const _TR_SKIP = '#langSwitcher,.mobile-lang-btns,.notranslate,[translate="no"],#google_translate_element,.topbar-link i,.navbar-cta .btn-primary,.mobile-nav a.btn-primary[href*="contact"],.mobile-nav a.btn-primary[href="#inquiry"],.prod-title';
+
+/* German product H1 — avoids “Fallender Film” (cinema) for liquid-film equipment */
+const PRODUCT_TITLE_DE = {
+  'Falling Film Evaporator': 'Fallfilmverdampfer',
+  'Rising Film Evaporator': 'Steigfilmverdampfer',
+  'Agitated Thin Film Dryer (ATFD)': 'Rühr-Dünnschichttrockner (ATFD)',
+};
+
+function _prodTitleKey(el) {
+  return el.textContent.replace(/\s+/g, ' ').trim();
+}
+
+async function syncProductTitles(lang) {
+  const titles = document.querySelectorAll('.prod-title');
+  if (!titles.length) return;
+  for (const el of titles) {
+    if (!el.dataset.gausinTitleOrig) el.dataset.gausinTitleOrig = el.innerHTML;
+    if (lang === 'en') {
+      el.innerHTML = el.dataset.gausinTitleOrig;
+      continue;
+    }
+    const key = _prodTitleKey(el);
+    if (lang === 'de' && PRODUCT_TITLE_DE[key]) {
+      el.textContent = PRODUCT_TITLE_DE[key];
+      continue;
+    }
+    const tr = await _trFetchOne(key, lang);
+    el.textContent = tr;
+  }
+}
+
+/* Short navbar CTA labels — avoids cut-off when auto-translate returns long text */
+const NAVBAR_CTA_LABELS = {
+  en: 'Get a Quote',
+  de: 'Angebot',
+  fr: 'Devis',
+  es: 'Cotización',
+  pt: 'Orçamento',
+  it: 'Preventivo',
+  nl: 'Offerte',
+  cs: 'Nabídka',
+  pl: 'Wycena',
+  hi: 'कोटेशन',
+  'zh-CN': '获取报价',
+  ja: '見積もり',
+  ko: '견적',
+  ar: 'عرض سعر',
+  el: 'Προσφορά',
+  hu: 'Ajánlat',
+  bg: 'Оферта',
+  ms: 'Sebut Harga',
+  id: 'Penawaran',
+  lv: 'Piedāvājums',
+  lt: 'Pasiūlymas',
+};
+
+const NAVBAR_CTA_TITLES = {
+  de: 'Holen Sie sich ein Angebot',
+  fr: 'Demander un devis',
+  es: 'Solicitar cotización',
+  pt: 'Solicitar orçamento',
+  it: 'Richiedi preventivo',
+  nl: 'Offerte aanvragen',
+};
+
+function _navbarCtaLinks() {
+  return document.querySelectorAll(
+    '.navbar-cta a.btn-primary[href*="contact"], .navbar-cta a.btn-primary[href="#inquiry"], ' +
+    '.mobile-nav a.btn-primary[href*="contact"], .mobile-nav a.btn-primary[href="#inquiry"]'
+  );
+}
+
+function syncNavbarCtaLabels(lang) {
+  const code = lang || 'en';
+  _navbarCtaLinks().forEach((link) => {
+    if (!link.dataset.gausinCtaOrig) {
+      link.dataset.gausinCtaOrig = link.textContent.replace(/\s+/g, ' ').trim();
+    }
+    const label = NAVBAR_CTA_LABELS[code] || link.dataset.gausinCtaOrig;
+    const icon = link.querySelector('i');
+    link.textContent = '';
+    if (icon) link.appendChild(icon);
+    link.appendChild(document.createTextNode(' ' + label));
+    const title = NAVBAR_CTA_TITLES[code];
+    if (title) link.setAttribute('title', title);
+    else link.removeAttribute('title');
+  });
+}
 
 const _TR_BLOCK_SEL = [
   '.hero-desc', '.hero-badge', '.hero-stat-label',
@@ -1203,6 +1352,13 @@ function _trPre(text) {
     .replace(/\bMVR\b/g, 'mechanical vapor recompression')
     .replace(/\bTVR\b/g, 'thermal vapor recompression')
     .replace(/\bFBD\b/g, 'fluidized bed dryer')
+    .replace(/\bAgitated Thin Film Dryer \(ATFD\)\b/gi, '⟦G:ATFD⟧')
+    .replace(/\bAgitated Thin Film Dryer\b/gi, '⟦G:ATFD⟧')
+    .replace(/\bFalling Film Evaporator\b/gi, '⟦G:FFEV⟧')
+    .replace(/\bRising Film Evaporator\b/gi, '⟦G:RFEV⟧')
+    .replace(/\bFalling Film\b/gi, '⟦G:FF⟧')
+    .replace(/\bRising Film\b/gi, '⟦G:RF⟧')
+    .replace(/\bThin Film\b/gi, '⟦G:TF⟧')
     .replace(/\bATFD\b/g, 'agitated thin-film dryer')
     .replace(/\bPHE\b/g, 'plate heat exchanger')
     .replace(/\bETP\b/g, 'effluent treatment plant')
@@ -1220,7 +1376,20 @@ function _trPre(text) {
 }
 
 function _trPost(text) {
-  return text;
+  if (!text) return text;
+  if (_TR.active !== 'de') return text;
+  return text
+    .replace(/⟦G:FFEV⟧/g, 'Fallfilmverdampfer')
+    .replace(/⟦G:RFEV⟧/g, 'Steigfilmverdampfer')
+    .replace(/⟦G:ATFD⟧/g, 'Rühr-Dünnschichttrockner (ATFD)')
+    .replace(/⟦G:FF⟧/g, 'Fallfilm')
+    .replace(/⟦G:RF⟧/g, 'Steigfilm')
+    .replace(/⟦G:TF⟧/g, 'Dünnschicht')
+    .replace(/\bFallender Film[\s-]*Verdampfer\b/gi, 'Fallfilmverdampfer')
+    .replace(/\bSteigender Film[\s-]*Verdampfer\b/gi, 'Steigfilmverdampfer')
+    .replace(/\bFallender Film\b/gi, 'Fallfilm')
+    .replace(/\bSteigender Film\b/gi, 'Steigfilm')
+    .replace(/\bDünner Film\b/gi, 'Dünnschicht');
 }
 
 function _trBlockText(el) {
@@ -1408,6 +1577,8 @@ async function _translatePageTo(lang) {
   }
 
   if (lang === 'en') {
+    syncNavbarCtaLabels('en');
+    await syncProductTitles('en');
     syncLangSwitcherUi(getActiveLangEntry());
     document.documentElement.lang = 'en';
     return;
@@ -1443,6 +1614,8 @@ async function _translatePageTo(lang) {
     document.documentElement.lang = _trGoogleLang(lang);
   } finally {
     _trIndicator(false);
+    syncNavbarCtaLabels(lang);
+    await syncProductTitles(lang);
     syncLangSwitcherUi(getActiveLangEntry());
   }
 }
@@ -1475,15 +1648,63 @@ async function gausinTranslateSubtree(root) {
 
 window.gausinTranslateSubtree = gausinTranslateSubtree;
 window.gausinGetLang = () => _TR.active;
+} // END LEGACY Google Translate
+
+/* ─── Hybrid Static i18n (Phase 1) ─────────────────────────── */
+const GAUSIN_I18N_ASSET_V = '20260711d';
+(function preloadGausinI18n() {
+  if (document.querySelector('script[data-gausin-i18n]')) return;
+  const page = document.createElement('script');
+  page.src = `js/i18n-page.js?v=${GAUSIN_I18N_ASSET_V}`;
+  page.defer = true;
+  page.setAttribute('data-gausin-i18n-page', '1');
+  page.addEventListener('load', () => {
+    const lang = localStorage.getItem('gausin_lang');
+    if (lang && lang !== 'en' && window.gausinApplyI18n) window.gausinApplyI18n(lang);
+  }, { once: true });
+  document.head.appendChild(page);
+  const s = document.createElement('script');
+  s.src = `js/i18n.js?v=${GAUSIN_I18N_ASSET_V}`;
+  s.defer = true;
+  s.setAttribute('data-gausin-i18n', '1');
+  document.head.appendChild(s);
+})();
+
+function whenI18nReady(cb) {
+  const ready = () => typeof window.gausinApplyI18n === 'function' && typeof window.gausinApplyPageContent === 'function';
+  if (ready()) {
+    cb();
+    return;
+  }
+  let attempts = 0;
+  const tick = () => {
+    if (ready()) {
+      cb();
+      return;
+    }
+    attempts += 1;
+    if (attempts > 80) {
+      cb();
+      return;
+    }
+    setTimeout(tick, 25);
+  };
+  document.querySelector('script[data-gausin-i18n-page]')?.addEventListener('load', tick, { once: true });
+  document.querySelector('script[data-gausin-i18n]')?.addEventListener('load', tick, { once: true });
+  tick();
+}
+
+/* Legacy stub — search/chatbot may still reference this name */
+window.gausinTranslateSubtree = function _legacyTranslateStub() {};
 
 let _trApplyTimer = null;
 function applyStoredLanguage() {
   if (_trApplyTimer) clearTimeout(_trApplyTimer);
-  _trApplyTimer = setTimeout(() => {
+  _trApplyTimer = setTimeout(async () => {
     _trApplyTimer = null;
     const entry = getActiveLangEntry();
     syncLangSwitcherUi(entry);
-    if (entry.code !== 'en') _translatePageTo(entry.code);
+    if (window.gausinApplyI18n) await window.gausinApplyI18n(entry.code);
   }, 250);
 }
 
@@ -1491,7 +1712,8 @@ function applyStoredLanguage() {
 function applyLangChange(entry) {
   setActiveLangEntry(entry);
   syncLangSwitcherUi(entry);
-  return _translatePageTo(entry.code);
+  if (window.gausinApplyI18n) return window.gausinApplyI18n(entry.code);
+  return Promise.resolve();
 }
 
 /* ─── Init on DOM ready ───────────────────────────────────── */
@@ -1529,31 +1751,33 @@ function initLangSwitcher() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  injectComponents();
-  initPageTransitions();
-  initLangSwitcher();
+  whenI18nReady(() => {
+    injectComponents();
+    initPageTransitions();
+    initLangSwitcher();
 
-  const entry = getActiveLangEntry();
-  syncLangSwitcherUi(entry);
+    const entry = getActiveLangEntry();
+    syncLangSwitcherUi(entry);
 
-  /* Load site search + AI chatbot on all pages except admin */
-  if (!window.location.pathname.includes('/admin/')) {
-    const searchScript = document.createElement('script');
-    searchScript.src = 'js/search.js';
-    searchScript.defer = true;
-    searchScript.onload = () => {
-      injectSearchButtons();
-      applyStoredLanguage();
-    };
-    document.body.appendChild(searchScript);
+    /* Load site search + AI chatbot on all pages except admin */
+    if (!window.location.pathname.includes('/admin/')) {
+      const searchScript = document.createElement('script');
+      searchScript.src = 'js/search.js';
+      searchScript.defer = true;
+      searchScript.onload = () => {
+        injectSearchButtons();
+        applyStoredLanguage();
+      };
+      document.body.appendChild(searchScript);
 
-    const chatScript = document.createElement('script');
-    chatScript.src = 'js/chatbot.js';
-    chatScript.defer = true;
-    chatScript.onload = () => applyStoredLanguage();
-    document.body.appendChild(chatScript);
-  }
+      const chatScript = document.createElement('script');
+      chatScript.src = 'js/chatbot.js';
+      chatScript.defer = true;
+      chatScript.onload = () => applyStoredLanguage();
+      document.body.appendChild(chatScript);
+    }
 
-  /* First pass after static DOM + injected navbar/footer */
-  applyStoredLanguage();
+    /* First pass after static DOM + injected navbar/footer */
+    applyStoredLanguage();
+  });
 });

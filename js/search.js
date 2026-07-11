@@ -196,10 +196,12 @@ function renderResults(query) {
       </a>
     `;
   }).join('');
+  /* LEGACY: live Google Translate disabled — Hybrid Static i18n (Phase 1)
   if (window.gausinTranslateSubtree) {
     const overlay = document.getElementById('siteSearchOverlay');
     if (overlay) window.gausinTranslateSubtree(results);
   }
+  */
 }
 
 function setActiveIndex(index) {
@@ -284,7 +286,10 @@ function createSearchModal() {
 
   document.body.appendChild(overlay);
 
-  if (window.gausinTranslateSubtree) window.gausinTranslateSubtree(overlay);
+  /* LEGACY: if (window.gausinTranslateSubtree) window.gausinTranslateSubtree(overlay); */
+  if (window.gausinPatchDomForI18n) window.gausinPatchDomForI18n();
+  const lang = window.gausinGetLang?.();
+  if (lang && lang !== 'en' && window.gausinApplyI18n) window.gausinApplyI18n(lang);
 
   overlay.querySelector('[data-close-search]')?.addEventListener('click', closeSearch);
 

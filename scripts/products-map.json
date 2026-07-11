@@ -1,0 +1,134 @@
+{
+  "product-agitated-thin-film-dryer.html": {
+    "key": "product.agitated_thin_film_dryer",
+    "title": "Agitated Thin Film Dryer (ATFD)"
+  },
+  "product-automated-cip-system.html": {
+    "key": "product.automated_cip_system",
+    "title": "Automated CIP System"
+  },
+  "product-batch-evaporator-vacuum-pan.html": {
+    "key": "product.batch_evaporator_vacuum_pan",
+    "title": "Batch Evaporator (Vacuum Pan)"
+  },
+  "product-biogas-and-cng-plant.html": {
+    "key": "product.biogas_and_cng_plant",
+    "title": "Biogas and CNG Plant"
+  },
+  "product-biomass-solid-waste-treatment-plant.html": {
+    "key": "product.biomass_solid_waste_treatment_plant",
+    "title": "Biomass Solid Waste Treatment Plant"
+  },
+  "product-bulk-milk-cooler.html": {
+    "key": "product.bulk_milk_cooler",
+    "title": "Bulk Milk Cooler (BMC)"
+  },
+  "product-butter-churner.html": {
+    "key": "product.butter_churner",
+    "title": "Butter Churner"
+  },
+  "product-butter-processing-unit.html": {
+    "key": "product.butter_processing_unit",
+    "title": "Butter Processing Unit"
+  },
+  "product-closed-circuit-dryer.html": {
+    "key": "product.closed_circuit_dryer",
+    "title": "Closed Circuit Dryer"
+  },
+  "product-complete-milk-processing-plant.html": {
+    "key": "product.complete_milk_processing_plant",
+    "title": "Complete Milk Processing Plant"
+  },
+  "product-crystallization-tank.html": {
+    "key": "product.crystallization_tank",
+    "title": "Crystallization Tank"
+  },
+  "product-etp-stp-treatment-plants.html": {
+    "key": "product.etp_stp_treatment_plants",
+    "title": "ETP/STP Treatment Plants"
+  },
+  "product-falling-film-evaporator.html": {
+    "key": "product.falling_film_evaporator",
+    "title": "Falling Film Evaporator"
+  },
+  "product-fluidized-bed-dryer.html": {
+    "key": "product.fluidized_bed_dryer",
+    "title": "Fluidized Bed Dryer (FBD)"
+  },
+  "product-forced-circulation-evaporator.html": {
+    "key": "product.forced_circulation_evaporator",
+    "title": "Forced Circulation Evaporator"
+  },
+  "product-ghee-kettle.html": {
+    "key": "product.ghee_kettle",
+    "title": "Ghee Kettle"
+  },
+  "product-ghee-making-plant.html": {
+    "key": "product.ghee_making_plant",
+    "title": "Ghee Making Plant"
+  },
+  "product-incinerator-system.html": {
+    "key": "product.incinerator_system",
+    "title": "Incinerator System"
+  },
+  "product-khoya-making-machine.html": {
+    "key": "product.khoya_making_machine",
+    "title": "Khoya Making Machine"
+  },
+  "product-milk-can-conveyor.html": {
+    "key": "product.milk_can_conveyor",
+    "title": "Milk Can Conveyor"
+  },
+  "product-milk-chilling-plant.html": {
+    "key": "product.milk_chilling_plant",
+    "title": "Milk Chilling Plant"
+  },
+  "product-milk-deodorizer.html": {
+    "key": "product.milk_deodorizer",
+    "title": "Milk Deodorizer"
+  },
+  "product-milk-pasteurizer-htst-ltlt.html": {
+    "key": "product.milk_pasteurizer_htst_ltlt",
+    "title": "Milk Pasteurizer (HTST / LTLT)"
+  },
+  "product-plate-heat-exchanger-phe.html": {
+    "key": "product.plate_heat_exchanger_phe",
+    "title": "Plate Heat Exchanger (PHE)"
+  },
+  "product-plate-type-evaporator.html": {
+    "key": "product.plate_type_evaporator",
+    "title": "Plate Type Evaporator"
+  },
+  "product-pressure-vessels-asme-ibr.html": {
+    "key": "product.pressure_vessels_asme_ibr",
+    "title": "Pressure Vessels (ASME / IBR)"
+  },
+  "product-rising-film-evaporator.html": {
+    "key": "product.rising_film_evaporator",
+    "title": "Rising Film Evaporator"
+  },
+  "product-scrubber-systems.html": {
+    "key": "product.scrubber_systems",
+    "title": "Scrubber Systems"
+  },
+  "product-shell-tube-heat-exchanger.html": {
+    "key": "product.shell_tube_heat_exchanger",
+    "title": "Shell & Tube Heat Exchanger"
+  },
+  "product-spin-flash-dryer.html": {
+    "key": "product.spin_flash_dryer",
+    "title": "Spin Flash Dryer"
+  },
+  "product-spray-dryer.html": {
+    "key": "product.spray_dryer",
+    "title": "Spray Dryer (Nozzle / Rotary Disc)"
+  },
+  "product-stainless-steel-storage-silos.html": {
+    "key": "product.stainless_steel_storage_silos",
+    "title": "Stainless Steel Storage Silos"
+  },
+  "product-wtp-uf-ro-softener-plants.html": {
+    "key": "product.wtp_uf_ro_softener_plants",
+    "title": "WTP/UF/RO/Softener Plants"
+  }
+}
