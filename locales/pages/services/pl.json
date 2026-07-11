@@ -45,13 +45,6 @@
   "stat.label.1": "Średnia odpowiedź na wycenę",
   "stat.label.2": "Terminowość dostaw",
   "stat.label.3": "Gwarancja wydajności",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0"
-  ],
   "hero.label.0": "Usługi",
   "crumb.0": "Dom",
   "crumb.1": "Usługi",
@@ -69,7 +62,7 @@
   "svc.title.5": "Doradztwo techniczne i rozwiązywanie problemów",
   "svc.desc.0": "Opracowujemy kompleksowe pakiety inżynierii procesowej dla nowych zakładów i rozbudowy - w tym schematy technologiczne procesów, bilanse masowe i energetyczne, dobór urządzeń, opracowywanie P&ID oraz symulacje procesów przy użyciu CHEMCAD i HTRI.",
   "svc.desc.1": "Nasze szczegółowe usługi inżynieryjne obejmują pełne modelowanie 3D CAD, rysunki produkcyjne, projekty konstrukcji budowlanych, układy rurociągów, inżynierię elektryczną, inżynierię oprzyrządowania oraz specyfikacje zamówień dla wszystkich głównych urządzeń i systemów.",
-  "svc.desc.2": "Kompleksowe zarządzanie projektem od koncepcji po uruchomienie. ",
+  "svc.desc.2": "Kompleksowe zarządzanie projektem od koncepcji po uruchomienie. Nasz zespół zarządzający projektami wykorzystuje MS Project i metodyki zwinne, aby zapewnić terminową i mieszczącą się w budżecie realizację skomplikowanych obiektów przemysłowych wraz z pełną dokumentacją i przekazaniem.",
   "svc.desc.3": "Kompleksowe audyty energii cieplnej dla istniejących zakładów, identyfikujące straty energii i rekomendujące sprawdzone modernizacje. ",
   "svc.desc.4": "Integrujemy zaawansowane systemy automatyki PLC/SCADA z nowymi i istniejącymi zakładami procesowymi, umożliwiając monitorowanie w czasie rzeczywistym, zautomatyzowane sekwencje sterujące, zarządzanie alarmami, rejestrację danych i zdalny dostęp za pośrednictwem platform obsługujących IoT.",
   "svc.desc.5": "Nasi doświadczeni inżynierowie zapewniają fachowe doradztwo techniczne w zakresie rozwiązywania problemów z procesami, usuwania wąskich gardeł w wydajności, zwiększania wydajności, zapewniania zgodności z przepisami i modernizacji zakładów - dostarczając praktyczne zalecenia inżynieryjne o wymiernym wpływie.",
@@ -124,5 +117,12 @@
   "proc.desc.4": "Precyzyjna produkcja w naszym warsztacie przy użyciu obróbki CNC, cięcia laserowego i spawania TIG/MIG – z rygorystyczną kontrolą jakości, testami NDT i kontrolą strony trzeciej.",
   "proc.desc.5": "Nasz zespół inżynierów terenowych zajmuje się instalacją na miejscu, ustawieniem mechanicznym, orurowaniem, połączeniami elektrycznymi, kontrolami przed oddaniem do użytku oraz uruchomieniem instalacji wraz z testami wydajności.",
   "proc.desc.6": "Gwarantowane uruchomienie testu wydajności przeprowadzonego w Twojej obecności. ",
-  "proc.desc.7": "Bieżące wsparcie techniczne, konserwacja zapobiegawcza, dostawa części zamiennych i coroczne audyty wydajności, aby zapewnić dalsze działanie Twojego zakładu z najwyższą wydajnością."
+  "proc.desc.7": "Bieżące wsparcie techniczne, konserwacja zapobiegawcza, dostawa części zamiennych i coroczne audyty wydajności, aby zapewnić dalsze działanie Twojego zakładu z najwyższą wydajnością.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0"
+  ]
 }

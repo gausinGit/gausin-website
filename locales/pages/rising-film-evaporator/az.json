@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "category": "Buxarlandırıcılar",
   "breadcrumb.cat.0": "Buxarlandırıcılar",
   "qs.0.label": "L/saat Tutumu",
@@ -122,5 +116,11 @@
   "tagline": "Maye və buxarın bir dırmaşma filmində birlikdə yüksəldiyi şaquli boru buxarlandırıcısı. ",
   "overview.p0": "<strong style=\"color:var(--gray-900);\">Gausin Yüksələn Film Buxarlandırıcısı (RFE)</strong> şaquli boruların içərisində yuxarıya doğru axan maye və buxarla işləyir və buxar qaldırma effekti ilə boru divarlarında qalxan və ya qalxan film yaradır.",
   "overview.p1": "Bu konfiqurasiya şəkər məhlulları, kaustik soda və qida mayeləri kimi aşağı və orta özlülüklü yemlər üçün yaxşı istilik ötürülməsini təklif edir. ",
-  "overview.p2": "Gausin RFE qurğuları optimallaşdırılmış boru uzunluğu (3 ilə 9 m), kalibrlənmiş yem paylanması və enerjiyə qənaətli işləmə üçün vakuum sistemləri ilə dizayn edilmişdir. "
+  "overview.p2": "Gausin RFE qurğuları optimallaşdırılmış boru uzunluğu (3 ilə 9 m), kalibrlənmiş yem paylanması və enerjiyə qənaətli işləmə üçün vakuum sistemləri ilə dizayn edilmişdir. ",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

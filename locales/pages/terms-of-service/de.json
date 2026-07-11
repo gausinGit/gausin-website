@@ -17,16 +17,13 @@
   "p.3": "Der gesamte Inhalt der Website, einschließlich Text, Grafiken, Produktlayouts, Zeichnungen und Markenwerte, ist Eigentum von Gausin International Engineers Pvt. oder ist an diese lizenziert. ",
   "p.4": "Sie erklären sich damit einverstanden, diese Website nicht zu missbrauchen, keinen unbefugten Zugriff zu versuchen, bösartigen Code einzuschleusen, geschützte Inhalte zu kratzen oder die Plattform in einer Weise zu nutzen, die der Funktionalität der Website oder dem Ruf Ihres Unternehmens schadet.",
   "p.5": "Soweit gesetzlich zulässig, haftet Gausin International Engineers nicht für direkte, indirekte, zufällige oder Folgeschäden, die sich aus der Nutzung der Website, vorübergehenden Ausfallzeiten, Datenproblemen oder dem Vertrauen auf nicht vertragsgemäße Inhalte ergeben.",
-  "p.6": "Unsere Website kann Links zu externen Ressourcen enthalten. ",
-  "p.7": "Diese Bedingungen unterliegen den Gesetzen Indiens. ",
+  "p.6": "Unsere Website kann Links zu externen Ressourcen enthalten. Wir kontrollieren oder unterstützen externe Websites nicht und sind nicht für deren Inhalte, Bedingungen oder Datenschutzpraktiken verantwortlich.",
+  "p.7": "Diese Bedingungen unterliegen den Gesetzen Indiens. Alle Streitigkeiten im Zusammenhang mit der Nutzung der Website oder der Auslegung dieser Bedingungen unterliegen den zuständigen Gerichten in Meerut, Uttar Pradesh, Indien.",
   "p.8": "Bei rechtlichen, vertraglichen oder Compliance-Anfragen kontaktieren Sie uns über die unten angegebenen Kontaktdaten. ",
   "li.0": "Alle Angebote unterliegen der technischen Abklärung und kaufmännischen Genehmigung.",
   "li.1": "Preise, Steuern und Lieferzeiten können je nach Spezifikationen und Projektstandort variieren.",
   "li.2": "Fertigungs-, Versand-, Montage- und Inbetriebnahmebedingungen gelten nur im Rahmen des vereinbarten schriftlichen Vertrages.",
   "_meta.title": "Nutzungsbedingungen | ",
-  "_htmlKeys": [
-    "legal.note.0"
-  ],
   "hero.label.0": "Legal",
   "legal.chipLbl.0": "Dokumentieren",
   "legal.chipLbl.1": "Datum des Inkrafttretens",
@@ -49,8 +46,8 @@
   "legal.p.2": "Der gesamte Inhalt der Website, einschließlich Text, Grafiken, Produktlayouts, Zeichnungen und Markenwerte, ist Eigentum von Gausin International Engineers Pvt. oder ist an diese lizenziert. ",
   "legal.p.3": "Sie erklären sich damit einverstanden, diese Website nicht zu missbrauchen, keinen unbefugten Zugriff zu versuchen, bösartigen Code einzuschleusen, geschützte Inhalte zu kratzen oder die Plattform in einer Weise zu nutzen, die der Funktionalität der Website oder dem Ruf Ihres Unternehmens schadet.",
   "legal.p.4": "Soweit gesetzlich zulässig, haftet Gausin International Engineers nicht für direkte, indirekte, zufällige oder Folgeschäden, die sich aus der Nutzung der Website, vorübergehenden Ausfallzeiten, Datenproblemen oder dem Vertrauen auf nicht vertragsgemäße Inhalte ergeben.",
-  "legal.p.5": "Unsere Website kann Links zu externen Ressourcen enthalten. ",
-  "legal.p.6": "Diese Bedingungen unterliegen den Gesetzen Indiens. ",
+  "legal.p.5": "Unsere Website kann Links zu externen Ressourcen enthalten. Wir kontrollieren oder unterstützen externe Websites nicht und sind nicht für deren Inhalte, Bedingungen oder Datenschutzpraktiken verantwortlich.",
+  "legal.p.6": "Diese Bedingungen unterliegen den Gesetzen Indiens. Alle Streitigkeiten im Zusammenhang mit der Nutzung der Website oder der Auslegung dieser Bedingungen unterliegen den zuständigen Gerichten in Meerut, Uttar Pradesh, Indien.",
   "legal.p.7": "Bei rechtlichen, vertraglichen oder Compliance-Anfragen kontaktieren Sie uns über die unten angegebenen Kontaktdaten. ",
   "legal.li.0": "Alle Angebote unterliegen der technischen Abklärung und kaufmännischen Genehmigung.",
   "legal.li.1": "Preise, Steuern und Lieferzeiten können je nach Spezifikationen und Projektstandort variieren.",
@@ -62,5 +59,8 @@
   "legal.nav.2": "Geistiges Eigentum",
   "legal.nav.3": "Haftung",
   "legal.nav.4": "Geltendes Recht",
-  "legal.note.0": "<strong>Rechtlicher Kontakt:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | "
+  "legal.note.0": "<strong>Rechtlicher Kontakt:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | ",
+  "_htmlKeys": [
+    "legal.note.0"
+  ]
 }

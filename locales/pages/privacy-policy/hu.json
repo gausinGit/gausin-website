@@ -14,7 +14,7 @@
   "p.0": "Hogyan gyűjti, használja és védi a Gausin International Engineers az Ön adatait.",
   "p.1": "Amikor kapcsolatba lép velünk ipari berendezésekkel, projektbeszélgetésekkel, szerviztámogatással vagy árajánlatokkal, a következőket gyűjthetjük:",
   "p.2": "Az adatokat az Ön hozzájárulása (űrlap benyújtása), jogos üzleti érdeke (B2B kommunikáció és támogatás), valamint jogi kötelezettségei (adózási/megfelelőségi nyilvántartás) alapján dolgozzuk fel.",
-  "p.3": "Személyes adatokat nem adunk el. ",
+  "p.3": "Személyes adatokat nem adunk el. Korlátozott mennyiségű információt oszthatunk meg megbízható szolgáltatókkal (hoszting, kommunikáció, CRM, könyvelés) csak akkor, ha az üzletünk működéséhez szükséges. Adatokat is közölhetünk, ha azt törvény vagy illetékes hatóság előírja.",
   "p.4": "A megkereséseket és az üzleti kommunikációs adatokat mindaddig megőrizzük, ameddig a projektben való részvételhez, támogatáshoz és jogi/kereskedelmi nyilvántartáshoz szükséges. ",
   "p.5": "Gyakorlati adminisztratív és technikai biztosítékokat alkalmazunk az adatok védelme érdekében a jogosulatlan hozzáférés, módosítás vagy visszaélés ellen. ",
   "p.6": "Weboldalunk cookie-kat és hasonló technológiákat használhat a munkamenet-kezeléshez, a teljesítménykövetéshez és a felhasználói élmény javításához. ",
@@ -30,9 +30,6 @@
   "li.7": "Vezessen nyilvántartást a megfelelőségi, számviteli és ellenőrzési követelményekről",
   "li.8": "Javítsa a webhely teljesítményét, a tartalom relevanciáját és a válaszok minőségét",
   "_meta.title": "Adatvédelmi szabályzat | ",
-  "_htmlKeys": [
-    "legal.note.0"
-  ],
   "hero.label.0": "Jogi",
   "legal.chipLbl.0": "Dokumentum",
   "legal.chipLbl.1": "Hatálybalépés dátuma",
@@ -52,7 +49,7 @@
   "legal.h3.8": "9) Szabályzatfrissítések",
   "legal.p.0": "Amikor kapcsolatba lép velünk ipari berendezésekkel, projektbeszélgetésekkel, szerviztámogatással vagy árajánlatokkal, a következőket gyűjthetjük:",
   "legal.p.1": "Az adatokat az Ön hozzájárulása (űrlap benyújtása), jogos üzleti érdeke (B2B kommunikáció és támogatás), valamint jogi kötelezettségei (adózási/megfelelőségi nyilvántartás) alapján dolgozzuk fel.",
-  "legal.p.2": "Személyes adatokat nem adunk el. ",
+  "legal.p.2": "Személyes adatokat nem adunk el. Korlátozott mennyiségű információt oszthatunk meg megbízható szolgáltatókkal (hoszting, kommunikáció, CRM, könyvelés) csak akkor, ha az üzletünk működéséhez szükséges. Adatokat is közölhetünk, ha azt törvény vagy illetékes hatóság előírja.",
   "legal.p.3": "A megkereséseket és az üzleti kommunikációs adatokat mindaddig megőrizzük, ameddig a projektben való részvételhez, támogatáshoz és jogi/kereskedelmi nyilvántartáshoz szükséges. ",
   "legal.p.4": "Gyakorlati adminisztratív és technikai biztosítékokat alkalmazunk az adatok védelme érdekében a jogosulatlan hozzáférés, módosítás vagy visszaélés ellen. ",
   "legal.p.5": "Weboldalunk cookie-kat és hasonló technológiákat használhat a munkamenet-kezeléshez, a teljesítménykövetéshez és a felhasználói élmény javításához. ",
@@ -74,5 +71,8 @@
   "legal.nav.2": "Adatmegosztás",
   "legal.nav.3": "Biztonság",
   "legal.nav.4": "Az Ön jogai",
-  "legal.note.0": "<strong>Adatvédelmi kapcsolattartó:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | "
+  "legal.note.0": "<strong>Adatvédelmi kapcsolattartó:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | ",
+  "_htmlKeys": [
+    "legal.note.0"
+  ]
 }

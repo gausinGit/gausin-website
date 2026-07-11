@@ -17,16 +17,13 @@
   "p.3": "Metin, grafikler, ürün düzenleri, çizimler ve marka varlıkları da dahil olmak üzere tüm web sitesi içeriği Gausin International Engineers Pvt.'nin mülkiyetindedir veya lisansı ona aittir. ",
   "p.4": "Bu web sitesini kötüye kullanmamayı, yetkisiz erişime teşebbüs etmemeyi, kötü amaçlı kod yerleştirmemeyi, korunan içeriği kazımamayı veya platformu web sitesinin işlevselliğine veya ticari itibarına zarar verecek şekilde kullanmamayı kabul edersiniz.",
   "p.5": "Gausin International Engineers, yasaların izin verdiği azami ölçüde, web sitesi kullanımından, geçici kesintilerden, veri sorunlarından veya sözleşme dışı içeriğe güvenmekten kaynaklanan doğrudan, dolaylı, tesadüfi veya sonuç olarak ortaya çıkan kayıplardan sorumlu olmayacaktır.",
-  "p.6": "Web sitemiz dış kaynaklara bağlantılar içerebilir. ",
-  "p.7": "Bu şartlar Hindistan yasalarına tabidir. ",
+  "p.6": "Web sitemiz dış kaynaklara bağlantılar içerebilir. Harici web sitelerini kontrol etmiyoruz veya desteklemiyoruz ve bunların içeriklerinden, koşullarından veya gizlilik uygulamalarından sorumlu değiliz.",
+  "p.7": "Bu şartlar Hindistan yasalarına tabidir. Web sitesinin kullanımına veya bu şartların yorumlanmasına ilişkin herhangi bir anlaşmazlık, Meerut, Uttar Pradesh, Hindistan'da yargı yetkisine sahip mahkemelere tabi olacaktır.",
   "p.8": "Yasal, sözleşmeye ilişkin veya uyumlulukla ilgili sorularınız için aşağıdaki bilgileri kullanarak bizimle iletişime geçin. ",
   "li.0": "Tüm teklifler teknik açıklamaya ve ticari onaya tabidir.",
   "li.1": "Fiyatlar, vergiler ve teslimat süreleri spesifikasyonlara ve proje lokasyonuna göre değişiklik gösterebilir.",
   "li.2": "Üretim, sevkiyat, kurulum ve devreye alma koşulları yalnızca üzerinde anlaşılan yazılı sözleşmeye göre geçerlidir.",
   "_meta.title": "Hizmet Şartları | ",
-  "_htmlKeys": [
-    "legal.note.0"
-  ],
   "hero.label.0": "Yasal",
   "legal.chipLbl.0": "Belge",
   "legal.chipLbl.1": "Yürürlük Tarihi",
@@ -49,8 +46,8 @@
   "legal.p.2": "Metin, grafikler, ürün düzenleri, çizimler ve marka varlıkları da dahil olmak üzere tüm web sitesi içeriği Gausin International Engineers Pvt.'nin mülkiyetindedir veya lisansı ona aittir. ",
   "legal.p.3": "Bu web sitesini kötüye kullanmamayı, yetkisiz erişime teşebbüs etmemeyi, kötü amaçlı kod yerleştirmemeyi, korunan içeriği kazımamayı veya platformu web sitesinin işlevselliğine veya ticari itibarına zarar verecek şekilde kullanmamayı kabul edersiniz.",
   "legal.p.4": "Gausin International Engineers, yasaların izin verdiği azami ölçüde, web sitesi kullanımından, geçici kesintilerden, veri sorunlarından veya sözleşme dışı içeriğe güvenmekten kaynaklanan doğrudan, dolaylı, tesadüfi veya sonuç olarak ortaya çıkan kayıplardan sorumlu olmayacaktır.",
-  "legal.p.5": "Web sitemiz dış kaynaklara bağlantılar içerebilir. ",
-  "legal.p.6": "Bu şartlar Hindistan yasalarına tabidir. ",
+  "legal.p.5": "Web sitemiz dış kaynaklara bağlantılar içerebilir. Harici web sitelerini kontrol etmiyoruz veya desteklemiyoruz ve bunların içeriklerinden, koşullarından veya gizlilik uygulamalarından sorumlu değiliz.",
+  "legal.p.6": "Bu şartlar Hindistan yasalarına tabidir. Web sitesinin kullanımına veya bu şartların yorumlanmasına ilişkin herhangi bir anlaşmazlık, Meerut, Uttar Pradesh, Hindistan'da yargı yetkisine sahip mahkemelere tabi olacaktır.",
   "legal.p.7": "Yasal, sözleşmeye ilişkin veya uyumlulukla ilgili sorularınız için aşağıdaki bilgileri kullanarak bizimle iletişime geçin. ",
   "legal.li.0": "Tüm teklifler teknik açıklamaya ve ticari onaya tabidir.",
   "legal.li.1": "Fiyatlar, vergiler ve teslimat süreleri spesifikasyonlara ve proje lokasyonuna göre değişiklik gösterebilir.",
@@ -62,5 +59,8 @@
   "legal.nav.2": "Fikri Mülkiyet",
   "legal.nav.3": "Yükümlülük",
   "legal.nav.4": "Geçerli Hukuk",
-  "legal.note.0": "<strong>Yasal İletişim:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | "
+  "legal.note.0": "<strong>Yasal İletişim:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | ",
+  "_htmlKeys": [
+    "legal.note.0"
+  ]
 }

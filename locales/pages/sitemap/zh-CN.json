@@ -9,13 +9,10 @@
   "h2.5": "更多产品",
   "h2.6": "法律与支持",
   "p.0": "浏览 gausin.in 上的所有主页和产品列表",
-  "p.1": "使用此页面可以快速找到我们网站的任何部分。",
+  "p.1": "使用此页面可以快速找到我们网站的任何部分。对于搜索引擎，我们的 XML 站点地图位于\n      <a href=\"sitemap.xml\">sitemap.xml</a>。",
   "_meta.title": "网站地图 |",
-  "_htmlKeys": [
-    "map.note.0"
-  ],
   "hero.sub.0": "浏览 gausin.in 上的所有主页和产品列表",
-  "map.intro.0": "使用此页面可以快速找到我们网站的任何部分。",
+  "map.intro.0": "使用此页面可以快速找到我们网站的任何部分。对于搜索引擎，我们的 XML 站点地图位于\n      <a href=\"sitemap.xml\">sitemap.xml</a>。",
   "map.group.0": "主页",
   "map.group.1": "产品类别",
   "map.group.2": "蒸发器",
@@ -76,5 +73,10 @@
   "map.link.50": "服务条款",
   "map.link.51": "XML站点地图",
   "map.link.52": "404页",
-  "map.note.0": "<strong>需要帮助查找某些内容？</strong>使用标题中的搜索图标或\n      "
+  "map.note.0": "<strong>需要帮助查找某些内容？</strong>使用标题中的搜索图标或\n      <a href=\"contact.html\">联系我们的团队</a>获取产品推荐。",
+  "_htmlKeys": [
+    "p.1",
+    "map.intro.0",
+    "map.note.0"
+  ]
 }

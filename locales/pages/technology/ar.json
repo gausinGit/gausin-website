@@ -99,14 +99,6 @@
   "iot.label.1": "ضغط البخار",
   "iot.label.2": "كفاءة الطاقة",
   "iot.label.3": "معدل التدفق",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0",
-    "h2.1"
-  ],
   "inno.title.0": "CNC البلازما والقطع بالليزر",
   "inno.title.1": "لحام TIG / MIG / SAW",
   "inno.title.2": "دحرجة وتشكيل الأنابيب بدقة",
@@ -129,5 +121,13 @@
   "mfg.mat.3": "دوبلكس اس اس",
   "mfg.mat.4": "التيتانيوم",
   "mfg.mat.5": "هاستيلوي",
-  "mfg.mat.6": "سبائك النحاس"
+  "mfg.mat.6": "سبائك النحاس",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0",
+    "h2.1"
+  ]
 }

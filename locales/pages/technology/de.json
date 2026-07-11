@@ -99,14 +99,6 @@
   "iot.label.1": "Dampfdruck",
   "iot.label.2": "Energieeffizienz",
   "iot.label.3": "Durchflussrate",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0",
-    "h2.1"
-  ],
   "inno.title.0": "CNC-Plasma- und Laserschneiden",
   "inno.title.1": "WIG-/MIG-/SÄGESCHWEISSEN",
   "inno.title.2": "Präzisionswalzen und -formen von Rohren",
@@ -129,5 +121,13 @@
   "mfg.mat.3": "Duplex SS",
   "mfg.mat.4": "Titan",
   "mfg.mat.5": "Hastelloy",
-  "mfg.mat.6": "Kupferlegierung"
+  "mfg.mat.6": "Kupferlegierung",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0",
+    "h2.1"
+  ]
 }

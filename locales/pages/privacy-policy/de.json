@@ -14,7 +14,7 @@
   "p.0": "Wie Gausin International Engineers Ihre Daten sammelt, verwendet und schützt.",
   "p.1": "Wenn Sie uns wegen Industrieausrüstung, Projektbesprechungen, Serviceunterstützung oder Angeboten kontaktieren, erfassen wir möglicherweise Folgendes:",
   "p.2": "Wir verarbeiten Daten auf der Grundlage Ihrer Einwilligung (Formulareinsendungen), berechtigter Geschäftsinteressen (B2B-Kommunikation und -Support) und rechtlicher Verpflichtungen (Steuer-/Compliance-Aufzeichnungen).",
-  "p.3": "Wir verkaufen keine personenbezogenen Daten. ",
+  "p.3": "Wir verkaufen keine personenbezogenen Daten. Wir dürfen begrenzte Informationen nur dann an vertrauenswürdige Dienstleister (Hosting, Kommunikation, CRM, Buchhaltung) weitergeben, wenn dies für den Betrieb unseres Geschäfts erforderlich ist. Wir können Daten auch weitergeben, wenn dies gesetzlich oder durch eine zuständige Behörde erforderlich ist.",
   "p.4": "Anfrage- und Geschäftskommunikationsdaten werden so lange aufbewahrt, wie es für die Projektabwicklung, Unterstützung und rechtliche/kommerzielle Dokumentation erforderlich ist. ",
   "p.5": "Wir nutzen praktische administrative und technische Sicherheitsmaßnahmen, um Daten vor unbefugtem Zugriff, Änderung oder Missbrauch zu schützen. ",
   "p.6": "Unsere Website verwendet möglicherweise Cookies und ähnliche Technologien zur Sitzungsverwaltung, Leistungsverfolgung und Verbesserung der Benutzererfahrung. ",
@@ -30,9 +30,6 @@
   "li.7": "Führen Sie Aufzeichnungen für Compliance-, Buchhaltungs- und Prüfungsanforderungen",
   "li.8": "Verbessern Sie die Website-Leistung, die Inhaltsrelevanz und die Antwortqualität",
   "_meta.title": "Datenschutzrichtlinie | ",
-  "_htmlKeys": [
-    "legal.note.0"
-  ],
   "hero.label.0": "Legal",
   "legal.chipLbl.0": "Dokumentieren",
   "legal.chipLbl.1": "Datum des Inkrafttretens",
@@ -52,7 +49,7 @@
   "legal.h3.8": "9) Richtlinienaktualisierungen",
   "legal.p.0": "Wenn Sie uns wegen Industrieausrüstung, Projektbesprechungen, Serviceunterstützung oder Angeboten kontaktieren, erfassen wir möglicherweise Folgendes:",
   "legal.p.1": "Wir verarbeiten Daten auf der Grundlage Ihrer Einwilligung (Formulareinsendungen), berechtigter Geschäftsinteressen (B2B-Kommunikation und -Support) und rechtlicher Verpflichtungen (Steuer-/Compliance-Aufzeichnungen).",
-  "legal.p.2": "Wir verkaufen keine personenbezogenen Daten. ",
+  "legal.p.2": "Wir verkaufen keine personenbezogenen Daten. Wir dürfen begrenzte Informationen nur dann an vertrauenswürdige Dienstleister (Hosting, Kommunikation, CRM, Buchhaltung) weitergeben, wenn dies für den Betrieb unseres Geschäfts erforderlich ist. Wir können Daten auch weitergeben, wenn dies gesetzlich oder durch eine zuständige Behörde erforderlich ist.",
   "legal.p.3": "Anfrage- und Geschäftskommunikationsdaten werden so lange aufbewahrt, wie es für die Projektabwicklung, Unterstützung und rechtliche/kommerzielle Dokumentation erforderlich ist. ",
   "legal.p.4": "Wir nutzen praktische administrative und technische Sicherheitsmaßnahmen, um Daten vor unbefugtem Zugriff, Änderung oder Missbrauch zu schützen. ",
   "legal.p.5": "Unsere Website verwendet möglicherweise Cookies und ähnliche Technologien zur Sitzungsverwaltung, Leistungsverfolgung und Verbesserung der Benutzererfahrung. ",
@@ -74,5 +71,8 @@
   "legal.nav.2": "Datenaustausch",
   "legal.nav.3": "Sicherheit",
   "legal.nav.4": "Ihre Rechte",
-  "legal.note.0": "<strong>Datenschutzkontakt:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | "
+  "legal.note.0": "<strong>Datenschutzkontakt:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | ",
+  "_htmlKeys": [
+    "legal.note.0"
+  ]
 }

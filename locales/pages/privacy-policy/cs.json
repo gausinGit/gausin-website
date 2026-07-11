@@ -14,7 +14,7 @@
   "p.0": "Jak Gausin International Engineers shromažďuje, používá a chrání vaše informace.",
   "p.1": "Když nás kontaktujete ohledně průmyslového vybavení, projektových diskusí, servisní podpory nebo cenových nabídek, můžeme shromáždit:",
   "p.2": "Údaje zpracováváme na základě vašeho souhlasu (odeslání formulářů), oprávněného obchodního zájmu (B2B komunikace a podpora) a zákonných povinností (daňové záznamy/evidence shody).",
-  "p.3": "Osobní údaje neprodáváme. ",
+  "p.3": "Osobní údaje neprodáváme. Omezené informace můžeme sdílet s důvěryhodnými poskytovateli služeb (hosting, komunikace, CRM, účetnictví) pouze v případě potřeby k provozování našeho podnikání. Údaje můžeme také zpřístupnit, pokud to vyžaduje zákon nebo příslušný orgán.",
   "p.4": "Údaje o dotazech a obchodní komunikaci jsou uchovávány tak dlouho, jak je potřeba pro zapojení do projektu, podporu a vedení právních/komerčních záznamů. ",
   "p.5": "K ochraně dat před neoprávněným přístupem, změnou nebo zneužitím používáme praktická administrativní a technická opatření. ",
   "p.6": "Naše webové stránky mohou používat soubory cookie a podobné technologie pro správu relací, sledování výkonu a zlepšování uživatelské zkušenosti. ",
@@ -30,9 +30,6 @@
   "li.7": "Uchovávejte záznamy pro dodržování požadavků, účetnictví a audit",
   "li.8": "Zlepšete výkon webových stránek, relevanci obsahu a kvalitu odezvy",
   "_meta.title": "Zásady ochrany osobních údajů | ",
-  "_htmlKeys": [
-    "legal.note.0"
-  ],
   "hero.label.0": "Právní",
   "legal.chipLbl.0": "Dokument",
   "legal.chipLbl.1": "Datum účinnosti",
@@ -52,7 +49,7 @@
   "legal.h3.8": "9) Aktualizace zásad",
   "legal.p.0": "Když nás kontaktujete ohledně průmyslového vybavení, projektových diskusí, servisní podpory nebo cenových nabídek, můžeme shromáždit:",
   "legal.p.1": "Údaje zpracováváme na základě vašeho souhlasu (odeslání formulářů), oprávněného obchodního zájmu (B2B komunikace a podpora) a zákonných povinností (daňové záznamy/evidence shody).",
-  "legal.p.2": "Osobní údaje neprodáváme. ",
+  "legal.p.2": "Osobní údaje neprodáváme. Omezené informace můžeme sdílet s důvěryhodnými poskytovateli služeb (hosting, komunikace, CRM, účetnictví) pouze v případě potřeby k provozování našeho podnikání. Údaje můžeme také zpřístupnit, pokud to vyžaduje zákon nebo příslušný orgán.",
   "legal.p.3": "Údaje o dotazech a obchodní komunikaci jsou uchovávány tak dlouho, jak je potřeba pro zapojení do projektu, podporu a vedení právních/komerčních záznamů. ",
   "legal.p.4": "K ochraně dat před neoprávněným přístupem, změnou nebo zneužitím používáme praktická administrativní a technická opatření. ",
   "legal.p.5": "Naše webové stránky mohou používat soubory cookie a podobné technologie pro správu relací, sledování výkonu a zlepšování uživatelské zkušenosti. ",
@@ -74,5 +71,8 @@
   "legal.nav.2": "Sdílení dat",
   "legal.nav.3": "Zabezpečení",
   "legal.nav.4": "Vaše práva",
-  "legal.note.0": "<strong>Ochrana soukromí:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | "
+  "legal.note.0": "<strong>Ochrana soukromí:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | ",
+  "_htmlKeys": [
+    "legal.note.0"
+  ]
 }

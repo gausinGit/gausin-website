@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "category": "Tullantıların idarə edilməsi",
   "breadcrumb.cat.0": "Tullantıların idarə edilməsi",
   "qs.0.label": "m3/saat",
@@ -107,5 +101,11 @@
   "tagline": "Tam su təmizləyici qurğular, o cümlədən WTP, ultrafiltrasiya (UF), əks osmos (RO) və yumşaldıcı sistemləri sənaye proses suyu, qazan yemi və avtomatlaşdırılmış geri yuyulma və kimyəvi dozaj ilə içməli su tətbiqləri.",
   "overview.p0": "<strong style=\"color:var(--gray-900);\">Gausin WTP/UF/RO/Yumşaldıcı Bitkilər</strong> çoxmərhələli filtrasiya, membranın ayrılması və ion mübadiləsi vasitəsilə emal, qazan və ya içməli keyfiyyət tələblərinə uyğunlaşdırılmış təmizlənmiş suyu təmin edir.",
   "overview.p1": "Sistemlərə xam suyun ilkin təmizlənməsi, dayandırılmış bərk maddələrin çıxarılması üçün ultrafiltrasiya, həll olunmuş bərk maddələrin azaldılması üçün tərs osmos və sərtliyin aradan qaldırılması üçün yumşaldıcılar daxildir - hamısı avtomatlaşdırılmış tərs yuyulma, kimyəvi dozajlama və uzaqdan izləmə ilə.",
-  "overview.p2": "Gausin tam sənədlər, membran performans zəmanətləri və operator təlimi ilə skid quraşdırılmış və ya sahədə tikilmiş zavodları təmin edir."
+  "overview.p2": "Gausin tam sənədlər, membran performans zəmanətləri və operator təlimi ilə skid quraşdırılmış və ya sahədə tikilmiş zavodları təmin edir.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

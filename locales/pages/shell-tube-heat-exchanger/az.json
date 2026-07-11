@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "category": "İstilik dəyişdiriciləri",
   "breadcrumb.cat.0": "İstilik dəyişdiriciləri",
   "qs.0.label": "Vəzifə",
@@ -80,11 +74,11 @@
   "how.1.title": "Turbulent boru axını",
   "how.1.desc": "Maye çoxlu U-boru və ya düz borulardan keçir; ",
   "how.2.title": "İstilik mübadiləsi",
-  "how.2.desc": "Boru divarları arasında istilik köçürmələri; ",
+  "how.2.desc": "Boru divarları arasında istilik köçürmələri; özlü məhsullar, buxar isitmə və ya yüksək təzyiqli iş üçün uyğundur.",
   "how.3.title": "Temperatur Sabitləşməsi",
   "how.3.desc": "Kommunal axını sürəti ilə idarə olunan çıxış temperaturu; ",
   "how.4.title": "Product & Utility Outlet",
-  "how.4.desc": "İşlənmiş maye hədəf temperaturda çıxır; ",
+  "how.4.desc": "İşlənmiş maye hədəf temperaturda çıxır; kondensat və ya kommunal qazana, soyuducuya və ya CIP dövrəsinə qayıdır.",
   "sidebar.title": "Sitat tələb edin",
   "sidebar.sub": "48 saat ərzində fərdiləşdirilmiş təklif əldə edin",
   "sidebar.guarantee.0": "24-48 saat ərzində cavab",
@@ -105,5 +99,11 @@
   "tagline": "Bütün sənaye sahələrində isitmə, soyutma, kondensasiya və qabaqcadan isitmə üçün TEMA standartlarına uyğun ağır yük daşıyan qabıq və boru istilik dəyişdiriciləri.",
   "overview.p0": "<strong style=\"color:var(--gray-900);\">Gausin Qabıq və Boru İstilik dəyişdiricisi</strong> tələbkar sənaye mühitlərində etibarlı, gigiyenik performans üçün hazırlanmışdır. ",
   "overview.p1": "Hər bir vahid SS 304/316L təmas səthləri, təsdiqlənmiş proses dizaynı və tam sənədlərlə tutumunuza, məhsul xüsusiyyətlərinizə və zavodun yerləşdirilməsi tələblərinə uyğun olaraq xüsusi hazırlanmışdır.",
-  "overview.p2": "Gausin quraşdırma, istismara vermə və satışdan sonrakı xidmət vasitəsilə prosesin dizaynı və istehsalından tam mühəndislik dəstəyi təmin edir."
+  "overview.p2": "Gausin quraşdırma, istismara vermə və satışdan sonrakı xidmət vasitəsilə prosesin dizaynı və istehsalından tam mühəndislik dəstəyi təmin edir.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

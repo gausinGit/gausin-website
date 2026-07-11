@@ -1,7 +1,4 @@
 {
-  "_htmlKeys": [
-    "legal.note.0"
-  ],
   "_meta.title": "Məxfilik Siyasəti | ",
   "hero.title.0": "Məxfilik Siyasəti",
   "hero.desc.0": "Gausin International Engineers məlumatınızı necə toplayır, istifadə edir və qoruyur.",
@@ -18,7 +15,7 @@
   "p.0": "Gausin International Engineers məlumatınızı necə toplayır, istifadə edir və qoruyur.",
   "p.1": "Sənaye avadanlıqları, layihə müzakirələri, xidmət dəstəyi və ya kotirovkalar üçün bizimlə əlaqə saxladığınız zaman biz aşağıdakıları toplaya bilərik:",
   "p.2": "Biz məlumatları sizin razılığınıza (forma təqdimatları), qanuni biznes maraqlarınıza (B2B rabitəsi və dəstəyi) və qanuni öhdəliklərə (vergi/uyğunluq qeydləri) əsaslanaraq emal edirik.",
-  "p.3": "Biz şəxsi məlumatları satmırıq. ",
+  "p.3": "Biz şəxsi məlumatları satmırıq. Biz məhdud məlumatları etibarlı xidmət təminatçıları ilə (hosting, rabitə, CRM, mühasibatlıq) yalnız işimizi idarə etmək üçün lazım olduqda paylaşa bilərik. Qanun və ya səlahiyyətli orqan tərəfindən tələb olunarsa, biz də məlumatları açıqlaya bilərik.",
   "p.4": "Sorğu və işgüzar ünsiyyət məlumatları layihəyə cəlb olunma, dəstək və hüquqi/kommersiya uçotunun aparılması üçün lazım olan müddət ərzində saxlanılır. ",
   "p.5": "Biz məlumatları icazəsiz giriş, dəyişdirmə və ya sui-istifadədən qorumaq üçün praktiki inzibati və texniki təminatlardan istifadə edirik. ",
   "p.6": "Veb saytımız sessiyanın idarə edilməsi, performansın izlənməsi və istifadəçi təcrübəsinin təkmilləşdirilməsi üçün kukilərdən və oxşar texnologiyalardan istifadə edə bilər. ",
@@ -43,7 +40,7 @@
   "legal.h3.8": "9) Siyasət Yeniləmələri",
   "legal.p.0": "Sənaye avadanlıqları, layihə müzakirələri, xidmət dəstəyi və ya kotirovkalar üçün bizimlə əlaqə saxladığınız zaman biz aşağıdakıları toplaya bilərik:",
   "legal.p.1": "Biz məlumatları sizin razılığınıza (forma təqdimatları), qanuni biznes maraqlarınıza (B2B rabitəsi və dəstəyi) və qanuni öhdəliklərə (vergi/uyğunluq qeydləri) əsaslanaraq emal edirik.",
-  "legal.p.2": "Biz şəxsi məlumatları satmırıq. ",
+  "legal.p.2": "Biz şəxsi məlumatları satmırıq. Biz məhdud məlumatları etibarlı xidmət təminatçıları ilə (hosting, rabitə, CRM, mühasibatlıq) yalnız işimizi idarə etmək üçün lazım olduqda paylaşa bilərik. Qanun və ya səlahiyyətli orqan tərəfindən tələb olunarsa, biz də məlumatları açıqlaya bilərik.",
   "legal.p.3": "Sorğu və işgüzar ünsiyyət məlumatları layihəyə cəlb olunma, dəstək və hüquqi/kommersiya uçotunun aparılması üçün lazım olan müddət ərzində saxlanılır. ",
   "legal.p.4": "Biz məlumatları icazəsiz giriş, dəyişdirmə və ya sui-istifadədən qorumaq üçün praktiki inzibati və texniki təminatlardan istifadə edirik. ",
   "legal.p.5": "Veb saytımız sessiyanın idarə edilməsi, performansın izlənməsi və istifadəçi təcrübəsinin təkmilləşdirilməsi üçün kukilərdən və oxşar texnologiyalardan istifadə edə bilər. ",
@@ -74,5 +71,8 @@
   "li.6": "Müvafiq məhsul yeniləmələrini və mühəndislik məlumatlarını paylaşın",
   "li.7": "Uyğunluq, mühasibat uçotu və audit tələblərinə dair qeydləri aparın",
   "li.8": "Veb saytın performansını, məzmunun uyğunluğunu və cavab keyfiyyətini yaxşılaşdırın",
-  "legal.note.0": "<strong>Məxfilik Əlaqəsi:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | "
+  "legal.note.0": "<strong>Məxfilik Əlaqəsi:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | ",
+  "_htmlKeys": [
+    "legal.note.0"
+  ]
 }

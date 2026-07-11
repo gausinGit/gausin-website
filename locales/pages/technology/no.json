@@ -99,14 +99,6 @@
   "iot.label.1": "Damptrykk",
   "iot.label.2": "Energieffektivitet",
   "iot.label.3": "Strømningshastighet",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0",
-    "h2.1"
-  ],
   "inno.title.0": "CNC plasma- og laserskjæring",
   "inno.title.1": "TIG / MIG / SAW Sveising",
   "inno.title.2": "Presisjonsrørrulling og forming",
@@ -129,5 +121,13 @@
   "mfg.mat.3": "Tosidig SS",
   "mfg.mat.4": "Titanium",
   "mfg.mat.5": "Hastelloy",
-  "mfg.mat.6": "Kobberlegering"
+  "mfg.mat.6": "Kobberlegering",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0",
+    "h2.1"
+  ]
 }

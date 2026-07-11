@@ -99,14 +99,6 @@
   "iot.label.1": "증기압력",
   "iot.label.2": "에너지 효율성",
   "iot.label.3": "유량",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0",
-    "h2.1"
-  ],
   "inno.title.0": "CNC 플라즈마 및 레이저 절단",
   "inno.title.1": "TIG / MIG / SAW 용접",
   "inno.title.2": "정밀 튜브 롤링 및 성형",
@@ -129,5 +121,13 @@
   "mfg.mat.3": "이중 SS",
   "mfg.mat.4": "티탄",
   "mfg.mat.5": "하스텔로이",
-  "mfg.mat.6": "구리 합금"
+  "mfg.mat.6": "구리 합금",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0",
+    "h2.1"
+  ]
 }

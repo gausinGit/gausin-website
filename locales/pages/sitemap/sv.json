@@ -11,9 +11,6 @@
   "p.0": "Bläddra igenom alla huvudsidor och produktlistor på gausin.in",
   "p.1": "Använd den här sidan för att snabbt hitta vilken del av vår webbplats som helst. ",
   "_meta.title": "Webbplatskarta | ",
-  "_htmlKeys": [
-    "map.note.0"
-  ],
   "hero.sub.0": "Bläddra igenom alla huvudsidor och produktlistor på gausin.in",
   "map.intro.0": "Använd den här sidan för att snabbt hitta vilken del av vår webbplats som helst. ",
   "map.group.0": "Huvudsidor",
@@ -76,5 +73,10 @@
   "map.link.50": "Användarvillkor",
   "map.link.51": "XML-webbplatskarta",
   "map.link.52": "404 sida",
-  "map.note.0": "<strong>Behöver du hjälp med att hitta något?</strong> Använd sökikonen i rubriken eller\n      "
+  "map.note.0": "<strong>Behöver du hjälp med att hitta något?</strong> Använd sökikonen i rubriken eller\n      ",
+  "_htmlKeys": [
+    "p.1",
+    "map.intro.0",
+    "map.note.0"
+  ]
 }

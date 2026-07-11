@@ -12,7 +12,7 @@
   "p.4": "Tras la confirmación del pedido, comienza la ingeniería detallada: diseño CAD 3D, planos de fabricación, finalización de P&ID, diseño estructural y todos los entregables de ingeniería.",
   "p.5": "Fabricación de precisión en nuestro taller mediante mecanizado CNC, corte por láser y soldadura TIG/MIG, con rigurosos controles de calidad, pruebas NDT e inspección de terceros.",
   "p.6": "Nuestro equipo de ingeniería de campo se encarga de la instalación en el sitio, la alineación mecánica, las tuberías, las conexiones eléctricas, las verificaciones previas a la puesta en servicio y el arranque de la planta con pruebas de rendimiento.",
-  "p.7": "Prueba de rendimiento garantizada realizada en su presencia. ",
+  "p.7": "Prueba de rendimiento garantizada realizada en su presencia. Toda la documentación, manuales de operación y mantenimiento, programas de PLC y planos construidos se entregan al finalizar el proyecto.",
   "p.8": "Soporte técnico continuo, mantenimiento preventivo, suministro de repuestos y auditorías de rendimiento anuales para garantizar que su planta continúe funcionando con la máxima eficiencia.",
   "p.9": "Póngase en contacto con nuestro equipo de ingeniería para analizar los requisitos de su proyecto. ",
   "card.title.0": "Equipo multidisciplinario",
@@ -45,13 +45,6 @@
   "stat.label.1": "Respuesta promedio a la cotización",
   "stat.label.2": "Tasa de entrega a tiempo",
   "stat.label.3": "Garantía de rendimiento",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0"
-  ],
   "hero.label.0": "Servicios",
   "crumb.0": "Hogar",
   "crumb.1": "Servicios",
@@ -69,7 +62,7 @@
   "svc.title.5": "Consultoría técnica y resolución de problemas",
   "svc.desc.0": "Desarrollamos paquetes integrales de ingeniería de procesos para nuevas plantas y ampliaciones, incluidos diagramas de flujo de procesos, balances de masa y energía, dimensionamiento de equipos, desarrollo de P&ID y simulación de procesos utilizando CHEMCAD y HTRI.",
   "svc.desc.1": "Nuestro servicio de ingeniería detallada cubre modelado CAD 3D completo, planos de fabricación, diseño estructural civil, diseños de tuberías, ingeniería eléctrica, ingeniería de instrumentación y especificaciones de adquisición para todos los equipos y sistemas principales.",
-  "svc.desc.2": "Gestión completa del proyecto de principio a fin, desde el concepto hasta la puesta en marcha. ",
+  "svc.desc.2": "Gestión completa del proyecto de principio a fin, desde el concepto hasta la puesta en marcha. Nuestro equipo de gestión de proyectos utiliza MS Project y metodologías ágiles para garantizar la entrega a tiempo y dentro del presupuesto de plantas industriales complejas con documentación y entrega completa.",
   "svc.desc.3": "Auditorías integrales de energía térmica para plantas existentes, identificando el desperdicio de energía y recomendando actualizaciones comprobadas. ",
   "svc.desc.4": "Integramos sistemas avanzados de automatización PLC/SCADA en plantas de procesos nuevas y existentes, lo que permite monitoreo en tiempo real, secuencias de control automatizadas, gestión de alarmas, registro de datos y acceso remoto a través de plataformas habilitadas para IoT.",
   "svc.desc.5": "Nuestros ingenieros experimentados brindan consultoría técnica experta para la resolución de problemas de procesos, eliminación de cuellos de botella en el rendimiento, expansión de capacidad, cumplimiento normativo y modernización de plantas, brindando recomendaciones de ingeniería prácticas con un impacto mensurable.",
@@ -123,6 +116,13 @@
   "proc.desc.3": "Tras la confirmación del pedido, comienza la ingeniería detallada: diseño CAD 3D, planos de fabricación, finalización de P&ID, diseño estructural y todos los entregables de ingeniería.",
   "proc.desc.4": "Fabricación de precisión en nuestro taller mediante mecanizado CNC, corte por láser y soldadura TIG/MIG, con rigurosos controles de calidad, pruebas NDT e inspección de terceros.",
   "proc.desc.5": "Nuestro equipo de ingeniería de campo se encarga de la instalación en el sitio, la alineación mecánica, las tuberías, las conexiones eléctricas, las verificaciones previas a la puesta en servicio y el arranque de la planta con pruebas de rendimiento.",
-  "proc.desc.6": "Prueba de rendimiento garantizada realizada en su presencia. ",
-  "proc.desc.7": "Soporte técnico continuo, mantenimiento preventivo, suministro de repuestos y auditorías de rendimiento anuales para garantizar que su planta continúe funcionando con la máxima eficiencia."
+  "proc.desc.6": "Prueba de rendimiento garantizada realizada en su presencia. Toda la documentación, manuales de operación y mantenimiento, programas de PLC y planos construidos se entregan al finalizar el proyecto.",
+  "proc.desc.7": "Soporte técnico continuo, mantenimiento preventivo, suministro de repuestos y auditorías de rendimiento anuales para garantizar que su planta continúe funcionando con la máxima eficiencia.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0"
+  ]
 }

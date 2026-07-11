@@ -40,15 +40,15 @@
   "prod.title.30": "Système CIP automatisé",
   "prod.title.31": "Appareils à pression (ASME / IBR)",
   "prod.title.32": "Silos de stockage en acier inoxydable",
-  "prod.desc.0": "Évaporateur à haut rendement idéal pour les produits sensibles à la chaleur. ",
-  "prod.desc.1": "Conçu pour les liquides visqueux, calcaires ou cristallisants. ",
+  "prod.desc.0": "Évaporateur à haut rendement idéal pour les produits sensibles à la chaleur. Le liquide forme un film mince sur les surfaces intérieures des tubes, permettant une évaporation douce et rapide à basse température. Disponible en configurations simple, double, triple et multi-effets.",
+  "prod.desc.1": "Conçu pour les liquides visqueux, calcaires ou cristallisants. La circulation forcée assure une vitesse élevée à travers les tubes de l'échangeur de chaleur, empêchant le dépôt de tartre et permettant une concentration efficace des fluides difficiles.",
   "prod.desc.2": "Évaporateur à tubes verticaux où le liquide et la vapeur montent ensemble à travers des tubes selon un motif de film grimpant. ",
   "prod.desc.3": "Évaporateur à plaques compact et à haut rendement avec surfaces d'échange thermique à plaques ondulées. ",
   "prod.desc.4": "Évaporateur à cuve sous vide à double enveloppe pour les opérations par lots nécessitant un contrôle précis de la concentration. ",
-  "prod.desc.5": "Convertissez les aliments liquides en poudre fluide en une seule opération. ",
-  "prod.desc.6": "Technologie à lit fluidisé pour matériaux granulaires, cristallins et pulvérulents. ",
+  "prod.desc.5": "Convertissez les aliments liquides en poudre fluide en une seule opération. Disponible en modèles d'atomisation par buse et d'atomisation à disque rotatif - produisant des poudres avec une distribution granulométrique précise pour les applications laitières, alimentaires, pharmaceutiques, chimiques et d'amidon.",
+  "prod.desc.6": "Technologie à lit fluidisé pour matériaux granulaires, cristallins et pulvérulents. Fournit un séchage uniforme et doux avec un contrôle précis de l'humidité - disponible dans des configurations continues pour les produits laitiers et alimentaires.",
   "prod.desc.7": "Sécheur à gaz inerte ou à atmosphère chargée de solvants pour produits qui ne peuvent pas être exposés à l'oxygène de l'air. ",
-  "prod.desc.8": "Sécheur continu pour matériaux visqueux, sensibles à la chaleur et encrassants. ",
+  "prod.desc.8": "Sécheur continu pour matériaux visqueux, sensibles à la chaleur et encrassants. Un ensemble de pales rotatives répartit les aliments en un mince film turbulent sur la paroi chauffée, permettant une évaporation rapide sous vide - idéal pour les ZLD, les sels d'effluents et les produits de grande valeur.",
   "prod.desc.9": "Idéal pour sécher les pâtes, les gâteaux de filtration, les boues et les matériaux granulaires humides directement sans pré-séchage. ",
   "prod.desc.10": "Usine laitière clé en main depuis la réception du lait cru jusqu'au conditionnement du produit final. ",
   "prod.desc.11": "Installation de refroidissement du lait à l'échelle industrielle pour le refroidissement rapide et hygiénique de grands volumes de lait cru reçu dans les installations de transformation laitière. ",
@@ -68,7 +68,7 @@
   "prod.desc.25": "Usines complètes de traitement de l'eau comprenant des systèmes de WTP, d'ultrafiltration (UF), d'osmose inverse (RO) et d'adoucisseur pour l'eau de traitement industriel, l'alimentation des chaudières et l'eau potable avec lavage à contre-courant automatisé et dosage de produits chimiques.",
   "prod.desc.26": "Systèmes d'épuration humides et secs pour l'élimination des particules, des gaz acides, des COV et des composés odorants des flux d'échappement industriels. ",
   "prod.desc.27": "Systèmes d'incinération industriels pour la destruction thermique en toute sécurité des déchets solides et liquides dangereux et non dangereux. ",
-  "prod.desc.28": "Échangeurs de chaleur industriels robustes conçus selon les normes TEMA. ",
+  "prod.desc.28": "Échangeurs de chaleur industriels robustes conçus selon les normes TEMA. Disponible en configurations monopasse, multipasse, tube en U et plaque tubulaire fixe pour les applications de chauffage, de refroidissement, de condensation et de préchauffage dans toutes les industries.",
   "prod.desc.29": "Échangeurs de chaleur à plaques et joints compacts et à haut rendement offrant des performances thermiques supérieures dans un encombrement minimal. ",
   "prod.desc.30": "Systèmes de nettoyage en place entièrement automatisés pour le nettoyage hygiénique des lignes de traitement, des réservoirs, des échangeurs de chaleur et des équipements sans démontage. ",
   "prod.desc.31": "Récipients sous pression conçus et fabriqués sur mesure pour le stockage et le traitement de gaz et de liquides sous pression. ",
@@ -575,11 +575,6 @@
   "prod.app.119": "Nourriture",
   "prod.app.120": "Pharmaceutique",
   "prod.app.121": "Chimique",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "h2.0"
-  ],
   "hero.label.0": "Produits",
   "crumb.0": "Maison",
   "crumb.1": "Produits",
@@ -599,5 +594,10 @@
   "h4.0": "Conçu sur mesure",
   "h4.1": "Certifié et conforme",
   "h4.2": "Efficacité énergétique",
-  "h4.3": "Assistance après-vente"
+  "h4.3": "Assistance après-vente",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "h2.0"
+  ]
 }

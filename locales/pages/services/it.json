@@ -12,7 +12,7 @@
   "p.4": "Alla conferma dell'ordine, inizia l'ingegneria dettagliata: progettazione CAD 3D, disegni di fabbricazione, finalizzazione P&ID, progettazione strutturale e tutti i risultati finali dell'ingegneria.",
   "p.5": "Fabbricazione di precisione nella nostra officina utilizzando lavorazione CNC, taglio laser e saldatura TIG/MIG, con rigorosi controlli di qualità, test NDT e ispezioni di terze parti.",
   "p.6": "Il nostro team di ingegneri sul campo gestisce l'installazione del sito, l'allineamento meccanico, le tubazioni, i collegamenti elettrici, i controlli pre-messa in servizio e l'avvio dell'impianto con test delle prestazioni.",
-  "p.7": "Esecuzione di test sulle prestazioni garantite condotta in tua presenza. ",
+  "p.7": "Esecuzione di test sulle prestazioni garantite condotta in tua presenza. Tutta la documentazione, i manuali O&M, i programmi PLC e i disegni as-built consegnati al completamento del progetto.",
   "p.8": "Supporto tecnico continuo, manutenzione preventiva, fornitura di pezzi di ricambio e controlli annuali delle prestazioni per garantire che il vostro impianto continui a funzionare alla massima efficienza.",
   "p.9": "Contatta il nostro team di ingegneri per discutere i requisiti del tuo progetto. ",
   "card.title.0": "Team multidisciplinare",
@@ -45,13 +45,6 @@
   "stat.label.1": "Risposta media al preventivo",
   "stat.label.2": "Tasso di consegna puntuale",
   "stat.label.3": "Garanzia di prestazione",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0"
-  ],
   "hero.label.0": "Servizi",
   "crumb.0": "Casa",
   "crumb.1": "Servizi",
@@ -69,7 +62,7 @@
   "svc.title.5": "Consulenza tecnica e risoluzione dei problemi",
   "svc.desc.0": "Sviluppiamo pacchetti completi di ingegneria di processo per nuovi impianti ed espansioni, inclusi diagrammi di flusso di processo, bilanci di massa ed energia, dimensionamento delle apparecchiature, sviluppo P&ID e simulazione di processo utilizzando CHEMCAD e HTRI.",
   "svc.desc.1": "Il nostro servizio di ingegneria dettagliato copre la modellazione CAD 3D completa, i disegni di fabbricazione, la progettazione strutturale civile, il layout delle tubazioni, l'ingegneria elettrica, l'ingegneria della strumentazione e le specifiche di approvvigionamento per tutte le principali apparecchiature e sistemi.",
-  "svc.desc.2": "Gestione completa del progetto end-to-end dall'ideazione alla messa in servizio. ",
+  "svc.desc.2": "Gestione completa del progetto end-to-end dall'ideazione alla messa in servizio. Il nostro team di gestione dei progetti utilizza MS Project e metodologie agili per garantire la consegna puntuale e nel rispetto del budget di impianti industriali complessi con documentazione e consegna complete.",
   "svc.desc.3": "Audit completi sull'energia termica per gli impianti esistenti, identificando gli sprechi energetici e consigliando aggiornamenti comprovati. ",
   "svc.desc.4": "Integriamo sistemi avanzati di automazione PLC/SCADA in impianti di processo nuovi ed esistenti, consentendo il monitoraggio in tempo reale, sequenze di controllo automatizzate, gestione degli allarmi, registrazione dei dati e accesso remoto tramite piattaforme abilitate all'IoT.",
   "svc.desc.5": "I nostri ingegneri esperti forniscono consulenza tecnica esperta per la risoluzione dei problemi dei processi, l'eliminazione dei colli di bottiglia delle prestazioni, l'espansione della capacità, la conformità normativa e la modernizzazione degli impianti, fornendo raccomandazioni ingegneristiche attuabili con un impatto misurabile.",
@@ -123,6 +116,13 @@
   "proc.desc.3": "Alla conferma dell'ordine, inizia l'ingegneria dettagliata: progettazione CAD 3D, disegni di fabbricazione, finalizzazione P&ID, progettazione strutturale e tutti i risultati finali dell'ingegneria.",
   "proc.desc.4": "Fabbricazione di precisione nella nostra officina utilizzando lavorazione CNC, taglio laser e saldatura TIG/MIG, con rigorosi controlli di qualità, test NDT e ispezioni di terze parti.",
   "proc.desc.5": "Il nostro team di ingegneri sul campo gestisce l'installazione del sito, l'allineamento meccanico, le tubazioni, i collegamenti elettrici, i controlli pre-messa in servizio e l'avvio dell'impianto con test delle prestazioni.",
-  "proc.desc.6": "Esecuzione di test sulle prestazioni garantite condotta in tua presenza. ",
-  "proc.desc.7": "Supporto tecnico continuo, manutenzione preventiva, fornitura di pezzi di ricambio e controlli annuali delle prestazioni per garantire che il vostro impianto continui a funzionare alla massima efficienza."
+  "proc.desc.6": "Esecuzione di test sulle prestazioni garantite condotta in tua presenza. Tutta la documentazione, i manuali O&M, i programmi PLC e i disegni as-built consegnati al completamento del progetto.",
+  "proc.desc.7": "Supporto tecnico continuo, manutenzione preventiva, fornitura di pezzi di ricambio e controlli annuali delle prestazioni per garantire che il vostro impianto continui a funzionare alla massima efficienza.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0"
+  ]
 }

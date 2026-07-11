@@ -12,7 +12,7 @@
   "p.4": "Nach der Auftragsbestätigung beginnt die detaillierte Konstruktion – 3D-CAD-Entwurf, Fertigungszeichnungen, P&ID-Finalisierung, Strukturentwurf und alle technischen Leistungen.",
   "p.5": "Präzisionsfertigung in unserer Werkstatt mittels CNC-Bearbeitung, Laserschneiden und WIG/MIG-Schweißen – mit strengen Qualitätskontrollen, NDT-Tests und Inspektionen durch Dritte.",
   "p.6": "Unser Außendienstteam kümmert sich um die Installation vor Ort, die mechanische Ausrichtung, die Verrohrung, die elektrischen Anschlüsse, die Prüfungen vor der Inbetriebnahme und die Inbetriebnahme der Anlage mit Leistungstests.",
-  "p.7": "Garantierter Leistungstestlauf in Ihrer Anwesenheit. ",
+  "p.7": "Garantierter Leistungstestlauf in Ihrer Anwesenheit. Sämtliche Dokumentation, O&M-Handbücher, SPS-Programme und Bestandszeichnungen werden nach Projektabschluss übergeben.",
   "p.8": "Kontinuierlicher technischer Support, vorbeugende Wartung, Ersatzteilversorgung und jährliche Leistungsaudits, um sicherzustellen, dass Ihre Anlage weiterhin mit höchster Effizienz läuft.",
   "p.9": "Kontaktieren Sie unser Engineering-Team, um Ihre Projektanforderungen zu besprechen. ",
   "card.title.0": "Multidisziplinäres Team",
@@ -45,13 +45,6 @@
   "stat.label.1": "Durchschnittliche Angebotsantwort",
   "stat.label.2": "Pünktliche Lieferrate",
   "stat.label.3": "Leistungsgarantie",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0"
-  ],
   "hero.label.0": "Dienstleistungen",
   "crumb.0": "Heim",
   "crumb.1": "Dienstleistungen",
@@ -69,7 +62,7 @@
   "svc.title.5": "Technische Beratung und Fehlerbehebung",
   "svc.desc.0": "Wir entwickeln umfassende verfahrenstechnische Pakete für neue Anlagen und Erweiterungen – einschließlich Prozessfließbilder, Massen- und Energiebilanzen, Anlagendimensionierung, P&ID-Entwicklung und Prozesssimulation mit CHEMCAD und HTRI.",
   "svc.desc.1": "Unser detaillierter Ingenieurservice umfasst vollständige 3D-CAD-Modellierung, Fertigungszeichnungen, Baukonstruktionsplanung, Rohrleitungslayouts, Elektrotechnik, Instrumentierungstechnik und Beschaffungsspezifikationen für alle wichtigen Geräte und Systeme.",
-  "svc.desc.2": "Komplettes End-to-End-Projektmanagement vom Konzept bis zur Inbetriebnahme. ",
+  "svc.desc.2": "Komplettes End-to-End-Projektmanagement vom Konzept bis zur Inbetriebnahme. Unser Projektmanagementteam nutzt MS Project und agile Methoden, um die pünktliche und budgetgerechte Lieferung komplexer Industrieanlagen mit vollständiger Dokumentation und Übergabe sicherzustellen.",
   "svc.desc.3": "Umfassende thermische Energieaudits für bestehende Anlagen, um Energieverschwendung zu identifizieren und bewährte Upgrades zu empfehlen. ",
   "svc.desc.4": "Wir integrieren fortschrittliche SPS/SCADA-Automatisierungssysteme in neue und bestehende Prozessanlagen und ermöglichen so Echtzeitüberwachung, automatisierte Steuerungsabläufe, Alarmmanagement, Datenprotokollierung und Fernzugriff über IoT-fähige Plattformen.",
   "svc.desc.5": "Unsere erfahrenen Ingenieure bieten fachkundige technische Beratung zur Fehlerbehebung bei Prozessen, zur Beseitigung von Leistungsengpässen, zur Kapazitätserweiterung, zur Einhaltung gesetzlicher Vorschriften und zur Anlagenmodernisierung und liefern umsetzbare technische Empfehlungen mit messbaren Auswirkungen.",
@@ -123,6 +116,13 @@
   "proc.desc.3": "Nach der Auftragsbestätigung beginnt die detaillierte Konstruktion – 3D-CAD-Entwurf, Fertigungszeichnungen, P&ID-Finalisierung, Strukturentwurf und alle technischen Leistungen.",
   "proc.desc.4": "Präzisionsfertigung in unserer Werkstatt mittels CNC-Bearbeitung, Laserschneiden und WIG/MIG-Schweißen – mit strengen Qualitätskontrollen, NDT-Tests und Inspektionen durch Dritte.",
   "proc.desc.5": "Unser Außendienstteam kümmert sich um die Installation vor Ort, die mechanische Ausrichtung, die Verrohrung, die elektrischen Anschlüsse, die Prüfungen vor der Inbetriebnahme und die Inbetriebnahme der Anlage mit Leistungstests.",
-  "proc.desc.6": "Garantierter Leistungstestlauf in Ihrer Anwesenheit. ",
-  "proc.desc.7": "Kontinuierlicher technischer Support, vorbeugende Wartung, Ersatzteilversorgung und jährliche Leistungsaudits, um sicherzustellen, dass Ihre Anlage weiterhin mit höchster Effizienz läuft."
+  "proc.desc.6": "Garantierter Leistungstestlauf in Ihrer Anwesenheit. Sämtliche Dokumentation, O&M-Handbücher, SPS-Programme und Bestandszeichnungen werden nach Projektabschluss übergeben.",
+  "proc.desc.7": "Kontinuierlicher technischer Support, vorbeugende Wartung, Ersatzteilversorgung und jährliche Leistungsaudits, um sicherzustellen, dass Ihre Anlage weiterhin mit höchster Effizienz läuft.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0"
+  ]
 }

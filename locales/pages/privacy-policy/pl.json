@@ -14,7 +14,7 @@
   "p.0": "W jaki sposób firma Gausin International Engineers gromadzi, wykorzystuje i chroni Twoje dane.",
   "p.1": "Kiedy kontaktujesz się z nami w sprawie sprzętu przemysłowego, dyskusji projektowych, wsparcia serwisowego lub ofert, możemy gromadzić:",
   "p.2": "Przetwarzamy dane na podstawie Twojej zgody (wysłanie formularza), uzasadnionego interesu biznesowego (komunikacja i wsparcie B2B) oraz zobowiązań prawnych (rejestracja podatkowa/zgodność).",
-  "p.3": "Nie sprzedajemy danych osobowych. ",
+  "p.3": "Nie sprzedajemy danych osobowych. Możemy udostępniać ograniczone informacje zaufanym dostawcom usług (hosting, komunikacja, CRM, księgowość) tylko wtedy, gdy jest to konieczne do prowadzenia naszej działalności. Możemy również ujawnić dane, jeśli będzie to wymagane przez prawo lub właściwy organ.",
   "p.4": "Dane dotyczące zapytań i komunikacji biznesowej są przechowywane tak długo, jak jest to konieczne do zaangażowania w projekt, wsparcia i prowadzenia dokumentacji prawnej/handlowej. ",
   "p.5": "Stosujemy praktyczne zabezpieczenia administracyjne i techniczne w celu ochrony danych przed nieuprawnionym dostępem, zmianą lub niewłaściwym wykorzystaniem. ",
   "p.6": "Nasza strona internetowa może wykorzystywać pliki cookie i podobne technologie do zarządzania sesjami, śledzenia wydajności i ulepszania komfortu użytkownika. ",
@@ -30,9 +30,6 @@
   "li.7": "Prowadź dokumentację dotyczącą wymagań dotyczących zgodności, księgowości i audytu",
   "li.8": "Popraw wydajność witryny, trafność treści i jakość odpowiedzi",
   "_meta.title": "Polityka prywatności | ",
-  "_htmlKeys": [
-    "legal.note.0"
-  ],
   "hero.label.0": "Prawny",
   "legal.chipLbl.0": "Dokument",
   "legal.chipLbl.1": "Data wejścia w życie",
@@ -52,7 +49,7 @@
   "legal.h3.8": "9) Aktualizacje zasad",
   "legal.p.0": "Kiedy kontaktujesz się z nami w sprawie sprzętu przemysłowego, dyskusji projektowych, wsparcia serwisowego lub ofert, możemy gromadzić:",
   "legal.p.1": "Przetwarzamy dane na podstawie Twojej zgody (wysłanie formularza), uzasadnionego interesu biznesowego (komunikacja i wsparcie B2B) oraz zobowiązań prawnych (rejestracja podatkowa/zgodność).",
-  "legal.p.2": "Nie sprzedajemy danych osobowych. ",
+  "legal.p.2": "Nie sprzedajemy danych osobowych. Możemy udostępniać ograniczone informacje zaufanym dostawcom usług (hosting, komunikacja, CRM, księgowość) tylko wtedy, gdy jest to konieczne do prowadzenia naszej działalności. Możemy również ujawnić dane, jeśli będzie to wymagane przez prawo lub właściwy organ.",
   "legal.p.3": "Dane dotyczące zapytań i komunikacji biznesowej są przechowywane tak długo, jak jest to konieczne do zaangażowania w projekt, wsparcia i prowadzenia dokumentacji prawnej/handlowej. ",
   "legal.p.4": "Stosujemy praktyczne zabezpieczenia administracyjne i techniczne w celu ochrony danych przed nieuprawnionym dostępem, zmianą lub niewłaściwym wykorzystaniem. ",
   "legal.p.5": "Nasza strona internetowa może wykorzystywać pliki cookie i podobne technologie do zarządzania sesjami, śledzenia wydajności i ulepszania komfortu użytkownika. ",
@@ -74,5 +71,8 @@
   "legal.nav.2": "Udostępnianie danych",
   "legal.nav.3": "Bezpieczeństwo",
   "legal.nav.4": "Twoje prawa",
-  "legal.note.0": "<strong>Kontakt w sprawie prywatności:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | "
+  "legal.note.0": "<strong>Kontakt w sprawie prywatności:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | ",
+  "_htmlKeys": [
+    "legal.note.0"
+  ]
 }

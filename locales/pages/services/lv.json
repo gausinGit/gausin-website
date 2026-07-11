@@ -12,7 +12,7 @@
   "p.4": "Pēc pasūtījuma apstiprināšanas sākas detalizēta inženierija - 3D CAD projektēšana, ražošanas rasējumi, P&ID pabeigšana, konstrukcijas projektēšana un visi inženiertehniskie nodevumi.",
   "p.5": "Precīza ražošana mūsu darbnīcā, izmantojot CNC apstrādi, lāzergriešanu un TIG/MIG metināšanu – ar stingrām kvalitātes pārbaudēm, NDT testēšanu un trešās puses pārbaudi.",
   "p.6": "Mūsu lauka inženieru komanda veic vietas uzstādīšanu, mehānisko izlīdzināšanu, cauruļvadus, elektriskos savienojumus, pirmsekspluatācijas pārbaudes un iekārtas palaišanu ar veiktspējas testēšanu.",
-  "p.7": "Garantētas veiktspējas testa brauciens, kas veikts jūsu klātbūtnē. ",
+  "p.7": "Garantētas veiktspējas testa brauciens, kas veikts jūsu klātbūtnē. Visa dokumentācija, O&M rokasgrāmatas, PLC programmas un izstrādātie rasējumi tiek nodoti pēc projekta pabeigšanas.",
   "p.8": "Pastāvīgs tehniskais atbalsts, profilaktiskā apkope, rezerves daļu piegāde un ikgadējie darbības auditi, lai nodrošinātu, ka jūsu rūpnīca turpina darboties ar maksimālu efektivitāti.",
   "p.9": "Sazinieties ar mūsu inženieru komandu, lai apspriestu jūsu projekta prasības. ",
   "card.title.0": "Daudzdisciplīnu komanda",
@@ -45,13 +45,6 @@
   "stat.label.1": "Vidējā citāta atbilde",
   "stat.label.2": "Savlaicīga piegādes likme",
   "stat.label.3": "Veiktspējas garantija",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0"
-  ],
   "hero.label.0": "Pakalpojumi",
   "crumb.0": "Sākums",
   "crumb.1": "Pakalpojumi",
@@ -69,8 +62,8 @@
   "svc.title.5": "Tehniskās konsultācijas un problēmu novēršana",
   "svc.desc.0": "Mēs izstrādājam visaptverošas procesu inženierijas pakotnes jaunām rūpnīcām un paplašināšanai, tostarp procesa plūsmas tabulas, masas un enerģijas bilances, aprīkojuma izmēru noteikšanu, P&ID izstrādi un procesa simulāciju, izmantojot CHEMCAD un HTRI.",
   "svc.desc.1": "Mūsu detalizētais inženiertehniskais pakalpojums aptver pilnīgu 3D CAD modelēšanu, ražošanas rasējumus, civilo konstrukciju projektēšanu, cauruļvadu izkārtojumus, elektrotehniku, instrumentu inženieriju un iepirkuma specifikācijas visām galvenajām iekārtām un sistēmām.",
-  "svc.desc.2": "Pilnīga projekta vadība no koncepcijas līdz nodošanai ekspluatācijā. ",
-  "svc.desc.3": "Visaptveroši siltumenerģijas auditi esošajām iekārtām, identificējot enerģijas izšķērdēšanu un iesakot pārbaudītus uzlabojumus. ",
+  "svc.desc.2": "Pilnīga projekta vadība no koncepcijas līdz nodošanai ekspluatācijā. Mūsu projektu vadības komanda izmanto MS Project un agile metodoloģijas, lai nodrošinātu sarežģītu rūpniecisko iekārtu savlaicīgu piegādi budžeta ietvaros ar pilnu dokumentāciju un nodošanu.",
+  "svc.desc.3": "Visaptveroši siltumenerģijas auditi esošajām iekārtām, identificējot enerģijas izšķērdēšanu un iesakot pārbaudītus uzlabojumus. Mēs specializējamies vairāku efektu iztvaikošanas pārveidošanā, TVR (termo tvaika rekompresora) / MVR (mehāniskā tvaika rekompresijas) modernizācijā un siltuma atgūšanas integrācijā.",
   "svc.desc.4": "Mēs integrējam uzlabotas PLC/SCADA automatizācijas sistēmas jaunās un esošās procesu rūpnīcās, nodrošinot reāllaika uzraudzību, automatizētas vadības secības, trauksmes pārvaldību, datu reģistrēšanu un attālo piekļuvi, izmantojot IoT iespējotas platformas.",
   "svc.desc.5": "Mūsu pieredzējušie inženieri sniedz ekspertu tehniskās konsultācijas procesa traucējummeklēšanā, veiktspējas problēmu novēršanā, jaudas paplašināšanā, normatīvo aktu atbilstībā un rūpnīcas modernizēšanā — sniedzot praktiskus inženiertehniskos ieteikumus ar izmērāmu ietekmi.",
   "svc.feat.0": "Procesa simulācija (CHEMCAD)",
@@ -123,6 +116,13 @@
   "proc.desc.3": "Pēc pasūtījuma apstiprināšanas sākas detalizēta inženierija - 3D CAD projektēšana, ražošanas rasējumi, P&ID pabeigšana, konstrukcijas projektēšana un visi inženiertehniskie nodevumi.",
   "proc.desc.4": "Precīza ražošana mūsu darbnīcā, izmantojot CNC apstrādi, lāzergriešanu un TIG/MIG metināšanu – ar stingrām kvalitātes pārbaudēm, NDT testēšanu un trešās puses pārbaudi.",
   "proc.desc.5": "Mūsu lauka inženieru komanda veic vietas uzstādīšanu, mehānisko izlīdzināšanu, cauruļvadus, elektriskos savienojumus, pirmsekspluatācijas pārbaudes un iekārtas palaišanu ar veiktspējas testēšanu.",
-  "proc.desc.6": "Garantētas veiktspējas testa brauciens, kas veikts jūsu klātbūtnē. ",
-  "proc.desc.7": "Pastāvīgs tehniskais atbalsts, profilaktiskā apkope, rezerves daļu piegāde un ikgadējie darbības auditi, lai nodrošinātu, ka jūsu rūpnīca turpina darboties ar maksimālu efektivitāti."
+  "proc.desc.6": "Garantētas veiktspējas testa brauciens, kas veikts jūsu klātbūtnē. Visa dokumentācija, O&M rokasgrāmatas, PLC programmas un izstrādātie rasējumi tiek nodoti pēc projekta pabeigšanas.",
+  "proc.desc.7": "Pastāvīgs tehniskais atbalsts, profilaktiskā apkope, rezerves daļu piegāde un ikgadējie darbības auditi, lai nodrošinātu, ka jūsu rūpnīca turpina darboties ar maksimālu efektivitāti.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0"
+  ]
 }

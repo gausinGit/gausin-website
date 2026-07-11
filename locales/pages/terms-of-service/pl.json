@@ -13,20 +13,17 @@
   "h3.8": "9) Kontakt i aktualizacje",
   "p.0": "Warunki regulujące dostęp i korzystanie ze strony internetowej i informacji Gausin International Engineers.",
   "p.1": "Wchodząc na tę stronę, wyrażasz zgodę na niniejsze Warunki świadczenia usług. ",
-  "p.2": "Szczegóły techniczne, możliwości, obrazy i opisy wydajności pokazane na tej stronie mają charakter ogólny. ",
+  "p.2": "Szczegóły techniczne, możliwości, obrazy i opisy wydajności pokazane na tej stronie mają charakter ogólny. Ostateczny projekt, gatunki materiałów, zakres, gwarancja i ceny są regulowane wyłącznie przez podpisaną ofertę cenową, zamówienie zakupu i dokumenty kontraktowe.",
   "p.3": "Cała zawartość witryny internetowej, w tym tekst, grafika, układy produktów, rysunki i zasoby marki, jest własnością firmy Gausin International Engineers Pvt lub jest przez nią licencjonowana. ",
   "p.4": "Zgadzasz się nie nadużywać tej witryny, nie podejmować prób nieautoryzowanego dostępu, wstrzykiwać złośliwego kodu, usuwać chronionych treści ani korzystać z platformy w sposób szkodzący funkcjonalności witryny lub reputacji biznesowej.",
   "p.5": "W maksymalnym zakresie dozwolonym przez prawo firma Gausin International Engineers nie ponosi odpowiedzialności za bezpośrednie, pośrednie, przypadkowe lub wtórne straty wynikające z korzystania ze strony internetowej, tymczasowego przestoju, problemów z danymi lub polegania na treściach pozaumownych.",
   "p.6": "Na naszej stronie internetowej mogą znajdować się linki do zasobów zewnętrznych. ",
-  "p.7": "Warunki te podlegają prawu indyjskiemu. ",
+  "p.7": "Warunki te podlegają prawu indyjskiemu. Wszelkie spory związane z korzystaniem ze strony internetowej lub interpretacją niniejszych warunków będą podlegały sądom właściwym w Meerut, Uttar Pradesh, Indie.",
   "p.8": "W przypadku pytań prawnych, umownych lub dotyczących zgodności, skontaktuj się z nami, korzystając z poniższych danych. ",
   "li.0": "Wszystkie oferty podlegają wyjaśnieniom technicznym i zatwierdzeniu handlowemu.",
   "li.1": "Ceny, podatki i terminy dostaw mogą się różnić w zależności od specyfikacji i lokalizacji projektu.",
   "li.2": "Warunki produkcji, wysyłki, instalacji i uruchomienia obowiązują wyłącznie na podstawie uzgodnionej pisemnej umowy.",
   "_meta.title": "Warunki świadczenia usług | ",
-  "_htmlKeys": [
-    "legal.note.0"
-  ],
   "hero.label.0": "Prawny",
   "legal.chipLbl.0": "Dokument",
   "legal.chipLbl.1": "Data wejścia w życie",
@@ -45,12 +42,12 @@
   "legal.h3.7": "8) Obowiązujące prawo i jurysdykcja",
   "legal.h3.8": "9) Kontakt i aktualizacje",
   "legal.p.0": "Wchodząc na tę stronę, wyrażasz zgodę na niniejsze Warunki świadczenia usług. ",
-  "legal.p.1": "Szczegóły techniczne, możliwości, obrazy i opisy wydajności pokazane na tej stronie mają charakter ogólny. ",
+  "legal.p.1": "Szczegóły techniczne, możliwości, obrazy i opisy wydajności pokazane na tej stronie mają charakter ogólny. Ostateczny projekt, gatunki materiałów, zakres, gwarancja i ceny są regulowane wyłącznie przez podpisaną ofertę cenową, zamówienie zakupu i dokumenty kontraktowe.",
   "legal.p.2": "Cała zawartość witryny internetowej, w tym tekst, grafika, układy produktów, rysunki i zasoby marki, jest własnością firmy Gausin International Engineers Pvt lub jest przez nią licencjonowana. ",
   "legal.p.3": "Zgadzasz się nie nadużywać tej witryny, nie podejmować prób nieautoryzowanego dostępu, wstrzykiwać złośliwego kodu, usuwać chronionych treści ani korzystać z platformy w sposób szkodzący funkcjonalności witryny lub reputacji biznesowej.",
   "legal.p.4": "W maksymalnym zakresie dozwolonym przez prawo firma Gausin International Engineers nie ponosi odpowiedzialności za bezpośrednie, pośrednie, przypadkowe lub wtórne straty wynikające z korzystania ze strony internetowej, tymczasowego przestoju, problemów z danymi lub polegania na treściach pozaumownych.",
   "legal.p.5": "Na naszej stronie internetowej mogą znajdować się linki do zasobów zewnętrznych. ",
-  "legal.p.6": "Warunki te podlegają prawu indyjskiemu. ",
+  "legal.p.6": "Warunki te podlegają prawu indyjskiemu. Wszelkie spory związane z korzystaniem ze strony internetowej lub interpretacją niniejszych warunków będą podlegały sądom właściwym w Meerut, Uttar Pradesh, Indie.",
   "legal.p.7": "W przypadku pytań prawnych, umownych lub dotyczących zgodności, skontaktuj się z nami, korzystając z poniższych danych. ",
   "legal.li.0": "Wszystkie oferty podlegają wyjaśnieniom technicznym i zatwierdzeniu handlowemu.",
   "legal.li.1": "Ceny, podatki i terminy dostaw mogą się różnić w zależności od specyfikacji i lokalizacji projektu.",
@@ -62,5 +59,8 @@
   "legal.nav.2": "Własność intelektualna",
   "legal.nav.3": "Obciążenie",
   "legal.nav.4": "Obowiązujące prawo",
-  "legal.note.0": "<strong>Kontakt prawny:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | "
+  "legal.note.0": "<strong>Kontakt prawny:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | ",
+  "_htmlKeys": [
+    "legal.note.0"
+  ]
 }

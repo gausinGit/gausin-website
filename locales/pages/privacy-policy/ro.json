@@ -14,7 +14,7 @@
   "p.0": "Modul în care Gausin International Engineers colectează, utilizează și vă protejează informațiile.",
   "p.1": "Când ne contactați pentru echipamente industriale, discuții de proiect, asistență pentru service sau cotații, este posibil să colectăm:",
   "p.2": "Prelucrăm datele pe baza consimțământului dumneavoastră (trimiterea formularelor), a interesului comercial legitim (comunicare și asistență B2B) și a obligațiilor legale (înregistrări fiscale/conformitate).",
-  "p.3": "Nu vindem date personale. ",
+  "p.3": "Nu vindem date personale. Putem împărtăși informații limitate cu furnizorii de servicii de încredere (gazduire, comunicare, CRM, contabilitate) numai dacă este necesar pentru a ne desfășura afacerea. De asemenea, putem dezvălui date dacă este cerut de lege sau de autoritatea competentă.",
   "p.4": "Datele de anchetă și de comunicare de afaceri sunt păstrate atât timp cât este necesar pentru implicarea proiectului, asistență și păstrarea evidențelor juridice/comerciale. ",
   "p.5": "Folosim garanții administrative și tehnice practice pentru a proteja datele împotriva accesului neautorizat, modificării sau utilizării necorespunzătoare. ",
   "p.6": "Site-ul nostru web poate folosi cookie-uri și tehnologii similare pentru gestionarea sesiunilor, urmărirea performanței și îmbunătățirea experienței utilizatorului. ",
@@ -30,9 +30,6 @@
   "li.7": "Mențineți înregistrări pentru cerințele de conformitate, contabilitate și audit",
   "li.8": "Îmbunătățiți performanța site-ului, relevanța conținutului și calitatea răspunsului",
   "_meta.title": "Politica de confidențialitate | ",
-  "_htmlKeys": [
-    "legal.note.0"
-  ],
   "hero.label.0": "Legal",
   "legal.chipLbl.0": "Document",
   "legal.chipLbl.1": "Data intrării în vigoare",
@@ -52,7 +49,7 @@
   "legal.h3.8": "9) Actualizări ale politicii",
   "legal.p.0": "Când ne contactați pentru echipamente industriale, discuții de proiect, asistență pentru service sau cotații, este posibil să colectăm:",
   "legal.p.1": "Prelucrăm datele pe baza consimțământului dumneavoastră (trimiterea formularelor), a interesului comercial legitim (comunicare și asistență B2B) și a obligațiilor legale (înregistrări fiscale/conformitate).",
-  "legal.p.2": "Nu vindem date personale. ",
+  "legal.p.2": "Nu vindem date personale. Putem împărtăși informații limitate cu furnizorii de servicii de încredere (gazduire, comunicare, CRM, contabilitate) numai dacă este necesar pentru a ne desfășura afacerea. De asemenea, putem dezvălui date dacă este cerut de lege sau de autoritatea competentă.",
   "legal.p.3": "Datele de anchetă și de comunicare de afaceri sunt păstrate atât timp cât este necesar pentru implicarea proiectului, asistență și păstrarea evidențelor juridice/comerciale. ",
   "legal.p.4": "Folosim garanții administrative și tehnice practice pentru a proteja datele împotriva accesului neautorizat, modificării sau utilizării necorespunzătoare. ",
   "legal.p.5": "Site-ul nostru web poate folosi cookie-uri și tehnologii similare pentru gestionarea sesiunilor, urmărirea performanței și îmbunătățirea experienței utilizatorului. ",
@@ -74,5 +71,8 @@
   "legal.nav.2": "Partajarea datelor",
   "legal.nav.3": "Securitate",
   "legal.nav.4": "Drepturile tale",
-  "legal.note.0": "<strong>Contact pentru confidențialitate:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | "
+  "legal.note.0": "<strong>Contact pentru confidențialitate:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | ",
+  "_htmlKeys": [
+    "legal.note.0"
+  ]
 }

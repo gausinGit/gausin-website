@@ -12,7 +12,7 @@
   "p.4": "Selepas pengesahan pesanan, kejuruteraan terperinci dimulakan - reka bentuk CAD 3D, lukisan fabrikasi, pemuktamadan P&ID, reka bentuk struktur dan semua penghantaran kejuruteraan.",
   "p.5": "Fabrikasi ketepatan di bengkel kami menggunakan pemesinan CNC, pemotongan laser dan kimpalan TIG/MIG - dengan pemeriksaan kualiti yang ketat, ujian NDT dan pemeriksaan pihak ketiga.",
   "p.6": "Pasukan kejuruteraan lapangan kami mengendalikan pemasangan tapak, penjajaran mekanikal, perpaipan, sambungan elektrik, pemeriksaan pra-pentauliahan dan permulaan loji dengan ujian prestasi.",
-  "p.7": "Ujian prestasi terjamin dijalankan di hadapan anda. ",
+  "p.7": "Ujian prestasi terjamin dijalankan di hadapan anda. Semua dokumentasi, manual O&M, program PLC dan lukisan terbina diserahkan setelah projek siap.",
   "p.8": "Sokongan teknikal yang berterusan, penyelenggaraan pencegahan, bekalan alat ganti dan audit prestasi tahunan untuk memastikan kilang anda terus beroperasi pada kecekapan puncak.",
   "p.9": "Hubungi pasukan kejuruteraan kami untuk membincangkan keperluan projek anda. ",
   "card.title.0": "Pasukan Pelbagai Disiplin",
@@ -45,13 +45,6 @@
   "stat.label.1": "Purata Maklum Balas Petikan",
   "stat.label.2": "Kadar Penghantaran Tepat Masa",
   "stat.label.3": "Jaminan Prestasi",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0"
-  ],
   "hero.label.0": "Perkhidmatan",
   "crumb.0": "Rumah",
   "crumb.1": "Perkhidmatan",
@@ -69,7 +62,7 @@
   "svc.title.5": "Perundingan Teknikal & Penyelesaian Masalah",
   "svc.desc.0": "Kami membangunkan pakej kejuruteraan proses yang komprehensif untuk loji dan pengembangan baharu - termasuk helaian alir proses, imbangan jisim & tenaga, saiz peralatan, pembangunan P&ID dan simulasi proses menggunakan CHEMCAD dan HTRI.",
   "svc.desc.1": "Perkhidmatan kejuruteraan terperinci kami meliputi pemodelan CAD 3D yang lengkap, lukisan fabrikasi, reka bentuk struktur awam, susun atur paip, kejuruteraan elektrik, kejuruteraan instrumentasi dan spesifikasi perolehan untuk semua peralatan dan sistem utama.",
-  "svc.desc.2": "Lengkapkan pengurusan projek hujung ke hujung daripada konsep hingga pentauliahan. ",
+  "svc.desc.2": "Lengkapkan pengurusan projek hujung ke hujung daripada konsep hingga pentauliahan. Pasukan pengurusan projek kami menggunakan MS Project dan metodologi tangkas untuk memastikan penghantaran tepat pada masanya, dalam bajet loji industri yang kompleks dengan dokumentasi dan penyerahan penuh.",
   "svc.desc.3": "Audit tenaga haba yang komprehensif untuk loji sedia ada, mengenal pasti pembaziran tenaga dan mengesyorkan peningkatan yang terbukti. ",
   "svc.desc.4": "Kami menyepadukan sistem automasi PLC/SCADA termaju ke dalam loji proses baharu dan sedia ada - membolehkan pemantauan masa nyata, jujukan kawalan automatik, pengurusan penggera, pengelogan data dan akses jauh melalui platform berdaya IoT.",
   "svc.desc.5": "Jurutera kami yang berpengalaman menyediakan perundingan teknikal pakar untuk penyelesaian masalah proses, penyahsekatan prestasi, pengembangan kapasiti, pematuhan peraturan dan pemodenan loji - menyampaikan cadangan kejuruteraan yang boleh diambil tindakan dengan impak yang boleh diukur.",
@@ -123,6 +116,13 @@
   "proc.desc.3": "Selepas pengesahan pesanan, kejuruteraan terperinci dimulakan - reka bentuk CAD 3D, lukisan fabrikasi, pemuktamadan P&ID, reka bentuk struktur dan semua penghantaran kejuruteraan.",
   "proc.desc.4": "Fabrikasi ketepatan di bengkel kami menggunakan pemesinan CNC, pemotongan laser dan kimpalan TIG/MIG - dengan pemeriksaan kualiti yang ketat, ujian NDT dan pemeriksaan pihak ketiga.",
   "proc.desc.5": "Pasukan kejuruteraan lapangan kami mengendalikan pemasangan tapak, penjajaran mekanikal, perpaipan, sambungan elektrik, pemeriksaan pra-pentauliahan dan permulaan loji dengan ujian prestasi.",
-  "proc.desc.6": "Ujian prestasi terjamin dijalankan di hadapan anda. ",
-  "proc.desc.7": "Sokongan teknikal yang berterusan, penyelenggaraan pencegahan, bekalan alat ganti dan audit prestasi tahunan untuk memastikan kilang anda terus beroperasi pada kecekapan puncak."
+  "proc.desc.6": "Ujian prestasi terjamin dijalankan di hadapan anda. Semua dokumentasi, manual O&M, program PLC dan lukisan terbina diserahkan setelah projek siap.",
+  "proc.desc.7": "Sokongan teknikal yang berterusan, penyelenggaraan pencegahan, bekalan alat ganti dan audit prestasi tahunan untuk memastikan kilang anda terus beroperasi pada kecekapan puncak.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0"
+  ]
 }

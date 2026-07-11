@@ -17,16 +17,13 @@
   "p.3": "Všetok obsah webových stránok, vrátane textu, grafiky, rozloženia produktov, nákresov a aktív značky, je vo vlastníctve alebo na základe licencie spoločnosti Gausin International Engineers Pvt. ",
   "p.4": "Súhlasíte s tým, že nebudete zneužívať túto webovú stránku, pokúšať sa o neoprávnený prístup, vkladať škodlivý kód, zbierať chránený obsah alebo používať platformu spôsobom, ktorý poškodzuje funkčnosť webovej stránky alebo obchodné meno.",
   "p.5": "V maximálnom rozsahu povolenom zákonom Gausin International Engineers nenesie zodpovednosť za priame, nepriame, náhodné alebo následné straty vyplývajúce z používania webovej stránky, dočasného výpadku, problémov s údajmi alebo spoliehania sa na nezmluvný obsah.",
-  "p.6": "Naša webová stránka môže obsahovať odkazy na externé zdroje. ",
-  "p.7": "Tieto podmienky sa riadia zákonmi Indie. ",
+  "p.6": "Naša webová stránka môže obsahovať odkazy na externé zdroje. Nekontrolujeme ani neschvaľujeme externé webové stránky a nezodpovedáme za ich obsah, podmienky ani postupy ochrany osobných údajov.",
+  "p.7": "Tieto podmienky sa riadia zákonmi Indie. Akékoľvek spory súvisiace s používaním webovej stránky alebo výkladom týchto podmienok budú predmetom súdov s jurisdikciou v Meerute, Uttar Pradesh, India.",
   "p.8": "V prípade právnych, zmluvných otázok alebo otázok týkajúcich sa dodržiavania pravidiel nás kontaktujte pomocou nižšie uvedených údajov. ",
   "li.0": "Všetky ponuky podliehajú technickému objasneniu a obchodnému schváleniu.",
   "li.1": "Ceny, dane a termíny dodania sa môžu líšiť v závislosti od špecifikácií a umiestnenia projektu.",
   "li.2": "Podmienky výroby, expedície, inštalácie a uvedenia do prevádzky sú platné len na základe dohodnutej písomnej zmluvy.",
   "_meta.title": "Podmienky služby | ",
-  "_htmlKeys": [
-    "legal.note.0"
-  ],
   "hero.label.0": "Právne",
   "legal.chipLbl.0": "Dokument",
   "legal.chipLbl.1": "Dátum účinnosti",
@@ -49,8 +46,8 @@
   "legal.p.2": "Všetok obsah webových stránok, vrátane textu, grafiky, rozloženia produktov, nákresov a aktív značky, je vo vlastníctve alebo na základe licencie spoločnosti Gausin International Engineers Pvt. ",
   "legal.p.3": "Súhlasíte s tým, že nebudete zneužívať túto webovú stránku, pokúšať sa o neoprávnený prístup, vkladať škodlivý kód, zbierať chránený obsah alebo používať platformu spôsobom, ktorý poškodzuje funkčnosť webovej stránky alebo obchodné meno.",
   "legal.p.4": "V maximálnom rozsahu povolenom zákonom Gausin International Engineers nenesie zodpovednosť za priame, nepriame, náhodné alebo následné straty vyplývajúce z používania webovej stránky, dočasného výpadku, problémov s údajmi alebo spoliehania sa na nezmluvný obsah.",
-  "legal.p.5": "Naša webová stránka môže obsahovať odkazy na externé zdroje. ",
-  "legal.p.6": "Tieto podmienky sa riadia zákonmi Indie. ",
+  "legal.p.5": "Naša webová stránka môže obsahovať odkazy na externé zdroje. Nekontrolujeme ani neschvaľujeme externé webové stránky a nezodpovedáme za ich obsah, podmienky ani postupy ochrany osobných údajov.",
+  "legal.p.6": "Tieto podmienky sa riadia zákonmi Indie. Akékoľvek spory súvisiace s používaním webovej stránky alebo výkladom týchto podmienok budú predmetom súdov s jurisdikciou v Meerute, Uttar Pradesh, India.",
   "legal.p.7": "V prípade právnych, zmluvných otázok alebo otázok týkajúcich sa dodržiavania pravidiel nás kontaktujte pomocou nižšie uvedených údajov. ",
   "legal.li.0": "Všetky ponuky podliehajú technickému objasneniu a obchodnému schváleniu.",
   "legal.li.1": "Ceny, dane a termíny dodania sa môžu líšiť v závislosti od špecifikácií a umiestnenia projektu.",
@@ -62,5 +59,8 @@
   "legal.nav.2": "duševné vlastníctvo",
   "legal.nav.3": "Zodpovednosť",
   "legal.nav.4": "Rozhodujúce právo",
-  "legal.note.0": "<strong>Právny kontakt:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | "
+  "legal.note.0": "<strong>Právny kontakt:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | ",
+  "_htmlKeys": [
+    "legal.note.0"
+  ]
 }

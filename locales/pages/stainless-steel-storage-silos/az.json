@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "category": "Təzyiqli Gəmilər və Saxlama Çənləri",
   "breadcrumb.cat.0": "Təzyiqli Gəmilər və Saxlama Çənləri",
   "qs.0.label": "Tutum",
@@ -107,5 +101,11 @@
   "tagline": "Güzgü ilə cilalanmış daxili hissələri, izolyasiyası, qarışdırıcıları, CIP sprey topları və səviyyəli cihazları olan gigiyenik SS 304/316L saxlama çənləri.",
   "overview.p0": "<strong style=\"color:var(--gray-900);\">Gausin Paslanmayan Polad Saxlama Silosları</strong> tələbkar sənaye mühitlərində etibarlı, gigiyenik performans üçün hazırlanmışdır. ",
   "overview.p1": "Hər bir vahid SS 304/316L təmas səthləri, təsdiqlənmiş proses dizaynı və tam sənədlərlə tutumunuza, məhsul xüsusiyyətlərinizə və zavodun yerləşdirilməsi tələblərinə uyğun olaraq xüsusi hazırlanmışdır.",
-  "overview.p2": "Gausin quraşdırma, istismara vermə və satışdan sonrakı xidmət vasitəsilə prosesin dizaynı və istehsalından tam mühəndislik dəstəyi təmin edir."
+  "overview.p2": "Gausin quraşdırma, istismara vermə və satışdan sonrakı xidmət vasitəsilə prosesin dizaynı və istehsalından tam mühəndislik dəstəyi təmin edir.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

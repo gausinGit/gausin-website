@@ -12,7 +12,7 @@
   "p.4": "Na de orderbevestiging begint de gedetailleerde engineering: 3D CAD-ontwerp, fabricagetekeningen, P&ID-afronding, structureel ontwerp en alle technische resultaten.",
   "p.5": "Precisiefabricage in onze werkplaats met behulp van CNC-bewerkingen, lasersnijden en TIG/MIG-lassen - met strenge kwaliteitscontroles, NDT-testen en inspectie door derden.",
   "p.6": "Ons buitendienstteam verzorgt de installatie op locatie, de mechanische uitlijning, de leidingen, de elektrische aansluitingen, de controles voorafgaand aan de inbedrijfstelling en het opstarten van de fabriek met prestatietests.",
-  "p.7": "Gegarandeerde prestatietest uitgevoerd in uw aanwezigheid. ",
+  "p.7": "Gegarandeerde prestatietest uitgevoerd in uw aanwezigheid. Alle documentatie, O&M-handleidingen, PLC-programma's en as-built-tekeningen worden bij voltooiing van het project overhandigd.",
   "p.8": "Doorlopende technische ondersteuning, preventief onderhoud, levering van reserveonderdelen en jaarlijkse prestatie-audits om ervoor te zorgen dat uw fabriek met maximale efficiëntie blijft werken.",
   "p.9": "Neem contact op met ons engineeringteam om uw projectvereisten te bespreken. ",
   "card.title.0": "Multidisciplinair team",
@@ -45,13 +45,6 @@
   "stat.label.1": "Gemiddelde reactie op offerte",
   "stat.label.2": "Tarief voor tijdige levering",
   "stat.label.3": "Prestatiegarantie",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0"
-  ],
   "hero.label.0": "Diensten",
   "crumb.0": "Thuis",
   "crumb.1": "Diensten",
@@ -69,7 +62,7 @@
   "svc.title.5": "Technisch advies en probleemoplossing",
   "svc.desc.0": "We ontwikkelen uitgebreide procesengineeringpakketten voor nieuwe fabrieken en uitbreidingen - inclusief processtroomschema's, massa- en energiebalansen, dimensionering van apparatuur, P&ID-ontwikkeling en processimulatie met behulp van CHEMCAD en HTRI.",
   "svc.desc.1": "Onze gedetailleerde engineeringservice omvat volledige 3D CAD-modellering, fabricagetekeningen, civiel constructief ontwerp, leidinglay-outs, elektrotechniek, instrumentatietechniek en inkoopspecificaties voor alle belangrijke apparatuur en systemen.",
-  "svc.desc.2": "Compleet end-to-end projectmanagement, van concept tot inbedrijfstelling. ",
+  "svc.desc.2": "Compleet end-to-end projectmanagement, van concept tot inbedrijfstelling. Ons projectmanagementteam maakt gebruik van MS Project en agile methodologieën om te zorgen voor een tijdige en binnen het budget oplevering van complexe industriële installaties met volledige documentatie en overdracht.",
   "svc.desc.3": "Uitgebreide thermische energie-audits voor bestaande installaties, waarbij energieverspilling wordt geïdentificeerd en bewezen upgrades worden aanbevolen. ",
   "svc.desc.4": "We integreren geavanceerde PLC/SCADA-automatiseringssystemen in nieuwe en bestaande procesinstallaties, waardoor realtime monitoring, geautomatiseerde controlesequenties, alarmbeheer, datalogging en externe toegang via IoT-compatibele platforms mogelijk worden.",
   "svc.desc.5": "Onze ervaren ingenieurs bieden deskundig technisch advies voor het oplossen van problemen in processen, het wegnemen van knelpunten in de prestaties, capaciteitsuitbreiding, naleving van de regelgeving en modernisering van installaties, waardoor ze bruikbare technische aanbevelingen met meetbare impact opleveren.",
@@ -123,6 +116,13 @@
   "proc.desc.3": "Na de orderbevestiging begint de gedetailleerde engineering: 3D CAD-ontwerp, fabricagetekeningen, P&ID-afronding, structureel ontwerp en alle technische resultaten.",
   "proc.desc.4": "Precisiefabricage in onze werkplaats met behulp van CNC-bewerkingen, lasersnijden en TIG/MIG-lassen - met strenge kwaliteitscontroles, NDT-testen en inspectie door derden.",
   "proc.desc.5": "Ons buitendienstteam verzorgt de installatie op locatie, de mechanische uitlijning, de leidingen, de elektrische aansluitingen, de controles voorafgaand aan de inbedrijfstelling en het opstarten van de fabriek met prestatietests.",
-  "proc.desc.6": "Gegarandeerde prestatietest uitgevoerd in uw aanwezigheid. ",
-  "proc.desc.7": "Doorlopende technische ondersteuning, preventief onderhoud, levering van reserveonderdelen en jaarlijkse prestatie-audits om ervoor te zorgen dat uw fabriek met maximale efficiëntie blijft werken."
+  "proc.desc.6": "Gegarandeerde prestatietest uitgevoerd in uw aanwezigheid. Alle documentatie, O&M-handleidingen, PLC-programma's en as-built-tekeningen worden bij voltooiing van het project overhandigd.",
+  "proc.desc.7": "Doorlopende technische ondersteuning, preventief onderhoud, levering van reserveonderdelen en jaarlijkse prestatie-audits om ervoor te zorgen dat uw fabriek met maximale efficiëntie blijft werken.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0"
+  ]
 }

@@ -14,7 +14,7 @@
   "p.0": "Kaip Gausin International Engineers renka, naudoja ir saugo jūsų informaciją.",
   "p.1": "Kai susisiekiate su mumis dėl pramoninės įrangos, projekto diskusijų, aptarnavimo palaikymo ar pasiūlymų, galime rinkti:",
   "p.2": "Duomenis tvarkome remdamiesi jūsų sutikimu (formų pateikimas), teisėtais verslo interesais (B2B komunikacija ir palaikymas) ir teisiniais įsipareigojimais (mokesčių / atitikties įrašai).",
-  "p.3": "Mes neparduodame asmens duomenų. ",
+  "p.3": "Mes neparduodame asmens duomenų. Galime dalytis ribota informacija su patikimais paslaugų teikėjais (priegloba, komunikacija, CRM, apskaita) tik tada, kai to reikia mūsų verslui vykdyti. Taip pat galime atskleisti duomenis, jei to reikalauja įstatymai arba kompetentinga institucija.",
   "p.4": "Užklausų ir verslo komunikacijos duomenys saugomi tol, kol to reikia projektams, pagalbai ir teisiniams/komerciniams įrašams saugoti. ",
   "p.5": "Mes naudojame praktines administracines ir technines apsaugos priemones, kad apsaugotume duomenis nuo neteisėtos prieigos, pakeitimo ar netinkamo naudojimo. ",
   "p.6": "Mūsų svetainėje gali būti naudojami slapukai ir panašios technologijos, skirtos seansų valdymui, našumo stebėjimui ir vartotojo patirčiai gerinti. ",
@@ -30,9 +30,6 @@
   "li.7": "Tvarkyti atitikties, apskaitos ir audito reikalavimų įrašus",
   "li.8": "Pagerinkite svetainės našumą, turinio tinkamumą ir atsakymų kokybę",
   "_meta.title": "Privatumo politika | ",
-  "_htmlKeys": [
-    "legal.note.0"
-  ],
   "hero.label.0": "Teisinė",
   "legal.chipLbl.0": "dokumentas",
   "legal.chipLbl.1": "Įsigaliojimo data",
@@ -52,7 +49,7 @@
   "legal.h3.8": "9) Politikos atnaujinimai",
   "legal.p.0": "Kai susisiekiate su mumis dėl pramoninės įrangos, projekto diskusijų, aptarnavimo palaikymo ar pasiūlymų, galime rinkti:",
   "legal.p.1": "Duomenis tvarkome remdamiesi jūsų sutikimu (formų pateikimas), teisėtais verslo interesais (B2B komunikacija ir palaikymas) ir teisiniais įsipareigojimais (mokesčių / atitikties įrašai).",
-  "legal.p.2": "Mes neparduodame asmens duomenų. ",
+  "legal.p.2": "Mes neparduodame asmens duomenų. Galime dalytis ribota informacija su patikimais paslaugų teikėjais (priegloba, komunikacija, CRM, apskaita) tik tada, kai to reikia mūsų verslui vykdyti. Taip pat galime atskleisti duomenis, jei to reikalauja įstatymai arba kompetentinga institucija.",
   "legal.p.3": "Užklausų ir verslo komunikacijos duomenys saugomi tol, kol to reikia projektams, pagalbai ir teisiniams/komerciniams įrašams saugoti. ",
   "legal.p.4": "Mes naudojame praktines administracines ir technines apsaugos priemones, kad apsaugotume duomenis nuo neteisėtos prieigos, pakeitimo ar netinkamo naudojimo. ",
   "legal.p.5": "Mūsų svetainėje gali būti naudojami slapukai ir panašios technologijos, skirtos seansų valdymui, našumo stebėjimui ir vartotojo patirčiai gerinti. ",
@@ -74,5 +71,8 @@
   "legal.nav.2": "Duomenų bendrinimas",
   "legal.nav.3": "Saugumas",
   "legal.nav.4": "Jūsų teisės",
-  "legal.note.0": "<strong>Privatumo kontaktas:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | "
+  "legal.note.0": "<strong>Privatumo kontaktas:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | ",
+  "_htmlKeys": [
+    "legal.note.0"
+  ]
 }

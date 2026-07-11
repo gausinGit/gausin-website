@@ -99,14 +99,6 @@
   "iot.label.1": "Presión de vapor",
   "iot.label.2": "Eficiencia Energética",
   "iot.label.3": "Tasa de flujo",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0",
-    "h2.1"
-  ],
   "inno.title.0": "Corte por plasma y láser CNC",
   "inno.title.1": "Soldadura TIG / MIG / SAW",
   "inno.title.2": "Laminado y conformado de tubos de precisión",
@@ -129,5 +121,13 @@
   "mfg.mat.3": "SS dúplex",
   "mfg.mat.4": "Titanio",
   "mfg.mat.5": "Hastelloy",
-  "mfg.mat.6": "Aleación de cobre"
+  "mfg.mat.6": "Aleación de cobre",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0",
+    "h2.1"
+  ]
 }

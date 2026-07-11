@@ -17,16 +17,13 @@
   "p.3": "Allt webbplatsinnehåll, inklusive text, grafik, produktlayouter, ritningar och varumärkestillgångar, ägs av eller licensieras till Gausin International Engineers Pvt. ",
   "p.4": "Du samtycker till att inte missbruka denna webbplats, försöka obehörig åtkomst, injicera skadlig kod, skrapa skyddat innehåll eller använda plattformen på ett sätt som skadar webbplatsens funktionalitet eller affärsrykte.",
   "p.5": "I den maximala utsträckning som lagen tillåter, ska Gausin International Engineers inte hållas ansvarigt för direkta, indirekta, tillfälliga eller följdförluster som uppstår på grund av webbplatsanvändning, tillfälliga driftstopp, dataproblem eller beroende av icke-kontraktuellt innehåll.",
-  "p.6": "Vår webbplats kan innehålla länkar till externa resurser. ",
-  "p.7": "Dessa villkor regleras av Indiens lagar. ",
+  "p.6": "Vår webbplats kan innehålla länkar till externa resurser. Vi kontrollerar eller stöder inte externa webbplatser och är inte ansvariga för deras innehåll, villkor eller sekretesspraxis.",
+  "p.7": "Dessa villkor regleras av Indiens lagar. Eventuella tvister relaterade till webbplatsanvändning eller tolkning av dessa villkor ska vara föremål för domstolar som har jurisdiktion i Meerut, Uttar Pradesh, Indien.",
   "p.8": "För juridiska, avtalsmässiga eller efterlevnadsförfrågningar, kontakta oss med hjälp av informationen nedan. ",
   "li.0": "Alla offerter är föremål för tekniskt förtydligande och kommersiellt godkännande.",
   "li.1": "Priser, skatter och leveranstider kan variera beroende på specifikationer och projektort.",
   "li.2": "Produktions-, leverans-, installations- och driftsättningsvillkor gäller endast enligt överenskommet skriftligt avtal.",
   "_meta.title": "Användarvillkor | ",
-  "_htmlKeys": [
-    "legal.note.0"
-  ],
   "hero.label.0": "Rättslig",
   "legal.chipLbl.0": "Dokumentera",
   "legal.chipLbl.1": "Ikraftträdande datum",
@@ -49,8 +46,8 @@
   "legal.p.2": "Allt webbplatsinnehåll, inklusive text, grafik, produktlayouter, ritningar och varumärkestillgångar, ägs av eller licensieras till Gausin International Engineers Pvt. ",
   "legal.p.3": "Du samtycker till att inte missbruka denna webbplats, försöka obehörig åtkomst, injicera skadlig kod, skrapa skyddat innehåll eller använda plattformen på ett sätt som skadar webbplatsens funktionalitet eller affärsrykte.",
   "legal.p.4": "I den maximala utsträckning som lagen tillåter, ska Gausin International Engineers inte hållas ansvarigt för direkta, indirekta, tillfälliga eller följdförluster som uppstår på grund av webbplatsanvändning, tillfälliga driftstopp, dataproblem eller beroende av icke-kontraktuellt innehåll.",
-  "legal.p.5": "Vår webbplats kan innehålla länkar till externa resurser. ",
-  "legal.p.6": "Dessa villkor regleras av Indiens lagar. ",
+  "legal.p.5": "Vår webbplats kan innehålla länkar till externa resurser. Vi kontrollerar eller stöder inte externa webbplatser och är inte ansvariga för deras innehåll, villkor eller sekretesspraxis.",
+  "legal.p.6": "Dessa villkor regleras av Indiens lagar. Eventuella tvister relaterade till webbplatsanvändning eller tolkning av dessa villkor ska vara föremål för domstolar som har jurisdiktion i Meerut, Uttar Pradesh, Indien.",
   "legal.p.7": "För juridiska, avtalsmässiga eller efterlevnadsförfrågningar, kontakta oss med hjälp av informationen nedan. ",
   "legal.li.0": "Alla offerter är föremål för tekniskt förtydligande och kommersiellt godkännande.",
   "legal.li.1": "Priser, skatter och leveranstider kan variera beroende på specifikationer och projektort.",
@@ -62,5 +59,8 @@
   "legal.nav.2": "Immateriella rättigheter",
   "legal.nav.3": "Ansvar",
   "legal.nav.4": "Gällande lag",
-  "legal.note.0": "<strong>Juridisk kontakt:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | "
+  "legal.note.0": "<strong>Juridisk kontakt:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | ",
+  "_htmlKeys": [
+    "legal.note.0"
+  ]
 }

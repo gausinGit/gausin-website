@@ -40,15 +40,15 @@
   "prod.title.30": "Sistema CIP automatizado",
   "prod.title.31": "Recipientes a presión (ASME / IBR)",
   "prod.title.32": "Silos de almacenamiento de acero inoxidable",
-  "prod.desc.0": "Evaporador de alta eficiencia ideal para productos sensibles al calor. ",
-  "prod.desc.1": "Diseñado para líquidos viscosos, incrustados o cristalizados. ",
+  "prod.desc.0": "Evaporador de alta eficiencia ideal para productos sensibles al calor. El líquido forma una fina película en las superficies internas de los tubos, lo que permite una evaporación suave y rápida a bajas temperaturas. Disponible en configuraciones simple, doble, triple y multiefectos.",
+  "prod.desc.1": "Diseñado para líquidos viscosos, incrustados o cristalizados. La circulación forzada garantiza una alta velocidad a través de los tubos del intercambiador de calor, evitando la deposición de incrustaciones y permitiendo una concentración eficiente de fluidos difíciles.",
   "prod.desc.2": "Evaporador de tubo vertical donde el líquido y el vapor ascienden juntos a través de tubos en un patrón de película ascendente. ",
   "prod.desc.3": "Evaporador tipo placa compacto y de alta eficiencia con superficies de intercambio de calor de placa corrugada. ",
   "prod.desc.4": "Evaporador de bandeja de vacío con camisa para operaciones por lotes que requieren un control preciso de la concentración. ",
-  "prod.desc.5": "Convierta el alimento líquido en polvo de flujo libre en una sola operación. ",
-  "prod.desc.6": "Tecnología de lecho fluidizado para materiales granulares, cristalinos y en polvo. ",
+  "prod.desc.5": "Convierta el alimento líquido en polvo de flujo libre en una sola operación. Disponible en diseños de atomización con boquilla y atomización con disco giratorio, produciendo polvos con una distribución precisa del tamaño de las partículas para aplicaciones lácteas, alimentarias, farmacéuticas, químicas y de almidón.",
+  "prod.desc.6": "Tecnología de lecho fluidizado para materiales granulares, cristalinos y en polvo. Proporciona un secado suave y uniforme con un control preciso de la humedad; disponible en configuraciones continuas para lácteos y alimentos.",
   "prod.desc.7": "Secador de atmósfera cargado de gas inerte o disolvente para productos que no pueden exponerse al oxígeno atmosférico. ",
-  "prod.desc.8": "Secador continuo para materiales viscosos, sensibles al calor e incrustantes. ",
+  "prod.desc.8": "Secador continuo para materiales viscosos, sensibles al calor e incrustantes. Un conjunto de cuchillas giratorias esparce el alimento en una fina película turbulenta sobre la pared calentada, lo que permite una rápida evaporación al vacío, ideal para ZLD, sales efluentes y productos de alto valor.",
   "prod.desc.9": "Ideal para secar pasta, revoque de filtración, lodos y materiales granulares húmedos directamente sin presecado. ",
   "prod.desc.10": "Planta láctea llave en mano desde la recepción de la leche cruda hasta el envasado del producto final. ",
   "prod.desc.11": "Planta enfriadora de leche a escala industrial para el enfriamiento rápido e higiénico de grandes volúmenes de leche cruda recibida en instalaciones de procesamiento de lácteos. ",
@@ -68,7 +68,7 @@
   "prod.desc.25": "Plantas completas de tratamiento de agua que incluyen WTP, ultrafiltración (UF), ósmosis inversa (RO) y sistemas de ablandamiento para agua de procesos industriales, alimentación de calderas y agua potable con retrolavado automatizado y dosificación de químicos.",
   "prod.desc.26": "Sistemas de depuración húmedos y secos para la eliminación de partículas, gases ácidos, COV y compuestos olorosos de corrientes de escape industriales. ",
   "prod.desc.27": "Sistemas incineradores industriales para la destrucción térmica segura de residuos sólidos y líquidos peligrosos y no peligrosos. ",
-  "prod.desc.28": "Intercambiadores de calor industriales de servicio pesado diseñados según los estándares TEMA. ",
+  "prod.desc.28": "Intercambiadores de calor industriales de servicio pesado diseñados según los estándares TEMA. Disponible en configuraciones de paso único, paso múltiple, tubo en U y placa de tubos fija para aplicaciones de calefacción, refrigeración, condensación y precalentamiento en todas las industrias.",
   "prod.desc.29": "Intercambiadores de calor de placas con juntas compactos y de alta eficiencia que ofrecen un rendimiento térmico superior en un espacio mínimo. ",
   "prod.desc.30": "Sistemas de limpieza in situ totalmente automatizados para la limpieza higiénica de líneas de proceso, tanques, intercambiadores de calor y equipos sin desmontaje. ",
   "prod.desc.31": "Recipientes a presión diseñados y fabricados a medida para almacenamiento y procesamiento de gases y líquidos bajo presión. ",
@@ -575,11 +575,6 @@
   "prod.app.119": "Alimento",
   "prod.app.120": "Farmacéutica",
   "prod.app.121": "Químico",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "h2.0"
-  ],
   "hero.label.0": "Productos",
   "crumb.0": "Hogar",
   "crumb.1": "Productos",
@@ -599,5 +594,10 @@
   "h4.0": "Diseñado a medida",
   "h4.1": "Certificado y conforme",
   "h4.2": "Eficiencia energética",
-  "h4.3": "Soporte posventa"
+  "h4.3": "Soporte posventa",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "h2.0"
+  ]
 }

@@ -13,20 +13,17 @@
   "h3.8": "9) Kontakt in posodobitve",
   "p.0": "Pogoji, ki urejajo dostop in uporabo spletnega mesta in informacij Gausin International Engineers.",
   "p.1": "Z dostopom do te spletne strani se strinjate s temi pogoji storitve. ",
-  "p.2": "Tehnični podatki, zmogljivosti, slike in opisi delovanja, prikazani na tem spletnem mestu, so splošni. ",
+  "p.2": "Tehnični podatki, zmogljivosti, slike in opisi delovanja, prikazani na tem spletnem mestu, so splošni. Končni dizajn, razredi materialov, obseg, garancija in cene so urejeni samo s podpisano ponudbo, naročilnico in pogodbenimi dokumenti.",
   "p.3": "Vsa vsebina spletnega mesta, vključno z besedilom, grafiko, postavitvami izdelkov, risbami in sredstvi blagovne znamke, je v lasti ali pod licenco Gausin International Engineers Pvt. ",
   "p.4": "Strinjate se, da ne boste zlorabljali tega spletnega mesta, poskušali nepooblaščenega dostopa, vnašali zlonamerne kode, strgali zaščitene vsebine ali uporabljali platforme na način, ki bi škodoval funkcionalnosti spletnega mesta ali poslovnemu ugledu.",
   "p.5": "V največjem obsegu, ki ga dovoljuje zakonodaja, Gausin International Engineers ni odgovoren za neposredne, posredne, naključne ali posledične izgube, ki izhajajo iz uporabe spletne strani, začasnih izpadov, težav s podatki ali zanašanja na nepogodbeno vsebino.",
-  "p.6": "Naše spletno mesto lahko vključuje povezave do zunanjih virov. ",
-  "p.7": "Te pogoje ureja zakonodaja Indije. ",
+  "p.6": "Naše spletno mesto lahko vključuje povezave do zunanjih virov. Ne nadziramo ali podpiramo zunanjih spletnih mest in nismo odgovorni za njihovo vsebino, pogoje ali prakso zasebnosti.",
+  "p.7": "Te pogoje ureja zakonodaja Indije. Vsi spori v zvezi z uporabo spletnega mesta ali razlago teh pogojev so predmet sodišč, ki so pristojna v Meerutu, Uttar Pradesh, Indija.",
   "p.8": "Za pravna, pogodbena vprašanja ali poizvedbe o skladnosti nas kontaktirajte na spodnje podatke. ",
   "li.0": "Vse ponudbe so predmet tehničnega pojasnila in komercialne odobritve.",
   "li.1": "Cene, davki in roki dostave se lahko razlikujejo glede na specifikacije in lokacijo projekta.",
   "li.2": "Pogoji proizvodnje, odpreme, montaže in zagona veljajo samo po dogovorjeni pisni pogodbi.",
   "_meta.title": "Pogoji storitve | ",
-  "_htmlKeys": [
-    "legal.note.0"
-  ],
   "hero.label.0": "Pravno",
   "legal.chipLbl.0": "Dokument",
   "legal.chipLbl.1": "Datum začetka veljavnosti",
@@ -45,12 +42,12 @@
   "legal.h3.7": "8) Veljavno pravo in sodna pristojnost",
   "legal.h3.8": "9) Kontakt in posodobitve",
   "legal.p.0": "Z dostopom do te spletne strani se strinjate s temi pogoji storitve. ",
-  "legal.p.1": "Tehnični podatki, zmogljivosti, slike in opisi delovanja, prikazani na tem spletnem mestu, so splošni. ",
+  "legal.p.1": "Tehnični podatki, zmogljivosti, slike in opisi delovanja, prikazani na tem spletnem mestu, so splošni. Končni dizajn, razredi materialov, obseg, garancija in cene so urejeni samo s podpisano ponudbo, naročilnico in pogodbenimi dokumenti.",
   "legal.p.2": "Vsa vsebina spletnega mesta, vključno z besedilom, grafiko, postavitvami izdelkov, risbami in sredstvi blagovne znamke, je v lasti ali pod licenco Gausin International Engineers Pvt. ",
   "legal.p.3": "Strinjate se, da ne boste zlorabljali tega spletnega mesta, poskušali nepooblaščenega dostopa, vnašali zlonamerne kode, strgali zaščitene vsebine ali uporabljali platforme na način, ki bi škodoval funkcionalnosti spletnega mesta ali poslovnemu ugledu.",
   "legal.p.4": "V največjem obsegu, ki ga dovoljuje zakonodaja, Gausin International Engineers ni odgovoren za neposredne, posredne, naključne ali posledične izgube, ki izhajajo iz uporabe spletne strani, začasnih izpadov, težav s podatki ali zanašanja na nepogodbeno vsebino.",
-  "legal.p.5": "Naše spletno mesto lahko vključuje povezave do zunanjih virov. ",
-  "legal.p.6": "Te pogoje ureja zakonodaja Indije. ",
+  "legal.p.5": "Naše spletno mesto lahko vključuje povezave do zunanjih virov. Ne nadziramo ali podpiramo zunanjih spletnih mest in nismo odgovorni za njihovo vsebino, pogoje ali prakso zasebnosti.",
+  "legal.p.6": "Te pogoje ureja zakonodaja Indije. Vsi spori v zvezi z uporabo spletnega mesta ali razlago teh pogojev so predmet sodišč, ki so pristojna v Meerutu, Uttar Pradesh, Indija.",
   "legal.p.7": "Za pravna, pogodbena vprašanja ali poizvedbe o skladnosti nas kontaktirajte na spodnje podatke. ",
   "legal.li.0": "Vse ponudbe so predmet tehničnega pojasnila in komercialne odobritve.",
   "legal.li.1": "Cene, davki in roki dostave se lahko razlikujejo glede na specifikacije in lokacijo projekta.",
@@ -62,5 +59,8 @@
   "legal.nav.2": "Intelektualna lastnina",
   "legal.nav.3": "Odgovornost",
   "legal.nav.4": "Veljavno pravo",
-  "legal.note.0": "<strong>Stik za pravne osebe:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | "
+  "legal.note.0": "<strong>Stik za pravne osebe:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | ",
+  "_htmlKeys": [
+    "legal.note.0"
+  ]
 }

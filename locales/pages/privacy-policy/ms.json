@@ -14,7 +14,7 @@
   "p.0": "Cara Jurutera Antarabangsa Gausin mengumpul, menggunakan dan melindungi maklumat anda.",
   "p.1": "Apabila anda menghubungi kami untuk peralatan industri, perbincangan projek, sokongan perkhidmatan atau sebut harga, kami mungkin mengumpul:",
   "p.2": "Kami memproses data berdasarkan persetujuan anda (penyerahan borang), kepentingan perniagaan yang sah (komunikasi dan sokongan B2B), dan kewajipan undang-undang (rekod cukai/pematuhan).",
-  "p.3": "Kami tidak menjual data peribadi. ",
+  "p.3": "Kami tidak menjual data peribadi. Kami mungkin berkongsi maklumat terhad dengan penyedia perkhidmatan yang dipercayai (penghosan, komunikasi, CRM, perakaunan) hanya apabila diperlukan untuk mengendalikan perniagaan kami. Kami juga mungkin mendedahkan data jika dikehendaki oleh undang-undang atau pihak berkuasa yang berwibawa.",
   "p.4": "Data pertanyaan dan komunikasi perniagaan disimpan selama yang diperlukan untuk penglibatan projek, sokongan dan penyimpanan rekod undang-undang/komersial. ",
   "p.5": "Kami menggunakan perlindungan pentadbiran dan teknikal yang praktikal untuk melindungi data daripada akses, pengubahan atau penyalahgunaan yang tidak dibenarkan. ",
   "p.6": "Laman web kami mungkin menggunakan kuki dan teknologi serupa untuk pengurusan sesi, penjejakan prestasi dan peningkatan pengalaman pengguna. ",
@@ -30,9 +30,6 @@
   "li.7": "Mengekalkan rekod untuk keperluan pematuhan, perakaunan dan audit",
   "li.8": "Tingkatkan prestasi tapak web, perkaitan kandungan dan kualiti respons",
   "_meta.title": "Dasar Privasi | ",
-  "_htmlKeys": [
-    "legal.note.0"
-  ],
   "hero.label.0": "sah",
   "legal.chipLbl.0": "Dokumen",
   "legal.chipLbl.1": "Tarikh Berkuatkuasa",
@@ -52,7 +49,7 @@
   "legal.h3.8": "9) Kemas Kini Dasar",
   "legal.p.0": "Apabila anda menghubungi kami untuk peralatan industri, perbincangan projek, sokongan perkhidmatan atau sebut harga, kami mungkin mengumpul:",
   "legal.p.1": "Kami memproses data berdasarkan persetujuan anda (penyerahan borang), kepentingan perniagaan yang sah (komunikasi dan sokongan B2B), dan kewajipan undang-undang (rekod cukai/pematuhan).",
-  "legal.p.2": "Kami tidak menjual data peribadi. ",
+  "legal.p.2": "Kami tidak menjual data peribadi. Kami mungkin berkongsi maklumat terhad dengan penyedia perkhidmatan yang dipercayai (penghosan, komunikasi, CRM, perakaunan) hanya apabila diperlukan untuk mengendalikan perniagaan kami. Kami juga mungkin mendedahkan data jika dikehendaki oleh undang-undang atau pihak berkuasa yang berwibawa.",
   "legal.p.3": "Data pertanyaan dan komunikasi perniagaan disimpan selama yang diperlukan untuk penglibatan projek, sokongan dan penyimpanan rekod undang-undang/komersial. ",
   "legal.p.4": "Kami menggunakan perlindungan pentadbiran dan teknikal yang praktikal untuk melindungi data daripada akses, pengubahan atau penyalahgunaan yang tidak dibenarkan. ",
   "legal.p.5": "Laman web kami mungkin menggunakan kuki dan teknologi serupa untuk pengurusan sesi, penjejakan prestasi dan peningkatan pengalaman pengguna. ",
@@ -74,5 +71,8 @@
   "legal.nav.2": "Perkongsian Data",
   "legal.nav.3": "Keselamatan",
   "legal.nav.4": "Hak Anda",
-  "legal.note.0": "<strong>Hubungan Privasi:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | "
+  "legal.note.0": "<strong>Hubungan Privasi:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | ",
+  "_htmlKeys": [
+    "legal.note.0"
+  ]
 }

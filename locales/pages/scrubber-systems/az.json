@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "category": "Tullantıların idarə edilməsi",
   "breadcrumb.cat.0": "Tullantıların idarə edilməsi",
   "qs.0.label": "Am3/saat",
@@ -106,6 +100,12 @@
   "related.2.desc": "Skrubberlə üfürmə müalicəsi.",
   "tagline": "Sənaye tullantı axınlarından hissəciklərin, turşu qazlarının, VOC-lərin və qoxulu birləşmələrin çıxarılması üçün yaş və quru təmizləmə sistemləri. ",
   "overview.p0": "<strong style=\"color:var(--gray-900);\">Gausin Scrubber Systems</strong> hissəciklər, turşu qazları (SO<sub>2</sub>, HCl, HF), VOCs və qoxulu birləşmələri sənaye tullantıları axınlarından təmizləyir və yığın emissiya normalarına cavab verir.",
-  "overview.p1": "Yaş skrubberlər yüksək effektiv qazın udulması üçün maye kontaktından istifadə edir; ",
-  "overview.p2": "Gausin emissiya test dəstəyi ilə tam dizayn, istehsal, kanallar, fan seçimi, yığın dizaynı və istismara verməyi təmin edir."
+  "overview.p1": "Yaş skrubberlər yüksək effektiv qazın udulması üçün maye kontaktından istifadə edir; quru və qablaşdırılmış yataq dizaynları xüsusi qaz kompozisiyalarına və məkan məhdudiyyətlərinə uyğundur. Sistemlər qazanlar, yandırma qurğuları, kimya zavodları və texnoloji ventilyatorlar üçün xüsusi hazırlanmışdır.",
+  "overview.p2": "Gausin emissiya test dəstəyi ilə tam dizayn, istehsal, kanallar, fan seçimi, yığın dizaynı və istismara verməyi təmin edir.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

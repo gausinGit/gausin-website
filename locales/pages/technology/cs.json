@@ -99,14 +99,6 @@
   "iot.label.1": "Tlak páry",
   "iot.label.2": "Energetická účinnost",
   "iot.label.3": "Průtok",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0",
-    "h2.1"
-  ],
   "inno.title.0": "CNC řezání plazmou a laserem",
   "inno.title.1": "Svařování TIG / MIG / SAW",
   "inno.title.2": "Přesné válcování a tvarování trubek",
@@ -129,5 +121,13 @@
   "mfg.mat.3": "Duplexní SS",
   "mfg.mat.4": "Titan",
   "mfg.mat.5": "Hastelloy",
-  "mfg.mat.6": "Slitina mědi"
+  "mfg.mat.6": "Slitina mědi",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0",
+    "h2.1"
+  ]
 }

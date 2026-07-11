@@ -12,7 +12,7 @@
   "p.4": "Po potrditvi naročila se začne podroben inženiring - 3D CAD načrtovanje, izdelovalne risbe, finalizacija P&ID, konstrukcijsko načrtovanje in vsi inženirski rezultati.",
   "p.5": "Natančna izdelava v naši delavnici z uporabo CNC obdelave, laserskega rezanja in TIG/MIG varjenja - s strogimi pregledi kakovosti, NDT testiranjem in pregledom tretjih oseb.",
   "p.6": "Naša terenska inženirska ekipa skrbi za namestitev na lokaciji, mehansko poravnavo, cevovode, električne povezave, preglede pred zagonom in zagon obrata s testiranjem delovanja.",
-  "p.7": "Zajamčen preizkus delovanja v vaši prisotnosti. ",
+  "p.7": "Zajamčen preizkus delovanja v vaši prisotnosti. Vsa dokumentacija, priročniki za O&M, programi PLC in izvedene risbe predani po zaključku projekta.",
   "p.8": "Stalna tehnična podpora, preventivno vzdrževanje, dobava rezervnih delov in letne revizije delovanja, da zagotovite, da bo vaš obrat še naprej deloval z največjo učinkovitostjo.",
   "p.9": "Stopite v stik z našo inženirsko ekipo, da se pogovorimo o vaših projektnih zahtevah. ",
   "card.title.0": "Multidisciplinarna ekipa",
@@ -45,13 +45,6 @@
   "stat.label.1": "Povprečni odgovor ponudbe",
   "stat.label.2": "Stopnja pravočasne dostave",
   "stat.label.3": "Garancija na uspešnost",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0"
-  ],
   "hero.label.0": "Storitve",
   "crumb.0": "domov",
   "crumb.1": "Storitve",
@@ -69,8 +62,8 @@
   "svc.title.5": "Tehnično svetovanje in odpravljanje težav",
   "svc.desc.0": "Razvijamo celovite pakete procesnega inženiringa za nove obrate in širitve – vključno s shemami poteka procesa, masnimi in energetskimi bilancami, dimenzioniranjem opreme, razvojem P&ID in simulacijo procesa z uporabo CHEMCAD in HTRI.",
   "svc.desc.1": "Naše podrobne inženirske storitve zajemajo celotno 3D modeliranje CAD, risbe izdelave, načrtovanje gradbenih konstrukcij, načrte cevovodov, elektrotehniko, inženiring instrumentov in specifikacije nabave za vso glavno opremo in sisteme.",
-  "svc.desc.2": "Popolno vodenje projekta od konca do konca od koncepta do zagona. ",
-  "svc.desc.3": "Celoviti pregledi toplotne energije za obstoječe naprave, ugotavljanje izgube energije in priporočanje preverjenih nadgradenj. ",
+  "svc.desc.2": "Popolno vodenje projekta od konca do konca od koncepta do zagona. Naša ekipa za vodenje projektov uporablja MS Project in agilne metodologije, da zagotovi pravočasno dostavo kompleksnih industrijskih obratov v okviru proračuna s celotno dokumentacijo in predajo.",
+  "svc.desc.3": "Celoviti pregledi toplotne energije za obstoječe naprave, ugotavljanje izgube energije in priporočanje preverjenih nadgradenj. Specializirani smo za večstopenjsko pretvorbo izhlapevanja, TVR (Thermo Vapor Recompressor) / MVR (Mechanical Vapor Recompression) naknadno vgradnjo in integracijo rekuperacije toplote.",
   "svc.desc.4": "Napredne sisteme za avtomatizacijo PLC/SCADA integriramo v nove in obstoječe procesne obrate – omogočamo spremljanje v realnem času, avtomatizirana krmilna zaporedja, upravljanje alarmov, beleženje podatkov in oddaljeni dostop prek platform, ki podpirajo internet stvari.",
   "svc.desc.5": "Naši izkušeni inženirji nudijo strokovno tehnično svetovanje za odpravljanje težav pri procesu, odpravo ozkih grl pri delovanju, širitev zmogljivosti, skladnost s predpisi in posodobitev obrata – zagotavljanje uporabnih inženirskih priporočil z merljivim učinkom.",
   "svc.feat.0": "Simulacija procesa (CHEMCAD)",
@@ -123,6 +116,13 @@
   "proc.desc.3": "Po potrditvi naročila se začne podroben inženiring - 3D CAD načrtovanje, izdelovalne risbe, finalizacija P&ID, konstrukcijsko načrtovanje in vsi inženirski rezultati.",
   "proc.desc.4": "Natančna izdelava v naši delavnici z uporabo CNC obdelave, laserskega rezanja in TIG/MIG varjenja - s strogimi pregledi kakovosti, NDT testiranjem in pregledom tretjih oseb.",
   "proc.desc.5": "Naša terenska inženirska ekipa skrbi za namestitev na lokaciji, mehansko poravnavo, cevovode, električne povezave, preglede pred zagonom in zagon obrata s testiranjem delovanja.",
-  "proc.desc.6": "Zajamčen preizkus delovanja v vaši prisotnosti. ",
-  "proc.desc.7": "Stalna tehnična podpora, preventivno vzdrževanje, dobava rezervnih delov in letne revizije delovanja, da zagotovite, da bo vaš obrat še naprej deloval z največjo učinkovitostjo."
+  "proc.desc.6": "Zajamčen preizkus delovanja v vaši prisotnosti. Vsa dokumentacija, priročniki za O&M, programi PLC in izvedene risbe predani po zaključku projekta.",
+  "proc.desc.7": "Stalna tehnična podpora, preventivno vzdrževanje, dobava rezervnih delov in letne revizije delovanja, da zagotovite, da bo vaš obrat še naprej deloval z največjo učinkovitostjo.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0"
+  ]
 }

@@ -99,14 +99,6 @@
   "iot.label.1": "Ångtryck",
   "iot.label.2": "Energieffektivitet",
   "iot.label.3": "Flödeshastighet",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0",
-    "h2.1"
-  ],
   "inno.title.0": "CNC Plasma & Laserskärning",
   "inno.title.1": "TIG / MIG / SAW Svetsning",
   "inno.title.2": "Precision Tube Rolling & Forming",
@@ -129,5 +121,13 @@
   "mfg.mat.3": "Duplex SS",
   "mfg.mat.4": "Titan",
   "mfg.mat.5": "Hastelloy",
-  "mfg.mat.6": "Kopparlegering"
+  "mfg.mat.6": "Kopparlegering",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0",
+    "h2.1"
+  ]
 }

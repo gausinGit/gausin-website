@@ -12,7 +12,7 @@
   "p.4": "Po potvrdení objednávky sa začína podrobný inžiniering - 3D CAD návrh, výrobné výkresy, finalizácia P&ID, konštrukčný návrh a všetky inžinierske výstupy.",
   "p.5": "Precízna výroba v našej dielni pomocou CNC obrábania, laserového rezania a zvárania TIG/MIG – s prísnymi kontrolami kvality, NDT testovaním a kontrolou treťou stranou.",
   "p.6": "Náš terénny inžiniersky tím sa stará o inštaláciu na mieste, mechanické vyrovnanie, potrubia, elektrické pripojenia, kontroly pred uvedením do prevádzky a spustenie závodu s testovaním výkonu.",
-  "p.7": "Zaručený test výkonu vykonaný vo vašej prítomnosti. ",
+  "p.7": "Zaručený test výkonu vykonaný vo vašej prítomnosti. Všetka dokumentácia, O&M manuály, PLC programy a výkresy skutočného vyhotovenia odovzdané po dokončení projektu.",
   "p.8": "Priebežná technická podpora, preventívna údržba, dodávky náhradných dielov a ročné audity výkonu, aby sa zabezpečilo, že váš závod bude naďalej fungovať pri maximálnej efektívnosti.",
   "p.9": "Kontaktujte náš inžiniersky tím, aby ste prediskutovali svoje požiadavky na projekt. ",
   "card.title.0": "Multidisciplinárny tím",
@@ -45,13 +45,6 @@
   "stat.label.1": "Priemerná odpoveď na cenovú ponuku",
   "stat.label.2": "Rýchlosť doručenia",
   "stat.label.3": "Záruka výkonu",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0"
-  ],
   "hero.label.0": "Služby",
   "crumb.0": "Domov",
   "crumb.1": "Služby",
@@ -69,7 +62,7 @@
   "svc.title.5": "Technické poradenstvo a riešenie problémov",
   "svc.desc.0": "Vyvíjame komplexné balíky procesného inžinierstva pre nové závody a rozšírenia – vrátane procesných diagramov, hmotnostných a energetických bilancií, dimenzovania zariadení, vývoja P&ID a simulácie procesov pomocou CHEMCAD a HTRI.",
   "svc.desc.1": "Naša podrobná inžinierska služba zahŕňa kompletné 3D CAD modelovanie, výrobné výkresy, stavebný konštrukčný návrh, usporiadanie potrubí, elektrotechniku, prístrojové inžinierstvo a špecifikácie obstarávania pre všetky hlavné zariadenia a systémy.",
-  "svc.desc.2": "Kompletné riadenie projektu od konceptu až po uvedenie do prevádzky. ",
+  "svc.desc.2": "Kompletné riadenie projektu od konceptu až po uvedenie do prevádzky. Náš tím projektového manažmentu využíva MS Project a agilné metodiky na zabezpečenie včasnej dodávky komplexných priemyselných závodov v rámci rozpočtu s kompletnou dokumentáciou a odovzdaním.",
   "svc.desc.3": "Komplexné audity tepelnej energie pre existujúce zariadenia, identifikácia plytvania energiou a odporúčanie overených modernizácií. ",
   "svc.desc.4": "Integrujeme pokročilé automatizačné systémy PLC/SCADA do nových a existujúcich procesných závodov – umožňujeme monitorovanie v reálnom čase, automatizované riadiace sekvencie, správu alarmov, zaznamenávanie údajov a vzdialený prístup prostredníctvom platforiem s podporou internetu vecí.",
   "svc.desc.5": "Naši skúsení inžinieri poskytujú odborné technické poradenstvo pri odstraňovaní problémov s procesmi, odstraňovaní prekážok výkonu, rozširovaní kapacity, dodržiavaní predpisov a modernizácii závodu – poskytujú praktické technické odporúčania s merateľným dopadom.",
@@ -123,6 +116,13 @@
   "proc.desc.3": "Po potvrdení objednávky sa začína podrobný inžiniering - 3D CAD návrh, výrobné výkresy, finalizácia P&ID, konštrukčný návrh a všetky inžinierske výstupy.",
   "proc.desc.4": "Precízna výroba v našej dielni pomocou CNC obrábania, laserového rezania a zvárania TIG/MIG – s prísnymi kontrolami kvality, NDT testovaním a kontrolou treťou stranou.",
   "proc.desc.5": "Náš terénny inžiniersky tím sa stará o inštaláciu na mieste, mechanické vyrovnanie, potrubia, elektrické pripojenia, kontroly pred uvedením do prevádzky a spustenie závodu s testovaním výkonu.",
-  "proc.desc.6": "Zaručený test výkonu vykonaný vo vašej prítomnosti. ",
-  "proc.desc.7": "Priebežná technická podpora, preventívna údržba, dodávky náhradných dielov a ročné audity výkonu, aby sa zabezpečilo, že váš závod bude naďalej fungovať pri maximálnej efektívnosti."
+  "proc.desc.6": "Zaručený test výkonu vykonaný vo vašej prítomnosti. Všetka dokumentácia, O&M manuály, PLC programy a výkresy skutočného vyhotovenia odovzdané po dokončení projektu.",
+  "proc.desc.7": "Priebežná technická podpora, preventívna údržba, dodávky náhradných dielov a ročné audity výkonu, aby sa zabezpečilo, že váš závod bude naďalej fungovať pri maximálnej efektívnosti.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0"
+  ]
 }

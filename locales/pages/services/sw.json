@@ -12,7 +12,7 @@
   "p.4": "Baada ya kuthibitishwa kwa agizo, uhandisi wa kina huanza - muundo wa 3D CAD, michoro ya kubuni, ukamilisho wa P&ID, muundo wa muundo na bidhaa zote za uhandisi.",
   "p.5": "Uundaji wa usahihi katika warsha yetu kwa kutumia uchakataji wa CNC, ukataji wa leza, na uchomeleaji wa TIG/MIG - kukiwa na ukaguzi wa ubora wa juu, upimaji wa NDT na ukaguzi wa watu wengine.",
   "p.6": "Timu yetu ya uhandisi wa uga hushughulikia usakinishaji wa tovuti, upangaji wa kimitambo, mabomba, miunganisho ya umeme, ukaguzi wa awali na kuanzisha mitambo kwa kupima utendakazi.",
-  "p.7": "Jaribio la utendakazi lililohakikishwa lilifanywa mbele yako. ",
+  "p.7": "Jaribio la utendakazi lililohakikishwa lilifanywa mbele yako. Nyaraka zote, miongozo ya O&M, programu za PLC, na michoro iliyojengwa inavyokabidhiwa mradi kukamilika.",
   "p.8": "Usaidizi wa kiufundi unaoendelea, matengenezo ya kuzuia, usambazaji wa vipuri, na ukaguzi wa utendakazi wa kila mwaka ili kuhakikisha kuwa mtambo wako unaendelea kufanya kazi kwa ufanisi wa kilele.",
   "p.9": "Wasiliana na timu yetu ya wahandisi ili kujadili mahitaji ya mradi wako. ",
   "card.title.0": "Timu yenye nidhamu nyingi",
@@ -45,13 +45,6 @@
   "stat.label.1": "Wastani wa Majibu ya Nukuu",
   "stat.label.2": "Kiwango cha Uwasilishaji Kwa Wakati",
   "stat.label.3": "Dhamana ya Utendaji",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0"
-  ],
   "hero.label.0": "Huduma",
   "crumb.0": "Nyumbani",
   "crumb.1": "Huduma",
@@ -69,8 +62,8 @@
   "svc.title.5": "Ushauri wa Kiufundi na Utatuzi",
   "svc.desc.0": "Tunatengeneza vifurushi vya kina vya uhandisi wa mitambo kwa mimea na upanuzi mpya - ikijumuisha laha za mchakato, salio la wingi na nishati, ukubwa wa vifaa, uundaji wa P&ID, na uigaji wa kuchakata kwa kutumia CHEMCAD na HTRI.",
   "svc.desc.1": "Huduma yetu ya kina ya uhandisi inashughulikia uundaji kamili wa 3D CAD, michoro ya kubuni, muundo wa kiraia, mipangilio ya mabomba, uhandisi wa umeme, uhandisi wa vyombo, na vipimo vya ununuzi kwa vifaa na mifumo yote kuu.",
-  "svc.desc.2": "Kamilisha usimamizi wa mradi wa mwisho hadi mwisho kutoka dhana hadi uagizaji. ",
-  "svc.desc.3": "Ukaguzi wa kina wa nishati ya joto kwa mimea iliyopo, kubainisha upotevu wa nishati na kupendekeza uboreshaji uliothibitishwa. ",
+  "svc.desc.2": "Kamilisha usimamizi wa mradi wa mwisho hadi mwisho kutoka dhana hadi uagizaji. Timu yetu ya usimamizi wa mradi hutumia Mradi wa MS na mbinu za kisasa ili kuhakikisha uwasilishaji kwa wakati, ndani ya bajeti ya mitambo ya viwandani iliyo na hati kamili na makabidhiano.",
+  "svc.desc.3": "Ukaguzi wa kina wa nishati ya joto kwa mimea iliyopo, kubainisha upotevu wa nishati na kupendekeza uboreshaji uliothibitishwa. Tuna utaalam katika ubadilishaji wa uvukizi wa athari nyingi, TVR (Thermo Vapor Recompressor) / MVR (Mechanical Vapor Recompression) retrofit, na ujumuishaji wa uokoaji wa joto.",
   "svc.desc.4": "Tunaunganisha mifumo ya kiotomatiki ya hali ya juu ya PLC/SCADA katika mitambo mipya na iliyopo ya mchakato - kuwezesha ufuatiliaji wa wakati halisi, ufuataji wa udhibiti wa kiotomatiki, udhibiti wa kengele, uwekaji kumbukumbu wa data na ufikiaji wa mbali kupitia majukwaa yaliyowezeshwa na IoT.",
   "svc.desc.5": "Wahandisi wetu wenye uzoefu hutoa ushauri wa kitaalamu wa kiufundi kwa ajili ya utatuzi wa matatizo, utatuzi wa utendakazi, upanuzi wa uwezo, uzingatiaji wa kanuni, na uboreshaji wa mitambo - kutoa mapendekezo ya uhandisi yanayoweza kutekelezeka na athari inayoweza kupimika.",
   "svc.feat.0": "Uigaji wa Mchakato (CHEMCAD)",
@@ -123,6 +116,13 @@
   "proc.desc.3": "Baada ya kuthibitishwa kwa agizo, uhandisi wa kina huanza - muundo wa 3D CAD, michoro ya kubuni, ukamilisho wa P&ID, muundo wa muundo na bidhaa zote za uhandisi.",
   "proc.desc.4": "Uundaji wa usahihi katika warsha yetu kwa kutumia uchakataji wa CNC, ukataji wa leza, na uchomeleaji wa TIG/MIG - kukiwa na ukaguzi wa ubora wa juu, upimaji wa NDT na ukaguzi wa watu wengine.",
   "proc.desc.5": "Timu yetu ya uhandisi wa uga hushughulikia usakinishaji wa tovuti, upangaji wa kimitambo, mabomba, miunganisho ya umeme, ukaguzi wa awali na kuanzisha mitambo kwa kupima utendakazi.",
-  "proc.desc.6": "Jaribio la utendakazi lililohakikishwa lilifanywa mbele yako. ",
-  "proc.desc.7": "Usaidizi wa kiufundi unaoendelea, matengenezo ya kuzuia, usambazaji wa vipuri, na ukaguzi wa utendakazi wa kila mwaka ili kuhakikisha kuwa mtambo wako unaendelea kufanya kazi kwa ufanisi wa kilele."
+  "proc.desc.6": "Jaribio la utendakazi lililohakikishwa lilifanywa mbele yako. Nyaraka zote, miongozo ya O&M, programu za PLC, na michoro iliyojengwa inavyokabidhiwa mradi kukamilika.",
+  "proc.desc.7": "Usaidizi wa kiufundi unaoendelea, matengenezo ya kuzuia, usambazaji wa vipuri, na ukaguzi wa utendakazi wa kila mwaka ili kuhakikisha kuwa mtambo wako unaendelea kufanya kazi kwa ufanisi wa kilele.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0"
+  ]
 }

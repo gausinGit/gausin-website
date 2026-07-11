@@ -99,14 +99,6 @@
   "iot.label.1": "Pression de vapeur",
   "iot.label.2": "Efficacité énergétique",
   "iot.label.3": "Débit",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0",
-    "h2.1"
-  ],
   "inno.title.0": "Découpe plasma et laser CNC",
   "inno.title.1": "Soudage TIG / MIG / SAW",
   "inno.title.2": "Laminage et formage de tubes de précision",
@@ -129,5 +121,13 @@
   "mfg.mat.3": "Duplex SS",
   "mfg.mat.4": "Titane",
   "mfg.mat.5": "Hastelloy",
-  "mfg.mat.6": "Alliage de cuivre"
+  "mfg.mat.6": "Alliage de cuivre",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0",
+    "h2.1"
+  ]
 }

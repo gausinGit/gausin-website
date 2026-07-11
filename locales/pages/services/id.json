@@ -12,9 +12,9 @@
   "p.4": "Setelah konfirmasi pesanan, rekayasa terperinci dimulai - desain CAD 3D, gambar fabrikasi, finalisasi P&ID, desain struktural, dan semua hasil teknik.",
   "p.5": "Fabrikasi presisi di bengkel kami menggunakan permesinan CNC, pemotongan laser, dan pengelasan TIG/MIG - dengan pemeriksaan kualitas yang ketat, pengujian NDT, dan inspeksi pihak ketiga.",
   "p.6": "Tim teknik lapangan kami menangani pemasangan di lokasi, penyelarasan mekanis, perpipaan, sambungan listrik, pemeriksaan pra-komisioning, dan permulaan pabrik dengan pengujian kinerja.",
-  "p.7": "Uji kinerja terjamin dijalankan di hadapan Anda. ",
+  "p.7": "Uji kinerja terjamin dijalankan di hadapan Anda. Semua dokumentasi, manual O&M, program PLC, dan gambar rakitan diserahkan setelah proyek selesai.",
   "p.8": "Dukungan teknis berkelanjutan, pemeliharaan preventif, pasokan suku cadang, dan audit kinerja tahunan untuk memastikan pabrik Anda terus beroperasi pada efisiensi puncak.",
-  "p.9": "Hubungi tim teknik kami untuk mendiskusikan kebutuhan proyek Anda. ",
+  "p.9": "Hubungi tim teknik kami untuk mendiskusikan kebutuhan proyek Anda. Kami akan merespons dalam waktu 48 jam dengan proposal teknis dan komersial yang terperinci.",
   "card.title.0": "Tim Multi-Disiplin",
   "card.title.1": "Perputaran Cepat",
   "card.title.2": "Kepatuhan Standar",
@@ -45,13 +45,6 @@
   "stat.label.1": "Respon Kutipan Rata-rata",
   "stat.label.2": "Tingkat Pengiriman Tepat Waktu",
   "stat.label.3": "Jaminan Kinerja",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0"
-  ],
   "hero.label.0": "Layanan",
   "crumb.0": "Rumah",
   "crumb.1": "Layanan",
@@ -69,7 +62,7 @@
   "svc.title.5": "Konsultasi Teknis & Pemecahan Masalah",
   "svc.desc.0": "Kami mengembangkan paket rekayasa proses yang komprehensif untuk pabrik baru dan perluasan - termasuk lembar alur proses, keseimbangan massa & energi, ukuran peralatan, pengembangan P&ID, dan simulasi proses menggunakan CHEMCAD dan HTRI.",
   "svc.desc.1": "Layanan teknik terperinci kami mencakup pemodelan 3D CAD lengkap, gambar fabrikasi, desain struktur sipil, tata letak perpipaan, teknik elektro, teknik instrumentasi, dan spesifikasi pengadaan untuk semua peralatan dan sistem utama.",
-  "svc.desc.2": "Menyelesaikan manajemen proyek end-to-end mulai dari konsep hingga commissioning. ",
+  "svc.desc.2": "Menyelesaikan manajemen proyek end-to-end mulai dari konsep hingga commissioning. Tim manajemen proyek kami menggunakan MS Project dan metodologi tangkas untuk memastikan pengiriman pabrik industri kompleks yang tepat waktu dan sesuai anggaran dengan dokumentasi dan serah terima yang lengkap.",
   "svc.desc.3": "Audit energi panas yang komprehensif untuk pembangkit listrik yang ada, mengidentifikasi pemborosan energi dan merekomendasikan peningkatan yang telah terbukti. ",
   "svc.desc.4": "Kami mengintegrasikan sistem otomasi PLC/SCADA yang canggih ke dalam pabrik proses baru dan yang sudah ada - memungkinkan pemantauan waktu nyata, rangkaian kontrol otomatis, manajemen alarm, pencatatan data, dan akses jarak jauh melalui platform berkemampuan IoT.",
   "svc.desc.5": "Insinyur kami yang berpengalaman memberikan konsultasi teknis ahli untuk pemecahan masalah proses, menghilangkan hambatan kinerja, perluasan kapasitas, kepatuhan terhadap peraturan, dan modernisasi pabrik - memberikan rekomendasi teknis yang dapat ditindaklanjuti dengan dampak yang terukur.",
@@ -123,6 +116,13 @@
   "proc.desc.3": "Setelah konfirmasi pesanan, rekayasa terperinci dimulai - desain CAD 3D, gambar fabrikasi, finalisasi P&ID, desain struktural, dan semua hasil teknik.",
   "proc.desc.4": "Fabrikasi presisi di bengkel kami menggunakan permesinan CNC, pemotongan laser, dan pengelasan TIG/MIG - dengan pemeriksaan kualitas yang ketat, pengujian NDT, dan inspeksi pihak ketiga.",
   "proc.desc.5": "Tim teknik lapangan kami menangani pemasangan di lokasi, penyelarasan mekanis, perpipaan, sambungan listrik, pemeriksaan pra-komisioning, dan permulaan pabrik dengan pengujian kinerja.",
-  "proc.desc.6": "Uji kinerja terjamin dijalankan di hadapan Anda. ",
-  "proc.desc.7": "Dukungan teknis berkelanjutan, pemeliharaan preventif, pasokan suku cadang, dan audit kinerja tahunan untuk memastikan pabrik Anda terus beroperasi pada efisiensi puncak."
+  "proc.desc.6": "Uji kinerja terjamin dijalankan di hadapan Anda. Semua dokumentasi, manual O&M, program PLC, dan gambar rakitan diserahkan setelah proyek selesai.",
+  "proc.desc.7": "Dukungan teknis berkelanjutan, pemeliharaan preventif, pasokan suku cadang, dan audit kinerja tahunan untuk memastikan pabrik Anda terus beroperasi pada efisiensi puncak.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0"
+  ]
 }

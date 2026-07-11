@@ -9,13 +9,10 @@
   "h2.5": "Vairāk produktu",
   "h2.6": "Juridiskie pakalpojumi un atbalsts",
   "p.0": "Pārlūkojiet visas galvenās lapas un produktu sarakstus vietnē gausin.in",
-  "p.1": "Izmantojiet šo lapu, lai ātri atrastu jebkuru mūsu vietnes sadaļu. ",
+  "p.1": "Izmantojiet šo lapu, lai ātri atrastu jebkuru mūsu vietnes sadaļu. Meklētājprogrammām mūsu XML vietnes karte ir pieejama vietnē\n      <a href=\"sitemap.xml\">sitemap.xml</a>.",
   "_meta.title": "Vietnes karte | ",
-  "_htmlKeys": [
-    "map.note.0"
-  ],
   "hero.sub.0": "Pārlūkojiet visas galvenās lapas un produktu sarakstus vietnē gausin.in",
-  "map.intro.0": "Izmantojiet šo lapu, lai ātri atrastu jebkuru mūsu vietnes sadaļu. ",
+  "map.intro.0": "Izmantojiet šo lapu, lai ātri atrastu jebkuru mūsu vietnes sadaļu. Meklētājprogrammām mūsu XML vietnes karte ir pieejama vietnē\n      <a href=\"sitemap.xml\">sitemap.xml</a>.",
   "map.group.0": "Galvenās lapas",
   "map.group.1": "Produktu kategorijas",
   "map.group.2": "Iztvaicētāji",
@@ -76,5 +73,10 @@
   "map.link.50": "Pakalpojuma noteikumi",
   "map.link.51": "XML vietnes karte",
   "map.link.52": "404 lpp",
-  "map.note.0": "<strong>Vai nepieciešama palīdzība, lai kaut ko atrastu?</strong> Izmantojiet meklēšanas ikonu galvenē vai\n      "
+  "map.note.0": "<strong>Vai nepieciešama palīdzība, lai kaut ko atrastu?</strong> Izmantojiet meklēšanas ikonu galvenē vai\n      ",
+  "_htmlKeys": [
+    "p.1",
+    "map.intro.0",
+    "map.note.0"
+  ]
 }

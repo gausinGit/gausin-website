@@ -1,12 +1,4 @@
 {
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0",
-    "h2.1"
-  ],
   "_meta.title": "Texnologiya | ",
   "hero.desc.0": "Proseslərin simulyasiyasından tutmuş ağıllı fabrik avtomatlaşdırılmasına qədər - biz üstün sənaye mühəndisliyi həllərinin layihələndirilməsi, hazırlanması və çatdırılması üçün ən müasir alətlər və texnologiyalardan istifadə edirik.",
   "sec.label.0": "Mühəndislik Proqramı",
@@ -129,5 +121,13 @@
   "sec.title.1": "Precision <span>Fabrika Texnologiyası</span>",
   "sec.title.2": "<span>İstehsal Prosesimiz</span>",
   "h2.0": "Ağıllı Sənaye <span style=\"background:linear-gradient(135deg,var(--blue-300),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;\">Avtomatlaşdırma Sistemləri</span>",
-  "h2.1": "Təcrübə <span style=\"background:linear-gradient(135deg,var(--blue-300),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;\">Texnologiyaya rəhbərlik edən mühəndislik</span>"
+  "h2.1": "Təcrübə <span style=\"background:linear-gradient(135deg,var(--blue-300),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;\">Texnologiyaya rəhbərlik edən mühəndislik</span>",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0",
+    "h2.1"
+  ]
 }

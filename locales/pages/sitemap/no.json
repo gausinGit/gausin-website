@@ -11,9 +11,6 @@
   "p.0": "Bla gjennom alle hovedsider og produktoppføringer på gausin.in",
   "p.1": "Bruk denne siden for raskt å finne hvilken som helst del av nettstedet vårt. ",
   "_meta.title": "Sitemap | ",
-  "_htmlKeys": [
-    "map.note.0"
-  ],
   "hero.sub.0": "Bla gjennom alle hovedsider og produktoppføringer på gausin.in",
   "map.intro.0": "Bruk denne siden for raskt å finne hvilken som helst del av nettstedet vårt. ",
   "map.group.0": "Hovedsider",
@@ -76,5 +73,10 @@
   "map.link.50": "Vilkår for bruk",
   "map.link.51": "XML Sitemap",
   "map.link.52": "404 side",
-  "map.note.0": "<strong>Trenger du hjelp til å finne noe?</strong> Bruk søkeikonet i overskriften eller\n      "
+  "map.note.0": "<strong>Trenger du hjelp til å finne noe?</strong> Bruk søkeikonet i overskriften eller\n      ",
+  "_htmlKeys": [
+    "p.1",
+    "map.intro.0",
+    "map.note.0"
+  ]
 }

@@ -17,16 +17,13 @@
   "p.3": "Minden webhelytartalom, beleértve a szöveget, grafikákat, termékelrendezéseket, rajzokat és márkaeszközöket, a Gausin International Engineers Pvt. tulajdonában van, vagy annak licence van. ",
   "p.4": "Ön beleegyezik abba, hogy nem használja vissza ezt a webhelyet, nem kísérel meg jogosulatlan hozzáférést, nem szúr be rosszindulatú kódot, nem törli le a védett tartalmat, és nem használja a platformot olyan módon, amely sérti a webhely működését vagy az üzleti hírnevét.",
   "p.5": "A törvény által megengedett maximális mértékig a Gausin International Engineers nem vállal felelősséget a weboldal használatából, ideiglenes leállásból, adatproblémákból vagy a szerződésen kívüli tartalomra való támaszkodásból eredő közvetlen, közvetett, véletlen vagy következményes veszteségekért.",
-  "p.6": "Weboldalunk tartalmazhat külső forrásokra mutató hivatkozásokat. ",
-  "p.7": "Ezeket a feltételeket India törvényei szabályozzák. ",
+  "p.6": "Weboldalunk tartalmazhat külső forrásokra mutató hivatkozásokat. Nem ellenőrizzük és nem támogatjuk a külső webhelyeket, és nem vállalunk felelősséget azok tartalmáért, feltételeiért vagy adatvédelmi gyakorlataiért.",
+  "p.7": "Ezeket a feltételeket India törvényei szabályozzák. A webhely használatával vagy a jelen feltételek értelmezésével kapcsolatos viták az indiai Uttar Pradesh állambeli Meerut állam bíróságaihoz tartoznak.",
   "p.8": "Jogi, szerződéses vagy megfelelőségi kérdéseivel forduljon hozzánk az alábbi elérhetőségeken. ",
   "li.0": "Minden árajánlatra műszaki pontosítás és kereskedelmi jóváhagyás szükséges.",
   "li.1": "Az árak, az adók és a szállítási határidők a specifikációtól és a projekt helyszínétől függően változhatnak.",
   "li.2": "A gyártási, szállítási, telepítési és üzembe helyezési feltételek csak az írásos szerződésben foglaltak szerint érvényesek.",
   "_meta.title": "Szolgáltatási feltételek | ",
-  "_htmlKeys": [
-    "legal.note.0"
-  ],
   "hero.label.0": "Jogi",
   "legal.chipLbl.0": "Dokumentum",
   "legal.chipLbl.1": "Hatálybalépés dátuma",
@@ -49,8 +46,8 @@
   "legal.p.2": "Minden webhelytartalom, beleértve a szöveget, grafikákat, termékelrendezéseket, rajzokat és márkaeszközöket, a Gausin International Engineers Pvt. tulajdonában van, vagy annak licence van. ",
   "legal.p.3": "Ön beleegyezik abba, hogy nem használja vissza ezt a webhelyet, nem kísérel meg jogosulatlan hozzáférést, nem szúr be rosszindulatú kódot, nem törli le a védett tartalmat, és nem használja a platformot olyan módon, amely sérti a webhely működését vagy az üzleti hírnevét.",
   "legal.p.4": "A törvény által megengedett maximális mértékig a Gausin International Engineers nem vállal felelősséget a weboldal használatából, ideiglenes leállásból, adatproblémákból vagy a szerződésen kívüli tartalomra való támaszkodásból eredő közvetlen, közvetett, véletlen vagy következményes veszteségekért.",
-  "legal.p.5": "Weboldalunk tartalmazhat külső forrásokra mutató hivatkozásokat. ",
-  "legal.p.6": "Ezeket a feltételeket India törvényei szabályozzák. ",
+  "legal.p.5": "Weboldalunk tartalmazhat külső forrásokra mutató hivatkozásokat. Nem ellenőrizzük és nem támogatjuk a külső webhelyeket, és nem vállalunk felelősséget azok tartalmáért, feltételeiért vagy adatvédelmi gyakorlataiért.",
+  "legal.p.6": "Ezeket a feltételeket India törvényei szabályozzák. A webhely használatával vagy a jelen feltételek értelmezésével kapcsolatos viták az indiai Uttar Pradesh állambeli Meerut állam bíróságaihoz tartoznak.",
   "legal.p.7": "Jogi, szerződéses vagy megfelelőségi kérdéseivel forduljon hozzánk az alábbi elérhetőségeken. ",
   "legal.li.0": "Minden árajánlatra műszaki pontosítás és kereskedelmi jóváhagyás szükséges.",
   "legal.li.1": "Az árak, az adók és a szállítási határidők a specifikációtól és a projekt helyszínétől függően változhatnak.",
@@ -62,5 +59,8 @@
   "legal.nav.2": "Szellemi tulajdon",
   "legal.nav.3": "Felelősség",
   "legal.nav.4": "Irányadó törvény",
-  "legal.note.0": "<strong>Jogi elérhetőség:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | "
+  "legal.note.0": "<strong>Jogi elérhetőség:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | ",
+  "_htmlKeys": [
+    "legal.note.0"
+  ]
 }

@@ -12,7 +12,7 @@
   "p.4": "Patvirtinus užsakymą, prasideda išsami inžinerija – 3D CAD projektavimas, gamybos brėžiniai, P&ID užbaigimas, konstrukcijų projektavimas ir visi inžineriniai rezultatai.",
   "p.5": "Tiksli gamyba mūsų dirbtuvėse naudojant CNC apdirbimą, pjovimą lazeriu ir TIG/MIG suvirinimą – su griežta kokybės patikra, NDT testavimu ir trečiųjų šalių patikra.",
   "p.6": "Mūsų lauko inžinierių komanda tvarko aikštelės įrengimą, mechaninį derinimą, vamzdynų, elektros jungčių, išankstinių patikrinimų ir gamyklos paleidimo darbus bei našumo bandymus.",
-  "p.7": "Garantuotas našumo bandymas atliktas jūsų akivaizdoje. ",
+  "p.7": "Garantuotas našumo bandymas atliktas jūsų akivaizdoje. Visa dokumentacija, O&M vadovai, PLC programos ir brėžiniai perduodami užbaigus projektą.",
   "p.8": "Nuolatinė techninė pagalba, prevencinė priežiūra, atsarginių dalių tiekimas ir metinis veiklos auditas, siekiant užtikrinti, kad jūsų gamykla ir toliau dirbtų maksimaliai efektyviai.",
   "p.9": "Susisiekite su mūsų inžinierių komanda, kad aptartumėte savo projekto reikalavimus. ",
   "card.title.0": "Daugiadisciplininė komanda",
@@ -45,13 +45,6 @@
   "stat.label.1": "Vidutinis atsakymas į citatą",
   "stat.label.2": "Pristatymo laiku tarifas",
   "stat.label.3": "Veikimo garantija",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0"
-  ],
   "hero.label.0": "Paslaugos",
   "crumb.0": "Pradžia",
   "crumb.1": "Paslaugos",
@@ -69,8 +62,8 @@
   "svc.title.5": "Techninės konsultacijos ir trikčių šalinimas",
   "svc.desc.0": "Kuriame visapusiškus procesų inžinerijos paketus naujoms gamykloms ir plėtrai, įskaitant procesų schemas, masės ir energijos balansus, įrangos dydį, P&ID kūrimą ir proceso modeliavimą naudojant CHEMCAD ir HTRI.",
   "svc.desc.1": "Mūsų išsami inžinerinė paslauga apima pilną 3D CAD modeliavimą, gamybos brėžinius, civilinių konstrukcijų projektavimą, vamzdynų išdėstymą, elektros inžineriją, prietaisų inžineriją ir visos pagrindinės įrangos ir sistemų pirkimo specifikacijas.",
-  "svc.desc.2": "Visiškas projekto valdymas nuo idėjos iki paleidimo. ",
-  "svc.desc.3": "Išsamūs esamų įrenginių šiluminės energijos auditai, nustatant energijos švaistymą ir rekomenduojant patikrintus atnaujinimus. ",
+  "svc.desc.2": "Visiškas projekto valdymas nuo idėjos iki paleidimo. Mūsų projektų valdymo komanda naudoja MS Project ir Agile metodikas, kad užtikrintų sudėtingų pramonės įmonių pristatymą laiku, neviršijant biudžeto su visa dokumentacija ir perdavimu.",
+  "svc.desc.3": "Išsamūs esamų įrenginių šiluminės energijos auditai, nustatant energijos švaistymą ir rekomenduojant patikrintus atnaujinimus. Mes specializuojamės kelių efektų garinimo konversijoje, TVR (termo garų rekompresoriaus) / MVR (mechaninio garų pakartotinio suspaudimo) modernizavime ir šilumos atgavimo integravime.",
   "svc.desc.4": "Integruojame pažangias PLC/SCADA automatizavimo sistemas į naujas ir esamas procesų gamyklas – tai leidžia stebėti realiu laiku, automatizuotas valdymo sekas, pavojaus signalų valdymą, duomenų registravimą ir nuotolinę prieigą per platformas su IoT.",
   "svc.desc.5": "Mūsų patyrę inžinieriai teikia ekspertų technines konsultacijas procesų trikčių šalinimo, našumo mažinimo, pajėgumų padidinimo, reglamentavimo atitikties ir gamyklos modernizavimo klausimais – pateikia įgyvendinamas inžinerines rekomendacijas, turinčias išmatuojamą poveikį.",
   "svc.feat.0": "Proceso modeliavimas (CHEMCAD)",
@@ -123,6 +116,13 @@
   "proc.desc.3": "Patvirtinus užsakymą, prasideda išsami inžinerija – 3D CAD projektavimas, gamybos brėžiniai, P&ID užbaigimas, konstrukcijų projektavimas ir visi inžineriniai rezultatai.",
   "proc.desc.4": "Tiksli gamyba mūsų dirbtuvėse naudojant CNC apdirbimą, pjovimą lazeriu ir TIG/MIG suvirinimą – su griežta kokybės patikra, NDT testavimu ir trečiųjų šalių patikra.",
   "proc.desc.5": "Mūsų lauko inžinierių komanda tvarko aikštelės įrengimą, mechaninį derinimą, vamzdynų, elektros jungčių, išankstinių patikrinimų ir gamyklos paleidimo darbus bei našumo bandymus.",
-  "proc.desc.6": "Garantuotas našumo bandymas atliktas jūsų akivaizdoje. ",
-  "proc.desc.7": "Nuolatinė techninė pagalba, prevencinė priežiūra, atsarginių dalių tiekimas ir metinis veiklos auditas, siekiant užtikrinti, kad jūsų gamykla ir toliau dirbtų maksimaliai efektyviai."
+  "proc.desc.6": "Garantuotas našumo bandymas atliktas jūsų akivaizdoje. Visa dokumentacija, O&M vadovai, PLC programos ir brėžiniai perduodami užbaigus projektą.",
+  "proc.desc.7": "Nuolatinė techninė pagalba, prevencinė priežiūra, atsarginių dalių tiekimas ir metinis veiklos auditas, siekiant užtikrinti, kad jūsų gamykla ir toliau dirbtų maksimaliai efektyviai.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0"
+  ]
 }

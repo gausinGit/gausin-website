@@ -14,7 +14,7 @@
   "p.0": "Gausin Uluslararası Mühendisler bilgilerinizi nasıl toplar, kullanır ve korur.",
   "p.1": "Endüstriyel ekipman, proje tartışmaları, servis desteği veya fiyat teklifleri için bizimle iletişime geçtiğinizde şunları toplayabiliriz:",
   "p.2": "Verileri sizin onayınıza (form gönderimleri), meşru ticari çıkarlara (B2B iletişim ve destek) ve yasal yükümlülüklere (vergi/uyum kayıtları) dayalı olarak işleriz.",
-  "p.3": "Kişisel verileri satmıyoruz. ",
+  "p.3": "Kişisel verileri satmıyoruz. Sınırlı bilgileri yalnızca işimizi yürütmek için gerektiğinde güvenilir hizmet sağlayıcılarla (barındırma, iletişim, CRM, muhasebe) paylaşabiliriz. Yasaların veya yetkili makamların gerektirmesi halinde verileri de ifşa edebiliriz.",
   "p.4": "Sorgulama ve iş iletişimi verileri, proje katılımı, destek ve yasal/ticari kayıt tutma için ihtiyaç duyulan süre boyunca saklanır. ",
   "p.5": "Verileri yetkisiz erişime, değişikliğe veya kötüye kullanıma karşı korumak için pratik idari ve teknik önlemler kullanıyoruz. ",
   "p.6": "Web sitemizde oturum yönetimi, performans takibi ve kullanıcı deneyimi iyileştirmeleri amacıyla çerezler ve benzeri teknolojiler kullanılabilir. ",
@@ -30,9 +30,6 @@
   "li.7": "Uyumluluk, muhasebe ve denetim gereksinimlerine ilişkin kayıtları tutun",
   "li.8": "Web sitesi performansını, içerik alaka düzeyini ve yanıt kalitesini iyileştirin",
   "_meta.title": "Gizlilik Politikası | ",
-  "_htmlKeys": [
-    "legal.note.0"
-  ],
   "hero.label.0": "Yasal",
   "legal.chipLbl.0": "Belge",
   "legal.chipLbl.1": "Yürürlük Tarihi",
@@ -52,7 +49,7 @@
   "legal.h3.8": "9) Politika Güncellemeleri",
   "legal.p.0": "Endüstriyel ekipman, proje tartışmaları, servis desteği veya fiyat teklifleri için bizimle iletişime geçtiğinizde şunları toplayabiliriz:",
   "legal.p.1": "Verileri sizin onayınıza (form gönderimleri), meşru ticari çıkarlara (B2B iletişim ve destek) ve yasal yükümlülüklere (vergi/uyum kayıtları) dayalı olarak işleriz.",
-  "legal.p.2": "Kişisel verileri satmıyoruz. ",
+  "legal.p.2": "Kişisel verileri satmıyoruz. Sınırlı bilgileri yalnızca işimizi yürütmek için gerektiğinde güvenilir hizmet sağlayıcılarla (barındırma, iletişim, CRM, muhasebe) paylaşabiliriz. Yasaların veya yetkili makamların gerektirmesi halinde verileri de ifşa edebiliriz.",
   "legal.p.3": "Sorgulama ve iş iletişimi verileri, proje katılımı, destek ve yasal/ticari kayıt tutma için ihtiyaç duyulan süre boyunca saklanır. ",
   "legal.p.4": "Verileri yetkisiz erişime, değişikliğe veya kötüye kullanıma karşı korumak için pratik idari ve teknik önlemler kullanıyoruz. ",
   "legal.p.5": "Web sitemizde oturum yönetimi, performans takibi ve kullanıcı deneyimi iyileştirmeleri amacıyla çerezler ve benzeri teknolojiler kullanılabilir. ",
@@ -74,5 +71,8 @@
   "legal.nav.2": "Veri Paylaşımı",
   "legal.nav.3": "Güvenlik",
   "legal.nav.4": "Haklarınız",
-  "legal.note.0": "<strong>Gizlilik İletişimi:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | "
+  "legal.note.0": "<strong>Gizlilik İletişimi:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | ",
+  "_htmlKeys": [
+    "legal.note.0"
+  ]
 }

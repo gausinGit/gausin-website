@@ -14,7 +14,7 @@
   "p.0": "Hoe Gausin International Engineers uw informatie verzamelt, gebruikt en beschermt.",
   "p.1": "Wanneer u contact met ons opneemt voor industriële apparatuur, projectbesprekingen, serviceondersteuning of offertes, kunnen wij het volgende verzamelen:",
   "p.2": "We verwerken gegevens op basis van uw toestemming (formulierinzendingen), legitiem zakelijk belang (B2B-communicatie en ondersteuning) en wettelijke verplichtingen (belasting-/nalevingsgegevens).",
-  "p.3": "Wij verkopen geen persoonlijke gegevens. ",
+  "p.3": "Wij verkopen geen persoonlijke gegevens. We kunnen beperkte informatie alleen delen met vertrouwde dienstverleners (hosting, communicatie, CRM, boekhouding) als dat nodig is om ons bedrijf te runnen. We kunnen ook gegevens vrijgeven als dit vereist is door de wet of de bevoegde autoriteit.",
   "p.4": "Onderzoeks- en zakelijke communicatiegegevens worden bewaard zolang als nodig is voor projectbetrokkenheid, ondersteuning en juridische/commerciële administratie. ",
   "p.5": "We gebruiken praktische administratieve en technische veiligheidsmaatregelen om gegevens te beschermen tegen ongeoorloofde toegang, wijziging of misbruik. ",
   "p.6": "Onze website kan cookies en soortgelijke technologieën gebruiken voor sessiebeheer, het bijhouden van prestaties en verbeteringen van de gebruikerservaring. ",
@@ -30,9 +30,6 @@
   "li.7": "Houd gegevens bij over nalevings-, boekhoud- en auditvereisten",
   "li.8": "Verbeter de prestaties van de website, de relevantie van de inhoud en de responskwaliteit",
   "_meta.title": "Privacybeleid | ",
-  "_htmlKeys": [
-    "legal.note.0"
-  ],
   "hero.label.0": "Legaal",
   "legal.chipLbl.0": "Document",
   "legal.chipLbl.1": "Ingangsdatum",
@@ -52,7 +49,7 @@
   "legal.h3.8": "9) Beleidsupdates",
   "legal.p.0": "Wanneer u contact met ons opneemt voor industriële apparatuur, projectbesprekingen, serviceondersteuning of offertes, kunnen wij het volgende verzamelen:",
   "legal.p.1": "We verwerken gegevens op basis van uw toestemming (formulierinzendingen), legitiem zakelijk belang (B2B-communicatie en ondersteuning) en wettelijke verplichtingen (belasting-/nalevingsgegevens).",
-  "legal.p.2": "Wij verkopen geen persoonlijke gegevens. ",
+  "legal.p.2": "Wij verkopen geen persoonlijke gegevens. We kunnen beperkte informatie alleen delen met vertrouwde dienstverleners (hosting, communicatie, CRM, boekhouding) als dat nodig is om ons bedrijf te runnen. We kunnen ook gegevens vrijgeven als dit vereist is door de wet of de bevoegde autoriteit.",
   "legal.p.3": "Onderzoeks- en zakelijke communicatiegegevens worden bewaard zolang als nodig is voor projectbetrokkenheid, ondersteuning en juridische/commerciële administratie. ",
   "legal.p.4": "We gebruiken praktische administratieve en technische veiligheidsmaatregelen om gegevens te beschermen tegen ongeoorloofde toegang, wijziging of misbruik. ",
   "legal.p.5": "Onze website kan cookies en soortgelijke technologieën gebruiken voor sessiebeheer, het bijhouden van prestaties en verbeteringen van de gebruikerservaring. ",
@@ -74,5 +71,8 @@
   "legal.nav.2": "Gegevens delen",
   "legal.nav.3": "Beveiliging",
   "legal.nav.4": "Uw rechten",
-  "legal.note.0": "<strong>Privacycontact:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | "
+  "legal.note.0": "<strong>Privacycontact:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | ",
+  "_htmlKeys": [
+    "legal.note.0"
+  ]
 }

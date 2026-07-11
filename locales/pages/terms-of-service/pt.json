@@ -12,21 +12,18 @@
   "h3.7": "8) Lei Aplicável e Jurisdição",
   "h3.8": "9) Contato e atualizações",
   "p.0": "Termos que regem o acesso e uso do site e informações da Gausin International Engineers.",
-  "p.1": "Ao acessar este site, você concorda com estes Termos de Serviço. ",
-  "p.2": "Detalhes técnicos, capacidades, imagens e descrições de desempenho mostrados neste site são para referência geral. ",
+  "p.1": "Ao acessar este site, você concorda com estes Termos de Serviço. Se você não concorda com qualquer parte destes termos, por favor não utilize este site.",
+  "p.2": "Detalhes técnicos, capacidades, imagens e descrições de desempenho mostrados neste site são para referência geral. O projeto final, as classificações dos materiais, o escopo, a garantia e os preços são regidos apenas pela cotação assinada, pelo pedido de compra e pelos documentos do contrato.",
   "p.3": "Todo o conteúdo do site, incluindo texto, gráficos, layouts de produtos, desenhos e ativos de marca, é de propriedade ou licenciado para Gausin International Engineers Pvt. ",
   "p.4": "Você concorda em não fazer uso indevido deste site, tentar acesso não autorizado, injetar código malicioso, copiar conteúdo protegido ou usar a plataforma de forma que prejudique a funcionalidade do site ou a reputação comercial.",
   "p.5": "Na extensão máxima permitida por lei, a Gausin International Engineers não será responsável por perdas diretas, indiretas, incidentais ou consequenciais decorrentes do uso do site, tempo de inatividade temporário, problemas de dados ou dependência de conteúdo não contratual.",
-  "p.6": "Nosso site pode incluir links para recursos externos. ",
-  "p.7": "Estes termos são regidos pelas leis da Índia. ",
+  "p.6": "Nosso site pode incluir links para recursos externos. Não controlamos nem endossamos sites externos e não somos responsáveis ​​pelo seu conteúdo, termos ou práticas de privacidade.",
+  "p.7": "Estes termos são regidos pelas leis da Índia. Quaisquer disputas relacionadas ao uso do site ou à interpretação destes termos estarão sujeitas aos tribunais com jurisdição em Meerut, Uttar Pradesh, Índia.",
   "p.8": "Para consultas legais, contratuais ou de conformidade, entre em contato conosco usando os detalhes abaixo. ",
   "li.0": "Todos os orçamentos estão sujeitos a esclarecimento técnico e aprovação comercial.",
   "li.1": "Preços, impostos e prazos de entrega podem variar de acordo com as especificações e localização do projeto.",
   "li.2": "Os termos de produção, envio, instalação e comissionamento são válidos somente conforme contrato por escrito acordado.",
   "_meta.title": "Termos de Serviço | ",
-  "_htmlKeys": [
-    "legal.note.0"
-  ],
   "hero.label.0": "Jurídico",
   "legal.chipLbl.0": "Documento",
   "legal.chipLbl.1": "Data Efetiva",
@@ -44,13 +41,13 @@
   "legal.h3.6": "7) Links e serviços de terceiros",
   "legal.h3.7": "8) Lei Aplicável e Jurisdição",
   "legal.h3.8": "9) Contato e atualizações",
-  "legal.p.0": "Ao acessar este site, você concorda com estes Termos de Serviço. ",
-  "legal.p.1": "Detalhes técnicos, capacidades, imagens e descrições de desempenho mostrados neste site são para referência geral. ",
+  "legal.p.0": "Ao acessar este site, você concorda com estes Termos de Serviço. Se você não concorda com qualquer parte destes termos, por favor não utilize este site.",
+  "legal.p.1": "Detalhes técnicos, capacidades, imagens e descrições de desempenho mostrados neste site são para referência geral. O projeto final, as classificações dos materiais, o escopo, a garantia e os preços são regidos apenas pela cotação assinada, pelo pedido de compra e pelos documentos do contrato.",
   "legal.p.2": "Todo o conteúdo do site, incluindo texto, gráficos, layouts de produtos, desenhos e ativos de marca, é de propriedade ou licenciado para Gausin International Engineers Pvt. ",
   "legal.p.3": "Você concorda em não fazer uso indevido deste site, tentar acesso não autorizado, injetar código malicioso, copiar conteúdo protegido ou usar a plataforma de forma que prejudique a funcionalidade do site ou a reputação comercial.",
   "legal.p.4": "Na extensão máxima permitida por lei, a Gausin International Engineers não será responsável por perdas diretas, indiretas, incidentais ou consequenciais decorrentes do uso do site, tempo de inatividade temporário, problemas de dados ou dependência de conteúdo não contratual.",
-  "legal.p.5": "Nosso site pode incluir links para recursos externos. ",
-  "legal.p.6": "Estes termos são regidos pelas leis da Índia. ",
+  "legal.p.5": "Nosso site pode incluir links para recursos externos. Não controlamos nem endossamos sites externos e não somos responsáveis ​​pelo seu conteúdo, termos ou práticas de privacidade.",
+  "legal.p.6": "Estes termos são regidos pelas leis da Índia. Quaisquer disputas relacionadas ao uso do site ou à interpretação destes termos estarão sujeitas aos tribunais com jurisdição em Meerut, Uttar Pradesh, Índia.",
   "legal.p.7": "Para consultas legais, contratuais ou de conformidade, entre em contato conosco usando os detalhes abaixo. ",
   "legal.li.0": "Todos os orçamentos estão sujeitos a esclarecimento técnico e aprovação comercial.",
   "legal.li.1": "Preços, impostos e prazos de entrega podem variar de acordo com as especificações e localização do projeto.",
@@ -62,5 +59,8 @@
   "legal.nav.2": "Propriedade intelectual",
   "legal.nav.3": "Responsabilidade",
   "legal.nav.4": "Lei Aplicável",
-  "legal.note.0": "<strong>Contato Jurídico:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | "
+  "legal.note.0": "<strong>Contato Jurídico:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | ",
+  "_htmlKeys": [
+    "legal.note.0"
+  ]
 }

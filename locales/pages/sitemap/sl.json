@@ -11,9 +11,6 @@
   "p.0": "Prebrskajte po vseh glavnih straneh in seznamih izdelkov na gausin.in",
   "p.1": "Uporabite to stran za hitro iskanje katerega koli razdelka našega spletnega mesta. ",
   "_meta.title": "Zemljevid spletnega mesta | ",
-  "_htmlKeys": [
-    "map.note.0"
-  ],
   "hero.sub.0": "Prebrskajte po vseh glavnih straneh in seznamih izdelkov na gausin.in",
   "map.intro.0": "Uporabite to stran za hitro iskanje katerega koli razdelka našega spletnega mesta. ",
   "map.group.0": "Glavne strani",
@@ -76,5 +73,10 @@
   "map.link.50": "Pogoji storitve",
   "map.link.51": "XML zemljevid spletnega mesta",
   "map.link.52": "404 stran",
-  "map.note.0": "<strong>Potrebujete pomoč pri iskanju?</strong> Uporabite ikono za iskanje v glavi oz.\n      "
+  "map.note.0": "<strong>Potrebujete pomoč pri iskanju?</strong> Uporabite ikono za iskanje v glavi oz.\n      ",
+  "_htmlKeys": [
+    "p.1",
+    "map.intro.0",
+    "map.note.0"
+  ]
 }

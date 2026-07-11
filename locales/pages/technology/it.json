@@ -99,14 +99,6 @@
   "iot.label.1": "Pressione del vapore",
   "iot.label.2": "Efficienza energetica",
   "iot.label.3": "Portata",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0",
-    "h2.1"
-  ],
   "inno.title.0": "Taglio al plasma e laser CNC",
   "inno.title.1": "Saldatura TIG/MIG/SAW",
   "inno.title.2": "Laminazione e formatura di tubi di precisione",
@@ -129,5 +121,13 @@
   "mfg.mat.3": "Duplex SS",
   "mfg.mat.4": "Titanio",
   "mfg.mat.5": "Hastelloy",
-  "mfg.mat.6": "Lega di rame"
+  "mfg.mat.6": "Lega di rame",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0",
+    "h2.1"
+  ]
 }

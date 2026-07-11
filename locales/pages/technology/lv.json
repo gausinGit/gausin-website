@@ -99,14 +99,6 @@
   "iot.label.1": "Tvaika spiediens",
   "iot.label.2": "Energoefektivitāte",
   "iot.label.3": "Plūsmas ātrums",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0",
-    "h2.1"
-  ],
   "inno.title.0": "CNC plazmas un lāzera griešana",
   "inno.title.1": "TIG / MIG / ZĀĢIS Metināšana",
   "inno.title.2": "Precīza cauruļu velmēšana un formēšana",
@@ -129,5 +121,13 @@
   "mfg.mat.3": "Dupleksais SS",
   "mfg.mat.4": "Titāns",
   "mfg.mat.5": "Hastelloy",
-  "mfg.mat.6": "Vara sakausējums"
+  "mfg.mat.6": "Vara sakausējums",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0",
+    "h2.1"
+  ]
 }

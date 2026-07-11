@@ -17,16 +17,13 @@
   "p.3": "Semua kandungan tapak web, termasuk teks, grafik, susun atur produk, lukisan dan aset jenama, dimiliki oleh atau dilesenkan kepada Gausin International Engineers Pvt. ",
   "p.4": "Anda bersetuju untuk tidak menyalahgunakan tapak web ini, mencuba akses tanpa kebenaran, menyuntik kod hasad, mengikis kandungan yang dilindungi atau menggunakan platform dengan cara yang merosakkan fungsi tapak web atau reputasi perniagaan.",
   "p.5": "Setakat maksimum yang dibenarkan oleh undang-undang, Jurutera Antarabangsa Gausin tidak akan bertanggungjawab ke atas kerugian langsung, tidak langsung, sampingan atau berbangkit yang timbul daripada penggunaan tapak web, masa henti sementara, isu data atau pergantungan pada kandungan bukan kontrak.",
-  "p.6": "Laman web kami mungkin termasuk pautan ke sumber luaran. ",
-  "p.7": "Istilah ini dikawal oleh undang-undang India. ",
+  "p.6": "Laman web kami mungkin termasuk pautan ke sumber luaran. Kami tidak mengawal atau menyokong tapak web luaran dan tidak bertanggungjawab ke atas kandungan, syarat atau amalan privasi mereka.",
+  "p.7": "Istilah ini dikawal oleh undang-undang India. Sebarang pertikaian yang berkaitan dengan penggunaan laman web atau tafsiran terma ini akan tertakluk kepada mahkamah yang mempunyai bidang kuasa di Meerut, Uttar Pradesh, India.",
   "p.8": "Untuk pertanyaan undang-undang, kontrak atau pematuhan, hubungi kami menggunakan butiran di bawah. ",
   "li.0": "Semua sebut harga tertakluk kepada penjelasan teknikal dan kelulusan komersial.",
   "li.1": "Harga, cukai dan garis masa penghantaran mungkin berbeza mengikut spesifikasi dan lokasi projek.",
   "li.2": "Syarat pengeluaran, penghantaran, pemasangan dan pentauliahan hanya sah mengikut kontrak bertulis yang dipersetujui.",
   "_meta.title": "Syarat Perkhidmatan | ",
-  "_htmlKeys": [
-    "legal.note.0"
-  ],
   "hero.label.0": "sah",
   "legal.chipLbl.0": "Dokumen",
   "legal.chipLbl.1": "Tarikh Berkuatkuasa",
@@ -49,8 +46,8 @@
   "legal.p.2": "Semua kandungan tapak web, termasuk teks, grafik, susun atur produk, lukisan dan aset jenama, dimiliki oleh atau dilesenkan kepada Gausin International Engineers Pvt. ",
   "legal.p.3": "Anda bersetuju untuk tidak menyalahgunakan tapak web ini, mencuba akses tanpa kebenaran, menyuntik kod hasad, mengikis kandungan yang dilindungi atau menggunakan platform dengan cara yang merosakkan fungsi tapak web atau reputasi perniagaan.",
   "legal.p.4": "Setakat maksimum yang dibenarkan oleh undang-undang, Jurutera Antarabangsa Gausin tidak akan bertanggungjawab ke atas kerugian langsung, tidak langsung, sampingan atau berbangkit yang timbul daripada penggunaan tapak web, masa henti sementara, isu data atau pergantungan pada kandungan bukan kontrak.",
-  "legal.p.5": "Laman web kami mungkin termasuk pautan ke sumber luaran. ",
-  "legal.p.6": "Istilah ini dikawal oleh undang-undang India. ",
+  "legal.p.5": "Laman web kami mungkin termasuk pautan ke sumber luaran. Kami tidak mengawal atau menyokong tapak web luaran dan tidak bertanggungjawab ke atas kandungan, syarat atau amalan privasi mereka.",
+  "legal.p.6": "Istilah ini dikawal oleh undang-undang India. Sebarang pertikaian yang berkaitan dengan penggunaan laman web atau tafsiran terma ini akan tertakluk kepada mahkamah yang mempunyai bidang kuasa di Meerut, Uttar Pradesh, India.",
   "legal.p.7": "Untuk pertanyaan undang-undang, kontrak atau pematuhan, hubungi kami menggunakan butiran di bawah. ",
   "legal.li.0": "Semua sebut harga tertakluk kepada penjelasan teknikal dan kelulusan komersial.",
   "legal.li.1": "Harga, cukai dan garis masa penghantaran mungkin berbeza mengikut spesifikasi dan lokasi projek.",
@@ -62,5 +59,8 @@
   "legal.nav.2": "Harta Intelek",
   "legal.nav.3": "Liabiliti",
   "legal.nav.4": "Undang-undang yang Mentadbir",
-  "legal.note.0": "<strong>Hubungan Undang-undang:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | "
+  "legal.note.0": "<strong>Hubungan Undang-undang:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | ",
+  "_htmlKeys": [
+    "legal.note.0"
+  ]
 }

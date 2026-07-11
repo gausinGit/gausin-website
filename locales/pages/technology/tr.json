@@ -99,14 +99,6 @@
   "iot.label.1": "Buhar Basıncı",
   "iot.label.2": "Enerji Verimliliği",
   "iot.label.3": "Akış Hızı",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0",
-    "h2.1"
-  ],
   "inno.title.0": "CNC Plazma ve Lazer Kesim",
   "inno.title.1": "TIG / MIG / SAW Kaynağı",
   "inno.title.2": "Hassas Boru Haddeleme ve Şekillendirme",
@@ -129,5 +121,13 @@
   "mfg.mat.3": "Dubleks SS",
   "mfg.mat.4": "Titanyum",
   "mfg.mat.5": "Hastelloy",
-  "mfg.mat.6": "Bakır Alaşımı"
+  "mfg.mat.6": "Bakır Alaşımı",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0",
+    "h2.1"
+  ]
 }

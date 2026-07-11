@@ -9,13 +9,10 @@
   "h2.5": "Meer producten",
   "h2.6": "Juridisch en ondersteuning",
   "p.0": "Blader door alle hoofdpagina's en productvermeldingen op gausin.in",
-  "p.1": "Gebruik deze pagina om snel elk onderdeel van onze website te vinden. ",
+  "p.1": "Gebruik deze pagina om snel elk onderdeel van onze website te vinden. Voor zoekmachines is onze XML-sitemap beschikbaar op\n      <a href=\"sitemap.xml\">sitemap.xml</a>.",
   "_meta.title": "Sitemap | ",
-  "_htmlKeys": [
-    "map.note.0"
-  ],
   "hero.sub.0": "Blader door alle hoofdpagina's en productvermeldingen op gausin.in",
-  "map.intro.0": "Gebruik deze pagina om snel elk onderdeel van onze website te vinden. ",
+  "map.intro.0": "Gebruik deze pagina om snel elk onderdeel van onze website te vinden. Voor zoekmachines is onze XML-sitemap beschikbaar op\n      <a href=\"sitemap.xml\">sitemap.xml</a>.",
   "map.group.0": "Hoofdpagina's",
   "map.group.1": "Productcategorieën",
   "map.group.2": "Verdampers",
@@ -76,5 +73,10 @@
   "map.link.50": "Servicevoorwaarden",
   "map.link.51": "XML-sitemap",
   "map.link.52": "404 Pagina",
-  "map.note.0": "<strong>Hulp nodig om iets te vinden?</strong> Gebruik het zoekpictogram in de koptekst of\n      "
+  "map.note.0": "<strong>Hulp nodig om iets te vinden?</strong> Gebruik het zoekpictogram in de koptekst of\n      ",
+  "_htmlKeys": [
+    "p.1",
+    "map.intro.0",
+    "map.note.0"
+  ]
 }

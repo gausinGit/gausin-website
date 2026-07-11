@@ -1,11 +1,4 @@
 {
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0"
-  ],
   "_meta.title": "Xidmətlər | ",
   "hero.desc.0": "Proses konsepsiyasından zavodun istismara verilməsinə qədər - Gausin sənaye layihənizin həyat dövrünün hər mərhələsini əhatə edən hərtərəfli mühəndislik xidmətləri təqdim edir.",
   "sec.label.0": "Biz nə təklif edirik",
@@ -20,7 +13,7 @@
   "p.4": "Sifariş təsdiq edildikdən sonra ətraflı mühəndislik başlayır - 3D CAD dizaynı, istehsal çertyojları, P&ID yekunlaşdırması, struktur dizaynı və bütün mühəndislik nəticələri.",
   "p.5": "CNC emal, lazer kəsmə və TIG/MIG qaynaqından istifadə edərək emalatxanamızda dəqiq istehsal - ciddi keyfiyyət yoxlamaları, NDT testi və üçüncü tərəf yoxlaması ilə.",
   "p.6": "Sahə mühəndisliyi komandamız sahənin quraşdırılması, mexaniki tənzimləmə, boru kəmərləri, elektrik birləşmələri, istismara vermədən əvvəl yoxlamalar və performans testi ilə zavodun işə salınması ilə məşğul olur.",
-  "p.7": "Zəmanətli performans testi sizin iştirakınızda həyata keçirilir. ",
+  "p.7": "Zəmanətli performans testi sizin iştirakınızda həyata keçirilir. Layihə başa çatdıqdan sonra bütün sənədlər, istismar və təmir təlimatları, PLC proqramları və quraşdırılmış çertyojlar təhvil verilir.",
   "p.8": "Zavodunuzun ən yüksək səmərəlilikdə işləməyə davam etməsini təmin etmək üçün davamlı texniki dəstək, profilaktik təmir, ehtiyat hissələrin təchizatı və illik performans auditləri.",
   "p.9": "Layihə tələblərinizi müzakirə etmək üçün mühəndis komandamızla əlaqə saxlayın. ",
   "card.title.0": "Çox İntizamlı Komanda",
@@ -56,7 +49,7 @@
   "svc.title.5": "Texniki Məsləhət və Problemlərin aradan qaldırılması",
   "svc.desc.0": "Biz yeni zavodlar və genişləndirmələr üçün hərtərəfli proses mühəndisliyi paketlərini işləyib hazırlayırıq, o cümlədən proses cədvəlləri, kütlə və enerji balansları, avadanlıqların ölçüləri, P&ID inkişafı və CHEMCAD və HTRI-dən istifadə edərək proses simulyasiyası.",
   "svc.desc.1": "Bizim ətraflı mühəndislik xidmətimiz bütün əsas avadanlıq və sistemlər üçün tam 3D CAD modelləşdirməsini, istehsal çertyojlarını, mülki konstruksiya dizaynını, boru kəmərlərinin sxemlərini, elektrik mühəndisliyini, cihaz mühəndisliyi və satınalma spesifikasiyalarını əhatə edir.",
-  "svc.desc.2": "Konsepsiyadan istifadəyə verilməyə qədər layihənin tam şəkildə idarə edilməsi. ",
+  "svc.desc.2": "Konsepsiyadan istifadəyə verilməyə qədər layihənin tam şəkildə idarə edilməsi. Layihənin idarə edilməsi komandamız tam sənədləşmə və təhvil-təslim ilə mürəkkəb sənaye müəssisələrinin vaxtında, büdcə daxilində çatdırılmasını təmin etmək üçün MS Project və çevik metodologiyalardan istifadə edir.",
   "svc.desc.3": "Mövcud stansiyalar üçün hərtərəfli istilik enerjisi auditləri, enerji itkisini müəyyən etmək və sübut edilmiş yeniləmələri tövsiyə etmək. ",
   "svc.desc.4": "Biz qabaqcıl PLC/SCADA avtomatlaşdırma sistemlərini yeni və mövcud proses zavodlarına inteqrasiya edirik - real vaxt rejimində monitorinq, avtomatlaşdırılmış idarəetmə ardıcıllığı, həyəcan idarəetməsi, məlumatların qeydiyyatı və IoT-ə imkan verən platformalar vasitəsilə uzaqdan giriş imkanı veririk.",
   "svc.desc.5": "Təcrübəli mühəndislərimiz proseslərdə nasazlıqların aradan qaldırılması, performans problemlərinin aradan qaldırılması, potensialın genişləndirilməsi, normativlərə uyğunluq və zavodun modernləşdirilməsi üçün ekspert texniki məsləhətlər verir - ölçülə bilən təsirlə işlək mühəndislik tövsiyələri verir.",
@@ -110,7 +103,7 @@
   "proc.desc.3": "Sifariş təsdiq edildikdən sonra ətraflı mühəndislik başlayır - 3D CAD dizaynı, istehsal çertyojları, P&ID yekunlaşdırması, struktur dizaynı və bütün mühəndislik nəticələri.",
   "proc.desc.4": "CNC emal, lazer kəsmə və TIG/MIG qaynaqından istifadə edərək emalatxanamızda dəqiq istehsal - ciddi keyfiyyət yoxlamaları, NDT testi və üçüncü tərəf yoxlaması ilə.",
   "proc.desc.5": "Sahə mühəndisliyi komandamız sahənin quraşdırılması, mexaniki tənzimləmə, boru kəmərləri, elektrik birləşmələri, istismara vermədən əvvəl yoxlamalar və performans testi ilə zavodun işə salınması ilə məşğul olur.",
-  "proc.desc.6": "Zəmanətli performans testi sizin iştirakınızda həyata keçirilir. ",
+  "proc.desc.6": "Zəmanətli performans testi sizin iştirakınızda həyata keçirilir. Layihə başa çatdıqdan sonra bütün sənədlər, istismar və təmir təlimatları, PLC proqramları və quraşdırılmış çertyojlar təhvil verilir.",
   "proc.desc.7": "Zavodunuzun ən yüksək səmərəlilikdə işləməyə davam etməsini təmin etmək üçün davamlı texniki dəstək, profilaktik təmir, ehtiyat hissələrin təchizatı və illik performans auditləri.",
   "btn.0": "Bu Xidmət üçün Sorğu Edin",
   "btn.1": "Bu Xidmət üçün Sorğu Edin",
@@ -124,5 +117,12 @@
   "sec.title.0": "Hərtərəfli <span>Mühəndislik Xidmətləri</span>",
   "sec.title.1": "<span>Layihələri Necə Çatdırırıq</span>",
   "sec.title.2": "<span>Gausin Xidmət Üstünlüyü</span>",
-  "h2.0": "Mühəndisliyinizə başlayın <span style=\"background:linear-gradient(135deg,var(--blue-300),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;\">Layihəni Bu gün</span>"
+  "h2.0": "Mühəndisliyinizə başlayın <span style=\"background:linear-gradient(135deg,var(--blue-300),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;\">Layihəni Bu gün</span>",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0"
+  ]
 }

@@ -99,14 +99,6 @@
   "iot.label.1": "Stoomdruk",
   "iot.label.2": "Energie-efficiëntie",
   "iot.label.3": "Stroomsnelheid",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0",
-    "h2.1"
-  ],
   "inno.title.0": "CNC-plasma- en lasersnijden",
   "inno.title.1": "TIG/MIG/ZAAG-lassen",
   "inno.title.2": "Precisiebuis rollen en vormen",
@@ -129,5 +121,13 @@
   "mfg.mat.3": "Duplex RVS",
   "mfg.mat.4": "Titanium",
   "mfg.mat.5": "Hastelloy",
-  "mfg.mat.6": "Koperlegering"
+  "mfg.mat.6": "Koperlegering",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0",
+    "h2.1"
+  ]
 }

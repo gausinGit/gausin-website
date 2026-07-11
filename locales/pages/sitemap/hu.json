@@ -9,13 +9,10 @@
   "h2.5": "További termékek",
   "h2.6": "Jogi és támogatás",
   "p.0": "Böngésszen a gausin.in összes főoldalán és terméklistáján",
-  "p.1": "Ezen az oldalon gyorsan megtalálhatja weboldalunk bármely részét. ",
+  "p.1": "Ezen az oldalon gyorsan megtalálhatja weboldalunk bármely részét. A keresőmotorok számára XML-oldaltérképünk a címen érhető el\n      <a href=\"sitemap.xml\">sitemap.xml</a>.",
   "_meta.title": "Oldaltérkép | ",
-  "_htmlKeys": [
-    "map.note.0"
-  ],
   "hero.sub.0": "Böngésszen a gausin.in összes főoldalán és terméklistáján",
-  "map.intro.0": "Ezen az oldalon gyorsan megtalálhatja weboldalunk bármely részét. ",
+  "map.intro.0": "Ezen az oldalon gyorsan megtalálhatja weboldalunk bármely részét. A keresőmotorok számára XML-oldaltérképünk a címen érhető el\n      <a href=\"sitemap.xml\">sitemap.xml</a>.",
   "map.group.0": "Fő oldalak",
   "map.group.1": "Termékkategóriák",
   "map.group.2": "Párologtatók",
@@ -76,5 +73,10 @@
   "map.link.50": "Szolgáltatási feltételek",
   "map.link.51": "XML webhelytérkép",
   "map.link.52": "404 oldal",
-  "map.note.0": "<strong>Segítségre van szüksége valami megtalálásához?</strong> Használja a fejlécben található keresés ikont vagy\n      "
+  "map.note.0": "<strong>Segítségre van szüksége valami megtalálásához?</strong> Használja a fejlécben található keresés ikont vagy\n      ",
+  "_htmlKeys": [
+    "p.1",
+    "map.intro.0",
+    "map.note.0"
+  ]
 }

@@ -99,14 +99,6 @@
   "iot.label.1": "Pressão de vapor",
   "iot.label.2": "Eficiência Energética",
   "iot.label.3": "Taxa de fluxo",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0",
-    "h2.1"
-  ],
   "inno.title.0": "Plasma CNC e corte a laser",
   "inno.title.1": "Soldagem TIG/MIG/SAW",
   "inno.title.2": "Laminação e conformação de tubos de precisão",
@@ -129,5 +121,13 @@
   "mfg.mat.3": "SS Duplex",
   "mfg.mat.4": "Titânio",
   "mfg.mat.5": "Hastelloy",
-  "mfg.mat.6": "Liga de cobre"
+  "mfg.mat.6": "Liga de cobre",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0",
+    "h2.1"
+  ]
 }

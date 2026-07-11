@@ -14,7 +14,7 @@
   "p.0": "Comment Gausin International Engineers collecte, utilise et protège vos informations.",
   "p.1": "Lorsque vous nous contactez pour des équipements industriels, des discussions sur des projets, une assistance technique ou des devis, nous pouvons collecter :",
   "p.2": "Nous traitons les données sur la base de votre consentement (soumissions de formulaires), de votre intérêt commercial légitime (communication et assistance B2B) et de vos obligations légales (dossiers fiscaux/conformité).",
-  "p.3": "Nous ne vendons pas de données personnelles. ",
+  "p.3": "Nous ne vendons pas de données personnelles. Nous pouvons partager des informations limitées avec des prestataires de services de confiance (hébergement, communication, CRM, comptabilité) uniquement dans la mesure nécessaire au fonctionnement de notre entreprise. Nous pouvons également divulguer des données si la loi ou l'autorité compétente l'exige.",
   "p.4": "Les données de demande de renseignements et de communication commerciale sont conservées aussi longtemps que nécessaire pour l'engagement, le support et la tenue des dossiers juridiques/commerciaux du projet. ",
   "p.5": "Nous utilisons des mesures de protection administratives et techniques pratiques pour protéger les données contre tout accès non autorisé, toute modification ou toute utilisation abusive. ",
   "p.6": "Notre site Web peut utiliser des cookies et des technologies similaires pour la gestion des sessions, le suivi des performances et l'amélioration de l'expérience utilisateur. ",
@@ -30,9 +30,6 @@
   "li.7": "Tenir des registres pour les exigences de conformité, de comptabilité et d'audit",
   "li.8": "Améliorer les performances du site Web, la pertinence du contenu et la qualité des réponses",
   "_meta.title": "Politique de confidentialité | ",
-  "_htmlKeys": [
-    "legal.note.0"
-  ],
   "hero.label.0": "Légal",
   "legal.chipLbl.0": "Document",
   "legal.chipLbl.1": "Date d'entrée en vigueur",
@@ -52,7 +49,7 @@
   "legal.h3.8": "9) Mises à jour de la politique",
   "legal.p.0": "Lorsque vous nous contactez pour des équipements industriels, des discussions sur des projets, une assistance technique ou des devis, nous pouvons collecter :",
   "legal.p.1": "Nous traitons les données sur la base de votre consentement (soumissions de formulaires), de votre intérêt commercial légitime (communication et assistance B2B) et de vos obligations légales (dossiers fiscaux/conformité).",
-  "legal.p.2": "Nous ne vendons pas de données personnelles. ",
+  "legal.p.2": "Nous ne vendons pas de données personnelles. Nous pouvons partager des informations limitées avec des prestataires de services de confiance (hébergement, communication, CRM, comptabilité) uniquement dans la mesure nécessaire au fonctionnement de notre entreprise. Nous pouvons également divulguer des données si la loi ou l'autorité compétente l'exige.",
   "legal.p.3": "Les données de demande de renseignements et de communication commerciale sont conservées aussi longtemps que nécessaire pour l'engagement, le support et la tenue des dossiers juridiques/commerciaux du projet. ",
   "legal.p.4": "Nous utilisons des mesures de protection administratives et techniques pratiques pour protéger les données contre tout accès non autorisé, toute modification ou toute utilisation abusive. ",
   "legal.p.5": "Notre site Web peut utiliser des cookies et des technologies similaires pour la gestion des sessions, le suivi des performances et l'amélioration de l'expérience utilisateur. ",
@@ -74,5 +71,8 @@
   "legal.nav.2": "Partage de données",
   "legal.nav.3": "Sécurité",
   "legal.nav.4": "Vos droits",
-  "legal.note.0": "<strong>Contact de confidentialité :</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | "
+  "legal.note.0": "<strong>Contact de confidentialité :</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | ",
+  "_htmlKeys": [
+    "legal.note.0"
+  ]
 }

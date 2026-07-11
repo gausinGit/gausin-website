@@ -99,14 +99,6 @@
   "iot.label.1": "Shinikizo la Mvuke",
   "iot.label.2": "Ufanisi wa Nishati",
   "iot.label.3": "Kiwango cha Mtiririko",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0",
-    "h2.1"
-  ],
   "inno.title.0": "CNC Plasma & Laser Kukata",
   "inno.title.1": "TIG / MIG / SAW Kulehemu",
   "inno.title.2": "Precision Tube Rolling & Forming",
@@ -129,5 +121,13 @@
   "mfg.mat.3": "Duplex SS",
   "mfg.mat.4": "Titanium",
   "mfg.mat.5": "Hastelloy",
-  "mfg.mat.6": "Aloi ya Shaba"
+  "mfg.mat.6": "Aloi ya Shaba",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0",
+    "h2.1"
+  ]
 }

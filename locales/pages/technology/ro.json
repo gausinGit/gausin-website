@@ -99,14 +99,6 @@
   "iot.label.1": "Presiunea aburului",
   "iot.label.2": "Eficiență energetică",
   "iot.label.3": "Debitul",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0",
-    "h2.1"
-  ],
   "inno.title.0": "Tăiere CNC cu plasmă și laser",
   "inno.title.1": "Sudare TIG / MIG / SAW",
   "inno.title.2": "Laminare și formare de precizie a tuburilor",
@@ -129,5 +121,13 @@
   "mfg.mat.3": "Duplex SS",
   "mfg.mat.4": "Titan",
   "mfg.mat.5": "Hastelloy",
-  "mfg.mat.6": "Aliaj de cupru"
+  "mfg.mat.6": "Aliaj de cupru",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0",
+    "h2.1"
+  ]
 }

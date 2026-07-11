@@ -40,15 +40,15 @@
   "prod.title.30": "Sistema CIP automatizzato",
   "prod.title.31": "Recipienti a pressione (ASME/IBR)",
   "prod.title.32": "Silos di stoccaggio in acciaio inossidabile",
-  "prod.desc.0": "Evaporatore ad alta efficienza ideale per prodotti sensibili al calore. ",
-  "prod.desc.1": "Progettato per liquidi viscosi, calcarei o cristallizzanti. ",
+  "prod.desc.0": "Evaporatore ad alta efficienza ideale per prodotti sensibili al calore. Il liquido forma una pellicola sottile sulle superfici interne del tubo, consentendo un'evaporazione delicata e rapida a basse temperature. Disponibile in configurazioni singole, doppie, triple e multieffetto.",
+  "prod.desc.1": "Progettato per liquidi viscosi, calcarei o cristallizzanti. La circolazione forzata garantisce un'elevata velocità attraverso i tubi dello scambiatore di calore, prevenendo la deposizione di calcare e consentendo un'efficiente concentrazione di fluidi difficili.",
   "prod.desc.2": "Evaporatore a tubi verticali in cui il liquido e il vapore salgono insieme attraverso i tubi formando una pellicola rampicante. ",
   "prod.desc.3": "Evaporatore a piastre compatto e ad alta efficienza con superfici di scambio termico a piastre ondulate. ",
   "prod.desc.4": "Evaporatore a vaschetta sottovuoto incamiciato per operazioni batch che richiedono un controllo preciso della concentrazione. ",
-  "prod.desc.5": "Converte l'alimentazione liquida in polvere a flusso libero in un'unica operazione. ",
-  "prod.desc.6": "Tecnologia a letto fluido per materiali granulari, cristallini e polverosi. ",
+  "prod.desc.5": "Converte l'alimentazione liquida in polvere a flusso libero in un'unica operazione. Disponibile nei modelli con atomizzazione a ugello e atomizzazione a disco rotante: produce polveri con una distribuzione granulometrica precisa per applicazioni lattiero-casearie, alimentari, farmaceutiche, chimiche e amido.",
+  "prod.desc.6": "Tecnologia a letto fluido per materiali granulari, cristallini e polverosi. Fornisce un'asciugatura uniforme e delicata con un controllo preciso dell'umidità - disponibile in configurazioni continue per latticini e alimenti.",
   "prod.desc.7": "Essiccatore a gas inerte o atmosfera carica di solvente per prodotti che non possono essere esposti all'ossigeno atmosferico. ",
-  "prod.desc.8": "Essiccatoio continuo per materiali viscosi, sensibili al calore e incrostanti. ",
+  "prod.desc.8": "Essiccatoio continuo per materiali viscosi, sensibili al calore e incrostanti. Un gruppo di lame rotanti diffonde l'alimentazione in una sottile pellicola turbolenta sulla parete riscaldata, consentendo una rapida evaporazione sotto vuoto: ideale per ZLD, sali effluenti e prodotti di alto valore.",
   "prod.desc.9": "Ideale per essiccare direttamente pasta, residui di filtrazione, fanghi e materiali granulari umidi senza pre-essiccazione. ",
   "prod.desc.10": "Stabilimento lattiero-caseario chiavi in ​​mano dalla ricezione del latte crudo al confezionamento del prodotto finale. ",
   "prod.desc.11": "Impianto di refrigerazione del latte su scala industriale per il raffreddamento rapido e igienico di grandi volumi di latte crudo ricevuti negli impianti di lavorazione casearia. ",
@@ -68,7 +68,7 @@
   "prod.desc.25": "Impianti completi di trattamento dell'acqua tra cui WTP, ultrafiltrazione (UF), osmosi inversa (RO) e sistemi di addolcimento per acqua di processo industriale, alimentazione di caldaie e acqua potabile con controlavaggio automatizzato e dosaggio di prodotti chimici.",
   "prod.desc.26": "Sistemi di scrubber a umido e a secco per la rimozione di particolato, gas acidi, COV e composti odorosi dai flussi di scarico industriali. ",
   "prod.desc.27": "Sistemi di incenerimento industriale per la distruzione termica sicura di rifiuti solidi e liquidi pericolosi e non pericolosi. ",
-  "prod.desc.28": "Scambiatori di calore industriali per carichi pesanti progettati secondo gli standard TEMA. ",
+  "prod.desc.28": "Scambiatori di calore industriali per carichi pesanti progettati secondo gli standard TEMA. Disponibili in configurazioni a passaggio singolo, multiplo, con tubo a U e con piastra tubiera fissa per applicazioni di riscaldamento, raffreddamento, condensazione e preriscaldamento in tutti i settori.",
   "prod.desc.29": "Scambiatori di calore a piastre guarnizionati compatti e ad alta efficienza che offrono prestazioni termiche superiori con un ingombro minimo. ",
   "prod.desc.30": "Sistemi Clean-in-Place completamente automatizzati per la pulizia igienica di linee di processo, serbatoi, scambiatori di calore e apparecchiature senza smontaggio. ",
   "prod.desc.31": "Recipienti a pressione progettati e fabbricati su misura per lo stoccaggio e il trattamento di gas e liquidi sotto pressione. ",
@@ -575,11 +575,6 @@
   "prod.app.119": "Cibo",
   "prod.app.120": "Farmaceutico",
   "prod.app.121": "Chimico",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "h2.0"
-  ],
   "hero.label.0": "Prodotti",
   "crumb.0": "Casa",
   "crumb.1": "Prodotti",
@@ -599,5 +594,10 @@
   "h4.0": "Progettato su misura",
   "h4.1": "Certificato e conforme",
   "h4.2": "Efficienza energetica",
-  "h4.3": "Supporto post-vendita"
+  "h4.3": "Supporto post-vendita",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "h2.0"
+  ]
 }

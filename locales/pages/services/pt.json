@@ -12,7 +12,7 @@
   "p.4": "Após a confirmação do pedido, a engenharia detalhada começa - projeto CAD 3D, desenhos de fabricação, finalização de P&ID, projeto estrutural e todos os resultados de engenharia.",
   "p.5": "Fabricação de precisão em nossa oficina usando usinagem CNC, corte a laser e soldagem TIG/MIG - com rigorosas verificações de qualidade, testes NDT e inspeção de terceiros.",
   "p.6": "Nossa equipe de engenharia de campo cuida da instalação no local, alinhamento mecânico, tubulação, conexões elétricas, verificações de pré-comissionamento e inicialização da planta com testes de desempenho.",
-  "p.7": "Teste de desempenho garantido realizado na sua presença. ",
+  "p.7": "Teste de desempenho garantido realizado na sua presença. Toda a documentação, manuais de O&M, programas PLC e desenhos as-built são entregues após a conclusão do projeto.",
   "p.8": "Suporte técnico contínuo, manutenção preventiva, fornecimento de peças de reposição e auditorias anuais de desempenho para garantir que sua planta continue operando com eficiência máxima.",
   "p.9": "Entre em contato com nossa equipe de engenharia para discutir os requisitos do seu projeto. ",
   "card.title.0": "Equipe Multidisciplinar",
@@ -45,13 +45,6 @@
   "stat.label.1": "Resposta média da cotação",
   "stat.label.2": "Taxa de entrega dentro do prazo",
   "stat.label.3": "Garantia de desempenho",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0"
-  ],
   "hero.label.0": "Serviços",
   "crumb.0": "Lar",
   "crumb.1": "Serviços",
@@ -69,7 +62,7 @@
   "svc.title.5": "Consultoria Técnica e Solução de Problemas",
   "svc.desc.0": "Desenvolvemos pacotes abrangentes de engenharia de processos para novas plantas e expansões - incluindo fluxogramas de processos, balanços de massa e energia, dimensionamento de equipamentos, desenvolvimento de P&ID e simulação de processos usando CHEMCAD e HTRI.",
   "svc.desc.1": "Nosso serviço de engenharia detalhada abrange modelagem CAD 3D completa, desenhos de fabricação, projeto estrutural civil, layouts de tubulação, engenharia elétrica, engenharia de instrumentação e especificações de aquisição para todos os principais equipamentos e sistemas.",
-  "svc.desc.2": "Gerenciamento completo do projeto de ponta a ponta, desde a concepção até o comissionamento. ",
+  "svc.desc.2": "Gerenciamento completo do projeto de ponta a ponta, desde a concepção até o comissionamento. Nossa equipe de gerenciamento de projetos utiliza o MS Project e metodologias ágeis para garantir a entrega dentro do prazo e do orçamento de plantas industriais complexas, com documentação e entrega completas.",
   "svc.desc.3": "Auditorias abrangentes de energia térmica para plantas existentes, identificando desperdício de energia e recomendando atualizações comprovadas. ",
   "svc.desc.4": "Integramos sistemas avançados de automação PLC/SCADA em plantas de processo novas e existentes – permitindo monitoramento em tempo real, sequências de controle automatizadas, gerenciamento de alarmes, registro de dados e acesso remoto por meio de plataformas habilitadas para IoT.",
   "svc.desc.5": "Nossos engenheiros experientes fornecem consultoria técnica especializada para solução de problemas de processos, eliminação de gargalos de desempenho, expansão de capacidade, conformidade regulatória e modernização de plantas - fornecendo recomendações de engenharia acionáveis ​​com impacto mensurável.",
@@ -123,6 +116,13 @@
   "proc.desc.3": "Após a confirmação do pedido, a engenharia detalhada começa - projeto CAD 3D, desenhos de fabricação, finalização de P&ID, projeto estrutural e todos os resultados de engenharia.",
   "proc.desc.4": "Fabricação de precisão em nossa oficina usando usinagem CNC, corte a laser e soldagem TIG/MIG - com rigorosas verificações de qualidade, testes NDT e inspeção de terceiros.",
   "proc.desc.5": "Nossa equipe de engenharia de campo cuida da instalação no local, alinhamento mecânico, tubulação, conexões elétricas, verificações de pré-comissionamento e inicialização da planta com testes de desempenho.",
-  "proc.desc.6": "Teste de desempenho garantido realizado na sua presença. ",
-  "proc.desc.7": "Suporte técnico contínuo, manutenção preventiva, fornecimento de peças de reposição e auditorias anuais de desempenho para garantir que sua planta continue operando com eficiência máxima."
+  "proc.desc.6": "Teste de desempenho garantido realizado na sua presença. Toda a documentação, manuais de O&M, programas PLC e desenhos as-built são entregues após a conclusão do projeto.",
+  "proc.desc.7": "Suporte técnico contínuo, manutenção preventiva, fornecimento de peças de reposição e auditorias anuais de desempenho para garantir que sua planta continue operando com eficiência máxima.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0"
+  ]
 }

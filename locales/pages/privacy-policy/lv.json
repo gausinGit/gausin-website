@@ -14,7 +14,7 @@
   "p.0": "Kā Gausin International Engineers apkopo, izmanto un aizsargā jūsu informāciju.",
   "p.1": "Sazinoties ar mums, lai saņemtu rūpniecisko aprīkojumu, apspriestu projektus, sniegtu pakalpojumu atbalstu vai piedāvājumus, mēs varam apkopot:",
   "p.2": "Mēs apstrādājam datus, pamatojoties uz jūsu piekrišanu (veidlapu iesniegšana), likumīgām biznesa interesēm (B2B saziņa un atbalsts) un juridiskajām saistībām (nodokļu/atbilstības uzskaite).",
-  "p.3": "Mēs nepārdodam personas datus. ",
+  "p.3": "Mēs nepārdodam personas datus. Mēs varam koplietot ierobežotu informāciju ar uzticamiem pakalpojumu sniedzējiem (hostings, saziņa, CRM, grāmatvedība) tikai tad, ja tas ir nepieciešams mūsu biznesa darbībai. Mēs varam arī izpaust datus, ja to pieprasa likums vai kompetentā iestāde.",
   "p.4": "Uzziņu un biznesa saziņas dati tiek glabāti tik ilgi, cik nepieciešams projekta iesaistīšanai, atbalstam un juridiskai/komerciālai uzskaitei. ",
   "p.5": "Mēs izmantojam praktiskus administratīvos un tehniskos drošības pasākumus, lai aizsargātu datus pret nesankcionētu piekļuvi, izmaiņām vai ļaunprātīgu izmantošanu. ",
   "p.6": "Mūsu vietne var izmantot sīkfailus un līdzīgas tehnoloģijas sesiju pārvaldībai, veiktspējas izsekošanai un lietotāja pieredzes uzlabošanai. ",
@@ -30,9 +30,6 @@
   "li.7": "Saglabājiet ierakstus par atbilstības, grāmatvedības un revīzijas prasībām",
   "li.8": "Uzlabojiet vietnes veiktspēju, satura atbilstību un atbildes kvalitāti",
   "_meta.title": "Privātuma politika | ",
-  "_htmlKeys": [
-    "legal.note.0"
-  ],
   "hero.label.0": "Juridisks",
   "legal.chipLbl.0": "Dokuments",
   "legal.chipLbl.1": "Spēkā stāšanās datums",
@@ -52,7 +49,7 @@
   "legal.h3.8": "9) Politikas atjauninājumi",
   "legal.p.0": "Sazinoties ar mums, lai saņemtu rūpniecisko aprīkojumu, apspriestu projektus, sniegtu pakalpojumu atbalstu vai piedāvājumus, mēs varam apkopot:",
   "legal.p.1": "Mēs apstrādājam datus, pamatojoties uz jūsu piekrišanu (veidlapu iesniegšana), likumīgām biznesa interesēm (B2B saziņa un atbalsts) un juridiskajām saistībām (nodokļu/atbilstības uzskaite).",
-  "legal.p.2": "Mēs nepārdodam personas datus. ",
+  "legal.p.2": "Mēs nepārdodam personas datus. Mēs varam koplietot ierobežotu informāciju ar uzticamiem pakalpojumu sniedzējiem (hostings, saziņa, CRM, grāmatvedība) tikai tad, ja tas ir nepieciešams mūsu biznesa darbībai. Mēs varam arī izpaust datus, ja to pieprasa likums vai kompetentā iestāde.",
   "legal.p.3": "Uzziņu un biznesa saziņas dati tiek glabāti tik ilgi, cik nepieciešams projekta iesaistīšanai, atbalstam un juridiskai/komerciālai uzskaitei. ",
   "legal.p.4": "Mēs izmantojam praktiskus administratīvos un tehniskos drošības pasākumus, lai aizsargātu datus pret nesankcionētu piekļuvi, izmaiņām vai ļaunprātīgu izmantošanu. ",
   "legal.p.5": "Mūsu vietne var izmantot sīkfailus un līdzīgas tehnoloģijas sesiju pārvaldībai, veiktspējas izsekošanai un lietotāja pieredzes uzlabošanai. ",
@@ -74,5 +71,8 @@
   "legal.nav.2": "Datu koplietošana",
   "legal.nav.3": "Drošība",
   "legal.nav.4": "Jūsu tiesības",
-  "legal.note.0": "<strong>Konfidencialitātes kontaktpersona:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | "
+  "legal.note.0": "<strong>Konfidencialitātes kontaktpersona:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | ",
+  "_htmlKeys": [
+    "legal.note.0"
+  ]
 }

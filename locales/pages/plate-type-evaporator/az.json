@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "category": "Buxarlandırıcılar",
   "breadcrumb.cat.0": "Buxarlandırıcılar",
   "qs.0.label": "L/saat Tutumu",
@@ -104,7 +98,7 @@
   "how.3.title": "Çox effektli kaskad",
   "how.3.desc": "Bir təsirdən gələn buxar, daha az buxar istifadə etmək üçün digərini qızdırır.",
   "how.4.title": "Məhsul və CIP",
-  "how.4.desc": "Brix dəsti ilə atılan konsentrat; ",
+  "how.4.desc": "Brix dəsti ilə atılan konsentrat; CIP məhlulu boşqab dövrəsi vasitəsilə dövr edir.",
   "sidebar.title": "Sitat tələb edin",
   "sidebar.sub": "48 saat ərzində fərdiləşdirilmiş təklif əldə edin",
   "sidebar.guarantee.0": "24-48 saat ərzində cavab",
@@ -126,5 +120,11 @@
   "tagline": "Mükəmməl istilik performansı və aşağı maye saxlama üçün büzməli səthlərə malik kompakt boşqablı istilik dəyişdirici buxarlandırıcı - süd məhsulları, qida və içki tətbiqləri üçün idealdır.",
   "overview.p0": "<strong style=\"color:var(--gray-900);\">Gausin Plate Tipi Buxarlandırıcı</strong> istilik ötürmə səthləri kimi büzməli paslanmayan polad lövhələrdən istifadə edir. ",
   "overview.p1": "Aşağı tutma həcmi bu dizaynı məhsulun keyfiyyətinin və sürətli dəyişmənin vacib olduğu gigiyenik süd və qida prosesləri üçün cəlbedici edir. ",
-  "overview.p2": "İnteqrasiya edilmiş CIP sxemləri və yığcam ayaq izləri böyük kalandriya buxarlandırıcıları ilə müqayisədə bitki sahəsini və təmizləmə vaxtını azaldır. "
+  "overview.p2": "İnteqrasiya edilmiş CIP sxemləri və yığcam ayaq izləri böyük kalandriya buxarlandırıcıları ilə müqayisədə bitki sahəsini və təmizləmə vaxtını azaldır. İsteğe bağlı <strong style=\"color:var(--gray-900);\">Termo Buxar Rekompressoru (TVR)</strong> inteqrasiyası çox effektli boşqab buxarlandırıcı sistemlərində buxar qənaətini yaxşılaşdıraraq, qızdırıcı buxar kimi təkrar istifadə üçün effektli buxarı sıxır.",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

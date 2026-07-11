@@ -17,16 +17,13 @@
   "p.3": "Tout le contenu du site Web, y compris les textes, les graphiques, les présentations de produits, les dessins et les actifs de la marque, est la propriété ou sous licence de Gausin International Engineers Pvt. ",
   "p.4": "Vous acceptez de ne pas utiliser ce site Web à mauvais escient, de tenter un accès non autorisé, d'injecter du code malveillant, de supprimer du contenu protégé ou d'utiliser la plateforme d'une manière qui pourrait nuire aux fonctionnalités du site Web ou à la réputation de l'entreprise.",
   "p.5": "Dans toute la mesure permise par la loi, Gausin International Engineers ne peut être tenu responsable des pertes directes, indirectes, accidentelles ou consécutives résultant de l'utilisation du site Web, d'un temps d'arrêt temporaire, de problèmes de données ou de la dépendance à l'égard d'un contenu non contractuel.",
-  "p.6": "Notre site Web peut inclure des liens vers des ressources externes. ",
-  "p.7": "Ces conditions sont régies par les lois de l'Inde. ",
+  "p.6": "Notre site Web peut inclure des liens vers des ressources externes. Nous ne contrôlons ni n’approuvons les sites Web externes et ne sommes pas responsables de leur contenu, de leurs conditions ou de leurs pratiques en matière de confidentialité.",
+  "p.7": "Ces conditions sont régies par les lois de l'Inde. Tout litige lié à l'utilisation du site Web ou à l'interprétation de ces conditions sera soumis aux tribunaux compétents de Meerut, Uttar Pradesh, Inde.",
   "p.8": "Pour toute question juridique, contractuelle ou de conformité, contactez-nous en utilisant les coordonnées ci-dessous. ",
   "li.0": "Toutes les offres sont soumises à des précisions techniques et à une approbation commerciale.",
   "li.1": "Les prix, les taxes et les délais de livraison peuvent varier selon les spécifications et l'emplacement du projet.",
   "li.2": "Les conditions de production, d’expédition, d’installation et de mise en service ne sont valables que conformément au contrat écrit convenu.",
   "_meta.title": "Conditions d'utilisation | ",
-  "_htmlKeys": [
-    "legal.note.0"
-  ],
   "hero.label.0": "Légal",
   "legal.chipLbl.0": "Document",
   "legal.chipLbl.1": "Date d'entrée en vigueur",
@@ -49,8 +46,8 @@
   "legal.p.2": "Tout le contenu du site Web, y compris les textes, les graphiques, les présentations de produits, les dessins et les actifs de la marque, est la propriété ou sous licence de Gausin International Engineers Pvt. ",
   "legal.p.3": "Vous acceptez de ne pas utiliser ce site Web à mauvais escient, de tenter un accès non autorisé, d'injecter du code malveillant, de supprimer du contenu protégé ou d'utiliser la plateforme d'une manière qui pourrait nuire aux fonctionnalités du site Web ou à la réputation de l'entreprise.",
   "legal.p.4": "Dans toute la mesure permise par la loi, Gausin International Engineers ne peut être tenu responsable des pertes directes, indirectes, accidentelles ou consécutives résultant de l'utilisation du site Web, d'un temps d'arrêt temporaire, de problèmes de données ou de la dépendance à l'égard d'un contenu non contractuel.",
-  "legal.p.5": "Notre site Web peut inclure des liens vers des ressources externes. ",
-  "legal.p.6": "Ces conditions sont régies par les lois de l'Inde. ",
+  "legal.p.5": "Notre site Web peut inclure des liens vers des ressources externes. Nous ne contrôlons ni n’approuvons les sites Web externes et ne sommes pas responsables de leur contenu, de leurs conditions ou de leurs pratiques en matière de confidentialité.",
+  "legal.p.6": "Ces conditions sont régies par les lois de l'Inde. Tout litige lié à l'utilisation du site Web ou à l'interprétation de ces conditions sera soumis aux tribunaux compétents de Meerut, Uttar Pradesh, Inde.",
   "legal.p.7": "Pour toute question juridique, contractuelle ou de conformité, contactez-nous en utilisant les coordonnées ci-dessous. ",
   "legal.li.0": "Toutes les offres sont soumises à des précisions techniques et à une approbation commerciale.",
   "legal.li.1": "Les prix, les taxes et les délais de livraison peuvent varier selon les spécifications et l'emplacement du projet.",
@@ -62,5 +59,8 @@
   "legal.nav.2": "Propriété intellectuelle",
   "legal.nav.3": "Responsabilité",
   "legal.nav.4": "Loi applicable",
-  "legal.note.0": "<strong>Contact juridique :</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | "
+  "legal.note.0": "<strong>Contact juridique :</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | ",
+  "_htmlKeys": [
+    "legal.note.0"
+  ]
 }

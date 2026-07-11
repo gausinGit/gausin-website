@@ -1,12 +1,4 @@
 {
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0",
-    "h2.1"
-  ],
   "_meta.title": "טכנולוגיה | ",
   "hero.desc.0": "מהדמיית תהליכים ועד אוטומציה חכמה של מפעלים - אנו ממנפים כלים וטכנולוגיות מתקדמות לתכנון, ייצור ואספקת פתרונות הנדסת תעשייה מעולים.",
   "sec.label.0": "תוכנה הנדסית",
@@ -129,5 +121,13 @@
   "sec.title.1": "דיוק <span>טכנולוגיית ייצור</span>",
   "sec.title.2": "<span>תהליך הייצור</span> שלנו",
   "h2.0": "תעשייתית חכמה <span style=\"background:linear-gradient(135deg,var(--blue-300),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;\">מערכות אוטומציה</span>",
-  "h2.1": "ניסיון <span style=\"background:linear-gradient(135deg,var(--blue-300),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;\">הנדסה בהובלת טכנולוגיה</span>"
+  "h2.1": "ניסיון <span style=\"background:linear-gradient(135deg,var(--blue-300),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;\">הנדסה בהובלת טכנולוגיה</span>",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0",
+    "h2.1"
+  ]
 }

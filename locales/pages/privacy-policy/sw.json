@@ -14,7 +14,7 @@
   "p.0": "Jinsi Gausin International Engineers hukusanya, kutumia na kulinda maelezo yako.",
   "p.1": "Unapowasiliana nasi kwa vifaa vya viwandani, majadiliano ya mradi, usaidizi wa huduma, au nukuu, tunaweza kukusanya:",
   "p.2": "Tunachakata data kulingana na kibali chako (mawasilisho ya fomu), maslahi halali ya biashara (mawasiliano na usaidizi wa B2B), na wajibu wa kisheria (rekodi za kodi/kutii).",
-  "p.3": "Hatuuzi data ya kibinafsi. ",
+  "p.3": "Hatuuzi data ya kibinafsi. Tunaweza kushiriki maelezo machache na watoa huduma wanaoaminika (mwenyeji, mawasiliano, CRM, uhasibu) inapohitajika tu kuendesha biashara yetu. Tunaweza pia kufichua data ikihitajika na sheria au mamlaka husika.",
   "p.4": "Data ya uchunguzi na mawasiliano ya biashara huhifadhiwa kwa muda unaohitajika kwa ushiriki wa mradi, usaidizi, na uhifadhi wa kumbukumbu za kisheria/kibiashara. ",
   "p.5": "Tunatumia ulinzi wa kiutawala na kiufundi ili kulinda data dhidi ya ufikiaji, mabadiliko au matumizi mabaya yasiyoidhinishwa. ",
   "p.6": "Tovuti yetu inaweza kutumia vidakuzi na teknolojia sawa na usimamizi wa kipindi, ufuatiliaji wa utendaji na uboreshaji wa uzoefu wa mtumiaji. ",
@@ -30,9 +30,6 @@
   "li.7": "Dumisha rekodi za kufuata, uhasibu na mahitaji ya ukaguzi",
   "li.8": "Boresha utendakazi wa tovuti, umuhimu wa maudhui, na ubora wa majibu",
   "_meta.title": "Sera ya Faragha | ",
-  "_htmlKeys": [
-    "legal.note.0"
-  ],
   "hero.label.0": "Kisheria",
   "legal.chipLbl.0": "Hati",
   "legal.chipLbl.1": "Tarehe ya Kutumika",
@@ -52,7 +49,7 @@
   "legal.h3.8": "9) Sasisho za Sera",
   "legal.p.0": "Unapowasiliana nasi kwa vifaa vya viwandani, majadiliano ya mradi, usaidizi wa huduma, au nukuu, tunaweza kukusanya:",
   "legal.p.1": "Tunachakata data kulingana na kibali chako (mawasilisho ya fomu), maslahi halali ya biashara (mawasiliano na usaidizi wa B2B), na wajibu wa kisheria (rekodi za kodi/kutii).",
-  "legal.p.2": "Hatuuzi data ya kibinafsi. ",
+  "legal.p.2": "Hatuuzi data ya kibinafsi. Tunaweza kushiriki maelezo machache na watoa huduma wanaoaminika (mwenyeji, mawasiliano, CRM, uhasibu) inapohitajika tu kuendesha biashara yetu. Tunaweza pia kufichua data ikihitajika na sheria au mamlaka husika.",
   "legal.p.3": "Data ya uchunguzi na mawasiliano ya biashara huhifadhiwa kwa muda unaohitajika kwa ushiriki wa mradi, usaidizi, na uhifadhi wa kumbukumbu za kisheria/kibiashara. ",
   "legal.p.4": "Tunatumia ulinzi wa kiutawala na kiufundi ili kulinda data dhidi ya ufikiaji, mabadiliko au matumizi mabaya yasiyoidhinishwa. ",
   "legal.p.5": "Tovuti yetu inaweza kutumia vidakuzi na teknolojia sawa na usimamizi wa kipindi, ufuatiliaji wa utendaji na uboreshaji wa uzoefu wa mtumiaji. ",
@@ -74,5 +71,8 @@
   "legal.nav.2": "Kushiriki Data",
   "legal.nav.3": "Usalama",
   "legal.nav.4": "Haki zako",
-  "legal.note.0": "<strong>Mawasiliano ya Faragha:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | "
+  "legal.note.0": "<strong>Mawasiliano ya Faragha:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | ",
+  "_htmlKeys": [
+    "legal.note.0"
+  ]
 }

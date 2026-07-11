@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "category": "Qurutma maşınları",
   "breadcrumb.cat.0": "Qurutma maşınları",
   "qs.0.label": "kq/saat çıxış",
@@ -115,8 +109,14 @@
   "related.0.desc": "Dənəvər və toz halında olan materialların yumşaq vahid qurudulması.",
   "related.1.desc": "Pastaların, tortların və şlamların birbaşa qurudulması.",
   "related.2.desc": "Sprey qurutmadan əvvəl yemi əvvəlcədən konsentrasiya edin.",
-  "tagline": "Tək davamlı əməliyyatda maye yemi sərbəst axan toz halına gətirin. ",
+  "tagline": "Tək davamlı əməliyyatda maye yemi sərbəst axan toz halına gətirin. Süd, qida, əczaçılıq, kimya və keramika tətbiqləri üçün dəqiq, idarə oluna bilən hissəcik ölçüsünə malik tozlar istehsal edən nozzle atomizasiyası və fırlanan diskli atomizasiya dizaynlarında mövcuddur.",
   "overview.p0": "<strong style=\"color:var(--gray-900);\">Gausin Sprey Quruducu</strong> pompalana bilən maye yemi (məhlul, süspansiyon və ya məhlul) isti qurutma havası axınına atomlaşdıraraq quru toz halına gətirir. ",
   "overview.p1": "İki atomlaşdırma variantı təklif olunur: qaba, sərbəst axan tozlar üçün yüksək təzyiqli / iki maye <strong style=\"color:var(--gray-900);\">nozzle atomizatorları</strong> və incə, vahid hissəcik ölçüsü üçün yüksək sürətli <strong style=\"color:var(--gray-900);\">fırlanan diskli atomizatorlar</strong>. ",
-  "overview.p2": "Hər bir zavod kütlə və enerji balansının simulyasiyası, siklon/torba-filtr incəliklərinin bərpası və yığılmış, tozsuz, aniləşmiş tozlar üçün isteğe bağlı maye yatağı qurutmadan sonra hazırlanmışdır. "
+  "overview.p2": "Hər bir zavod kütlə və enerji balansının simulyasiyası, siklon/torba-filtr incəliklərinin bərpası və yığılmış, tozsuz, aniləşmiş tozlar üçün isteğe bağlı maye yatağı qurutmadan sonra hazırlanmışdır. ",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

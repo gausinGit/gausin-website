@@ -99,14 +99,6 @@
   "iot.label.1": "Налягане на парата",
   "iot.label.2": "Енергийна ефективност",
   "iot.label.3": "Скорост на потока",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0",
-    "h2.1"
-  ],
   "inno.title.0": "CNC плазмено и лазерно рязане",
   "inno.title.1": "TIG / MIG / SAW заваряване",
   "inno.title.2": "Прецизно навиване и формоване на тръби",
@@ -129,5 +121,13 @@
   "mfg.mat.3": "Дуплекс SS",
   "mfg.mat.4": "Титан",
   "mfg.mat.5": "Хастелой",
-  "mfg.mat.6": "Медна сплав"
+  "mfg.mat.6": "Медна сплав",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0",
+    "h2.1"
+  ]
 }

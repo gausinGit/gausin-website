@@ -40,15 +40,15 @@
   "prod.title.30": "Mfumo wa CIP wa kiotomatiki",
   "prod.title.31": "Vyombo vya Shinikizo (ASME / IBR)",
   "prod.title.32": "Silo za Uhifadhi wa Chuma cha pua",
-  "prod.desc.0": "Evaporator ya ufanisi wa juu bora kwa bidhaa zinazohimili joto. ",
-  "prod.desc.1": "Imeundwa kwa ajili ya vimiminiko vya mnato, kuongeza au kung'arisha. ",
+  "prod.desc.0": "Evaporator ya ufanisi wa juu bora kwa bidhaa zinazohimili joto. Kioevu huunda filamu nyembamba kwenye nyuso za ndani za bomba, kuwezesha uvukizi wa upole na wa haraka kwa joto la chini. Inapatikana katika usanidi wa moja, mbili, tatu, na wa athari nyingi.",
+  "prod.desc.1": "Imeundwa kwa ajili ya vimiminiko vya mnato, kuongeza au kung'arisha. Mzunguko wa kulazimishwa huhakikisha kasi ya juu kupitia mirija ya kubadilisha joto, kuzuia uwekaji wa kiwango na kuwezesha ukolezi mzuri wa vimiminika vigumu.",
   "prod.desc.2": "Kivukizo cha mirija ya wima ambapo kioevu na mvuke huinuka pamoja kupitia mirija katika muundo wa filamu ya kupanda. ",
   "prod.desc.3": "Kivukizo cha aina ya bati kilichoshikana na chenye ufanisi wa juu chenye nyuso za kubadilishana joto za bati. ",
   "prod.desc.4": "Kivukizi cha sufuria yenye koti kwa ajili ya shughuli za kundi zinazohitaji udhibiti sahihi wa ukolezi. ",
-  "prod.desc.5": "Badilisha malisho ya kioevu kuwa poda inayotiririka bila malipo katika operesheni moja. ",
-  "prod.desc.6": "Teknolojia ya kitanda cha maji kwa nyenzo za punjepunje, fuwele na unga. ",
+  "prod.desc.5": "Badilisha malisho ya kioevu kuwa poda inayotiririka bila malipo katika operesheni moja. Inapatikana katika muundo wa atomi ya pua na diski ya mzunguko - huzalisha poda zenye usambazaji sahihi wa ukubwa wa chembe kwa matumizi ya maziwa, chakula, dawa, kemikali na Wanga.",
+  "prod.desc.6": "Teknolojia ya kitanda cha maji kwa nyenzo za punjepunje, fuwele na unga. Hutoa sare, kukausha kwa upole na udhibiti sahihi wa unyevu - unaopatikana katika usanidi unaoendelea wa maziwa na chakula.",
   "prod.desc.7": "Kikaushio cha gesi ajizi au chenye viyeyusho kwa bidhaa ambazo haziwezi kuathiriwa na oksijeni ya anga. ",
-  "prod.desc.8": "Kikaushio kinachoendelea cha vifaa vya mnato, visivyohisi joto na kuchafua. ",
+  "prod.desc.8": "Kikaushio kinachoendelea cha vifaa vya mnato, visivyohisi joto na kuchafua. Mkusanyiko wa blade inayozunguka hueneza mlisho kwenye filamu nyembamba yenye misukosuko kwenye ukuta unaopashwa joto, kuwezesha uvukizi wa haraka chini ya utupu - bora kwa ZLD, chumvi za maji taka na bidhaa za thamani ya juu.",
   "prod.desc.9": "Inafaa kwa kuweka kavu, keki ya chujio, sludge, na nyenzo za mvua za punjepunje moja kwa moja bila kukausha kabla. ",
   "prod.desc.10": "Kiwanda cha maziwa cha Turnkey kutoka kwa mapokezi ya maziwa ghafi hadi ufungaji wa bidhaa za mwisho. ",
   "prod.desc.11": "Kiwanda cha kupozea maziwa kwa kiwango cha viwandani kwa ajili ya kupoeza kwa haraka na kwa usafi kwa kiasi kikubwa cha maziwa ghafi yanayopokelewa katika vituo vya usindikaji wa maziwa. ",
@@ -68,7 +68,7 @@
   "prod.desc.25": "Kamilisha mitambo ya kutibu maji ikiwa ni pamoja na WTP, ultrafiltration (UF), reverse osmosis (RO), na mifumo ya laini ya maji ya mchakato wa viwandani, malisho ya boiler, na maji ya kunywa yenye washi otomatiki na kipimo cha kemikali.",
   "prod.desc.26": "Mifumo ya kusugua yenye unyevunyevu na mikavu ya kuondolewa kwa chembe, gesi za asidi, VOC, na misombo yenye harufu mbaya kutoka kwa mikondo ya viwandani. ",
   "prod.desc.27": "Mifumo ya kichomaji cha viwandani kwa uharibifu salama wa mafuta wa taka ngumu na kioevu isiyo na madhara. ",
-  "prod.desc.28": "Vibadilisha joto vya viwandani vya kazi nzito vilivyoundwa kulingana na viwango vya TEMA. ",
+  "prod.desc.28": "Vibadilisha joto vya viwandani vya kazi nzito vilivyoundwa kulingana na viwango vya TEMA. Inapatikana katika pasi-moja, pasi nyingi, U-tube, na usanidi wa karatasi zisizobadilika kwa ajili ya kuongeza joto, kupoeza, kubana na kupasha joto kwenye tasnia zote.",
   "prod.desc.29": "Vibadilisha joto vya sahani iliyoshikana na yenye ufanisi wa juu vinavyotoa utendaji wa hali ya juu wa halijoto kwa alama ndogo zaidi. ",
   "prod.desc.30": "Mifumo otomatiki ya Safi-ndani-Mahali kwa usafishaji wa laini za mchakato, mizinga, vibadilisha joto, na vifaa bila disassembly. ",
   "prod.desc.31": "Vyombo vya shinikizo vilivyoundwa na iliyoundwa maalum kwa kuhifadhi na usindikaji wa gesi na vimiminiko chini ya shinikizo. ",
@@ -575,11 +575,6 @@
   "prod.app.119": "Chakula",
   "prod.app.120": "Pharma",
   "prod.app.121": "Kemikali",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "h2.0"
-  ],
   "hero.label.0": "Bidhaa",
   "crumb.0": "Nyumbani",
   "crumb.1": "Bidhaa",
@@ -599,5 +594,10 @@
   "h4.0": "Custom Engineered",
   "h4.1": "Imethibitishwa na Inakubaliwa",
   "h4.2": "Ufanisi wa Nishati",
-  "h4.3": "Msaada wa Baada ya Uuzaji"
+  "h4.3": "Msaada wa Baada ya Uuzaji",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "h2.0"
+  ]
 }

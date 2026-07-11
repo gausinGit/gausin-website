@@ -14,7 +14,7 @@
   "p.0": "Hur Gausin International Engineers samlar in, använder och skyddar din information.",
   "p.1": "När du kontaktar oss för industriell utrustning, projektdiskussioner, servicesupport eller offerter kan vi samla in:",
   "p.2": "Vi behandlar data baserat på ditt samtycke (formulärinlämningar), legitima affärsintressen (B2B-kommunikation och support) och juridiska skyldigheter (skatte-/överensstämmelseregister).",
-  "p.3": "Vi säljer inte personuppgifter. ",
+  "p.3": "Vi säljer inte personuppgifter. Vi kan komma att dela begränsad information med betrodda tjänsteleverantörer (hosting, kommunikation, CRM, redovisning) endast när det behövs för att driva vår verksamhet. Vi kan också avslöja data om det krävs enligt lag eller behörig myndighet.",
   "p.4": "Förfrågnings- och affärskommunikationsdata bevaras så länge som behövs för projektengagemang, support och juridisk/kommersiell dokumentation. ",
   "p.5": "Vi använder praktiska administrativa och tekniska skyddsåtgärder för att skydda data mot obehörig åtkomst, ändring eller missbruk. ",
   "p.6": "Vår webbplats kan använda cookies och liknande tekniker för sessionshantering, resultatspårning och förbättringar av användarupplevelsen. ",
@@ -30,9 +30,6 @@
   "li.7": "Upprätthålla register för efterlevnad, redovisning och revisionskrav",
   "li.8": "Förbättra webbplatsens prestanda, innehållsrelevans och svarskvalitet",
   "_meta.title": "Sekretesspolicy | ",
-  "_htmlKeys": [
-    "legal.note.0"
-  ],
   "hero.label.0": "Rättslig",
   "legal.chipLbl.0": "Dokumentera",
   "legal.chipLbl.1": "Ikraftträdande datum",
@@ -52,7 +49,7 @@
   "legal.h3.8": "9) Policyuppdateringar",
   "legal.p.0": "När du kontaktar oss för industriell utrustning, projektdiskussioner, servicesupport eller offerter kan vi samla in:",
   "legal.p.1": "Vi behandlar data baserat på ditt samtycke (formulärinlämningar), legitima affärsintressen (B2B-kommunikation och support) och juridiska skyldigheter (skatte-/överensstämmelseregister).",
-  "legal.p.2": "Vi säljer inte personuppgifter. ",
+  "legal.p.2": "Vi säljer inte personuppgifter. Vi kan komma att dela begränsad information med betrodda tjänsteleverantörer (hosting, kommunikation, CRM, redovisning) endast när det behövs för att driva vår verksamhet. Vi kan också avslöja data om det krävs enligt lag eller behörig myndighet.",
   "legal.p.3": "Förfrågnings- och affärskommunikationsdata bevaras så länge som behövs för projektengagemang, support och juridisk/kommersiell dokumentation. ",
   "legal.p.4": "Vi använder praktiska administrativa och tekniska skyddsåtgärder för att skydda data mot obehörig åtkomst, ändring eller missbruk. ",
   "legal.p.5": "Vår webbplats kan använda cookies och liknande tekniker för sessionshantering, resultatspårning och förbättringar av användarupplevelsen. ",
@@ -74,5 +71,8 @@
   "legal.nav.2": "Datadelning",
   "legal.nav.3": "Säkerhet",
   "legal.nav.4": "Dina rättigheter",
-  "legal.note.0": "<strong>Sekretesskontakt:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | "
+  "legal.note.0": "<strong>Sekretesskontakt:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | ",
+  "_htmlKeys": [
+    "legal.note.0"
+  ]
 }

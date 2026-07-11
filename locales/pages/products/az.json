@@ -1,9 +1,4 @@
 {
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "h2.0"
-  ],
   "_meta.title": "Məhsullar | ",
   "hero.desc.0": "Dəqiq dizaynlı buxarlandırıcılar, quruducular, CIP sistemləri, istilik dəyişdiriciləri və tam texnoloji qurğular - tələbkar sənaye mühitlərində üstün performans üçün nəzərdə tutulmuşdur.",
   "sec.label.0": "Üstünlüyümüz",
@@ -46,24 +41,24 @@
   "prod.title.30": "Avtomatlaşdırılmış CIP Sistemi",
   "prod.title.31": "Təzyiqli Gəmilər (ASME / IBR)",
   "prod.title.32": "Paslanmayan Polad Saxlama Silosları",
-  "prod.desc.0": "İstiliyə həssas məhsullar üçün ideal olan yüksək səmərəli buxarlandırıcı. ",
-  "prod.desc.1": "Özlü, miqyaslı və ya kristallaşan mayelər üçün nəzərdə tutulmuşdur. ",
+  "prod.desc.0": "İstiliyə həssas məhsullar üçün ideal olan yüksək səmərəli buxarlandırıcı. Maye borunun daxili səthlərində nazik bir təbəqə əmələ gətirir və aşağı temperaturda yumşaq və sürətli buxarlanmağa imkan verir. Tək, ikiqat, üçlü və çox effektli konfiqurasiyalarda mövcuddur.",
+  "prod.desc.1": "Özlü, miqyaslı və ya kristallaşan mayelər üçün nəzərdə tutulmuşdur. Məcburi dövriyyə istilik dəyişdirici borular vasitəsilə yüksək sürəti təmin edir, miqyasda çökmənin qarşısını alır və çətin mayelərin səmərəli konsentrasiyasına imkan verir.",
   "prod.desc.2": "Maye və buxarın dırmaşan film nümunəsində borular vasitəsilə birlikdə yüksəldiyi şaquli boru buxarlandırıcısı. ",
   "prod.desc.3": "Büzməli boşqab istilik mübadilə səthləri ilə kompakt, yüksək səmərəli boşqab tipli buxarlandırıcı. ",
   "prod.desc.4": "Dəqiq konsentrasiyaya nəzarət tələb edən toplu əməliyyatlar üçün gödəkçəli vakuum qab buxarlandırıcı. ",
-  "prod.desc.5": "Bir əməliyyatda maye yemi sərbəst axan toz halına gətirin. ",
-  "prod.desc.6": "Qranul, kristal və tozlu materiallar üçün mayeləşdirilmiş yataq texnologiyası. ",
+  "prod.desc.5": "Bir əməliyyatda maye yemi sərbəst axan toz halına gətirin. Nozzle atomizasiya və fırlanan disk atomizasiya dizaynlarında mövcuddur - süd, qida, əczaçılıq, kimya və nişasta tətbiqləri üçün dəqiq hissəcik ölçüsü paylanması ilə tozlar istehsal edir.",
+  "prod.desc.6": "Qranul, kristal və tozlu materiallar üçün mayeləşdirilmiş yataq texnologiyası. Dəqiq nəm nəzarəti ilə vahid, yumşaq qurutma təmin edir - süd məhsulları və qida məhsulları üçün davamlı konfiqurasiyalarda mövcuddur.",
   "prod.desc.7": "Atmosfer oksigeninə məruz qala bilməyən məhsullar üçün inert qaz və ya həlledici yüklü atmosfer quruducusu. ",
-  "prod.desc.8": "Özlü, istiliyə həssas və çirkləndirici materiallar üçün davamlı quruducu. ",
+  "prod.desc.8": "Özlü, istiliyə həssas və çirkləndirici materiallar üçün davamlı quruducu. Fırlanan bıçaq qurğusu qidanı qızdırılan divarda nazik turbulent filmə yayaraq vakuum altında sürətli buxarlanmağa imkan verir - ZLD, tullantı duzları və yüksək qiymətli məhsullar üçün idealdır.",
   "prod.desc.9": "Pasta, filtr tortu, çamur və nəm dənəvər materialları əvvəlcədən qurutmadan birbaşa qurutmaq üçün idealdır. ",
-  "prod.desc.10": "Çiy südün qəbulundan son məhsulun qablaşdırılmasına qədər açar təslim süd zavodu. ",
+  "prod.desc.10": "Çiy südün qəbulundan son məhsulun qablaşdırılmasına qədər açar təslim süd zavodu. Bütün emal avadanlığı daxildir - pasterizator, homogenizator, separator, saxlama çənləri, UHT və CIP inteqrasiyası ilə qablaşdırmaya hazır məhsul.",
   "prod.desc.11": "Süd emalı müəssisələrində qəbul edilən böyük həcmdə çiy südün sürətli və gigiyenik şəkildə soyudulması üçün sənaye miqyaslı süd soyutma qurğusu. ",
   "prod.desc.12": "Təhlükəsiz süd emalı üçün yüksək temperaturda qısa müddətli (HTST) və aşağı temperaturda uzun müddətli (LTLT) pasterizatorlar. ",
   "prod.desc.13": "Süd və süd məhsullarından xoşagəlməz ləzzətləri, ləkələri və uçucu birləşmələri təmizləmək üçün nəzərdə tutulmuş vakuum dezodorant. ",
-  "prod.desc.14": "Kremin ayrılması, pasterizasiyası, yaşlanması və fasiləsiz yağ hazırlayan maşın daxil olmaqla tam yağ emalı xətti. ",
+  "prod.desc.14": "Kremin ayrılması, pasterizasiyası, yaşlanması və fasiləsiz yağ hazırlayan maşın daxil olmaqla tam yağ emalı xətti. Dəqiq nəmlik nəzarəti və CIP təminatlı süfrə yağı, ağ kərə yağı və duzlu yağın yüksək məhsuldarlıqlı istehsalı üçün nəzərdə tutulmuşdur.",
   "prod.desc.15": "Kremdən yağa qədər emalı, kərə yağının əridilməsi, aydınlaşdırılması, süzülməsi və doldurulmasını əhatə edən tam açar təslim yağ istehsalı zavodu. ",
   "prod.desc.16": "Davamlı və ya partiyalı çalkalama prosesi ilə qaymağı yağa çevirmək üçün sənaye səviyyəli paslanmayan poladdan yağ qarışdırıcı. ",
-  "prod.desc.17": "Steam-jacketed ghee clarification kettle for melting and clarifying butter into pure ghee. ",
+  "prod.desc.17": "Kərə yağının əridilməsi və təmiz yağ halına salınması üçün buxar gödəkçəli ghee təmizləyici çaynik. Asan boşalma və gigiyenik təmizləmə üçün SS 316L daxili astar, kazıyıcı bıçaqlı qarışdırıcı, buxar/isti su gödəkçəsi və əyilmə mexanizmi ilə dizayn edilmişdir.",
   "prod.desc.18": "Davamlı və ya partiya tipli paslanmayan poladdan xoya (mawa) hazırlayan maşın, buxarlanma yolu ilə süd qatı maddələrinin konsentrasiyası üçün. ",
   "prod.desc.19": "Süd toplama məntəqələrində və emal müəssisələrində süd qutularının səmərəli idarə edilməsi, daşınması və boşaldılması üçün avtomatlaşdırılmış paslanmayan poladdan hazırlanmış süd qutusu konveyer sistemi. ",
   "prod.desc.20": "Kənd səviyyəli süd toplama mərkəzlərində (MCC) təzə yığılmış çiy südün sürətli soyudulması üçün birbaşa genişlənmə (DX) toplu süd soyuducusu. ",
@@ -74,7 +69,7 @@
   "prod.desc.25": "Tam su təmizləyici qurğular, o cümlədən WTP, ultrafiltrasiya (UF), tərs osmos (RO) və sənaye proses suyu üçün yumşaldıcı sistemlər, qazan yemi və avtomatlaşdırılmış geri yuyulma və kimyəvi dozajla içməli su.",
   "prod.desc.26": "Sənaye tullantı axınlarından hissəciklərin, turşu qazlarının, VOC-lərin və qoxulu birləşmələrin çıxarılması üçün yaş və quru təmizləmə sistemləri. ",
   "prod.desc.27": "Təhlükəli və təhlükəli olmayan bərk və maye tullantıların təhlükəsiz termal məhv edilməsi üçün sənaye yandırma sistemləri. ",
-  "prod.desc.28": "TEMA standartlarına uyğun dizayn edilmiş ağır sənaye istilik dəyişdiriciləri. ",
+  "prod.desc.28": "TEMA standartlarına uyğun dizayn edilmiş ağır sənaye istilik dəyişdiriciləri. Bütün sənaye sahələrində isitmə, soyutma, kondensasiya və qabaqcadan isitmə tətbiqləri üçün tək keçidli, çox keçidli, U-boru və sabit boru təbəqəsi konfiqurasiyalarında mövcuddur.",
   "prod.desc.29": "Minimum ölçüdə üstün istilik performansı təklif edən kompakt, yüksək effektivlikli sızdırmaz lövhəli istilik dəyişdiriciləri. ",
   "prod.desc.30": "Texnoloji xətlərin, çənlərin, istilik dəyişdiricilərinin və avadanlığın sökülmədən gigiyenik təmizlənməsi üçün tam avtomatlaşdırılmış Təmizləmə sistemləri. ",
   "prod.desc.31": "Qazların və mayelərin təzyiq altında saxlanması və emalı üçün xüsusi dizayn edilmiş və hazırlanmış təzyiqli qablar. ",
@@ -599,5 +594,10 @@
   "btn.67": "İndi Bizə Zəng Edin",
   "hero.title.0": "Sənaye Mühəndisliyi <br>Məhsullar və Sistemlər",
   "sec.title.0": "Niyə <span>Gausin Avadanlıqlarını</span> Seçirsiniz",
-  "h2.0": "Fərdi <span style=\"background:linear-gradient(135deg,var(--blue-300),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;\">Mühəndislik Həllinə ehtiyacınız varmı?</span>"
+  "h2.0": "Fərdi <span style=\"background:linear-gradient(135deg,var(--blue-300),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;\">Mühəndislik Həllinə ehtiyacınız varmı?</span>",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "h2.0"
+  ]
 }

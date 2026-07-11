@@ -99,14 +99,6 @@
   "iot.label.1": "Tekanan Stim",
   "iot.label.2": "Kecekapan Tenaga",
   "iot.label.3": "Kadar Aliran",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0",
-    "h2.1"
-  ],
   "inno.title.0": "CNC Plasma & Laser Cutting",
   "inno.title.1": "Kimpalan TIG / MIG / SAW",
   "inno.title.2": "Tiub Ketepatan Menggolek & Membentuk",
@@ -129,5 +121,13 @@
   "mfg.mat.3": "Dupleks SS",
   "mfg.mat.4": "titanium",
   "mfg.mat.5": "Hastelloy",
-  "mfg.mat.6": "Aloi Tembaga"
+  "mfg.mat.6": "Aloi Tembaga",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0",
+    "h2.1"
+  ]
 }

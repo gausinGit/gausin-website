@@ -99,14 +99,6 @@
   "iot.label.1": "Tekanan Uap",
   "iot.label.2": "Efisiensi Energi",
   "iot.label.3": "Laju Aliran",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0",
-    "h2.1"
-  ],
   "inno.title.0": "Pemotongan Plasma & Laser CNC",
   "inno.title.1": "Pengelasan TIG/MIG/SAW",
   "inno.title.2": "Penggulungan & Pembentukan Tabung Presisi",
@@ -129,5 +121,13 @@
   "mfg.mat.3": "Dupleks SS",
   "mfg.mat.4": "titanium",
   "mfg.mat.5": "Hastelloy",
-  "mfg.mat.6": "Paduan Tembaga"
+  "mfg.mat.6": "Paduan Tembaga",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0",
+    "h2.1"
+  ]
 }

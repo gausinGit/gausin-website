@@ -9,13 +9,10 @@
   "h2.5": "Więcej produktów",
   "h2.6": "Informacje prawne i wsparcie",
   "p.0": "Przeglądaj wszystkie strony główne i wykazy produktów na gausin.in",
-  "p.1": "Użyj tej strony, aby szybko znaleźć dowolną sekcję naszej witryny. ",
+  "p.1": "Użyj tej strony, aby szybko znaleźć dowolną sekcję naszej witryny. Dla wyszukiwarek nasza mapa witryny XML jest dostępna pod adresem\n      <a href=\"sitemap.xml\">sitemap.xml</a>.",
   "_meta.title": "Mapa serwisu | ",
-  "_htmlKeys": [
-    "map.note.0"
-  ],
   "hero.sub.0": "Przeglądaj wszystkie strony główne i wykazy produktów na gausin.in",
-  "map.intro.0": "Użyj tej strony, aby szybko znaleźć dowolną sekcję naszej witryny. ",
+  "map.intro.0": "Użyj tej strony, aby szybko znaleźć dowolną sekcję naszej witryny. Dla wyszukiwarek nasza mapa witryny XML jest dostępna pod adresem\n      <a href=\"sitemap.xml\">sitemap.xml</a>.",
   "map.group.0": "Strony główne",
   "map.group.1": "Kategorie produktów",
   "map.group.2": "Parowniki",
@@ -76,5 +73,10 @@
   "map.link.50": "Warunki świadczenia usług",
   "map.link.51": "Mapa witryny XML",
   "map.link.52": "Strona 404",
-  "map.note.0": "<strong>Potrzebujesz pomocy w znalezieniu czegoś?</strong> Użyj ikony wyszukiwania w nagłówku lub\n      "
+  "map.note.0": "<strong>Potrzebujesz pomocy w znalezieniu czegoś?</strong> Użyj ikony wyszukiwania w nagłówku lub\n      ",
+  "_htmlKeys": [
+    "p.1",
+    "map.intro.0",
+    "map.note.0"
+  ]
 }

@@ -99,14 +99,6 @@
   "iot.label.1": "Πίεση ατμού",
   "iot.label.2": "Ενεργειακή Απόδοση",
   "iot.label.3": "Ρυθμός ροής",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0",
-    "h2.1"
-  ],
   "inno.title.0": "Κοπή CNC Plasma & Laser",
   "inno.title.1": "Συγκόλληση TIG / MIG / SAW",
   "inno.title.2": "Κύλιση & Διαμόρφωση Σωλήνων Ακριβείας",
@@ -129,5 +121,13 @@
   "mfg.mat.3": "Duplex SS",
   "mfg.mat.4": "Τιτάνιο",
   "mfg.mat.5": "Hastelloy",
-  "mfg.mat.6": "Κράμα χαλκού"
+  "mfg.mat.6": "Κράμα χαλκού",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0",
+    "h2.1"
+  ]
 }

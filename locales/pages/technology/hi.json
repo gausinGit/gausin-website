@@ -99,14 +99,6 @@
   "iot.label.1": "भाप का दबाव",
   "iot.label.2": "ऊर्जा दक्षता",
   "iot.label.3": "प्रवाह दर",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0",
-    "h2.1"
-  ],
   "inno.title.0": "सीएनसी प्लाज्मा और लेजर कटिंग",
   "inno.title.1": "टीआईजी/एमआईजी/एसएडब्ल्यू वेल्डिंग",
   "inno.title.2": "परिशुद्धता ट्यूब रोलिंग एवं गठन",
@@ -129,5 +121,13 @@
   "mfg.mat.3": "डुप्लेक्स एसएस",
   "mfg.mat.4": "टाइटेनियम",
   "mfg.mat.5": "hastelloy",
-  "mfg.mat.6": "तांबे की मिश्र धातु"
+  "mfg.mat.6": "तांबे की मिश्र धातु",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0",
+    "h2.1"
+  ]
 }

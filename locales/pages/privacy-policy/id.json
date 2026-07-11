@@ -14,7 +14,7 @@
   "p.0": "Bagaimana Gausin International Engineers mengumpulkan, menggunakan, dan melindungi informasi Anda.",
   "p.1": "Saat Anda menghubungi kami untuk peralatan industri, diskusi proyek, dukungan layanan, atau penawaran harga, kami dapat mengumpulkan:",
   "p.2": "Kami memproses data berdasarkan persetujuan Anda (pengiriman formulir), kepentingan bisnis yang sah (komunikasi dan dukungan B2B), dan kewajiban hukum (catatan pajak/kepatuhan).",
-  "p.3": "Kami tidak menjual data pribadi. ",
+  "p.3": "Kami tidak menjual data pribadi. Kami mungkin berbagi informasi terbatas dengan penyedia layanan tepercaya (hosting, komunikasi, CRM, akuntansi) hanya jika diperlukan untuk menjalankan bisnis kami. Kami juga dapat mengungkapkan data jika diwajibkan oleh hukum atau otoritas yang berwenang.",
   "p.4": "Data pertanyaan dan komunikasi bisnis disimpan selama diperlukan untuk keterlibatan proyek, dukungan, dan pencatatan hukum/komersial. ",
   "p.5": "Kami menggunakan perlindungan administratif dan teknis praktis untuk melindungi data dari akses tidak sah, perubahan, atau penyalahgunaan. ",
   "p.6": "Situs web kami mungkin menggunakan cookie dan teknologi serupa untuk manajemen sesi, pelacakan kinerja, dan peningkatan pengalaman pengguna. ",
@@ -30,9 +30,6 @@
   "li.7": "Menyimpan catatan untuk persyaratan kepatuhan, akuntansi, dan audit",
   "li.8": "Tingkatkan kinerja situs web, relevansi konten, dan kualitas respons",
   "_meta.title": "Kebijakan Privasi | ",
-  "_htmlKeys": [
-    "legal.note.0"
-  ],
   "hero.label.0": "Legal",
   "legal.chipLbl.0": "Dokumen",
   "legal.chipLbl.1": "Tanggal berlaku",
@@ -52,7 +49,7 @@
   "legal.h3.8": "9) Pembaruan Kebijakan",
   "legal.p.0": "Saat Anda menghubungi kami untuk peralatan industri, diskusi proyek, dukungan layanan, atau penawaran harga, kami dapat mengumpulkan:",
   "legal.p.1": "Kami memproses data berdasarkan persetujuan Anda (pengiriman formulir), kepentingan bisnis yang sah (komunikasi dan dukungan B2B), dan kewajiban hukum (catatan pajak/kepatuhan).",
-  "legal.p.2": "Kami tidak menjual data pribadi. ",
+  "legal.p.2": "Kami tidak menjual data pribadi. Kami mungkin berbagi informasi terbatas dengan penyedia layanan tepercaya (hosting, komunikasi, CRM, akuntansi) hanya jika diperlukan untuk menjalankan bisnis kami. Kami juga dapat mengungkapkan data jika diwajibkan oleh hukum atau otoritas yang berwenang.",
   "legal.p.3": "Data pertanyaan dan komunikasi bisnis disimpan selama diperlukan untuk keterlibatan proyek, dukungan, dan pencatatan hukum/komersial. ",
   "legal.p.4": "Kami menggunakan perlindungan administratif dan teknis praktis untuk melindungi data dari akses tidak sah, perubahan, atau penyalahgunaan. ",
   "legal.p.5": "Situs web kami mungkin menggunakan cookie dan teknologi serupa untuk manajemen sesi, pelacakan kinerja, dan peningkatan pengalaman pengguna. ",
@@ -74,5 +71,8 @@
   "legal.nav.2": "Berbagi Data",
   "legal.nav.3": "Keamanan",
   "legal.nav.4": "Hak Anda",
-  "legal.note.0": "<strong>Kontak Privasi:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | "
+  "legal.note.0": "<strong>Kontak Privasi:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | ",
+  "_htmlKeys": [
+    "legal.note.0"
+  ]
 }

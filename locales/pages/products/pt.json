@@ -40,15 +40,15 @@
   "prod.title.30": "Sistema CIP automatizado",
   "prod.title.31": "Vasos de Pressão (ASME/IBR)",
   "prod.title.32": "Silos de armazenamento em aço inoxidável",
-  "prod.desc.0": "Evaporador de alta eficiência ideal para produtos sensíveis ao calor. ",
-  "prod.desc.1": "Projetado para líquidos viscosos, incrustados ou cristalizados. ",
+  "prod.desc.0": "Evaporador de alta eficiência ideal para produtos sensíveis ao calor. O líquido forma uma película fina nas superfícies internas do tubo, permitindo uma evaporação rápida e suave em baixas temperaturas. Disponível em configurações de efeitos simples, duplos, triplos e múltiplos.",
+  "prod.desc.1": "Projetado para líquidos viscosos, incrustados ou cristalizados. A circulação forçada garante alta velocidade através dos tubos do trocador de calor, evitando a deposição de incrustações e permitindo a concentração eficiente de fluidos difíceis.",
   "prod.desc.2": "Evaporador de tubo vertical onde o líquido e o vapor sobem juntos através dos tubos em um padrão de filme ascendente. ",
   "prod.desc.3": "Evaporador tipo placa compacto e de alta eficiência com superfícies de troca de calor de placa corrugada. ",
   "prod.desc.4": "Evaporador com recipiente revestido a vácuo para operações em lote que exigem controle preciso de concentração. ",
-  "prod.desc.5": "Converta alimentação líquida em pó de fluxo livre em uma única operação. ",
-  "prod.desc.6": "Tecnologia de leito fluidizado para materiais granulares, cristalinos e em pó. ",
+  "prod.desc.5": "Converta alimentação líquida em pó de fluxo livre em uma única operação. Disponível em designs de atomização de bico e atomização de disco rotativo - produzindo pós com distribuição precisa de tamanho de partícula para aplicações em laticínios, alimentos, produtos farmacêuticos, químicos e de amido.",
+  "prod.desc.6": "Tecnologia de leito fluidizado para materiais granulares, cristalinos e em pó. Fornece secagem uniforme e suave com controle preciso de umidade – disponível em configurações contínuas para laticínios e alimentos.",
   "prod.desc.7": "Secador com gás inerte ou atmosfera carregada de solvente para produtos que não podem ser expostos ao oxigênio atmosférico. ",
-  "prod.desc.8": "Secador contínuo para materiais viscosos, sensíveis ao calor e incrustantes. ",
+  "prod.desc.8": "Secador contínuo para materiais viscosos, sensíveis ao calor e incrustantes. Um conjunto de lâminas rotativas espalha a alimentação em um filme fino e turbulento na parede aquecida, permitindo rápida evaporação sob vácuo - ideal para ZLD, sais efluentes e produtos de alto valor.",
   "prod.desc.9": "Ideal para secar pasta, torta de filtro, lodo e materiais granulares úmidos diretamente, sem pré-secagem. ",
   "prod.desc.10": "Fábrica de laticínios chave na mão, desde a recepção do leite cru até a embalagem do produto final. ",
   "prod.desc.11": "Planta de resfriamento de leite em escala industrial para resfriamento rápido e higiênico de grandes volumes de leite cru recebidos em instalações de processamento de laticínios. ",
@@ -57,7 +57,7 @@
   "prod.desc.14": "Linha completa de processamento de manteiga, incluindo separação de creme, pasteurização, envelhecimento e máquina contínua de fabricação de manteiga. ",
   "prod.desc.15": "Planta completa de fabricação de ghee pronta para uso, cobrindo processamento de creme para ghee, derretimento de manteiga, clarificação, filtração e enchimento. ",
   "prod.desc.16": "Batedor de manteiga em aço inoxidável de nível industrial para converter creme em manteiga por meio de processo de batedura contínua ou em lote. ",
-  "prod.desc.17": "Chaleira de clarificação de ghee com camisa de vapor para derreter e clarificar manteiga em ghee puro. ",
+  "prod.desc.17": "Chaleira de clarificação de ghee com camisa de vapor para derreter e clarificar manteiga em ghee puro. Projetado com revestimento interno em SS 316L, agitador com lâminas raspadoras, camisa de vapor/água quente e mecanismo de inclinação para fácil descarga e limpeza higiênica.",
   "prod.desc.18": "Máquina de fabricação de khoya (mawa) de aço inoxidável contínua ou em lote para concentração de sólidos de leite por evaporação. ",
   "prod.desc.19": "Sistema automatizado de transporte de latas de leite em aço inoxidável para manuseio, transporte e descarga eficientes de latas de leite em pontos de coleta de laticínios e fábricas de processamento. ",
   "prod.desc.20": "Refrigerador de leite a granel de expansão direta (DX) para resfriamento rápido de leite cru recém-coletado em centros de coleta de leite (MCC) em nível de aldeia. ",
@@ -68,7 +68,7 @@
   "prod.desc.25": "Estações completas de tratamento de água, incluindo ETA, ultrafiltração (UF), osmose reversa (RO) e sistemas de amaciamento para água de processo industrial, alimentação de caldeiras e água potável com retrolavagem automatizada e dosagem de produtos químicos.",
   "prod.desc.26": "Sistemas de purificação úmida e seca para remoção de partículas, gases ácidos, COVs e compostos odoríferos de fluxos de exaustão industriais. ",
   "prod.desc.27": "Sistemas de incineração industrial para destruição térmica segura de resíduos sólidos e líquidos perigosos e não perigosos. ",
-  "prod.desc.28": "Trocadores de calor industriais para serviços pesados ​​projetados de acordo com os padrões TEMA. ",
+  "prod.desc.28": "Trocadores de calor industriais para serviços pesados ​​projetados de acordo com os padrões TEMA. Disponível em configurações de passagem única, passagem múltipla, tubo em U e espelho fixo para aplicações de aquecimento, resfriamento, condensação e pré-aquecimento em todos os setores.",
   "prod.desc.29": "Trocadores de calor de placas gaxetadas compactos e de alta eficiência que oferecem desempenho térmico superior em um espaço mínimo. ",
   "prod.desc.30": "Sistemas Clean-in-Place totalmente automatizados para limpeza higiênica de linhas de processo, tanques, trocadores de calor e equipamentos sem desmontagem. ",
   "prod.desc.31": "Vasos de pressão projetados e fabricados sob medida para armazenamento e processamento de gases e líquidos sob pressão. ",
@@ -575,11 +575,6 @@
   "prod.app.119": "Comida",
   "prod.app.120": "Farmacêutica",
   "prod.app.121": "Químico",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "h2.0"
-  ],
   "hero.label.0": "Produtos",
   "crumb.0": "Lar",
   "crumb.1": "Produtos",
@@ -599,5 +594,10 @@
   "h4.0": "Engenharia personalizada",
   "h4.1": "Certificado e compatível",
   "h4.2": "Eficiência Energética",
-  "h4.3": "Suporte pós-venda"
+  "h4.3": "Suporte pós-venda",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "h2.0"
+  ]
 }

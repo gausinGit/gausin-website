@@ -99,14 +99,6 @@
   "iot.label.1": "蒸汽压力",
   "iot.label.2": "能源效率",
   "iot.label.3": "流量",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0",
-    "h2.1"
-  ],
   "inno.title.0": "数控等离子和激光切割",
   "inno.title.1": "TIG / MIG / SAW 焊接",
   "inno.title.2": "精密管材轧制和成型",
@@ -129,5 +121,13 @@
   "mfg.mat.3": "双相不锈钢",
   "mfg.mat.4": "钛",
   "mfg.mat.5": "哈氏合金",
-  "mfg.mat.6": "铜合金"
+  "mfg.mat.6": "铜合金",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0",
+    "h2.1"
+  ]
 }

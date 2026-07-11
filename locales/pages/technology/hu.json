@@ -99,14 +99,6 @@
   "iot.label.1": "Gőznyomás",
   "iot.label.2": "Energiahatékonyság",
   "iot.label.3": "Áramlási sebesség",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0",
-    "h2.1"
-  ],
   "inno.title.0": "CNC plazma- és lézervágás",
   "inno.title.1": "AWI / MIG / FŰRÉSZ Hegesztés",
   "inno.title.2": "Precíziós csőhengerlés és -formázás",
@@ -129,5 +121,13 @@
   "mfg.mat.3": "Duplex SS",
   "mfg.mat.4": "Titán",
   "mfg.mat.5": "Hastelloy",
-  "mfg.mat.6": "Rézötvözet"
+  "mfg.mat.6": "Rézötvözet",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0",
+    "h2.1"
+  ]
 }

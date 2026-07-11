@@ -12,7 +12,7 @@
   "p.4": "După confirmarea comenzii, începe inginerie detaliată - proiectare CAD 3D, desene de fabricație, finalizare P&ID, proiectare structurală și toate livrabilele de inginerie.",
   "p.5": "Fabricare de precizie în atelierul nostru folosind prelucrare CNC, tăiere cu laser și sudare TIG/MIG - cu verificări riguroase de calitate, teste NDT și inspecție de la terți.",
   "p.6": "Echipa noastră de inginerie de teren se ocupă de instalarea șantierului, alinierea mecanică, conductele, conexiunile electrice, verificările înainte de punere în funcțiune și pornirea fabricii cu teste de performanță.",
-  "p.7": "Test de performanță garantat efectuat în prezența dumneavoastră. ",
+  "p.7": "Test de performanță garantat efectuat în prezența dumneavoastră. Toată documentația, manualele O&M, programele PLC și desenele as-built predate la finalizarea proiectului.",
   "p.8": "Asistență tehnică continuă, întreținere preventivă, furnizare de piese de schimb și audituri anuale de performanță pentru a vă asigura că instalația dumneavoastră continuă să funcționeze la eficiență maximă.",
   "p.9": "Contactați echipa noastră de ingineri pentru a discuta cerințele proiectului dumneavoastră. ",
   "card.title.0": "Echipa multidisciplinara",
@@ -45,13 +45,6 @@
   "stat.label.1": "Răspuns mediu la cotație",
   "stat.label.2": "Rata de livrare la timp",
   "stat.label.3": "Garanția de performanță",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0"
-  ],
   "hero.label.0": "Servicii",
   "crumb.0": "Acasă",
   "crumb.1": "Servicii",
@@ -69,7 +62,7 @@
   "svc.title.5": "Consultanță tehnică și depanare",
   "svc.desc.0": "Dezvoltăm pachete cuprinzătoare de inginerie de proces pentru instalații noi și extinderi - inclusiv scheme de proces, bilanțuri de masă și energie, dimensionarea echipamentelor, dezvoltarea P&ID și simularea proceselor folosind CHEMCAD și HTRI.",
   "svc.desc.1": "Serviciul nostru de inginerie detaliată acoperă modelare CAD 3D completă, desene de fabricație, proiectare structurală civilă, configurații de conducte, inginerie electrică, inginerie instrumentație și specificații de achiziție pentru toate echipamentele și sistemele majore.",
-  "svc.desc.2": "Management complet de proiect, de la concept până la punere în funcțiune. ",
+  "svc.desc.2": "Management complet de proiect, de la concept până la punere în funcțiune. Echipa noastră de management de proiect utilizează MS Project și metodologii agile pentru a asigura livrarea la timp, în limitele bugetului, a instalațiilor industriale complexe, cu documentație completă și predare.",
   "svc.desc.3": "Audituri complete de energie termică pentru centralele existente, identificând risipa de energie și recomandând upgrade-uri dovedite. ",
   "svc.desc.4": "Integram sisteme avansate de automatizare PLC/SCADA în instalațiile de proces noi și existente - permițând monitorizarea în timp real, secvențele de control automatizate, gestionarea alarmelor, înregistrarea datelor și accesul de la distanță prin platforme compatibile IoT.",
   "svc.desc.5": "Inginerii noștri cu experiență oferă consultanță tehnică expertă pentru depanarea proceselor, reducerea performanței, extinderea capacității, conformitatea cu reglementările și modernizarea fabricii - oferind recomandări de inginerie acționabile cu impact măsurabil.",
@@ -123,6 +116,13 @@
   "proc.desc.3": "După confirmarea comenzii, începe inginerie detaliată - proiectare CAD 3D, desene de fabricație, finalizare P&ID, proiectare structurală și toate livrabilele de inginerie.",
   "proc.desc.4": "Fabricare de precizie în atelierul nostru folosind prelucrare CNC, tăiere cu laser și sudare TIG/MIG - cu verificări riguroase de calitate, teste NDT și inspecție de la terți.",
   "proc.desc.5": "Echipa noastră de inginerie de teren se ocupă de instalarea șantierului, alinierea mecanică, conductele, conexiunile electrice, verificările înainte de punere în funcțiune și pornirea fabricii cu teste de performanță.",
-  "proc.desc.6": "Test de performanță garantat efectuat în prezența dumneavoastră. ",
-  "proc.desc.7": "Asistență tehnică continuă, întreținere preventivă, furnizare de piese de schimb și audituri anuale de performanță pentru a vă asigura că instalația dumneavoastră continuă să funcționeze la eficiență maximă."
+  "proc.desc.6": "Test de performanță garantat efectuat în prezența dumneavoastră. Toată documentația, manualele O&M, programele PLC și desenele as-built predate la finalizarea proiectului.",
+  "proc.desc.7": "Asistență tehnică continuă, întreținere preventivă, furnizare de piese de schimb și audituri anuale de performanță pentru a vă asigura că instalația dumneavoastră continuă să funcționeze la eficiență maximă.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0"
+  ]
 }

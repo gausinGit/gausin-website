@@ -30,9 +30,6 @@
   "li.7": "維護合規、會計和審計要求的記錄",
   "li.8": "提高網站效能、內容相關性和回應性品質",
   "_meta.title": "隱私權政策 |高辛國際工程師兵。有限公司",
-  "_htmlKeys": [
-    "legal.note.0"
-  ],
   "hero.label.0": "合法的",
   "legal.chipLbl.0": "文件",
   "legal.chipLbl.1": "生效日期",
@@ -74,5 +71,8 @@
   "legal.nav.2": "數據共享",
   "legal.nav.3": "安全",
   "legal.nav.4": "您的權利",
-  "legal.note.0": "<strong>隱私聯絡方式：</strong><a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> |手機: <a href=\"tel:+919870840779\">+91 98708 40779</a> |座機：<a href=\"tel:+911213504632\">+91-1212326⟧ |"
+  "legal.note.0": "<strong>隱私聯絡方式：</strong><a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> |手機: <a href=\"tel:+919870840779\">+91 98708 40779</a> |座機：<a href=\"tel:+911213504632\">+91-1212326⟧ |",
+  "_htmlKeys": [
+    "legal.note.0"
+  ]
 }

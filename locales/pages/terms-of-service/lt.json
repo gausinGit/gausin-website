@@ -17,16 +17,13 @@
   "p.3": "Visas svetainės turinys, įskaitant tekstą, grafiką, produktų išdėstymą, brėžinius ir prekės ženklo turtą, priklauso Gausin International Engineers Pvt. arba jam suteikta licencija. ",
   "p.4": "Jūs sutinkate nepiktnaudžiauti šia svetaine, nebandyti neleistinos prieigos, neleisti kenkėjiško kodo, iškrapštyti apsaugoto turinio ir nenaudoti platformos tokiu būdu, kuris kenkia svetainės funkcionalumui ar verslo reputacijai.",
   "p.5": "Tiek, kiek leidžia įstatymai, „Gausin International Engineers“ nėra atsakinga už tiesioginius, netiesioginius, atsitiktinius ar pasekminius nuostolius, atsirandančius dėl naudojimosi svetaine, laikinų prastovų, duomenų problemų arba priklausomybės nuo nesutartinio turinio.",
-  "p.6": "Mūsų svetainėje gali būti nuorodų į išorinius išteklius. ",
-  "p.7": "Šias sąlygas reglamentuoja Indijos įstatymai. ",
+  "p.6": "Mūsų svetainėje gali būti nuorodų į išorinius išteklius. Mes nekontroliuojame ir neremiame išorinių svetainių ir nesame atsakingi už jų turinį, sąlygas ar privatumo praktiką.",
+  "p.7": "Šias sąlygas reglamentuoja Indijos įstatymai. Bet kokie ginčai, susiję su svetainės naudojimu ar šių sąlygų aiškinimu, sprendžiami teismuose, turinčiuose jurisdikciją Meerute, Utar Pradeše, Indijoje.",
   "p.8": "Jei turite teisinių, sutarčių ar atitikties klausimų, susisiekite su mumis naudodami toliau pateiktą informaciją. ",
   "li.0": "Visoms citatoms reikia techninio paaiškinimo ir komercinio patvirtinimo.",
   "li.1": "Kainos, mokesčiai ir pristatymo terminai gali skirtis priklausomai nuo specifikacijų ir projekto vietos.",
   "li.2": "Gamybos, išsiuntimo, montavimo ir paleidimo sąlygos galioja tik pagal sutartą rašytinę sutartį.",
   "_meta.title": "Paslaugos sąlygos | ",
-  "_htmlKeys": [
-    "legal.note.0"
-  ],
   "hero.label.0": "Teisinė",
   "legal.chipLbl.0": "dokumentas",
   "legal.chipLbl.1": "Įsigaliojimo data",
@@ -49,8 +46,8 @@
   "legal.p.2": "Visas svetainės turinys, įskaitant tekstą, grafiką, produktų išdėstymą, brėžinius ir prekės ženklo turtą, priklauso Gausin International Engineers Pvt. arba jam suteikta licencija. ",
   "legal.p.3": "Jūs sutinkate nepiktnaudžiauti šia svetaine, nebandyti neleistinos prieigos, neleisti kenkėjiško kodo, iškrapštyti apsaugoto turinio ir nenaudoti platformos tokiu būdu, kuris kenkia svetainės funkcionalumui ar verslo reputacijai.",
   "legal.p.4": "Tiek, kiek leidžia įstatymai, „Gausin International Engineers“ nėra atsakinga už tiesioginius, netiesioginius, atsitiktinius ar pasekminius nuostolius, atsirandančius dėl naudojimosi svetaine, laikinų prastovų, duomenų problemų arba priklausomybės nuo nesutartinio turinio.",
-  "legal.p.5": "Mūsų svetainėje gali būti nuorodų į išorinius išteklius. ",
-  "legal.p.6": "Šias sąlygas reglamentuoja Indijos įstatymai. ",
+  "legal.p.5": "Mūsų svetainėje gali būti nuorodų į išorinius išteklius. Mes nekontroliuojame ir neremiame išorinių svetainių ir nesame atsakingi už jų turinį, sąlygas ar privatumo praktiką.",
+  "legal.p.6": "Šias sąlygas reglamentuoja Indijos įstatymai. Bet kokie ginčai, susiję su svetainės naudojimu ar šių sąlygų aiškinimu, sprendžiami teismuose, turinčiuose jurisdikciją Meerute, Utar Pradeše, Indijoje.",
   "legal.p.7": "Jei turite teisinių, sutarčių ar atitikties klausimų, susisiekite su mumis naudodami toliau pateiktą informaciją. ",
   "legal.li.0": "Visoms citatoms reikia techninio paaiškinimo ir komercinio patvirtinimo.",
   "legal.li.1": "Kainos, mokesčiai ir pristatymo terminai gali skirtis priklausomai nuo specifikacijų ir projekto vietos.",
@@ -62,5 +59,8 @@
   "legal.nav.2": "Intelektinė nuosavybė",
   "legal.nav.3": "Atsakomybė",
   "legal.nav.4": "Galiojantis įstatymas",
-  "legal.note.0": "<strong>Teisinis kontaktas:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | "
+  "legal.note.0": "<strong>Teisinis kontaktas:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | ",
+  "_htmlKeys": [
+    "legal.note.0"
+  ]
 }

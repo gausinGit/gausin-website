@@ -11,9 +11,6 @@
   "p.0": "Prezrite si všetky hlavné stránky a zoznamy produktov na gausin.in",
   "p.1": "Pomocou tejto stránky môžete rýchlo nájsť akúkoľvek časť našej webovej stránky. ",
   "_meta.title": "Mapa stránok | ",
-  "_htmlKeys": [
-    "map.note.0"
-  ],
   "hero.sub.0": "Prezrite si všetky hlavné stránky a zoznamy produktov na gausin.in",
   "map.intro.0": "Pomocou tejto stránky môžete rýchlo nájsť akúkoľvek časť našej webovej stránky. ",
   "map.group.0": "Hlavné stránky",
@@ -76,5 +73,10 @@
   "map.link.50": "Zmluvné podmienky",
   "map.link.51": "XML Sitemap",
   "map.link.52": "Strana 404",
-  "map.note.0": "<strong>Potrebujete pomôcť niečo nájsť?</strong> Použite ikonu vyhľadávania v hlavičke alebo\n      "
+  "map.note.0": "<strong>Potrebujete pomôcť niečo nájsť?</strong> Použite ikonu vyhľadávania v hlavičke alebo\n      ",
+  "_htmlKeys": [
+    "p.1",
+    "map.intro.0",
+    "map.note.0"
+  ]
 }

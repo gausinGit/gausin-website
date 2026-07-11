@@ -11,9 +11,6 @@
   "p.0": "Parcourez toutes les pages principales et les listes de produits sur gausin.in",
   "p.1": "Utilisez cette page pour trouver rapidement n’importe quelle section de notre site Web. ",
   "_meta.title": "Plan du site | ",
-  "_htmlKeys": [
-    "map.note.0"
-  ],
   "hero.sub.0": "Parcourez toutes les pages principales et les listes de produits sur gausin.in",
   "map.intro.0": "Utilisez cette page pour trouver rapidement n’importe quelle section de notre site Web. ",
   "map.group.0": "Pages principales",
@@ -76,5 +73,10 @@
   "map.link.50": "Conditions d'utilisation",
   "map.link.51": "Plan du site XML",
   "map.link.52": "404 pages",
-  "map.note.0": "<strong>Besoin d'aide pour trouver quelque chose ?</strong> Utilisez l'icône de recherche dans l'en-tête ou\n      "
+  "map.note.0": "<strong>Besoin d'aide pour trouver quelque chose ?</strong> Utilisez l'icône de recherche dans l'en-tête ou\n      ",
+  "_htmlKeys": [
+    "p.1",
+    "map.intro.0",
+    "map.note.0"
+  ]
 }

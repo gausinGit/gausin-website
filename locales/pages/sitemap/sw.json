@@ -9,13 +9,10 @@
   "h2.5": "Bidhaa Zaidi",
   "h2.6": "Kisheria na Usaidizi",
   "p.0": "Vinjari kurasa zote kuu na uorodheshaji wa bidhaa kwenye gausin.in",
-  "p.1": "Tumia ukurasa huu kupata haraka sehemu yoyote ya tovuti yetu. ",
+  "p.1": "Tumia ukurasa huu kupata haraka sehemu yoyote ya tovuti yetu. Kwa injini za utafutaji, ramani yetu ya tovuti ya XML inapatikana\n      <a href=\"sitemap.xml\"> ramani ya tovuti.xml</a>.",
   "_meta.title": "Ramani ya tovuti | ",
-  "_htmlKeys": [
-    "map.note.0"
-  ],
   "hero.sub.0": "Vinjari kurasa zote kuu na uorodheshaji wa bidhaa kwenye gausin.in",
-  "map.intro.0": "Tumia ukurasa huu kupata haraka sehemu yoyote ya tovuti yetu. ",
+  "map.intro.0": "Tumia ukurasa huu kupata haraka sehemu yoyote ya tovuti yetu. Kwa injini za utafutaji, ramani yetu ya tovuti ya XML inapatikana\n      <a href=\"sitemap.xml\"> ramani ya tovuti.xml</a>.",
   "map.group.0": "Kurasa Kuu",
   "map.group.1": "Aina za Bidhaa",
   "map.group.2": "Evaporators",
@@ -76,5 +73,10 @@
   "map.link.50": "Masharti ya Huduma",
   "map.link.51": "Ramani ya tovuti ya XML",
   "map.link.52": "404 Ukurasa",
-  "map.note.0": "<strong>Je, unahitaji usaidizi kupata kitu?</strong> Tumia aikoni ya utafutaji kwenye kichwa au\n      "
+  "map.note.0": "<strong>Je, unahitaji usaidizi kupata kitu?</strong> Tumia aikoni ya utafutaji kwenye kichwa au\n      ",
+  "_htmlKeys": [
+    "p.1",
+    "map.intro.0",
+    "map.note.0"
+  ]
 }

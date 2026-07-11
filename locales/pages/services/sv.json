@@ -12,9 +12,9 @@
   "p.4": "Efter orderbekräftelse påbörjas detaljerad ingenjörskonst - 3D CAD-design, tillverkningsritningar, P&ID-slutförande, strukturell design och alla tekniska leveranser.",
   "p.5": "Precisionstillverkning i vår verkstad med CNC-bearbetning, laserskärning och TIG/MIG-svetsning - med rigorösa kvalitetskontroller, NDT-testning och tredjepartsinspektion.",
   "p.6": "Vårt fältteknikteam hanterar platsinstallation, mekanisk uppriktning, rörledningar, elektriska anslutningar, kontroller före idrifttagning och anläggningsstart med prestandatestning.",
-  "p.7": "Garanterat prestandatestkörning utförs i din närvaro. ",
+  "p.7": "Garanterat prestandatestkörning utförs i din närvaro. All dokumentation, O&M-manualer, PLC-program och as-built-ritningar överlämnas vid avslutat projekt.",
   "p.8": "Löpande teknisk support, förebyggande underhåll, reservdelsförsörjning och årliga prestandarevisioner för att säkerställa att din anläggning fortsätter att fungera med högsta effektivitet.",
-  "p.9": "Kontakta vårt ingenjörsteam för att diskutera dina projektkrav. ",
+  "p.9": "Kontakta vårt ingenjörsteam för att diskutera dina projektkrav. Vi svarar inom 48 timmar med ett detaljerat tekniskt och kommersiellt förslag.",
   "card.title.0": "Multidisciplinärt team",
   "card.title.1": "Snabb vändning",
   "card.title.2": "Överensstämmelse med standarder",
@@ -45,13 +45,6 @@
   "stat.label.1": "Genomsnittligt offertsvar",
   "stat.label.2": "Leverans i tid",
   "stat.label.3": "Prestandagaranti",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0"
-  ],
   "hero.label.0": "Tjänster",
   "crumb.0": "Hem",
   "crumb.1": "Tjänster",
@@ -69,7 +62,7 @@
   "svc.title.5": "Teknisk rådgivning och felsökning",
   "svc.desc.0": "Vi utvecklar omfattande processteknikpaket för nya anläggningar och expansioner - inklusive processflödesscheman, mass- och energibalanser, utrustningsdimensionering, P&ID-utveckling och processimulering med CHEMCAD och HTRI.",
   "svc.desc.1": "Vår detaljerade ingenjörstjänst täcker komplett 3D CAD-modellering, tillverkningsritningar, civil strukturell design, rörlayouter, elteknik, instrumentteknik och upphandlingsspecifikationer för all större utrustning och system.",
-  "svc.desc.2": "Komplett end-to-end projektledning från idé till driftsättning. ",
+  "svc.desc.2": "Komplett end-to-end projektledning från idé till driftsättning. Vårt projektledningsteam använder MS Project och agila metoder för att säkerställa leverans i tid inom budgeten av komplexa industrianläggningar med fullständig dokumentation och överlämning.",
   "svc.desc.3": "Omfattande värmeenergibesiktningar för befintliga anläggningar, identifierar energislöseri och rekommenderar beprövade uppgraderingar. ",
   "svc.desc.4": "Vi integrerar avancerade PLC/SCADA-automationssystem i nya och befintliga processanläggningar – vilket möjliggör realtidsövervakning, automatiserade kontrollsekvenser, larmhantering, dataloggning och fjärråtkomst via IoT-aktiverade plattformar.",
   "svc.desc.5": "Våra erfarna ingenjörer tillhandahåller expertteknisk rådgivning för processfelsökning, minskning av prestanda, kapacitetsutvidgning, regelefterlevnad och modernisering av anläggningar - och levererar praktiska tekniska rekommendationer med mätbar effekt.",
@@ -123,6 +116,13 @@
   "proc.desc.3": "Efter orderbekräftelse påbörjas detaljerad ingenjörskonst - 3D CAD-design, tillverkningsritningar, P&ID-slutförande, strukturell design och alla tekniska leveranser.",
   "proc.desc.4": "Precisionstillverkning i vår verkstad med CNC-bearbetning, laserskärning och TIG/MIG-svetsning - med rigorösa kvalitetskontroller, NDT-testning och tredjepartsinspektion.",
   "proc.desc.5": "Vårt fältteknikteam hanterar platsinstallation, mekanisk uppriktning, rörledningar, elektriska anslutningar, kontroller före idrifttagning och anläggningsstart med prestandatestning.",
-  "proc.desc.6": "Garanterat prestandatestkörning utförs i din närvaro. ",
-  "proc.desc.7": "Löpande teknisk support, förebyggande underhåll, reservdelsförsörjning och årliga prestandarevisioner för att säkerställa att din anläggning fortsätter att fungera med högsta effektivitet."
+  "proc.desc.6": "Garanterat prestandatestkörning utförs i din närvaro. All dokumentation, O&M-manualer, PLC-program och as-built-ritningar överlämnas vid avslutat projekt.",
+  "proc.desc.7": "Löpande teknisk support, förebyggande underhåll, reservdelsförsörjning och årliga prestandarevisioner för att säkerställa att din anläggning fortsätter att fungera med högsta effektivitet.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0"
+  ]
 }

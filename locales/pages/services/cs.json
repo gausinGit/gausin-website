@@ -12,7 +12,7 @@
   "p.4": "Po potvrzení objednávky začíná detailní inženýrství - 3D CAD návrh, výrobní výkresy, finalizace P&ID, konstrukční návrh a veškeré inženýrské dodávky.",
   "p.5": "Precizní výroba v naší dílně pomocí CNC obrábění, laserového řezání a svařování TIG/MIG - s přísnými kontrolami kvality, NDT testováním a kontrolou třetí strany.",
   "p.6": "Náš tým inženýrů v terénu se stará o instalaci na místě, mechanické vyrovnání, potrubí, elektrická připojení, kontroly před uvedením do provozu a spuštění závodu s testováním výkonu.",
-  "p.7": "Zaručený test výkonu provedený ve vaší přítomnosti. ",
+  "p.7": "Zaručený test výkonu provedený ve vaší přítomnosti. Veškerá dokumentace, O&M manuály, PLC programy a výkresy skutečného stavu předány po dokončení projektu.",
   "p.8": "Průběžná technická podpora, preventivní údržba, dodávky náhradních dílů a roční audity výkonu, aby bylo zajištěno, že váš závod bude nadále fungovat s maximální efektivitou.",
   "p.9": "Kontaktujte náš technický tým a prodiskutujte vaše požadavky na projekt. ",
   "card.title.0": "Multidisciplinární tým",
@@ -45,13 +45,6 @@
   "stat.label.1": "Průměrná odpověď na nabídku",
   "stat.label.2": "Sazba včasného doručení",
   "stat.label.3": "Záruka výkonu",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0"
-  ],
   "hero.label.0": "Služby",
   "crumb.0": "Domov",
   "crumb.1": "Služby",
@@ -69,8 +62,8 @@
   "svc.title.5": "Technické poradenství a odstraňování problémů",
   "svc.desc.0": "Vyvíjíme komplexní balíčky procesního inženýrství pro nové závody a rozšíření – včetně procesních schémat, hmotnostních a energetických bilancí, dimenzování zařízení, vývoje P&ID a simulace procesů pomocí CHEMCAD a HTRI.",
   "svc.desc.1": "Naše podrobné inženýrské služby pokrývají kompletní 3D CAD modelování, výrobní výkresy, stavební konstrukční návrh, rozvržení potrubí, elektrotechniku, přístrojové inženýrství a zadávací specifikace pro všechna hlavní zařízení a systémy.",
-  "svc.desc.2": "Kompletní komplexní řízení projektu od konceptu až po uvedení do provozu. ",
-  "svc.desc.3": "Komplexní audity tepelné energie pro stávající zařízení, identifikující plýtvání energií a doporučení osvědčených modernizací. ",
+  "svc.desc.2": "Kompletní komplexní řízení projektu od konceptu až po uvedení do provozu. Náš tým projektového managementu využívá MS Project a agilní metodiky k zajištění včasné dodávky komplexních průmyslových závodů v rámci rozpočtu s plnou dokumentací a předáním.",
+  "svc.desc.3": "Komplexní audity tepelné energie pro stávající zařízení, identifikující plýtvání energií a doporučení osvědčených modernizací. Specializujeme se na víceúčinnou odpařovací konverzi, TVR (Thermo Vapor Recompressor) / MVR (Mechanical Vapor Recompression) modernizaci a integraci rekuperace tepla.",
   "svc.desc.4": "Integrujeme pokročilé automatizační systémy PLC/SCADA do nových i stávajících procesních závodů – umožňujeme monitorování v reálném čase, automatizované řídicí sekvence, správu alarmů, protokolování dat a vzdálený přístup prostřednictvím platforem podporujících IoT.",
   "svc.desc.5": "Naši zkušení inženýři poskytují odborné technické poradenství pro odstraňování problémů, odstraňování překážek výkonu, rozšiřování kapacity, dodržování předpisů a modernizaci závodu – poskytují praktická technická doporučení s měřitelným dopadem.",
   "svc.feat.0": "Simulace procesů (CHEMCAD)",
@@ -123,6 +116,13 @@
   "proc.desc.3": "Po potvrzení objednávky začíná detailní inženýrství - 3D CAD návrh, výrobní výkresy, finalizace P&ID, konstrukční návrh a veškeré inženýrské dodávky.",
   "proc.desc.4": "Precizní výroba v naší dílně pomocí CNC obrábění, laserového řezání a svařování TIG/MIG - s přísnými kontrolami kvality, NDT testováním a kontrolou třetí strany.",
   "proc.desc.5": "Náš tým inženýrů v terénu se stará o instalaci na místě, mechanické vyrovnání, potrubí, elektrická připojení, kontroly před uvedením do provozu a spuštění závodu s testováním výkonu.",
-  "proc.desc.6": "Zaručený test výkonu provedený ve vaší přítomnosti. ",
-  "proc.desc.7": "Průběžná technická podpora, preventivní údržba, dodávky náhradních dílů a roční audity výkonu, aby bylo zajištěno, že váš závod bude nadále fungovat s maximální efektivitou."
+  "proc.desc.6": "Zaručený test výkonu provedený ve vaší přítomnosti. Veškerá dokumentace, O&M manuály, PLC programy a výkresy skutečného stavu předány po dokončení projektu.",
+  "proc.desc.7": "Průběžná technická podpora, preventivní údržba, dodávky náhradních dílů a roční audity výkonu, aby bylo zajištěno, že váš závod bude nadále fungovat s maximální efektivitou.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0"
+  ]
 }

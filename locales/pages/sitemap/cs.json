@@ -9,13 +9,10 @@
   "h2.5": "Další produkty",
   "h2.6": "Právní a podpora",
   "p.0": "Procházejte všechny hlavní stránky a výpisy produktů na gausin.in",
-  "p.1": "Pomocí této stránky můžete rychle najít jakoukoli sekci našeho webu. ",
+  "p.1": "Pomocí této stránky můžete rychle najít jakoukoli sekci našeho webu. Pro vyhledávače je k dispozici naše mapa webu XML na adrese\n      <a href=\"sitemap.xml\">sitemap.xml</a>.",
   "_meta.title": "Mapa stránek | ",
-  "_htmlKeys": [
-    "map.note.0"
-  ],
   "hero.sub.0": "Procházejte všechny hlavní stránky a výpisy produktů na gausin.in",
-  "map.intro.0": "Pomocí této stránky můžete rychle najít jakoukoli sekci našeho webu. ",
+  "map.intro.0": "Pomocí této stránky můžete rychle najít jakoukoli sekci našeho webu. Pro vyhledávače je k dispozici naše mapa webu XML na adrese\n      <a href=\"sitemap.xml\">sitemap.xml</a>.",
   "map.group.0": "Hlavní stránky",
   "map.group.1": "Kategorie produktů",
   "map.group.2": "Výparníky",
@@ -76,5 +73,10 @@
   "map.link.50": "Podmínky služby",
   "map.link.51": "XML Sitemap",
   "map.link.52": "Strana 404",
-  "map.note.0": "<strong>Potřebujete pomoc při hledání?</strong> Použijte ikonu hledání v záhlaví nebo\n      "
+  "map.note.0": "<strong>Potřebujete pomoc při hledání?</strong> Použijte ikonu hledání v záhlaví nebo\n      ",
+  "_htmlKeys": [
+    "p.1",
+    "map.intro.0",
+    "map.note.0"
+  ]
 }

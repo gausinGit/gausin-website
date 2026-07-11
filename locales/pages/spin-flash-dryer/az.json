@@ -1,10 +1,4 @@
 {
-  "_htmlKeys": [
-    "tagline",
-    "overview.p0",
-    "overview.p1",
-    "overview.p2"
-  ],
   "category": "Qurutma maşınları",
   "breadcrumb.cat.0": "Qurutma maşınları",
   "qs.0.label": "Yem forması",
@@ -118,5 +112,11 @@
   "tagline": "Pastalar, filtr tortları, şlamlar və nəm dənəvər materiallar üçün bir pilləli quruducu, əvvəlcədən qurudulmadan birbaşa qurudulur. ",
   "overview.p0": "<strong style=\"color:var(--gray-900);\">Gausin Spin Flash Quruducu</strong> pasta kimi, yapışqan və filtrli tort yemlərini bir addımda qurudur. ",
   "overview.p1": "Kameranın yuxarı hissəsində quraşdırılmış klassifikator yalnız kifayət qədər quru, incə hissəciklərin hava ilə birlikdə çıxmasına imkan verir, daha ağır yaş topaqlar isə qurudulana və ölçüləri azalana qədər qalır. ",
-  "overview.p2": "Kompakt dizayn bir neçə avadanlığı (əvvəlcədən quruducu, dəyirman, quruducu) bir vahidlə əvəz edir. "
+  "overview.p2": "Kompakt dizayn bir neçə avadanlığı (əvvəlcədən quruducu, dəyirman, quruducu) bir vahidlə əvəz edir. ",
+  "_htmlKeys": [
+    "tagline",
+    "overview.p0",
+    "overview.p1",
+    "overview.p2"
+  ]
 }

@@ -14,7 +14,7 @@
   "p.0": "Hvordan Gausin International Engineers samler inn, bruker og beskytter informasjonen din.",
   "p.1": "Når du kontakter oss for industrielt utstyr, prosjektdiskusjoner, servicestøtte eller tilbud, kan vi samle inn:",
   "p.2": "Vi behandler data basert på ditt samtykke (skjemainnleveringer), legitime forretningsinteresser (B2B-kommunikasjon og støtte) og juridiske forpliktelser (skatte-/overholdelsesregister).",
-  "p.3": "Vi selger ikke personopplysninger. ",
+  "p.3": "Vi selger ikke personopplysninger. Vi kan dele begrenset informasjon med pålitelige tjenesteleverandører (hosting, kommunikasjon, CRM, regnskap) bare etter behov for å drive virksomheten vår. Vi kan også utlevere data hvis det kreves av lov eller kompetent myndighet.",
   "p.4": "Forespørsels- og forretningskommunikasjonsdata oppbevares så lenge det er nødvendig for prosjektengasjement, støtte og juridisk/kommersiell journalføring. ",
   "p.5": "Vi bruker praktiske administrative og tekniske sikkerhetstiltak for å beskytte data mot uautorisert tilgang, endring eller misbruk. ",
   "p.6": "Nettstedet vårt kan bruke informasjonskapsler og lignende teknologier for øktadministrasjon, ytelsessporing og forbedringer av brukeropplevelsen. ",
@@ -30,9 +30,6 @@
   "li.7": "Opprettholde poster for overholdelse, regnskap og revisjonskrav",
   "li.8": "Forbedre nettstedets ytelse, innholdsrelevans og svarkvalitet",
   "_meta.title": "Personvernerklæring | ",
-  "_htmlKeys": [
-    "legal.note.0"
-  ],
   "hero.label.0": "Lovlig",
   "legal.chipLbl.0": "Dokument",
   "legal.chipLbl.1": "Ikrafttredelsesdato",
@@ -52,7 +49,7 @@
   "legal.h3.8": "9) Policyoppdateringer",
   "legal.p.0": "Når du kontakter oss for industrielt utstyr, prosjektdiskusjoner, servicestøtte eller tilbud, kan vi samle inn:",
   "legal.p.1": "Vi behandler data basert på ditt samtykke (skjemainnleveringer), legitime forretningsinteresser (B2B-kommunikasjon og støtte) og juridiske forpliktelser (skatte-/overholdelsesregister).",
-  "legal.p.2": "Vi selger ikke personopplysninger. ",
+  "legal.p.2": "Vi selger ikke personopplysninger. Vi kan dele begrenset informasjon med pålitelige tjenesteleverandører (hosting, kommunikasjon, CRM, regnskap) bare etter behov for å drive virksomheten vår. Vi kan også utlevere data hvis det kreves av lov eller kompetent myndighet.",
   "legal.p.3": "Forespørsels- og forretningskommunikasjonsdata oppbevares så lenge det er nødvendig for prosjektengasjement, støtte og juridisk/kommersiell journalføring. ",
   "legal.p.4": "Vi bruker praktiske administrative og tekniske sikkerhetstiltak for å beskytte data mot uautorisert tilgang, endring eller misbruk. ",
   "legal.p.5": "Nettstedet vårt kan bruke informasjonskapsler og lignende teknologier for øktadministrasjon, ytelsessporing og forbedringer av brukeropplevelsen. ",
@@ -74,5 +71,8 @@
   "legal.nav.2": "Datadeling",
   "legal.nav.3": "Sikkerhet",
   "legal.nav.4": "Dine rettigheter",
-  "legal.note.0": "<strong>Personvernkontakt:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | "
+  "legal.note.0": "<strong>Personvernkontakt:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | ",
+  "_htmlKeys": [
+    "legal.note.0"
+  ]
 }

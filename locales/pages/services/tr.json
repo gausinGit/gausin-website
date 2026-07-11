@@ -45,13 +45,6 @@
   "stat.label.1": "Ortalama Fiyat Teklifi Yanıtı",
   "stat.label.2": "Zamanında Teslimat Oranı",
   "stat.label.3": "Performans Garantisi",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0"
-  ],
   "hero.label.0": "Hizmetler",
   "crumb.0": "Ev",
   "crumb.1": "Hizmetler",
@@ -69,7 +62,7 @@
   "svc.title.5": "Teknik Danışmanlık ve Sorun Giderme",
   "svc.desc.0": "Yeni tesisler ve genişlemeler için, proses akış şemaları, kütle ve enerji dengeleri, ekipman boyutlandırma, P&ID geliştirme ve CHEMCAD ve HTRI kullanılarak proses simülasyonu dahil olmak üzere kapsamlı proses mühendisliği paketleri geliştiriyoruz.",
   "svc.desc.1": "Ayrıntılı mühendislik hizmetimiz, tüm önemli ekipman ve sistemler için eksiksiz 3D CAD modellemeyi, imalat çizimlerini, inşaat yapı tasarımını, boru düzenlerini, elektrik mühendisliğini, enstrümantasyon mühendisliğini ve satın alma özelliklerini kapsar.",
-  "svc.desc.2": "Konseptten devreye almaya kadar uçtan uca proje yönetimini tamamlayın. ",
+  "svc.desc.2": "Konseptten devreye almaya kadar uçtan uca proje yönetimini tamamlayın. Proje yönetimi ekibimiz, karmaşık endüstriyel tesislerin tam dokümantasyon ve devir teslim ile zamanında, bütçe dahilinde teslim edilmesini sağlamak için MS Project ve çevik metodolojileri kullanıyor.",
   "svc.desc.3": "Mevcut tesisler için kapsamlı termal enerji denetimleri, enerji israfının belirlenmesi ve kanıtlanmış iyileştirmelerin önerilmesi. ",
   "svc.desc.4": "Gelişmiş PLC/SCADA otomasyon sistemlerini yeni ve mevcut proses tesislerine entegre ederek gerçek zamanlı izleme, otomatik kontrol dizileri, alarm yönetimi, veri kaydı ve IoT özellikli platformlar aracılığıyla uzaktan erişim sağlıyoruz.",
   "svc.desc.5": "Deneyimli mühendislerimiz, proses sorun giderme, performans darboğazını giderme, kapasite genişletme, mevzuata uygunluk ve tesis modernizasyonu için uzman teknik danışmanlık sağlayarak ölçülebilir etkiye sahip eyleme dönüştürülebilir mühendislik önerileri sunar.",
@@ -124,5 +117,12 @@
   "proc.desc.4": "Atölyemizde CNC işleme, lazer kesim ve TIG/MIG kaynağı kullanılarak, sıkı kalite kontrolleri, NDT testleri ve üçüncü taraf denetimiyle hassas üretim.",
   "proc.desc.5": "Saha mühendislik ekibimiz saha kurulumunu, mekanik hizalamayı, boruları, elektrik bağlantılarını, işletmeye alma öncesi kontrolleri ve performans testleri ile tesisin devreye alınmasını gerçekleştirir.",
   "proc.desc.6": "Sizin huzurunuzda gerçekleştirilen garantili performans testi çalıştırması. ",
-  "proc.desc.7": "Tesisinizin en yüksek verimlilikte çalışmaya devam etmesini sağlamak için sürekli teknik destek, önleyici bakım, yedek parça tedariği ve yıllık performans denetimleri."
+  "proc.desc.7": "Tesisinizin en yüksek verimlilikte çalışmaya devam etmesini sağlamak için sürekli teknik destek, önleyici bakım, yedek parça tedariği ve yıllık performans denetimleri.",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0"
+  ]
 }

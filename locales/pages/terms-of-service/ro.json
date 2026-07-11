@@ -17,16 +17,13 @@
   "p.3": "Tot conținutul site-ului web, inclusiv textul, grafica, machetele produselor, desenele și activele mărcii, este deținut de Gausin International Engineers Pvt. sau licențiat către acesta. ",
   "p.4": "Sunteți de acord să nu folosiți greșit acest site web, să încercați acces neautorizat, să nu injectați cod rău intenționat, să răzuiți conținut protejat sau să utilizați platforma într-un mod care dăunează funcționalității site-ului sau reputației afacerii.",
   "p.5": "În măsura maximă permisă de lege, Gausin International Engineers nu va fi răspunzător pentru pierderile directe, indirecte, incidentale sau consecutive care decurg din utilizarea site-ului web, timpi de oprire temporară, probleme de date sau încrederea în conținutul necontractual.",
-  "p.6": "Site-ul nostru web poate include link-uri către resurse externe. ",
-  "p.7": "Acești termeni sunt guvernați de legile din India. ",
+  "p.6": "Site-ul nostru web poate include link-uri către resurse externe. Nu controlăm și nu aprobăm site-urile web externe și nu suntem responsabili pentru conținutul, termenii sau practicile de confidențialitate ale acestora.",
+  "p.7": "Acești termeni sunt guvernați de legile din India. Orice dispute legate de utilizarea site-ului sau interpretarea acestor termeni vor fi supuse instanțelor cu jurisdicție din Meerut, Uttar Pradesh, India.",
   "p.8": "Pentru întrebări legale, contractuale sau de conformitate, contactați-ne folosind detaliile de mai jos. ",
   "li.0": "Toate ofertele sunt supuse clarificărilor tehnice și aprobării comerciale.",
   "li.1": "Prețurile, taxele și termenele de livrare pot varia în funcție de specificații și de locația proiectului.",
   "li.2": "Condițiile de producție, expediere, instalare și punere în funcțiune sunt valabile numai conform contractului scris convenit.",
   "_meta.title": "Termeni și condiții | ",
-  "_htmlKeys": [
-    "legal.note.0"
-  ],
   "hero.label.0": "Legal",
   "legal.chipLbl.0": "Document",
   "legal.chipLbl.1": "Data intrării în vigoare",
@@ -49,8 +46,8 @@
   "legal.p.2": "Tot conținutul site-ului web, inclusiv textul, grafica, machetele produselor, desenele și activele mărcii, este deținut de Gausin International Engineers Pvt. sau licențiat către acesta. ",
   "legal.p.3": "Sunteți de acord să nu folosiți greșit acest site web, să încercați acces neautorizat, să nu injectați cod rău intenționat, să răzuiți conținut protejat sau să utilizați platforma într-un mod care dăunează funcționalității site-ului sau reputației afacerii.",
   "legal.p.4": "În măsura maximă permisă de lege, Gausin International Engineers nu va fi răspunzător pentru pierderile directe, indirecte, incidentale sau consecutive care decurg din utilizarea site-ului web, timpi de oprire temporară, probleme de date sau încrederea în conținutul necontractual.",
-  "legal.p.5": "Site-ul nostru web poate include link-uri către resurse externe. ",
-  "legal.p.6": "Acești termeni sunt guvernați de legile din India. ",
+  "legal.p.5": "Site-ul nostru web poate include link-uri către resurse externe. Nu controlăm și nu aprobăm site-urile web externe și nu suntem responsabili pentru conținutul, termenii sau practicile de confidențialitate ale acestora.",
+  "legal.p.6": "Acești termeni sunt guvernați de legile din India. Orice dispute legate de utilizarea site-ului sau interpretarea acestor termeni vor fi supuse instanțelor cu jurisdicție din Meerut, Uttar Pradesh, India.",
   "legal.p.7": "Pentru întrebări legale, contractuale sau de conformitate, contactați-ne folosind detaliile de mai jos. ",
   "legal.li.0": "Toate ofertele sunt supuse clarificărilor tehnice și aprobării comerciale.",
   "legal.li.1": "Prețurile, taxele și termenele de livrare pot varia în funcție de specificații și de locația proiectului.",
@@ -62,5 +59,8 @@
   "legal.nav.2": "Proprietate intelectuală",
   "legal.nav.3": "Răspundere",
   "legal.nav.4": "Legea aplicabilă",
-  "legal.note.0": "<strong>Contact juridic:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | "
+  "legal.note.0": "<strong>Contact juridic:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | ",
+  "_htmlKeys": [
+    "legal.note.0"
+  ]
 }

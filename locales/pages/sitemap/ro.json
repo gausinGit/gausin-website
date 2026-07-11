@@ -11,9 +11,6 @@
   "p.0": "Răsfoiți toate paginile principale și listele de produse pe gausin.in",
   "p.1": "Utilizați această pagină pentru a găsi rapid orice secțiune a site-ului nostru. ",
   "_meta.title": "Harta site-ului | ",
-  "_htmlKeys": [
-    "map.note.0"
-  ],
   "hero.sub.0": "Răsfoiți toate paginile principale și listele de produse pe gausin.in",
   "map.intro.0": "Utilizați această pagină pentru a găsi rapid orice secțiune a site-ului nostru. ",
   "map.group.0": "Paginile principale",
@@ -76,5 +73,10 @@
   "map.link.50": "Termeni și condiții",
   "map.link.51": "Sitemap XML",
   "map.link.52": "404 Pagina",
-  "map.note.0": "<strong>Aveți nevoie de ajutor pentru a găsi ceva?</strong> Folosiți pictograma de căutare din antet sau\n      "
+  "map.note.0": "<strong>Aveți nevoie de ajutor pentru a găsi ceva?</strong> Folosiți pictograma de căutare din antet sau\n      ",
+  "_htmlKeys": [
+    "p.1",
+    "map.intro.0",
+    "map.note.0"
+  ]
 }

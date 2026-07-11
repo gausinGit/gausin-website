@@ -17,16 +17,13 @@
   "p.3": "Semua konten situs web, termasuk teks, grafik, tata letak produk, gambar, dan aset merek, dimiliki oleh atau dilisensikan kepada Gausin International Engineers Pvt. ",
   "p.4": "Anda setuju untuk tidak menyalahgunakan situs web ini, mencoba akses tanpa izin, memasukkan kode berbahaya, mengikis konten yang dilindungi, atau menggunakan platform dengan cara yang merusak fungsi situs web atau reputasi bisnis.",
   "p.5": "Sejauh diizinkan oleh hukum, Gausin International Engineers tidak bertanggung jawab atas kerugian langsung, tidak langsung, insidental, atau konsekuensial yang timbul dari penggunaan situs web, waktu henti sementara, masalah data, atau ketergantungan pada konten non-kontraktual.",
-  "p.6": "Situs web kami mungkin menyertakan tautan ke sumber eksternal. ",
-  "p.7": "Ketentuan ini diatur oleh hukum India. ",
+  "p.6": "Situs web kami mungkin menyertakan tautan ke sumber eksternal. Kami tidak mengontrol atau mendukung situs web eksternal dan tidak bertanggung jawab atas konten, ketentuan, atau praktik privasinya.",
+  "p.7": "Ketentuan ini diatur oleh hukum India. Setiap perselisihan terkait penggunaan situs web atau penafsiran ketentuan ini akan tunduk pada pengadilan yang memiliki yurisdiksi di Meerut, Uttar Pradesh, India.",
   "p.8": "Untuk pertanyaan hukum, kontrak, atau kepatuhan, hubungi kami menggunakan detail di bawah. ",
   "li.0": "Semua kutipan tunduk pada klarifikasi teknis dan persetujuan komersial.",
   "li.1": "Harga, pajak, dan jadwal pengiriman dapat bervariasi berdasarkan spesifikasi dan lokasi proyek.",
   "li.2": "Persyaratan produksi, pengiriman, pemasangan, dan commissioning hanya berlaku sesuai kontrak tertulis yang disepakati.",
   "_meta.title": "Ketentuan Layanan | ",
-  "_htmlKeys": [
-    "legal.note.0"
-  ],
   "hero.label.0": "Legal",
   "legal.chipLbl.0": "Dokumen",
   "legal.chipLbl.1": "Tanggal berlaku",
@@ -49,8 +46,8 @@
   "legal.p.2": "Semua konten situs web, termasuk teks, grafik, tata letak produk, gambar, dan aset merek, dimiliki oleh atau dilisensikan kepada Gausin International Engineers Pvt. ",
   "legal.p.3": "Anda setuju untuk tidak menyalahgunakan situs web ini, mencoba akses tanpa izin, memasukkan kode berbahaya, mengikis konten yang dilindungi, atau menggunakan platform dengan cara yang merusak fungsi situs web atau reputasi bisnis.",
   "legal.p.4": "Sejauh diizinkan oleh hukum, Gausin International Engineers tidak bertanggung jawab atas kerugian langsung, tidak langsung, insidental, atau konsekuensial yang timbul dari penggunaan situs web, waktu henti sementara, masalah data, atau ketergantungan pada konten non-kontraktual.",
-  "legal.p.5": "Situs web kami mungkin menyertakan tautan ke sumber eksternal. ",
-  "legal.p.6": "Ketentuan ini diatur oleh hukum India. ",
+  "legal.p.5": "Situs web kami mungkin menyertakan tautan ke sumber eksternal. Kami tidak mengontrol atau mendukung situs web eksternal dan tidak bertanggung jawab atas konten, ketentuan, atau praktik privasinya.",
+  "legal.p.6": "Ketentuan ini diatur oleh hukum India. Setiap perselisihan terkait penggunaan situs web atau penafsiran ketentuan ini akan tunduk pada pengadilan yang memiliki yurisdiksi di Meerut, Uttar Pradesh, India.",
   "legal.p.7": "Untuk pertanyaan hukum, kontrak, atau kepatuhan, hubungi kami menggunakan detail di bawah. ",
   "legal.li.0": "Semua kutipan tunduk pada klarifikasi teknis dan persetujuan komersial.",
   "legal.li.1": "Harga, pajak, dan jadwal pengiriman dapat bervariasi berdasarkan spesifikasi dan lokasi proyek.",
@@ -62,5 +59,8 @@
   "legal.nav.2": "Kekayaan Intelektual",
   "legal.nav.3": "Beban",
   "legal.nav.4": "Hukum yang Mengatur",
-  "legal.note.0": "<strong>Kontak Resmi:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | "
+  "legal.note.0": "<strong>Kontak Resmi:</strong> <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=info@gausin.in\" target=\"_blank\" rel=\"noopener\">info@gausin.in</a> | ",
+  "_htmlKeys": [
+    "legal.note.0"
+  ]
 }

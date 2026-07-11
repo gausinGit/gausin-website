@@ -11,9 +11,6 @@
   "p.0": "Durchsuchen Sie alle Hauptseiten und Produktlisten auf gausin.in",
   "p.1": "Verwenden Sie diese Seite, um schnell einen beliebigen Bereich unserer Website zu finden. ",
   "_meta.title": "Sitemap | ",
-  "_htmlKeys": [
-    "map.note.0"
-  ],
   "hero.sub.0": "Durchsuchen Sie alle Hauptseiten und Produktlisten auf gausin.in",
   "map.intro.0": "Verwenden Sie diese Seite, um schnell einen beliebigen Bereich unserer Website zu finden. ",
   "map.group.0": "Hauptseiten",
@@ -76,5 +73,10 @@
   "map.link.50": "Nutzungsbedingungen",
   "map.link.51": "XML-Sitemap",
   "map.link.52": "404 Seite",
-  "map.note.0": "<strong>Benötigen Sie Hilfe bei der Suche?</strong> Verwenden Sie das Suchsymbol in der Kopfzeile oder\n      "
+  "map.note.0": "<strong>Benötigen Sie Hilfe bei der Suche?</strong> Verwenden Sie das Suchsymbol in der Kopfzeile oder\n      ",
+  "_htmlKeys": [
+    "p.1",
+    "map.intro.0",
+    "map.note.0"
+  ]
 }

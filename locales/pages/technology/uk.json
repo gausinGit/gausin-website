@@ -99,14 +99,6 @@
   "iot.label.1": "Тиск пари",
   "iot.label.2": "Енергоефективність",
   "iot.label.3": "Швидкість потоку",
-  "_htmlKeys": [
-    "hero.title.0",
-    "sec.title.0",
-    "sec.title.1",
-    "sec.title.2",
-    "h2.0",
-    "h2.1"
-  ],
   "inno.title.0": "Плазмове та лазерне різання з ЧПУ",
   "inno.title.1": "Зварювання TIG / MIG / SAW",
   "inno.title.2": "Прецизійна прокатка та формування труб",
@@ -129,5 +121,13 @@
   "mfg.mat.3": "Дуплекс SS",
   "mfg.mat.4": "Титан",
   "mfg.mat.5": "Хастеллой",
-  "mfg.mat.6": "Мідний сплав"
+  "mfg.mat.6": "Мідний сплав",
+  "_htmlKeys": [
+    "hero.title.0",
+    "sec.title.0",
+    "sec.title.1",
+    "sec.title.2",
+    "h2.0",
+    "h2.1"
+  ]
 }
