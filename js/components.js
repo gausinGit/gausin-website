@@ -1809,7 +1809,7 @@ window.gausinGetLang = () => _TR.active;
 } // END LEGACY Google Translate
 
 /* ─── Hybrid Static i18n (Phase 1) ─────────────────────────── */
-const GAUSIN_I18N_ASSET_V = '20260712f';
+const GAUSIN_I18N_ASSET_V = '20260712g';
 (function preloadGausinI18n() {
   if (document.querySelector('script[data-gausin-i18n]')) return;
   const page = document.createElement('script');
