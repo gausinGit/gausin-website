@@ -13,7 +13,7 @@ const EN_PATH = path.join(LOCALES, 'en.json');
 const ALL_LANGS = [
   'de', 'hi', 'fr', 'ar', 'es', 'pt', 'bg', 'cs', 'el', 'hu', 'id', 'it', 'ja', 'ko',
   'lt', 'lv', 'ms', 'nl', 'no', 'pl', 'ro', 'sk', 'sl', 'sr', 'sv', 'sw', 'th', 'tr', 'uk', 'zh-CN', 'zh-TW',
-  'az', 'he', 'ps', 'fa', 'si',
+  'az', 'he', 'ps', 'fa', 'si', 'vi', 'bn',
 ];
 
 const DE_OVERRIDES = {

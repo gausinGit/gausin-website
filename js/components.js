@@ -301,6 +301,7 @@ const LANGUAGES = [
   { id: 'au', code: 'en', label: 'Australia', flag: '🇦🇺', continent: 'oceania' },
   { id: 'at', code: 'de', label: 'Austria', flag: '🇦🇹', continent: 'europe' },
   { id: 'af', code: 'ps', label: 'Afghanistan', flag: '🇦🇫', continent: 'asia' },
+  { id: 'bd', code: 'bn', label: 'Bangladesh', flag: '🇧🇩', continent: 'asia' },
   { id: 'az', code: 'az', label: 'Azerbaijan', flag: '🇦🇿', continent: 'asia' },
   { id: 'be', code: 'nl', label: 'Belgium', flag: '🇧🇪', continent: 'europe' },
   { id: 'br', code: 'pt', label: 'Brazil', flag: '🇧🇷', continent: 'south-america' },
@@ -320,10 +321,12 @@ const LANGUAGES = [
   { id: 'il', code: 'he', label: 'Israel', flag: '🇮🇱', continent: 'africa-middle-east' },
   { id: 'ir', code: 'fa', label: 'Iran', flag: '🇮🇷', continent: 'africa-middle-east' },
   { id: 'my', code: 'ms', label: 'Malaysia', flag: '🇲🇾', continent: 'asia' },
+  { id: 'mx', code: 'es', label: 'Mexico', flag: '🇲🇽', continent: 'north-america' },
   { id: 'sg', code: 'en', label: 'Singapore', flag: '🇸🇬', continent: 'asia' },
   { id: 'lk', code: 'si', label: 'Sri Lanka', flag: '🇱🇰', continent: 'asia' },
   { id: 'it', code: 'it', label: 'Italy', flag: '🇮🇹', continent: 'europe' },
   { id: 'jp', code: 'ja', label: 'Japan', flag: '🇯🇵', continent: 'asia' },
+  { id: 'ke', code: 'sw', label: 'Kenya', flag: '🇰🇪', continent: 'africa-middle-east' },
   { id: 'kr', code: 'ko', label: 'Korea', flag: '🇰🇷', continent: 'asia' },
   { id: 'lv', code: 'lv', label: 'Latvia', flag: '🇱🇻', continent: 'europe' },
   { id: 'lt', code: 'lt', label: 'Lithuania', flag: '🇱🇹', continent: 'europe' },
@@ -331,14 +334,18 @@ const LANGUAGES = [
   { id: 'qa', code: 'ar', label: 'Qatar', flag: '🇶🇦', continent: 'africa-middle-east' },
   { id: 'nl', code: 'nl', label: 'Netherlands', flag: '🇳🇱', continent: 'europe' },
   { id: 'nz', code: 'en', label: 'New Zealand', flag: '🇳🇿', continent: 'oceania' },
+  { id: 'ng', code: 'en', label: 'Nigeria', flag: '🇳🇬', continent: 'africa-middle-east' },
   { id: 'no', code: 'no', label: 'Norway', flag: '🇳🇴', continent: 'europe' },
   { id: 'pe', code: 'es', label: 'Peru', flag: '🇵🇪', continent: 'south-america' },
   { id: 'pl', code: 'pl', label: 'Poland', flag: '🇵🇱', continent: 'europe' },
   { id: 'ro', code: 'ro', label: 'Romania', flag: '🇷🇴', continent: 'europe' },
   { id: 'rs', code: 'sr', label: 'Serbia', flag: '🇷🇸', continent: 'europe' },
+  { id: 'sa', code: 'ar', label: 'Saudi Arabia', flag: '🇸🇦', continent: 'africa-middle-east' },
   { id: 'sk', code: 'sk', label: 'Slovakia', flag: '🇸🇰', continent: 'europe' },
   { id: 'si', code: 'sl', label: 'Slovenia', flag: '🇸🇮', continent: 'europe' },
+  { id: 'esp', code: 'es', label: 'Spain', flag: '🇪🇸', continent: 'europe' },
   { id: 'ea', code: 'sw', label: 'East Africa', flag: 'EA', continent: 'africa-middle-east' },
+  { id: 'eg', code: 'ar', label: 'Egypt', flag: '🇪🇬', continent: 'africa-middle-east' },
   { id: 'na', code: 'ar', label: 'North Africa', flag: 'NA', continent: 'africa-middle-east' },
   { id: 'za', code: 'en', label: 'South Africa', flag: 'ZA', continent: 'africa-middle-east' },
   { id: 'wa', code: 'fr', label: 'West Africa', flag: 'WA', continent: 'africa-middle-east' },
@@ -351,6 +358,7 @@ const LANGUAGES = [
   { id: 'gb', code: 'en', label: 'United Kingdom', flag: '🇬🇧', continent: 'europe' },
   { id: 'us', code: 'en', label: 'United States', flag: '🇺🇸', continent: 'north-america' },
   { id: 'ua', code: 'uk', label: 'Ukraine', flag: '🇺🇦', continent: 'europe' },
+  { id: 'vn', code: 'vi', label: 'Vietnam', flag: '🇻🇳', continent: 'asia' },
 ];
 
 function getLangCodeDisplay(code) {
@@ -737,7 +745,6 @@ const NAVBAR_HTML = `
   <a href="technology.html" class="mobile-nav-link-plain" style="display:flex;justify-content:space-between;padding:16px 0;font-weight:600;color:${_page==='technology.html'?'var(--blue-500)':'var(--gray-800)'};border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;"><span data-i18n="nav.technology">Technology</span></a>
   <a href="contact.html" class="mobile-nav-link-plain" style="display:flex;justify-content:space-between;padding:16px 0;font-weight:600;color:${_page==='contact.html'?'var(--blue-500)':'var(--gray-800)'};border-bottom:1px solid var(--gray-100);font-family:'Montserrat',sans-serif;"><span data-i18n="nav.contact">Contact</span></a>
   <div style="margin-top:24px;display:flex;flex-direction:column;gap:12px;">
-    <button type="button" class="btn btn-outline site-search-trigger" id="siteSearchBtnMobile" style="width:100%;justify-content:center;"><i class="fa-solid fa-magnifying-glass"></i> <span data-i18n="cta.search">Search</span></button>
     <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;"><i class="fa-solid fa-paper-plane"></i> <span data-i18n="cta.quote">Get a Quote</span></a>
     <a href="tel:+919870840779" class="btn btn-outline" style="width:100%;justify-content:center;"><i class="fa-solid fa-phone"></i> <span data-i18n="cta.callUs">Call Us Now</span></a>
   </div>
@@ -930,17 +937,8 @@ function injectSearchButtons() {
   }
 
   const mobileNav = document.getElementById('mobileNav');
-  if (mobileNav && !document.getElementById('siteSearchBtnMobile')) {
-    const actions = mobileNav.querySelector('div[style*="margin-top"]');
-    if (actions) {
-      const mobileBtn = document.createElement('button');
-      mobileBtn.type = 'button';
-      mobileBtn.className = 'btn btn-outline site-search-trigger';
-      mobileBtn.id = 'siteSearchBtnMobile';
-      mobileBtn.style.cssText = 'width:100%;justify-content:center;';
-      mobileBtn.innerHTML = '<i class="fa-solid fa-magnifying-glass"></i> Search';
-      actions.insertBefore(mobileBtn, actions.firstChild);
-    }
+  if (mobileNav) {
+    mobileNav.querySelector('#siteSearchBtnMobile')?.remove();
   }
 
   const toggle = document.getElementById('navbarToggle');
@@ -1430,6 +1428,8 @@ const NAVBAR_CTA_LABELS = {
   ps: 'کوټ',
   fa: 'پیشنهاد',
   si: 'කෝට්',
+  vi: 'Báo giá',
+  bn: 'কোট',
 };
 
 const NAVBAR_CTA_TITLES = {
@@ -1809,7 +1809,7 @@ window.gausinGetLang = () => _TR.active;
 } // END LEGACY Google Translate
 
 /* ─── Hybrid Static i18n (Phase 1) ─────────────────────────── */
-const GAUSIN_I18N_ASSET_V = '20260712d';
+const GAUSIN_I18N_ASSET_V = '20260712f';
 (function preloadGausinI18n() {
   if (document.querySelector('script[data-gausin-i18n]')) return;
   const page = document.createElement('script');
