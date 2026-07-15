@@ -32,7 +32,7 @@ const SEARCH_ICON_SVG = '<svg class="site-search-icon" width="20" height="20" vi
 
 /* ─── Social profile URLs ─────────────────────────────────── */
 const SOCIAL_LINKS = {
-  linkedin: 'https://www.linkedin.com/company/gausin-international-engineers-pvt-ltd',
+  linkedin: 'https://www.linkedin.com/company/gausin-international-engineers-private-limited/',
   x: 'https://x.com/Gausin_117',
   instagram: 'https://www.instagram.com/gausin_117/',
   youtube: 'https://www.youtube.com/@GausinInternationalEngineersPv',
@@ -1045,12 +1045,9 @@ function fixSocialLinks() {
   document.querySelectorAll(
     'a.social-link[aria-label="LinkedIn"], a.contact-social-link[aria-label="LinkedIn"]'
   ).forEach((link) => {
-    const href = link.getAttribute('href');
-    if (!href || href === '#') {
-      link.href = SOCIAL_LINKS.linkedin;
-      link.target = '_blank';
-      link.rel = 'noopener noreferrer';
-    }
+    link.href = SOCIAL_LINKS.linkedin;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
   });
 }
 
